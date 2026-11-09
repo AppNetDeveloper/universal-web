@@ -684,7 +684,7 @@ En **Mis datos** cada persona cambia su **Nombre** y su **Email** (con el que en
 
 ## 13. Tu web con ADRI (la IA de BionicAdri)
 
-**ADRI** es el equipo de asistentes de IA de BionicAdri. Universal Web tiene una puerta de entrada pensada para
+**ADRI** es la IA de BionicAdri, que se clona hasta 20 veces cuando el encargo es grande. Universal Web tiene una puerta de entrada pensada para
 asistentes como ADRI (o Claude): el **MCP** (un estándar para que una IA use herramientas de otro programa).
 Con ella, ADRI puede **crear páginas, escribir entradas, revisar el SEO, traducir, subir imágenes y preparar webs enteras**,
 con los permisos que tú le des y dejando todo registrado.

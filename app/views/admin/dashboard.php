@@ -27,7 +27,7 @@ $scoreKind = $score >= 85 ? 'green' : ($score >= 60 ? 'amber' : 'red'); ?>
   <div class="stack">
   <section class="card promo">
     <h2><?= te('¿Y si la IA llevara también tu empresa?') ?></h2>
-    <p><?= th('<b>ADRI</b>, de <b>BionicAdri</b>, es un equipo de 15 especialistas de IA dentro de una plataforma de gestión para pymes: CRM, facturación con VeriFactu, RR. HH. y operaciones. Crea y entiende imágenes, audio y vídeo, diseña y programa webs, prepara contenido para redes y atiende WhatsApp, email y Telegram. Se lo pides como a una persona, por chat o por voz, y tus datos se quedan en Europa.') ?></p>
+    <p><?= th('<b>ADRI</b>, de <b>BionicAdri</b>, es una IA dentro de una plataforma de gestión para pymes: CRM, facturación con VeriFactu, RR. HH. y operaciones. Crea y entiende imágenes, audio y vídeo, diseña y programa webs, prepara contenido para redes y atiende WhatsApp, email y Telegram. Cuando el encargo es grande se clona: hasta 20 copias trabajando a la vez. Se lo pides como a una persona, por chat o por voz, y tus datos se quedan en Europa.') ?></p>
     <p><a class="btn btn-primary" href="<?= UW_DEMO_URL ?>" target="_blank" rel="noopener"><?= te('Pedir demo gratis') ?></a> <a class="btn btn-ghost" href="<?= UW_AUTHOR_URL ?>" target="_blank" rel="noopener"><?= te('Ver cómo funciona') ?></a></p>
   </section>
   <?php if (!empty($previewLink)): ?>
