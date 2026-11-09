@@ -1,0 +1,37 @@
+# Universal Web - hosting compartido
+# Úsalo cuando subes TODA la carpeta del proyecto a public_html.
+# (Lo ideal es apuntar el dominio a la subcarpeta public/; si puedes, hazlo y este archivo no se usará.)
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Pasar la cabecera Authorization a PHP (MCP)
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Bloquear carpetas y archivos internos
+    RewriteRule ^(app|data|themes|bin|deploy|tests|\.tools)(/|$) - [F,L,NC]
+    RewriteRule ^(README\.md|composer\.json|composer\.lock|install\.sh|\.gitignore|\.git)(/|$) - [F,L,NC]
+    RewriteRule (^|/)\.(?!well-known)  - [F,L]
+    RewriteRule \.(sqlite3?|bak|sql)$ - [F,L,NC]
+
+    # Ya dentro de public/: no reescribir de nuevo (evita bucles)
+    RewriteRule ^public/ - [L]
+
+    # Todo lo demás se sirve desde public/ (REQUEST_URI no cambia, la app enruta por él)
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    RewriteRule ^ public%{REQUEST_URI} [L]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+    RewriteCond %{REQUEST_URI} !^/$
+    RewriteRule ^ public%{REQUEST_URI} [L]
+    RewriteRule ^ public/index.php [L]
+</IfModule>
+
+# Si mod_rewrite no existe, al menos no exponer nada sensible
+<IfModule !mod_rewrite.c>
+    <FilesMatch "\.(sqlite|php|md|json|tmp)$">
+        <IfModule mod_authz_core.c>
+            Require all denied
+        </IfModule>
+    </FilesMatch>
+</IfModule>

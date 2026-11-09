@@ -1,0 +1,45 @@
+{
+  "slug": "industrial",
+  "name": "Industrial",
+  "description": "Oscuro y robusto: talleres, reformas, construcción, metal y logística pesada",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "taller mecánico",
+    "reformas y construcción",
+    "carpintería metálica",
+    "fontanería y electricidad",
+    "logística pesada",
+    "maquinaria"
+  ],
+  "suggested_accent": "#f5b400",
+  "fonts": "Oswald + Inter (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (amarillo/naranja de señalización recomendado)",
+      "--ink (gris grafito de cabecera y pie)",
+      "--steel (gris acero de fondos)"
+    ],
+    "clases_tema": [
+      ".topbar (con franja de seguridad)",
+      ".site-header (oscura)",
+      ".hero-photo",
+      ".section-head h2 (barra de acento)",
+      ".card (borde izquierdo de acento)",
+      ".stats dd (cifras grandes)"
+    ]
+  },
+  "extends": "corporate",
+  "sample_images": [
+    {
+      "file": "samples/taller-soldadura.webp",
+      "alt": "Taller de calderería con soldadura y estructuras de acero",
+      "use": "hero"
+    },
+    {
+      "file": "samples/soldador.webp",
+      "alt": "Soldador trabajando una viga de acero",
+      "use": "split"
+    }
+  ]
+}

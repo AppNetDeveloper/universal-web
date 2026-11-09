@@ -1,0 +1,149 @@
+LICENCIA BIONICADRI, versión 2.0
+Uso libre y gratuito · Sin reventa ni servicio a terceros · Sin garantía ni soporte
+
+Copyright (c) 2026 BionicAdri. Todos los derechos reservados, salvo los concedidos expresamente en esta licencia.
+
+Este software se publica como "código fuente disponible" (source-available). NO es software libre ni
+open source según la definición de la Open Source Initiative, porque limita su reventa, su oferta como
+servicio a terceros y la distribución de versiones modificadas.
+
+1. DEFINICIONES
+
+   "Software": el código fuente, los temas, la documentación y demás archivos de Universal Web, en
+   cualquier versión publicada por el Titular.
+
+   "Titular": BionicAdri.
+
+   "Tú": la persona física o la organización (empresa, autónomo, asociación, administración…) que usa
+   el Software, incluidas las empresas de su mismo grupo.
+
+   "Uso propio": instalar y usar el Software en servidores que controlas, para tus propias webs y las
+   de tu organización, con o sin ánimo de lucro. Por ejemplo, un taller, una clínica o una tienda que lo
+   usa para su web de negocio hace Uso propio.
+
+   "Servicio a terceros": cualquier forma de poner el Software a disposición de otras personas u
+   organizaciones distintas de ti: venderlo o sublicenciarlo; ofrecerlo como servicio alojado,
+   gestionado o en la nube (SaaS, hosting, plataforma de creación de webs o similar); o instalarlo,
+   configurarlo, alojarlo o mantenerlo para otros a cambio de una contraprestación.
+
+   "Obra derivada": cualquier versión modificada del Software o trabajo basado en él, en todo o en
+   parte, incluidas traducciones y adaptaciones del código. El contenido que crees con el Software
+   (textos, imágenes, páginas, entradas) NO es una Obra derivada: es tuyo.
+
+2. LO QUE PUEDES HACER
+
+   Siempre que cumplas esta licencia, el Titular te concede, de forma gratuita, mundial, no exclusiva e
+   intransferible, el derecho a:
+
+   a) Descargar, instalar, ejecutar y usar el Software para tu Uso propio, también con fines comerciales
+      (tu propia web de empresa, tu tienda, tu negocio).
+   b) Conectarlo con asistentes de inteligencia artificial, incluido ADRI de BionicAdri, mediante MCP o
+      su API.
+   c) Modificar el Software para tu Uso propio, de forma privada.
+   d) Redistribuir copias ÍNTEGRAS Y SIN MODIFICAR del Software, sin cobrar por ellas, acompañadas de
+      esta licencia y de todos los avisos de autoría.
+
+3. LO QUE NO PUEDES HACER
+
+   a) Prestar un Servicio a terceros con el Software o con una Obra derivada sin una licencia escrita del
+      Titular.
+   b) Publicar, distribuir, sublicenciar o poner a disposición de terceros Obras derivadas, por ningún
+      medio (incluidos repositorios públicos con cambios, paquetes o servicios accesibles por red).
+   c) Eliminar, ocultar o alterar los avisos de copyright, de licencia o de autoría, incluido el crédito
+      «Hecho con Universal Web · Powered by bionicadri.com» (https://www.bionicadri.com) que aparece en el
+      pie de las webs, en el panel de administración y en el instalador.
+   d) Presentar el Software o una Obra derivada como propio, ni usar los nombres "BionicAdri", "ADRI" o
+      "Universal Web" para promocionar productos o servicios sin permiso escrito del Titular.
+   e) Usar el Software para actividades ilícitas.
+
+   Las bifurcaciones (forks) que permitan los términos de la plataforma donde se aloje el repositorio no
+   autorizan, por sí mismas, nada de lo prohibido en este apartado.
+
+4. SIN SOPORTE
+
+   El Titular NO ofrece soporte técnico, mantenimiento, instalación, actualizaciones, corrección de
+   errores ni atención directa de ningún tipo en virtud de esta licencia, y no está obligado a responder
+   consultas ni a publicar nuevas versiones. Cualquier servicio de este tipo, si existiera, se regiría por
+   un acuerdo independiente y por escrito.
+
+5. SIN GARANTÍA
+
+   EL SOFTWARE SE PROPORCIONA "TAL CUAL" Y "SEGÚN DISPONIBILIDAD", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA
+   O IMPLÍCITA, INCLUIDAS, SIN LIMITACIÓN, LAS DE FUNCIONAMIENTO, SEGURIDAD, COMERCIABILIDAD, IDONEIDAD
+   PARA UN FIN CONCRETO Y NO INFRACCIÓN. TÚ ASUMES TODO EL RIESGO DE SU INSTALACIÓN Y USO.
+
+6. LIMITACIÓN DE RESPONSABILIDAD
+
+   EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, EL TITULAR NO SERÁ RESPONSABLE DE NINGÚN DAÑO,
+   PÉRDIDA O RECLAMACIÓN DERIVADOS DEL SOFTWARE O DE SU USO, INCLUIDOS, ENTRE OTROS: PÉRDIDA O
+   CORRUPCIÓN DE DATOS O CONTENIDOS, INTERRUPCIÓN DE LA ACTIVIDAD, LUCRO CESANTE, BRECHAS DE SEGURIDAD,
+   INCUMPLIMIENTOS NORMATIVOS (POR EJEMPLO, DE PROTECCIÓN DE DATOS O DE COOKIES) O DAÑOS CAUSADOS POR
+   CONTENIDOS CREADOS POR PERSONAS O POR ASISTENTES DE INTELIGENCIA ARTIFICIAL. Eres el único responsable
+   de tus servidores, de tus copias de seguridad, de la configuración y del contenido de tus webs, y del
+   cumplimiento de la normativa que te aplique. Nada en esta licencia excluye la responsabilidad que la
+   ley no permita excluir.
+
+7. CONTRIBUCIONES
+
+   Si envías al Titular una contribución (pull request, parche, sugerencia de código), aceptas que el
+   Titular pueda usarla, modificarla y publicarla, también comercialmente y bajo cualquier licencia, sin
+   compensación. Declaras que tienes derecho a hacer esa cesión.
+
+8. LICENCIAS ESPECIALES
+
+   Para prestar un Servicio a terceros, distribuir Obras derivadas o cualquier uso no previsto aquí,
+   solicita una licencia escrita al Titular (https://www.bionicadri.com). El Titular puede concederla
+   en las condiciones que decida, incluida de forma gratuita.
+
+9. TERMINACIÓN
+
+   Cualquier incumplimiento termina esta licencia automáticamente y de inmediato. Tras la terminación
+   debes dejar de usar el Software y destruir las copias que tengas. Si corriges el incumplimiento en los
+   30 días siguientes a ser avisado, el Titular puede restablecer la licencia. Los apartados 4, 5, 6 y 7
+   siguen vigentes tras la terminación.
+
+10. LEY E IDIOMA
+
+   Esta licencia se rige por la ley española. Se redacta en español y la versión en español prevalece; la
+   traducción al inglés que sigue es solo informativa.
+
+-------------------------------------------------------------------------------------------------------
+
+BIONICADRI LICENSE, version 2.0 (English translation, for information only)
+Free use · No resale or service to third parties · No warranty, no support
+
+Copyright (c) 2026 BionicAdri. All rights reserved, except as expressly granted in this license.
+
+This software is "source-available". It is NOT free software or open source as defined by the Open
+Source Initiative, because it restricts resale, offering it as a service to third parties and the
+distribution of modified versions.
+
+1. You may, free of charge: download, install, run and use the Software on servers you control for
+   your own websites and those of your organization ("own use"), including for commercial purposes
+   (e.g. a business using it for its own website); connect it to AI assistants, including BionicAdri's
+   ADRI, via MCP or its API; modify it privately for your own use; and redistribute COMPLETE, UNMODIFIED
+   copies free of charge, together with this license and all authorship notices. Content you create
+   with the Software is yours.
+
+2. You may NOT, without a written license from BionicAdri: sell or sublicense the Software; offer it as
+   a hosted, managed or cloud service (SaaS, hosting, website-builder platform or similar); install,
+   configure, host or maintain it for others in exchange for any consideration; publish, distribute or
+   make available any derivative work; remove or alter copyright, license or authorship notices
+   (including the "Hecho con Universal Web · Powered by bionicadri.com" credit linking to
+   https://www.bionicadri.com shown in website footers, the admin panel and the installer); present the
+   Software as your own or use the names "BionicAdri", "ADRI" or "Universal Web" to promote products or
+   services; or use the Software for unlawful purposes.
+
+3. NO SUPPORT: BionicAdri provides no technical support, maintenance, installation, updates, bug fixes
+   or direct assistance of any kind under this license.
+
+4. NO WARRANTY: THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND. YOU
+   ASSUME ALL RISK. TO THE MAXIMUM EXTENT PERMITTED BY LAW, BIONICADRI SHALL NOT BE LIABLE FOR ANY
+   DAMAGE, LOSS OR CLAIM ARISING FROM THE SOFTWARE OR ITS USE, INCLUDING LOSS OF DATA, BUSINESS
+   INTERRUPTION, LOST PROFITS, SECURITY BREACHES, REGULATORY NON-COMPLIANCE, OR CONTENT CREATED BY PEOPLE
+   OR AI ASSISTANTS. You are solely responsible for your servers, backups, configuration, website content
+   and legal compliance.
+
+5. Contributions you submit may be used by BionicAdri under any license without compensation. Any
+   breach terminates this license automatically. This license is governed by Spanish law; the Spanish
+   version prevails.

@@ -1,0 +1,46 @@
+{
+  "slug": "natural",
+  "name": "Natural",
+  "description": "Sereno y orgánico: verdes suaves, tonos tierra y formas redondeadas para salud, bienestar y agricultura",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "clínica o centro médico",
+    "fisioterapia",
+    "psicología o terapia",
+    "dentista",
+    "yoga o pilates",
+    "nutrición o dietética",
+    "productos ecológicos",
+    "agricultura o huerto"
+  ],
+  "suggested_accent": "#3d7a55",
+  "fonts": "Source Sans 3 (texto) y Young Serif (títulos), ambas SIL OFL 1.1, alojadas en el servidor",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (verde principal; botones, enlaces y detalles)",
+      "--accent-2 (tono tierra de apoyo, derivado del acento)",
+      "--bg-soft (fondo verde muy suave de secciones y tarjetas)",
+      "--radius (radio grande de las formas redondeadas)"
+    ],
+    "clases_tema": [
+      ".hero-natural (portada con manchas orgánicas)",
+      ".hero-arch (imagen en forma de arco)",
+      ".header-phone (teléfono visible en la cabecera)",
+      ".blob (mancha decorativa)",
+      ".site-footer (pie con curva superior)"
+    ]
+  },
+  "sample_images": [
+    {
+      "file": "samples/sala-fisioterapia.webp",
+      "alt": "Sala de fisioterapia luminosa con camilla y plantas",
+      "use": "hero"
+    },
+    {
+      "file": "samples/estudio-yoga.webp",
+      "alt": "Estudio de yoga con esterillas, plantas y luz natural",
+      "use": "split"
+    }
+  ]
+}

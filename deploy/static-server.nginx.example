@@ -1,0 +1,26 @@
+# Servidor B: solo sirve la web estática que publica Universal Web (sin PHP ni base de datos).
+# Universal Web sube los archivos por SSH/rsync o FTP a /var/www/miweb.
+server {
+    listen 80;
+    server_name www.miweb.com miweb.com;
+    root /var/www/miweb;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ $uri/index.html =404;
+    }
+    error_page 404 /404.html;
+
+    # Caché larga para recursos (llevan ?v= o nombre único)
+    location ~* ^/(theme-assets|site-assets|media)/ {
+        expires 30d;
+        add_header Cache-Control "public";
+        add_header X-Content-Type-Options "nosniff" always;
+    }
+    location = /.uw-published { deny all; }
+
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header X-Frame-Options "SAMEORIGIN" always;
+}
+# Con Caddy basta:  miweb.com { root * /var/www/miweb  file_server  handle_errors { rewrite * /404.html  file_server } }

@@ -1,0 +1,14 @@
+{
+  "slug": "default",
+  "name": "Default",
+  "description": "Claro, limpio y moderno",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "web genérica",
+    "profesional autónomo",
+    "asociación",
+    "proyecto personal"
+  ],
+  "suggested_accent": "#4f46e5"
+}

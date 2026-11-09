@@ -1,0 +1,45 @@
+{
+  "slug": "editorial",
+  "name": "Editorial",
+  "description": "Tipográfico y sereno: despachos, consultoras, abogados, arquitectos y blogs",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "despacho de abogados",
+    "consultora",
+    "asesoría y gestoría",
+    "arquitectura",
+    "psicología y terapias",
+    "blog o revista",
+    "escritores y formadores"
+  ],
+  "suggested_accent": "#9a3412",
+  "fonts": "Fraunces + Literata (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (tono tinta o burdeos recomendado)",
+      "--paper (fondo papel)",
+      "--rule (líneas finas)"
+    ],
+    "clases_tema": [
+      ".masthead (cabecera centrada con el nombre)",
+      ".masthead-nav",
+      ".hero-editorial",
+      ".section-head",
+      ".prose (texto largo)",
+      ".card"
+    ]
+  },
+  "sample_images": [
+    {
+      "file": "samples/despacho-biblioteca.webp",
+      "alt": "Despacho con biblioteca de libros de derecho y luz natural",
+      "use": "hero"
+    },
+    {
+      "file": "samples/reunion-clientes.webp",
+      "alt": "Reunión de abogados con una clienta en una sala luminosa",
+      "use": "split"
+    }
+  ]
+}

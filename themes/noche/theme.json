@@ -1,0 +1,15 @@
+{
+  "slug": "noche",
+  "name": "Noche",
+  "description": "Oscuro y elegante",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "cafetería de especialidad",
+    "coctelería y bar de noche",
+    "música y eventos",
+    "fotografía",
+    "marca premium"
+  ],
+  "suggested_accent": "#c8a26b"
+}

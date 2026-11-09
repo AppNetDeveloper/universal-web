@@ -1,0 +1,309 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+if (PHP_SAPI !== 'cli') { http_response_code(403); exit("Solo se puede ejecutar desde la línea de comandos.\n"); }
+
+require dirname(__DIR__) . '/app/bootstrap.php';
+Actor::set('system', null, 'cli');
+
+function cli_args(array $argv): array
+{
+    $opts = [];
+    foreach (array_slice($argv, 2) as $a) {
+        if (preg_match('/^--([\w-]+)(?:=(.*))?$/s', $a, $m)) $opts[$m[1]] = $m[2] ?? true;
+    }
+    return $opts;
+}
+
+function cli_out(string $s): void { fwrite(STDOUT, $s . "\n"); }
+function cli_fail(string $s): never { fwrite(STDERR, "Error: $s\n"); exit(1); }
+
+function cli_opt(array $o, string $k, ?string $default = null): string
+{
+    $v = $o[$k] ?? $default;
+    if ($v === null || $v === true || $v === '') cli_fail("Falta --$k (usa 'php bin/uw help')");
+    return (string) $v;
+}
+
+function cli_require_installed(): void
+{
+    if (!is_installed()) cli_fail("Universal Web no está instalado. Ejecuta: php bin/uw install --name=... --domain=... --email=... --password=...");
+}
+
+function cmd_help(): void
+{
+    cli_out(<<<TXT
+    Universal Web CLI v
+    TXT . UW_VERSION . <<<'TXT'
+
+
+    Uso: php bin/uw <comando> [opciones]
+
+      install       --name= --domain= --email= --password= [--admin-name=] [--timezone=Europe/Madrid] [--demo]
+      serve         [--port=8080] [--host=127.0.0.1]   Servidor de desarrollo
+      token:create  --site=<slug|global> --name= [--scopes=read,write,publish]
+      user:password --email= --password=
+      site:list     Lista las webs y sus dominios
+      backup        [--site=slug] [--password=] [--out=carpeta] [--auto]   Copia global (BD + config + medios) o de una web
+      backup:list   [--site=slug]   Lista las copias de data/backups
+      backup:restore       --file=nombre|ruta --yes [--password=] [--with-config]   Restaura una copia GLOBAL (hace antes otra de seguridad)
+      backup:restore-site  --site=slug --file=nombre|ruta --yes [--password=] [--any-site]   Restaura una copia de web en esa web
+      publish       [--site=slug] [--dirty]   Publica las webs estáticas (cron: --dirty publica solo las que tienen cambios)
+      security:reset   Abre el panel a todas las IPs (recuperación si te bloqueas con la lista de IPs permitidas)
+      media:variants [--site=slug]   Genera las variantes 480w/960w (móvil) que falten de las imágenes ya subidas
+      user:2fa-reset  --email=…  Quita la verificación en dos pasos de un usuario que ha perdido el móvil
+      hosting:set   --mode=auto_tls|panel|auto [--ip=1.2.3.4] [--ipv6=…]   Cómo se conectan los dominios (install.sh pone auto_tls: Caddy da el HTTPS solo)
+      help          Muestra esta ayuda
+
+    Variable de entorno UW_DATA: carpeta de datos (por defecto ./data).
+    TXT);
+}
+
+function cmd_install(array $o): void
+{
+    if (is_installed()) cli_fail('Universal Web ya está instalado.');
+    $domain = cli_opt($o, 'domain', 'localhost');
+    foreach (install_requirements() as [$label, $ok, $detail, $req]) {
+        if (!$ok) cli_out(($req ? '[ERROR] ' : '[aviso] ') . "$label: $detail");
+    }
+    try {
+        $r = uw_install([
+            'site_name' => cli_opt($o, 'name'), 'domain' => $domain, 'admin_name' => (string) ($o['admin-name'] ?? 'Administrador'),
+            'admin_email' => cli_opt($o, 'email'),
+            // La contraseña puede llegar por entorno (UW_PASSWORD) para que no quede en la lista de procesos ni en el historial.
+            'admin_password' => isset($o['password']) ? cli_opt($o, 'password') : (getenv('UW_PASSWORD') ?: cli_opt($o, 'password')),
+            'timezone' => (string) ($o['timezone'] ?? 'Europe/Madrid'), 'demo' => isset($o['demo']),
+        ]);
+    } catch (UwError $ex) {
+        cli_fail($ex->getMessage());
+    }
+    cli_out('Instalación completada.');
+    cli_out('  Web:   ' . $r['site']['name'] . ' (' . implode(', ', site_domains((int) $r['site']['id'])) . ')');
+    cli_out('  Panel: /admin  (usuario ' . strtolower((string) $o['email']) . ')');
+    cli_out('  Datos: ' . UW_DATA);
+    cli_out('Prueba en local con: php bin/uw serve');
+}
+
+function cmd_serve(array $o): void
+{
+    $host = (string) ($o['host'] ?? '127.0.0.1');
+    $port = (int) ($o['port'] ?? 8080);
+    cli_out("Servidor en http://$host:$port  (Ctrl+C para parar)");
+    if (!is_installed()) cli_out("Aún no está instalado: abre http://$host:$port/install");
+    $cmd = escapeshellarg(PHP_BINARY) . ' -S ' . escapeshellarg("$host:$port") . ' -t ' . escapeshellarg(UW_PUBLIC) . ' ' . escapeshellarg(UW_PUBLIC . '/index.php');
+    passthru($cmd, $code);
+    exit($code);
+}
+
+function cmd_token_create(array $o): void
+{
+    cli_require_installed();
+    $slug = cli_opt($o, 'site');
+    $siteId = null;
+    if ($slug !== 'global') {
+        $site = site_by_slug($slug) ?? cli_fail("No existe la web '$slug'. Usa site:list o --site=global");
+        $siteId = (int) $site['id'];
+    }
+    $scopes = array_filter(array_map('trim', explode(',', (string) ($o['scopes'] ?? 'read,write,publish'))));
+    try {
+        $raw = token_create($siteId, cli_opt($o, 'name'), $scopes, null);
+    } catch (UwError $ex) {
+        cli_fail($ex->getMessage());
+    }
+    cli_out($raw);
+    fwrite(STDERR, "Guarda el token: no se volverá a mostrar.\n");
+}
+
+function cmd_user_password(array $o): void
+{
+    cli_require_installed();
+    $email = strtolower(cli_opt($o, 'email'));
+    $pw = cli_opt($o, 'password');
+    if (mb_strlen($pw) < 8) cli_fail('La contraseña debe tener al menos 8 caracteres');
+    $u = row('SELECT id FROM users WHERE email = ?', [$email]) ?? cli_fail("No existe el usuario $email");
+    update('users', ['password_hash' => password_hash($pw, PASSWORD_DEFAULT)], 'id = ?', [$u['id']]);
+    audit(null, 'user.password', $email);
+    cli_out("Contraseña actualizada para $email");
+}
+
+function cmd_site_list(): void
+{
+    cli_require_installed();
+    foreach (sites_all() as $s) {
+        $st = (new SiteService($s))->stats();
+        cli_out(sprintf('%-3d %-16s %-10s %-34s páginas:%d entradas:%d', $s['id'], $s['slug'], $s['theme'], implode(', ', site_domains((int) $s['id'])), $st['pages'], $st['posts_published']));
+    }
+}
+
+function cli_site_id(array $o): ?int
+{
+    if (!isset($o['site']) || $o['site'] === true || $o['site'] === 'global') return null;
+    $site = site_by_slug((string) $o['site']) ?? cli_fail("No existe la web '{$o['site']}'. Usa site:list");
+    return (int) $site['id'];
+}
+
+/** Nombre de copia o ruta de archivo -> ruta absoluta. */
+function cli_backup_path(string $file): string
+{
+    if (backup_info($file) !== null && is_file(UW_DATA . '/backups/' . $file)) return backup_file($file);
+    if (is_file($file)) return realpath($file);
+    cli_fail("No se encuentra la copia '$file' (ni en data/backups ni como ruta)");
+}
+
+function cmd_backup(array $o): void
+{
+    cli_require_installed();
+    $pw = isset($o['password']) && $o['password'] !== true ? (string) $o['password'] : null;
+    $meta = backup_create(cli_site_id($o), $pw, isset($o['auto']));
+    $path = backup_file($meta['name']);
+    cli_out('Copia creada: ' . $meta['name'] . ' (' . round($meta['size'] / 1024) . ' KB' . ($meta['encrypted'] ? ', cifrada' : '') . ')');
+    cli_out('  Ruta: ' . $path);
+    if (isset($meta['offsite'])) cli_out($meta['offsite']['ok'] ? '  Enviada fuera del servidor: ' . $meta['offsite']['name'] : '  ERROR al enviarla fuera del servidor: ' . $meta['offsite']['error']);
+    if (isset($o['auto'])) offsite_auto_tick(); // copias programadas de cada web (cron diario)
+    if (isset($o['out']) && $o['out'] !== true) {
+        $dir = rtrim((string) $o['out'], '/');
+        if (!is_dir($dir) && !@mkdir($dir, 0750, true)) cli_fail("No se puede crear $dir");
+        if (!copy($path, "$dir/{$meta['name']}")) cli_fail("No se pudo copiar a $dir");
+        cli_out("  Copiada a: $dir/{$meta['name']}");
+    }
+}
+
+function cmd_backup_list(array $o): void
+{
+    cli_require_installed();
+    $list = backup_list(cli_site_id($o));
+    if (!$list) { cli_out('No hay copias.'); return; }
+    foreach ($list as $b) {
+        cli_out(sprintf('%-52s %-7s %-19s %9s %s %s', $b['name'], $b['type'] . ($b['auto'] ? '*' : ''), $b['created_at'], round($b['size'] / 1024) . ' KB', $b['encrypted'] ? 'cifrada' : '', $b['created_by']));
+    }
+}
+
+function cmd_backup_restore(array $o): void
+{
+    cli_require_installed();
+    $path = cli_backup_path(cli_opt($o, 'file'));
+    if (empty($o['yes'])) cli_fail('Esto SUSTITUYE la base de datos y public/media por los de la copia. Añade --yes para confirmar (antes se hace una copia de seguridad del estado actual).');
+    $pw = isset($o['password']) && $o['password'] !== true ? (string) $o['password'] : null;
+    $r = backup_restore_global($path, $pw, isset($o['with-config']));
+    cli_out('Copia global restaurada. Copia de seguridad previa: ' . $r['safety']);
+    foreach ($r['warnings'] as $w) cli_out("  Aviso: $w");
+}
+
+function cmd_backup_restore_site(array $o): void
+{
+    cli_require_installed();
+    $slug = cli_opt($o, 'site');
+    $site = site_by_slug($slug) ?? cli_fail("No existe la web '$slug'");
+    $file = cli_opt($o, 'file');
+    if (empty($o['yes'])) cli_fail("Esto SUSTITUYE el contenido de '$slug' por el de la copia. Añade --yes para confirmar (antes se guarda una copia del estado actual).");
+    $pw = isset($o['password']) && $o['password'] !== true ? (string) $o['password'] : null;
+    if (backup_info($file) === null) {
+        // Ruta externa: se copia a data/backups con nombre válido tras comprobarla.
+        $file = backup_store_path($file, $pw);
+    }
+    $info = backup_info($file);
+    if ($info && $info['type'] === 'site' && $info['site_slug'] !== $slug && empty($o['any-site'])) {
+        cli_fail("La copia es de la web '{$info['site_slug']}', no de '$slug'. Si de verdad quieres sustituir '$slug' con ella, añade --any-site.");
+    }
+    $r = backup_restore_site((int) $site['id'], $file, $pw, true);
+    cli_out("Web '$slug' restaurada. Copia previa: " . $r['safety']);
+    foreach ($r['warnings'] as $w) cli_out("  Aviso: $w");
+}
+
+function cmd_user_2fa_reset(array $o): void
+{
+    $email = strtolower(trim((string) ($o['email'] ?? '')));
+    $u = $email !== '' ? row('SELECT * FROM users WHERE email = ?', [$email]) : null;
+    if (!$u) cli_fail('Uso: user:2fa-reset --email=usuario@ejemplo.com (usuario no encontrado)');
+    twofa_disable((int) $u['id'], 'user.2fa_reset');
+    echo "Verificación en dos pasos desactivada para {$u['email']}. Deberá configurarla de nuevo al entrar.\n";
+}
+
+function cmd_publish(array $o): void
+{
+    cli_require_installed();
+    $only = isset($o['site']) && $o['site'] !== true ? (string) $o['site'] : null;
+    $sql = "SELECT s.* FROM sites s JOIN site_publish p ON p.site_id = s.id WHERE json_extract(p.config, '$.mode') = 'static'" . (!empty($o['dirty']) ? ' AND p.dirty = 1' : '');
+    $sites = $only ? array_filter([site_by_slug($only)]) : rows($sql);
+    if ($only && !$sites) cli_fail("No existe la web $only");
+    if (!$sites) { cli_out(!empty($o['dirty']) ? 'Nada pendiente de publicar.' : 'Ninguna web está en modo estático.'); return; }
+    foreach ($sites as $site) {
+        try {
+            $r = publish_run(new SiteService($site));
+            cli_out("{$site['slug']}: publicada ({$r['total']} archivos, {$r['changed']} cambiados, {$r['removed']} borrados, {$r['seconds']} s) → {$r['url']}");
+        } catch (UwError $e) {
+            fwrite(STDERR, "{$site['slug']}: " . $e->getMessage() . "\n");
+        }
+    }
+}
+
+function cmd_media_variants(array $o): void
+{
+    cli_require_installed();
+    $only = isset($o['site']) && $o['site'] !== true ? (string) $o['site'] : null;
+    $sites = $only ? array_filter([site_by_slug($only)]) : rows('SELECT * FROM sites');
+    if ($only && !$sites) cli_fail("No existe la web $only");
+    $total = 0;
+    foreach ($sites as $site) {
+        $n = 0;
+        // Una a una: media_variants libera cada imagen (imagedestroy) antes de pasar a la siguiente
+        foreach (rows("SELECT path FROM media WHERE site_id = ? AND kind = 'image'", [$site['id']]) as $m) {
+            $n += count(media_variants(UW_PUBLIC . '/media/' . $m['path']));
+        }
+        $total += $n;
+        cli_out("{$site['slug']}: $n variantes generadas");
+    }
+    cli_out("Total: $total variantes.");
+}
+
+function cmd_hosting_set(array $o): void
+{
+    cli_require_installed();
+    $mode = (string) ($o['mode'] ?? '');
+    if (!in_array($mode, ['auto_tls', 'panel', 'auto'], true)) cli_fail('Usa --mode=auto_tls (VPS con Caddy de install.sh), panel (Plesk/cPanel) o auto (detectar)');
+    $set = ['hosting' => $mode === 'auto' ? '' : $mode];
+    if (isset($o['ip'])) {
+        if ($o['ip'] !== '' && !filter_var($o['ip'], FILTER_VALIDATE_IP)) cli_fail('--ip no es una IP válida');
+        $set['public_ip'] = (string) $o['ip'];
+    }
+    if (isset($o['ipv6'])) {
+        if ($o['ipv6'] !== '' && !filter_var($o['ipv6'], FILTER_VALIDATE_IP, FILTER_FLAG_IPV6)) cli_fail('--ipv6 no es una IPv6 válida');
+        $set['public_ipv6'] = (string) $o['ipv6'];
+    }
+    platform_save($set);
+    cli_out('Conexión de dominios: ' . server_hosting_mode() . (isset($set['public_ip']) ? ' · IP pública: ' . ($set['public_ip'] ?: '(se averigua sola)') : ''));
+}
+
+function cmd_security_reset(): void
+{
+    cli_require_installed();
+    platform_save(['admin_allowlist' => [], 'trusted_proxies' => [], 'admin_host' => '']);
+    audit(null, 'security.reset', 'cli');
+    cli_out('Acceso al panel abierto: sin lista de IPs, sin proxies de confianza y sin dominio exclusivo del panel.');
+}
+
+$cmd = $argv[1] ?? 'help';
+$o = cli_args($argv);
+try {
+    match ($cmd) {
+        'install' => cmd_install($o),
+        'serve' => cmd_serve($o),
+        'token:create' => cmd_token_create($o),
+        'user:password' => cmd_user_password($o),
+        'site:list' => cmd_site_list(),
+        'backup' => cmd_backup($o),
+        'backup:list' => cmd_backup_list($o),
+        'backup:restore' => cmd_backup_restore($o),
+        'backup:restore-site' => cmd_backup_restore_site($o),
+        'security:reset' => cmd_security_reset(),
+        'publish' => cmd_publish($o),
+        'media:variants' => cmd_media_variants($o),
+        'user:2fa-reset' => cmd_user_2fa_reset($o),
+        'hosting:set' => cmd_hosting_set($o),
+        'help', '--help', '-h' => cmd_help(),
+        default => cli_fail("Comando desconocido '$cmd'. Usa: php bin/uw help"),
+    };
+} catch (UwError $ex) {
+    cli_fail($ex->getMessage());
+}

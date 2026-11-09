@@ -1,0 +1,39 @@
+# Universal Web - VPS frontal ("edge") con IP pública.
+# Termina HTTPS (certificados automáticos) y reenvía todo, por la red privada ZeroTier,
+# al servidor real (sin IP pública). Ver deploy/ZEROTIER.md.
+#
+# Sustituye 10.147.17.5 por la IP ZeroTier del servidor backend (la ves en my.zerotier.com).
+# El backend debe escuchar en esa IP, puerto 8080 (ver ZEROTIER.md) y tener la IP ZeroTier de
+# ESTE VPS en Panel -> Seguridad y red -> Proxies de confianza.
+
+{
+	on_demand_tls {
+		# El backend responde 200 solo a dominios dados de alta en Universal Web.
+		ask http://10.147.17.5:8080/_uw/domain-check
+	}
+}
+
+https:// {
+	tls {
+		on_demand
+	}
+	encode zstd gzip
+	request_body {
+		max_size 10MB
+	}
+	header -Server
+
+	# Caddy añade X-Forwarded-For / X-Forwarded-Proto / X-Forwarded-Host automáticamente.
+	# Se descartan los que envíe el cliente para que no puedan falsificarse.
+	reverse_proxy 10.147.17.5:8080 {
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Forwarded-Proto https
+		transport http {
+			dial_timeout 5s
+		}
+	}
+}
+
+http:// {
+	redir https://{host}{uri} permanent
+}

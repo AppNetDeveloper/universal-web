@@ -1,0 +1,48 @@
+{
+  "slug": "prestigio",
+  "name": "Prestigio",
+  "description": "Lujo discreto: marfil, detalles bronce, serifa fina y fotos a sangre para negocios premium",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "inmobiliaria premium",
+    "hotel boutique",
+    "bodega o enoturismo",
+    "joyería",
+    "organizador de bodas",
+    "interiorismo y arquitectura",
+    "galería de arte",
+    "restaurante de autor"
+  ],
+  "suggested_accent": "#8a6a34",
+  "fonts": "Cormorant (títulos) y Jost (texto), ambas SIL OFL 1.1, alojadas en el servidor",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (bronce o dorado oscuro; texto de acento, filetes y botones; debe tener contraste AA sobre marfil)",
+      "--accent-2 (dorado claro derivado, solo decorativo)",
+      "--bg / --bg-soft (marfil y crema)",
+      "--font-head (Cormorant) / --font (Jost)"
+    ],
+    "clases_tema": [
+      ".hero-prestigio (portada; .has-image = foto a sangre con velo, .hero-plain = tipográfica)",
+      ".hero-orn (ornamento: filete con rombo)",
+      ".section-head (centrado con filete dorado)",
+      ".brand (nombre en mayúsculas espaciadas)",
+      ".feature, .media-card, .card (sin sombra, filete fino y esquinas rectas)",
+      ".cta (marco doble fino)",
+      ".hours-card, .price-list (horario y carta con filetes)"
+    ]
+  },
+  "sample_images": [
+    {
+      "file": "samples/villa-atardecer.webp",
+      "alt": "Villa mediterránea con piscina infinita frente al mar al atardecer",
+      "use": "hero"
+    },
+    {
+      "file": "samples/salon-lujo.webp",
+      "alt": "Salón elegante en tonos marfil con chimenea de mármol",
+      "use": "split"
+    }
+  ]
+}

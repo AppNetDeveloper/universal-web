@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Front headless — Universal Web</title>
+<style>
+:root{--accent:#4f46e5;--bg:#fff;--soft:#f8fafc;--text:#0f172a;--muted:#5b6678;--border:#e5e7eb}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg)}
+img{max-width:100%;height:auto}
+a{color:var(--accent)}
+.c{max-width:1120px;margin:0 auto;padding:0 16px}
+.note{background:#0f172a;color:#e2e8f0;font-size:.9rem;padding:10px 0}
+.note .c{display:block}
+header.top{border-bottom:1px solid var(--border)}
+header.top .c{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;min-height:64px}
+header.top strong{font-size:1.2rem}
+nav a{margin-right:16px;text-decoration:none;color:var(--muted);font-weight:500}
+section{padding:48px 0}
+h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 .4em}
+h2{font-size:clamp(1.5rem,3.5vw,2rem);margin:0 0 .6em}
+.hero{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 18%,#fff),var(--soft))}
+.lead{color:var(--muted);font-size:1.15rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;margin:8px 8px 0 0}
+.btn.g{background:transparent;color:var(--text);border:1px solid var(--border)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
+.card{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}
+.card img{border-radius:10px;margin-bottom:10px}
+.stats{display:flex;flex-wrap:wrap;gap:32px;justify-content:space-around;background:var(--soft);padding:24px;border-radius:14px}
+.stats b{display:block;font-size:2.2rem;color:var(--accent)}
+.cta{background:var(--accent);color:#fff;border-radius:18px;padding:40px 20px;text-align:center}
+.cta .btn{background:#fff;color:var(--text)}
+details{border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:8px}
+summary{cursor:pointer;font-weight:600}
+pre{background:#0f172a;color:#e2e8f0;padding:14px;border-radius:10px;overflow-x:auto}
+.muted{color:var(--muted);font-size:.9rem}
+footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="note"><div class="c">Este front es solo un HTML estático que lee el JSON de la API: así cualquiera puede hacer su propio front.</div></div>
+<header class="top"><div class="c"><strong id="name">Cargando…</strong><nav id="menu" aria-label="Principal"></nav></div></header>
+<main id="blocks"></main>
+<section><div class="c"><h2>Últimas entradas</h2><div class="grid" id="posts"></div></div></section>
+<footer><div class="c" id="foot"></div></footer>
+<script>
+(function () {
+  'use strict';
+  function el(tag, attrs, kids) {
+    var n = document.createElement(tag);
+    for (var k in (attrs || {})) {
+      if (k === 'text') n.textContent = attrs[k];
+      else if (k === 'html') n.innerHTML = attrs[k]; // solo para *_html (Markdown ya renderizado en el servidor)
+      else n.setAttribute(k, attrs[k]);
+    }
+    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
+    return n;
+  }
+  function safeUrl(u) { u = String(u || ''); return /^(https?:\/\/|\/|#|mailto:|tel:)/.test(u) ? u : '#'; }
+  function get(u) { return fetch(u).then(function (r) { if (!r.ok) throw new Error(u + ' → ' + r.status); return r.json(); }); }
+  function wrap(cls, kids) { return el('section', cls ? { 'class': cls } : {}, [el('div', { 'class': 'c' }, kids)]); }
+  function btn(text, link, ghost) { return text && link ? el('a', { 'class': 'btn' + (ghost ? ' g' : ''), href: safeUrl(link), text: text }) : null; }
+  function h2(t) { return t ? el('h2', { text: t }) : null; }
+
+  var R = {
+    hero: function (d) {
+      return wrap('hero', [el('h1', { text: d.title }), d.subtitle && el('p', { 'class': 'lead', text: d.subtitle }),
+        d.image && el('img', { src: d.image, alt: d.image_alt || '' }), btn(d.cta_text, d.cta_link), btn(d.cta2_text, d.cta2_link, true)]);
+    },
+    text: function (d) { return wrap('', [h2(d.title), el('div', { html: d.body_html || '' })]); },
+    features: function (d) {
+      return wrap('', [h2(d.title), d.subtitle && el('p', { 'class': 'lead', text: d.subtitle }),
+        el('div', { 'class': 'grid' }, (d.items || []).map(function (i) {
+          return el('div', { 'class': 'card' }, [i.icon && el('div', { text: i.icon, style: 'font-size:1.6rem' }), el('h3', { text: i.title }), el('p', { text: i.text })]);
+        }))]);
+    },
+    stats: function (d) {
+      return wrap('', [el('div', { 'class': 'stats' }, (d.items || []).map(function (i) {
+        return el('div', {}, [el('b', { text: i.value }), el('span', { text: i.label })]);
+      }))]);
+    },
+    cta: function (d) {
+      return wrap('', [el('div', { 'class': 'cta' }, [h2(d.title), d.text && el('p', { text: d.text }), btn(d.button_text, d.button_link)])]);
+    },
+    faq: function (d) {
+      return wrap('', [h2(d.title), el('div', {}, (d.items || []).map(function (i) {
+        return el('details', {}, [el('summary', { text: i.question }), el('div', { html: i.answer_html || '' })]);
+      }))]);
+    },
+    image: function (d) { return wrap('', [el('img', { src: d.src, alt: d.alt || '' }), d.caption && el('p', { 'class': 'muted', text: d.caption })]); },
+    gallery: function (d) {
+      return wrap('', [h2(d.title), el('div', { 'class': 'grid' }, (d.images || []).map(function (i) { return el('img', { src: i.src, alt: i.alt || '' }); }))]);
+    },
+    code: function (d) { return wrap('', [h2(d.title), el('pre', {}, [el('code', { text: d.code })])]); }
+  };
+  function generic(b) {
+    return wrap('', [el('p', { 'class': 'muted', text: 'Bloque «' + b.type + '» (sin plantilla específica en este ejemplo)' }),
+      el('pre', {}, [el('code', { text: JSON.stringify(b.data, null, 2) })])]);
+  }
+  function postCard(p) {
+    return el('article', { 'class': 'card' }, [
+      p.cover_image && el('img', { src: p.cover_image, alt: '', loading: 'lazy' }),
+      el('p', { 'class': 'muted', text: p.published_at ? new Date(p.published_at.replace(' ', 'T')).toLocaleDateString('es-ES') : '' }),
+      el('h3', {}, [el('a', { href: safeUrl('/blog/' + p.slug), text: p.title })]),
+      p.excerpt && el('p', { text: p.excerpt })
+    ]);
+  }
+
+  Promise.all([get('/api/site.json'), get('/api/pages/index.json'), get('/api/posts.json?limit=6')]).then(function (res) {
+    var site = res[0].site, page = res[1].page, posts = res[2].posts;
+    document.title = site.name + (site.tagline ? ' — ' + site.tagline : '');
+    document.getElementById('name').textContent = site.name;
+    var menu = document.getElementById('menu');
+    ((site.settings && site.settings.menu) || site.menu || []).forEach(function (m) {
+      menu.appendChild(el('a', { href: safeUrl(m.url), text: m.label }));
+    });
+    var main = document.getElementById('blocks');
+    page.blocks.forEach(function (b) { main.appendChild(R[b.type] ? R[b.type](b.data) : generic(b)); });
+    var pl = document.getElementById('posts');
+    if (!posts.length) pl.appendChild(el('p', { 'class': 'muted', text: 'Todavía no hay entradas.' }));
+    posts.forEach(function (p) { pl.appendChild(postCard(p)); });
+    document.getElementById('foot').textContent = '© ' + new Date().getFullYear() + ' ' + site.name;
+  }).catch(function (err) {
+    document.getElementById('name').textContent = 'No se pudo cargar la API';
+    document.getElementById('blocks').appendChild(el('section', {}, [el('div', { 'class': 'c' }, [el('p', { text: String(err.message || err) })])]));
+  });
+})();
+</script>
+</body>
+</html>

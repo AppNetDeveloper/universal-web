@@ -1,0 +1,49 @@
+# Universal Web - carpeta pública (Apache + mod_rewrite)
+Options -Indexes
+DirectoryIndex index.php
+
+# Pasar la cabecera Authorization a PHP (necesario para el MCP en CGI/FastCGI)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Controlador frontal: todo lo que no sea un archivo o carpeta real va a index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+# Cabeceras de caché para archivos estáticos
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/avif "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/css "access plus 1 week"
+    ExpiresByType text/javascript "access plus 1 week"
+    ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|png|jpe?g|gif|webp|avif|svg|ico|woff2?)$">
+        Header set Cache-Control "public, max-age=604800"
+    </FilesMatch>
+</IfModule>
+
+# Cabeceras mínimas para archivos estáticos (las páginas dinámicas las envía PHP)
+<IfModule mod_headers.c>
+    <FilesMatch "\.(css|js|png|jpe?g|gif|webp|avif|svg|ico|woff2?|pdf)$">
+        Header set X-Content-Type-Options "nosniff"
+    </FilesMatch>
+</IfModule>
+
+# Nunca servir copias ni bases de datos aunque estén dentro de public/
+<FilesMatch "\.(sqlite|sqlite3|db|bak|sql)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+</FilesMatch>

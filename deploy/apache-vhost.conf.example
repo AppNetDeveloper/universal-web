@@ -1,0 +1,31 @@
+# Universal Web - Apache 2.4 + PHP-FPM (o mod_php)
+# Requiere: a2enmod rewrite headers expires (y proxy_fcgi si usas PHP-FPM)
+
+<VirtualHost *:80>
+    ServerName midominio.com
+    ServerAlias www.midominio.com cafe.midominio.com
+    # Para atender cualquier dominio: ServerAlias *
+
+    DocumentRoot /var/www/universal-web/public
+
+    <Directory /var/www/universal-web/public>
+        AllowOverride All          # usa public/.htaccess (reescritura, caché, Authorization)
+        Require all granted
+        Options -Indexes
+    </Directory>
+
+    # Si usas PHP-FPM:
+    <FilesMatch "\.php$">
+        SetHandler "proxy:unix:/run/php/php8.2-fpm.sock|fcgi://localhost"
+    </FilesMatch>
+
+    # Pasar Authorization a PHP (MCP)
+    SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+    LimitRequestBody 10485760
+
+    ErrorLog ${APACHE_LOG_DIR}/universal-web-error.log
+    CustomLog ${APACHE_LOG_DIR}/universal-web-access.log combined
+</VirtualHost>
+
+# HTTPS: "certbot --apache -d midominio.com -d cafe.midominio.com"

@@ -1,0 +1,38 @@
+{
+  "slug": "corporate",
+  "name": "Corporativo",
+  "description": "Profesional para empresas de servicios, industria y logística",
+  "author": "BionicAdri",
+  "fonts": "Inter (SIL Open Font License 1.1, alojada en el propio servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent-2 (segundo color de los degradados)",
+      "--ink (azul oscuro de barra superior, bandas y pie)",
+      "--ink-2",
+      "--shadow-lg",
+      "--header-h"
+    ],
+    "clases_tema": [
+      ".topbar",
+      ".header-cta (botón de la cabecera)",
+      ".hero-photo / .hero-plain",
+      ".hero-eyebrow",
+      ".feature-icon",
+      ".block-steps (banda oscura)",
+      ".split",
+      ".media-card",
+      ".testimonial",
+      ".whatsapp-float"
+    ]
+  },
+  "version": "1.0",
+  "best_for": [
+    "empresa de servicios",
+    "transporte y logística",
+    "industria",
+    "ingeniería",
+    "instalaciones",
+    "B2B"
+  ],
+  "suggested_accent": "#0b5cad"
+}

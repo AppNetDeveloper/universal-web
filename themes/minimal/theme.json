@@ -1,0 +1,41 @@
+{
+  "slug": "minimal",
+  "name": "Minimal",
+  "description": "Limpio y moderno: tecnología, startups, apps, SaaS y estudios digitales",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "startup",
+    "app o SaaS",
+    "empresa tecnológica",
+    "estudio digital o agencia",
+    "producto digital",
+    "fotógrafo o portfolio"
+  ],
+  "suggested_accent": "#4f46e5",
+  "fonts": "Manrope (SIL OFL 1.1, alojada en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (color principal; se usa en degradados)",
+      "--accent-2 (segundo color del degradado)"
+    ],
+    "clases_tema": [
+      ".hero-minimal (titular centrado con degradado)",
+      ".hero-shot (imagen enmarcada)",
+      ".card (borde fino, sin sombra)",
+      ".site-header (fija con desenfoque)"
+    ]
+  },
+  "sample_images": [
+    {
+      "file": "samples/portatil-panel.webp",
+      "alt": "Portátil en un escritorio blanco mostrando un panel de gráficos",
+      "use": "hero"
+    },
+    {
+      "file": "samples/equipo-oficina.webp",
+      "alt": "Equipo trabajando con portátiles en una oficina luminosa",
+      "use": "split"
+    }
+  ]
+}

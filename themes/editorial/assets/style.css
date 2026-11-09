@@ -1,0 +1,104 @@
+/* Universal Web — tema Editorial (capa sobre el CSS Default).
+   Despachos, consultoras, abogados, arquitectos y blogs: tipografía con serifa, papel, filetes finos y mucho aire. */
+
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap;
+  src: url("fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap;
+  src: url("fonts/fraunces-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Literata"; font-style: normal; font-weight: 200 900; font-display: swap;
+  src: url("fonts/literata-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Literata"; font-style: normal; font-weight: 200 900; font-display: swap;
+  src: url("fonts/literata-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  --paper: #faf8f3;
+  --rule: #1d1b17;
+  --text: #1d1b17;
+  --muted: #6b655b;
+  --bg: var(--paper);
+  --bg-soft: #f2eee5;
+  --border: #ddd6c8;
+  --card: #fffdf8;
+  --radius: 2px;
+  --shadow: none;
+  --font: "Literata", Georgia, "Times New Roman", serif;
+  --font-head: "Fraunces", Georgia, "Times New Roman", serif;
+  --max: 1080px;
+}
+
+body { font-size: 1.1rem; line-height: 1.72; background: var(--paper); }
+h1, h2, h3 { font-weight: 600; letter-spacing: -.015em; font-variation-settings: "opsz" 144; }
+h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+a { color: var(--accent-text); }
+::selection { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+
+/* Cabecera tipo revista */
+.site-header.masthead { position: relative; background: var(--paper); backdrop-filter: none; border-bottom: 0; }
+.masthead-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 10px; font-size: .85rem; color: var(--muted); border-bottom: 1px solid var(--border); }
+.masthead-top a { color: var(--muted); text-decoration: none; }
+.masthead-top a:hover { color: var(--text); }
+.masthead-brand { position: relative; text-align: center; padding-block: clamp(22px, 4vw, 40px) clamp(14px, 2.5vw, 22px); }
+.masthead-brand .brand { display: inline-flex; justify-content: center; }
+.masthead-brand .brand span { font-family: var(--font-head); font-size: clamp(2rem, 5.5vw, 3.6rem); font-weight: 700; letter-spacing: -.03em; color: var(--text); line-height: 1; }
+.masthead-brand .brand img { height: 56px; }
+.masthead-tagline { margin: 10px auto 0; max-width: 640px; color: var(--muted); font-style: italic; }
+.masthead-nav { border-top: 2px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.masthead-nav ul { margin-inline: auto; justify-content: center; flex-wrap: wrap; gap: 0 6px; padding-block: 4px; }
+.masthead-nav a { font-family: var(--font); font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text); border-radius: 0; padding: 10px 12px; }
+.masthead-nav a:hover { background: none; color: var(--accent-text); }
+.masthead-nav a.active { background: none; color: var(--accent-text); box-shadow: inset 0 -2px 0 var(--accent); }
+.masthead-cta a { color: var(--accent-text); font-weight: 700; }
+.masthead-brand .nav-toggle { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); }
+@media (max-width: 760px) {
+  .masthead-nav { position: static; display: none; border-top: 1px solid var(--rule); }
+  .masthead-nav.open { display: block; }
+  .masthead-nav ul { flex-direction: column; align-items: center; }
+  .masthead-top .masthead-meta { display: none; }
+}
+
+/* Portada editorial */
+.hero.hero-editorial { background: none; padding: clamp(40px, 7vw, 88px) 0 clamp(28px, 5vw, 56px); text-align: center; border: 0; }
+.hero-ed-text { max-width: 900px; }
+.kicker { font-size: .8rem; letter-spacing: .2em; text-transform: uppercase; color: var(--accent-text); font-weight: 700; margin-bottom: 18px; }
+.hero-editorial h1 { background: none; color: var(--text); font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.02; font-weight: 600; letter-spacing: -.03em; text-wrap: balance; }
+.hero-editorial .lead { margin: 18px auto 0; max-width: 680px; font-size: clamp(1.1rem, 1.7vw, 1.3rem); color: var(--muted); font-style: italic; }
+.hero-editorial .actions { justify-content: center; align-items: center; gap: 22px; margin-top: 28px; }
+.hero-ed-figure { margin-top: clamp(28px, 5vw, 56px); }
+.hero-ed-figure img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: var(--radius); filter: saturate(.9); }
+.link-arrow { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; text-decoration: none; border-bottom: 1px solid currentColor; }
+
+/* Botones sobrios */
+.btn { border-radius: var(--radius); background: var(--text); color: var(--paper); font-family: var(--font); font-weight: 600; letter-spacing: .04em; box-shadow: none; }
+.btn:hover { background: var(--accent); color: #fff; }
+
+/* Secciones con filete */
+.section-head { text-align: left; border-top: 1px solid var(--rule); padding-top: 18px; max-width: none; }
+.section-head .eyebrow, .eyebrow { font-family: var(--font); letter-spacing: .18em; text-transform: uppercase; font-size: .78rem; color: var(--accent-text); }
+.eyebrow::before { display: none; }
+.stats { background: none; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); border-radius: 0; box-shadow: none; }
+.stat dd { font-family: var(--font-head); font-weight: 600; color: var(--text); }
+.feature, .media-card, .testimonial, .post-card, .card, .hours-card { background: transparent; border: 0; border-top: 1px solid var(--rule); border-radius: 0; box-shadow: none; padding-inline: 0; }
+.feature-icon { background: none; color: var(--accent-text); }
+.testimonial blockquote { font-family: var(--font-head); font-size: 1.3rem; font-style: italic; }
+.cta { background: var(--bg-soft); color: var(--text); border-radius: 0; border-top: 2px solid var(--rule); }
+.cta h2 { color: var(--text); }
+.faq details { border-radius: 0; border-bottom: 1px solid var(--border); }
+.split-media img, .media-card-img img { border-radius: var(--radius); }
+.form input, .form textarea, .form select { border-radius: 0; background: #fff; }
+.prose { max-width: 68ch; }
+.article .prose > p:first-of-type::first-letter { font-family: var(--font-head); float: left; font-size: 3.4em; line-height: .9; padding: 4px 8px 0 0; color: var(--accent-text); }
+.price-section { font-family: var(--font-head); text-transform: none; letter-spacing: 0; font-size: 1.4rem; color: var(--text); }
+
+/* Pie */
+.site-footer { background: var(--paper); border-top: 2px solid var(--rule); }
+.footer-name { font-family: var(--font-head); font-size: 1.5rem; font-weight: 700; margin: 0 0 6px; }
+.footer-title { font-family: var(--font); font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+@media (max-width: 760px) {
+  .masthead-brand { padding-inline: 64px; }
+  .hero-ed-figure img { aspect-ratio: 4 / 3; }
+  .masthead-brand .brand span { font-size: clamp(1.45rem, 6.6vw, 2.2rem); }
+}

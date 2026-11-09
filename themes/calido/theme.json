@@ -1,0 +1,53 @@
+{
+  "slug": "calido",
+  "name": "Cálido y local",
+  "description": "Acogedor y cercano: restaurantes, cafeterías, tiendas, panaderías, estética y peluquerías",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "restaurante",
+    "cafetería y panadería",
+    "bar de tapas",
+    "tienda local",
+    "peluquería y barbería",
+    "centro de estética",
+    "floristería",
+    "alojamiento rural"
+  ],
+  "suggested_accent": "#c2410c",
+  "fonts": "DM Serif Display + Nunito (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (terracota recomendado)",
+      "--cream (fondo crema)",
+      "--cocoa (marrón del pie)"
+    ],
+    "clases_tema": [
+      ".hero-split (texto + foto redondeada)",
+      ".hours-card (horario)",
+      ".price-list (carta)",
+      ".card (esquinas muy redondeadas)",
+      ".topbar"
+    ],
+    "bloques_recomendados": [
+      "hours (horario con «Abierto ahora»)",
+      "pricelist (carta o tarifas)",
+      "gallery",
+      "testimonials",
+      "contact_form"
+    ]
+  },
+  "extends": "corporate",
+  "sample_images": [
+    {
+      "file": "samples/pizza-horno.webp",
+      "alt": "Pizza napolitana recién salida del horno de leña",
+      "use": "hero"
+    },
+    {
+      "file": "samples/sala-restaurante.webp",
+      "alt": "Sala acogedora de restaurante con horno de leña",
+      "use": "split"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Datos e instalación
+/data/
+# Archivos subidos (se conserva la protección .htaccess)
+/public/media/*
+!/public/media/.htaccess
+# Herramientas locales
+/.tools/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+backup-*.zip
+universal-web-backup-*
+
+# Restos de una instalación de tema interrumpida
+/themes/.stage-*
+/.claude/
+
+# Paquetes de release (deploy/hacer_release.sh)
+/dist/

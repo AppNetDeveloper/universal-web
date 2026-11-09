@@ -1,0 +1,88 @@
+/* Universal Web — tema Minimal (capa sobre el CSS Default).
+   Tecnología, startups y estudios digitales: blanco, rejillas limpias, bordes finos y un degradado con el color de marca. */
+
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url("fonts/manrope-latin-wght-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Manrope"; font-style: normal; font-weight: 200 800; font-display: swap;
+  src: url("fonts/manrope-latin-ext-wght-normal.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root {
+  --accent-2: color-mix(in srgb, var(--accent) 45%, #06b6d4);
+  --text: #0b0d12;
+  --muted: #5f6673;
+  --bg: #ffffff;
+  --bg-soft: #f6f7f9;
+  --border: #e8eaee;
+  --radius: 14px;
+  --shadow: none;
+  --font: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-head: var(--font);
+  --max: 1160px;
+}
+
+body { font-size: 1.04rem; }
+h1, h2, h3 { font-weight: 800; letter-spacing: -.035em; }
+.grad { background: linear-gradient(120deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* Cabecera */
+.site-header { background: rgba(255,255,255,.72); backdrop-filter: saturate(1.6) blur(14px); }
+.header-inner { min-height: 64px; }
+.brand { gap: 10px; font-weight: 800; letter-spacing: -.02em; }
+.brand-mark { width: 22px; height: 22px; border-radius: 7px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: inline-block; }
+.site-nav a { color: var(--muted); font-weight: 600; font-size: .95rem; }
+.site-nav a:hover { background: none; color: var(--text); }
+.site-nav a.active { background: none; color: var(--text); }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.btn { border-radius: 10px; font-weight: 700; box-shadow: none; }
+.btn-sm { padding: 8px 14px; font-size: .9rem; }
+.btn-ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn-ghost:hover { border-color: var(--text); background: transparent; }
+@media (max-width: 760px) { .header-cta { display: none; } }
+
+/* Portada */
+.hero.hero-minimal { background:
+    radial-gradient(900px 420px at 50% -10%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    radial-gradient(600px 300px at 85% 10%, color-mix(in srgb, var(--accent-2) 12%, transparent), transparent 70%);
+  border: 0; padding: clamp(64px, 10vw, 128px) 0 clamp(40px, 6vw, 72px); text-align: center; }
+.hero-min-text { max-width: 900px; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: #fff; font-size: .85rem; font-weight: 700; color: var(--muted); margin-bottom: 22px; }
+.pill-dot { width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+.hero-minimal h1 { font-size: clamp(2.6rem, 7.5vw, 5.4rem); line-height: 1.02; letter-spacing: -.05em;
+  background: linear-gradient(120deg, var(--text) 30%, var(--accent) 75%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; text-wrap: balance; padding-bottom: .12em; }
+.hero-minimal .lead { margin: 20px auto 0; max-width: 640px; font-size: clamp(1.08rem, 1.6vw, 1.25rem); color: var(--muted); }
+.hero-minimal .actions { justify-content: center; margin-top: 32px; gap: 12px; }
+.hero-shot { margin: clamp(40px, 6vw, 72px) auto 0; max-width: 1040px; padding: 10px; border-radius: 22px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 30%, #fff), color-mix(in srgb, var(--accent-2) 30%, #fff)); }
+.hero-shot img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,.06); box-shadow: 0 30px 80px rgba(15,23,42,.18); }
+
+/* Bloques: bordes finos, sin sombras */
+.section-head { text-align: center; margin-inline: auto; }
+.eyebrow { color: var(--accent-text); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+.stats { background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: none; }
+.stat dd { font-weight: 800; letter-spacing: -.03em; }
+.feature, .media-card, .testimonial, .post-card, .card, .hours-card { border: 1px solid var(--border); border-radius: var(--radius); box-shadow: none; background: #fff; }
+.feature:hover, .media-card:hover, .post-card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); transform: translateY(-2px); }
+.feature-icon { border-radius: 10px; background: color-mix(in srgb, var(--accent) 10%, #fff); color: var(--accent-text); }
+.cta { background: var(--text); color: #fff; border-radius: 22px; }
+.cta h2 { color: #fff; }
+.faq details { border-radius: 12px; }
+.form input, .form textarea, .form select { border-radius: 10px; }
+
+/* Pie de una línea */
+.site-footer { background: #fff; border-top: 1px solid var(--border); }
+.footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding-block: 28px 8px; }
+.footer-left { display: flex; flex-direction: column; gap: 2px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; margin: 0; padding: 0; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); text-decoration: none; font-weight: 600; font-size: .92rem; }
+.footer-links a:hover { color: var(--text); }
+
+/* Tablet: la cabecera completa (marca, enlaces, idiomas y botón) no cabe entre 761 y 940px: menú desplegable como en móvil */
+@media (min-width: 761px) and (max-width: 940px) {
+  .nav-toggle { display: flex; }
+  .site-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; margin: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 16px 16px; }
+  .site-nav.open { display: block; }
+  .site-nav ul { flex-direction: column; }
+  .site-nav a { white-space: normal; }
+  .header-cta { display: none; }
+}

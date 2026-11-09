@@ -1,0 +1,48 @@
+{
+  "slug": "vibrante",
+  "name": "Vibrante",
+  "description": "Colorido, enérgico y atrevido: gimnasios, deporte, academias, ocio infantil y eventos",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "gimnasio",
+    "centro deportivo",
+    "escuela de baile",
+    "academia",
+    "ocio infantil",
+    "organizador de eventos",
+    "escuela o campamento",
+    "club deportivo"
+  ],
+  "suggested_accent": "#e11d74",
+  "fonts": "Anton (titulares) y Figtree (texto), ambas SIL OFL 1.1, alojadas en el servidor",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (color principal: sellos, formas, etiquetas y sombras duras)",
+      "--accent-2 (amarillo de apoyo para la portada y los botones sobre fondo oscuro)",
+      "--accent-3 (turquesa de apoyo para formas y detalles)",
+      "--ink (azul noche para textos, bordes gruesos y fondos oscuros)"
+    ],
+    "clases_tema": [
+      ".hero-vibrante (portada amarilla con base en diagonal y formas)",
+      ".hero-shape (formas decorativas de la portada)",
+      ".hero-photo (imagen girada con sombra dura)",
+      ".btn (botón oscuro con sombra dura de color)",
+      ".card (borde grueso y sombra dura)",
+      ".cta (bloque de color intenso con diagonal)",
+      ".stats (banda oscura con cifras amarillas)"
+    ]
+  },
+  "sample_images": [
+    {
+      "file": "samples/gimnasio.webp",
+      "alt": "Personas entrenando en un gimnasio moderno con luces de colores",
+      "use": "hero"
+    },
+    {
+      "file": "samples/clase-baile.webp",
+      "alt": "Clase de baile en grupo con ropa deportiva de colores",
+      "use": "split"
+    }
+  ]
+}

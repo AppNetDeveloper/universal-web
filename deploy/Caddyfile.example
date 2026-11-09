@@ -1,0 +1,51 @@
+# Universal Web - Caddy 2 + PHP-FPM
+# Caddy obtiene y renueva los certificados HTTPS automáticamente.
+
+# Opción A: lista de dominios explícita
+midominio.com, www.midominio.com, cafe.midominio.com {
+    root * /var/www/universal-web/public
+    encode zstd gzip
+    request_body {
+        max_size 10MB
+    }
+
+    # Los archivos subidos jamás se ejecutan
+    @mediaphp path_regexp ^/media/.*\.(php[0-9]?|phtml|phar|pht|cgi)$
+    respond @mediaphp 403
+    header /media/* X-Content-Type-Options "nosniff"
+    request_body {
+        max_size 110MB
+    }
+
+    # Solo index.php se ejecuta: el resto de .php no existe
+    @otherphp {
+        path *.php
+        not path /index.php
+    }
+    respond @otherphp 404
+
+    # Estáticos si existen; si no, controlador frontal
+    php_fastcgi unix//run/php/php8.2-fpm.sock {
+        try_files {path} /index.php
+    }
+    file_server
+}
+
+# Opción B: muchos dominios sin listarlos (TLS bajo demanda).
+# Caddy pedirá el certificado la primera vez que llegue un dominio. Protégelo con "ask"
+# para que solo se emitan certificados de dominios que existen en Universal Web:
+#
+# {
+#     on_demand_tls {
+#         ask http://127.0.0.1:8081/check-domain   # tu endpoint que responde 200 si el dominio es válido
+#     }
+# }
+#
+# https:// {
+#     tls {
+#         on_demand
+#     }
+#     root * /var/www/universal-web/public
+#     php_fastcgi unix//run/php/php8.2-fpm.sock
+#     file_server
+# }
