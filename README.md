@@ -16,10 +16,10 @@ Universal Web es un proyecto de **[BionicAdri](https://www.bionicadri.com)** (BI
 la plataforma de gestión para pymes que reúne **CRM, ERP y facturación (VeriFactu), RR. HH., operaciones,
 comunicación y soporte** en un solo sitio.
 
-Su corazón es **ADRI**: un equipo de **15 especialistas de IA** al que le pides las cosas como se las pedirías a una
-persona, por chat o por voz. Entre sus especialistas: **vision** (*crea y entiende imágenes, audio y vídeo*), **designer**
-(dirección de arte de webs), **social_media** (textos e imágenes para redes), **code_orchestrator** (webs, SEO y servidores),
-**browser** (usa un Chrome de verdad para publicar), mensajería por WhatsApp, email y Telegram, documentos, análisis de datos… y **crea webs**. Para eso nació Universal Web: un motor de webs ligero, multi-web y seguro, pensado
+Su corazón es **ADRI**: una IA a la que le pides las cosas como se las pedirías a una persona, por chat o por voz.
+Cuando el encargo es grande se clona: **hasta 20 copias trabajando a la vez**, cada una con las herramientas de su oficio.
+Lleva clientes, facturas, correo, WhatsApp, documentos, redes… y **crea webs**. Para eso nació Universal Web: un motor de
+webs ligero, multi-web y seguro, pensado
 para que una IA como ADRI lo maneje por MCP con permisos claros. Datos en Europa, cumplimiento RGPD y Ley de IA de la UE.
 
 👉 **¿Quieres que la IA lleve también tu empresa?** [Pide una demo gratuita de BionicAdri](https://www.bionicadri.com) ·
@@ -219,11 +219,11 @@ Cada web elige en **Panel → Publicación** cómo se sirve:
 | **Headless** | Tu propio front lee la API JSON (`/api/*.json`, con URLs absolutas) |
 
 En modo estático se genera la web completa (páginas, blog, sitemap, robots, RSS, imágenes, CSS/JS y una copia de la API
-JSON) y se sube **solo lo que cambia** a: **SSH/rsync** (VPS, ZeroTier), **FTP/FTPS** (hosting compartido), una **carpeta**
+JSON) y se sube **solo lo que cambia** a: **SSH/rsync** (VPS o red privada), **FTP/FTPS** (hosting compartido), una **carpeta**
 de este servidor, o se **descarga en .tar.gz** para subirla a mano. Puede publicarse sola tras cada cambio (PHP-FPM) o con
 cron `php bin/uw publish --dirty`; también por la IA (`publish_status`, `publish_now`).
 
-Así el panel y la base de datos pueden quedar en una red privada (ZeroTier) y en internet solo hay archivos estáticos.
+Así el panel y la base de datos pueden quedar en una red privada (por ejemplo una VPN) y en internet solo hay archivos estáticos.
 El formulario de contacto de la web estática envía a `/api/contact` de la «URL pública de este servidor» (expón solo
 `/api/contact` y `/api/form-token` si el panel está oculto) y vuelve a la web estática al terminar. Los datos del servidor
 de destino (rutas, claves SSH, contraseñas FTP, cifradas) solo los configura el superadmin. Ejemplo de servidor web para la
@@ -396,7 +396,7 @@ En **Panel → Copias de seguridad**:
 - **Login** con tiempo constante (no revela qué emails existen), límite por IP y por email; sesión en modo estricto y
   cookie `__Host-` en HTTPS. El instalador nunca se ejecuta sobre una base de datos existente.
 - **Permiso `messages`** aparte para que un token MCP lea mensajes de contacto (datos personales).
-- Auditoría de seguridad interna (oct. 2026): 15 hallazgos corregidos. Recomendado: auditoría externa antes de producción crítica.
+- Recomendado: auditoría externa antes de usarlo en producción crítica.
 
 ## Recuperación de contraseña
 
@@ -415,14 +415,13 @@ un código no se puede usar dos veces, 10 códigos de recuperación de un solo u
 El superadmin puede **obligarla** para todos (Seguridad y red) y resetearla a quien pierda el móvil (Usuarios, o
 `php bin/uw user:2fa-reset --email=…`). Los tokens MCP son credenciales aparte: revócalos si se filtran.
 
-## Seguridad y red: ZeroTier
+## Seguridad y red
 
 En **Panel → Seguridad y red** (superadmin):
-- **Lista de IPs/redes permitidas** para `/admin` y `/mcp` (por ejemplo solo tu red **ZeroTier**); la web pública sigue abierta.
+- **Lista de IPs/redes permitidas** para `/admin` y `/mcp` (por ejemplo solo tu VPN o la red de tu oficina); la web pública sigue abierta.
   Protección anti-bloqueo: no deja guardar una lista que excluya tu IP actual. Recuperación: `php bin/uw security:reset`.
-- **Proxies de confianza**: para un servidor sin IP pública detrás de un VPS frontal conectado por ZeroTier (modo «edge»).
-- Instalación: `sudo ./install.sh … --zerotier=<ID_RED> [--admin-only-zerotier]`. Guía completa en `deploy/ZEROTIER.md`
-  y ejemplo de VPS frontal en `deploy/Caddyfile.edge.example`.
+- **Proxies de confianza**: para un servidor sin IP pública detrás de un VPS frontal conectado por una red privada (modo «edge»).
+- Ejemplo de VPS frontal en `deploy/Caddyfile.edge.example`.
 
 ## Licencia
 
