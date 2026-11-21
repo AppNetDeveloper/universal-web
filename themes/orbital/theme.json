@@ -26,7 +26,8 @@
   },
   "typography": {
     "titulos": "Geist",
-    "texto": "Geist (y Geist Mono para antetítulos, cifras y código)"
+    "texto": "Geist",
+    "acentos": "Geist Mono (antetítulos, cifras y código)"
   },
   "dark_mode": "auto",
   "fonts": "Geist y Geist Mono (SIL OFL 1.1, alojadas en el servidor)",

@@ -98,7 +98,8 @@ Desde la 0.5.0, `theme.json` lleva también la ficha con la que la IA (herramien
 
 - `best_for`: los sectores (en minúscula). Son la lista «sectores» de la ficha.
 - `pitch`: una frase: para qué empresa es y **cuándo elegirlo en vez del tema más parecido**.
-- `style`: dos o tres palabras. `colors`: colores en `#rrggbb` (siempre `acento`). `typography`: `titulos` y `texto`.
+- `style`: dos o tres palabras. `colors`: colores en `#rrggbb` (siempre `acento`). `typography`: `titulos`, `texto` y, si hay una segunda
+  familia para detalles, `acentos`.
 - `dark_mode`: `"auto"` si el tema sigue el modo claro u oscuro del dispositivo, `"siempre"` si es oscuro siempre,
   `"no"` si solo es claro. Todas las claves son opcionales: un tema sin ellas tiene una ficha con lo que haya.
 

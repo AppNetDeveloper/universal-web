@@ -27,7 +27,8 @@
   },
   "typography": {
     "titulos": "Chivo",
-    "texto": "Chivo (cotas y numeración en Chivo Mono)"
+    "texto": "Chivo",
+    "acentos": "Chivo Mono (cotas y numeración)"
   },
   "dark_mode": "auto",
   "fonts": "Chivo y Chivo Mono (SIL OFL 1.1, alojadas en el servidor)",

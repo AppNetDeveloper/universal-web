@@ -178,7 +178,7 @@ dejan de funcionar al instante (y se revocan); un token global deja de valer si 
 Los editores solo ven y revocan sus propios tokens; los admins, todos los de su web. Cada acción queda en Actividad
 como «MCP: nombre del token (usuario)». Los tokens creados con la CLI (`bin/uw token:create`) no tienen creador y actúan como admin.
 
-**Herramientas** (la lista completa y al día está en el panel, Tokens de IA, o en `tools/list` del endpoint): contenido `site_get`, `site_update`, `block_types`, `page_list`, `page_get`, `page_save`, `page_patch` (editar un solo bloque), `page_delete`, `post_list`, `post_get`, `post_save`, `post_delete`, `translation_status`; deshacer `page_history`, `page_restore`, `post_history`, `post_restore`, `trash_list`, `trash_restore`; medios `media_list`, `media_update`, `media_upload` (por **URL** o base64: imágenes, PDF, vídeo y audio; las fotos se reducen a 2000 px y pasan a WebP solas); diseño `code_get`, `code_update`, `code_history`, `code_restore`, `template_get`, `template_update`, `template_restore`; SEO/GEO `seo_audit`, `seo_autofix`, `seo_bulk_update`, `seo_analyze`, `geo_audit`, `search_ping`; comprobar `site_check`, `errors_list`, `errors_clear`; redirecciones 301 `redirect_list`, `redirect_save`, `redirect_delete`, `redirect_import`; idiomas y FAQ `page_languages`, `page_faq`; caché `cache_clear`; versión `update_status` (solo consulta); y `messages_list`, `message_mark_read`, `backup_create`, `backup_list`, `publish_status`, `publish_now`. Con token global además `sites_list` y `site_create`.
+**Herramientas** (la lista completa y al día está en el panel, Tokens de IA, o en `tools/list` del endpoint): contenido `site_get`, `site_update`, `block_types`, `page_list`, `page_get`, `page_save`, `page_patch` (editar un solo bloque), `page_delete`, `post_list`, `post_get`, `post_save`, `post_delete`, `translation_status`; deshacer `page_history`, `page_restore`, `post_history`, `post_restore`, `trash_list`, `trash_restore`; medios `media_list`, `media_update`, `media_upload` (por **URL** o base64: imágenes, PDF, vídeo y audio; las fotos se reducen a 2000 px y pasan a WebP solas); temas `theme_list` (ficha de cada tema para elegir, filtrable por sector) y `theme_sample` (sus textos de ejemplo); diseño `code_get`, `code_update`, `code_history`, `code_restore`, `template_get`, `template_update`, `template_restore`; SEO/GEO `seo_audit`, `seo_autofix`, `seo_bulk_update`, `seo_analyze`, `geo_audit`, `search_ping`; comprobar `site_check`, `errors_list`, `errors_clear`; redirecciones 301 `redirect_list`, `redirect_save`, `redirect_delete`, `redirect_import`; idiomas y FAQ `page_languages`, `page_faq`; caché `cache_clear`; versión `update_status` (solo consulta); y `messages_list`, `message_mark_read`, `backup_create`, `backup_list`, `publish_status`, `publish_now`. Con token global además `sites_list` y `site_create`.
 
 **Dominios y ayuda por MCP**: `site_create` y `domain_status` devuelven la vista previa, la IP del servidor, los registros DNS
 que faltan, si el HTTPS es automático (Caddy) o hay que dar de alta el dominio en Plesk/cPanel, y `message_for_user` (texto listo
@@ -313,11 +313,24 @@ Sin panel: copia la carpeta a `themes/` por FTP/SSH.
 - `natural` — clínicas, fisioterapia, psicología, yoga, productos ecológicos (Young Serif + Source Sans 3).
 - `prestigio` — inmobiliaria premium, hoteles boutique, bodegas, joyería, bodas (Cormorant + Jost).
 
+Nuevos en la 0.5.0, todos con **modo claro y oscuro** (siguen al dispositivo) y **textos de ejemplo** en los 7 idiomas:
+- `sobrio` — despachos: abogados, asesorías, gestorías, notarías; rejilla suiza institucional (IBM Plex Serif + Plex Sans).
+- `pulcro` — clínicas, consultas médicas, dentistas, veterinarias, ópticas; blanco clínico y botón de cita (Lexend).
+- `horizonte` — inmobiliarias, alquiler vacacional, promotoras; fichas de inmueble y portada con buscador (Archivo).
+- `rotundo` — tiendas y comercio local; neo-brutalismo amable con bordes gruesos (Bricolage Grotesque).
+- `orbital` — tecnología, SaaS, apps, ciberseguridad; cabecera flotante, bento y brillos en oscuro (Geist + Geist Mono).
+- `cuaderno` — academias, escuelas de idiomas, autoescuelas, formación; papel cuadriculado (Atkinson Hyperlegible + Caveat).
+- `trayecto` — transporte, mensajería, mudanzas, logística; diagonales y línea de ruta (Barlow Condensed + Barlow).
+- `cota` — construcción y reformas; plano técnico con cotas, en oscuro plano azul (Chivo + Chivo Mono).
+- `sutil` — belleza y estética, spa, manicura, peluquería; cursivas y cápsulas (Bodoni Moda + Karla).
+- `lienzo` — portfolio y freelance; titulares gigantes en blanco y negro con una nota naranja (Syne).
+
 Todos son **multi-idioma** (selector de idioma y textos traducidos a español, inglés, rumano, francés, alemán, italiano y portugués), se han probado en
-móvil (390 px), tablet (820 px) y PC (1440 px) sin desbordes, usan fuentes OFL alojadas en el servidor y traen
-**fotos de muestra propias** (generadas por IA, sin derechos de terceros) en `assets/samples/`. Cada `theme.json`
-indica para qué negocios es (`best_for`), su color sugerido y sus fotos de muestra: la IA lo lee en `site_get → themes`
-para elegir tema. Bloques pensados para negocios con local: **Horario** (`hours`, con «Abierto ahora» y datos para
+móvil (390 px), tablet (820 px) y PC (1440 px) sin desbordes, usan fuentes OFL alojadas en el servidor y los
+de la 0.4.0 traen **fotos de muestra propias** (generadas por IA, sin derechos de terceros) en `assets/samples/`. Cada
+`theme.json` lleva la **ficha** del tema: para qué empresa es y cuándo elegirlo en vez del parecido (`pitch`), sectores
+(`best_for`), estilo, colores, tipografía, modo oscuro y color sugerido. La IA la lee con `theme_list` para elegir tema y
+`theme_sample` le da los textos de ejemplo como modelo; **Crear páginas iniciales** de una web nueva los usa. Bloques pensados para negocios con local: **Horario** (`hours`, con «Abierto ahora» y datos para
 Google/IAs) y **Carta / Precios** (`pricelist`).
 
 ## Plantilla HTML segura (por web)

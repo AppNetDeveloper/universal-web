@@ -1,5 +1,46 @@
 # Cambios de Universal Web
 
+## [0.5.0] — 2026-11
+
+Diez temas nuevos, todos con modo claro y oscuro, y una ficha por tema para que la IA elija el diseño adecuado sin
+abrirlos.
+
+### Temas nuevos
+- **Sobrio** (despachos: abogados, asesorías, gestorías), **Pulcro** (clínicas y consultas), **Horizonte**
+  (inmobiliarias), **Rotundo** (tiendas y comercio local), **Orbital** (tecnología y SaaS), **Cuaderno** (academias y
+  formación), **Trayecto** (transporte y logística), **Cota** (construcción y reformas), **Sutil** (belleza y estética) y
+  **Lienzo** (portfolio y freelance).
+- Siguen el **modo claro u oscuro del dispositivo** (`prefers-color-scheme`), con contraste AA en los dos.
+- Misma mecánica que los temas de la 0.4.0: 7 idiomas, `hreflang`, JSON-LD, caché, CSP, CSS/JS propio de cada web,
+  cookies y WhatsApp. Fuentes alojadas en el servidor (máximo 2 familias por tema, con su licencia OFL), sin recursos de
+  terceros ni librerías JS.
+- **Textos de ejemplo** de cada tema nuevo en español, inglés, rumano, francés, alemán, italiano y portugués
+  (`sample.json`): 5 páginas y 2 entradas de una empresa ficticia, con las cifras y opiniones marcadas como ejemplo.
+
+### Elegir tema
+- **Ficha de cada tema** en `theme.json` (los 20): para qué empresa es y cuándo elegirlo en vez del parecido, sectores,
+  estilo, colores, tipografía y modo oscuro.
+- MCP **`theme_list`** (lectura): las fichas, filtrables por sector (`sector: "clínica"`). Con un token global no pide
+  `site`, para elegir antes de `site_create`.
+- MCP **`theme_sample`**: los textos de ejemplo de un tema en un idioma, como modelo de páginas.
+- **Crear páginas iniciales** de una web nueva usa los textos de ejemplo del tema (si los trae) y su color sugerido.
+- Panel → Temas: estilo de cada tema y aviso «Claro y oscuro».
+
+### Actualizador
+- Un tema propio con el mismo nombre de carpeta que un tema nuevo de serie no se sobrescribe al actualizar.
+
+### Pruebas
+- `tests/themes_render.php`: cada tema pinta portada, página con todos los bloques, blog, entrada, contacto y 404 en los
+  7 idiomas sin avisos de PHP y con `hreflang` + `x-default`, JSON-LD, CSS/JS propio, crédito y un solo `<h1>`; revisa
+  sus textos de ejemplo y que pase el validador de subida de temas.
+
+### Riesgos al actualizar desde la 0.4.0
+- Si tienes un **tema propio** con el mismo nombre de carpeta que uno nuevo (`sobrio`, `pulcro`, `horizonte`,
+  `rotundo`, `orbital`, `cuaderno`, `trayecto`, `cota`, `sutil`, `lienzo`), el actualizador ya no lo pisa: lo deja como
+  está, lo avisa entre los temas no tocados y ese tema nuevo no se instala. Si lo quieres, cambia antes el nombre del tuyo.
+  (Si actualizas a mano descomprimiendo el paquete encima, sí se sustituye.)
+- Los temas de la 0.4.0 no cambian de aspecto: solo ganan su ficha en `theme.json`.
+
 ## [0.4.0] — 2026-11
 
 Universal Web ya puede alojar una web grande y en varios idiomas sin perder nada de SEO ni de GEO, y se actualiza sola

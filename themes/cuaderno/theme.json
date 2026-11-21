@@ -28,7 +28,8 @@
   },
   "typography": {
     "titulos": "Atkinson Hyperlegible",
-    "texto": "Atkinson Hyperlegible"
+    "texto": "Atkinson Hyperlegible",
+    "acentos": "Caveat (antetítulos, números y comillas a mano)"
   },
   "dark_mode": "auto",
   "fonts": "Atkinson Hyperlegible y Caveat (SIL OFL 1.1, alojadas en el servidor)",
