@@ -97,6 +97,10 @@ ok('0.4.0: migrar otra vez no rompe nada', in_site($app, $data, 'migrate(); echo
 ok('0.4.0: subidas y tema propio intactos', is_file("$app/public/media/subida-de-prueba.txt") && is_file("$app/themes/mitema/theme.json"));
 
 // ---------------------------------------------------------------- paquetes 0.4.1 y 0.4.2 (fallará al arrancar)
+// Versiones de prueba por encima de la del código (antes eran 0.4.1 y 0.4.2 fijas: dejaron de valer al subir a 0.5.0)
+$bump = fn(int $n) => (string) preg_replace_callback('/(\d+)$/', fn($m) => (string) ((int) $m[1] + $n), $v040);
+$v041 = $bump(1);
+$v042 = $bump(2);
 $mk = function (string $ver, callable $tweak) use ($repo, $T, $php, $keyFile): string {
     $src = "$T/src-$ver";
     sh('mkdir -p ' . escapeshellarg($src) . ' && git -C ' . escapeshellarg($repo) . ' ls-files --cached --others --exclude-standard -z | (cd ' . escapeshellarg($repo) . ' && xargs -0 cp -a --parents -t ' . escapeshellarg($src) . ')');
@@ -107,11 +111,13 @@ $mk = function (string $ver, callable $tweak) use ($repo, $T, $php, $keyFile): s
     if ($rc !== 0) echo $o, "\n";
     return "$T/dist-$ver";
 };
-$d041 = $mk('0.4.1', function (string $src) {
+$d041 = $mk($v041, function (string $src) {
     unlink("$src/docs/THEMES.md"); // un archivo que la 0.4.1 ya no trae: debe desaparecer
     file_put_contents("$src/app/nuevo-041.txt", 'nuevo');
+    @mkdir("$src/themes/temanuevo", 0755, true); // tema de serie nuevo con el mismo nombre que uno propio del cliente
+    file_put_contents("$src/themes/temanuevo/theme.json", '{"name":"De serie"}');
 });
-$d042 = $mk('0.4.2', function (string $src) {
+$d042 = $mk($v042, function (string $src) {
     file_put_contents("$src/app/bootstrap.php", file_get_contents("$src/app/bootstrap.php") . "\nif (getenv('UW_DATA')) throw new RuntimeException('arranque roto a propósito');\n");
 });
 $install = fn(string $dist, string $ver, ?string $pub, string $extra = '') => in_site($app, $data, '$r = update_install_package((string) file_get_contents(' . var_export("$dist/universal-web-$ver.update.json", true) . '), '
@@ -120,60 +126,63 @@ $finish = fn() => sh("UW_DATA=" . escapeshellarg($data) . " $php " . escapeshell
 $version = fn() => trim((string) preg_replace("/.*const UW_VERSION = '([^']+)'.*/s", '$1', (string) file_get_contents("$app/app/core.php")));
 
 // Firma mala: con la clave del código (no es la de prueba) y con el sobre manipulado
-[$rc, $o] = $install($d041, '0.4.1', null);
+[$rc, $o] = $install($d041, $v041, null);
 ok('firma de otra clave: rechazada', $rc !== 0 && str_contains($o, 'firma') && $version() === $v040, $o);
-$env = json_decode((string) file_get_contents("$d041/universal-web-0.4.1.update.json"), true);
+$env = json_decode((string) file_get_contents("$d041/universal-web-{$v041}.update.json"), true);
 $p = json_decode(base64_decode($env['payload']), true);
 $p['sha256'] = str_repeat('0', 64);
 $env['payload'] = base64_encode(json_encode($p));
 file_put_contents("$T/tampered.json", json_encode($env));
-[$rc, $o] = in_site($app, $data, 'update_install_package((string) file_get_contents(' . var_export("$T/tampered.json", true) . '), ' . var_export("$d041/universal-web-0.4.1.zip", true) . ', "t", false, ' . var_export($testPub, true) . ');');
+[$rc, $o] = in_site($app, $data, 'update_install_package((string) file_get_contents(' . var_export("$T/tampered.json", true) . '), ' . var_export("$d041/universal-web-{$v041}.zip", true) . ', "t", false, ' . var_export($testPub, true) . ');');
 ok('sobre manipulado (huella cambiada): rechazado', $rc !== 0 && str_contains($o, 'firma') && $version() === $v040, $o);
-copy("$d041/universal-web-0.4.1.zip", "$T/corrupt.zip");
+copy("$d041/universal-web-{$v041}.zip", "$T/corrupt.zip");
 file_put_contents("$T/corrupt.zip", 'x', FILE_APPEND);
-[$rc, $o] = in_site($app, $data, 'update_install_package((string) file_get_contents(' . var_export("$d041/universal-web-0.4.1.update.json", true) . '), ' . var_export("$T/corrupt.zip", true) . ', "t", false, ' . var_export($testPub, true) . ');');
+[$rc, $o] = in_site($app, $data, 'update_install_package((string) file_get_contents(' . var_export("$d041/universal-web-{$v041}.update.json", true) . '), ' . var_export("$T/corrupt.zip", true) . ', "t", false, ' . var_export($testPub, true) . ');');
 ok('zip que no coincide con su huella firmada: rechazado', $rc !== 0 && str_contains($o, 'sha256') && $version() === $v040 && !is_file("$data/maintenance.json"), $o);
 
 // Un tema de serie y el .htaccess modificados a mano, y la 0.4.1 de verdad
+@mkdir("$app/themes/temanuevo", 0755, true);
+file_put_contents("$app/themes/temanuevo/theme.json", '{"name":"Propio"}');
 file_put_contents("$app/themes/noche/assets/style.css", "/* mío */\n", FILE_APPEND);
 file_put_contents("$app/.htaccess", "# AddHandler de mi hosting (versión de PHP)\n", FILE_APPEND);
 $htMine = hash_file('sha256', "$app/.htaccess");
 $nocheMine = hash_file('sha256', "$app/themes/noche/assets/style.css");
-[$rc, $o] = $install($d041, '0.4.1', $testPub);
+[$rc, $o] = $install($d041, $v041, $testPub);
 ok('0.4.0 → 0.4.1: fase 1 (copia, mantenimiento, verificación, cambio de código)', $rc === 0 && is_file("$data/updates/pending.json") && is_file("$data/maintenance.json"), $o);
 ok('durante la actualización la web responde 503', (function () use ($app, $data, $php) {
     [, $out] = sh("cd " . escapeshellarg("$app/public") . " && UW_DATA=" . escapeshellarg($data) . " REQUEST_URI=/ $php -r " . escapeshellarg('$_SERVER["REQUEST_URI"]="/"; require "../app/maintenance.php"; var_export(uw_maintenance_state() !== null);'));
     return str_contains($out, 'true');
 })());
 [$rc, $o] = $finish();
-ok('0.4.1: fase 2 en un proceso nuevo (migraciones, caché, salud)', $rc === 0 && $version() === '0.4.1' && !is_file("$data/updates/pending.json") && !is_file("$data/maintenance.json"), $o);
+ok('0.4.1: fase 2 en un proceso nuevo (migraciones, caché, salud)', $rc === 0 && $version() === $v041 && !is_file("$data/updates/pending.json") && !is_file("$data/maintenance.json"), $o);
 $res = json_decode((string) @file_get_contents("$data/updates/last-result.json"), true);
-ok('0.4.1: resultado guardado como correcto', !empty($res['ok']) && ($res['to'] ?? '') === '0.4.1', json_encode($res));
+ok('0.4.1: resultado guardado como correcto', !empty($res['ok']) && ($res['to'] ?? '') === $v041, json_encode($res));
 ok('0.4.1: el archivo retirado desaparece y el nuevo aparece', !is_file("$app/docs/THEMES.md") && is_file("$app/app/nuevo-041.txt"));
 ok('0.4.1: tema de serie modificado a mano: no se toca', hash_file('sha256', "$app/themes/noche/assets/style.css") === $nocheMine && in_array('noche', (array) ($res['skipped_themes'] ?? []), true), json_encode($res['skipped_themes'] ?? null));
 ok('0.4.1: .htaccess cambiado a mano: se conserva y se avisa', hash_file('sha256', "$app/.htaccess") === $htMine && in_array('.htaccess', (array) ($res['kept_files'] ?? []), true), json_encode($res['kept_files'] ?? null));
+ok('0.4.1: tema propio con el nombre de uno nuevo de serie: no se pisa', str_contains((string) file_get_contents("$app/themes/temanuevo/theme.json"), 'Propio') && in_array('temanuevo', (array) ($res['skipped_themes'] ?? []), true), json_encode($res['skipped_themes'] ?? null));
 ok('0.4.1: tema propio, subidas y datos intactos', is_file("$app/themes/mitema/theme.json") && is_file("$app/public/media/subida-de-prueba.txt")
     && in_site($app, $data, 'echo (int) val("SELECT COUNT(*) FROM pages");')[1] === (string) $before['pages']);
 ok('0.4.1: copia de seguridad completa creada', (bool) glob("$data/backups/uw-global-*"));
 
 // Repetición: volver a instalar la misma versión (o una anterior) firmada
-[$rc, $o] = $install($d041, '0.4.1', $testPub);
+[$rc, $o] = $install($d041, $v041, $testPub);
 ok('repetición del mismo paquete firmado: rechazada', $rc !== 0 && str_contains($o, 'no es más nueva'), $o);
 
 // Fallo a mitad (la 0.4.2 no arranca): vuelta atrás sola, código y base de datos
 in_site($app, $data, 'q("INSERT INTO meta (key, value) VALUES (\'marca\', \'antes\')");');
-[$rc, $o] = $install($d042, '0.4.2', $testPub, 'q("UPDATE meta SET value = \'durante\' WHERE key = \'marca\'");');
+[$rc, $o] = $install($d042, $v042, $testPub, 'q("UPDATE meta SET value = \'durante\' WHERE key = \'marca\'");');
 ok('0.4.2: fase 1 correcta (el fallo llega al arrancar)', $rc === 0 && is_file("$data/updates/pending.json"), $o);
 [$rc, $o] = $finish();
 $res = json_decode((string) @file_get_contents("$data/updates/last-result.json"), true);
-ok('0.4.2 falla al arrancar → vuelve sola a la 0.4.1', $rc !== 0 && $version() === '0.4.1' && empty($res['ok']) && !empty($res['rolled_back']) && str_contains((string) ($res['error'] ?? ''), 'arranque roto'), $o . ' ' . json_encode($res));
+ok('0.4.2 falla al arrancar → vuelve sola a la 0.4.1', $rc !== 0 && $version() === $v041 && empty($res['ok']) && !empty($res['rolled_back']) && str_contains((string) ($res['error'] ?? ''), 'arranque roto'), $o . ' ' . json_encode($res));
 ok('vuelta atrás: base de datos de antes de actualizar, sin mantenimiento', in_site($app, $data, 'echo val("SELECT value FROM meta WHERE key = \'marca\'");')[1] === 'antes' && !is_file("$data/maintenance.json") && !is_file("$data/updates/pending.json"));
 ok('vuelta atrás: la web vuelve a funcionar', in_site($app, $data, 'echo publish_render(new SiteService(site_by_id(1)), "/")["status"];')[1] === '200');
 
 // Proceso que muere mientras cambia los archivos: la siguiente petición deshace lo cambiado
-[$rc, $o] = $install($d042, '0.4.2', $testPub, '$pf = UW_DATA . "/updates/pending.json"; $pd = json_decode(file_get_contents($pf), true); $pd["stage"] = "swapping"; file_put_contents($pf, json_encode($pd));');
+[$rc, $o] = $install($d042, $v042, $testPub, '$pf = UW_DATA . "/updates/pending.json"; $pd = json_decode(file_get_contents($pf), true); $pd["stage"] = "swapping"; file_put_contents($pf, json_encode($pd));');
 [$rc2, $o2] = $finish();
-ok('interrumpida a mitad del cambio de archivos → se deshace', $version() === '0.4.1' && !is_file("$data/updates/pending.json") && !is_file("$data/maintenance.json"), $o . $o2);
+ok('interrumpida a mitad del cambio de archivos → se deshace', $version() === $v041 && !is_file("$data/updates/pending.json") && !is_file("$data/maintenance.json"), $o . $o2);
 
 ok('de los intentos fallidos no quedan carpetas con copias de la BD', count(glob("$data/updates/2*", GLOB_ONLYDIR) ?: []) === 1);
 
@@ -193,7 +202,7 @@ $t0 = microtime(true);
 $st = json_decode((string) substr($o, (int) strrpos($o, '{')), true);
 ok('sin red: comprobar no falla, guarda el motivo y tarda poco', $rc === 0 && ($st['e'] ?? '') !== '' && microtime(true) - $t0 < 15, $o);
 [$rc, $o] = in_site($app, $data, 'try { update_run_remote("t", false, null, "https://no-existe.invalid/releases.json"); } catch (UwError $e) { echo "ERR:" . $e->getMessage(); }');
-ok('sin red: «Actualizar» explica el problema y no toca nada', str_contains($o, 'ERR:') && $version() === '0.4.1' && !is_file("$data/maintenance.json"), $o);
+ok('sin red: «Actualizar» explica el problema y no toca nada', str_contains($o, 'ERR:') && $version() === $v041 && !is_file("$data/maintenance.json"), $o);
 
 // Elegir versión: política «solo correcciones» y versiones sin sobre firmado
 [$rc, $o] = in_site($app, $data, '$rel = fn($v, $assets = true) => ["tag_name" => "v$v", "assets" => $assets ? [["name" => "universal-web-$v.update.json", "browser_download_url" => "u"], ["name" => "universal-web-$v.zip", "browser_download_url" => "z"]] : []];

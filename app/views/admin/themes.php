@@ -6,8 +6,9 @@
 <?php foreach ($themes as $t): $active = $t['slug'] === $current; ?>
   <section class="card theme-card<?= $active ? ' is-active' : '' ?>" id="theme-<?= e($t['slug']) ?>">
     <div class="theme-shot"><?php if ($t['screenshot']): ?><img src="<?= e($t['screenshot']) ?>" alt="" loading="lazy"><?php else: ?><span><?= e(mb_substr($t['name'], 0, 1)) ?></span><?php endif; ?></div>
-    <h2><?= e($t['name']) ?> <?= $active ? adm_badge(t('En uso'), 'green') : '' ?> <?= $t['builtin'] ? adm_badge(t('De serie'), 'blue') : adm_badge(t('Subido')) ?></h2>
+    <h2><?= e($t['name']) ?> <?= $active ? adm_badge(t('En uso'), 'green') : '' ?> <?= $t['builtin'] ? adm_badge(t('De serie'), 'blue') : adm_badge(t('Subido')) ?><?= $t['dark_mode'] === 'auto' ? ' ' . adm_badge(t('Claro y oscuro')) : '' ?></h2>
     <?php if ($t['description']): ?><p><?= e(t($t['description'])) ?></p><?php endif; ?>
+    <?php if ($t['style']): ?><p class="hint"><?= te('Estilo:') ?> <?= e(t($t['style'])) ?></p><?php endif; ?>
     <?php if ($t['best_for']): ?><p class="hint"><?= te('Ideal para:') ?> <?= e(implode(', ', array_map('t', array_slice($t['best_for'], 0, 5)))) ?>
       <?php if ($t['suggested_accent']): ?> · <span class="swatch" style="background:<?= e($t['suggested_accent']) ?>" title="<?= e($t['suggested_accent']) ?>"></span><?php endif; ?></p><?php endif; ?>
     <p class="hint"><?= te('Versión {v}', ['v' => $t['version']]) ?><?= $t['author'] ? ' · ' . e($t['author']) : '' ?> · <code><?= e($t['slug']) ?></code>

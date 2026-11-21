@@ -47,6 +47,8 @@ function theme_meta(string $slug): ?array
         'parent' => (string) ($m['parent'] ?? 'default'),
         'best_for' => array_values((array) ($m['best_for'] ?? [])),
         'suggested_accent' => (string) ($m['suggested_accent'] ?? ''),
+        'style' => (string) ($m['style'] ?? ''),
+        'dark_mode' => (string) ($m['dark_mode'] ?? 'no'),
         'screenshot' => $shot,
         'builtin' => in_array($slug, THEMES_BUILTIN, true),
         'templates' => array_values(array_map(fn($f) => substr($f, strlen($dir) + 1), array_merge(glob("$dir/*.php") ?: [], glob("$dir/blocks/*.php") ?: []))),

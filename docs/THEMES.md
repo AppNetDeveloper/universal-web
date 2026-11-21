@@ -80,6 +80,36 @@ mi-tema/
 - `css_hints`: opcional. La IA lo recibe con la herramienta MCP `code_get` para escribir CSS a medida que encaje
   con tu tema. Muy recomendable.
 
+### La ficha del tema (para elegirlo sin abrirlo)
+
+Desde la 0.5.0, `theme.json` lleva también la ficha con la que la IA (herramienta MCP `theme_list`) y el panel eligen tema:
+
+```json
+{
+  "best_for": ["clínica o centro médico", "dentista", "veterinaria"],
+  "suggested_accent": "#0e7490",
+  "pitch": "Para centros de salud que quieren transmitir orden y confianza; para bienestar con tono orgánico, mejor «Natural».",
+  "style": "clínico, limpio y amable",
+  "colors": {"acento": "#0e7490", "fondo": "#ffffff", "texto": "#0f2a33", "fondo_oscuro": "#0b1b20"},
+  "typography": {"titulos": "Lexend", "texto": "Lexend"},
+  "dark_mode": "auto"
+}
+```
+
+- `best_for`: los sectores (en minúscula). Son la lista «sectores» de la ficha.
+- `pitch`: una frase: para qué empresa es y **cuándo elegirlo en vez del tema más parecido**.
+- `style`: dos o tres palabras. `colors`: colores en `#rrggbb` (siempre `acento`). `typography`: `titulos` y `texto`.
+- `dark_mode`: `"auto"` si el tema sigue el modo claro u oscuro del dispositivo, `"siempre"` si es oscuro siempre,
+  `"no"` si solo es claro. Todas las claves son opcionales: un tema sin ellas tiene una ficha con lo que haya.
+
+### Textos de ejemplo (`sample.json`)
+
+Opcional. Lo que sale en una web nueva con tu tema (**Webs → Crear web → Crear páginas iniciales**) y lo que la IA
+lee con `theme_sample` como modelo. Un objeto por idioma (`es`, `en`, `ro`, `fr`, `de`, `it`, `pt`…), cada uno con
+`tagline`, `menu`, `cta`, `pages` (lista de `{slug, title, seo: {description}, blocks}`, la primera con slug `index`) y
+`posts` (`{slug, title, excerpt, content, tags}`). Es de una **empresa ficticia**: marca como «ejemplo» las cifras y
+opiniones y no pongas datos de contacto (salen de Ajustes).
+
 ---
 
 ## 3. Variables disponibles en las plantillas
@@ -205,6 +235,11 @@ Un tema solo debe **pintar**. Si necesitas datos, usa los métodos de lectura de
 - **Multi-idioma:** textos fijos con `__()`, enlaces internos con `$svc->langPath()`, selector con `$langs`.
 - **SEO/GEO:** un solo `<h1>` por página (el bloque `hero` o el título), no quites `$head`.
 - **Variables CSS:** usa `var(--accent)` para el color que el cliente elige en Ajustes.
+- **Modo oscuro:** si tu tema lo admite, redefine las variables (`--bg`, `--bg-soft`, `--card`, `--text`, `--muted`,
+  `--border`, `--accent-text` aclarado) dentro de `@media (prefers-color-scheme: dark)`, pon
+  `<meta name="color-scheme" content="light dark">` en `layout.php` y `"dark_mode": "auto"` en `theme.json`. La base
+  `default` tiene algunos colores claros fijos que hay que cubrir: `.notice`, `.alert`, `.hours-now`, `.chip`, el tic de
+  `.checklist` y el degradado del título de la portada.
 - **Acento como texto:** el acento del cliente puede ser claro (amarillo) y no llega a contraste AA sobre blanco. Para **texto, enlaces y bordes finos** usa `var(--accent-text)` (el acento oscurecido; un tema oscuro lo redefine aclarado) y reserva `var(--accent)` para fondos de botón y adornos. El texto sobre un fondo de acento va en `var(--on-accent)` (blanco u oscuro según la luminosidad del acento) y el anillo de foco en `var(--focus)`.
 - **Táctil y móvil:** botones, enlaces del menú y selector de idioma de ≥44 px de alto; el texto largo (alemán, rumano) se parte solo (`overflow-wrap`), sin desbordar. El menú móvil usa `aria-expanded`, se cierra con Escape (devuelve el foco al botón) y al pulsar un enlace.
 - Documenta tus clases y variables en `css_hints` de `theme.json` para que la IA pueda personalizar sin romper.

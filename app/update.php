@@ -300,6 +300,15 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
         $new = update_extract($zipFile, $m, "$work/new");
         $old = update_installed_files();
         $skipThemes = update_modified_themes($old);
+        // Un tema que llega nuevo en el paquete pero ya existe aquí sin ser de serie es un tema propio con el mismo nombre: no se pisa
+        if ($old !== null) {
+            $oldThemes = [];
+            foreach (array_keys($old) as $rel) if (preg_match('#^themes/([a-z0-9_-]+)/#', (string) $rel, $tm)) $oldThemes[$tm[1]] = true;
+            foreach (array_keys($new) as $rel) {
+                if (preg_match('#^themes/([a-z0-9_-]+)/#', (string) $rel, $tm) && !isset($oldThemes[$tm[1]]) && is_dir(UW_ROOT . "/themes/{$tm[1]}")) $skipThemes[] = $tm[1];
+            }
+            $skipThemes = array_values(array_unique($skipThemes));
+        }
         // .htaccess que se han cambiado a mano (en cPanel ahí va la versión de PHP): se conservan y se avisa
         $keepFiles = [];
         foreach (['.htaccess', 'public/.htaccess', 'public/media/.htaccess'] as $hf) {
@@ -386,7 +395,7 @@ function update_finish_after_boot(array $p): void
     file_put_contents("$dir/last.json", json_enc(['id' => $p['id'], 'from' => $p['from'], 'to' => $p['to'], 'at' => date('c')]));
     uw_update_write_result(['ok' => true, 'from' => $p['from'], 'to' => $p['to'], 'auto' => !empty($p['auto']), 'skipped_themes' => $info['skipped_themes'] ?? [],
         'kept_files' => $info['kept_files'] ?? [],
-        'message' => "Universal Web se ha actualizado de la {$p['from']} a la {$p['to']}." . (!empty($info['skipped_themes']) ? ' No se han tocado estos temas porque los habías modificado: ' . implode(', ', $info['skipped_themes']) . '.' : '')
+        'message' => "Universal Web se ha actualizado de la {$p['from']} a la {$p['to']}." . (!empty($info['skipped_themes']) ? ' No se han tocado estos temas porque los habías modificado (o son tuyos con el mismo nombre que uno nuevo): ' . implode(', ', $info['skipped_themes']) . '.' : '')
             . (!empty($info['kept_files']) ? ' Se han conservado tus ' . implode(', ', $info['kept_files']) . ' porque los habías cambiado: compáralos con los de la versión nueva.' : '')]);
     Actor::set('system', null, 'actualización');
     audit(null, 'update.done', $p['from'] . ' → ' . $p['to'], ['auto' => !empty($p['auto'])]);
