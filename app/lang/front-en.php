@@ -94,4 +94,7 @@ return [
     'Ver transcripción' => 'Show transcript',
     'Versión en audio' => 'Audio version',
     'Vídeo' => 'Video',
+    'Redirigiendo…' => 'Redirecting…',
+    'Enlace de vista previa no válido o caducado. Pide uno nuevo.' => 'Invalid or expired preview link. Request a new one.',
+    'Vista previa de «{name}» (aún sin dominio)' => 'Preview of “{name}” (no domain yet)',
 ];

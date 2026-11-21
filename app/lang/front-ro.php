@@ -93,4 +93,7 @@ return [
     'Ver transcripción' => 'Vezi transcrierea',
     'Versión en audio' => 'Versiune audio',
     'Vídeo' => 'Video',
+    'Redirigiendo…' => 'Se redirecționează…',
+    'Enlace de vista previa no válido o caducado. Pide uno nuevo.' => 'Link de previzualizare invalid sau expirat. Solicită unul nou.',
+    'Vista previa de «{name}» (aún sin dominio)' => 'Previzualizare „{name}” (încă fără domeniu)',
 ];
