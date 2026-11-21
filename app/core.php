@@ -7,8 +7,8 @@ declare(strict_types=1);
  * Sin dependencias externas: funciona en PHP 8.1+ con pdo_sqlite y mbstring.
  */
 
-const UW_VERSION = '0.3.0';
-const UW_SCHEMA = 14;
+const UW_VERSION = '0.4.0';
+const UW_SCHEMA = 15;
 const UW_AUTHOR_URL = 'https://www.bionicadri.com';
 const UW_DEMO_URL = 'https://bionicadri.com/contacto.html#formulario';
 
@@ -243,6 +243,17 @@ function migrate(): void
     db()->exec("CREATE TABLE IF NOT EXISTS redirects (id INTEGER PRIMARY KEY, site_id INTEGER NOT NULL REFERENCES sites(id) ON DELETE CASCADE,
         lang TEXT NOT NULL DEFAULT '', from_path TEXT NOT NULL, to_path TEXT NOT NULL, hits INTEGER NOT NULL DEFAULT 0, created_at TEXT NOT NULL,
         UNIQUE (site_id, from_path))");
+    // v15 (0.4.0): ruta pública fijada a mano (migrar una web sin cambiar URLs) y fecha del último cambio REAL de contenido
+    // (dateModified, lastmod del sitemap e IndexNow; updated_at cambia en cada guardado aunque no cambie nada).
+    foreach (['pages', 'posts'] as $t) {
+        $cols = array_column(rows("PRAGMA table_info($t)"), 'name');
+        if (!in_array('path', $cols, true)) db()->exec("ALTER TABLE $t ADD COLUMN path TEXT NOT NULL DEFAULT ''");
+        if (!in_array('content_at', $cols, true)) {
+            db()->exec("ALTER TABLE $t ADD COLUMN content_at TEXT");
+            db()->exec("UPDATE $t SET content_at = updated_at WHERE content_at IS NULL");
+        }
+        db()->exec("CREATE INDEX IF NOT EXISTS {$t}_path ON $t (site_id, path)");
+    }
     q("INSERT OR REPLACE INTO meta (key, value) VALUES ('schema_version', ?)", [(string) UW_SCHEMA]);
 }
 

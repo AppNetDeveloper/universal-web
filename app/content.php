@@ -333,6 +333,9 @@ function site_defaults(): array
         'ai_crawlers' => 'allow_all',            // allow_all | search_only | block_all
         'ai_markdown' => true,                   // los agentes de IA reciben Markdown en vez de HTML (Google/Bing siempre HTML)
         'indexnow' => true,                      // avisa a Bing/Yandex (IndexNow) de cada página publicada o cambiada
+        'url_style' => 'clean',                  // clean = /servicios, /blog/x · html = /servicios.html, /blog/x.html, /blog.html (migrar webs estáticas)
+        'same_as' => [],                         // perfiles que confirman la identidad (Wikipedia, Wikidata, LinkedIn…) para el JSON-LD (sameAs)
+        'locales' => [],                         // og:locale por idioma si no vale el de fábrica: {"en": "en_US", "pt": "pt_BR"}
         'languages' => [],                       // idiomas adicionales (el principal es «language»): p. ej. ['en', 'ro']
         'i18n' => [],                            // textos traducidos por idioma: tagline, footer_text, menu, utility_menu, cta, seo.description
         'cookies' => [],                         // aviso de cookies y analítica con consentimiento (ver cookies_defaults())
@@ -638,11 +641,194 @@ final class SiteService
         return $lang === $this->defaultLang() ? '' : '/' . $lang;
     }
 
-    /** Ruta pública en un idioma: '/servicios' → '/en/servicios'; '/' → '/en'. */
+    /**
+     * Ruta pública en un idioma. Entiende rutas «lógicas» y las lleva a la dirección real de cada idioma:
+     * '/servicios' → '/en/servicios' (o '/en/services.html' si la página inglesa tiene la ruta fijada); '/blog' → el blog de ese
+     * idioma; '/' → '/en'. Si la página no existe en ese idioma, enlaza al destino de su redirección (si la hay) o a la versión
+     * del idioma principal: nunca a una dirección que da 404. Cualquier otra ruta solo recibe el prefijo del idioma.
+     */
     public function langPath(string $path, ?string $lang = null): string
     {
+        $lang ??= $this->lang;
         $prefix = $this->langPrefix($lang);
-        return $prefix === '' ? $path : ($path === '/' ? $prefix : $prefix . $path);
+        [$bare, $rest] = preg_match('/^([^?#]*)(.*)$/s', $path, $m) ? [$m[1], $m[2]] : [$path, ''];
+        $t = $bare !== '' ? $this->logicalTarget($bare) : null;
+        if ($t === null) return $prefix === '' ? $path : ($path === '/' ? $prefix : $prefix . $path);
+        [$kind, $slug] = $t;
+        if ($kind === 'blog') return $this->blogPath($lang) . $rest;
+        $idx = $this->routeIndex()[$kind];
+        if (isset($idx[$lang][$slug]) || ($kind === 'page' && $slug === 'index')) return $this->itemPath($kind, $slug, $lang) . $rest;
+        $eq = $this->equivalentPath($kind, $slug, $lang);
+        if (function_exists('redirect_find') && ($r = redirect_find($this->id(), $eq))) return $r['to_path'];
+        if (isset($idx[$this->defaultLang()][$slug])) return $this->itemPath($kind, $slug, $this->defaultLang()) . $rest;
+        return $eq . $rest;
+    }
+
+    /**
+     * Enlace escrito para un idioma (menú traducido): si apunta a una página de este idioma que tiene otra dirección
+     * (ruta fija, estilo .html) o que no existe en él, se lleva a la buena. Las rutas desconocidas se dejan tal cual.
+     */
+    public function linkInLang(string $url): string
+    {
+        if (!str_starts_with($url, '/') || str_starts_with($url, '//')) return $url;
+        [$bare, $rest] = preg_match('/^([^?#]*)(.*)$/s', $url, $m) ? [$m[1], $m[2]] : [$url, ''];
+        $hit = $this->resolvePath($bare);
+        if (!$hit) return $url;
+        if ($hit['kind'] === 'blog') return $this->blogPath($hit['lang']) . $rest;
+        $idx = $this->routeIndex()[$hit['kind']];
+        if (isset($idx[$hit['lang']][$hit['slug']]) || $hit['slug'] === 'index') return $this->itemPath($hit['kind'], $hit['slug'], $hit['lang']) . $rest;
+        $somewhere = array_filter($idx, fn($items) => isset($items[$hit['slug']]));
+        if (!$somewhere) return $url;
+        $from = array_key_first($somewhere);
+        return $this->langPath($this->itemPath($hit['kind'], $hit['slug'], isset($somewhere[$this->defaultLang()]) ? $this->defaultLang() : $from), $hit['lang']) . $rest;
+    }
+
+    /** Estilo de las direcciones automáticas: 'clean' (/servicios, /blog/x) o 'html' (/servicios.html, /blog/x.html, /blog.html). */
+    public function urlStyle(): string
+    {
+        return (json_dec($this->site['settings'])['url_style'] ?? 'clean') === 'html' ? 'html' : 'clean';
+    }
+
+    /** @var array<string, array<string, array<string, array{path: string, status: string}>>>|null [kind][lang][slug] */
+    private ?array $routes = null;
+
+    /** Rutas de todas las páginas y entradas de la web (una sola consulta por petición). */
+    private function routeIndex(): array
+    {
+        if ($this->routes === null) {
+            $this->routes = ['page' => [], 'post' => []];
+            $sql = "SELECT 'page' AS k, slug, lang, path, status FROM pages WHERE site_id = ? UNION ALL SELECT 'post' AS k, slug, lang, path, status FROM posts WHERE site_id = ?";
+            foreach (rows($sql, [$this->id(), $this->id()]) as $r) $this->routes[$r['k']][$r['lang']][$r['slug']] = ['path' => (string) $r['path'], 'status' => (string) $r['status']];
+        }
+        return $this->routes;
+    }
+
+    /** Olvida el índice de rutas (tras guardar o borrar). */
+    public function forgetRoutes(): void
+    {
+        $this->routes = null;
+    }
+
+    /** Dirección automática (sin fijar) de una página ('page'), entrada ('post') o del blog ('blog'). */
+    public function autoPath(string $kind, string $slug, ?string $lang = null): string
+    {
+        $pre = $this->langPrefix($lang);
+        $html = $this->urlStyle() === 'html';
+        return match (true) {
+            $kind === 'blog' => $pre . ($html ? '/blog.html' : '/blog'),
+            $kind === 'post' => $pre . '/blog/' . $slug . ($html ? '.html' : ''),
+            $slug === 'index' => $pre === '' ? '/' : $pre . ($html ? '/' : ''),
+            default => $pre . '/' . $slug . ($html ? '.html' : ''),
+        };
+    }
+
+    /** Dirección pública de una página o entrada: la fijada a mano o, si no, la automática. */
+    public function itemPath(string $kind, string $slug, ?string $lang = null, ?string $fixed = null): string
+    {
+        $lang ??= $this->lang;
+        $fixed ??= (string) ($this->routeIndex()[$kind][$lang][$slug]['path'] ?? '');
+        return $fixed !== '' && $slug !== 'index' ? $fixed : $this->autoPath($kind, $slug, $lang);
+    }
+
+    /** Copia en Markdown para agentes de IA: /md/servicios.md, /en/md/index.md, /md/blog-<entrada>.md, /md/blog.md. */
+    public function mdPath(string $kind, string $slug, ?string $lang = null): string
+    {
+        $name = match ($kind) { 'blog' => 'blog', 'post' => 'blog-' . $slug, default => $slug };
+        return $this->langPrefix($lang ?? $this->lang) . '/md/' . $name . '.md';
+    }
+
+    public function blogPath(?string $lang = null): string
+    {
+        return $this->autoPath('blog', '', $lang ?? $this->lang);
+    }
+
+    /**
+     * Dirección que tendría la página en un idioma en el que NO existe: la del idioma principal con el prefijo de ese idioma
+     * ('/precios.html' → '/ro/precios.html'). Es el origen de su redirección 301 configurable.
+     */
+    public function equivalentPath(string $kind, string $slug, string $lang): string
+    {
+        $def = $this->defaultLang();
+        if ($lang === $def || !isset($this->routeIndex()[$kind][$def][$slug])) return $this->autoPath($kind, $slug, $lang);
+        $base = $this->itemPath($kind, $slug, $def);
+        return '/' . $lang . ($base === '/' ? '/' : $base);
+    }
+
+    /** Página o entrada a la que se refiere una ruta escrita en el idioma principal ('/servicios', '/precios.html', '/blog/x'): [kind, slug] o null. */
+    public function logicalTarget(string $path): ?array
+    {
+        $p = $path === '/' ? '/' : rtrim($path, '/');
+        if ($p === '/' || $p === '' || $p === '/index.html') return ['page', 'index'];
+        if ($p === '/blog' || $p === '/blog.html') return ['blog', ''];
+        $idx = $this->routeIndex();
+        foreach (['page', 'post'] as $k) {
+            foreach ($idx[$k] as $l => $items) {
+                foreach ($items as $slug => $it) if ($it['path'] !== '' && $it['path'] === $p) return [$k, $slug];
+            }
+        }
+        if (preg_match('#^/blog/([a-z0-9-]+)(?:\.html)?$#', $p, $m)) return ['post', $m[1]];
+        if (preg_match('#^/([a-z0-9-]+)(?:\.html)?$#', $p, $m)) {
+            foreach ($idx['page'] as $items) if (isset($items[$m[1]])) return ['page', $m[1]];
+        }
+        return null;
+    }
+
+    /**
+     * Qué hay en una ruta pública completa (con prefijo de idioma): ['kind' => page|post|blog, 'slug', 'lang', 'fixed' => bool].
+     * Primero las rutas fijadas a mano, luego las automáticas en los dos estilos (con y sin .html). No comprueba si existe
+     * ni si está publicada: eso lo decide quien llama, que redirige a la dirección canónica si no coincide con la pedida.
+     */
+    public function resolvePath(string $full): ?array
+    {
+        $p = $full === '/' ? '/' : rtrim($full, '/');
+        foreach (['pages' => 'page', 'posts' => 'post'] as $t => $k) {
+            $r = $p !== '/' ? row("SELECT slug, lang FROM $t WHERE site_id = ? AND path = ? ORDER BY lang = ? DESC LIMIT 1", [$this->id(), $p, $this->defaultLang()]) : null;
+            if ($r && in_array($r['lang'], $this->langs(), true)) return ['kind' => $k, 'slug' => $r['slug'], 'lang' => $r['lang'], 'fixed' => true];
+        }
+        $lang = $this->defaultLang();
+        if (preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/.*)?$#', $p, $m) && $m[1] !== $lang && in_array($m[1], $this->langs(), true)) {
+            $lang = $m[1];
+            $p = ($m[2] ?? '') === '' ? '/' : (rtrim($m[2], '/') ?: '/');
+        }
+        $hit = fn(string $kind, string $slug) => ['kind' => $kind, 'slug' => $slug, 'lang' => $lang, 'fixed' => false];
+        if ($p === '/' || $p === '/index.html') return $hit('page', 'index');
+        if ($p === '/blog' || $p === '/blog.html') return $hit('blog', '');
+        if (preg_match('#^/blog/([a-z0-9-]+)(?:\.html)?$#', $p, $m)) return $hit('post', $m[1]);
+        if (preg_match('#^/([a-z0-9-]+)(?:\.html)?$#', $p, $m)) return $hit('page', $m[1]);
+        return null;
+    }
+
+    /**
+     * Valida una ruta fijada a mano. Devuelve la ruta limpia ('' = automática) o lanza UwError con el motivo.
+     * Reglas: empieza por /, sin .., sin espacios ni consultas; no pisa rutas del sistema; el prefijo coincide con el idioma
+     * (/en/... para inglés; ninguno de otro idioma en el principal); y no la usa ninguna otra página o entrada.
+     */
+    public function validatePath(string $kind, string $slug, string $lang, string $path, int $ownId = 0): string
+    {
+        $path = trim($path);
+        if ($path === '') return '';
+        if ($slug === 'index') throw new UwError('La portada no admite ruta fija: siempre es / (o /en/ en otros idiomas)');
+        if (!preg_match('#^(/[A-Za-z0-9._~-]+)+$#', $path) || str_contains($path, '..')) {
+            throw new UwError("Ruta no válida: «{$path}». Debe empezar por / y llevar solo letras, números, guiones, puntos y barras (p. ej. /precios.html o /guias/mudanza.html)");
+        }
+        if (preg_match('#\.(md|txt|xml|json|php\d?|phtml|js|css|ico|png|jpe?g|webp|gif|svg|pdf)$#i', $path)) throw new UwError("La ruta {$path} termina en una extensión reservada para archivos (usa .html o ninguna)");
+        $first = strtolower(explode('/', $path)[1]);
+        $plain = $lang !== $this->defaultLang() && $first === $lang ? (string) (explode('/', $path, 3)[2] ?? '') : ltrim($path, '/');
+        $plainFirst = strtolower(explode('/', $plain)[0]);
+        if (in_array($plainFirst, [...RESERVED_SLUGS, 'md', 'site-assets', '_uw', '_ver', '__acceso', 'llms.txt', 'llms-full.txt', 'index.html', 'blog.html'], true) && !($plainFirst === 'blog' && $kind === 'post')) {
+            throw new UwError("La ruta {$path} pisa una ruta del sistema (/{$plainFirst}). Elige otra");
+        }
+        if ($lang !== $this->defaultLang() && $first !== $lang) throw new UwError("Una página en «{$lang}» debe ir bajo /{$lang}/ (p. ej. /{$lang}{$path})");
+        if ($lang === $this->defaultLang() && in_array($first, $this->langs(), true) && $first !== $lang) throw new UwError("/{$first}/ es el prefijo del idioma «{$first}»: no se puede usar en una página en «{$lang}»");
+        $mine = $kind === 'post' ? 'posts' : 'pages';
+        foreach (['pages' => 'page', 'posts' => 'post'] as $t => $k) {
+            foreach (rows("SELECT id, slug, lang, path FROM $t WHERE site_id = ?", [$this->id()]) as $r) {
+                if ($t === $mine && (int) $r['id'] === $ownId) continue;
+                $other = $this->itemPath($k, $r['slug'], $r['lang'], (string) $r['path']);
+                if (rtrim($other, '/') === rtrim($path, '/')) throw new UwError("La ruta {$path} ya la usa " . ($k === 'post' ? 'la entrada' : 'la página') . " «{$r['slug']}» ({$r['lang']})");
+            }
+        }
+        return $path;
     }
 
     public function langUrl(string $path, ?string $lang = null): string
@@ -666,20 +852,26 @@ final class SiteService
     public function settings(): array
     {
         $s = $this->baseSettings();
-        if ($this->lang === $this->defaultLang()) return $s;
+        $local = fn(string $u) => str_starts_with($u, '/') && !str_starts_with($u, '//') ? $this->langPath($u) : $u;
+        if ($this->lang === $this->defaultLang()) {
+            // Enlaces internos a su dirección real (/contacto → /contacto.html si la web usa .html o la página tiene ruta fija)
+            foreach (['menu', 'utility_menu'] as $k) $s[$k] = array_map(fn($m) => ['label' => $m['label'], 'url' => $local($m['url'])], $s[$k]);
+            $s['cta']['url'] = $local($s['cta']['url']);
+            return $s;
+        }
         $tr = is_array($s['i18n'][$this->lang] ?? null) ? $s['i18n'][$this->lang] : [];
         foreach (['tagline', 'footer_text'] as $k) if (($tr[$k] ?? '') !== '') $s[$k] = (string) $tr[$k];
         if (($tr['seo']['description'] ?? '') !== '') $s['seo']['description'] = (string) $tr['seo']['description'];
         foreach (['menu', 'utility_menu'] as $k) {
             if (!empty($tr[$k]) && is_array($tr[$k])) {
-                $s[$k] = array_values(array_filter(array_map(fn($m) => ['label' => (string) ($m['label'] ?? ''), 'url' => clean_url($m['url'] ?? '')], array_filter($tr[$k], 'is_array')), fn($m) => $m['url'] !== ''));
+                $s[$k] = array_values(array_filter(array_map(fn($m) => ['label' => (string) ($m['label'] ?? ''), 'url' => $this->linkInLang(clean_url($m['url'] ?? ''))], array_filter($tr[$k], 'is_array')), fn($m) => $m['url'] !== ''));
             } else {
                 // Sin traducción: mismos enlaces llevados a este idioma (/contacto → /en/contacto).
-                $s[$k] = array_map(fn($m) => ['label' => $m['label'], 'url' => str_starts_with($m['url'], '/') && !str_starts_with($m['url'], '//') ? $this->langPath($m['url']) : $m['url']], $s[$k]);
+                $s[$k] = array_map(fn($m) => ['label' => $m['label'], 'url' => $local($m['url'])], $s[$k]);
             }
         }
-        if (!empty($tr['cta']['label'])) $s['cta'] = ['label' => (string) $tr['cta']['label'], 'url' => clean_url($tr['cta']['url'] ?? $s['cta']['url'])];
-        elseif (str_starts_with($s['cta']['url'], '/')) $s['cta']['url'] = $this->langPath($s['cta']['url']);
+        if (!empty($tr['cta']['label'])) $s['cta'] = ['label' => (string) $tr['cta']['label'], 'url' => $this->linkInLang(clean_url($tr['cta']['url'] ?? $s['cta']['url']))];
+        else $s['cta']['url'] = $local($s['cta']['url']);
         $s['language'] = $this->lang;
         return $s;
     }
@@ -736,6 +928,30 @@ final class SiteService
         if (array_key_exists('cookies', $patch)) $s['cookies'] = cookies_merge((array) $s['cookies'], $patch['cookies']);
         if (array_key_exists('ai_markdown', $patch)) $s['ai_markdown'] = filter_var($patch['ai_markdown'], FILTER_VALIDATE_BOOLEAN);
         if (array_key_exists('indexnow', $patch)) $s['indexnow'] = filter_var($patch['indexnow'], FILTER_VALIDATE_BOOLEAN);
+        if (array_key_exists('url_style', $patch)) {
+            if (!in_array($patch['url_style'], ['clean', 'html'], true)) throw new UwError("url_style debe ser 'clean' (/servicios) o 'html' (/servicios.html)");
+            $s['url_style'] = $patch['url_style'];
+        }
+        if (array_key_exists('same_as', $patch)) {
+            $list = is_string($patch['same_as']) ? preg_split('/[\s,]+/', $patch['same_as'], -1, PREG_SPLIT_NO_EMPTY) : $patch['same_as'];
+            if (!is_array($list)) throw new UwError('same_as debe ser una lista de URLs https://');
+            $s['same_as'] = [];
+            foreach (array_slice($list, 0, 30) as $u) {
+                $u = trim((string) $u);
+                if (!preg_match('#^https://[^/\s]+\.[^/\s]+#i', $u) || clean_url($u) !== $u || mb_strlen($u) > 500) throw new UwError("same_as: «{$u}» no es una URL https:// válida");
+                $s['same_as'][] = $u;
+            }
+            $s['same_as'] = array_values(array_unique($s['same_as']));
+        }
+        if (array_key_exists('locales', $patch)) {
+            if (!is_array($patch['locales'])) throw new UwError('locales debe ser un objeto {"en": "en_US"}');
+            $s['locales'] = [];
+            foreach ($patch['locales'] as $l => $loc) {
+                if ((string) $loc === '') continue;
+                if (!preg_match('/^[a-z]{2}(-[a-z]{2})?$/', (string) $l) || !preg_match('/^[a-z]{2}_[A-Z]{2}$/', (string) $loc)) throw new UwError("locales: «{$l}: {$loc}» no vale; usa {\"en\": \"en_US\"}");
+                $s['locales'][$l] = (string) $loc;
+            }
+        }
         if (array_key_exists('ai_crawlers', $patch)) {
             if (!in_array($patch['ai_crawlers'], ['allow_all', 'search_only', 'block_all'], true)) throw new UwError("ai_crawlers debe ser allow_all, search_only o block_all");
             $s['ai_crawlers'] = $patch['ai_crawlers'];
@@ -822,17 +1038,21 @@ final class SiteService
         if (!$p) return null;
         $p['blocks'] = json_dec($p['blocks']);
         $p['seo'] = sanitize_seo(json_dec($p['seo']));
-        $p['url'] = $this->langUrl($p['slug'] === 'index' ? '/' : '/' . $p['slug'], $p['lang']);
+        $p['public_path'] = $this->itemPath('page', $p['slug'], $p['lang'], (string) ($p['path'] ?? ''));
+        $p['url'] = $this->url($p['public_path']);
         return $p;
     }
 
     /** Páginas del idioma actual (o de todos con $allLangs). */
     public function pages(bool $publishedOnly = false, bool $allLangs = false): array
     {
-        $sql = 'SELECT id, slug, lang, title, status, updated_at FROM pages WHERE site_id = ?' . ($allLangs ? '' : ' AND lang = ?')
+        $sql = 'SELECT id, slug, lang, title, status, path, updated_at, content_at FROM pages WHERE site_id = ?' . ($allLangs ? '' : ' AND lang = ?')
             . ($publishedOnly ? " AND status = 'published'" : '') . " ORDER BY slug = 'index' DESC, title, lang";
         $params = $allLangs ? [$this->id()] : [$this->id(), $this->lang];
-        return array_map(fn($p) => $p + ['url' => $this->langUrl($p['slug'] === 'index' ? '/' : '/' . $p['slug'], $p['lang'])], rows($sql, $params));
+        return array_map(function ($p) {
+            $p['public_path'] = $this->itemPath('page', $p['slug'], $p['lang'], (string) $p['path']);
+            return $p + ['url' => $this->url($p['public_path'])];
+        }, rows($sql, $params));
     }
 
     public function page(string $slug, ?string $lang = null): ?array
@@ -870,27 +1090,36 @@ final class SiteService
         if ($dup) throw new UwError("Ya existe una página con el slug '$slug' en el idioma «{$lang}»");
         $status = (string) ($in['status'] ?? $cur['status'] ?? 'draft');
         if (!in_array($status, ['draft', 'published'], true)) throw new UwError("status debe ser 'draft' o 'published'");
+        $path = array_key_exists('path', $in) ? $this->validatePath('page', $slug, $lang, (string) $in['path'], (int) $id) : ($cur ? $this->validatePath('page', $slug, $lang, (string) $cur['path'], (int) $id) : '');
 
         $data = [
-            'slug' => $slug, 'lang' => $lang, 'title' => $title, 'status' => $status, 'updated_at' => now(),
+            'slug' => $slug, 'lang' => $lang, 'title' => $title, 'status' => $status, 'path' => $path, 'updated_at' => now(),
             'blocks' => json_enc(array_key_exists('blocks', $in) ? sanitize_blocks($in['blocks']) : ($cur['blocks'] ?? [])),
             'seo' => json_enc(sanitize_seo($in['seo'] ?? [], $cur['seo'] ?? [])),
         ];
+        $changed = true;
         if ($cur) {
             // Historial: se guarda la versión anterior si cambia algo de verdad (no solo la fecha)
             $raw = row('SELECT * FROM pages WHERE id = ?', [$id]);
-            if (array_diff_assoc(array_diff_key($data, ['updated_at' => 1]), array_intersect_key($raw, $data))) history_snapshot($this->id(), 'page', $raw);
+            $diff = array_diff_assoc(array_map('strval', array_diff_key($data, ['updated_at' => 1])), array_map('strval', array_intersect_key($raw, $data)));
+            if ($diff) history_snapshot($this->id(), 'page', $raw);
+            // Fecha de contenido (dateModified, sitemap, IndexNow): solo si cambia el contenido o pasa a publicada
+            $changed = (bool) array_diff_key($diff, ['status' => 1]) || ($raw['status'] !== 'published' && $status === 'published');
+            if ($changed) $data['content_at'] = now();
             update('pages', $data, 'id = ? AND site_id = ?', [$id, $this->id()]);
         } else {
-            $id = insert('pages', $data + ['site_id' => $this->id(), 'created_at' => now()]);
+            $id = insert('pages', $data + ['site_id' => $this->id(), 'created_at' => now(), 'content_at' => now()]);
         }
+        $this->forgetRoutes();
         $this->lastRedirect = null;
-        $newPath = $this->langPath($slug === 'index' ? '/' : "/$slug", $lang);
+        $newPath = $this->itemPath('page', $slug, $lang, $path);
         if ($status === 'published') redirect_drop($this->id(), $newPath); // una página viva tapa cualquier redirección desde su ruta
-        if ($cur && $cur['status'] === 'published' && $status === 'published' && $cur['slug'] !== $slug && $cur['slug'] !== 'index' && $slug !== 'index')
-            $this->lastRedirect = redirect_add($this->id(), $cur['lang'], $this->langPath('/' . $cur['slug'], $cur['lang']), $newPath);
+        $oldPath = $cur ? (string) $cur['public_path'] : '';
+        if ($cur && $cur['status'] === 'published' && $status === 'published' && rtrim($oldPath, '/') !== rtrim($newPath, '/') && $cur['slug'] !== 'index' && $slug !== 'index')
+            $this->lastRedirect = redirect_add($this->id(), $cur['lang'], $oldPath, $newPath);
         audit($this->id(), $cur ? 'page.update' : 'page.create', $lang === $this->defaultLang() ? $slug : "$lang/$slug", ['status' => $status]);
-        if ($status === 'published') indexnow_queue($this, $this->langPath($slug === 'index' ? '/' : "/$slug", $lang));
+        if ($status === 'published' && $changed) indexnow_queue($this, $newPath);
+        if ($cur && $cur['status'] === 'published' && $status !== 'published') indexnow_queue($this, $oldPath); // despublicada: que la retiren
         return $this->pageById($id);
     }
 
@@ -899,7 +1128,9 @@ final class SiteService
         $p = $this->pageById($id) ?? throw new UwError('Página no encontrada');
         trash_put($this->id(), 'page', row('SELECT * FROM pages WHERE id = ?', [$id]));
         q('DELETE FROM pages WHERE id = ? AND site_id = ?', [$id, $this->id()]);
+        $this->forgetRoutes();
         audit($this->id(), 'page.delete', $p['slug']);
+        if ($p['status'] === 'published') indexnow_queue($this, $p['public_path']);
     }
 
     // ------------------------------------------------ entradas del blog
@@ -910,7 +1141,8 @@ final class SiteService
         $p['tags'] = json_dec($p['tags']);
         $p['cover_image'] = clean_url($p['cover_image']);
         $p['seo'] = sanitize_seo(json_dec($p['seo']));
-        $p['url'] = $this->langUrl('/blog/' . $p['slug'], $p['lang']);
+        $p['public_path'] = $this->itemPath('post', $p['slug'], $p['lang'], (string) ($p['path'] ?? ''));
+        $p['url'] = $this->url($p['public_path']);
         $p['state'] = $p['status'] === 'published' ? ($p['published_at'] > now() ? 'scheduled' : 'published') : 'draft';
         return $p;
     }
@@ -985,8 +1217,9 @@ final class SiteService
         $publishedAt = array_key_exists('published_at', $in) ? normalize_datetime((string) $in['published_at']) : ($cur['published_at'] ?? null);
         if ($status === 'published' && !$publishedAt) $publishedAt = now();
 
+        $path = array_key_exists('path', $in) ? $this->validatePath('post', $slug, $lang, (string) $in['path'], (int) $id) : ($cur ? $this->validatePath('post', $slug, $lang, (string) $cur['path'], (int) $id) : '');
         $data = [
-            'slug' => $slug, 'lang' => $lang, 'title' => $title, 'status' => $status, 'published_at' => $publishedAt, 'updated_at' => now(),
+            'slug' => $slug, 'lang' => $lang, 'title' => $title, 'status' => $status, 'path' => $path, 'published_at' => $publishedAt, 'updated_at' => now(),
             'excerpt' => trim((string) ($in['excerpt'] ?? $cur['excerpt'] ?? '')),
             'content' => (string) ($in['content'] ?? $cur['content'] ?? ''),
             'cover_image' => clean_url(trim((string) ($in['cover_image'] ?? $cur['cover_image'] ?? ''))),
@@ -995,20 +1228,27 @@ final class SiteService
             'tags' => json_enc($tags),
             'seo' => json_enc(sanitize_seo($in['seo'] ?? [], $cur['seo'] ?? [])),
         ];
+        $changed = true;
         if ($cur) {
             $raw = row('SELECT * FROM posts WHERE id = ?', [$id]);
-            if (array_diff_assoc(array_map('strval', array_diff_key($data, ['updated_at' => 1])), array_map('strval', array_intersect_key($raw, $data)))) history_snapshot($this->id(), 'post', $raw);
+            $diff = array_diff_assoc(array_map('strval', array_diff_key($data, ['updated_at' => 1])), array_map('strval', array_intersect_key($raw, $data)));
+            if ($diff) history_snapshot($this->id(), 'post', $raw);
+            $changed = (bool) array_diff_key($diff, ['status' => 1, 'published_at' => 1]) || ($raw['status'] !== 'published' && $status === 'published');
+            if ($changed) $data['content_at'] = now();
             update('posts', $data, 'id = ? AND site_id = ?', [$id, $this->id()]);
         } else {
-            $id = insert('posts', $data + ['site_id' => $this->id(), 'created_at' => now()]);
+            $id = insert('posts', $data + ['site_id' => $this->id(), 'created_at' => now(), 'content_at' => now()]);
         }
+        $this->forgetRoutes();
         $this->lastRedirect = null;
-        $newPath = $this->langPath("/blog/$slug", $lang);
+        $newPath = $this->itemPath('post', $slug, $lang, $path);
         if ($status === 'published') redirect_drop($this->id(), $newPath);
-        if ($cur && $cur['status'] === 'published' && $status === 'published' && $cur['slug'] !== $slug)
-            $this->lastRedirect = redirect_add($this->id(), $cur['lang'], $this->langPath('/blog/' . $cur['slug'], $cur['lang']), $newPath);
+        $oldPath = $cur ? (string) $cur['public_path'] : '';
+        if ($cur && $cur['status'] === 'published' && $status === 'published' && rtrim($oldPath, '/') !== rtrim($newPath, '/'))
+            $this->lastRedirect = redirect_add($this->id(), $cur['lang'], $oldPath, $newPath);
         audit($this->id(), $cur ? 'post.update' : 'post.create', $slug, ['status' => $status]);
-        if ($status === 'published') indexnow_queue($this, $this->langPath("/blog/$slug", $lang));
+        if ($status === 'published' && $changed) indexnow_queue($this, $newPath);
+        if ($cur && $cur['status'] === 'published' && $status !== 'published') indexnow_queue($this, $oldPath);
         return $this->postById($id);
     }
 
@@ -1017,7 +1257,9 @@ final class SiteService
         $p = $this->postById($id) ?? throw new UwError('Entrada no encontrada');
         trash_put($this->id(), 'post', row('SELECT * FROM posts WHERE id = ?', [$id]));
         q('DELETE FROM posts WHERE id = ? AND site_id = ?', [$id, $this->id()]);
+        $this->forgetRoutes();
         audit($this->id(), 'post.delete', $p['slug']);
+        if ($p['status'] === 'published') indexnow_queue($this, $p['public_path']);
     }
 
     // ------------------------------------------------ media
@@ -1181,7 +1423,7 @@ final class SiteService
         $multi = count($this->langs()) > 1;
         foreach ($this->pages(true, true) as $meta) {
             $p = $this->page($meta['slug'], $meta['lang']);
-            $where = 'Página ' . $this->langPath($p['slug'] === 'index' ? '/' : '/' . $p['slug'], $p['lang']);
+            $where = 'Página ' . $p['public_path'];
             if ($p['seo']['noindex']) { $add('notice', $where, 'Marcada como noindex: no aparecerá en Google'); continue; }
             $title = $p['seo']['title'] ?: $p['title'];
             $titles[$p['lang'] . '|' . mb_strtolower($title)][] = $where;
@@ -1215,11 +1457,9 @@ final class SiteService
             $links = array_merge(array_column($st['menu'], 'url'), array_column($st['utility_menu'], 'url'), [$st['cta']['url']]);
             foreach (array_unique(array_filter($links, fn($u) => is_string($u) && str_starts_with($u, '/') && !str_starts_with($u, '//'))) as $u) {
                 $path = (string) parse_url($u, PHP_URL_PATH);
-                $pre = $this->langPrefix($l);
-                if ($pre !== '' && ($path === $pre || str_starts_with($path, $pre . '/'))) $path = substr($path, strlen($pre)) ?: '/';
-                $slug = trim($path, '/');
-                if ($slug === '' || $slug === 'blog' || $slug === 'cookies' || str_starts_with($slug, 'blog/') || !preg_match('/^[a-z0-9-]+$/', $slug)) continue;
-                $pg = $this->page($slug, $l);
+                $hit = $this->resolvePath($path);
+                if (!$hit || $hit['kind'] !== 'page' || $hit['slug'] === 'cookies' || redirect_find($this->id(), $path)) continue;
+                $pg = $this->page($hit['slug'], $hit['lang']);
                 if (!$pg || $pg['status'] !== 'published') {
                     $add('warning', 'Menú (' . $l . ')', "El enlace $u lleva a una página que no existe o no está publicada en «{$l}»: tradúcela/publícala o quítala del menú de ese idioma (site_update translations)");
                 }
@@ -1231,11 +1471,13 @@ final class SiteService
             $bySlug = [];
             foreach ($this->pages(true, true) as $m) $bySlug[$m['slug']][] = $m['lang'];
             foreach ($bySlug as $slug => $have) foreach (array_diff($this->langs(), $have) as $missing) {
-                $add('notice', "Página /$slug", "Sin versión en «{$missing}»");
+                // Página que a propósito solo existe en algunos idiomas: con su 301 configurada no es un fallo.
+                if (redirect_find($this->id(), $this->equivalentPath('page', $slug, $missing))) continue;
+                $add('notice', "Página /$slug", "Sin versión en «{$missing}» (tradúcela o, si no tiene sentido en ese idioma, configura su redirección con page_languages)");
             }
         }
         foreach ($this->posts(['public' => true, 'limit' => 100, 'all_langs' => true]) as $p) {
-            $where = 'Entrada /blog/' . $p['slug'];
+            $where = 'Entrada ' . $p['public_path'];
             if ($p['seo']['noindex']) continue;
             $title = $p['seo']['title'] ?: $p['title'];
             $titles[$p['lang'] . '|' . mb_strtolower($title)][] = $where;
@@ -1564,13 +1806,13 @@ function redirect_add(int $siteId, string $lang, string $from, string $to): ?arr
 /** ¿Hay una página o entrada publicada en esta ruta pública (con prefijo de idioma)? */
 function redirect_page_exists(SiteService $svc, string $p): bool
 {
-    $lang = $svc->defaultLang();
-    if (preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/.*)?$#', $p, $m) && $m[1] !== $lang && in_array($m[1], $svc->langs(), true)) { $lang = $m[1]; $p = ($m[2] ?? '') ?: '/'; }
-    $p = rtrim($p, '/') ?: '/';
-    if ($p === '/blog') return true;
-    if (preg_match('#^/blog/([a-z0-9-]+)$#', $p, $m)) return (bool) val("SELECT 1 FROM posts WHERE site_id = ? AND lang = ? AND slug = ? AND status = 'published'", [$svc->id(), $lang, $m[1]]);
-    if ($p === '/' || preg_match('#^/([a-z0-9-]+)$#', $p, $m)) return (bool) val("SELECT 1 FROM pages WHERE site_id = ? AND lang = ? AND slug = ? AND status = 'published'", [$svc->id(), $lang, $p === '/' ? 'index' : $m[1]]);
-    return false;
+    $hit = $svc->resolvePath($p);
+    if (!$hit) return false;
+    if ($hit['kind'] === 'blog') return rtrim($svc->blogPath($hit['lang']), '/') === rtrim($p, '/');
+    $row = row('SELECT status, path FROM ' . ($hit['kind'] === 'post' ? 'posts' : 'pages') . ' WHERE site_id = ? AND lang = ? AND slug = ?', [$svc->id(), $hit['lang'], $hit['slug']]);
+    if (!$row || $row['status'] !== 'published') return false;
+    // Solo cuenta si ESTA es su dirección canónica: la automática de una página con ruta fija redirige, no la tapa.
+    return rtrim($svc->itemPath($hit['kind'], $hit['slug'], $hit['lang'], (string) $row['path']), '/') === (rtrim($p, '/') ?: '/');
 }
 
 /** Alta manual (MCP o panel) con todas las validaciones. Devuelve ['from','to','warning'?]. */

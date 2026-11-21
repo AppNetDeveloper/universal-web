@@ -66,15 +66,32 @@ function __(string $es, array $vars = []): string
 const LANG_NAMES = ['es' => 'Español', 'en' => 'English', 'ro' => 'Română', 'fr' => 'Français', 'de' => 'Deutsch', 'it' => 'Italiano',
     'pt' => 'Português', 'ca' => 'Català', 'eu' => 'Euskara', 'gl' => 'Galego', 'nl' => 'Nederlands', 'pl' => 'Polski', 'uk' => 'Українська', 'ru' => 'Русский', 'ar' => 'العربية', 'zh' => '中文'];
 
-/** Enlaces del selector de idioma para la página actual: [código, nombre, url, activo]. */
-function lang_switcher(SiteService $svc, string $path): array
+/**
+ * Enlaces del selector de idioma: [código, nombre, url, activo]. Solo los idiomas en los que EXISTE esta página
+ * ($alternates: idioma → ruta pública). Sin $alternates (404, páginas del sistema) se ofrecen las portadas.
+ */
+function lang_switcher(SiteService $svc, ?array $alternates): array
 {
     $langs = $svc->liveLangs();
     if (count($langs) < 2) return [];
-    $plain = $svc->lang === $svc->defaultLang() ? $path : (substr($path, strlen($svc->langPrefix())) ?: '/');
-    $alts = $GLOBALS['uw_alternates'] ?? null;
-    // En páginas y entradas, solo se enlaza la traducción si existe; si no, la portada de ese idioma.
-    return array_map(fn($l) => [$l, LANG_NAMES[$l] ?? strtoupper($l), $alts !== null ? ($alts[$l] ?? $svc->langPath('/', $l)) : $svc->langPath($plain, $l), $l === $svc->lang], $langs);
+    if ($alternates !== null) {
+        $langs = array_values(array_filter($langs, fn($l) => isset($alternates[$l])));
+        if (count($langs) < 2) return [];
+    }
+    return array_map(fn($l) => [$l, LANG_NAMES[$l] ?? strtoupper($l), $alternates[$l] ?? $svc->langPath('/', $l), $l === $svc->lang], $langs);
+}
+
+/** Región por defecto de cada idioma para og:locale e inLanguage (se cambia por web con el ajuste «locales»). */
+const LANG_REGIONS = ['es' => 'es_ES', 'en' => 'en_GB', 'ro' => 'ro_RO', 'fr' => 'fr_FR', 'de' => 'de_DE', 'it' => 'it_IT', 'pt' => 'pt_PT',
+    'ca' => 'ca_ES', 'eu' => 'eu_ES', 'gl' => 'gl_ES', 'nl' => 'nl_NL', 'pl' => 'pl_PL', 'uk' => 'uk_UA', 'ru' => 'ru_RU', 'ar' => 'ar_AR', 'zh' => 'zh_CN'];
+
+/** og:locale de un idioma (es → es_ES); la web puede fijar el suyo (p. ej. en → en_US). */
+function og_locale(SiteService $svc, string $lang): string
+{
+    $map = (array) ($svc->baseSettings()['locales'] ?? []);
+    if (is_string($map[$lang] ?? null) && preg_match('/^[a-z]{2}_[A-Z]{2}$/', $map[$lang])) return $map[$lang];
+    if (preg_match('/^([a-z]{2})-([a-z]{2})$/', $lang, $m)) return $m[1] . '_' . strtoupper($m[2]);
+    return LANG_REGIONS[$lang] ?? $lang;
 }
 
 // ---------------------------------------------------------------- iconos (SVG propios, trazo 24x24)
@@ -208,38 +225,59 @@ function abs_url(SiteService $svc, string $url): string
     return $svc->url(str_starts_with($url, '/') ? $url : "/$url");
 }
 
-/** Renderiza una plantilla del tema dentro de su layout. */
+/** Renderiza una plantilla del tema dentro de su layout. $seo['path'] es la ruta PÚBLICA de la página (con su idioma). */
 function render_view(SiteService $svc, string $template, array $vars, array $seo, int $status = 200): void
 {
     $settings = $svc->settings();
-    $base = ['svc' => $svc, 'site' => $svc->site, 's' => $settings, 'path' => $svc->langPath($seo['path'] ?? '/'), 'langs' => lang_switcher($svc, $svc->langPath($seo['path'] ?? '/'))];
+    $seo['path'] ??= $svc->langPath('/');
+    $base = ['svc' => $svc, 'site' => $svc->site, 's' => $settings, 'path' => $seo['path'], 'langs' => lang_switcher($svc, $seo['alternates'] ?? null)];
     $content = render_template(theme_file($svc->site['theme'], $template), $vars + $base);
     // Plantilla HTML propia de la web (si está activa o en vista previa firmada); si no, el layout del tema.
     $html = ($tpl = tpl_active($svc))
         ? tpl_render_page($svc, $tpl, $content, seo_head($svc, $seo), $base['path'], $base['langs'])
         : render_template(theme_file($svc->site['theme'], 'layout.php'), $base + ['content' => $content, 'head' => seo_head($svc, $seo)]);
+    $html = links_skip_redirects($svc, $html);
     if (!empty($GLOBALS['uw_tpl_preview']) && !tpl_get($svc->id())['enabled']) {
         $html = (string) preg_replace('#</body>#i', '<div style="position:fixed;z-index:10000;top:0;left:50%;transform:translateX(-50%);background:#111827;color:#fff;font:600 13px/1 system-ui,sans-serif;padding:9px 14px;border-radius:0 0 10px 10px">'
             . e(__('Vista previa de la plantilla HTML (aún no activa)')) . ' · <a href="?_tpl=" style="color:#93c5fd">' . e(__('Salir')) . '</a></div></body>', $html, 1);
         out_header('Cache-Control: private, no-store');
         out_header('X-Robots-Tag: noindex');
+        PageCache::skip();
     }
     if (!empty($GLOBALS['uw_site_preview'])) {
         // Web en vista previa sin dominio: aviso visible, sin caché ni indexación.
         $html = (string) preg_replace('#</body>#i', site_preview_bar($svc->site) . '</body>', $html, 1);
         out_header('Cache-Control: private, no-store');
         out_header('X-Robots-Tag: noindex');
+        PageCache::skip();
     }
     if (!empty($GLOBALS['uw_theme_preview'])) {
         // Vista previa de un tema: solo para quien tiene sesión, sin caché ni indexación.
         $html = str_replace('</body>', theme_preview_bar($GLOBALS['uw_theme_preview']) . '</body>', $html);
         out_header('Cache-Control: private, no-store');
         out_header('X-Robots-Tag: noindex');
+        PageCache::skip();
     }
     out_status($status);
     out_header('Content-Type: text/html; charset=utf-8');
     if ($settings['ai_markdown']) out_header('Vary: Accept, User-Agent'); // la misma URL puede servirse en Markdown a agentes de IA
+    else out_header('Vary: Accept');
     echo $html;
+}
+
+/**
+ * Enlaces internos que apuntan a una dirección con redirección 301 → directos a su destino (Google y los rastreadores
+ * marcan los enlaces a redirecciones). Afecta a menús, botones y textos; nunca a enlaces externos.
+ */
+function links_skip_redirects(SiteService $svc, string $html): string
+{
+    static $maps = [];
+    $map = $maps[$svc->id()] ??= array_column(rows('SELECT from_path, to_path FROM redirects WHERE site_id = ?', [$svc->id()]), 'to_path', 'from_path');
+    if (!$map) return $html;
+    return (string) preg_replace_callback('/(<a\b[^>]*?\shref=")(\/(?!\/)[^"#?]*)([^"]*")/i', function ($m) use ($map) {
+        $to = $map[rtrim(html_entity_decode($m[2]), '/') ?: '/'] ?? null;
+        return $to === null ? $m[0] : $m[1] . e($to) . $m[3];
+    }, $html);
 }
 
 function seo_head(SiteService $svc, array $o): string
@@ -252,28 +290,27 @@ function seo_head(SiteService $svc, array $o): string
         : ($title === '' ? $name : (mb_stripos($title, $name) !== false ? $title : "$title | $name"));
     $desc = str_limit(trim(preg_replace('/\s+/', ' ', strip_tags((string) ($o['description'] ?? '') ?: $s['seo']['description']))), 170);
     $image = abs_url($svc, (string) (($o['image'] ?? '') ?: $s['seo']['image']));
-    $url = $svc->langUrl($o['path'] ?? '/');
+    $url = $svc->url($o['path'] ?? $svc->langPath('/'));
+    $alts = (array) ($o['alternates'] ?? []);
 
     $h = '<title>' . e($full) . "</title>\n";
     if ($desc !== '') $h .= '<meta name="description" content="' . e($desc) . "\">\n";
     $h .= '<link rel="canonical" href="' . e($url) . "\">\n";
     if (!empty($o['noindex'])) $h .= "<meta name=\"robots\" content=\"noindex\">\n";
-    $og = ['og:type' => $o['type'] ?? 'website', 'og:title' => $full, 'og:description' => $desc, 'og:url' => $url, 'og:site_name' => $name, 'og:locale' => $s['language'], 'og:image' => $image];
+    $og = ['og:type' => $o['type'] ?? 'website', 'og:title' => $full, 'og:description' => $desc, 'og:url' => $url, 'og:site_name' => $name, 'og:locale' => og_locale($svc, $svc->lang), 'og:image' => $image];
     foreach ($og as $k => $v) if ($v !== '') $h .= '<meta property="' . $k . '" content="' . e($v) . "\">\n";
+    foreach (array_keys($alts) as $l) if ($l !== $svc->lang) $h .= '<meta property="og:locale:alternate" content="' . e(og_locale($svc, $l)) . "\">\n";
     $h .= '<meta name="twitter:card" content="' . ($image ? 'summary_large_image' : 'summary') . "\">\n";
-    $h .= '<link rel="alternate" type="application/rss+xml" title="' . e($name) . '" href="' . e($svc->url('/feed.xml')) . "\">\n";
-
-    // Datos estructurados (GEO): organización, WebSite, artículo, FAQPage y migas de pan en un solo grafo.
-    $p = $o['path'] ?? '/';
-    if (empty($o['noindex']) && ($p === '/' || preg_match('#^/(blog/)?[a-z0-9-]+$#', $p))) {
-        $h .= '<link rel="alternate" type="text/markdown" title="Versión Markdown" href="' . e($svc->langUrl($p === '/' ? '/index.md' : "$p.md")) . "\">\n";
+    $h .= '<link rel="alternate" type="application/rss+xml" title="' . e($name) . '" href="' . e($svc->url($svc->langPath('/feed.xml'))) . "\">\n";
+    // Copia en Markdown para agentes de IA (/md/<página>.md)
+    if (empty($o['noindex']) && !empty($o['md'])) $h .= '<link rel="alternate" type="text/markdown" title="Markdown" href="' . e($svc->url($o['md'])) . "\">\n";
+    // hreflang: solo los idiomas en los que existe esta página, más x-default (el idioma principal)
+    if (empty($o['noindex']) && count($alts) > 1) {
+        foreach ($alts as $l => $u) $h .= '<link rel="alternate" hreflang="' . e($l) . '" href="' . e($svc->url($u)) . "\">\n";
+        if (isset($alts[$svc->defaultLang()])) $h .= '<link rel="alternate" hreflang="x-default" href="' . e($svc->url($alts[$svc->defaultLang()])) . "\">\n";
     }
-    // hreflang: versiones de esta página en otros idiomas (Google y las IAs eligen la correcta)
-    if (!empty($o['alternates']) && count($o['alternates']) > 1) {
-        foreach ($o['alternates'] as $l => $u) $h .= '<link rel="alternate" hreflang="' . e($l) . '" href="' . e($svc->url($u)) . "\">\n";
-        if (isset($o['alternates'][$svc->defaultLang()])) $h .= '<link rel="alternate" hreflang="x-default" href="' . e($svc->url($o['alternates'][$svc->defaultLang()])) . "\">\n";
-    }
-    $h .= '<script type="application/ld+json">' . str_replace('</', '<\/', json_enc(geo_jsonld($svc, $o))) . "</script>\n";
+    // Datos estructurados (GEO): organización, WebSite, WebPage, artículo, FAQPage y migas de pan en un solo grafo.
+    $h .= '<script type="application/ld+json">' . str_replace('</', '<\/', json_enc(geo_jsonld($svc, $o + ['url' => $url, 'full_title' => $full, 'desc' => $desc, 'image_abs' => $image]))) . "</script>\n";
     return $h;
 }
 
@@ -338,26 +375,32 @@ function private_page(SiteService $svc, string $back, string $error): void
 function front_handle(SiteService $svc, string $path, string $method): void
 {
     $GLOBALS['uw_orig_path'] = $path; // ruta pública completa (con prefijo de idioma) para las redirecciones 301
+    $full = $path;
     // /en/..., /ro/...: idiomas adicionales de la web (el principal va sin prefijo)
     if (preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/.*)?$#', $path, $m) && $m[1] !== $svc->defaultLang() && in_array($m[1], $svc->langs(), true)) {
         $svc->setLang($m[1]);
-        $path = ($m[2] ?? '') === '' ? '/' : $m[2];
+        $path = ($m[2] ?? '') === '' ? '/' : (rtrim($m[2], '/') ?: '/');
     }
     FrontLang::$code = $svc->lang;
     $GLOBALS['uw_theme_preview'] = theme_preview_apply($svc);
     if (private_gate($svc, $path, $method)) return;
     if ($path === '/sitemap.xml') { sitemap_xml($svc); return; }
-    // Versión Markdown para agentes de IA: /pagina.md, o la misma URL con «Accept: text/markdown» o desde un bot de IA.
-    if (str_ends_with($path, '.md') && preg_match('#^/(blog/)?[a-z0-9-]+\.md$#', $path)) {
-        $md = geo_markdown_for($svc, $path === '/index.md' ? '/' : substr($path, 0, -3));
+    // Versión Markdown para agentes de IA: /md/<página>.md, /<ruta>.md, o la misma URL con «Accept: text/markdown» o desde un bot de IA.
+    if (str_ends_with($path, '.md')) {
+        $hit = geo_md_route($svc, $path, $full);
+        $md = $hit ? geo_markdown_hit($svc, $hit) : null;
         if ($md === null) { not_found($svc); return; }
         geo_serve_markdown($md);
         return;
     }
-    if ($method === 'GET' && !Out::$capture && geo_wants_markdown($svc) && ($md = geo_markdown_for($svc, $path)) !== null) { geo_serve_markdown($md); return; }
+    if (in_array($method, ['GET', 'HEAD'], true) && !Out::$capture && geo_wants_markdown($svc) && ($hit = $svc->resolvePath($full)) && ($md = geo_markdown_hit($svc, $hit)) !== null) {
+        geo_serve_markdown($md, true);
+        return;
+    }
     if ($path === '/robots.txt') { out_header('Content-Type: text/plain; charset=utf-8'); echo geo_robots_txt($svc); return; }
     if ($path === '/llms.txt' || $path === '/llms-full.txt') {
         out_header('Content-Type: text/markdown; charset=utf-8');
+        out_header('X-Robots-Tag: noindex');
         echo $path === '/llms.txt' ? geo_llms_txt($svc) : geo_llms_full($svc);
         return;
     }
@@ -365,64 +408,83 @@ function front_handle(SiteService $svc, string $path, string $method): void
     if ($path === '/' . indexnow_key($svc) . '.txt') { out_header('Content-Type: text/plain; charset=utf-8'); echo indexnow_key($svc); return; }
 
     $preview = isset($_GET['preview']) && can_preview($svc);
+    $hit = $svc->resolvePath($full);
+    if (!$hit) { not_found($svc); return; }
+    $svc->setLang($hit['lang']);
+    FrontLang::$code = $svc->lang;
+    // Dirección canónica: si se pidió por otra (sin .html, la automática de una página con ruta fija…), 301 a la buena.
+    $canonical = function (string $want) use ($full): bool {
+        if (rtrim($want, '/') === rtrim($full, '/')) return false;
+        $qs = (string) ($_SERVER['QUERY_STRING'] ?? '');
+        out_header('Location: ' . $want . ($qs !== '' ? "?$qs" : ''), true, 301);
+        return true;
+    };
 
-    if ($path === '/blog') {
+    if ($hit['kind'] === 'blog') {
+        if ($canonical($svc->blogPath())) return;
         $tag = isset($_GET['tag']) ? (string) $_GET['tag'] : null;
         $per = Out::$capture ? 1000 : 9;
         $page = max(1, (int) ($_GET['p'] ?? 1));
         $o = ['public' => true, 'tag' => $tag];
         $total = $svc->countPosts($o);
         $posts = $svc->posts($o + ['limit' => $per, 'offset' => ($page - 1) * $per]);
+        $alts = [];
+        foreach ($svc->liveLangs() as $l) if ($l === $svc->defaultLang() || $svc->countPosts(['public' => true, 'lang' => $l]) > 0) $alts[$l] = $svc->blogPath($l);
         render_view($svc, 'blog.php', ['posts' => $posts, 'tag' => $tag, 'page' => $page, 'pages' => (int) ceil($total / $per)], [
-            'title' => $tag ? "Blog: $tag" : 'Blog', 'path' => '/blog', 'description' => $svc->settings()['seo']['description'],
+            'title' => $tag ? "Blog: $tag" : 'Blog', 'path' => $svc->blogPath(), 'description' => $svc->settings()['seo']['description'],
+            'alternates' => $tag ? null : $alts, 'md' => $svc->mdPath('blog', ''), 'webpage' => 'CollectionPage',
+            'breadcrumb' => [[__('Inicio'), $svc->langPath('/')], ['Blog', $svc->blogPath()]],
         ]);
         return;
     }
 
-    if (preg_match('#^/blog/([a-z0-9-]+)$#', $path, $m)) {
-        $post = $svc->post($m[1]);
+    if ($hit['kind'] === 'post') {
+        $post = $svc->post($hit['slug']);
         if (!$post || (!$preview && $post['state'] !== 'published')) { not_found($svc); return; }
+        if ($canonical($post['public_path'])) return;
+        $alts = [];
+        $tr = $svc->translations('posts', $post['slug']);
+        foreach ($svc->liveLangs() as $l) {
+            if (!isset($tr[$l])) continue;
+            $tp = $l === $post['lang'] ? $post : $svc->post($post['slug'], $l);
+            if ($tp && $tp['state'] === 'published') $alts[$l] = $tp['public_path'];
+        }
         render_view($svc, 'post.php', ['post' => $post], [
-            'breadcrumb' => [[__('Inicio'), $svc->langPath('/')], ['Blog', $svc->langPath('/blog')], [$post['title'], $svc->langPath("/blog/{$post['slug']}")]],
-            'alternates' => $GLOBALS['uw_alternates'] = (function () use ($svc, $post) {
-                $out = [];
-                foreach ($svc->translations('posts', $post['slug']) as $l => $st) if ($st === 'published' && in_array($l, $svc->langs(), true)) $out[$l] = $svc->langPath("/blog/{$post['slug']}", $l);
-                return $out;
-            })(),
+            'breadcrumb' => [[__('Inicio'), $svc->langPath('/')], ['Blog', $svc->blogPath()], [$post['title'], $post['public_path']]],
+            'alternates' => $alts, 'md' => $svc->mdPath('post', $post['slug']),
             'title' => $post['seo']['title'] ?: $post['title'], 'description' => $post['seo']['description'] ?: $post['excerpt'],
-            'image' => $post['seo']['image'] ?: $post['cover_image'], 'path' => "/blog/{$post['slug']}", 'type' => 'article',
+            'image' => $post['seo']['image'] ?: $post['cover_image'], 'path' => $post['public_path'], 'type' => 'article',
             'noindex' => $post['seo']['noindex'] || $post['state'] !== 'published',
-            'faq' => geo_faq_markdown($post['content']),
-            'jsonld' => ['@context' => 'https://schema.org', '@type' => 'BlogPosting', 'headline' => $post['title'],
-                'datePublished' => date('c', strtotime((string) $post['published_at'])), 'dateModified' => date('c', strtotime($post['updated_at'])),
+            'faq' => geo_faq_markdown($post['content']), 'modified' => $post['content_at'] ?? $post['updated_at'], 'published' => $post['published_at'],
+            'jsonld' => ['@type' => 'BlogPosting', 'headline' => $post['title'],
+                'datePublished' => date('c', strtotime((string) $post['published_at'])), 'dateModified' => date('c', strtotime((string) ($post['content_at'] ?? $post['updated_at']))),
                 'author' => ['@type' => 'Person', 'name' => $post['author'] ?: $svc->site['name']],
-                'image' => abs_url($svc, $post['cover_image']), 'mainEntityOfPage' => $post['url']],
+                'image' => abs_url($svc, $post['cover_image']), 'inLanguage' => str_replace('_', '-', og_locale($svc, $post['lang']))],
         ]);
         return;
     }
 
-    if ($path === '/' || preg_match('#^/([a-z0-9-]+)$#', $path, $m)) {
-        $slug = $path === '/' ? 'index' : $m[1];
-        if ($slug === 'index' && $path !== '/') { out_header('Location: /', true, 301); return; }
-        $page = $svc->page($slug);
-        // Política de cookies automática si la web no tiene su propia página /cookies
-        if (!$page && $slug === 'cookies' && cookies_config($svc)['enabled'] && cookies_config($svc)['policy_url'] === '') $page = cookies_policy_page($svc);
-        if (!$page || (!$preview && $page['status'] !== 'published')) { not_found($svc); return; }
-        $hero = current(array_filter($page['blocks'], fn($b) => $b['type'] === 'hero')) ?: null;
-        render_view($svc, 'page.php', ['page' => $page], [
-            'title' => $page['seo']['title'] ?: ($slug === 'index' ? '' : $page['title']), 'description' => $page['seo']['description'],
-            'image' => $page['seo']['image'] ?: ($hero['data']['image'] ?? ''), 'path' => $slug === 'index' ? '/' : "/$slug",
-            'noindex' => $page['seo']['noindex'] || $page['status'] !== 'published', 'is_home' => $slug === 'index',
-            'faq' => geo_faq_items($page['blocks']), 'breadcrumb' => $slug === 'index' ? [] : [[__('Inicio'), $svc->langPath('/')], [$page['title'], $svc->langPath("/$slug")]],
-            'alternates' => $GLOBALS['uw_alternates'] = (function () use ($svc, $slug) {
-                $out = [];
-                foreach ($svc->translations('pages', $slug) as $l => $st) if ($st === 'published' && in_array($l, $svc->langs(), true)) $out[$l] = $svc->langPath($slug === 'index' ? '/' : "/$slug", $l);
-                return $out;
-            })(),
-        ]);
-        return;
+    $slug = $hit['slug'];
+    $page = $svc->page($slug);
+    // Política de cookies automática si la web no tiene su propia página /cookies
+    if (!$page && $slug === 'cookies' && cookies_config($svc)['enabled'] && cookies_config($svc)['policy_url'] === '') $page = cookies_policy_page($svc);
+    if (!$page || (!$preview && $page['status'] !== 'published')) { not_found($svc); return; }
+    if (isset($page['public_path']) && $canonical($page['public_path'])) return;
+    $hero = current(array_filter($page['blocks'], fn($b) => $b['type'] === 'hero')) ?: null;
+    $alts = [];
+    if (isset($page['id'])) {
+        $tr = $svc->translations('pages', $slug);
+        foreach ($svc->liveLangs() as $l) if (($tr[$l] ?? '') === 'published') $alts[$l] = $svc->itemPath('page', $slug, $l);
     }
-    not_found($svc);
+    $public = $page['public_path'] ?? $full;
+    render_view($svc, 'page.php', ['page' => $page], [
+        'title' => $page['seo']['title'] ?: ($slug === 'index' ? '' : $page['title']), 'description' => $page['seo']['description'],
+        'image' => $page['seo']['image'] ?: ($hero['data']['image'] ?? ''), 'path' => $public,
+        'noindex' => $page['seo']['noindex'] || $page['status'] !== 'published', 'is_home' => $slug === 'index',
+        'faq' => geo_faq_items($page['blocks']), 'breadcrumb' => $slug === 'index' ? [] : [[__('Inicio'), $svc->langPath('/')], [$page['title'], $public]],
+        'alternates' => isset($page['id']) ? $alts : null, 'md' => isset($page['id']) ? $svc->mdPath('page', $slug) : null,
+        'webpage' => 'WebPage', 'modified' => $page['content_at'] ?? $page['updated_at'] ?? null,
+    ]);
 }
 
 function not_found(SiteService $svc): void
@@ -441,20 +503,39 @@ function can_preview(SiteService $svc): bool
     return $u && user_role($u, $svc->id()) !== null;
 }
 
+/**
+ * sitemap.xml con lastmod REAL (fecha del último cambio de contenido de cada página) y, para las que existen en varios
+ * idiomas, sus alternativas xhtml:link (hreflang + x-default). Solo lo publicado e indexable.
+ */
 function sitemap_xml(SiteService $svc): void
 {
     out_header('Content-Type: application/xml; charset=utf-8');
-    $x = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
-    $add = function (string $loc, string $mod) use (&$x) {
-        $x .= '  <url><loc>' . e($loc) . '</loc><lastmod>' . date('Y-m-d', strtotime($mod)) . "</lastmod></url>\n";
-    };
-    foreach ($svc->pages(true, true) as $p) {
-        if (!$svc->page($p['slug'], $p['lang'])['seo']['noindex']) $add($p['url'], $p['updated_at']);
+    $groups = []; // "kind|slug" => [lang => [url, fecha]]
+    $live = $svc->liveLangs();
+    foreach (rows("SELECT slug, lang, path, seo, COALESCE(content_at, updated_at) AS mod FROM pages WHERE site_id = ? AND status = 'published'", [$svc->id()]) as $p) {
+        if (!in_array($p['lang'], $live, true) || !empty(json_dec($p['seo'])['noindex'])) continue;
+        $groups['page|' . $p['slug']][$p['lang']] = [$svc->url($svc->itemPath('page', $p['slug'], $p['lang'], $p['path'])), $p['mod']];
     }
-    foreach ($svc->langs() as $l) {
-        $posts = $svc->posts(['public' => true, 'limit' => 100, 'lang' => $l]);
-        if ($posts) $add($svc->langUrl('/blog', $l), $posts[0]['updated_at']);
-        foreach ($posts as $p) if (!$p['seo']['noindex']) $add($p['url'], $p['updated_at']);
+    $blogMod = [];
+    foreach (rows("SELECT slug, lang, path, seo, COALESCE(content_at, updated_at) AS mod FROM posts WHERE site_id = ? AND status = 'published' AND published_at <= ? ORDER BY published_at DESC", [$svc->id(), now()]) as $p) {
+        if (!in_array($p['lang'], $live, true)) continue;
+        $blogMod[$p['lang']] = max($blogMod[$p['lang']] ?? '', $p['mod']);
+        if (!empty(json_dec($p['seo'])['noindex'])) continue;
+        $groups['post|' . $p['slug']][$p['lang']] = [$svc->url($svc->itemPath('post', $p['slug'], $p['lang'], $p['path'])), $p['mod']];
+    }
+    foreach ($blogMod as $l => $mod) $groups['blog|'][$l] = [$svc->url($svc->blogPath($l)), $mod];
+    $def = $svc->defaultLang();
+    $x = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n";
+    foreach ($groups as $versions) {
+        foreach ($versions as $l => [$loc, $mod]) {
+            $x .= '  <url><loc>' . e($loc) . '</loc><lastmod>' . date('Y-m-d', strtotime((string) $mod)) . '</lastmod>';
+            if (count($versions) > 1) {
+                foreach ($versions as $al => [$aloc]) $x .= "\n    <xhtml:link rel=\"alternate\" hreflang=\"" . e($al) . '" href="' . e($aloc) . '"/>';
+                if (isset($versions[$def])) $x .= "\n    <xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"" . e($versions[$def][0]) . '"/>';
+                $x .= "\n  ";
+            }
+            $x .= "</url>\n";
+        }
     }
     echo $x . "</urlset>\n";
 }

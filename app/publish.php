@@ -144,6 +144,14 @@ function publish_render(SiteService $svc, string $path): array
     }
 }
 
+/** Archivo estático de una ruta pública: '/' → index.html, '/en' → en/index.html, '/precios.html' → precios.html, '/servicios' → servicios/index.html. */
+function publish_file_for(string $path): string
+{
+    $rel = trim($path, '/');
+    if ($rel === '') return 'index.html';
+    return preg_match('/\.html?$/i', $rel) && !str_ends_with($path, '/') ? $rel : $rel . '/index.html';
+}
+
 /** Genera la web estática completa en una carpeta temporal. Devuelve [carpeta, nº de archivos]. */
 function publish_build(SiteService $svc): array
 {
@@ -188,19 +196,19 @@ function publish_build(SiteService $svc): array
         $svc->setLang($lang);
         $pre = $svc->langPrefix();
         $dirPre = $pre === '' ? '' : ltrim($pre, '/') . '/';
-        $paths = [($pre ?: '/') => $dirPre . 'index.html'];
-        foreach ($svc->pages(true) as $p) if ($p['slug'] !== 'index') $paths["$pre/{$p['slug']}"] = $dirPre . $p['slug'] . '/index.html';
-        if (cookies_config($svc)['enabled']) $paths["$pre/cookies"] ??= $dirPre . 'cookies/index.html';
+        // ruta pública → [archivo HTML, hit para su Markdown]
+        $paths = [$svc->langPath('/') => ['page', 'index']];
+        foreach ($svc->pages(true) as $p) if ($p['slug'] !== 'index') $paths[$p['public_path']] = ['page', $p['slug']];
+        if (cookies_config($svc)['enabled']) $paths[$svc->langPath('/cookies')] ??= ['page', 'cookies'];
         $posts = $svc->posts(['public' => true, 'limit' => 100]);
-        if ($posts || $lang === $mainLang) $paths["$pre/blog"] = $dirPre . 'blog/index.html';
-        foreach ($posts as $p) $paths["$pre/blog/{$p['slug']}"] = $dirPre . 'blog/' . $p['slug'] . '/index.html';
-        foreach ($paths as $path => $file) {
+        if ($posts || $lang === $mainLang) $paths[$svc->blogPath()] = ['blog', ''];
+        foreach ($posts as $p) $paths[$p['public_path']] = ['post', $p['slug']];
+        foreach ($paths as $path => [$kind, $slug]) {
             $r = publish_render($svc, $path);
-            if ($r['status'] === 200) $put($file, $fixForm($r['body']));
-            // Versión Markdown junto a cada página (/servicios.md, /index.md, /en/blog/x.md)
+            if ($r['status'] === 200) $put(publish_file_for($path), $fixForm($r['body']));
+            // Copia Markdown en /md/<página>.md (y /en/md/…), la que enlaza cada página
             $svc->setLang($lang);
-            $local = substr($path, strlen($pre)) ?: '/';
-            if (($md = geo_markdown_for($svc, $local)) !== null) $put($dirPre . ($local === '/' ? 'index.md' : ltrim($local, '/') . '.md'), $md);
+            if (($md = geo_markdown_hit($svc, ['kind' => $kind, 'slug' => $slug, 'lang' => $lang])) !== null) $put(ltrim($svc->mdPath($kind, $slug, $lang), '/'), $md);
         }
         foreach (['/llms.txt', '/llms-full.txt', '/feed.xml'] as $f) {
             $r = publish_render($svc, $pre . $f);
@@ -213,7 +221,7 @@ function publish_build(SiteService $svc): array
     foreach ($reds as $r) {
         $dest = abs_url($svc, $r['to_path']);
         if (publish_public_base($svc->id()) !== null && $r['to_path'][0] === '/') $dest = publish_public_base($svc->id()) . $r['to_path'];
-        $put(trim($r['from_path'], '/') . '/index.html', '<!doctype html><html><head><meta charset="utf-8"><title>' . e(__('Redirigiendo…')) . '</title>'
+        $put(publish_file_for($r['from_path']), '<!doctype html><html><head><meta charset="utf-8"><title>' . e(__('Redirigiendo…')) . '</title>'
             . '<meta http-equiv="refresh" content="0;url=' . e($dest) . '"><link rel="canonical" href="' . e($dest) . '"><meta name="robots" content="noindex">'
             . '</head><body><p><a href="' . e($dest) . '">' . e($dest) . '</a></p></body></html>');
     }

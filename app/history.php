@@ -13,12 +13,12 @@ declare(strict_types=1);
 
 const HISTORY_KEEP = 30;
 const TRASH_DAYS = 30;
-const HISTORY_POST_FIELDS = ['title', 'slug', 'excerpt', 'content', 'cover_image', 'audio', 'tags', 'author', 'status', 'published_at', 'seo'];
+const HISTORY_POST_FIELDS = ['title', 'slug', 'excerpt', 'content', 'cover_image', 'audio', 'tags', 'author', 'status', 'published_at', 'seo', 'path'];
 
 /** Guarda la versión actual (tal cual está en la BD) antes de cambiarla. */
 function history_snapshot(int $siteId, string $kind, array $row): void
 {
-    $data = array_intersect_key($row, array_flip($kind === 'page' ? ['title', 'slug', 'lang', 'status', 'blocks', 'seo'] : array_merge(HISTORY_POST_FIELDS, ['lang'])));
+    $data = array_intersect_key($row, array_flip($kind === 'page' ? ['title', 'slug', 'lang', 'status', 'blocks', 'seo', 'path'] : array_merge(HISTORY_POST_FIELDS, ['lang'])));
     insert('content_versions', ['site_id' => $siteId, 'kind' => $kind, 'lang' => (string) $row['lang'], 'slug' => (string) $row['slug'],
         'data' => json_enc($data), 'actor_name' => Actor::$name, 'created_at' => now()]);
     q('DELETE FROM content_versions WHERE site_id = ? AND kind = ? AND lang = ? AND slug = ? AND id NOT IN
@@ -51,7 +51,7 @@ function history_restore(SiteService $svc, string $kind, string $slug, string $l
     $cur = $kind === 'page' ? $svc->page((string) $v['slug'], (string) $v['lang']) : $svc->post((string) $v['slug'], (string) $v['lang']);
     if ($kind === 'page') {
         $res = $svc->savePage(['title' => $d['title'], 'slug' => $d['slug'], 'lang' => $d['lang'], 'status' => $d['status'],
-            'blocks' => json_dec((string) $d['blocks']), 'seo' => json_dec((string) $d['seo'])], $cur ? (int) $cur['id'] : null);
+            'blocks' => json_dec((string) $d['blocks']), 'seo' => json_dec((string) $d['seo'])] + (array_key_exists('path', $d) ? ['path' => (string) $d['path']] : []), $cur ? (int) $cur['id'] : null);
     } else {
         $in = array_intersect_key($d, array_flip(HISTORY_POST_FIELDS)) + ['lang' => $d['lang']];
         $in['tags'] = json_dec((string) ($in['tags'] ?? '[]'));
@@ -86,7 +86,7 @@ function trash_restore(SiteService $svc, int $trashId): array
     if ($exists) throw new UwError("Ya existe «{$t['slug']}» en «{$t['lang']}»: cámbiale el slug o bórrala antes de recuperar esta");
     if ($t['kind'] === 'page') {
         $res = $svc->savePage(['title' => $d['title'], 'slug' => $d['slug'], 'lang' => $d['lang'], 'status' => $d['status'],
-            'blocks' => json_dec((string) $d['blocks']), 'seo' => json_dec((string) $d['seo'])]);
+            'blocks' => json_dec((string) $d['blocks']), 'seo' => json_dec((string) $d['seo'])] + (($d['path'] ?? '') !== '' ? ['path' => (string) $d['path']] : []));
     } else {
         $in = array_intersect_key($d, array_flip(HISTORY_POST_FIELDS)) + ['lang' => $d['lang']];
         $in['tags'] = json_dec((string) ($in['tags'] ?? '[]'));

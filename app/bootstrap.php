@@ -7,6 +7,7 @@ define('UW_PUBLIC', UW_ROOT . '/public');
 define('UW_DATA', getenv('UW_DATA') ?: UW_ROOT . '/data');
 
 require UW_ROOT . '/app/core.php';
+require UW_ROOT . '/app/cache.php';
 require UW_ROOT . '/app/i18n.php';
 require UW_ROOT . '/app/content.php';
 require UW_ROOT . '/app/front.php';

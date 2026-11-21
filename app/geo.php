@@ -120,15 +120,15 @@ function geo_llms_txt(SiteService $svc): string
     foreach ($svc->pages(true) as $p) {
         $page = $svc->page($p['slug']);
         if ($page['seo']['noindex']) continue;
-        $md = $svc->langUrl($page['slug'] === 'index' ? '/index.md' : "/{$page['slug']}.md");
-        $out .= "- [{$page['title']}]($md)" . ($page['seo']['description'] ? ": {$page['seo']['description']}" : '') . "\n";
+        $md = $svc->url($svc->mdPath('page', $page['slug']));
+        $out .= "- [{$page['title']}]({$page['url']}) ([Markdown]($md))" . ($page['seo']['description'] ? ": {$page['seo']['description']}" : '') . "\n";
     }
     $posts = $svc->posts(['public' => true, 'limit' => 30]);
     if ($posts) {
         $out .= "\n## Blog\n\n";
-        foreach ($posts as $p) if (!$p['seo']['noindex']) $out .= "- [{$p['title']}](" . $svc->langUrl("/blog/{$p['slug']}.md") . ')' . ($p['excerpt'] ? ": {$p['excerpt']}" : '') . "\n";
+        foreach ($posts as $p) if (!$p['seo']['noindex']) $out .= "- [{$p['title']}]({$p['url']}) ([Markdown](" . $svc->url($svc->mdPath('post', $p['slug'])) . '))' . ($p['excerpt'] ? ": {$p['excerpt']}" : '') . "\n";
     }
-    return $out . "\n## " . __('Opcional') . "\n\n- [" . __('Contenido completo en Markdown') . "](" . $svc->langUrl('/llms-full.txt') . ")\n- [" . __('Datos en JSON') . "](" . $svc->url('/api/site.json' . ($svc->lang !== $svc->defaultLang() ? '?lang=' . $svc->lang : '')) . ")\n" . geo_other_langs($svc);
+    return $out . "\n## " . __('Opcional') . "\n\n- [" . __('Contenido completo en Markdown') . "](" . $svc->url($svc->langPrefix() . '/llms-full.txt') . ")\n- [" . __('Datos en JSON') . "](" . $svc->url('/api/site.json' . ($svc->lang !== $svc->defaultLang() ? '?lang=' . $svc->lang : '')) . ")\n" . geo_other_langs($svc);
 }
 
 /** Enlaces a llms.txt de los otros idiomas de la web. */
@@ -136,7 +136,7 @@ function geo_other_langs(SiteService $svc): string
 {
     $others = array_diff($svc->liveLangs(), [$svc->lang]);
     if (!$others) return '';
-    return "\n## " . __('Otros idiomas') . "\n\n" . implode('', array_map(fn($l) => '- [' . (LANG_NAMES[$l] ?? $l) . '](' . $svc->langUrl('/llms.txt', $l) . ")\n", $others));
+    return "\n## " . __('Otros idiomas') . "\n\n" . implode('', array_map(fn($l) => '- [' . (LANG_NAMES[$l] ?? $l) . '](' . $svc->url($svc->langPrefix($l) . '/llms.txt') . ")\n", $others));
 }
 
 /** /llms-full.txt: todo el contenido publicado en Markdown limpio. */
@@ -173,24 +173,51 @@ function geo_wants_markdown(SiteService $svc): bool
     return $svc->settings()['ai_markdown'] && geo_is_ai_agent();
 }
 
-/** Markdown de una ruta del front ('/', '/servicios', '/blog/x'), o null si no existe o no es pública. */
+/**
+ * Qué página pide una URL terminada en .md ($local: sin prefijo de idioma; $full: completa):
+ *  - /md/servicios.md, /en/md/index.md, /md/blog-<entrada>.md, /md/blog.md  (copia oficial, la que enlaza la página)
+ *  - /servicios.md, /index.md, /blog/x.md                                    (formato de la 0.3, se mantiene)
+ *  - /precios.md o /guias/x.md para una página con ruta fija /precios.html o /guias/x.html
+ */
+function geo_md_route(SiteService $svc, string $local, string $full): ?array
+{
+    if (preg_match('#^/md/([a-z0-9-]+)\.md$#', $local, $m)) {
+        $n = $m[1];
+        if ($n === 'blog') return ['kind' => 'blog', 'slug' => '', 'lang' => $svc->lang];
+        if (str_starts_with($n, 'blog-') && $svc->post(substr($n, 5))) return ['kind' => 'post', 'slug' => substr($n, 5), 'lang' => $svc->lang];
+        return ['kind' => 'page', 'slug' => $n, 'lang' => $svc->lang];
+    }
+    if ($local === '/index.md') return ['kind' => 'page', 'slug' => 'index', 'lang' => $svc->lang];
+    $base = substr($full, 0, -3);
+    foreach ([$base, "$base.html"] as $cand) if (($hit = $svc->resolvePath($cand)) !== null) return $hit;
+    return null;
+}
+
+/** Markdown de una ruta del front (pública, con su prefijo de idioma), o null si no existe o no es pública. */
 function geo_markdown_for(SiteService $svc, string $path): ?string
 {
-    $s = $svc->settings();
+    $hit = $svc->resolvePath($path);
+    return $hit ? geo_markdown_hit($svc, $hit) : null;
+}
+
+/** Markdown de una página, entrada o del blog ['kind', 'slug', 'lang'], o null si no existe o no es pública. */
+function geo_markdown_hit(SiteService $svc, array $hit): ?string
+{
+    if (isset($hit['lang']) && $hit['lang'] !== $svc->lang) $svc->setLang($hit['lang']);
     $head = fn(string $url) => "<!-- {$svc->site['name']} · versión Markdown para agentes de IA · HTML: $url -->\n\n";
-    if (preg_match('#^/blog/([a-z0-9-]+)$#', $path, $m)) {
-        $p = $svc->post($m[1]);
+    if ($hit['kind'] === 'post') {
+        $p = $svc->post($hit['slug']);
         if (!$p || $p['state'] !== 'published') return null;
         return $head($p['url']) . "# {$p['title']}\n\n" . __('Publicado') . ': ' . substr((string) $p['published_at'], 0, 10) . ($p['author'] ? " · {$p['author']}" : '') . "\n\n"
             . (($p['audio'] ?? '') !== '' ? __('Versión en audio') . ': ' . (str_starts_with($p['audio'], '/') ? $svc->url($p['audio']) : $p['audio']) . "\n\n" : '')
             . ($p['excerpt'] ? "> {$p['excerpt']}\n\n" : '') . trim($p['content']) . "\n";
     }
-    if ($path === '/blog') {
-        $out = $head($svc->langUrl('/blog')) . "# Blog · {$svc->site['name']}\n\n";
-        foreach ($svc->posts(['public' => true, 'limit' => 100]) as $p) $out .= "- [{$p['title']}](" . $svc->langUrl("/blog/{$p['slug']}.md") . ')' . ($p['excerpt'] ? ": {$p['excerpt']}" : '') . "\n";
+    if ($hit['kind'] === 'blog') {
+        $out = $head($svc->url($svc->blogPath())) . "# Blog · {$svc->site['name']}\n\n";
+        foreach ($svc->posts(['public' => true, 'limit' => 100]) as $p) $out .= "- [{$p['title']}](" . $svc->url($svc->mdPath('post', $p['slug'])) . ')' . ($p['excerpt'] ? ": {$p['excerpt']}" : '') . "\n";
         return $out;
     }
-    $slug = $path === '/' ? 'index' : ltrim($path, '/');
+    $slug = (string) $hit['slug'];
     if (!preg_match('/^[a-z0-9-]+$/', $slug)) return null;
     $page = $svc->page($slug);
     if (!$page || $page['status'] !== 'published') return null;
@@ -199,10 +226,17 @@ function geo_markdown_for(SiteService $svc, string $path): ?string
     return $out;
 }
 
-function geo_serve_markdown(string $md): void
+/**
+ * Responde con Markdown. Siempre con noindex: es para agentes de IA, no para Google (si no, Search Console las lista
+ * como «rastreada, sin indexar» y compiten con su página). $negotiated = se sirvió en la URL de la página (por Accept o
+ * por ser un agente de IA): que ninguna caché la mezcle con el HTML.
+ */
+function geo_serve_markdown(string $md, bool $negotiated = false): void
 {
     out_header('Content-Type: text/markdown; charset=utf-8');
+    out_header('X-Robots-Tag: noindex');
     out_header('Vary: Accept, User-Agent');
+    if ($negotiated) { out_header('Cache-Control: private, no-store'); PageCache::skip(); }
     echo $md;
 }
 
@@ -219,7 +253,7 @@ function geo_org_ld(SiteService $svc): array
         'description' => $s['seo']['description'] ?: $s['tagline'], 'email' => $c['email'], 'telephone' => $c['phone'],
         'address' => $c['address'] !== '' ? ['@type' => 'PostalAddress', 'streetAddress' => $c['address']] : null,
         'areaServed' => $s['business']['area_served'], 'foundingDate' => $s['business']['founded'],
-        'sameAs' => array_values(array_filter($s['social'], fn($u) => $u !== '' && !str_contains((string) $u, 'wa.me'))) ?: null,
+        'sameAs' => geo_same_as($svc) ?: null,
         'openingHoursSpecification' => geo_opening_hours($svc) ?: null,
     ], fn($v) => $v !== '' && $v !== null);
 }
@@ -275,21 +309,51 @@ function geo_faq_markdown(string $md): array
     return $out;
 }
 
-/** Grafo JSON-LD de una página: organización siempre, WebSite en la portada, FAQPage y migas de pan. */
+/**
+ * Perfiles que confirman la identidad de la entidad (schema.org sameAs): los de redes sociales (menos WhatsApp) más la lista
+ * libre «same_as» de Ajustes (Wikipedia, Wikidata, LinkedIn de empresa, Google Business, directorios…). Sin duplicados.
+ */
+function geo_same_as(SiteService $svc): array
+{
+    $s = $svc->settings();
+    $list = array_filter($s['social'], fn($u) => $u !== '' && !str_contains((string) $u, 'wa.me'));
+    foreach ((array) ($s['same_as'] ?? []) as $u) if (is_string($u) && preg_match('#^https://[^/\s]+#i', clean_url($u))) $list[] = clean_url($u);
+    return array_values(array_unique($list));
+}
+
+/**
+ * Grafo JSON-LD de una página: organización y WebSite siempre; WebPage (o CollectionPage) con su dateModified REAL
+ * (último cambio de contenido, nunca la fecha de hoy); BlogPosting en las entradas; FAQPage si hay preguntas; migas de pan.
+ */
 function geo_jsonld(SiteService $svc, array $o): array
 {
+    $home = $svc->url('/');
+    $lang = str_replace('_', '-', og_locale($svc, $svc->lang));
     $graph = [geo_org_ld($svc)];
-    if (!empty($o['is_home'])) {
-        $graph[] = ['@type' => 'WebSite', '@id' => $svc->url('/') . '#web', 'name' => $svc->site['name'], 'url' => $svc->url('/'),
-            'inLanguage' => $svc->settings()['language'], 'publisher' => ['@id' => $svc->url('/') . '#org']];
+    $graph[] = ['@type' => 'WebSite', '@id' => $home . '#web', 'name' => $svc->site['name'], 'url' => $home,
+        'inLanguage' => array_values(array_map(fn($l) => str_replace('_', '-', og_locale($svc, $l)), $svc->liveLangs())), 'publisher' => ['@id' => $home . '#org']];
+    $url = (string) ($o['url'] ?? '');
+    $indexable = empty($o['noindex']) && $url !== '';
+    if ($indexable && !empty($o['webpage'])) {
+        $graph[] = array_filter(['@type' => $o['webpage'], '@id' => $url . '#webpage', 'url' => $url, 'name' => $o['full_title'] ?? '', 'description' => $o['desc'] ?? '',
+            'inLanguage' => $lang, 'isPartOf' => ['@id' => $home . '#web'], 'about' => !empty($o['is_home']) ? ['@id' => $home . '#org'] : null,
+            'publisher' => ['@id' => $home . '#org'], 'dateModified' => !empty($o['modified']) ? date('c', strtotime((string) $o['modified'])) : null,
+            'primaryImageOfPage' => !empty($o['image_abs']) ? ['@type' => 'ImageObject', 'url' => $o['image_abs']] : null,
+            'breadcrumb' => !empty($o['breadcrumb']) ? ['@id' => $url . '#breadcrumb'] : null], fn($v) => $v !== null && $v !== '');
     }
-    if (!empty($o['jsonld'])) $graph[] = array_diff_key($o['jsonld'], ['@context' => 1]) + ['publisher' => ['@id' => $svc->url('/') . '#org']];
+    if (!empty($o['jsonld'])) {
+        $ld = array_diff_key($o['jsonld'], ['@context' => 1]) + ['publisher' => ['@id' => $home . '#org']];
+        if ($url !== '') $ld += ['@id' => $url . '#article', 'url' => $url, 'mainEntityOfPage' => ['@id' => $url . '#webpage']];
+        if ($indexable) $graph[] = array_filter(['@type' => 'WebPage', '@id' => $url . '#webpage', 'url' => $url, 'name' => $o['full_title'] ?? '', 'inLanguage' => $lang,
+            'isPartOf' => ['@id' => $home . '#web'], 'dateModified' => $ld['dateModified'] ?? null, 'breadcrumb' => !empty($o['breadcrumb']) ? ['@id' => $url . '#breadcrumb'] : null]);
+        $graph[] = array_filter($ld, fn($v) => $v !== '' && $v !== null);
+    }
     if (!empty($o['faq'])) {
-        $graph[] = ['@type' => 'FAQPage', 'mainEntity' => array_map(fn($qa) => ['@type' => 'Question', 'name' => $qa[0],
+        $graph[] = ['@type' => 'FAQPage', '@id' => $url . '#faq', 'inLanguage' => $lang, 'mainEntity' => array_map(fn($qa) => ['@type' => 'Question', 'name' => $qa[0],
             'acceptedAnswer' => ['@type' => 'Answer', 'text' => $qa[1]]], $o['faq'])];
     }
     if (!empty($o['breadcrumb'])) {
-        $graph[] = ['@type' => 'BreadcrumbList', 'itemListElement' => array_map(fn($k, $c) => ['@type' => 'ListItem', 'position' => $k + 1,
+        $graph[] = ['@type' => 'BreadcrumbList', '@id' => $url . '#breadcrumb', 'itemListElement' => array_map(fn($k, $c) => ['@type' => 'ListItem', 'position' => $k + 1,
             'name' => $c[0], 'item' => $svc->url($c[1])], array_keys($o['breadcrumb']), $o['breadcrumb'])];
     }
     return ['@context' => 'https://schema.org', '@graph' => $graph];

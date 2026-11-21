@@ -110,7 +110,7 @@ function seo_autofix(SiteService $svc, bool $apply, callable $canEdit): array
         foreach ($svc->pages(false) as $meta) {
             $p = $svc->page($meta['slug']);
             if (!$p || $p['seo']['noindex']) continue;
-            $where = 'Página ' . $svc->langPath($p['slug'] === 'index' ? '/' : '/' . $p['slug'], $lang);
+            $where = 'Página ' . $p['public_path'];
             $blocks = array_map(fn($b) => ['type' => $b['type'], 'data' => array_filter($b['data'], fn($k) => !str_ends_with((string) $k, '_html'), ARRAY_FILTER_USE_KEY)], $p['blocks']);
             [$blocks, $alts, $missing] = seo_fill_alts($svc, $blocks);
             $in = [];
@@ -136,7 +136,7 @@ function seo_autofix(SiteService $svc, bool $apply, callable $canEdit): array
         foreach (rows('SELECT slug FROM posts WHERE site_id = ? AND lang = ? ORDER BY id', [$svc->id(), $lang]) as $meta) {
             $p = $svc->post($meta['slug']);
             if (!$p || $p['seo']['noindex']) continue;
-            $where = 'Entrada ' . $svc->langPath('/blog/' . $p['slug'], $lang);
+            $where = 'Entrada ' . $p['public_path'];
             $in = []; $mine = [];
             $plain = trim((string) preg_replace('/\s+/u', ' ', strip_tags(md($p['content']))));
             if ($p['excerpt'] === '' && $p['seo']['description'] === '') {
@@ -246,7 +246,7 @@ function seo_analyze(SiteService $svc, string $kind, string $slug, string $keywo
 {
     $item = $kind === 'post' ? $svc->post($slug) : $svc->page($slug);
     if (!$item) throw new UwError(($kind === 'post' ? 'No existe la entrada' : 'No existe la página') . " «{$slug}» en «{$svc->lang}»");
-    $path = $svc->langPath($kind === 'post' ? '/blog/' . $item['slug'] : ($item['slug'] === 'index' ? '/' : '/' . $item['slug']), $svc->lang);
+    $path = (string) $item['public_path'];
     $lang = $svc->lang;
     $r = site_check_render($svc, $path . ($item['status'] === 'published' ? '' : '?preview=1'));
     $svc->setLang($lang);
@@ -348,7 +348,7 @@ function seo_analyze(SiteService $svc, string $kind, string $slug, string $keywo
             'headings' => array_slice($headings, 0, 30), 'images' => count($im[0]), 'images_without_alt' => $noAlt,
             'links_internal' => $internal, 'links_external' => $external, 'canonical' => $canonical, 'hreflang_versions' => $hreflang,
             'structured_data' => $types, 'og_image' => $ogImage, 'faq_questions' => $faq, 'question_headings' => $questions, 'figures' => $figures,
-            'markdown_for_ai' => $svc->url(($path === '/' ? '/index' : rtrim($path, '/')) . '.md'),
+            'markdown_for_ai' => $svc->url($svc->mdPath($kind, $item['slug'], $lang)),
         ],
         'keyword' => $kw,
         'issues' => $issues,

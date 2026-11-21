@@ -114,9 +114,9 @@ function site_check(SiteService $svc, int $maxPages = 60, ?array $onlyPaths = nu
     $paths = [];
     foreach ($svc->liveLangs() as $l) {
         $svc->setLang($l);
-        foreach ($svc->pages(true) as $p) $paths[] = $svc->langPath($p['slug'] === 'index' ? '/' : '/' . $p['slug']);
-        foreach ($svc->posts(['public' => true, 'limit' => 20]) as $p) $paths[] = $svc->langPath('/blog/' . $p['slug']);
-        $paths[] = $svc->langPath('/blog');
+        foreach ($svc->pages(true) as $p) $paths[] = $p['public_path'];
+        foreach ($svc->posts(['public' => true, 'limit' => 20]) as $p) $paths[] = $p['public_path'];
+        $paths[] = $svc->blogPath();
     }
     $svc->setLang($svc->defaultLang());
     $paths = $onlyPaths ?? array_slice(array_values(array_unique($paths)), 0, $maxPages);
@@ -248,16 +248,17 @@ function site_check_internal_exists(SiteService $svc, string $p): bool
     if ($p === '/site-assets/custom.css' || $p === '/site-assets/custom.js') return trim(site_code($svc->id())[$p === '/site-assets/custom.css' ? 'css' : 'js']) !== '';
     if ($p === '/site-assets/template.css') return trim(tpl_get($svc->id())['css']) !== '';
     if (preg_match('#^/(sitemap\.xml|robots\.txt|feed\.xml|llms(-full)?\.txt|api/.*|admin.*|cookies)$#', $p)) return true;
-    // Idioma
-    $lang = $svc->defaultLang();
-    if (preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/.*)?$#', $p, $m) && in_array($m[1], $svc->langs(), true) && $m[1] !== $svc->defaultLang()) { $lang = $m[1]; $p = ($m[2] ?? '') ?: '/'; }
-    $p = rtrim($p, '/') ?: '/';
-    if (str_ends_with($p, '.md')) $p = substr($p, 0, -3) === '/index' ? '/' : substr($p, 0, -3);
-    if ($p === '/') return (bool) (($pg = $svc->page('index', $lang)) && $pg['status'] === 'published');
-    if ($p === '/blog') return true;
-    if (preg_match('#^/blog/([a-z0-9-]+)$#', $p, $m)) return (bool) val("SELECT 1 FROM posts WHERE site_id = ? AND lang = ? AND slug = ? AND status = 'published'", [$svc->id(), $lang, $m[1]]);
-    if (preg_match('#^/([a-z0-9-]+)$#', $p, $m)) return (bool) (($pg = $svc->page($m[1], $lang)) && $pg['status'] === 'published');
-    return true; // otras rutas: no se puede saber sin pedirlas; no se marcan
+    $local = preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/.*)?$#', $p, $m) && in_array($m[1], $svc->langs(), true) ? (($m[2] ?? '') ?: '/') : $p;
+    if (str_ends_with($p, '.md')) {
+        $hit = geo_md_route($svc, $local, $p);
+        return $hit !== null && ($hit['kind'] === 'blog' || redirect_page_exists($svc, $svc->itemPath($hit['kind'], $hit['slug'], $hit['lang'] ?? $svc->lang)));
+    }
+    $hit = $svc->resolvePath($p);
+    if (!$hit) return true; // otras rutas: no se puede saber sin pedirlas; no se marcan
+    if ($hit['kind'] === 'blog') return true;
+    if ($hit['kind'] === 'page' && $hit['slug'] === 'cookies') return true;
+    // Existe (aunque sea por otra dirección: sin .html o la automática de una ruta fija; la web redirige a la buena)
+    return (bool) val('SELECT 1 FROM ' . ($hit['kind'] === 'post' ? 'posts' : 'pages') . " WHERE site_id = ? AND lang = ? AND slug = ? AND status = 'published'", [$svc->id(), $hit['lang'], $hit['slug']]);
 }
 
 // ---------------------------------------------------------------- panel
@@ -305,7 +306,7 @@ function site_check_tags(string $html): array
  */
 function content_quick_check(SiteService $svc, string $kind, array $item): array
 {
-    $path = $svc->langPath($kind === 'post' ? '/blog/' . $item['slug'] : ($item['slug'] === 'index' ? '/' : '/' . $item['slug']), $item['lang']);
+    $path = (string) ($item['public_path'] ?? $svc->itemPath($kind, $item['slug'], $item['lang']));
     $out = [];
     if (($item['status'] ?? '') !== 'published') {
         $out[] = ['severity' => 'notice', 'message' => 'Guardado como borrador: no se ve en la web hasta publicarlo (status published)'];
