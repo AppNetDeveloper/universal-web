@@ -29,6 +29,7 @@ abrirlos.
 - MCP **`theme_sample`**: los textos de ejemplo de un tema en un idioma, como modelo de páginas.
 - **Crear páginas iniciales** de una web nueva usa los textos de ejemplo del tema (si los trae) y su color sugerido.
 - Panel → Temas: estilo de cada tema y aviso «Claro y oscuro».
+- Los 20 temas que trae Universal Web cuentan como **de serie**: no se pueden borrar desde el panel ni pisar subiendo uno con el mismo nombre.
 - Una web sin favicon propio ya no deja un 404 de `/favicon.ico` en la consola de cada visita (icono vacío por defecto).
 
 ### Actualizador
