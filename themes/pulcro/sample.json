@@ -1,0 +1,2740 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Pulcro). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Medicina cercana, con cita en el día",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir cita",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: consulta médica con cita en el día, especialistas y resultados explicados con calma. Sustitúyelo por el de tu centro."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro médico · Ejemplo",
+       "title": "Tu salud, atendida con calma y sin esperas",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué hace tu centro y por qué los pacientes salen tranquilos de la consulta.",
+       "cta_text": "Pedir cita",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Especialidades",
+       "title": "Lo que hacemos por ti",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina general",
+         "text": "Revisiones, seguimiento de tratamientos y consultas del día a día."
+        },
+        {
+         "icon": "shield",
+         "title": "Prevención",
+         "text": "Chequeos y analíticas para adelantarte a los problemas."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatría",
+         "text": "Consulta para los más pequeños, con horarios pensados para familias."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Respuesta a tu solicitud (ejemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Especialidades (ejemplo)"
+        },
+        {
+         "value": "L–S",
+         "label": "Días con consulta (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pedir cita es sencillo",
+       "items": [
+        {
+         "title": "Elige el servicio",
+         "text": "Dinos qué necesitas o pregunta si dudas."
+        },
+        {
+         "title": "Escoge hora",
+         "text": "Te proponemos el hueco que mejor te venga."
+        },
+        {
+         "title": "Ven a consulta",
+         "text": "Te recibimos puntualmente y te explicamos todo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Nuestro centro",
+       "title": "Instalaciones pensadas para ti",
+       "body": "- Consultas amplias y luminosas\n- Accesible en silla de ruedas\n- Resultados explicados con calma",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus pacientes, con su permiso.",
+         "name": "Paciente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas cita?",
+       "text": "Escríbenos y te respondemos lo antes posible.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: servicios de medicina general, prevención, pediatría y fisioterapia con cita previa. Sustitúyelo por los tuyos."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus servicios con palabras que entienda cualquier paciente.",
+       "cta_text": "Pedir cita",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina general",
+         "text": "Consulta, recetas y seguimiento."
+        },
+        {
+         "icon": "shield",
+         "title": "Chequeos",
+         "text": "Revisión completa con informe."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatría",
+         "text": "Niños y adolescentes."
+        },
+        {
+         "icon": "bolt",
+         "title": "Fisioterapia",
+         "text": "Lesiones y dolor de espalda."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutrición",
+         "text": "Planes adaptados a ti."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vacunación",
+         "text": "Calendario oficial y viajes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Precios de ejemplo: sustitúyelos por los de tu centro.",
+       "items": [
+        {
+         "section": "Consulta",
+         "name": "Primera consulta",
+         "price": "40"
+        },
+        {
+         "section": "Consulta",
+         "name": "Revisión",
+         "price": "30"
+        },
+        {
+         "section": "Pruebas",
+         "name": "Analítica básica",
+         "price": "desde 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas cita?",
+       "text": "Escríbenos y te respondemos lo antes posible.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa en la atención a los pacientes de nuestro centro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu centro, quién lo forma y qué os hace distintos.\n\nHabla de cómo atendéis, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Tiempo suficiente en cada consulta\n- Un mismo profesional de referencia\n- Informes claros y por escrito"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pedir cita es sencillo",
+       "items": [
+        {
+         "title": "Elige el servicio",
+         "text": "Dinos qué necesitas o pregunta si dudas."
+        },
+        {
+         "title": "Escoge hora",
+         "text": "Te proponemos el hueco que mejor te venga."
+        },
+        {
+         "title": "Ven a consulta",
+         "text": "Te recibimos puntualmente y te explicamos todo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre citas, horarios, seguros, informes y primera visita al centro médico."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo pido cita?",
+         "answer": "Desde el formulario de contacto o por teléfono. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Trabajáis con seguros?",
+         "answer": "Indica aquí con qué aseguradoras trabajas. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué llevo a la primera visita?",
+         "answer": "Tu documento de identidad y los informes que tengas."
+        },
+        {
+         "question": "¿Puedo cambiar la cita?",
+         "answer": "Sí, avísanos con antelación y te damos otra."
+        },
+        {
+         "question": "¿Dais los resultados por escrito?",
+         "answer": "Sí, con una explicación de cada valor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas cita?",
+       "text": "Escríbenos y te respondemos lo antes posible.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide cita o escríbenos con tu consulta y te respondemos lo antes posible en horario de atención al paciente."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir cita",
+       "text": "Cuéntanos qué necesitas y te proponemos cita.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cuando-hacer-un-chequeo",
+    "title": "¿Cada cuánto conviene hacerse un chequeo?",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus pacientes, con información general y prudente.\n\n## Qué incluye un chequeo\n\nExplica las pruebas habituales y para qué sirve cada una.\n\n## Cuándo pedir cita\n\nRecuerda que cada caso es distinto y que lo mejor es consultarlo.",
+    "tags": [
+     "prevencion",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "primera-visita",
+    "title": "Tu primera visita, paso a paso",
+    "excerpt": "Texto de ejemplo: qué esperar el primer día en la consulta.",
+    "content": "Texto de ejemplo. Cuenta cómo es la primera visita para que nadie llegue con dudas.\n\n## Antes de venir\n\nQué documentos traer y cuánto antes llegar.\n\n## Durante la consulta\n\nCómo es la conversación y qué pruebas se pueden pedir.",
+    "tags": [
+     "pacientes"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Friendly medicine, same-day appointments",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book an appointment",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: medical practice with same-day appointments, specialists and results explained calmly. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Medical centre · Sample",
+       "title": "Your health, cared for calmly and without waiting",
+       "subtitle": "Sample text: say in one sentence what your practice does and why patients leave reassured.",
+       "cta_text": "Book an appointment",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Specialties",
+       "title": "What we do for you",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "General practice",
+         "text": "Check-ups, treatment follow-up and everyday visits."
+        },
+        {
+         "icon": "shield",
+         "title": "Prevention",
+         "text": "Screenings and tests to stay ahead of problems."
+        },
+        {
+         "icon": "users",
+         "title": "Paediatrics",
+         "text": "Visits for children, with family-friendly hours."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Reply to your request (sample)"
+        },
+        {
+         "value": "6",
+         "label": "Specialties (sample)"
+        },
+        {
+         "value": "Mon–Sat",
+         "label": "Days with appointments (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Booking is simple",
+       "items": [
+        {
+         "title": "Choose the service",
+         "text": "Tell us what you need, or ask if unsure."
+        },
+        {
+         "title": "Pick a time",
+         "text": "We offer the slot that suits you best."
+        },
+        {
+         "title": "Come in",
+         "text": "We see you on time and explain everything."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Our centre",
+       "title": "Facilities designed for you",
+       "body": "- Bright, spacious consulting rooms\n- Wheelchair accessible\n- Results explained calmly",
+       "button_text": "About",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your patients, with their consent.",
+         "name": "Sample patient",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an appointment?",
+       "text": "Write to us and we will reply as soon as possible.",
+       "button_text": "Book an appointment",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: general practice, prevention, paediatrics and physiotherapy by appointment. Replace it with your own services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your services in words any patient understands.",
+       "cta_text": "Book an appointment",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "General practice",
+         "text": "Visits, prescriptions and follow-up."
+        },
+        {
+         "icon": "shield",
+         "title": "Check-ups",
+         "text": "Full review with a report."
+        },
+        {
+         "icon": "users",
+         "title": "Paediatrics",
+         "text": "Children and teenagers."
+        },
+        {
+         "icon": "bolt",
+         "title": "Physiotherapy",
+         "text": "Injuries and back pain."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutrition",
+         "text": "Plans tailored to you."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vaccination",
+         "text": "Official schedule and travel."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Guide prices",
+       "note": "Sample prices: replace them with your own.",
+       "items": [
+        {
+         "section": "Visits",
+         "name": "First visit",
+         "price": "40"
+        },
+        {
+         "section": "Visits",
+         "name": "Follow-up",
+         "price": "30"
+        },
+        {
+         "section": "Tests",
+         "name": "Basic blood test",
+         "price": "from 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an appointment?",
+       "text": "Write to us and we will reply as soon as possible.",
+       "button_text": "Book an appointment",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us when caring for the patients of our practice."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your practice here, who is part of it and what makes you different.\n\nTalk about how you care for people, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Enough time in every visit\n- One reference professional\n- Clear written reports"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Booking is simple",
+       "items": [
+        {
+         "title": "Choose the service",
+         "text": "Tell us what you need, or ask if unsure."
+        },
+        {
+         "title": "Pick a time",
+         "text": "We offer the slot that suits you best."
+        },
+        {
+         "title": "Come in",
+         "text": "We see you on time and explain everything."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about appointments, opening hours, insurance, reports and your first visit to the practice."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I book?",
+         "answer": "Through the contact form or by phone. *Sample text.*"
+        },
+        {
+         "question": "Do you accept insurance?",
+         "answer": "List the insurers you work with here. *Sample text.*"
+        },
+        {
+         "question": "What should I bring to my first visit?",
+         "answer": "Your ID and any reports you have."
+        },
+        {
+         "question": "Can I change my appointment?",
+         "answer": "Yes, let us know in advance and we will offer another one."
+        },
+        {
+         "question": "Do you give results in writing?",
+         "answer": "Yes, with an explanation of each value."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an appointment?",
+       "text": "Write to us and we will reply as soon as possible.",
+       "button_text": "Book an appointment",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book an appointment or send us your question and we will reply as soon as possible during patient service hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book an appointment",
+       "text": "Tell us what you need and we will suggest an appointment.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-often-check-up",
+    "title": "How often should you have a check-up?",
+    "excerpt": "Sample blog text: a short, careful guide.",
+    "content": "Sample text. Write a useful article for your patients here, with general and careful information.\n\n## What a check-up includes\n\nExplain the usual tests and what each one is for.\n\n## When to book\n\nRemember every case is different and it is best to ask.",
+    "tags": [
+     "prevention",
+     "tips"
+    ]
+   },
+   {
+    "slug": "first-visit",
+    "title": "Your first visit, step by step",
+    "excerpt": "Sample text: what to expect on your first day.",
+    "content": "Sample text. Explain what the first visit is like so nobody arrives with doubts.\n\n## Before you come\n\nWhich documents to bring and how early to arrive.\n\n## During the visit\n\nWhat the conversation is like and which tests may be requested.",
+    "tags": [
+     "patients"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Medicină apropiată, cu programare în aceeași zi",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Programează-te",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: cabinet medical cu programare în aceeași zi, specialiști și rezultate explicate pe îndelete. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centru medical · Exemplu",
+       "title": "Sănătatea ta, îngrijită cu calm și fără așteptare",
+       "subtitle": "Text de exemplu: spune într-o frază ce face centrul tău și de ce pacienții pleacă liniștiți.",
+       "cta_text": "Programează-te",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Specialități",
+       "title": "Ce facem pentru tine",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicină generală",
+         "text": "Controale, urmărirea tratamentelor și consultații zilnice."
+        },
+        {
+         "icon": "shield",
+         "title": "Prevenție",
+         "text": "Controale și analize ca să previi problemele."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatrie",
+         "text": "Consultații pentru cei mici, cu program pentru familii."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Răspuns la cererea ta (exemplu)"
+        },
+        {
+         "value": "6",
+         "label": "Specialități (exemplu)"
+        },
+        {
+         "value": "L–S",
+         "label": "Zile cu consultații (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Programarea e simplă",
+       "items": [
+        {
+         "title": "Alege serviciul",
+         "text": "Spune-ne ce ai nevoie sau întreabă dacă nu ești sigur."
+        },
+        {
+         "title": "Alege ora",
+         "text": "Îți propunem intervalul care ți se potrivește."
+        },
+        {
+         "title": "Vino la consultație",
+         "text": "Te primim la timp și îți explicăm totul."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Centrul nostru",
+       "title": "Spații gândite pentru tine",
+       "body": "- Cabinete spațioase și luminoase\n- Acces pentru scaun cu rotile\n- Rezultate explicate pe îndelete",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale pacienților, cu acordul lor.",
+         "name": "Pacient de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o programare?",
+       "text": "Scrie-ne și îți răspundem cât mai repede.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: medicină generală, prevenție, pediatrie și fizioterapie cu programare. Înlocuiește-l cu serviciile tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie serviciile cu cuvinte pe care le înțelege orice pacient.",
+       "cta_text": "Programează-te",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicină generală",
+         "text": "Consultații, rețete și urmărire."
+        },
+        {
+         "icon": "shield",
+         "title": "Controale",
+         "text": "Evaluare completă cu raport."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatrie",
+         "text": "Copii și adolescenți."
+        },
+        {
+         "icon": "bolt",
+         "title": "Fizioterapie",
+         "text": "Leziuni și dureri de spate."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutriție",
+         "text": "Planuri adaptate ție."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vaccinare",
+         "text": "Calendar oficial și călătorii."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Prețuri de exemplu: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Consultații",
+         "name": "Prima consultație",
+         "price": "200"
+        },
+        {
+         "section": "Consultații",
+         "name": "Control",
+         "price": "150"
+        },
+        {
+         "section": "Analize",
+         "name": "Analize de bază",
+         "price": "de la 120"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o programare?",
+       "text": "Scrie-ne și îți răspundem cât mai repede.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi în îngrijirea pacienților din centrul nostru."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Spune aici povestea centrului tău, cine face parte din echipă și ce vă face diferiți.\n\nVorbește despre cum îngrijiți oamenii, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Timp suficient la fiecare consultație\n- Un medic de referință\n- Rapoarte clare, în scris"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Programarea e simplă",
+       "items": [
+        {
+         "title": "Alege serviciul",
+         "text": "Spune-ne ce ai nevoie sau întreabă dacă nu ești sigur."
+        },
+        {
+         "title": "Alege ora",
+         "text": "Îți propunem intervalul care ți se potrivește."
+        },
+        {
+         "title": "Vino la consultație",
+         "text": "Te primim la timp și îți explicăm totul."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre programări, program, asigurări, rapoarte și prima vizită la centru."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum fac o programare?",
+         "answer": "Prin formularul de contact sau la telefon. *Text de exemplu.*"
+        },
+        {
+         "question": "Lucrați cu asigurări?",
+         "answer": "Scrie aici cu ce asigurători lucrezi. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce aduc la prima vizită?",
+         "answer": "Actul de identitate și rapoartele pe care le ai."
+        },
+        {
+         "question": "Pot schimba programarea?",
+         "answer": "Da, anunță-ne din timp și îți dăm alta."
+        },
+        {
+         "question": "Primesc rezultatele în scris?",
+         "answer": "Da, cu explicația fiecărei valori."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o programare?",
+       "text": "Scrie-ne și îți răspundem cât mai repede.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: programează-te sau scrie-ne întrebarea ta și îți răspundem cât mai repede în programul de lucru cu pacienții."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Programează-te",
+       "text": "Spune-ne de ce ai nevoie și îți propunem o programare.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cat-de-des-un-control",
+    "title": "Cât de des e bine să-ți faci un control?",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și prudent.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru pacienți, cu informații generale și prudente.\n\n## Ce include un control\n\nExplică analizele obișnuite și la ce folosește fiecare.\n\n## Când să te programezi\n\nAmintește că fiecare caz e diferit și că e bine să întrebi.",
+    "tags": [
+     "preventie",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "prima-vizita",
+    "title": "Prima ta vizită, pas cu pas",
+    "excerpt": "Text de exemplu: la ce să te aștepți în prima zi.",
+    "content": "Text de exemplu. Povestește cum e prima vizită, ca nimeni să nu vină cu nelămuriri.\n\n## Înainte să vii\n\nCe documente să aduci și cu cât timp înainte să ajungi.\n\n## În timpul consultației\n\nCum decurge discuția și ce analize se pot cere.",
+    "tags": [
+     "pacienti"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Une médecine proche, rendez-vous dans la journée",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Prendre rendez-vous",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : cabinet médical avec rendez-vous dans la journée, spécialistes et résultats expliqués avec calme. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centre médical · Exemple",
+       "title": "Votre santé, prise en charge avec calme et sans attente",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que fait votre centre et pourquoi les patients repartent rassurés.",
+       "cta_text": "Prendre rendez-vous",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Spécialités",
+       "title": "Ce que nous faisons pour vous",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Médecine générale",
+         "text": "Bilans, suivi des traitements et consultations du quotidien."
+        },
+        {
+         "icon": "shield",
+         "title": "Prévention",
+         "text": "Bilans et analyses pour anticiper les problèmes."
+        },
+        {
+         "icon": "users",
+         "title": "Pédiatrie",
+         "text": "Consultations pour les plus petits, horaires adaptés aux familles."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Réponse à votre demande (exemple)"
+        },
+        {
+         "value": "6",
+         "label": "Spécialités (exemple)"
+        },
+        {
+         "value": "Lun–Sam",
+         "label": "Jours de consultation (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Prendre rendez-vous, c'est simple",
+       "items": [
+        {
+         "title": "Choisissez le service",
+         "text": "Dites-nous ce dont vous avez besoin, ou demandez en cas de doute."
+        },
+        {
+         "title": "Choisissez l'heure",
+         "text": "Nous vous proposons le créneau qui vous convient."
+        },
+        {
+         "title": "Venez en consultation",
+         "text": "Nous vous recevons à l'heure et vous expliquons tout."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre centre",
+       "title": "Des locaux pensés pour vous",
+       "body": "- Cabinets spacieux et lumineux\n- Accessible en fauteuil roulant\n- Résultats expliqués avec calme",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos patients, avec leur accord.",
+         "name": "Patient d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'un rendez-vous ?",
+       "text": "Écrivez-nous et nous vous répondrons au plus vite.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : médecine générale, prévention, pédiatrie et kinésithérapie sur rendez-vous. Remplacez-le par vos services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos services avec des mots que tout patient comprend.",
+       "cta_text": "Prendre rendez-vous",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Médecine générale",
+         "text": "Consultation, ordonnances et suivi."
+        },
+        {
+         "icon": "shield",
+         "title": "Bilans",
+         "text": "Bilan complet avec compte rendu."
+        },
+        {
+         "icon": "users",
+         "title": "Pédiatrie",
+         "text": "Enfants et adolescents."
+        },
+        {
+         "icon": "bolt",
+         "title": "Kinésithérapie",
+         "text": "Blessures et mal de dos."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutrition",
+         "text": "Programmes adaptés à vous."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vaccination",
+         "text": "Calendrier officiel et voyages."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Prix d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Consultations",
+         "name": "Première consultation",
+         "price": "40"
+        },
+        {
+         "section": "Consultations",
+         "name": "Contrôle",
+         "price": "30"
+        },
+        {
+         "section": "Examens",
+         "name": "Bilan sanguin de base",
+         "price": "à partir de 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'un rendez-vous ?",
+       "text": "Écrivez-nous et nous vous répondrons au plus vite.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous dans la prise en charge des patients."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre centre, qui en fait partie et ce qui vous distingue.\n\nParlez de votre façon de soigner, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Du temps pour chaque consultation\n- Un même professionnel de référence\n- Des comptes rendus clairs et écrits"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Prendre rendez-vous, c'est simple",
+       "items": [
+        {
+         "title": "Choisissez le service",
+         "text": "Dites-nous ce dont vous avez besoin, ou demandez en cas de doute."
+        },
+        {
+         "title": "Choisissez l'heure",
+         "text": "Nous vous proposons le créneau qui vous convient."
+        },
+        {
+         "title": "Venez en consultation",
+         "text": "Nous vous recevons à l'heure et vous expliquons tout."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les rendez-vous, les horaires, les assurances, les comptes rendus et la première visite."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment prendre rendez-vous ?",
+         "answer": "Par le formulaire de contact ou par téléphone. *Texte d'exemple.*"
+        },
+        {
+         "question": "Travaillez-vous avec les assurances ?",
+         "answer": "Indiquez ici les assureurs avec lesquels vous travaillez. *Texte d'exemple.*"
+        },
+        {
+         "question": "Que dois-je apporter à la première visite ?",
+         "answer": "Votre pièce d'identité et vos comptes rendus."
+        },
+        {
+         "question": "Puis-je changer mon rendez-vous ?",
+         "answer": "Oui, prévenez-nous à l'avance et nous vous en proposerons un autre."
+        },
+        {
+         "question": "Donnez-vous les résultats par écrit ?",
+         "answer": "Oui, avec une explication de chaque valeur."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'un rendez-vous ?",
+       "text": "Écrivez-nous et nous vous répondrons au plus vite.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : prenez rendez-vous ou envoyez-nous votre question, nous vous répondrons au plus vite pendant les heures d'accueil."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prendre rendez-vous",
+       "text": "Dites-nous ce dont vous avez besoin et nous vous proposerons un rendez-vous.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "frequence-bilan",
+    "title": "À quelle fréquence faire un bilan de santé ?",
+    "excerpt": "Texte d'exemple pour le blog : un guide court et prudent.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos patients, avec des informations générales et prudentes.\n\n## Ce que comprend un bilan\n\nExpliquez les examens habituels et à quoi sert chacun.\n\n## Quand prendre rendez-vous\n\nRappelez que chaque cas est différent et qu'il vaut mieux demander.",
+    "tags": [
+     "prevention",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "premiere-visite",
+    "title": "Votre première visite, étape par étape",
+    "excerpt": "Texte d'exemple : à quoi vous attendre le premier jour.",
+    "content": "Texte d'exemple. Expliquez comment se passe la première visite pour que personne n'arrive avec des doutes.\n\n## Avant de venir\n\nQuels documents apporter et combien de temps à l'avance arriver.\n\n## Pendant la consultation\n\nComment se déroule l'échange et quels examens peuvent être demandés.",
+    "tags": [
+     "patients"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Nahe Medizin, Termine noch am selben Tag",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Termin vereinbaren",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Arztpraxis mit Terminen am selben Tag, Fachärzten und in Ruhe erklärten Befunden. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Praxis · Beispiel",
+       "title": "Ihre Gesundheit, in Ruhe versorgt und ohne Wartezeit",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, was Ihre Praxis tut und warum Patienten beruhigt nach Hause gehen.",
+       "cta_text": "Termin vereinbaren",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Fachbereiche",
+       "title": "Was wir für Sie tun",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Allgemeinmedizin",
+         "text": "Kontrollen, Therapiebegleitung und Sprechstunde für den Alltag."
+        },
+        {
+         "icon": "shield",
+         "title": "Vorsorge",
+         "text": "Check-ups und Laborwerte, um Problemen zuvorzukommen."
+        },
+        {
+         "icon": "users",
+         "title": "Kinderheilkunde",
+         "text": "Sprechstunde für die Kleinen, mit familienfreundlichen Zeiten."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Antwort auf Ihre Anfrage (Beispiel)"
+        },
+        {
+         "value": "6",
+         "label": "Fachbereiche (Beispiel)"
+        },
+        {
+         "value": "Mo–Sa",
+         "label": "Sprechstundentage (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ein Termin ist ganz einfach",
+       "items": [
+        {
+         "title": "Leistung wählen",
+         "text": "Sagen Sie uns, was Sie brauchen, oder fragen Sie nach."
+        },
+        {
+         "title": "Uhrzeit wählen",
+         "text": "Wir schlagen Ihnen den passenden Termin vor."
+        },
+        {
+         "title": "Zur Sprechstunde kommen",
+         "text": "Wir empfangen Sie pünktlich und erklären alles."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Unsere Praxis",
+       "title": "Räume, die für Sie gedacht sind",
+       "body": "- Große, helle Behandlungsräume\n- Rollstuhlgerecht\n- Befunde in Ruhe erklärt",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Meinungen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Meinung: Ersetzen Sie ihn mit deren Zustimmung durch echte Meinungen Ihrer Patienten.",
+         "name": "Beispielpatient",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Brauchen Sie einen Termin?",
+       "text": "Schreiben Sie uns, wir antworten so schnell wie möglich.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Allgemeinmedizin, Vorsorge, Kinderheilkunde und Physiotherapie nach Vereinbarung. Ersetzen Sie ihn durch Ihre Leistungen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Leistungen mit Worten, die jeder Patient versteht.",
+       "cta_text": "Termin vereinbaren",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Allgemeinmedizin",
+         "text": "Sprechstunde, Rezepte und Begleitung."
+        },
+        {
+         "icon": "shield",
+         "title": "Check-ups",
+         "text": "Vollständige Untersuchung mit Bericht."
+        },
+        {
+         "icon": "users",
+         "title": "Kinderheilkunde",
+         "text": "Kinder und Jugendliche."
+        },
+        {
+         "icon": "bolt",
+         "title": "Physiotherapie",
+         "text": "Verletzungen und Rückenschmerzen."
+        },
+        {
+         "icon": "leaf",
+         "title": "Ernährung",
+         "text": "Pläne, die zu Ihnen passen."
+        },
+        {
+         "icon": "calendar",
+         "title": "Impfungen",
+         "text": "Offizieller Impfplan und Reisen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielpreise: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Sprechstunde",
+         "name": "Erstgespräch",
+         "price": "40"
+        },
+        {
+         "section": "Sprechstunde",
+         "name": "Kontrolle",
+         "price": "30"
+        },
+        {
+         "section": "Labor",
+         "name": "Kleines Blutbild",
+         "price": "ab 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Brauchen Sie einen Termin?",
+       "text": "Schreiben Sie uns, wir antworten so schnell wie möglich.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns bei der Betreuung der Patienten unserer Praxis wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihrer Praxis, wer dazugehört und was Sie unterscheidet.\n\nSprechen Sie darüber, wie Sie betreuen, nicht über Zahlen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Genug Zeit für jede Sprechstunde\n- Eine feste Ansprechperson\n- Klare, schriftliche Berichte"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ein Termin ist ganz einfach",
+       "items": [
+        {
+         "title": "Leistung wählen",
+         "text": "Sagen Sie uns, was Sie brauchen, oder fragen Sie nach."
+        },
+        {
+         "title": "Uhrzeit wählen",
+         "text": "Wir schlagen Ihnen den passenden Termin vor."
+        },
+        {
+         "title": "Zur Sprechstunde kommen",
+         "text": "Wir empfangen Sie pünktlich und erklären alles."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Terminen, Sprechzeiten, Versicherungen, Befunden und Ihrem ersten Besuch in der Praxis."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie vereinbare ich einen Termin?",
+         "answer": "Über das Kontaktformular oder telefonisch. *Beispieltext.*"
+        },
+        {
+         "question": "Arbeiten Sie mit Versicherungen?",
+         "answer": "Nennen Sie hier die Versicherungen, mit denen Sie arbeiten. *Beispieltext.*"
+        },
+        {
+         "question": "Was bringe ich zum ersten Besuch mit?",
+         "answer": "Ihren Ausweis und vorhandene Befunde."
+        },
+        {
+         "question": "Kann ich den Termin ändern?",
+         "answer": "Ja, sagen Sie uns rechtzeitig Bescheid, dann bekommen Sie einen neuen."
+        },
+        {
+         "question": "Bekomme ich die Ergebnisse schriftlich?",
+         "answer": "Ja, mit einer Erklärung zu jedem Wert."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Brauchen Sie einen Termin?",
+       "text": "Schreiben Sie uns, wir antworten so schnell wie möglich.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Vereinbaren Sie einen Termin oder schreiben Sie uns Ihre Frage, wir antworten so schnell wie möglich zu den Sprechzeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Termin vereinbaren",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir schlagen Ihnen einen Termin vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Sprechzeiten",
+       "note": "Beispielzeiten: Ändern Sie sie in Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "wie-oft-check-up",
+    "title": "Wie oft ist ein Check-up sinnvoll?",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, vorsichtiger Leitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Patienten, mit allgemeinen und vorsichtigen Informationen.\n\n## Was ein Check-up umfasst\n\nErklären Sie die üblichen Untersuchungen und wofür jede gut ist.\n\n## Wann Sie einen Termin machen sollten\n\nErinnern Sie daran, dass jeder Fall anders ist und Nachfragen am besten ist.",
+    "tags": [
+     "vorsorge",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "erster-besuch",
+    "title": "Ihr erster Besuch, Schritt für Schritt",
+    "excerpt": "Beispieltext: was Sie am ersten Tag erwartet.",
+    "content": "Beispieltext. Erklären Sie, wie der erste Besuch abläuft, damit niemand mit Fragen kommt.\n\n## Vor dem Besuch\n\nWelche Unterlagen Sie mitbringen und wie früh Sie da sein sollten.\n\n## Während der Sprechstunde\n\nWie das Gespräch abläuft und welche Untersuchungen angefordert werden können.",
+    "tags": [
+     "patienten"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Medicina vicina, appuntamenti in giornata",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota una visita",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: studio medico con appuntamenti in giornata, specialisti e risultati spiegati con calma. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro medico · Esempio",
+       "title": "La tua salute, seguita con calma e senza attese",
+       "subtitle": "Testo di esempio: racconta in una frase cosa fa il tuo centro e perché i pazienti escono tranquilli.",
+       "cta_text": "Prenota una visita",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Specialità",
+       "title": "Cosa facciamo per te",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina generale",
+         "text": "Controlli, follow-up delle terapie e visite di tutti i giorni."
+        },
+        {
+         "icon": "shield",
+         "title": "Prevenzione",
+         "text": "Check-up e analisi per anticipare i problemi."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatria",
+         "text": "Visite per i più piccoli, con orari pensati per le famiglie."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Risposta alla tua richiesta (esempio)"
+        },
+        {
+         "value": "6",
+         "label": "Specialità (esempio)"
+        },
+        {
+         "value": "Lun–Sab",
+         "label": "Giorni di visita (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Prenotare è semplice",
+       "items": [
+        {
+         "title": "Scegli il servizio",
+         "text": "Dicci di cosa hai bisogno o chiedi se hai dubbi."
+        },
+        {
+         "title": "Scegli l'orario",
+         "text": "Ti proponiamo lo spazio che ti è più comodo."
+        },
+        {
+         "title": "Vieni alla visita",
+         "text": "Ti riceviamo puntuali e ti spieghiamo tutto."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Il nostro centro",
+       "title": "Spazi pensati per te",
+       "body": "- Ambulatori ampi e luminosi\n- Accessibile in sedia a rotelle\n- Risultati spiegati con calma",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi pazienti, con il loro consenso.",
+         "name": "Paziente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un appuntamento?",
+       "text": "Scrivici e ti risponderemo il prima possibile.",
+       "button_text": "Prenota una visita",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: medicina generale, prevenzione, pediatria e fisioterapia su appuntamento. Sostituiscilo con i tuoi servizi."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi i tuoi servizi con parole che ogni paziente capisce.",
+       "cta_text": "Prenota una visita",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina generale",
+         "text": "Visite, ricette e follow-up."
+        },
+        {
+         "icon": "shield",
+         "title": "Check-up",
+         "text": "Controllo completo con referto."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatria",
+         "text": "Bambini e adolescenti."
+        },
+        {
+         "icon": "bolt",
+         "title": "Fisioterapia",
+         "text": "Infortuni e mal di schiena."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutrizione",
+         "text": "Piani su misura per te."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vaccinazioni",
+         "text": "Calendario ufficiale e viaggi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Prezzi di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Visite",
+         "name": "Prima visita",
+         "price": "40"
+        },
+        {
+         "section": "Visite",
+         "name": "Controllo",
+         "price": "30"
+        },
+        {
+         "section": "Esami",
+         "name": "Analisi di base",
+         "price": "da 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un appuntamento?",
+       "text": "Scrivici e ti risponderemo il prima possibile.",
+       "button_text": "Prenota una visita",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa ci sta a cuore nella cura dei pazienti del nostro centro medico."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo centro, chi ne fa parte e cosa vi rende diversi.\n\nParla di come vi prendete cura delle persone, non di numeri che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Tempo sufficiente per ogni visita\n- Un professionista di riferimento\n- Referti chiari e per iscritto"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Prenotare è semplice",
+       "items": [
+        {
+         "title": "Scegli il servizio",
+         "text": "Dicci di cosa hai bisogno o chiedi se hai dubbi."
+        },
+        {
+         "title": "Scegli l'orario",
+         "text": "Ti proponiamo lo spazio che ti è più comodo."
+        },
+        {
+         "title": "Vieni alla visita",
+         "text": "Ti riceviamo puntuali e ti spieghiamo tutto."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su appuntamenti, orari, assicurazioni, referti e prima visita al centro medico."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come prenoto?",
+         "answer": "Dal modulo di contatto o per telefono. *Testo di esempio.*"
+        },
+        {
+         "question": "Lavorate con le assicurazioni?",
+         "answer": "Indica qui con quali assicurazioni lavori. *Testo di esempio.*"
+        },
+        {
+         "question": "Cosa porto alla prima visita?",
+         "answer": "Il documento d'identità e i referti che hai."
+        },
+        {
+         "question": "Posso spostare l'appuntamento?",
+         "answer": "Sì, avvisaci per tempo e te ne diamo un altro."
+        },
+        {
+         "question": "Date i risultati per iscritto?",
+         "answer": "Sì, con la spiegazione di ogni valore."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un appuntamento?",
+       "text": "Scrivici e ti risponderemo il prima possibile.",
+       "button_text": "Prenota una visita",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota una visita o scrivici la tua domanda e ti risponderemo il prima possibile negli orari di accoglienza."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota una visita",
+       "text": "Raccontaci di cosa hai bisogno e ti proporremo un appuntamento.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "ogni-quanto-check-up",
+    "title": "Ogni quanto conviene fare un check-up?",
+    "excerpt": "Testo di esempio per il blog: una guida breve e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi pazienti, con informazioni generali e prudenti.\n\n## Cosa include un check-up\n\nSpiega gli esami abituali e a cosa serve ciascuno.\n\n## Quando prenotare\n\nRicorda che ogni caso è diverso e che è meglio chiedere.",
+    "tags": [
+     "prevenzione",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "prima-visita",
+    "title": "La tua prima visita, passo dopo passo",
+    "excerpt": "Testo di esempio: cosa aspettarsi il primo giorno.",
+    "content": "Testo di esempio. Racconta com'è la prima visita perché nessuno arrivi con dubbi.\n\n## Prima di venire\n\nQuali documenti portare e quanto prima arrivare.\n\n## Durante la visita\n\nCome si svolge il colloquio e quali esami si possono richiedere.",
+    "tags": [
+     "pazienti"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Medicina próxima, com consulta no próprio dia",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar consulta",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: clínica com consultas no próprio dia, especialistas e resultados explicados com calma. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro médico · Exemplo",
+       "title": "A sua saúde, cuidada com calma e sem esperas",
+       "subtitle": "Texto de exemplo: diga numa frase o que faz o seu centro e porque os pacientes saem tranquilos.",
+       "cta_text": "Marcar consulta",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Especialidades",
+       "title": "O que fazemos por si",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina geral",
+         "text": "Revisões, acompanhamento de tratamentos e consultas do dia a dia."
+        },
+        {
+         "icon": "shield",
+         "title": "Prevenção",
+         "text": "Check-ups e análises para se antecipar aos problemas."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatria",
+         "text": "Consultas para os mais pequenos, com horários para famílias."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Resposta ao seu pedido (exemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Especialidades (exemplo)"
+        },
+        {
+         "value": "Seg–Sáb",
+         "label": "Dias com consulta (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Marcar consulta é simples",
+       "items": [
+        {
+         "title": "Escolha o serviço",
+         "text": "Diga-nos o que precisa ou pergunte se tiver dúvidas."
+        },
+        {
+         "title": "Escolha a hora",
+         "text": "Propomos-lhe o horário que mais lhe convém."
+        },
+        {
+         "title": "Venha à consulta",
+         "text": "Recebemo-lo à hora e explicamos tudo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O nosso centro",
+       "title": "Instalações pensadas para si",
+       "body": "- Gabinetes amplos e luminosos\n- Acessível em cadeira de rodas\n- Resultados explicados com calma",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus pacientes, com autorização.",
+         "name": "Paciente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de consulta?",
+       "text": "Escreva-nos e respondemos o mais depressa possível.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: medicina geral, prevenção, pediatria e fisioterapia com marcação. Substitua-o pelos seus serviços."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva os seus serviços com palavras que qualquer paciente entenda.",
+       "cta_text": "Marcar consulta",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Medicina geral",
+         "text": "Consultas, receitas e acompanhamento."
+        },
+        {
+         "icon": "shield",
+         "title": "Check-ups",
+         "text": "Avaliação completa com relatório."
+        },
+        {
+         "icon": "users",
+         "title": "Pediatria",
+         "text": "Crianças e adolescentes."
+        },
+        {
+         "icon": "bolt",
+         "title": "Fisioterapia",
+         "text": "Lesões e dores de costas."
+        },
+        {
+         "icon": "leaf",
+         "title": "Nutrição",
+         "text": "Planos à sua medida."
+        },
+        {
+         "icon": "calendar",
+         "title": "Vacinação",
+         "text": "Calendário oficial e viagens."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Preços de exemplo: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Consultas",
+         "name": "Primeira consulta",
+         "price": "40"
+        },
+        {
+         "section": "Consultas",
+         "name": "Revisão",
+         "price": "30"
+        },
+        {
+         "section": "Exames",
+         "name": "Análises básicas",
+         "price": "desde 25"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de consulta?",
+       "text": "Escreva-nos e respondemos o mais depressa possível.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa no cuidado dos pacientes do nosso centro médico."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu centro, quem faz parte dele e o que vos torna diferentes.\n\nFale de como cuidam das pessoas, não de números que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Tempo suficiente em cada consulta\n- Um mesmo profissional de referência\n- Relatórios claros e por escrito"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Marcar consulta é simples",
+       "items": [
+        {
+         "title": "Escolha o serviço",
+         "text": "Diga-nos o que precisa ou pergunte se tiver dúvidas."
+        },
+        {
+         "title": "Escolha a hora",
+         "text": "Propomos-lhe o horário que mais lhe convém."
+        },
+        {
+         "title": "Venha à consulta",
+         "text": "Recebemo-lo à hora e explicamos tudo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre consultas, horários, seguros, relatórios e a primeira visita ao centro médico."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como marco consulta?",
+         "answer": "Pelo formulário de contacto ou por telefone. *Texto de exemplo.*"
+        },
+        {
+         "question": "Trabalham com seguros?",
+         "answer": "Indique aqui com que seguradoras trabalha. *Texto de exemplo.*"
+        },
+        {
+         "question": "O que levo à primeira consulta?",
+         "answer": "O seu documento de identificação e os relatórios que tiver."
+        },
+        {
+         "question": "Posso alterar a consulta?",
+         "answer": "Sim, avise-nos com antecedência e damos-lhe outra."
+        },
+        {
+         "question": "Dão os resultados por escrito?",
+         "answer": "Sim, com a explicação de cada valor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de consulta?",
+       "text": "Escreva-nos e respondemos o mais depressa possível.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marque consulta ou envie-nos a sua pergunta e respondemos o mais depressa possível no horário de atendimento."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar consulta",
+       "text": "Diga-nos o que precisa e propomos-lhe uma consulta.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: mude-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "de-quanto-em-quanto-check-up",
+    "title": "De quanto em quanto tempo fazer um check-up?",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus pacientes, com informação geral e prudente.\n\n## O que inclui um check-up\n\nExplique os exames habituais e para que serve cada um.\n\n## Quando marcar\n\nLembre que cada caso é diferente e que o melhor é perguntar.",
+    "tags": [
+     "prevencao",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "primeira-consulta",
+    "title": "A sua primeira consulta, passo a passo",
+    "excerpt": "Texto de exemplo: o que esperar no primeiro dia.",
+    "content": "Texto de exemplo. Explique como é a primeira consulta para que ninguém chegue com dúvidas.\n\n## Antes de vir\n\nQue documentos trazer e com que antecedência chegar.\n\n## Durante a consulta\n\nComo decorre a conversa e que exames podem ser pedidos.",
+    "tags": [
+     "pacientes"
+    ]
+   }
+  ]
+ }
+}

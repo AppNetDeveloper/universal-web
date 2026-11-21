@@ -561,6 +561,9 @@ function site_apply_theme_sample(SiteService $svc): bool
             'published_at' => date('Y-m-d H:i:s', time() - 86400 * (3 + 7 * (int) $i))]);
     }
     $patch = array_intersect_key($sample, array_flip(['tagline', 'menu', 'cta']));
+    // Color del tema si la web aún tiene el de fábrica
+    $accent = (string) (theme_guide()[$svc->site['theme']]['suggested_accent'] ?? '');
+    if ($accent !== '' && strtolower((string) ($svc->baseSettings()['accent'] ?? '')) === strtolower(site_defaults()['accent'])) $patch['accent'] = $accent;
     if ($patch) $svc->updateSettings($patch);
     return true;
 }

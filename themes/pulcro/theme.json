@@ -1,0 +1,58 @@
+{
+  "slug": "pulcro",
+  "name": "Pulcro",
+  "description": "Blanco clínico y verde azulado: clínicas, consultas médicas, dentistas, veterinarias y ópticas",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "clínica o centro médico",
+    "consulta médica",
+    "dentista",
+    "veterinaria",
+    "óptica",
+    "laboratorio de análisis",
+    "podología",
+    "farmacia"
+  ],
+  "suggested_accent": "#0e7490",
+  "pitch": "Para centros de salud que quieren transmitir limpieza, orden y confianza, con el botón de cita siempre a mano; para bienestar con tono cálido y orgánico (yoga, fisio, terapias), mejor «Natural».",
+  "style": "clínico, limpio y amable",
+  "colors": {
+    "acento": "#0e7490",
+    "fondo": "#ffffff",
+    "texto": "#0f2a33",
+    "suave": "#e6f1f4",
+    "fondo_oscuro": "#0b1b20"
+  },
+  "typography": {
+    "titulos": "Lexend",
+    "texto": "Lexend"
+  },
+  "dark_mode": "auto",
+  "fonts": "Lexend (SIL OFL 1.1, alojada en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (verde azulado recomendado)",
+      "--tint (fondo suave del acento: portada, iconos, etiquetas)",
+      "--ink (franja superior de datos)",
+      "--radius (22px; las piezas grandes suman 6-10px)"
+    ],
+    "clases_tema": [
+      ".infobar (franja superior con dirección y correo)",
+      ".header-phone / .header-cta (teléfono y botón de cita)",
+      ".hero-panel (portada en panel redondeado)",
+      ".hero-badge (ficha flotante del teléfono sobre la foto)",
+      ".stats (cifras en una tarjeta)",
+      ".step-num (círculo numerado)",
+      ".footer-panel (pie en panel)"
+    ],
+    "bloques_recomendados": [
+      "hours (horario con «Abierto ahora»)",
+      "features (especialidades con icono)",
+      "steps (cómo pedir cita)",
+      "faq",
+      "contact_form"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
