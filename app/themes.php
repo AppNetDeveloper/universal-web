@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-const THEMES_BUILTIN = ['default', 'noche', 'corporate'];
+const THEMES_BUILTIN = ['calido', 'corporate', 'cota', 'cuaderno', 'default', 'editorial', 'horizonte', 'industrial', 'lienzo', 'minimal', 'natural', 'noche', 'orbital', 'prestigio', 'pulcro', 'rotundo', 'sobrio', 'sutil', 'trayecto', 'vibrante'];
 const THEME_MAX_UPLOAD = 15 * 1024 * 1024;   // tamaño del archivo subido
 const THEME_MAX_UNPACKED = 40 * 1024 * 1024; // tamaño descomprimido
 const THEME_MAX_FILES = 600;
