@@ -1,0 +1,2572 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Prestigio). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Hotel boutique y bodega de autor",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Habitaciones",
+    "url": "/habitaciones"
+   },
+   {
+    "label": "La bodega",
+    "url": "/la-bodega"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar estancia",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: hotel boutique con bodega propia, viñedos y catas privadas para quienes buscan descanso, buen vino y trato discreto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Hotel boutique y bodega · Ejemplo",
+       "title": "Un refugio entre viñedos, hecho para quedarse",
+       "subtitle": "Texto de ejemplo: describe en una frase tu hotel, tu bodega y la experiencia que ofreces a quien te visita.",
+       "cta_text": "Reservar estancia",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver habitaciones",
+       "cta2_link": "/habitaciones"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "La experiencia",
+       "title": "Lo esencial, cuidado hasta el detalle",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Habitaciones singulares",
+         "text": "Doce estancias con ropa de cama artesanal y vistas a la viña."
+        },
+        {
+         "icon": "heart",
+         "title": "Cocina de temporada",
+         "text": "Menú breve con producto de la comarca y maridaje de la casa."
+        },
+        {
+         "icon": "sun",
+         "title": "Catas privadas",
+         "text": "Recorrido por la viña y la sala de barricas con el enólogo."
+        },
+        {
+         "icon": "map",
+         "title": "Entorno sereno",
+         "text": "Paseos entre cepas, silencio y cielos abiertos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Años elaborando vino (ejemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Habitaciones y suites (ejemplo)"
+        },
+        {
+         "value": "9 ha",
+         "label": "De viñedo propio (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La bodega",
+       "title": "Vinos de pocas botellas y mucho carácter",
+       "body": "- Viñedo trabajado a mano\n- Crianza lenta en barrica\n- Visitas solo con reserva previa",
+       "button_text": "Conocer la bodega",
+       "button_link": "/la-bodega"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus huéspedes, con su permiso.",
+         "name": "Huésped de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Preparamos tu estancia?",
+       "text": "Cuéntanos fechas y deseos y te proponemos una estancia a tu medida.",
+       "button_text": "Reservar estancia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "habitaciones",
+    "title": "Habitaciones",
+    "seo": {
+     "description": "Texto de ejemplo: habitaciones y suites del hotel boutique, con tarifas orientativas, desayuno de la casa y catas opcionales en la bodega."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Habitaciones y suites",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Habitación Viña",
+         "text": "Luminosa, con vistas a las cepas y baño de mármol."
+        },
+        {
+         "icon": "heart",
+         "title": "Suite Barrica",
+         "text": "Salón independiente y bañera exenta junto a la ventana."
+        },
+        {
+         "icon": "sun",
+         "title": "Suite Atardecer",
+         "text": "Terraza privada orientada al poniente."
+        },
+        {
+         "icon": "lock",
+         "title": "Casa del Lagar",
+         "text": "Estancia completa para familias o pequeños grupos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Importes de ejemplo: sustitúyelos por tus tarifas.",
+       "items": [
+        {
+         "section": "Alojamiento",
+         "name": "Habitación Viña, por noche",
+         "price": "desde 220 €"
+        },
+        {
+         "section": "Alojamiento",
+         "name": "Suite Barrica, por noche",
+         "price": "desde 340 €"
+        },
+        {
+         "section": "Experiencias",
+         "name": "Cata privada de tres vinos",
+         "price": "desde 45 €"
+        },
+        {
+         "section": "Experiencias",
+         "name": "Visita a la bodega y comida",
+         "price": "desde 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Preparamos tu estancia?",
+       "text": "Cuéntanos fechas y deseos y te proponemos una estancia a tu medida.",
+       "button_text": "Reservar estancia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "la-bodega",
+    "title": "La bodega",
+    "seo": {
+     "description": "Texto de ejemplo: la historia de la bodega, su viñedo y su forma de elaborar vinos de calidad, con visitas y catas bajo reserva previa."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Nuestra bodega",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu bodega, de dónde viene la uva y qué os distingue.\n\nHabla de cómo trabajáis la viña y la elaboración, sin prometer lo que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros principios",
+       "body": "- Respeto por la tierra y la cosecha\n- Tiradas cortas, sin prisa\n- Hospitalidad sin ostentación"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Una visita en tres tiempos",
+       "items": [
+        {
+         "title": "Paseo por la viña",
+         "text": "Caminamos entre cepas y te explicamos el ciclo del año."
+        },
+        {
+         "title": "Sala de barricas",
+         "text": "Descubres cómo reposa el vino y qué aporta cada madera."
+        },
+        {
+         "title": "Cata en la mesa",
+         "text": "Probamos varios vinos con una selección de quesos y embutidos."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre reservas, catas, horarios de entrada y salida, mascotas y cancelaciones del hotel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo se reserva una estancia?",
+         "answer": "Indica aquí cómo reservar, por formulario o por teléfono. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Se pueden hacer catas sin alojarse?",
+         "answer": "Sí, con reserva previa y plazas limitadas."
+        },
+        {
+         "question": "¿A qué hora son la entrada y la salida?",
+         "answer": "Entrada desde las 15:00 y salida hasta las 12:00. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Admitís mascotas?",
+         "answer": "Indica aquí tu política sobre mascotas."
+        },
+        {
+         "question": "¿Hay opciones sin alcohol?",
+         "answer": "Sí, ofrecemos mostos y maridajes sin alcohol bajo petición."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Preparamos tu estancia?",
+       "text": "Cuéntanos fechas y deseos y te proponemos una estancia a tu medida.",
+       "button_text": "Reservar estancia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: solicita tu reserva o escríbenos con tus preguntas y te responderemos lo antes posible en el horario de atención de recepción."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar estancia",
+       "text": "Cuéntanos fechas y número de personas y te enviamos una propuesta.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario de recepción",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "vendimia-en-la-bodega",
+    "title": "Una vendimia vista desde dentro",
+    "excerpt": "Texto de ejemplo para el blog: cómo se vive la recogida de la uva.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo para tus huéspedes y clientes.\n\n## La mañana temprana\n\nExplica cómo empieza la jornada en la viña.\n\n## Del racimo a la bodega\n\nCuenta cómo llega la uva y qué cuidados recibe.",
+    "tags": [
+     "vino",
+     "vendimia"
+    ]
+   },
+   {
+    "slug": "escapada-de-fin-de-semana",
+    "title": "Cómo organizar una escapada de fin de semana",
+    "excerpt": "Texto de ejemplo: ideas para sacar partido a dos días de descanso.",
+    "content": "Texto de ejemplo. Propón un plan de fin de semana con calma.\n\n## Viernes\n\nLlegada tranquila y cena temprana.\n\n## Sábado\n\nPaseo, cata y sobremesa sin prisas.",
+    "tags": [
+     "escapadas",
+     "consejos"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Boutique hotel and signature winery",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Rooms",
+    "url": "/rooms"
+   },
+   {
+    "label": "The winery",
+    "url": "/the-winery"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a stay",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: a boutique hotel with its own winery, vineyards and private tastings for guests who value rest, fine wine and a discreet welcome."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Boutique hotel and winery · Example",
+       "title": "A retreat among the vines, made to linger in",
+       "subtitle": "Sample text: describe your hotel, your winery and the experience you offer your guests in a single sentence.",
+       "cta_text": "Book a stay",
+       "cta_link": "/contact",
+       "cta2_text": "See the rooms",
+       "cta2_link": "/rooms"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "The experience",
+       "title": "The essentials, cared for down to the detail",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Distinctive rooms",
+         "text": "Twelve rooms with handcrafted linens and views over the vineyard."
+        },
+        {
+         "icon": "heart",
+         "title": "Seasonal cooking",
+         "text": "A short menu of local produce with the house pairing."
+        },
+        {
+         "icon": "sun",
+         "title": "Private tastings",
+         "text": "A walk through the vines and the barrel room with the winemaker."
+        },
+        {
+         "icon": "map",
+         "title": "A quiet setting",
+         "text": "Walks between the rows, silence and wide skies."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Years making wine (example)"
+        },
+        {
+         "value": "12",
+         "label": "Rooms and suites (example)"
+        },
+        {
+         "value": "9 ha",
+         "label": "Of our own vineyard (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The winery",
+       "title": "Small-batch wines with real character",
+       "body": "- Vineyard worked by hand\n- Slow ageing in oak\n- Visits by reservation only",
+       "button_text": "Discover the winery",
+       "button_link": "/the-winery"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your guests, with their permission.",
+         "name": "Sample guest",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we plan your stay?",
+       "text": "Tell us your dates and wishes and we will suggest a stay made to measure.",
+       "button_text": "Book a stay",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "rooms",
+    "title": "Rooms",
+    "seo": {
+     "description": "Sample text: rooms and suites at the boutique hotel, with indicative rates, the house breakfast and optional tastings at the winery."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Rooms and suites",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Vineyard Room",
+         "text": "Bright, with views of the vines and a marble bathroom."
+        },
+        {
+         "icon": "heart",
+         "title": "Barrel Suite",
+         "text": "A separate lounge and a freestanding bath by the window."
+        },
+        {
+         "icon": "sun",
+         "title": "Sunset Suite",
+         "text": "A private terrace facing the evening light."
+        },
+        {
+         "icon": "lock",
+         "title": "The Press House",
+         "text": "A whole house for families or small groups."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative rates",
+       "note": "Sample amounts: replace them with your own rates.",
+       "items": [
+        {
+         "section": "Stay",
+         "name": "Vineyard Room, per night",
+         "price": "from €220"
+        },
+        {
+         "section": "Stay",
+         "name": "Barrel Suite, per night",
+         "price": "from €340"
+        },
+        {
+         "section": "Experiences",
+         "name": "Private tasting of three wines",
+         "price": "from €45"
+        },
+        {
+         "section": "Experiences",
+         "name": "Winery visit and lunch",
+         "price": "from €95"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we plan your stay?",
+       "text": "Tell us your dates and wishes and we will suggest a stay made to measure.",
+       "button_text": "Book a stay",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-winery",
+    "title": "The winery",
+    "seo": {
+     "description": "Sample text: the story of the winery, its vineyard and the way it makes fine wine, with visits and tastings by prior reservation."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Our winery",
+       "body": "Sample text. Tell the story of your winery here, where the grapes come from and what sets you apart.\n\nSpeak about how you work the vineyard and the cellar, without promising what you cannot show."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our principles",
+       "body": "- Respect for the land and the harvest\n- Short runs, never rushed\n- Hospitality without show"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "A visit in three parts",
+       "items": [
+        {
+         "title": "A walk in the vineyard",
+         "text": "We stroll between the vines and explain the year's cycle."
+        },
+        {
+         "title": "The barrel room",
+         "text": "You see how the wine rests and what each oak adds."
+        },
+        {
+         "title": "Tasting at the table",
+         "text": "We taste several wines with a selection of local cheeses."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about bookings, tastings, check-in and check-out times, pets and cancellations at the hotel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I book a stay?",
+         "answer": "Explain here how to book, by form or by phone. *Sample text.*"
+        },
+        {
+         "question": "Can I join a tasting without staying?",
+         "answer": "Yes, by prior reservation and subject to limited places."
+        },
+        {
+         "question": "What time are check-in and check-out?",
+         "answer": "Check-in from 3 pm and check-out until noon. *Sample text.*"
+        },
+        {
+         "question": "Are pets welcome?",
+         "answer": "State your pet policy here."
+        },
+        {
+         "question": "Are there alcohol-free options?",
+         "answer": "Yes, we offer grape juices and alcohol-free pairings on request."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we plan your stay?",
+       "text": "Tell us your dates and wishes and we will suggest a stay made to measure.",
+       "button_text": "Book a stay",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request your booking or write to us with your questions and we will reply as soon as possible during reception opening hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a stay",
+       "text": "Tell us your dates and the number of guests and we will send a proposal.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Reception hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "a-harvest-from-the-inside",
+    "title": "A grape harvest seen from the inside",
+    "excerpt": "Sample blog text: what picking the grapes is really like.",
+    "content": "Sample text. Write an article for your guests and customers here.\n\n## The early morning\n\nExplain how the day begins in the vineyard.\n\n## From the bunch to the cellar\n\nDescribe how the grapes arrive and how they are handled.",
+    "tags": [
+     "wine",
+     "harvest"
+    ]
+   },
+   {
+    "slug": "planning-a-weekend-escape",
+    "title": "How to plan a weekend escape",
+    "excerpt": "Sample text: ideas for making the most of two restful days.",
+    "content": "Sample text. Suggest an unhurried weekend plan.\n\n## Friday\n\nA calm arrival and an early dinner.\n\n## Saturday\n\nA walk, a tasting and a long lunch.",
+    "tags": [
+     "getaways",
+     "tips"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Hotel boutique și cramă de autor",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Camere",
+    "url": "/camere"
+   },
+   {
+    "label": "Crama",
+    "url": "/crama"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Rezervă un sejur",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: hotel boutique cu cramă proprie, podgorii și degustări private pentru cei care caută odihnă, vin bun și o primire discretă."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Hotel boutique și cramă · Exemplu",
+       "title": "Un refugiu printre vii, făcut pentru a rămâne",
+       "subtitle": "Text de exemplu: descrie într-o propoziție hotelul, crama și experiența pe care o oferi oaspeților.",
+       "cta_text": "Rezervă un sejur",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi camerele",
+       "cta2_link": "/camere"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Experiența",
+       "title": "Esențialul, îngrijit până la ultimul detaliu",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Camere unice",
+         "text": "Douăsprezece camere cu așternuturi lucrate manual și vedere spre vie."
+        },
+        {
+         "icon": "heart",
+         "title": "Bucătărie de sezon",
+         "text": "Meniu scurt cu produse locale și combinația de vinuri a casei."
+        },
+        {
+         "icon": "sun",
+         "title": "Degustări private",
+         "text": "Plimbare prin vie și prin sala de baricuri alături de oenolog."
+        },
+        {
+         "icon": "map",
+         "title": "Un decor liniștit",
+         "text": "Plimbări printre rânduri de viță, liniște și cer larg."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Ani de producție de vin (exemplu)"
+        },
+        {
+         "value": "12",
+         "label": "Camere și apartamente (exemplu)"
+        },
+        {
+         "value": "9 ha",
+         "label": "De vie proprie (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Crama",
+       "title": "Vinuri în serii mici, cu mult caracter",
+       "body": "- Vie lucrată manual\n- Maturare lentă în baric\n- Vizite doar cu rezervare",
+       "button_text": "Descoperă crama",
+       "button_link": "/crama"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale oaspeților, cu acordul lor.",
+         "name": "Oaspete de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți pregătim sejurul?",
+       "text": "Spune-ne datele și dorințele tale și îți propunem un sejur potrivit.",
+       "button_text": "Rezervă un sejur",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "camere",
+    "title": "Camere",
+    "seo": {
+     "description": "Text de exemplu: camerele și apartamentele hotelului boutique, cu tarife orientative, micul dejun al casei și degustări opționale la cramă."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Camere și apartamente",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Camera Via",
+         "text": "Luminoasă, cu vedere spre vie și baie din marmură."
+        },
+        {
+         "icon": "heart",
+         "title": "Apartamentul Baric",
+         "text": "Salon separat și cadă liberă lângă fereastră."
+        },
+        {
+         "icon": "sun",
+         "title": "Apartamentul Apus",
+         "text": "Terasă privată orientată spre apus."
+        },
+        {
+         "icon": "lock",
+         "title": "Casa Teascului",
+         "text": "O casă întreagă pentru familii sau grupuri mici."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Cazare",
+         "name": "Camera Via, pe noapte",
+         "price": "de la 220 €"
+        },
+        {
+         "section": "Cazare",
+         "name": "Apartamentul Baric, pe noapte",
+         "price": "de la 340 €"
+        },
+        {
+         "section": "Experiențe",
+         "name": "Degustare privată de trei vinuri",
+         "price": "de la 45 €"
+        },
+        {
+         "section": "Experiențe",
+         "name": "Vizită la cramă și prânz",
+         "price": "de la 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți pregătim sejurul?",
+       "text": "Spune-ne datele și dorințele tale și îți propunem un sejur potrivit.",
+       "button_text": "Rezervă un sejur",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "crama",
+    "title": "Crama",
+    "seo": {
+     "description": "Text de exemplu: povestea cramei, a viei și a felului în care se face vinul de calitate, cu vizite și degustări pe bază de rezervare prealabilă."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Crama noastră",
+       "body": "Text de exemplu. Povestește aici istoria cramei tale, de unde vin strugurii și ce vă face diferiți.\n\nVorbește despre cum lucrați via și vinificația, fără a promite ceea ce nu poți demonstra."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile noastre",
+       "body": "- Respect pentru pământ și recoltă\n- Serii mici, fără grabă\n- Ospitalitate fără ostentație"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "O vizită în trei timpi",
+       "items": [
+        {
+         "title": "Plimbare prin vie",
+         "text": "Mergem printre rânduri și îți explicăm ciclul anului."
+        },
+        {
+         "title": "Sala de baricuri",
+         "text": "Descoperi cum se odihnește vinul și ce aduce fiecare lemn."
+        },
+        {
+         "title": "Degustare la masă",
+         "text": "Gustăm mai multe vinuri alături de o selecție de brânzeturi locale."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre rezervări, degustări, orele de cazare și de plecare, animale de companie și anulări."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum rezerv un sejur?",
+         "answer": "Explică aici cum se rezervă, prin formular sau telefon. *Text de exemplu.*"
+        },
+        {
+         "question": "Pot participa la o degustare fără cazare?",
+         "answer": "Da, cu rezervare prealabilă și locuri limitate."
+        },
+        {
+         "question": "La ce oră este cazarea și plecarea?",
+         "answer": "Cazare de la ora 15:00 și plecare până la 12:00. *Text de exemplu.*"
+        },
+        {
+         "question": "Se acceptă animale de companie?",
+         "answer": "Indică aici politica ta privind animalele."
+        },
+        {
+         "question": "Există opțiuni fără alcool?",
+         "answer": "Da, oferim must și combinații fără alcool la cerere."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți pregătim sejurul?",
+       "text": "Spune-ne datele și dorințele tale și îți propunem un sejur potrivit.",
+       "button_text": "Rezervă un sejur",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: solicită rezervarea ta sau scrie-ne întrebările tale și îți vom răspunde cât mai repede, în programul de lucru al recepției."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Rezervă un sejur",
+       "text": "Spune-ne datele și numărul de persoane și îți trimitem o propunere.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program recepție",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "culesul-viei-din-interior",
+    "title": "Culesul viei, văzut din interior",
+    "excerpt": "Text de exemplu pentru blog: cum se trăiește culesul strugurilor.",
+    "content": "Text de exemplu. Scrie aici un articol pentru oaspeți și clienți.\n\n## Dimineața devreme\n\nExplică cum începe ziua în vie.\n\n## De la ciorchine la cramă\n\nPovestește cum ajung strugurii și cum sunt îngrijiți.",
+    "tags": [
+     "vin",
+     "cules"
+    ]
+   },
+   {
+    "slug": "escapada-de-weekend",
+    "title": "Cum organizezi o escapadă de weekend",
+    "excerpt": "Text de exemplu: idei pentru a profita de două zile de odihnă.",
+    "content": "Text de exemplu. Propune un plan de weekend fără grabă.\n\n## Vineri\n\nSosire liniștită și o cină devreme.\n\n## Sâmbătă\n\nO plimbare, o degustare și un prânz lung.",
+    "tags": [
+     "escapade",
+     "sfaturi"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Hôtel de charme et domaine viticole",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Chambres",
+    "url": "/chambres"
+   },
+   {
+    "label": "Le domaine",
+    "url": "/le-domaine"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Réserver un séjour",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : hôtel de charme avec domaine viticole, vignes et dégustations privées pour qui recherche le repos, le bon vin et un accueil discret."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Hôtel de charme et domaine · Exemple",
+       "title": "Un refuge au cœur des vignes, pensé pour s'attarder",
+       "subtitle": "Texte d'exemple : décrivez en une phrase votre hôtel, votre domaine et l'expérience que vous offrez à vos hôtes.",
+       "cta_text": "Réserver un séjour",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les chambres",
+       "cta2_link": "/chambres"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "L'expérience",
+       "title": "L'essentiel, soigné jusqu'au moindre détail",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Chambres singulières",
+         "text": "Douze chambres au linge artisanal, ouvertes sur le vignoble."
+        },
+        {
+         "icon": "heart",
+         "title": "Cuisine de saison",
+         "text": "Une carte courte, des produits locaux et l'accord de la maison."
+        },
+        {
+         "icon": "sun",
+         "title": "Dégustations privées",
+         "text": "Promenade dans les vignes et le chai avec le vigneron."
+        },
+        {
+         "icon": "map",
+         "title": "Un cadre paisible",
+         "text": "Balades entre les rangs, silence et grand ciel."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Années de vinification (exemple)"
+        },
+        {
+         "value": "12",
+         "label": "Chambres et suites (exemple)"
+        },
+        {
+         "value": "9 ha",
+         "label": "De vignoble en propre (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Le domaine",
+       "title": "Des vins en petites séries, pleins de caractère",
+       "body": "- Vignes travaillées à la main\n- Élevage lent en fût\n- Visites sur réservation uniquement",
+       "button_text": "Découvrir le domaine",
+       "button_link": "/le-domaine"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos hôtes, avec leur accord.",
+         "name": "Hôte d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Préparons votre séjour ?",
+       "text": "Indiquez-nous vos dates et vos envies, nous vous proposerons un séjour sur mesure.",
+       "button_text": "Réserver un séjour",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chambres",
+    "title": "Chambres",
+    "seo": {
+     "description": "Texte d'exemple : chambres et suites de l'hôtel de charme, avec tarifs indicatifs, petit-déjeuner maison et dégustations en option au domaine."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Chambres et suites",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Chambre Vigne",
+         "text": "Lumineuse, vue sur les ceps et salle de bain en marbre."
+        },
+        {
+         "icon": "heart",
+         "title": "Suite Barrique",
+         "text": "Salon séparé et baignoire îlot près de la fenêtre."
+        },
+        {
+         "icon": "sun",
+         "title": "Suite Couchant",
+         "text": "Terrasse privée tournée vers le soleil couchant."
+        },
+        {
+         "icon": "lock",
+         "title": "La Maison du Pressoir",
+         "text": "Une maison entière pour familles ou petits groupes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos propres tarifs.",
+       "items": [
+        {
+         "section": "Séjour",
+         "name": "Chambre Vigne, la nuit",
+         "price": "à partir de 220 €"
+        },
+        {
+         "section": "Séjour",
+         "name": "Suite Barrique, la nuit",
+         "price": "à partir de 340 €"
+        },
+        {
+         "section": "Expériences",
+         "name": "Dégustation privée de trois vins",
+         "price": "à partir de 45 €"
+        },
+        {
+         "section": "Expériences",
+         "name": "Visite du domaine et déjeuner",
+         "price": "à partir de 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Préparons votre séjour ?",
+       "text": "Indiquez-nous vos dates et vos envies, nous vous proposerons un séjour sur mesure.",
+       "button_text": "Réserver un séjour",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "le-domaine",
+    "title": "Le domaine",
+    "seo": {
+     "description": "Texte d'exemple : l'histoire du domaine, de son vignoble et de sa façon d'élaborer des vins de qualité, avec visites et dégustations sur réservation."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Notre domaine",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre domaine, l'origine du raisin et ce qui vous distingue.\n\nParlez de votre travail de la vigne et du chai, sans promettre ce que vous ne pouvez démontrer."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos principes",
+       "body": "- Respect de la terre et de la récolte\n- Petites séries, sans précipitation\n- Hospitalité sans ostentation"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Une visite en trois temps",
+       "items": [
+        {
+         "title": "Promenade dans les vignes",
+         "text": "Nous marchons entre les rangs et vous expliquons le cycle de l'année."
+        },
+        {
+         "title": "Le chai à barriques",
+         "text": "Vous découvrez comment le vin repose et ce qu'apporte chaque bois."
+        },
+        {
+         "title": "Dégustation à table",
+         "text": "Nous goûtons plusieurs vins avec une sélection de fromages locaux."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les réservations, les dégustations, les horaires d'arrivée et de départ, les animaux et les annulations."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment réserver un séjour ?",
+         "answer": "Indiquez ici comment réserver, par formulaire ou par téléphone. *Texte d'exemple.*"
+        },
+        {
+         "question": "Peut-on déguster sans dormir sur place ?",
+         "answer": "Oui, sur réservation et dans la limite des places disponibles."
+        },
+        {
+         "question": "À quelle heure sont l'arrivée et le départ ?",
+         "answer": "Arrivée à partir de 15 h et départ jusqu'à midi. *Texte d'exemple.*"
+        },
+        {
+         "question": "Les animaux sont-ils acceptés ?",
+         "answer": "Indiquez ici votre politique concernant les animaux."
+        },
+        {
+         "question": "Y a-t-il des options sans alcool ?",
+         "answer": "Oui, jus de raisin et accords sans alcool sur demande."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Préparons votre séjour ?",
+       "text": "Indiquez-nous vos dates et vos envies, nous vous proposerons un séjour sur mesure.",
+       "button_text": "Réserver un séjour",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez votre réservation ou écrivez-nous vos questions, nous vous répondrons dès que possible pendant les horaires de la réception."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver un séjour",
+       "text": "Indiquez-nous vos dates et le nombre de personnes, nous vous enverrons une proposition.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires de la réception",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "les-vendanges-de-l-interieur",
+    "title": "Les vendanges vues de l'intérieur",
+    "excerpt": "Texte d'exemple pour le blog : comment se vit la cueillette du raisin.",
+    "content": "Texte d'exemple. Rédigez ici un article pour vos hôtes et clients.\n\n## Le petit matin\n\nExpliquez comment commence la journée dans la vigne.\n\n## De la grappe au chai\n\nRacontez l'arrivée du raisin et les soins qu'il reçoit.",
+    "tags": [
+     "vin",
+     "vendanges"
+    ]
+   },
+   {
+    "slug": "organiser-une-escapade-de-week-end",
+    "title": "Comment organiser une escapade de week-end",
+    "excerpt": "Texte d'exemple : des idées pour profiter de deux jours de repos.",
+    "content": "Texte d'exemple. Proposez un week-end sans précipitation.\n\n## Vendredi\n\nUne arrivée paisible et un dîner tôt.\n\n## Samedi\n\nUne balade, une dégustation et un long déjeuner.",
+    "tags": [
+     "escapades",
+     "conseils"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Boutique-Hotel und Weingut mit eigener Handschrift",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Zimmer",
+    "url": "/zimmer"
+   },
+   {
+    "label": "Das Weingut",
+    "url": "/das-weingut"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Aufenthalt buchen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Boutique-Hotel mit eigenem Weingut, Rebbergen und privaten Verkostungen für Gäste, die Ruhe, guten Wein und diskrete Gastlichkeit schätzen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Boutique-Hotel und Weingut · Beispiel",
+       "title": "Ein Rückzugsort zwischen den Reben, zum Verweilen gemacht",
+       "subtitle": "Beispieltext: Beschreiben Sie in einem Satz Ihr Hotel, Ihr Weingut und das Erlebnis, das Sie Ihren Gästen bieten.",
+       "cta_text": "Aufenthalt buchen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Zimmer ansehen",
+       "cta2_link": "/zimmer"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Das Erlebnis",
+       "title": "Das Wesentliche, bis ins Detail gepflegt",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Besondere Zimmer",
+         "text": "Zwölf Zimmer mit handgefertigter Bettwäsche und Blick auf die Reben."
+        },
+        {
+         "icon": "heart",
+         "title": "Saisonale Küche",
+         "text": "Eine kurze Karte mit regionalen Produkten und der Weinbegleitung des Hauses."
+        },
+        {
+         "icon": "sun",
+         "title": "Private Verkostungen",
+         "text": "Rundgang durch den Weinberg und den Barriquekeller mit dem Winzer."
+        },
+        {
+         "icon": "map",
+         "title": "Ruhige Umgebung",
+         "text": "Spaziergänge zwischen den Rebzeilen, Stille und weiter Himmel."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Jahre Weinbau (Beispiel)"
+        },
+        {
+         "value": "12",
+         "label": "Zimmer und Suiten (Beispiel)"
+        },
+        {
+         "value": "9 ha",
+         "label": "Eigene Rebfläche (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Weingut",
+       "title": "Weine in kleinen Auflagen mit viel Charakter",
+       "body": "- Weinberg in Handarbeit\n- Langsamer Ausbau im Holzfass\n- Besuche nur nach Reservierung",
+       "button_text": "Weingut entdecken",
+       "button_link": "/das-weingut"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Gästestimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetzen Sie ihn durch echte Bewertungen Ihrer Gäste, mit deren Einverständnis.",
+         "name": "Beispielgast",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihren Aufenthalt planen?",
+       "text": "Nennen Sie uns Ihre Reisedaten und Wünsche, wir schlagen Ihnen einen maßgeschneiderten Aufenthalt vor.",
+       "button_text": "Aufenthalt buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "zimmer",
+    "title": "Zimmer",
+    "seo": {
+     "description": "Beispieltext: Zimmer und Suiten des Boutique-Hotels mit Richtpreisen, Frühstück des Hauses und optionalen Verkostungen auf dem Weingut."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Zimmer und Suiten",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Zimmer Rebberg",
+         "text": "Hell, mit Blick auf die Reben und Marmorbad."
+        },
+        {
+         "icon": "heart",
+         "title": "Suite Barrique",
+         "text": "Separater Salon und freistehende Wanne am Fenster."
+        },
+        {
+         "icon": "sun",
+         "title": "Suite Abendrot",
+         "text": "Private Terrasse mit Blick in den Sonnenuntergang."
+        },
+        {
+         "icon": "lock",
+         "title": "Das Kelterhaus",
+         "text": "Ein ganzes Haus für Familien oder kleine Gruppen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre eigenen Preise.",
+       "items": [
+        {
+         "section": "Aufenthalt",
+         "name": "Zimmer Rebberg, pro Nacht",
+         "price": "ab 220 €"
+        },
+        {
+         "section": "Aufenthalt",
+         "name": "Suite Barrique, pro Nacht",
+         "price": "ab 340 €"
+        },
+        {
+         "section": "Erlebnisse",
+         "name": "Private Verkostung von drei Weinen",
+         "price": "ab 45 €"
+        },
+        {
+         "section": "Erlebnisse",
+         "name": "Weinguts-Besuch mit Mittagessen",
+         "price": "ab 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihren Aufenthalt planen?",
+       "text": "Nennen Sie uns Ihre Reisedaten und Wünsche, wir schlagen Ihnen einen maßgeschneiderten Aufenthalt vor.",
+       "button_text": "Aufenthalt buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-weingut",
+    "title": "Das Weingut",
+    "seo": {
+     "description": "Beispieltext: die Geschichte des Weinguts, seiner Reben und seiner Art, hochwertigen Wein zu erzeugen, mit Besuchen und Verkostungen nach Reservierung."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Unser Weingut",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Weinguts, woher die Trauben stammen und was Sie auszeichnet.\n\nSprechen Sie über die Arbeit im Weinberg und im Keller, ohne zu versprechen, was Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Grundsätze",
+       "body": "- Respekt vor Boden und Ernte\n- Kleine Auflagen, ohne Eile\n- Gastfreundschaft ohne Prunk"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ein Besuch in drei Schritten",
+       "items": [
+        {
+         "title": "Spaziergang durch die Reben",
+         "text": "Wir gehen zwischen den Rebzeilen und erklären den Jahreslauf."
+        },
+        {
+         "title": "Der Barriquekeller",
+         "text": "Sie erfahren, wie der Wein reift und was jedes Holz beiträgt."
+        },
+        {
+         "title": "Verkostung am Tisch",
+         "text": "Wir probieren mehrere Weine mit einer Auswahl regionaler Käse."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Buchung, Verkostungen, An- und Abreisezeiten, Haustieren und Stornierung im Hotel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie buche ich einen Aufenthalt?",
+         "answer": "Erklären Sie hier, wie man bucht, per Formular oder Telefon. *Beispieltext.*"
+        },
+        {
+         "question": "Kann man ohne Übernachtung an einer Verkostung teilnehmen?",
+         "answer": "Ja, nach Reservierung und solange Plätze frei sind."
+        },
+        {
+         "question": "Wann sind An- und Abreise?",
+         "answer": "Anreise ab 15 Uhr, Abreise bis 12 Uhr. *Beispieltext.*"
+        },
+        {
+         "question": "Sind Haustiere erlaubt?",
+         "answer": "Geben Sie hier Ihre Regelung zu Haustieren an."
+        },
+        {
+         "question": "Gibt es alkoholfreie Angebote?",
+         "answer": "Ja, auf Wunsch servieren wir Traubensaft und alkoholfreie Begleitungen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihren Aufenthalt planen?",
+       "text": "Nennen Sie uns Ihre Reisedaten und Wünsche, wir schlagen Ihnen einen maßgeschneiderten Aufenthalt vor.",
+       "button_text": "Aufenthalt buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fragen Sie Ihre Reservierung an oder schreiben Sie uns Ihre Fragen, wir antworten so bald wie möglich innerhalb der Empfangszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Aufenthalt buchen",
+       "text": "Nennen Sie uns Ihre Reisedaten und die Personenzahl, wir senden Ihnen ein Angebot.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Empfangszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "weinlese-von-innen",
+    "title": "Die Weinlese von innen betrachtet",
+    "excerpt": "Beispieltext für den Blog: wie sich die Traubenernte anfühlt.",
+    "content": "Beispieltext. Schreiben Sie hier einen Artikel für Ihre Gäste und Kunden.\n\n## Der frühe Morgen\n\nErklären Sie, wie der Tag im Weinberg beginnt.\n\n## Von der Traube in den Keller\n\nBeschreiben Sie, wie die Trauben ankommen und versorgt werden.",
+    "tags": [
+     "wein",
+     "weinlese"
+    ]
+   },
+   {
+    "slug": "kurzurlaub-planen",
+    "title": "So planen Sie einen Kurzurlaub am Wochenende",
+    "excerpt": "Beispieltext: Ideen, um zwei Tage Erholung gut zu nutzen.",
+    "content": "Beispieltext. Schlagen Sie ein entspanntes Wochenende vor.\n\n## Freitag\n\nRuhige Ankunft und ein frühes Abendessen.\n\n## Samstag\n\nSpaziergang, Verkostung und ein langes Mittagessen.",
+    "tags": [
+     "kurzurlaub",
+     "tipps"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Hotel di charme e cantina d'autore",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Camere",
+    "url": "/camere"
+   },
+   {
+    "label": "La cantina",
+    "url": "/la-cantina"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota un soggiorno",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: hotel di charme con cantina propria, vigneti e degustazioni private per chi cerca riposo, buon vino e un'accoglienza discreta."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Hotel di charme e cantina · Esempio",
+       "title": "Un rifugio tra i vigneti, fatto per fermarsi",
+       "subtitle": "Testo di esempio: descrivi in una frase il tuo hotel, la tua cantina e l'esperienza che offri ai tuoi ospiti.",
+       "cta_text": "Prenota un soggiorno",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi le camere",
+       "cta2_link": "/camere"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "L'esperienza",
+       "title": "L'essenziale, curato fino al dettaglio",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Camere uniche",
+         "text": "Dodici camere con biancheria artigianale e vista sulla vigna."
+        },
+        {
+         "icon": "heart",
+         "title": "Cucina di stagione",
+         "text": "Un menu breve con prodotti locali e l'abbinamento della casa."
+        },
+        {
+         "icon": "sun",
+         "title": "Degustazioni private",
+         "text": "Passeggiata tra le viti e la barricaia con l'enologo."
+        },
+        {
+         "icon": "map",
+         "title": "Un luogo sereno",
+         "text": "Passeggiate tra i filari, silenzio e cieli aperti."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Anni di produzione di vino (esempio)"
+        },
+        {
+         "value": "12",
+         "label": "Camere e suite (esempio)"
+        },
+        {
+         "value": "9 ha",
+         "label": "Di vigneto di proprietà (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La cantina",
+       "title": "Vini in piccole tirature, di grande carattere",
+       "body": "- Vigneto lavorato a mano\n- Affinamento lento in barrique\n- Visite solo su prenotazione",
+       "button_text": "Scopri la cantina",
+       "button_link": "/la-cantina"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con recensioni reali dei tuoi ospiti, con il loro consenso.",
+         "name": "Ospite di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prepariamo il tuo soggiorno?",
+       "text": "Indicaci date e desideri e ti proporremo un soggiorno su misura.",
+       "button_text": "Prenota un soggiorno",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "camere",
+    "title": "Camere",
+    "seo": {
+     "description": "Testo di esempio: camere e suite dell'hotel di charme, con tariffe indicative, colazione della casa e degustazioni facoltative in cantina."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Camere e suite",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Camera Vigna",
+         "text": "Luminosa, con vista sulle viti e bagno in marmo."
+        },
+        {
+         "icon": "heart",
+         "title": "Suite Barrique",
+         "text": "Salotto separato e vasca freestanding accanto alla finestra."
+        },
+        {
+         "icon": "sun",
+         "title": "Suite Tramonto",
+         "text": "Terrazza privata rivolta verso il tramonto."
+        },
+        {
+         "icon": "lock",
+         "title": "La Casa del Torchio",
+         "text": "Un'intera casa per famiglie o piccoli gruppi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Importi di esempio: sostituiscili con le tue tariffe.",
+       "items": [
+        {
+         "section": "Soggiorno",
+         "name": "Camera Vigna, a notte",
+         "price": "da 220 €"
+        },
+        {
+         "section": "Soggiorno",
+         "name": "Suite Barrique, a notte",
+         "price": "da 340 €"
+        },
+        {
+         "section": "Esperienze",
+         "name": "Degustazione privata di tre vini",
+         "price": "da 45 €"
+        },
+        {
+         "section": "Esperienze",
+         "name": "Visita alla cantina e pranzo",
+         "price": "da 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prepariamo il tuo soggiorno?",
+       "text": "Indicaci date e desideri e ti proporremo un soggiorno su misura.",
+       "button_text": "Prenota un soggiorno",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "la-cantina",
+    "title": "La cantina",
+    "seo": {
+     "description": "Testo di esempio: la storia della cantina, del suo vigneto e del suo modo di produrre vini di qualità, con visite e degustazioni su prenotazione."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "La nostra cantina",
+       "body": "Testo di esempio. Racconta qui la storia della tua cantina, da dove viene l'uva e che cosa vi distingue.\n\nParla di come lavorate la vigna e la cantina, senza promettere ciò che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri principi",
+       "body": "- Rispetto per la terra e per la vendemmia\n- Piccole tirature, senza fretta\n- Ospitalità senza ostentazione"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Una visita in tre tempi",
+       "items": [
+        {
+         "title": "Passeggiata in vigna",
+         "text": "Camminiamo tra i filari e ti spieghiamo il ciclo dell'anno."
+        },
+        {
+         "title": "La barricaia",
+         "text": "Scopri come riposa il vino e che cosa apporta ogni legno."
+        },
+        {
+         "title": "Degustazione a tavola",
+         "text": "Assaggiamo diversi vini con una selezione di formaggi locali."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su prenotazioni, degustazioni, orari di arrivo e partenza, animali e cancellazioni dell'hotel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come si prenota un soggiorno?",
+         "answer": "Spiega qui come prenotare, con il modulo o per telefono. *Testo di esempio.*"
+        },
+        {
+         "question": "Si può partecipare a una degustazione senza pernottare?",
+         "answer": "Sì, su prenotazione e fino a esaurimento dei posti."
+        },
+        {
+         "question": "A che ora sono il check-in e il check-out?",
+         "answer": "Check-in dalle 15:00 e check-out entro le 12:00. *Testo di esempio.*"
+        },
+        {
+         "question": "Si accettano animali?",
+         "answer": "Indica qui la tua politica sugli animali."
+        },
+        {
+         "question": "Ci sono opzioni senza alcol?",
+         "answer": "Sì, su richiesta proponiamo mosto e abbinamenti analcolici."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prepariamo il tuo soggiorno?",
+       "text": "Indicaci date e desideri e ti proporremo un soggiorno su misura.",
+       "button_text": "Prenota un soggiorno",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi la tua prenotazione o scrivici le tue domande e ti risponderemo il prima possibile negli orari di apertura della reception."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota un soggiorno",
+       "text": "Indicaci le date e il numero di persone e ti invieremo una proposta.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari della reception",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "la-vendemmia-vista-da-dentro",
+    "title": "La vendemmia vista da dentro",
+    "excerpt": "Testo di esempio per il blog: come si vive la raccolta dell'uva.",
+    "content": "Testo di esempio. Scrivi qui un articolo per i tuoi ospiti e clienti.\n\n## Il mattino presto\n\nSpiega come inizia la giornata in vigna.\n\n## Dal grappolo alla cantina\n\nRacconta come arriva l'uva e come viene trattata.",
+    "tags": [
+     "vino",
+     "vendemmia"
+    ]
+   },
+   {
+    "slug": "organizzare-una-fuga-di-fine-settimana",
+    "title": "Come organizzare una fuga di fine settimana",
+    "excerpt": "Testo di esempio: idee per sfruttare due giorni di riposo.",
+    "content": "Testo di esempio. Proponi un fine settimana senza fretta.\n\n## Venerdì\n\nUn arrivo tranquillo e una cena anticipata.\n\n## Sabato\n\nUna passeggiata, una degustazione e un lungo pranzo.",
+    "tags": [
+     "fughe",
+     "consigli"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Hotel boutique e adega de autor",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Quartos",
+    "url": "/quartos"
+   },
+   {
+    "label": "A adega",
+    "url": "/a-adega"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar estadia",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: hotel boutique com adega própria, vinhas e provas privadas para quem procura descanso, bom vinho e um acolhimento discreto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Hotel boutique e adega · Exemplo",
+       "title": "Um refúgio entre vinhas, feito para ficar",
+       "subtitle": "Texto de exemplo: descreva numa frase o seu hotel, a sua adega e a experiência que oferece aos seus hóspedes.",
+       "cta_text": "Reservar estadia",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver quartos",
+       "cta2_link": "/quartos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "A experiência",
+       "title": "O essencial, cuidado ao pormenor",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Quartos singulares",
+         "text": "Doze quartos com roupa de cama artesanal e vista para a vinha."
+        },
+        {
+         "icon": "heart",
+         "title": "Cozinha de estação",
+         "text": "Ementa curta com produtos da região e o vinho escolhido pela casa."
+        },
+        {
+         "icon": "sun",
+         "title": "Provas privadas",
+         "text": "Passeio pela vinha e pela sala de barricas com o enólogo."
+        },
+        {
+         "icon": "map",
+         "title": "Um cenário sereno",
+         "text": "Caminhadas entre as cepas, silêncio e céu aberto."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "14",
+         "label": "Anos a produzir vinho (exemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Quartos e suites (exemplo)"
+        },
+        {
+         "value": "9 ha",
+         "label": "De vinha própria (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A adega",
+       "title": "Vinhos de pequenas tiragens e muito carácter",
+       "body": "- Vinha trabalhada à mão\n- Estágio lento em barrica\n- Visitas apenas com reserva",
+       "button_text": "Conhecer a adega",
+       "button_link": "/a-adega"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus hóspedes, com a sua autorização.",
+         "name": "Hóspede de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Preparamos a sua estadia?",
+       "text": "Indique-nos as datas e os seus desejos e propomos uma estadia à medida.",
+       "button_text": "Reservar estadia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "quartos",
+    "title": "Quartos",
+    "seo": {
+     "description": "Texto de exemplo: quartos e suites do hotel boutique, com tarifas indicativas, pequeno-almoço da casa e provas opcionais na adega."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "title": "Quartos e suites",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Quarto Vinha",
+         "text": "Luminoso, com vista para as cepas e casa de banho em mármore."
+        },
+        {
+         "icon": "heart",
+         "title": "Suite Barrica",
+         "text": "Sala independente e banheira livre junto à janela."
+        },
+        {
+         "icon": "sun",
+         "title": "Suite Poente",
+         "text": "Terraço privado virado para o pôr do sol."
+        },
+        {
+         "icon": "lock",
+         "title": "A Casa do Lagar",
+         "text": "Uma casa inteira para famílias ou pequenos grupos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas indicativas",
+       "note": "Valores de exemplo: substitua-os pelas suas tarifas.",
+       "items": [
+        {
+         "section": "Estadia",
+         "name": "Quarto Vinha, por noite",
+         "price": "desde 220 €"
+        },
+        {
+         "section": "Estadia",
+         "name": "Suite Barrica, por noite",
+         "price": "desde 340 €"
+        },
+        {
+         "section": "Experiências",
+         "name": "Prova privada de três vinhos",
+         "price": "desde 45 €"
+        },
+        {
+         "section": "Experiências",
+         "name": "Visita à adega e almoço",
+         "price": "desde 95 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Preparamos a sua estadia?",
+       "text": "Indique-nos as datas e os seus desejos e propomos uma estadia à medida.",
+       "button_text": "Reservar estadia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-adega",
+    "title": "A adega",
+    "seo": {
+     "description": "Texto de exemplo: a história da adega, da sua vinha e da forma como produz vinhos de qualidade, com visitas e provas mediante reserva prévia."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "A nossa adega",
+       "body": "Texto de exemplo. Conte aqui a história da sua adega, de onde vem a uva e o que vos distingue.\n\nFale de como trabalham a vinha e a vinificação, sem prometer o que não possa demonstrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos princípios",
+       "body": "- Respeito pela terra e pela vindima\n- Pequenas tiragens, sem pressa\n- Hospitalidade sem ostentação"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Uma visita em três momentos",
+       "items": [
+        {
+         "title": "Passeio pela vinha",
+         "text": "Caminhamos entre as cepas e explicamos o ciclo do ano."
+        },
+        {
+         "title": "A sala de barricas",
+         "text": "Descobre como repousa o vinho e o que cada madeira lhe dá."
+        },
+        {
+         "title": "Prova à mesa",
+         "text": "Provamos vários vinhos com uma seleção de queijos da região."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre reservas, provas, horários de entrada e saída, animais de estimação e cancelamentos do hotel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como se reserva uma estadia?",
+         "answer": "Explique aqui como reservar, por formulário ou por telefone. *Texto de exemplo.*"
+        },
+        {
+         "question": "É possível fazer provas sem ficar alojado?",
+         "answer": "Sim, com reserva prévia e lugares limitados."
+        },
+        {
+         "question": "A que horas são a entrada e a saída?",
+         "answer": "Entrada a partir das 15:00 e saída até às 12:00. *Texto de exemplo.*"
+        },
+        {
+         "question": "Aceitam animais de estimação?",
+         "answer": "Indique aqui a sua política sobre animais."
+        },
+        {
+         "question": "Há opções sem álcool?",
+         "answer": "Sim, oferecemos mosto e harmonizações sem álcool a pedido."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Preparamos a sua estadia?",
+       "text": "Indique-nos as datas e os seus desejos e propomos uma estadia à medida.",
+       "button_text": "Reservar estadia",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça a sua reserva ou escreva-nos as suas dúvidas e responderemos o mais depressa possível dentro do horário da receção."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar estadia",
+       "text": "Indique-nos as datas e o número de pessoas e enviamos uma proposta.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário da receção",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "do",
+         "opens": "11:00",
+         "closes": "14:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "a-vindima-por-dentro",
+    "title": "A vindima vista por dentro",
+    "excerpt": "Texto de exemplo para o blog: como se vive a colheita da uva.",
+    "content": "Texto de exemplo. Escreva aqui um artigo para os seus hóspedes e clientes.\n\n## A manhã cedo\n\nExplique como começa o dia na vinha.\n\n## Do cacho à adega\n\nConte como chega a uva e que cuidados recebe.",
+    "tags": [
+     "vinho",
+     "vindima"
+    ]
+   },
+   {
+    "slug": "organizar-uma-escapada-de-fim-de-semana",
+    "title": "Como organizar uma escapada de fim de semana",
+    "excerpt": "Texto de exemplo: ideias para aproveitar dois dias de descanso.",
+    "content": "Texto de exemplo. Proponha um fim de semana sem pressa.\n\n## Sexta-feira\n\nUma chegada tranquila e um jantar cedo.\n\n## Sábado\n\nUm passeio, uma prova e um almoço demorado.",
+    "tags": [
+     "escapadas",
+     "dicas"
+    ]
+   }
+  ]
+ }
+}

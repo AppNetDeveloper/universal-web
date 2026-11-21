@@ -1,0 +1,2782 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Minimal). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Gestión de proyectos clara para equipos pequeños",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Funciones",
+    "url": "/funciones"
+   },
+   {
+    "label": "Precios",
+    "url": "/precios"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Probar gratis",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: aplicación de gestión de proyectos para equipos pequeños, con tableros, informes y precios claros. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Gestión de proyectos · Ejemplo",
+       "title": "Tu equipo, con un plan que todos ven",
+       "subtitle": "Texto de ejemplo: explica en una frase qué hace tu aplicación, para quién es y qué problema resuelve.",
+       "cta_text": "Empezar gratis",
+       "cta_link": "/precios",
+       "cta2_text": "Ver funciones",
+       "cta2_link": "/funciones"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Funciones",
+       "title": "Todo lo necesario, sin ruido",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Tableros y listas",
+         "text": "Organiza el trabajo en tableros con tareas, responsables y fechas."
+        },
+        {
+         "icon": "target",
+         "title": "Objetivos y entregas",
+         "text": "Agrupa tareas en hitos y comprueba si llegas a tiempo."
+        },
+        {
+         "icon": "users",
+         "title": "Trabajo en equipo",
+         "text": "Comentarios, menciones y archivos en cada tarea."
+        },
+        {
+         "icon": "chart",
+         "title": "Informes",
+         "text": "Carga de trabajo y avance del proyecto en un vistazo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3.000",
+         "label": "Equipos activos (ejemplo)"
+        },
+        {
+         "value": "98 %",
+         "label": "Tareas entregadas a tiempo (ejemplo)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Valoración media (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo empezar",
+       "items": [
+        {
+         "title": "Crea tu espacio",
+         "text": "Registra a tu equipo y crea el primer proyecto en minutos."
+        },
+        {
+         "title": "Importa tus tareas",
+         "text": "Sube una hoja de cálculo o empieza desde una plantilla."
+        },
+        {
+         "title": "Trabaja con un plan",
+         "text": "Asigna, prioriza y sigue el avance sin reuniones de más."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Para equipos reales",
+       "title": "Pocas funciones, bien hechas",
+       "body": "- Un tablero que se entiende a la primera\n- Sin formación ni configuraciones eternas\n- Tus datos exportables cuando quieras",
+       "button_text": "Ver funciones",
+       "button_link": "/funciones"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para ordenar tus proyectos?",
+       "text": "Crea tu cuenta gratuita; no hace falta tarjeta.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "funciones",
+    "title": "Funciones",
+    "seo": {
+     "description": "Texto de ejemplo: funciones de la aplicación, desde tableros y objetivos hasta informes, permisos y automatizaciones para tu equipo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Funciones",
+       "subtitle": "Texto de ejemplo: describe lo que permite hacer tu aplicación con palabras que entienda cualquiera.",
+       "cta_text": "Empezar gratis",
+       "cta_link": "/precios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Tableros y listas",
+         "text": "Organiza el trabajo en tableros con tareas, responsables y fechas."
+        },
+        {
+         "icon": "target",
+         "title": "Objetivos y entregas",
+         "text": "Agrupa tareas en hitos y comprueba si llegas a tiempo."
+        },
+        {
+         "icon": "users",
+         "title": "Trabajo en equipo",
+         "text": "Comentarios, menciones y archivos en cada tarea."
+        },
+        {
+         "icon": "chart",
+         "title": "Informes",
+         "text": "Carga de trabajo y avance del proyecto en un vistazo."
+        },
+        {
+         "icon": "lock",
+         "title": "Permisos por rol",
+         "text": "Decide quién ve y quién edita cada proyecto."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automatizaciones",
+         "text": "Reglas sencillas para mover tareas y avisar al equipo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo empezar",
+       "items": [
+        {
+         "title": "Crea tu espacio",
+         "text": "Registra a tu equipo y crea el primer proyecto en minutos."
+        },
+        {
+         "title": "Importa tus tareas",
+         "text": "Sube una hoja de cálculo o empieza desde una plantilla."
+        },
+        {
+         "title": "Trabaja con un plan",
+         "text": "Asigna, prioriza y sigue el avance sin reuniones de más."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para ordenar tus proyectos?",
+       "text": "Crea tu cuenta gratuita; no hace falta tarjeta.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "precios",
+    "title": "Precios",
+    "seo": {
+     "description": "Texto de ejemplo: planes y precios de la aplicación, con un plan gratuito, otro para equipos y otro para empresas. Sustitúyelo por los tuyos."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Precios",
+       "subtitle": "Texto de ejemplo: planes sencillos, sin cargos ocultos y con cambio de plan en cualquier momento.",
+       "cta_text": "Empezar gratis",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planes y precios",
+       "note": "Importes de ejemplo: sustitúyelos por tus precios.",
+       "items": [
+        {
+         "section": "Gratis",
+         "name": "Hasta 5 personas",
+         "price": "0 €"
+        },
+        {
+         "section": "Gratis",
+         "name": "3 proyectos activos",
+         "price": "incluido"
+        },
+        {
+         "section": "Equipo",
+         "name": "Por usuario y mes",
+         "price": "8 €"
+        },
+        {
+         "section": "Equipo",
+         "name": "Proyectos ilimitados",
+         "price": "incluido"
+        },
+        {
+         "section": "Empresa",
+         "name": "Por usuario y mes",
+         "price": "15 €"
+        },
+        {
+         "section": "Empresa",
+         "name": "Permisos avanzados y soporte prioritario",
+         "price": "incluido"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para ordenar tus proyectos?",
+       "text": "Crea tu cuenta gratuita; no hace falta tarjeta.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la prueba gratuita, la facturación, la importación de datos y la seguridad."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Puedo probarlo gratis?",
+         "answer": "Sí, el plan gratuito no caduca. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cómo se factura?",
+         "answer": "Mensual o anual, por usuario activo. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Puedo importar mis datos?",
+         "answer": "Sí, desde hojas de cálculo en formato CSV."
+        },
+        {
+         "question": "¿Y si quiero irme?",
+         "answer": "Exportas todo tu trabajo y cancelas cuando quieras."
+        },
+        {
+         "question": "¿Es seguro?",
+         "answer": "Los datos viajan cifrados y haces copias automáticas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para ordenar tus proyectos?",
+       "text": "Crea tu cuenta gratuita; no hace falta tarjeta.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: escríbenos con tu pregunta o solicita una demostración y te responderemos lo antes posible en horario laboral."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Hablemos",
+       "text": "Cuéntanos qué necesita tu equipo y te respondemos en un día laborable.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Soporte",
+       "body": "Texto de ejemplo. Indica aquí cómo atiendes a tus clientes y en qué horario."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-planificar-un-sprint",
+    "title": "Cómo planificar un sprint realista",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve para no cargar de más al equipo.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes.\n\n## Empieza por la capacidad\n\nCalcula cuántas horas reales tiene el equipo, descontando reuniones y vacaciones.\n\n## Deja margen\n\nReserva un 20 % para imprevistos y revisa el plan a mitad del sprint.",
+    "tags": [
+     "equipos",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "reuniones-semanales-que-funcionan",
+    "title": "Reuniones semanales que sí funcionan",
+    "excerpt": "Texto de ejemplo: cómo reunirse menos y decidir más.",
+    "content": "Texto de ejemplo. Explica cómo preparar una reunión breve y útil.\n\n## Agenda por escrito\n\nComparte los temas con antelación para llegar con las ideas claras.\n\n## Cierra con responsables\n\nTermina cada reunión con tareas, personas y fechas.",
+    "tags": [
+     "productividad"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Clear project management for small teams",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Features",
+    "url": "/features"
+   },
+   {
+    "label": "Pricing",
+    "url": "/pricing"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Try it free",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: project management app for small teams, with boards, reports and clear pricing. Replace it with your own description."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Project management · Example",
+       "title": "Your team, working from one shared plan",
+       "subtitle": "Sample text: explain in one sentence what your app does, who it is for and which problem it solves.",
+       "cta_text": "Start for free",
+       "cta_link": "/pricing",
+       "cta2_text": "See features",
+       "cta2_link": "/features"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Features",
+       "title": "Everything you need, nothing you don't",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Boards and lists",
+         "text": "Organise work in boards with tasks, owners and due dates."
+        },
+        {
+         "icon": "target",
+         "title": "Goals and milestones",
+         "text": "Group tasks into milestones and see whether you will deliver on time."
+        },
+        {
+         "icon": "users",
+         "title": "Teamwork",
+         "text": "Comments, mentions and files on every task."
+        },
+        {
+         "icon": "chart",
+         "title": "Reports",
+         "text": "Workload and project progress at a glance."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3,000",
+         "label": "Active teams (example)"
+        },
+        {
+         "value": "98%",
+         "label": "Tasks delivered on time (example)"
+        },
+        {
+         "value": "4.7/5",
+         "label": "Average rating (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How to get started",
+       "items": [
+        {
+         "title": "Create your workspace",
+         "text": "Sign up your team and create the first project in minutes."
+        },
+        {
+         "title": "Import your tasks",
+         "text": "Upload a spreadsheet or start from a template."
+        },
+        {
+         "title": "Work from a plan",
+         "text": "Assign, prioritise and track progress without extra meetings."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "For real teams",
+       "title": "Few features, done well",
+       "body": "- A board you understand at first glance\n- No training or endless setup\n- Your data is exportable whenever you want",
+       "button_text": "See features",
+       "button_link": "/features"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample text for a review: replace it with real reviews from your customers, with their permission.",
+         "name": "Sample customer",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to get your projects in order?",
+       "text": "Create your free account; no card needed.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "features",
+    "title": "Features",
+    "seo": {
+     "description": "Sample text: app features, from boards and goals to reports, permissions and automations that help your team stay on track."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Features",
+       "subtitle": "Sample text: describe what your app lets people do, in words anyone can understand.",
+       "cta_text": "Start for free",
+       "cta_link": "/pricing"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Boards and lists",
+         "text": "Organise work in boards with tasks, owners and due dates."
+        },
+        {
+         "icon": "target",
+         "title": "Goals and milestones",
+         "text": "Group tasks into milestones and see whether you will deliver on time."
+        },
+        {
+         "icon": "users",
+         "title": "Teamwork",
+         "text": "Comments, mentions and files on every task."
+        },
+        {
+         "icon": "chart",
+         "title": "Reports",
+         "text": "Workload and project progress at a glance."
+        },
+        {
+         "icon": "lock",
+         "title": "Role-based permissions",
+         "text": "Decide who can view and who can edit each project."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automations",
+         "text": "Simple rules to move tasks and notify the team."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How to get started",
+       "items": [
+        {
+         "title": "Create your workspace",
+         "text": "Sign up your team and create the first project in minutes."
+        },
+        {
+         "title": "Import your tasks",
+         "text": "Upload a spreadsheet or start from a template."
+        },
+        {
+         "title": "Work from a plan",
+         "text": "Assign, prioritise and track progress without extra meetings."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to get your projects in order?",
+       "text": "Create your free account; no card needed.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "pricing",
+    "title": "Pricing",
+    "seo": {
+     "description": "Sample text: app plans and pricing, with a free plan, a team plan and a business plan. Replace them with your own prices."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Pricing",
+       "subtitle": "Sample text: simple plans, no hidden fees and the freedom to change plan at any time.",
+       "cta_text": "Start for free",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Plans and pricing",
+       "note": "Example amounts: replace them with your own prices.",
+       "items": [
+        {
+         "section": "Free",
+         "name": "Up to 5 people",
+         "price": "€0"
+        },
+        {
+         "section": "Free",
+         "name": "3 active projects",
+         "price": "included"
+        },
+        {
+         "section": "Team",
+         "name": "Per user, per month",
+         "price": "€8"
+        },
+        {
+         "section": "Team",
+         "name": "Unlimited projects",
+         "price": "included"
+        },
+        {
+         "section": "Business",
+         "name": "Per user, per month",
+         "price": "€15"
+        },
+        {
+         "section": "Business",
+         "name": "Advanced permissions and priority support",
+         "price": "included"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to get your projects in order?",
+       "text": "Create your free account; no card needed.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "FAQ",
+    "seo": {
+     "description": "Sample text: answers to common questions about the free trial, billing, importing your data and how your information is kept secure."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Can I try it for free?",
+         "answer": "Yes, the free plan does not expire. *Sample text.*"
+        },
+        {
+         "question": "How does billing work?",
+         "answer": "Monthly or yearly, per active user. *Sample text.*"
+        },
+        {
+         "question": "Can I import my data?",
+         "answer": "Yes, from spreadsheets in CSV format."
+        },
+        {
+         "question": "What if I want to leave?",
+         "answer": "Export all your work and cancel whenever you like."
+        },
+        {
+         "question": "Is it secure?",
+         "answer": "Data is encrypted in transit and backed up automatically."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to get your projects in order?",
+       "text": "Create your free account; no card needed.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: write to us with your question or ask for a demo and we will get back to you as soon as possible during working hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Let's talk",
+       "text": "Tell us what your team needs and we will reply within one working day.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Support",
+       "body": "Sample text. Explain here how you support your customers and during which hours."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "plan-a-sprint-that-holds",
+    "title": "How to plan a realistic sprint",
+    "excerpt": "Sample blog text: a short guide to avoid overloading your team.",
+    "content": "Sample text. Write a useful article for your customers here.\n\n## Start with capacity\n\nWork out how many real hours the team has, after meetings and holidays.\n\n## Leave some slack\n\nKeep 20% for surprises and review the plan halfway through the sprint.",
+    "tags": [
+     "teams",
+     "tips"
+    ]
+   },
+   {
+    "slug": "weekly-meetings-that-work",
+    "title": "Weekly meetings that actually work",
+    "excerpt": "Sample text: how to meet less and decide more.",
+    "content": "Sample text. Explain how to prepare a short, useful meeting.\n\n## Write the agenda\n\nShare topics in advance so everyone arrives with clear ideas.\n\n## Close with owners\n\nEnd each meeting with tasks, people and dates.",
+    "tags": [
+     "productivity"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Management de proiecte clar pentru echipe mici",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Funcții",
+    "url": "/functii"
+   },
+   {
+    "label": "Prețuri",
+    "url": "/preturi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Încearcă gratuit",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: aplicație de management de proiecte pentru echipe mici, cu panouri, rapoarte și prețuri clare. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Management de proiecte · Exemplu",
+       "title": "Echipa ta, cu un plan pe care îl vede toată lumea",
+       "subtitle": "Text de exemplu: explică într-o frază ce face aplicația ta, cui se adresează și ce problemă rezolvă.",
+       "cta_text": "Începe gratuit",
+       "cta_link": "/preturi",
+       "cta2_text": "Vezi funcțiile",
+       "cta2_link": "/functii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Funcții",
+       "title": "Tot ce ai nevoie, fără aglomerație",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Panouri și liste",
+         "text": "Organizează munca în panouri cu sarcini, responsabili și termene."
+        },
+        {
+         "icon": "target",
+         "title": "Obiective și livrări",
+         "text": "Grupează sarcinile în etape și vezi dacă te încadrezi în timp."
+        },
+        {
+         "icon": "users",
+         "title": "Lucru în echipă",
+         "text": "Comentarii, mențiuni și fișiere la fiecare sarcină."
+        },
+        {
+         "icon": "chart",
+         "title": "Rapoarte",
+         "text": "Volumul de muncă și progresul proiectului dintr-o privire."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3.000",
+         "label": "Echipe active (exemplu)"
+        },
+        {
+         "value": "98 %",
+         "label": "Sarcini predate la timp (exemplu)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Notă medie (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum începi",
+       "items": [
+        {
+         "title": "Creează-ți spațiul",
+         "text": "Înscrie echipa și creează primul proiect în câteva minute."
+        },
+        {
+         "title": "Importă sarcinile",
+         "text": "Încarcă un tabel sau pornește de la un șablon."
+        },
+        {
+         "title": "Lucrează cu un plan",
+         "text": "Atribuie, prioritizează și urmărește progresul fără ședințe în plus."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Pentru echipe reale",
+       "title": "Puține funcții, bine făcute",
+       "body": "- Un panou pe care îl înțelegi din prima\n- Fără training și fără configurări interminabile\n- Datele tale pot fi exportate oricând",
+       "button_text": "Vezi funcțiile",
+       "button_link": "/functii"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinii",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o opinie: înlocuiește-l cu opinii reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să-ți pui proiectele în ordine?",
+       "text": "Creează un cont gratuit; nu este nevoie de card.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "functii",
+    "title": "Funcții",
+    "seo": {
+     "description": "Text de exemplu: funcțiile aplicației, de la panouri și obiective până la rapoarte, permisiuni și automatizări pentru echipa ta."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Funcții",
+       "subtitle": "Text de exemplu: descrie ce permite aplicația ta, în cuvinte pe care le înțelege oricine.",
+       "cta_text": "Începe gratuit",
+       "cta_link": "/preturi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Panouri și liste",
+         "text": "Organizează munca în panouri cu sarcini, responsabili și termene."
+        },
+        {
+         "icon": "target",
+         "title": "Obiective și livrări",
+         "text": "Grupează sarcinile în etape și vezi dacă te încadrezi în timp."
+        },
+        {
+         "icon": "users",
+         "title": "Lucru în echipă",
+         "text": "Comentarii, mențiuni și fișiere la fiecare sarcină."
+        },
+        {
+         "icon": "chart",
+         "title": "Rapoarte",
+         "text": "Volumul de muncă și progresul proiectului dintr-o privire."
+        },
+        {
+         "icon": "lock",
+         "title": "Permisiuni pe roluri",
+         "text": "Hotărăști cine vede și cine editează fiecare proiect."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automatizări",
+         "text": "Reguli simple pentru a muta sarcini și a anunța echipa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum începi",
+       "items": [
+        {
+         "title": "Creează-ți spațiul",
+         "text": "Înscrie echipa și creează primul proiect în câteva minute."
+        },
+        {
+         "title": "Importă sarcinile",
+         "text": "Încarcă un tabel sau pornește de la un șablon."
+        },
+        {
+         "title": "Lucrează cu un plan",
+         "text": "Atribuie, prioritizează și urmărește progresul fără ședințe în plus."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să-ți pui proiectele în ordine?",
+       "text": "Creează un cont gratuit; nu este nevoie de card.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preturi",
+    "title": "Prețuri",
+    "seo": {
+     "description": "Text de exemplu: planurile și prețurile aplicației, cu un plan gratuit, unul pentru echipe și unul pentru companii. Înlocuiește-le cu ale tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Prețuri",
+       "subtitle": "Text de exemplu: planuri simple, fără costuri ascunse și cu schimbarea planului oricând.",
+       "cta_text": "Începe gratuit",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planuri și prețuri",
+       "note": "Sume de exemplu: înlocuiește-le cu prețurile tale.",
+       "items": [
+        {
+         "section": "Gratuit",
+         "name": "Până la 5 persoane",
+         "price": "0 €"
+        },
+        {
+         "section": "Gratuit",
+         "name": "3 proiecte active",
+         "price": "inclus"
+        },
+        {
+         "section": "Echipă",
+         "name": "Pe utilizator, pe lună",
+         "price": "8 €"
+        },
+        {
+         "section": "Echipă",
+         "name": "Proiecte nelimitate",
+         "price": "inclus"
+        },
+        {
+         "section": "Companie",
+         "name": "Pe utilizator, pe lună",
+         "price": "15 €"
+        },
+        {
+         "section": "Companie",
+         "name": "Permisiuni avansate și suport prioritar",
+         "price": "inclus"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să-ți pui proiectele în ordine?",
+       "text": "Creează un cont gratuit; nu este nevoie de card.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre perioada de probă, facturare, importul datelor și securitatea informațiilor."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Pot încerca gratuit?",
+         "answer": "Da, planul gratuit nu expiră. *Text de exemplu.*"
+        },
+        {
+         "question": "Cum se facturează?",
+         "answer": "Lunar sau anual, pe utilizator activ. *Text de exemplu.*"
+        },
+        {
+         "question": "Îmi pot importa datele?",
+         "answer": "Da, din tabele în format CSV."
+        },
+        {
+         "question": "Ce se întâmplă dacă vreau să plec?",
+         "answer": "Îți exporți munca și anulezi oricând."
+        },
+        {
+         "question": "Este sigur?",
+         "answer": "Datele circulă criptate și se fac copii de siguranță automat."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să-ți pui proiectele în ordine?",
+       "text": "Creează un cont gratuit; nu este nevoie de card.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: scrie-ne întrebarea ta sau cere o demonstrație și îți vom răspunde cât mai repede, în program de lucru."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Hai să vorbim",
+       "text": "Spune-ne de ce are nevoie echipa ta și îți răspundem într-o zi lucrătoare.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Suport",
+       "body": "Text de exemplu. Explică aici cum îți ajuți clienții și în ce program."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "planifica-un-sprint-realist",
+    "title": "Cum planifici un sprint realist",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt ca să nu încarci prea mult echipa.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi.\n\n## Începe cu capacitatea\n\nCalculează câte ore reale are echipa, fără ședințe și concedii.\n\n## Lasă o rezervă\n\nPăstrează 20 % pentru neprevăzut și revizuiește planul la jumătatea sprintului.",
+    "tags": [
+     "echipe",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "sedinte-saptamanale-utile",
+    "title": "Ședințe săptămânale care chiar funcționează",
+    "excerpt": "Text de exemplu: cum să te întâlnești mai puțin și să decizi mai mult.",
+    "content": "Text de exemplu. Explică cum pregătești o ședință scurtă și utilă.\n\n## Agenda în scris\n\nÎmpărtășește temele din timp, ca toți să vină cu ideile clare.\n\n## Închide cu responsabili\n\nTermină fiecare ședință cu sarcini, persoane și termene.",
+    "tags": [
+     "productivitate"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Une gestion de projet claire pour les petites équipes",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Fonctionnalités",
+    "url": "/fonctionnalites"
+   },
+   {
+    "label": "Tarifs",
+    "url": "/tarifs"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Essayer gratuitement",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : application de gestion de projet pour petites équipes, avec tableaux, rapports et tarifs clairs. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Gestion de projet · Exemple",
+       "title": "Votre équipe, autour d'un plan que tout le monde voit",
+       "subtitle": "Texte d'exemple : expliquez en une phrase ce que fait votre application, à qui elle s'adresse et quel problème elle résout.",
+       "cta_text": "Commencer gratuitement",
+       "cta_link": "/tarifs",
+       "cta2_text": "Voir les fonctionnalités",
+       "cta2_link": "/fonctionnalites"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Fonctionnalités",
+       "title": "Tout l'essentiel, sans superflu",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Tableaux et listes",
+         "text": "Organisez le travail en tableaux avec tâches, responsables et échéances."
+        },
+        {
+         "icon": "target",
+         "title": "Objectifs et jalons",
+         "text": "Regroupez les tâches en jalons et voyez si vous serez dans les temps."
+        },
+        {
+         "icon": "users",
+         "title": "Travail d'équipe",
+         "text": "Commentaires, mentions et fichiers sur chaque tâche."
+        },
+        {
+         "icon": "chart",
+         "title": "Rapports",
+         "text": "Charge de travail et avancement du projet en un coup d'œil."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3 000",
+         "label": "Équipes actives (exemple)"
+        },
+        {
+         "value": "98 %",
+         "label": "Tâches livrées à temps (exemple)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Note moyenne (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pour bien démarrer",
+       "items": [
+        {
+         "title": "Créez votre espace",
+         "text": "Inscrivez votre équipe et créez le premier projet en quelques minutes."
+        },
+        {
+         "title": "Importez vos tâches",
+         "text": "Chargez un tableur ou partez d'un modèle."
+        },
+        {
+         "title": "Travaillez avec un plan",
+         "text": "Attribuez, priorisez et suivez l'avancement sans réunion de trop."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Pour de vraies équipes",
+       "title": "Peu de fonctions, bien faites",
+       "body": "- Un tableau compréhensible dès le premier regard\n- Sans formation ni configuration interminable\n- Vos données exportables à tout moment",
+       "button_text": "Voir les fonctionnalités",
+       "button_link": "/fonctionnalites"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à mettre de l'ordre dans vos projets ?",
+       "text": "Créez votre compte gratuit ; aucune carte n'est demandée.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "fonctionnalites",
+    "title": "Fonctionnalités",
+    "seo": {
+     "description": "Texte d'exemple : fonctionnalités de l'application, des tableaux et objectifs aux rapports, droits et automatisations pour votre équipe."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Fonctionnalités",
+       "subtitle": "Texte d'exemple : décrivez ce que permet votre application avec des mots que tout le monde comprend.",
+       "cta_text": "Commencer gratuitement",
+       "cta_link": "/tarifs"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Tableaux et listes",
+         "text": "Organisez le travail en tableaux avec tâches, responsables et échéances."
+        },
+        {
+         "icon": "target",
+         "title": "Objectifs et jalons",
+         "text": "Regroupez les tâches en jalons et voyez si vous serez dans les temps."
+        },
+        {
+         "icon": "users",
+         "title": "Travail d'équipe",
+         "text": "Commentaires, mentions et fichiers sur chaque tâche."
+        },
+        {
+         "icon": "chart",
+         "title": "Rapports",
+         "text": "Charge de travail et avancement du projet en un coup d'œil."
+        },
+        {
+         "icon": "lock",
+         "title": "Droits par rôle",
+         "text": "Décidez qui peut consulter et qui peut modifier chaque projet."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automatisations",
+         "text": "Des règles simples pour déplacer les tâches et prévenir l'équipe."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pour bien démarrer",
+       "items": [
+        {
+         "title": "Créez votre espace",
+         "text": "Inscrivez votre équipe et créez le premier projet en quelques minutes."
+        },
+        {
+         "title": "Importez vos tâches",
+         "text": "Chargez un tableur ou partez d'un modèle."
+        },
+        {
+         "title": "Travaillez avec un plan",
+         "text": "Attribuez, priorisez et suivez l'avancement sans réunion de trop."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à mettre de l'ordre dans vos projets ?",
+       "text": "Créez votre compte gratuit ; aucune carte n'est demandée.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "tarifs",
+    "title": "Tarifs",
+    "seo": {
+     "description": "Texte d'exemple : formules et tarifs de l'application, avec une formule gratuite, une pour les équipes et une pour les entreprises."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Tarifs",
+       "subtitle": "Texte d'exemple : des formules simples, sans frais cachés, avec changement de formule à tout moment.",
+       "cta_text": "Commencer gratuitement",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Formules et tarifs",
+       "note": "Montants d'exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Gratuit",
+         "name": "Jusqu'à 5 personnes",
+         "price": "0 €"
+        },
+        {
+         "section": "Gratuit",
+         "name": "3 projets actifs",
+         "price": "inclus"
+        },
+        {
+         "section": "Équipe",
+         "name": "Par utilisateur et par mois",
+         "price": "8 €"
+        },
+        {
+         "section": "Équipe",
+         "name": "Projets illimités",
+         "price": "inclus"
+        },
+        {
+         "section": "Entreprise",
+         "name": "Par utilisateur et par mois",
+         "price": "15 €"
+        },
+        {
+         "section": "Entreprise",
+         "name": "Droits avancés et assistance prioritaire",
+         "price": "inclus"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à mettre de l'ordre dans vos projets ?",
+       "text": "Créez votre compte gratuit ; aucune carte n'est demandée.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions fréquentes sur l'essai gratuit, la facturation, l'import des données et la sécurité des informations."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Puis-je l'essayer gratuitement ?",
+         "answer": "Oui, la formule gratuite n'expire pas. *Texte d'exemple.*"
+        },
+        {
+         "question": "Comment se déroule la facturation ?",
+         "answer": "Au mois ou à l'année, par utilisateur actif. *Texte d'exemple.*"
+        },
+        {
+         "question": "Puis-je importer mes données ?",
+         "answer": "Oui, depuis des tableurs au format CSV."
+        },
+        {
+         "question": "Et si je veux partir ?",
+         "answer": "Vous exportez tout votre travail et résiliez quand vous voulez."
+        },
+        {
+         "question": "Est-ce sécurisé ?",
+         "answer": "Les données sont chiffrées en transit et sauvegardées automatiquement."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à mettre de l'ordre dans vos projets ?",
+       "text": "Créez votre compte gratuit ; aucune carte n'est demandée.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : écrivez-nous avec votre question ou demandez une démonstration, et nous vous répondrons au plus vite aux heures ouvrées."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Parlons-en",
+       "text": "Dites-nous ce dont votre équipe a besoin et nous répondons sous un jour ouvré.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Assistance",
+       "body": "Texte d'exemple. Indiquez ici comment vous accompagnez vos clients et à quels horaires."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "planifier-un-sprint-realiste",
+    "title": "Comment planifier un sprint réaliste",
+    "excerpt": "Texte d'exemple pour le blog : un guide bref pour ne pas surcharger l'équipe.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients.\n\n## Partir de la capacité\n\nCalculez le nombre d'heures réelles de l'équipe, réunions et congés déduits.\n\n## Garder une marge\n\nRéservez 20 % aux imprévus et revoyez le plan à mi-parcours.",
+    "tags": [
+     "équipes",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "reunions-hebdomadaires-utiles",
+    "title": "Des réunions hebdomadaires qui fonctionnent vraiment",
+    "excerpt": "Texte d'exemple : se réunir moins et décider davantage.",
+    "content": "Texte d'exemple. Expliquez comment préparer une réunion courte et utile.\n\n## Un ordre du jour écrit\n\nPartagez les sujets à l'avance pour arriver avec des idées claires.\n\n## Conclure avec des responsables\n\nTerminez chaque réunion avec des tâches, des personnes et des dates.",
+    "tags": [
+     "productivité"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Klares Projektmanagement für kleine Teams",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Funktionen",
+    "url": "/funktionen"
+   },
+   {
+    "label": "Preise",
+    "url": "/preise"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Kostenlos testen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Projektmanagement-App für kleine Teams mit Boards, Berichten und klaren Preisen. Ersetzen Sie ihn durch Ihre eigene Beschreibung."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Projektmanagement · Beispiel",
+       "title": "Ihr Team, mit einem Plan, den alle sehen",
+       "subtitle": "Beispieltext: Erklären Sie in einem Satz, was Ihre App kann, für wen sie gedacht ist und welches Problem sie löst.",
+       "cta_text": "Kostenlos starten",
+       "cta_link": "/preise",
+       "cta2_text": "Funktionen ansehen",
+       "cta2_link": "/funktionen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Funktionen",
+       "title": "Alles Wichtige, ohne Ballast",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Boards und Listen",
+         "text": "Organisieren Sie die Arbeit in Boards mit Aufgaben, Zuständigen und Terminen."
+        },
+        {
+         "icon": "target",
+         "title": "Ziele und Meilensteine",
+         "text": "Fassen Sie Aufgaben zu Meilensteinen zusammen und sehen Sie, ob Sie im Zeitplan liegen."
+        },
+        {
+         "icon": "users",
+         "title": "Zusammenarbeit",
+         "text": "Kommentare, Erwähnungen und Dateien an jeder Aufgabe."
+        },
+        {
+         "icon": "chart",
+         "title": "Berichte",
+         "text": "Auslastung und Projektfortschritt auf einen Blick."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3.000",
+         "label": "Aktive Teams (Beispiel)"
+        },
+        {
+         "value": "98 %",
+         "label": "Fristgerecht erledigte Aufgaben (Beispiel)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Durchschnittsbewertung (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So starten Sie",
+       "items": [
+        {
+         "title": "Arbeitsbereich anlegen",
+         "text": "Registrieren Sie Ihr Team und legen Sie in Minuten das erste Projekt an."
+        },
+        {
+         "title": "Aufgaben importieren",
+         "text": "Laden Sie eine Tabelle hoch oder starten Sie mit einer Vorlage."
+        },
+        {
+         "title": "Mit Plan arbeiten",
+         "text": "Zuweisen, priorisieren und Fortschritt verfolgen, ohne zusätzliche Meetings."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Für echte Teams",
+       "title": "Wenige Funktionen, gut gemacht",
+       "body": "- Ein Board, das man auf Anhieb versteht\n- Keine Schulung und keine endlose Einrichtung\n- Ihre Daten jederzeit exportierbar",
+       "button_text": "Funktionen ansehen",
+       "button_link": "/funktionen"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: Ersetzen Sie ihn durch echte Bewertungen Ihrer Kunden, mit deren Erlaubnis.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit, Ordnung in Ihre Projekte zu bringen?",
+       "text": "Legen Sie ein kostenloses Konto an; eine Karte ist nicht nötig.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "funktionen",
+    "title": "Funktionen",
+    "seo": {
+     "description": "Beispieltext: Funktionen der App, von Boards und Zielen bis zu Berichten, Rechten und Automatisierungen für Ihr Team."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Funktionen",
+       "subtitle": "Beispieltext: Beschreiben Sie, was Ihre App ermöglicht, in Worten, die jeder versteht.",
+       "cta_text": "Kostenlos starten",
+       "cta_link": "/preise"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Boards und Listen",
+         "text": "Organisieren Sie die Arbeit in Boards mit Aufgaben, Zuständigen und Terminen."
+        },
+        {
+         "icon": "target",
+         "title": "Ziele und Meilensteine",
+         "text": "Fassen Sie Aufgaben zu Meilensteinen zusammen und sehen Sie, ob Sie im Zeitplan liegen."
+        },
+        {
+         "icon": "users",
+         "title": "Zusammenarbeit",
+         "text": "Kommentare, Erwähnungen und Dateien an jeder Aufgabe."
+        },
+        {
+         "icon": "chart",
+         "title": "Berichte",
+         "text": "Auslastung und Projektfortschritt auf einen Blick."
+        },
+        {
+         "icon": "lock",
+         "title": "Rollenbasierte Rechte",
+         "text": "Legen Sie fest, wer jedes Projekt sehen und bearbeiten darf."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automatisierungen",
+         "text": "Einfache Regeln, um Aufgaben zu verschieben und das Team zu informieren."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So starten Sie",
+       "items": [
+        {
+         "title": "Arbeitsbereich anlegen",
+         "text": "Registrieren Sie Ihr Team und legen Sie in Minuten das erste Projekt an."
+        },
+        {
+         "title": "Aufgaben importieren",
+         "text": "Laden Sie eine Tabelle hoch oder starten Sie mit einer Vorlage."
+        },
+        {
+         "title": "Mit Plan arbeiten",
+         "text": "Zuweisen, priorisieren und Fortschritt verfolgen, ohne zusätzliche Meetings."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit, Ordnung in Ihre Projekte zu bringen?",
+       "text": "Legen Sie ein kostenloses Konto an; eine Karte ist nicht nötig.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preise",
+    "title": "Preise",
+    "seo": {
+     "description": "Beispieltext: Tarife und Preise der App mit einem kostenlosen Tarif, einem Teamtarif und einem Business-Tarif. Ersetzen Sie sie durch Ihre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Preise",
+       "subtitle": "Beispieltext: einfache Tarife ohne versteckte Kosten und mit jederzeit möglichem Tarifwechsel.",
+       "cta_text": "Kostenlos starten",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife und Preise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre eigenen Preise.",
+       "items": [
+        {
+         "section": "Kostenlos",
+         "name": "Bis zu 5 Personen",
+         "price": "0 €"
+        },
+        {
+         "section": "Kostenlos",
+         "name": "3 aktive Projekte",
+         "price": "inklusive"
+        },
+        {
+         "section": "Team",
+         "name": "Pro Nutzer und Monat",
+         "price": "8 €"
+        },
+        {
+         "section": "Team",
+         "name": "Unbegrenzte Projekte",
+         "price": "inklusive"
+        },
+        {
+         "section": "Business",
+         "name": "Pro Nutzer und Monat",
+         "price": "15 €"
+        },
+        {
+         "section": "Business",
+         "name": "Erweiterte Rechte und bevorzugter Support",
+         "price": "inklusive"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit, Ordnung in Ihre Projekte zu bringen?",
+       "text": "Legen Sie ein kostenloses Konto an; eine Karte ist nicht nötig.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zum kostenlosen Test, zur Abrechnung, zum Datenimport und zur Sicherheit Ihrer Informationen."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Kann ich es kostenlos testen?",
+         "answer": "Ja, der kostenlose Tarif läuft nicht ab. *Beispieltext.*"
+        },
+        {
+         "question": "Wie wird abgerechnet?",
+         "answer": "Monatlich oder jährlich, pro aktivem Nutzer. *Beispieltext.*"
+        },
+        {
+         "question": "Kann ich meine Daten importieren?",
+         "answer": "Ja, aus Tabellen im CSV-Format."
+        },
+        {
+         "question": "Und wenn ich gehen möchte?",
+         "answer": "Sie exportieren Ihre Arbeit und kündigen jederzeit."
+        },
+        {
+         "question": "Ist es sicher?",
+         "answer": "Daten werden verschlüsselt übertragen und automatisch gesichert."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit, Ordnung in Ihre Projekte zu bringen?",
+       "text": "Legen Sie ein kostenloses Konto an; eine Karte ist nicht nötig.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Schreiben Sie uns Ihre Frage oder fragen Sie eine Demo an, und wir antworten Ihnen so bald wie möglich zu den Geschäftszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Sprechen wir darüber",
+       "text": "Sagen Sie uns, was Ihr Team braucht, und wir antworten innerhalb eines Werktags.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Support",
+       "body": "Beispieltext. Beschreiben Sie hier, wie Sie Ihre Kunden betreuen und zu welchen Zeiten."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "sprint-realistisch-planen",
+    "title": "So planen Sie einen realistischen Sprint",
+    "excerpt": "Beispieltext für den Blog: eine kurze Anleitung, das Team nicht zu überlasten.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden.\n\n## Mit der Kapazität beginnen\n\nRechnen Sie die echten Stunden des Teams aus, abzüglich Meetings und Urlaub.\n\n## Puffer einplanen\n\nReservieren Sie 20 % für Unvorhergesehenes und prüfen Sie den Plan zur Sprintmitte.",
+    "tags": [
+     "teams",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "woechentliche-meetings-die-funktionieren",
+    "title": "Wöchentliche Meetings, die wirklich funktionieren",
+    "excerpt": "Beispieltext: weniger Meetings, mehr Entscheidungen.",
+    "content": "Beispieltext. Erklären Sie, wie man ein kurzes, nützliches Meeting vorbereitet.\n\n## Agenda schriftlich\n\nTeilen Sie die Themen vorab, damit alle mit klaren Ideen kommen.\n\n## Mit Zuständigen abschließen\n\nBeenden Sie jedes Meeting mit Aufgaben, Personen und Terminen.",
+    "tags": [
+     "produktivität"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Gestione dei progetti chiara per i piccoli team",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Funzionalità",
+    "url": "/funzionalita"
+   },
+   {
+    "label": "Prezzi",
+    "url": "/prezzi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatto",
+    "url": "/contatto"
+   }
+  ],
+  "cta": {
+   "label": "Prova gratis",
+   "url": "/contatto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: app di gestione dei progetti per piccoli team, con bacheche, report e prezzi chiari. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Gestione dei progetti · Esempio",
+       "title": "Il tuo team, con un piano che tutti vedono",
+       "subtitle": "Testo di esempio: spiega in una frase cosa fa la tua app, a chi è rivolta e quale problema risolve.",
+       "cta_text": "Inizia gratis",
+       "cta_link": "/prezzi",
+       "cta2_text": "Vedi le funzionalità",
+       "cta2_link": "/funzionalita"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Funzionalità",
+       "title": "Tutto il necessario, senza rumore",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Bacheche e liste",
+         "text": "Organizza il lavoro in bacheche con attività, responsabili e scadenze."
+        },
+        {
+         "icon": "target",
+         "title": "Obiettivi e consegne",
+         "text": "Raggruppa le attività in traguardi e controlla se rispetti i tempi."
+        },
+        {
+         "icon": "users",
+         "title": "Lavoro di squadra",
+         "text": "Commenti, menzioni e file su ogni attività."
+        },
+        {
+         "icon": "chart",
+         "title": "Report",
+         "text": "Carico di lavoro e avanzamento del progetto a colpo d'occhio."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3.000",
+         "label": "Team attivi (esempio)"
+        },
+        {
+         "value": "98 %",
+         "label": "Attività consegnate in tempo (esempio)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Valutazione media (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come iniziare",
+       "items": [
+        {
+         "title": "Crea il tuo spazio",
+         "text": "Registra il team e crea il primo progetto in pochi minuti."
+        },
+        {
+         "title": "Importa le attività",
+         "text": "Carica un foglio di calcolo o parti da un modello."
+        },
+        {
+         "title": "Lavora con un piano",
+         "text": "Assegna, dai priorità e segui l'avanzamento senza riunioni in più."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Per team veri",
+       "title": "Poche funzioni, fatte bene",
+       "body": "- Una bacheca che si capisce al primo sguardo\n- Nessuna formazione né configurazioni infinite\n- I tuoi dati esportabili quando vuoi",
+       "button_text": "Vedi le funzionalità",
+       "button_link": "/funzionalita"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro permesso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a mettere in ordine i tuoi progetti?",
+       "text": "Crea il tuo account gratuito; non serve la carta.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "funzionalita",
+    "title": "Funzionalità",
+    "seo": {
+     "description": "Testo di esempio: funzionalità dell'app, da bacheche e obiettivi a report, permessi e automazioni per il tuo team."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Funzionalità",
+       "subtitle": "Testo di esempio: descrivi cosa permette di fare la tua app con parole che chiunque capisca.",
+       "cta_text": "Inizia gratis",
+       "cta_link": "/prezzi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Bacheche e liste",
+         "text": "Organizza il lavoro in bacheche con attività, responsabili e scadenze."
+        },
+        {
+         "icon": "target",
+         "title": "Obiettivi e consegne",
+         "text": "Raggruppa le attività in traguardi e controlla se rispetti i tempi."
+        },
+        {
+         "icon": "users",
+         "title": "Lavoro di squadra",
+         "text": "Commenti, menzioni e file su ogni attività."
+        },
+        {
+         "icon": "chart",
+         "title": "Report",
+         "text": "Carico di lavoro e avanzamento del progetto a colpo d'occhio."
+        },
+        {
+         "icon": "lock",
+         "title": "Permessi per ruolo",
+         "text": "Decidi chi può vedere e chi può modificare ogni progetto."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automazioni",
+         "text": "Regole semplici per spostare le attività e avvisare il team."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come iniziare",
+       "items": [
+        {
+         "title": "Crea il tuo spazio",
+         "text": "Registra il team e crea il primo progetto in pochi minuti."
+        },
+        {
+         "title": "Importa le attività",
+         "text": "Carica un foglio di calcolo o parti da un modello."
+        },
+        {
+         "title": "Lavora con un piano",
+         "text": "Assegna, dai priorità e segui l'avanzamento senza riunioni in più."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a mettere in ordine i tuoi progetti?",
+       "text": "Crea il tuo account gratuito; non serve la carta.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "prezzi",
+    "title": "Prezzi",
+    "seo": {
+     "description": "Testo di esempio: piani e prezzi dell'app, con un piano gratuito, uno per i team e uno per le aziende. Sostituiscili con i tuoi."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Prezzi",
+       "subtitle": "Testo di esempio: piani semplici, senza costi nascosti e con la possibilità di cambiare piano in qualsiasi momento.",
+       "cta_text": "Inizia gratis",
+       "cta_link": "/contatto"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Piani e prezzi",
+       "note": "Importi di esempio: sostituiscili con i tuoi prezzi.",
+       "items": [
+        {
+         "section": "Gratuito",
+         "name": "Fino a 5 persone",
+         "price": "0 €"
+        },
+        {
+         "section": "Gratuito",
+         "name": "3 progetti attivi",
+         "price": "incluso"
+        },
+        {
+         "section": "Team",
+         "name": "Per utente al mese",
+         "price": "8 €"
+        },
+        {
+         "section": "Team",
+         "name": "Progetti illimitati",
+         "price": "incluso"
+        },
+        {
+         "section": "Azienda",
+         "name": "Per utente al mese",
+         "price": "15 €"
+        },
+        {
+         "section": "Azienda",
+         "name": "Permessi avanzati e assistenza prioritaria",
+         "price": "incluso"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a mettere in ordine i tuoi progetti?",
+       "text": "Crea il tuo account gratuito; non serve la carta.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande frequenti sulla prova gratuita, la fatturazione, l'importazione dei dati e la sicurezza delle informazioni."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Posso provarlo gratis?",
+         "answer": "Sì, il piano gratuito non scade. *Testo di esempio.*"
+        },
+        {
+         "question": "Come funziona la fatturazione?",
+         "answer": "Mensile o annuale, per utente attivo. *Testo di esempio.*"
+        },
+        {
+         "question": "Posso importare i miei dati?",
+         "answer": "Sì, da fogli di calcolo in formato CSV."
+        },
+        {
+         "question": "E se voglio andarmene?",
+         "answer": "Esporti tutto il tuo lavoro e disdici quando vuoi."
+        },
+        {
+         "question": "È sicuro?",
+         "answer": "I dati viaggiano cifrati e vengono salvati in automatico."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a mettere in ordine i tuoi progetti?",
+       "text": "Crea il tuo account gratuito; non serve la carta.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatto",
+    "title": "Contatto",
+    "seo": {
+     "description": "Testo di esempio: scrivici la tua domanda o richiedi una dimostrazione e ti risponderemo il prima possibile durante gli orari di lavoro."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Parliamone",
+       "text": "Raccontaci di cosa ha bisogno il tuo team e rispondiamo entro un giorno lavorativo.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Assistenza",
+       "body": "Testo di esempio. Indica qui come assisti i tuoi clienti e in quali orari."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "pianificare-uno-sprint-realistico",
+    "title": "Come pianificare uno sprint realistico",
+    "excerpt": "Testo di esempio per il blog: una guida breve per non sovraccaricare il team.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti.\n\n## Parti dalla capacità\n\nCalcola le ore reali del team, tolte riunioni e ferie.\n\n## Lascia un margine\n\nRiserva il 20 % agli imprevisti e rivedi il piano a metà sprint.",
+    "tags": [
+     "team",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "riunioni-settimanali-utili",
+    "title": "Riunioni settimanali che funzionano davvero",
+    "excerpt": "Testo di esempio: riunirsi meno e decidere di più.",
+    "content": "Testo di esempio. Spiega come preparare una riunione breve e utile.\n\n## Agenda scritta\n\nCondividi i temi in anticipo per arrivare con le idee chiare.\n\n## Chiudi con i responsabili\n\nTermina ogni riunione con attività, persone e date.",
+    "tags": [
+     "produttività"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Gestão de projetos clara para equipas pequenas",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Funcionalidades",
+    "url": "/funcionalidades"
+   },
+   {
+    "label": "Preços",
+    "url": "/precos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Experimentar grátis",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: aplicação de gestão de projetos para equipas pequenas, com quadros, relatórios e preços claros. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Gestão de projetos · Exemplo",
+       "title": "A sua equipa, com um plano que todos veem",
+       "subtitle": "Texto de exemplo: explique numa frase o que faz a sua aplicação, a quem se destina e que problema resolve.",
+       "cta_text": "Começar grátis",
+       "cta_link": "/precos",
+       "cta2_text": "Ver funcionalidades",
+       "cta2_link": "/funcionalidades"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Funcionalidades",
+       "title": "Tudo o que precisa, sem ruído",
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Quadros e listas",
+         "text": "Organize o trabalho em quadros com tarefas, responsáveis e prazos."
+        },
+        {
+         "icon": "target",
+         "title": "Objetivos e entregas",
+         "text": "Agrupe tarefas em marcos e veja se cumpre os prazos."
+        },
+        {
+         "icon": "users",
+         "title": "Trabalho em equipa",
+         "text": "Comentários, menções e ficheiros em cada tarefa."
+        },
+        {
+         "icon": "chart",
+         "title": "Relatórios",
+         "text": "Carga de trabalho e progresso do projeto num relance."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "3.000",
+         "label": "Equipas ativas (exemplo)"
+        },
+        {
+         "value": "98 %",
+         "label": "Tarefas entregues a tempo (exemplo)"
+        },
+        {
+         "value": "4,7/5",
+         "label": "Avaliação média (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como começar",
+       "items": [
+        {
+         "title": "Crie o seu espaço",
+         "text": "Registe a equipa e crie o primeiro projeto em minutos."
+        },
+        {
+         "title": "Importe as tarefas",
+         "text": "Carregue uma folha de cálculo ou parta de um modelo."
+        },
+        {
+         "title": "Trabalhe com um plano",
+         "text": "Atribua, priorize e acompanhe o progresso sem reuniões a mais."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Para equipas reais",
+       "title": "Poucas funcionalidades, bem feitas",
+       "body": "- Um quadro que se percebe à primeira\n- Sem formação nem configurações intermináveis\n- Os seus dados exportáveis quando quiser",
+       "button_text": "Ver funcionalidades",
+       "button_link": "/funcionalidades"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para pôr os seus projetos em ordem?",
+       "text": "Crie a sua conta gratuita; não é preciso cartão.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "funcionalidades",
+    "title": "Funcionalidades",
+    "seo": {
+     "description": "Texto de exemplo: funcionalidades da aplicação, de quadros e objetivos a relatórios, permissões e automatizações para a sua equipa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Funcionalidades",
+       "subtitle": "Texto de exemplo: descreva o que a sua aplicação permite fazer com palavras que qualquer pessoa entenda.",
+       "cta_text": "Começar grátis",
+       "cta_link": "/precos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "calendar",
+         "title": "Quadros e listas",
+         "text": "Organize o trabalho em quadros com tarefas, responsáveis e prazos."
+        },
+        {
+         "icon": "target",
+         "title": "Objetivos e entregas",
+         "text": "Agrupe tarefas em marcos e veja se cumpre os prazos."
+        },
+        {
+         "icon": "users",
+         "title": "Trabalho em equipa",
+         "text": "Comentários, menções e ficheiros em cada tarefa."
+        },
+        {
+         "icon": "chart",
+         "title": "Relatórios",
+         "text": "Carga de trabalho e progresso do projeto num relance."
+        },
+        {
+         "icon": "lock",
+         "title": "Permissões por função",
+         "text": "Decida quem vê e quem edita cada projeto."
+        },
+        {
+         "icon": "bolt",
+         "title": "Automatizações",
+         "text": "Regras simples para mover tarefas e avisar a equipa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como começar",
+       "items": [
+        {
+         "title": "Crie o seu espaço",
+         "text": "Registe a equipa e crie o primeiro projeto em minutos."
+        },
+        {
+         "title": "Importe as tarefas",
+         "text": "Carregue uma folha de cálculo ou parta de um modelo."
+        },
+        {
+         "title": "Trabalhe com um plano",
+         "text": "Atribua, priorize e acompanhe o progresso sem reuniões a mais."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para pôr os seus projetos em ordem?",
+       "text": "Crie a sua conta gratuita; não é preciso cartão.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "precos",
+    "title": "Preços",
+    "seo": {
+     "description": "Texto de exemplo: planos e preços da aplicação, com um plano gratuito, um para equipas e outro para empresas. Substitua-os pelos seus."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Preços",
+       "subtitle": "Texto de exemplo: planos simples, sem custos escondidos e com mudança de plano a qualquer momento.",
+       "cta_text": "Começar grátis",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planos e preços",
+       "note": "Valores de exemplo: substitua-os pelos seus preços.",
+       "items": [
+        {
+         "section": "Grátis",
+         "name": "Até 5 pessoas",
+         "price": "0 €"
+        },
+        {
+         "section": "Grátis",
+         "name": "3 projetos ativos",
+         "price": "incluído"
+        },
+        {
+         "section": "Equipa",
+         "name": "Por utilizador e mês",
+         "price": "8 €"
+        },
+        {
+         "section": "Equipa",
+         "name": "Projetos ilimitados",
+         "price": "incluído"
+        },
+        {
+         "section": "Empresa",
+         "name": "Por utilizador e mês",
+         "price": "15 €"
+        },
+        {
+         "section": "Empresa",
+         "name": "Permissões avançadas e apoio prioritário",
+         "price": "incluído"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para pôr os seus projetos em ordem?",
+       "text": "Crie a sua conta gratuita; não é preciso cartão.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre o teste gratuito, a faturação, a importação de dados e a segurança da informação."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Posso experimentar grátis?",
+         "answer": "Sim, o plano gratuito não expira. *Texto de exemplo.*"
+        },
+        {
+         "question": "Como funciona a faturação?",
+         "answer": "Mensal ou anual, por utilizador ativo. *Texto de exemplo.*"
+        },
+        {
+         "question": "Posso importar os meus dados?",
+         "answer": "Sim, a partir de folhas de cálculo em formato CSV."
+        },
+        {
+         "question": "E se quiser sair?",
+         "answer": "Exporta todo o seu trabalho e cancela quando quiser."
+        },
+        {
+         "question": "É seguro?",
+         "answer": "Os dados viajam cifrados e são guardados em cópias automáticas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para pôr os seus projetos em ordem?",
+       "text": "Crie a sua conta gratuita; não é preciso cartão.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: escreva-nos com a sua pergunta ou peça uma demonstração e responderemos o mais depressa possível em horário de trabalho."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Vamos conversar",
+       "text": "Diga-nos do que a sua equipa precisa e respondemos num dia útil.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "text",
+      "data": {
+       "title": "Apoio",
+       "body": "Texto de exemplo. Indique aqui como apoia os seus clientes e em que horário."
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "planear-um-sprint-realista",
+    "title": "Como planear um sprint realista",
+    "excerpt": "Texto de exemplo para o blogue: um guia breve para não sobrecarregar a equipa.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes.\n\n## Comece pela capacidade\n\nCalcule as horas reais da equipa, descontando reuniões e férias.\n\n## Deixe margem\n\nReserve 20 % para imprevistos e reveja o plano a meio do sprint.",
+    "tags": [
+     "equipas",
+     "dicas"
+    ]
+   },
+   {
+    "slug": "reunioes-semanais-uteis",
+    "title": "Reuniões semanais que realmente funcionam",
+    "excerpt": "Texto de exemplo: reunir menos e decidir mais.",
+    "content": "Texto de exemplo. Explique como preparar uma reunião curta e útil.\n\n## Agenda escrita\n\nPartilhe os temas com antecedência para chegar com ideias claras.\n\n## Feche com responsáveis\n\nTermine cada reunião com tarefas, pessoas e datas.",
+    "tags": [
+     "produtividade"
+    ]
+   }
+  ]
+ }
+}

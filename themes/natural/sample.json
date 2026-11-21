@@ -1,0 +1,2747 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Natural). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Fisioterapia y yoga para cuidarte con calma",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "El centro",
+    "url": "/el-centro"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir cita",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: centro de fisioterapia y yoga con trato cercano, sesiones a tu ritmo y un espacio tranquilo. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Fisioterapia y yoga · Ejemplo",
+       "title": "Un espacio para moverte mejor y respirar con calma",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué ofrece tu centro, a quién acompañas y cómo es el trato en cada sesión.",
+       "cta_text": "Pedir cita",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Qué ofrecemos",
+       "title": "Cuidado a tu medida",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Valoración y tratamiento individual, explicados con claridad."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Clases en grupo reducido para todos los niveles."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sesiones a tu ritmo",
+         "text": "Horarios flexibles y bonos que se adaptan a ti."
+        },
+        {
+         "icon": "users",
+         "title": "Atención cercana",
+         "text": "Te escuchamos y adaptamos cada sesión a tu situación."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Años de trayectoria (ejemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Profesionales en el equipo (ejemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Clases semanales de yoga (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo es tu primera visita",
+       "items": [
+        {
+         "title": "Charlamos",
+         "text": "Nos cuentas cómo estás y qué te gustaría mejorar."
+        },
+        {
+         "title": "Valoramos",
+         "text": "Revisamos tu caso con calma y te explicamos las opciones."
+        },
+        {
+         "title": "Acompañamos",
+         "text": "Propuesta de sesiones y seguimiento adaptado a tu evolución."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El centro",
+       "title": "Un lugar tranquilo, pensado para sentirte a gusto",
+       "body": "- Salas luminosas y silenciosas\n- Grupos reducidos de yoga\n- Un profesional de referencia en tu proceso",
+       "button_text": "Conocer el centro",
+       "button_link": "/el-centro"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres venir a conocernos?",
+       "text": "Reserva una primera sesión y te explicamos cómo trabajamos.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: fisioterapia, clases de yoga y sesiones individuales en un ambiente sereno, con bonos y precios claros. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Valoración y tratamiento manual personalizado."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga en grupo",
+         "text": "Clases suaves o dinámicas, según tu nivel."
+        },
+        {
+         "icon": "star",
+         "title": "Yoga individual",
+         "text": "Sesiones privadas adaptadas a tus objetivos."
+        },
+        {
+         "icon": "sun",
+         "title": "Respiración y relajación",
+         "text": "Técnicas sencillas para el día a día."
+        },
+        {
+         "icon": "users",
+         "title": "Talleres",
+         "text": "Encuentros puntuales sobre movimiento y bienestar."
+        },
+        {
+         "icon": "check",
+         "title": "Seguimiento",
+         "text": "Revisión periódica de tu evolución."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Importes de ejemplo: sustitúyelos por tus tarifas.",
+       "items": [
+        {
+         "section": "Fisioterapia",
+         "name": "Primera valoración",
+         "price": "45 €"
+        },
+        {
+         "section": "Fisioterapia",
+         "name": "Sesión de tratamiento",
+         "price": "40 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Clase en grupo",
+         "price": "12 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Bono de 8 clases",
+         "price": "80 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres venir a conocernos?",
+       "text": "Reserva una primera sesión y te explicamos cómo trabajamos.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "el-centro",
+    "title": "El centro",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo es nuestro espacio y qué valores guían la atención en nuestro centro de fisioterapia y yoga."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu centro, quién lo forma y qué os distingue.\n\nHabla de cómo trabajáis y de vuestros valores, con prudencia: el bienestar no se promete, se acompaña."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros principios",
+       "body": "- Escucha antes que prisa\n- Explicaciones claras y sin tecnicismos\n- Respeto por el ritmo de cada persona"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo es tu primera visita",
+       "items": [
+        {
+         "title": "Charlamos",
+         "text": "Nos cuentas cómo estás y qué te gustaría mejorar."
+        },
+        {
+         "title": "Valoramos",
+         "text": "Revisamos tu caso con calma y te explicamos las opciones."
+        },
+        {
+         "title": "Acompañamos",
+         "text": "Propuesta de sesiones y seguimiento adaptado a tu evolución."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la primera sesión, las clases de yoga, los bonos y las cancelaciones."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Qué ocurre en la primera sesión?",
+         "answer": "Hablamos de cómo estás y valoramos tu caso con calma. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Necesito experiencia para las clases de yoga?",
+         "answer": "No, hay grupos para principiantes y para quienes ya practican."
+        },
+        {
+         "question": "¿Cómo funcionan los bonos?",
+         "answer": "Indica aquí su validez y condiciones. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Puedo cancelar una cita?",
+         "answer": "Sí, avisándonos con antelación; indica aquí tu plazo. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿La fisioterapia sustituye a la consulta médica?",
+         "answer": "No: es un complemento. Ante cualquier duda de salud, consulta a tu médico."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres venir a conocernos?",
+       "text": "Reserva una primera sesión y te explicamos cómo trabajamos.",
+       "button_text": "Pedir cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide tu cita o escríbenos con tu pregunta y te responderemos lo antes posible dentro de nuestro horario de atención."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir cita",
+       "text": "Cuéntanos qué necesitas y te proponemos un horario.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "movimiento-suave-cada-dia",
+    "title": "Cinco minutos de movimiento suave cada día",
+    "excerpt": "Texto de ejemplo para el blog: una idea sencilla y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Empieza poco a poco\n\nUnos minutos al día pueden ayudarte a tomar conciencia de tu cuerpo.\n\n## Escucha tu cuerpo\n\nSi notas dolor o tienes dudas, consulta con un profesional sanitario.",
+    "tags": [
+     "bienestar",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "respirar-para-descansar-mejor",
+    "title": "Respirar con calma para descansar mejor",
+    "excerpt": "Texto de ejemplo: una pausa de respiración antes de dormir.",
+    "content": "Texto de ejemplo. Explica en qué consiste una práctica sencilla de respiración y cuándo puede resultar agradable.\n\n## Un ejercicio sencillo\n\nSiéntate cómodo y respira despacio unos minutos.\n\n## Con prudencia\n\nNo sustituye el consejo médico: si el insomnio persiste, consúltalo.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Physiotherapy and yoga, at a calm pace",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "The studio",
+    "url": "/the-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a session",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Example text: physiotherapy and yoga studio with a personal approach, sessions at your own pace and a quiet space. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Physiotherapy and yoga · Example",
+       "title": "A place to move better and breathe calmly",
+       "subtitle": "Example text: say in one sentence what your studio offers, who you work with and what each session feels like.",
+       "cta_text": "Book a session",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we offer",
+       "title": "Care that fits you",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Physiotherapy",
+         "text": "One-to-one assessment and treatment, clearly explained."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Small-group classes for every level."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sessions at your pace",
+         "text": "Flexible hours and class packs that suit you."
+        },
+        {
+         "icon": "users",
+         "title": "Personal attention",
+         "text": "We listen and adapt each session to your situation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Years of experience (example)"
+        },
+        {
+         "value": "6",
+         "label": "Team members (example)"
+        },
+        {
+         "value": "12",
+         "label": "Weekly yoga classes (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "What your first visit is like",
+       "items": [
+        {
+         "title": "We talk",
+         "text": "You tell us how you are and what you would like to improve."
+        },
+        {
+         "title": "We assess",
+         "text": "We review your case calmly and explain the options."
+        },
+        {
+         "title": "We support",
+         "text": "A proposed plan of sessions and follow-up that adapts to your progress."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The studio",
+       "title": "A quiet place designed to help you feel at ease",
+       "body": "- Bright, quiet rooms\n- Small yoga groups\n- One main practitioner throughout your process",
+       "button_text": "Discover the studio",
+       "button_link": "/the-studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Example review text: replace it with real reviews from your clients, with their permission.",
+         "name": "Example client",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Would you like to visit us?",
+       "text": "Book a first session and we will explain how we work.",
+       "button_text": "Book a session",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Example text: physiotherapy, yoga classes and one-to-one sessions in a calm setting, with clear packs and prices. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Physiotherapy",
+         "text": "Personalised assessment and hands-on treatment."
+        },
+        {
+         "icon": "leaf",
+         "title": "Group yoga",
+         "text": "Gentle or dynamic classes, depending on your level."
+        },
+        {
+         "icon": "star",
+         "title": "Private yoga",
+         "text": "One-to-one sessions tailored to your goals."
+        },
+        {
+         "icon": "sun",
+         "title": "Breathing and relaxation",
+         "text": "Simple techniques for everyday life."
+        },
+        {
+         "icon": "users",
+         "title": "Workshops",
+         "text": "One-off sessions on movement and wellbeing."
+        },
+        {
+         "icon": "check",
+         "title": "Follow-up",
+         "text": "Regular check-ins on your progress."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative prices",
+       "note": "Example amounts: replace them with your own prices.",
+       "items": [
+        {
+         "section": "Physiotherapy",
+         "name": "First assessment",
+         "price": "€45"
+        },
+        {
+         "section": "Physiotherapy",
+         "name": "Treatment session",
+         "price": "€40"
+        },
+        {
+         "section": "Yoga",
+         "name": "Group class",
+         "price": "€12"
+        },
+        {
+         "section": "Yoga",
+         "name": "Pack of 8 classes",
+         "price": "€80"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Would you like to visit us?",
+       "text": "Book a first session and we will explain how we work.",
+       "button_text": "Book a session",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-studio",
+    "title": "The studio",
+    "seo": {
+     "description": "Example text: who we are, what our space is like and the values behind the care in our physiotherapy and yoga studio."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Example text. Tell the story of your studio here, who is on the team and what sets you apart.\n\nDescribe how you work and what you value, with care: wellbeing is supported, never promised."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our principles",
+       "body": "- Listening before hurrying\n- Clear explanations, no jargon\n- Respect for everyone's own pace"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "What your first visit is like",
+       "items": [
+        {
+         "title": "We talk",
+         "text": "You tell us how you are and what you would like to improve."
+        },
+        {
+         "title": "We assess",
+         "text": "We review your case calmly and explain the options."
+        },
+        {
+         "title": "We support",
+         "text": "A proposed plan of sessions and follow-up that adapts to your progress."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Example text: answers to common questions about the first session, yoga classes, class packs and cancellations."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "What happens in the first session?",
+         "answer": "We talk about how you are and assess your case calmly. *Example text.*"
+        },
+        {
+         "question": "Do I need experience for the yoga classes?",
+         "answer": "No, there are groups for beginners and for those who already practise."
+        },
+        {
+         "question": "How do class packs work?",
+         "answer": "State their validity and conditions here. *Example text.*"
+        },
+        {
+         "question": "Can I cancel an appointment?",
+         "answer": "Yes, with advance notice; state your deadline here. *Example text.*"
+        },
+        {
+         "question": "Does physiotherapy replace seeing a doctor?",
+         "answer": "No, it is a complement. If you have any health concern, consult your doctor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Would you like to visit us?",
+       "text": "Book a first session and we will explain how we work.",
+       "button_text": "Book a session",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Example text: book a session or send us your question and we will reply as soon as possible during our opening hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a session",
+       "text": "Tell us what you need and we will suggest a time.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Example hours: replace them with your own.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "gentle-movement-every-day",
+    "title": "Five minutes of gentle movement every day",
+    "excerpt": "Example blog text: a simple, cautious idea.",
+    "content": "Example text. Write a useful article for your clients here, with general and cautious information.\n\n## Start small\n\nA few minutes a day can help you become more aware of your body.\n\n## Listen to your body\n\nIf you feel pain or have doubts, consult a healthcare professional.",
+    "tags": [
+     "wellbeing",
+     "tips"
+    ]
+   },
+   {
+    "slug": "breathing-calmly-to-rest-better",
+    "title": "Breathing calmly to rest better",
+    "excerpt": "Example text: a short breathing pause before bed.",
+    "content": "Example text. Explain a simple breathing practice and when it can feel pleasant.\n\n## A simple exercise\n\nSit comfortably and breathe slowly for a few minutes.\n\n## With care\n\nIt does not replace medical advice: if sleeplessness persists, talk to your doctor.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Kinetoterapie și yoga, în ritmul tău",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Centrul",
+    "url": "/centrul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Programează-te",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: centru de kinetoterapie și yoga cu atenție personală, ședințe în ritmul tău și un spațiu liniștit. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Kinetoterapie și yoga · Exemplu",
+       "title": "Un loc pentru a te mișca mai bine și a respira în liniște",
+       "subtitle": "Text de exemplu: spune într-o frază ce oferă centrul tău, pe cine însoțești și cum decurge fiecare ședință.",
+       "cta_text": "Programează-te",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce oferim",
+       "title": "Îngrijire pe măsura ta",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Kinetoterapie",
+         "text": "Evaluare și tratament individual, explicate clar."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Cursuri în grup mic, pentru toate nivelurile."
+        },
+        {
+         "icon": "calendar",
+         "title": "Ședințe în ritmul tău",
+         "text": "Program flexibil și abonamente potrivite pentru tine."
+        },
+        {
+         "icon": "users",
+         "title": "Atenție personală",
+         "text": "Te ascultăm și adaptăm fiecare ședință situației tale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Ani de experiență (exemplu)"
+        },
+        {
+         "value": "6",
+         "label": "Specialiști în echipă (exemplu)"
+        },
+        {
+         "value": "12",
+         "label": "Cursuri de yoga pe săptămână (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum decurge prima vizită",
+       "items": [
+        {
+         "title": "Povestim",
+         "text": "Ne spui cum te simți și ce ai vrea să îmbunătățești."
+        },
+        {
+         "title": "Evaluăm",
+         "text": "Analizăm cazul tău cu răbdare și îți explicăm opțiunile."
+        },
+        {
+         "title": "Te însoțim",
+         "text": "Propunem un plan de ședințe și o urmărire adaptată evoluției tale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Centrul",
+       "title": "Un loc liniștit, creat ca să te simți bine",
+       "body": "- Săli luminoase și liniștite\n- Grupe mici de yoga\n- Un specialist de referință în procesul tău",
+       "button_text": "Descoperă centrul",
+       "button_link": "/centrul"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să ne cunoști?",
+       "text": "Programează o primă ședință și îți explicăm cum lucrăm.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: kinetoterapie, cursuri de yoga și ședințe individuale într-un cadru calm, cu abonamente și prețuri clare. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Kinetoterapie",
+         "text": "Evaluare personalizată și tratament manual."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga în grup",
+         "text": "Cursuri blânde sau dinamice, în funcție de nivel."
+        },
+        {
+         "icon": "star",
+         "title": "Yoga individual",
+         "text": "Ședințe private adaptate obiectivelor tale."
+        },
+        {
+         "icon": "sun",
+         "title": "Respirație și relaxare",
+         "text": "Tehnici simple pentru fiecare zi."
+        },
+        {
+         "icon": "users",
+         "title": "Ateliere",
+         "text": "Întâlniri punctuale despre mișcare și stare de bine."
+        },
+        {
+         "icon": "check",
+         "title": "Urmărire",
+         "text": "Verificări periodice ale evoluției tale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Kinetoterapie",
+         "name": "Prima evaluare",
+         "price": "200 lei"
+        },
+        {
+         "section": "Kinetoterapie",
+         "name": "Ședință de tratament",
+         "price": "180 lei"
+        },
+        {
+         "section": "Yoga",
+         "name": "Curs în grup",
+         "price": "50 lei"
+        },
+        {
+         "section": "Yoga",
+         "name": "Abonament 8 cursuri",
+         "price": "350 lei"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să ne cunoști?",
+       "text": "Programează o primă ședință și îți explicăm cum lucrăm.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "centrul",
+    "title": "Centrul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum arată spațiul nostru și ce valori ne ghidează în centrul de kinetoterapie și yoga."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria centrului tău, cine face parte din echipă și ce vă diferențiază.\n\nSpune cum lucrați și ce valori aveți, cu prudență: starea de bine se însoțește, nu se promite."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile noastre",
+       "body": "- Ascultare înainte de grabă\n- Explicații clare, fără jargon\n- Respect pentru ritmul fiecăruia"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum decurge prima vizită",
+       "items": [
+        {
+         "title": "Povestim",
+         "text": "Ne spui cum te simți și ce ai vrea să îmbunătățești."
+        },
+        {
+         "title": "Evaluăm",
+         "text": "Analizăm cazul tău cu răbdare și îți explicăm opțiunile."
+        },
+        {
+         "title": "Te însoțim",
+         "text": "Propunem un plan de ședințe și o urmărire adaptată evoluției tale."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre prima ședință, cursurile de yoga, abonamente și anulări."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Ce se întâmplă la prima ședință?",
+         "answer": "Vorbim despre cum te simți și îți evaluăm cazul cu răbdare. *Text de exemplu.*"
+        },
+        {
+         "question": "Am nevoie de experiență pentru cursurile de yoga?",
+         "answer": "Nu, există grupe pentru începători și pentru cei care practică deja."
+        },
+        {
+         "question": "Cum funcționează abonamentele?",
+         "answer": "Indică aici valabilitatea și condițiile. *Text de exemplu.*"
+        },
+        {
+         "question": "Pot anula o programare?",
+         "answer": "Da, cu anunț în prealabil; indică aici termenul tău. *Text de exemplu.*"
+        },
+        {
+         "question": "Kinetoterapia înlocuiește consultul medical?",
+         "answer": "Nu, este un complement. Pentru orice îndoială legată de sănătate, consultă medicul."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să ne cunoști?",
+       "text": "Programează o primă ședință și îți explicăm cum lucrăm.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: programează-te sau trimite-ne întrebarea ta și îți vom răspunde cât mai repede, în programul nostru de lucru."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Programează-te",
+       "text": "Spune-ne de ce ai nevoie și îți propunem un interval orar.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "miscare-blanda-in-fiecare-zi",
+    "title": "Cinci minute de mișcare blândă în fiecare zi",
+    "excerpt": "Text de exemplu pentru blog: o idee simplă și prudentă.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu informații generale și prudente.\n\n## Începe încet\n\nCâteva minute pe zi te pot ajuta să îți conștientizezi corpul.\n\n## Ascultă-ți corpul\n\nDacă simți durere sau ai îndoieli, consultă un specialist din domeniul sănătății.",
+    "tags": [
+     "bine-fizic",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "respiratie-linistita-pentru-somn",
+    "title": "Respirația liniștită pentru un somn mai bun",
+    "excerpt": "Text de exemplu: o pauză de respirație înainte de culcare.",
+    "content": "Text de exemplu. Explică o practică simplă de respirație și când poate fi plăcută.\n\n## Un exercițiu simplu\n\nAșază-te confortabil și respiră rar câteva minute.\n\n## Cu prudență\n\nNu înlocuiește sfatul medical: dacă insomnia persistă, discut-o cu medicul.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Kinésithérapie et yoga, à votre rythme",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "Le centre",
+    "url": "/le-centre"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Prendre rendez-vous",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : centre de kinésithérapie et de yoga à l'accueil chaleureux, séances à votre rythme et lieu paisible. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Kinésithérapie et yoga · Exemple",
+       "title": "Un lieu pour mieux bouger et respirer sereinement",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que propose votre centre, qui vous accompagnez et comment se déroule chaque séance.",
+       "cta_text": "Prendre rendez-vous",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que nous proposons",
+       "title": "Des soins à votre mesure",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Kinésithérapie",
+         "text": "Bilan et traitement individuels, expliqués clairement."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Cours en petit groupe pour tous les niveaux."
+        },
+        {
+         "icon": "calendar",
+         "title": "Séances à votre rythme",
+         "text": "Horaires souples et forfaits adaptés à vous."
+        },
+        {
+         "icon": "users",
+         "title": "Écoute attentive",
+         "text": "Nous vous écoutons et adaptons chaque séance à votre situation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Années d'expérience (exemple)"
+        },
+        {
+         "value": "6",
+         "label": "Professionnels dans l'équipe (exemple)"
+        },
+        {
+         "value": "12",
+         "label": "Cours de yoga par semaine (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comment se passe la première visite",
+       "items": [
+        {
+         "title": "Nous échangeons",
+         "text": "Vous nous dites comment vous allez et ce que vous aimeriez améliorer."
+        },
+        {
+         "title": "Nous évaluons",
+         "text": "Nous étudions votre situation avec calme et vous expliquons les options."
+        },
+        {
+         "title": "Nous accompagnons",
+         "text": "Une proposition de séances et un suivi adapté à votre évolution."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Le centre",
+       "title": "Un lieu paisible, pensé pour que vous vous sentiez bien",
+       "body": "- Salles lumineuses et silencieuses\n- Petits groupes de yoga\n- Un praticien de référence tout au long de votre suivi",
+       "button_text": "Découvrir le centre",
+       "button_link": "/le-centre"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de venir nous rencontrer ?",
+       "text": "Réservez une première séance et nous vous expliquons notre façon de travailler.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : kinésithérapie, cours de yoga et séances individuelles dans un cadre serein, avec forfaits et tarifs clairs. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Kinésithérapie",
+         "text": "Bilan personnalisé et traitement manuel."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga en groupe",
+         "text": "Cours doux ou dynamiques, selon votre niveau."
+        },
+        {
+         "icon": "star",
+         "title": "Yoga individuel",
+         "text": "Séances privées adaptées à vos objectifs."
+        },
+        {
+         "icon": "sun",
+         "title": "Respiration et détente",
+         "text": "Techniques simples pour le quotidien."
+        },
+        {
+         "icon": "users",
+         "title": "Ateliers",
+         "text": "Rencontres ponctuelles autour du mouvement et du bien-être."
+        },
+        {
+         "icon": "check",
+         "title": "Suivi",
+         "text": "Points réguliers sur votre évolution."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Kinésithérapie",
+         "name": "Premier bilan",
+         "price": "45 €"
+        },
+        {
+         "section": "Kinésithérapie",
+         "name": "Séance de soin",
+         "price": "40 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Cours collectif",
+         "price": "12 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Forfait de 8 cours",
+         "price": "80 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de venir nous rencontrer ?",
+       "text": "Réservez une première séance et nous vous expliquons notre façon de travailler.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "le-centre",
+    "title": "Le centre",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, à quoi ressemble notre espace et les valeurs qui guident l'accueil dans notre centre de kinésithérapie et de yoga."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre centre, qui compose l'équipe et ce qui vous distingue.\n\nExpliquez votre façon de travailler et vos valeurs, avec prudence : le bien-être s'accompagne, il ne se promet pas."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos principes",
+       "body": "- L'écoute avant la hâte\n- Des explications claires, sans jargon\n- Le respect du rythme de chacun"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comment se passe la première visite",
+       "items": [
+        {
+         "title": "Nous échangeons",
+         "text": "Vous nous dites comment vous allez et ce que vous aimeriez améliorer."
+        },
+        {
+         "title": "Nous évaluons",
+         "text": "Nous étudions votre situation avec calme et vous expliquons les options."
+        },
+        {
+         "title": "Nous accompagnons",
+         "text": "Une proposition de séances et un suivi adapté à votre évolution."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur la première séance, les cours de yoga, les forfaits et les annulations."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Que se passe-t-il lors de la première séance ?",
+         "answer": "Nous parlons de votre état et étudions votre situation avec calme. *Texte d'exemple.*"
+        },
+        {
+         "question": "Faut-il de l'expérience pour les cours de yoga ?",
+         "answer": "Non, il existe des groupes pour débutants et pour pratiquants."
+        },
+        {
+         "question": "Comment fonctionnent les forfaits ?",
+         "answer": "Indiquez ici leur validité et leurs conditions. *Texte d'exemple.*"
+        },
+        {
+         "question": "Puis-je annuler un rendez-vous ?",
+         "answer": "Oui, en nous prévenant à l'avance ; indiquez ici votre délai. *Texte d'exemple.*"
+        },
+        {
+         "question": "La kinésithérapie remplace-t-elle une consultation médicale ?",
+         "answer": "Non, elle la complète. En cas de doute sur votre santé, consultez votre médecin."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de venir nous rencontrer ?",
+       "text": "Réservez une première séance et nous vous expliquons notre façon de travailler.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : prenez rendez-vous ou envoyez-nous votre question, nous vous répondrons dès que possible pendant nos horaires d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prendre rendez-vous",
+       "text": "Dites-nous ce dont vous avez besoin et nous vous proposons un créneau.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "mouvement-doux-chaque-jour",
+    "title": "Cinq minutes de mouvement doux chaque jour",
+    "excerpt": "Texte d'exemple pour le blog : une idée simple et prudente.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Commencez doucement\n\nQuelques minutes par jour peuvent aider à prendre conscience de son corps.\n\n## Écoutez votre corps\n\nEn cas de douleur ou de doute, consultez un professionnel de santé.",
+    "tags": [
+     "bien-etre",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "respirer-calmement-pour-mieux-se-reposer",
+    "title": "Respirer calmement pour mieux se reposer",
+    "excerpt": "Texte d'exemple : une pause respiratoire avant de dormir.",
+    "content": "Texte d'exemple. Expliquez une pratique simple de respiration et quand elle peut être agréable.\n\n## Un exercice simple\n\nAsseyez-vous confortablement et respirez lentement quelques minutes.\n\n## Avec prudence\n\nCela ne remplace pas un avis médical : si l'insomnie persiste, parlez-en à votre médecin.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Physiotherapie und Yoga in Ihrem Tempo",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Das Studio",
+    "url": "/das-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Termin vereinbaren",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Studio für Physiotherapie und Yoga mit persönlicher Betreuung, Einheiten in Ihrem Tempo und ruhiger Atmosphäre. Durch Ihren Text ersetzen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Physiotherapie und Yoga · Beispiel",
+       "title": "Ein Ort, um sich besser zu bewegen und ruhig zu atmen",
+       "subtitle": "Beispieltext: Beschreiben Sie in einem Satz, was Ihr Studio bietet, wen Sie begleiten und wie jede Einheit abläuft.",
+       "cta_text": "Termin vereinbaren",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Unser Angebot",
+       "title": "Betreuung nach Maß",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Physiotherapie",
+         "text": "Individuelle Befundung und Behandlung, verständlich erklärt."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Kurse in kleinen Gruppen für jedes Niveau."
+        },
+        {
+         "icon": "calendar",
+         "title": "Einheiten in Ihrem Tempo",
+         "text": "Flexible Zeiten und Pakete, die zu Ihnen passen."
+        },
+        {
+         "icon": "users",
+         "title": "Persönliche Betreuung",
+         "text": "Wir hören zu und passen jede Einheit an Ihre Situation an."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Jahre Erfahrung (Beispiel)"
+        },
+        {
+         "value": "6",
+         "label": "Fachkräfte im Team (Beispiel)"
+        },
+        {
+         "value": "12",
+         "label": "Yogakurse pro Woche (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So verläuft Ihr erster Besuch",
+       "items": [
+        {
+         "title": "Wir sprechen",
+         "text": "Sie erzählen uns, wie es Ihnen geht und was Sie verbessern möchten."
+        },
+        {
+         "title": "Wir prüfen",
+         "text": "Wir sehen uns Ihren Fall in Ruhe an und erklären die Möglichkeiten."
+        },
+        {
+         "title": "Wir begleiten",
+         "text": "Ein Vorschlag für die Einheiten und eine Begleitung, die sich Ihrem Verlauf anpasst."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Studio",
+       "title": "Ein ruhiger Ort, an dem Sie sich wohlfühlen",
+       "body": "- Helle, ruhige Räume\n- Kleine Yogagruppen\n- Eine feste Ansprechperson in Ihrem Prozess",
+       "button_text": "Das Studio kennenlernen",
+       "button_link": "/das-studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: Ersetzen Sie ihn durch echte Meinungen Ihrer Kunden, mit deren Einverständnis.",
+         "name": "Beispiel-Kundin",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie uns kennenlernen?",
+       "text": "Buchen Sie eine erste Einheit, wir erklären Ihnen, wie wir arbeiten.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Physiotherapie, Yogakurse und Einzelstunden in ruhiger Umgebung, mit klaren Paketen und Preisen. Durch Ihren eigenen Text ersetzen."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Physiotherapie",
+         "text": "Persönlicher Befund und manuelle Behandlung."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga in der Gruppe",
+         "text": "Sanfte oder dynamische Kurse, je nach Niveau."
+        },
+        {
+         "icon": "star",
+         "title": "Einzel-Yoga",
+         "text": "Privatstunden, abgestimmt auf Ihre Ziele."
+        },
+        {
+         "icon": "sun",
+         "title": "Atmung und Entspannung",
+         "text": "Einfache Techniken für den Alltag."
+        },
+        {
+         "icon": "users",
+         "title": "Workshops",
+         "text": "Einzelne Termine rund um Bewegung und Wohlbefinden."
+        },
+        {
+         "icon": "check",
+         "title": "Begleitung",
+         "text": "Regelmäßige Gespräche zu Ihrem Verlauf."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre Preise.",
+       "items": [
+        {
+         "section": "Physiotherapie",
+         "name": "Erstbefund",
+         "price": "45 €"
+        },
+        {
+         "section": "Physiotherapie",
+         "name": "Behandlungseinheit",
+         "price": "40 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Gruppenstunde",
+         "price": "12 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Zehnerkarte (8 Stunden)",
+         "price": "80 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie uns kennenlernen?",
+       "text": "Buchen Sie eine erste Einheit, wir erklären Ihnen, wie wir arbeiten.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-studio",
+    "title": "Das Studio",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie unsere Räume aussehen und welche Werte die Betreuung in unserem Studio für Physiotherapie und Yoga leiten."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Studios, wer zum Team gehört und was Sie auszeichnet.\n\nBeschreiben Sie, wie Sie arbeiten und was Ihnen wichtig ist, mit Bedacht: Wohlbefinden wird begleitet, nicht versprochen."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Grundsätze",
+       "body": "- Zuhören statt Eile\n- Klare Erklärungen ohne Fachjargon\n- Respekt vor dem Tempo jedes Einzelnen"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So verläuft Ihr erster Besuch",
+       "items": [
+        {
+         "title": "Wir sprechen",
+         "text": "Sie erzählen uns, wie es Ihnen geht und was Sie verbessern möchten."
+        },
+        {
+         "title": "Wir prüfen",
+         "text": "Wir sehen uns Ihren Fall in Ruhe an und erklären die Möglichkeiten."
+        },
+        {
+         "title": "Wir begleiten",
+         "text": "Ein Vorschlag für die Einheiten und eine Begleitung, die sich Ihrem Verlauf anpasst."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zur ersten Einheit, zu den Yogakursen, zu Zehnerkarten und zu Absagen."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Was passiert in der ersten Einheit?",
+         "answer": "Wir sprechen darüber, wie es Ihnen geht, und prüfen Ihren Fall in Ruhe. *Beispieltext.*"
+        },
+        {
+         "question": "Brauche ich Erfahrung für die Yogakurse?",
+         "answer": "Nein, es gibt Gruppen für Einsteiger und für Fortgeschrittene."
+        },
+        {
+         "question": "Wie funktionieren die Pakete?",
+         "answer": "Geben Sie hier Gültigkeit und Bedingungen an. *Beispieltext.*"
+        },
+        {
+         "question": "Kann ich einen Termin absagen?",
+         "answer": "Ja, mit rechtzeitiger Ankündigung; nennen Sie hier Ihre Frist. *Beispieltext.*"
+        },
+        {
+         "question": "Ersetzt Physiotherapie den Arztbesuch?",
+         "answer": "Nein, sie ergänzt ihn. Bei gesundheitlichen Zweifeln wenden Sie sich an Ihre Ärztin oder Ihren Arzt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie uns kennenlernen?",
+       "text": "Buchen Sie eine erste Einheit, wir erklären Ihnen, wie wir arbeiten.",
+       "button_text": "Termin vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Vereinbaren Sie einen Termin oder senden Sie uns Ihre Frage, wir antworten schnellstmöglich innerhalb unserer Öffnungszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Termin vereinbaren",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir schlagen Ihnen eine Zeit vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "sanfte-bewegung-jeden-tag",
+    "title": "Fünf Minuten sanfte Bewegung jeden Tag",
+    "excerpt": "Beispieltext für den Blog: eine einfache, vorsichtige Idee.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Informationen.\n\n## Klein anfangen\n\nEinige Minuten am Tag können helfen, den eigenen Körper bewusster wahrzunehmen.\n\n## Auf den Körper hören\n\nBei Schmerzen oder Zweifeln fragen Sie eine medizinische Fachperson.",
+    "tags": [
+     "wohlbefinden",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "ruhig-atmen-besser-ausruhen",
+    "title": "Ruhig atmen, besser ausruhen",
+    "excerpt": "Beispieltext: eine kurze Atempause vor dem Schlafen.",
+    "content": "Beispieltext. Erklären Sie eine einfache Atemübung und wann sie angenehm sein kann.\n\n## Eine einfache Übung\n\nSetzen Sie sich bequem hin und atmen Sie einige Minuten langsam.\n\n## Mit Bedacht\n\nSie ersetzt keinen ärztlichen Rat: Halten Schlafprobleme an, sprechen Sie mit Ihrer Ärztin oder Ihrem Arzt.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Fisioterapia e yoga, con calma",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Il centro",
+    "url": "/il-centro"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota una seduta",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: centro di fisioterapia e yoga con attenzione personale, sedute al tuo ritmo e uno spazio tranquillo. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Fisioterapia e yoga · Esempio",
+       "title": "Un luogo per muoverti meglio e respirare con calma",
+       "subtitle": "Testo di esempio: racconta in una frase cosa offre il tuo centro, chi accompagni e com'è ogni seduta.",
+       "cta_text": "Prenota una seduta",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa offriamo",
+       "title": "Cure su misura",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Valutazione e trattamento individuali, spiegati con chiarezza."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Corsi in piccoli gruppi per tutti i livelli."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sedute al tuo ritmo",
+         "text": "Orari flessibili e abbonamenti adatti a te."
+        },
+        {
+         "icon": "users",
+         "title": "Attenzione personale",
+         "text": "Ti ascoltiamo e adattiamo ogni seduta alla tua situazione."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Anni di esperienza (esempio)"
+        },
+        {
+         "value": "6",
+         "label": "Professionisti nel team (esempio)"
+        },
+        {
+         "value": "12",
+         "label": "Corsi di yoga a settimana (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Com'è la prima visita",
+       "items": [
+        {
+         "title": "Parliamo",
+         "text": "Ci racconti come stai e cosa vorresti migliorare."
+        },
+        {
+         "title": "Valutiamo",
+         "text": "Esaminiamo il tuo caso con calma e ti spieghiamo le opzioni."
+        },
+        {
+         "title": "Accompagniamo",
+         "text": "Una proposta di sedute e un percorso che segue la tua evoluzione."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Il centro",
+       "title": "Un luogo tranquillo, pensato per farti stare bene",
+       "body": "- Sale luminose e silenziose\n- Piccoli gruppi di yoga\n- Un professionista di riferimento nel tuo percorso",
+       "button_text": "Scopri il centro",
+       "button_link": "/il-centro"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi venire a conoscerci?",
+       "text": "Prenota una prima seduta e ti spieghiamo come lavoriamo.",
+       "button_text": "Prenota una seduta",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: fisioterapia, corsi di yoga e sedute individuali in un ambiente sereno, con abbonamenti e prezzi chiari. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Valutazione personalizzata e trattamento manuale."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga di gruppo",
+         "text": "Corsi dolci o dinamici, secondo il tuo livello."
+        },
+        {
+         "icon": "star",
+         "title": "Yoga individuale",
+         "text": "Sedute private adatte ai tuoi obiettivi."
+        },
+        {
+         "icon": "sun",
+         "title": "Respirazione e rilassamento",
+         "text": "Tecniche semplici per ogni giorno."
+        },
+        {
+         "icon": "users",
+         "title": "Workshop",
+         "text": "Incontri puntuali su movimento e benessere."
+        },
+        {
+         "icon": "check",
+         "title": "Follow-up",
+         "text": "Verifiche periodiche della tua evoluzione."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Importi di esempio: sostituiscili con le tue tariffe.",
+       "items": [
+        {
+         "section": "Fisioterapia",
+         "name": "Prima valutazione",
+         "price": "45 €"
+        },
+        {
+         "section": "Fisioterapia",
+         "name": "Seduta di trattamento",
+         "price": "40 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Lezione di gruppo",
+         "price": "12 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Abbonamento da 8 lezioni",
+         "price": "80 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi venire a conoscerci?",
+       "text": "Prenota una prima seduta e ti spieghiamo come lavoriamo.",
+       "button_text": "Prenota una seduta",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "il-centro",
+    "title": "Il centro",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, com'è il nostro spazio e quali valori guidano l'accoglienza nel nostro centro di fisioterapia e yoga."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo centro, chi fa parte del team e cosa vi distingue.\n\nParla di come lavorate e dei vostri valori, con prudenza: il benessere si accompagna, non si promette."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri principi",
+       "body": "- Ascolto prima della fretta\n- Spiegazioni chiare, senza tecnicismi\n- Rispetto per il ritmo di ciascuno"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Com'è la prima visita",
+       "items": [
+        {
+         "title": "Parliamo",
+         "text": "Ci racconti come stai e cosa vorresti migliorare."
+        },
+        {
+         "title": "Valutiamo",
+         "text": "Esaminiamo il tuo caso con calma e ti spieghiamo le opzioni."
+        },
+        {
+         "title": "Accompagniamo",
+         "text": "Una proposta di sedute e un percorso che segue la tua evoluzione."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni sulla prima seduta, sui corsi di yoga, sugli abbonamenti e sulle disdette."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cosa succede alla prima seduta?",
+         "answer": "Parliamo di come stai e valutiamo il tuo caso con calma. *Testo di esempio.*"
+        },
+        {
+         "question": "Serve esperienza per i corsi di yoga?",
+         "answer": "No, ci sono gruppi per principianti e per chi già pratica."
+        },
+        {
+         "question": "Come funzionano gli abbonamenti?",
+         "answer": "Indica qui validità e condizioni. *Testo di esempio.*"
+        },
+        {
+         "question": "Posso disdire un appuntamento?",
+         "answer": "Sì, avvisando in anticipo; indica qui il tuo termine. *Testo di esempio.*"
+        },
+        {
+         "question": "La fisioterapia sostituisce la visita medica?",
+         "answer": "No, è un complemento. Per qualsiasi dubbio sulla salute, rivolgiti al tuo medico."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi venire a conoscerci?",
+       "text": "Prenota una prima seduta e ti spieghiamo come lavoriamo.",
+       "button_text": "Prenota una seduta",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota una seduta o scrivici la tua domanda e ti risponderemo il prima possibile durante i nostri orari di apertura."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota una seduta",
+       "text": "Dicci di cosa hai bisogno e ti proponiamo un orario.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "movimento-dolce-ogni-giorno",
+    "title": "Cinque minuti di movimento dolce ogni giorno",
+    "excerpt": "Testo di esempio per il blog: un'idea semplice e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Parti piano\n\nPochi minuti al giorno possono aiutarti a prendere coscienza del tuo corpo.\n\n## Ascolta il tuo corpo\n\nSe avverti dolore o hai dubbi, rivolgiti a un professionista sanitario.",
+    "tags": [
+     "benessere",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "respirare-con-calma-per-riposare",
+    "title": "Respirare con calma per riposare meglio",
+    "excerpt": "Testo di esempio: una pausa di respirazione prima di dormire.",
+    "content": "Testo di esempio. Spiega una semplice pratica di respirazione e quando può risultare piacevole.\n\n## Un esercizio semplice\n\nSiediti comodo e respira lentamente per qualche minuto.\n\n## Con prudenza\n\nNon sostituisce il parere medico: se l'insonnia persiste, parlane con il tuo medico.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Fisioterapia e yoga, ao seu ritmo",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "O espaço",
+    "url": "/o-espaco"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar sessão",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: centro de fisioterapia e yoga com atenção próxima, sessões ao seu ritmo e um espaço tranquilo. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Fisioterapia e yoga · Exemplo",
+       "title": "Um espaço para se mover melhor e respirar com calma",
+       "subtitle": "Texto de exemplo: diga numa frase o que o seu centro oferece, quem acompanha e como decorre cada sessão.",
+       "cta_text": "Marcar sessão",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que oferecemos",
+       "title": "Cuidado à sua medida",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Avaliação e tratamento individuais, explicados com clareza."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga",
+         "text": "Aulas em pequenos grupos para todos os níveis."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sessões ao seu ritmo",
+         "text": "Horários flexíveis e pacotes que se adaptam a si."
+        },
+        {
+         "icon": "users",
+         "title": "Atenção próxima",
+         "text": "Ouvimos e adaptamos cada sessão à sua situação."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Anos de experiência (exemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Profissionais na equipa (exemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Aulas de yoga por semana (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como é a primeira visita",
+       "items": [
+        {
+         "title": "Conversamos",
+         "text": "Conta-nos como está e o que gostaria de melhorar."
+        },
+        {
+         "title": "Avaliamos",
+         "text": "Analisamos o seu caso com calma e explicamos as opções."
+        },
+        {
+         "title": "Acompanhamos",
+         "text": "Uma proposta de sessões e um acompanhamento adaptado à sua evolução."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O espaço",
+       "title": "Um lugar tranquilo, pensado para se sentir bem",
+       "body": "- Salas luminosas e silenciosas\n- Pequenos grupos de yoga\n- Um profissional de referência no seu percurso",
+       "button_text": "Conhecer o espaço",
+       "button_link": "/o-espaco"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer vir conhecer-nos?",
+       "text": "Marque uma primeira sessão e explicamos como trabalhamos.",
+       "button_text": "Marcar sessão",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: fisioterapia, aulas de yoga e sessões individuais num ambiente sereno, com pacotes e preços claros. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Fisioterapia",
+         "text": "Avaliação personalizada e tratamento manual."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga em grupo",
+         "text": "Aulas suaves ou dinâmicas, conforme o seu nível."
+        },
+        {
+         "icon": "star",
+         "title": "Yoga individual",
+         "text": "Sessões privadas adaptadas aos seus objetivos."
+        },
+        {
+         "icon": "sun",
+         "title": "Respiração e relaxamento",
+         "text": "Técnicas simples para o dia a dia."
+        },
+        {
+         "icon": "users",
+         "title": "Workshops",
+         "text": "Encontros pontuais sobre movimento e bem-estar."
+        },
+        {
+         "icon": "check",
+         "title": "Acompanhamento",
+         "text": "Revisões periódicas da sua evolução."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Valores de exemplo: substitua-os pelos seus preços.",
+       "items": [
+        {
+         "section": "Fisioterapia",
+         "name": "Primeira avaliação",
+         "price": "45 €"
+        },
+        {
+         "section": "Fisioterapia",
+         "name": "Sessão de tratamento",
+         "price": "40 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Aula em grupo",
+         "price": "12 €"
+        },
+        {
+         "section": "Yoga",
+         "name": "Pacote de 8 aulas",
+         "price": "80 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer vir conhecer-nos?",
+       "text": "Marque uma primeira sessão e explicamos como trabalhamos.",
+       "button_text": "Marcar sessão",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "o-espaco",
+    "title": "O espaço",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como é o nosso espaço e os valores que orientam o atendimento no nosso centro de fisioterapia e yoga."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu centro, quem faz parte da equipa e o que vos distingue.\n\nFale de como trabalham e dos vossos valores, com prudência: o bem-estar acompanha-se, não se promete."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos princípios",
+       "body": "- Escuta antes de pressa\n- Explicações claras, sem tecnicismos\n- Respeito pelo ritmo de cada pessoa"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como é a primeira visita",
+       "items": [
+        {
+         "title": "Conversamos",
+         "text": "Conta-nos como está e o que gostaria de melhorar."
+        },
+        {
+         "title": "Avaliamos",
+         "text": "Analisamos o seu caso com calma e explicamos as opções."
+        },
+        {
+         "title": "Acompanhamos",
+         "text": "Uma proposta de sessões e um acompanhamento adaptado à sua evolução."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas mais comuns sobre a primeira sessão, as aulas de yoga, os pacotes e os cancelamentos."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "O que acontece na primeira sessão?",
+         "answer": "Falamos sobre como está e avaliamos o seu caso com calma. *Texto de exemplo.*"
+        },
+        {
+         "question": "Preciso de experiência para as aulas de yoga?",
+         "answer": "Não, há grupos para iniciantes e para quem já pratica."
+        },
+        {
+         "question": "Como funcionam os pacotes?",
+         "answer": "Indique aqui a validade e as condições. *Texto de exemplo.*"
+        },
+        {
+         "question": "Posso cancelar uma marcação?",
+         "answer": "Sim, avisando com antecedência; indique aqui o seu prazo. *Texto de exemplo.*"
+        },
+        {
+         "question": "A fisioterapia substitui a consulta médica?",
+         "answer": "Não, é um complemento. Perante qualquer dúvida de saúde, consulte o seu médico."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer vir conhecer-nos?",
+       "text": "Marque uma primeira sessão e explicamos como trabalhamos.",
+       "button_text": "Marcar sessão",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marque uma sessão ou envie-nos a sua pergunta e responderemos o mais depressa possível dentro do nosso horário."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar sessão",
+       "text": "Diga-nos do que precisa e propomos-lhe um horário.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "movimento-suave-todos-os-dias",
+    "title": "Cinco minutos de movimento suave todos os dias",
+    "excerpt": "Texto de exemplo para o blogue: uma ideia simples e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Comece devagar\n\nAlguns minutos por dia podem ajudar a tomar consciência do corpo.\n\n## Ouça o seu corpo\n\nSe sentir dor ou tiver dúvidas, consulte um profissional de saúde.",
+    "tags": [
+     "bem-estar",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "respirar-com-calma-para-descansar",
+    "title": "Respirar com calma para descansar melhor",
+    "excerpt": "Texto de exemplo: uma pausa de respiração antes de dormir.",
+    "content": "Texto de exemplo. Explique uma prática simples de respiração e quando pode ser agradável.\n\n## Um exercício simples\n\nSente-se confortavelmente e respire devagar durante alguns minutos.\n\n## Com prudência\n\nNão substitui o conselho médico: se a insónia persistir, fale com o seu médico.",
+    "tags": [
+     "yoga"
+    ]
+   }
+  ]
+ }
+}

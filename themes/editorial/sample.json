@@ -1,0 +1,2810 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Editorial). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Arquitectura e interiorismo con mirada de autor",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "El estudio",
+    "url": "/el-estudio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir una conversación",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: estudio de arquitectura e interiorismo que proyecta casas y espacios con luz, materia y calma. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Estudio de arquitectura · Ejemplo",
+       "title": "Casas que se leen despacio",
+       "subtitle": "Texto de ejemplo: Plomada es un estudio ficticio que proyecta viviendas, reformas y espacios de trabajo cuidando cada detalle, como quien edita una revista.",
+       "cta_text": "Pedir una conversación",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Lo que hacemos",
+       "title": "Del primer trazo a la última llave",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Vivienda nueva",
+         "text": "Casas pensadas para su solar, su orientación y para quien las va a habitar."
+        },
+        {
+         "icon": "leaf",
+         "title": "Reformas",
+         "text": "Dar nueva vida a lo existente, con materiales honestos y mucha paciencia."
+        },
+        {
+         "icon": "sun",
+         "title": "Interiorismo",
+         "text": "Luz, mobiliario y color al servicio de la vida diaria."
+        },
+        {
+         "icon": "target",
+         "title": "Dirección de obra",
+         "text": "Presencia en obra para que lo dibujado sea lo construido."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Años de oficio (ejemplo)"
+        },
+        {
+         "value": "60",
+         "label": "Obras entregadas (ejemplo)"
+        },
+        {
+         "value": "3 semanas",
+         "label": "Hasta el primer boceto (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita y conversación",
+         "text": "Recorremos el lugar contigo y hablamos de cómo quieres vivirlo."
+        },
+        {
+         "title": "Anteproyecto",
+         "text": "Maquetas, planos y una estimación de costes para decidir con calma."
+        },
+        {
+         "title": "Proyecto y obra",
+         "text": "Documentación completa, licencias y acompañamiento hasta la entrega."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El estudio",
+       "title": "Un equipo pequeño que firma cada proyecto",
+       "body": "- Un arquitecto responsable de principio a fin\n- Presupuestos explicados, sin sorpresas\n- Materiales locales y de larga vida",
+       "button_text": "Conocer el estudio",
+       "button_link": "/el-estudio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un solar, una casa o una idea?",
+       "text": "Cuéntanosla y buscamos un hueco para conversar sin compromiso.",
+       "button_text": "Pedir una conversación",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: servicios de arquitectura e interiorismo, de la vivienda nueva a la reforma, con honorarios explicados desde el principio."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus servicios con palabras que entienda cualquiera, sin jerga.",
+       "cta_text": "Pedir una conversación",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Vivienda unifamiliar",
+         "text": "Proyecto completo de casa nueva."
+        },
+        {
+         "icon": "leaf",
+         "title": "Reforma y rehabilitación",
+         "text": "Viviendas, locales y edificios con historia."
+        },
+        {
+         "icon": "sun",
+         "title": "Interiorismo",
+         "text": "Distribución, iluminación y mobiliario a medida."
+        },
+        {
+         "icon": "users",
+         "title": "Espacios de trabajo",
+         "text": "Oficinas y estudios donde da gusto trabajar."
+        },
+        {
+         "icon": "check",
+         "title": "Dirección de obra",
+         "text": "Visitas periódicas y control de calidad."
+        },
+        {
+         "icon": "calendar",
+         "title": "Licencias y trámites",
+         "text": "Gestión de permisos ante el ayuntamiento."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorarios orientativos",
+       "note": "Importes de ejemplo: sustitúyelos por tus honorarios.",
+       "items": [
+        {
+         "section": "Primeros pasos",
+         "name": "Visita y conversación",
+         "price": "gratuita"
+        },
+        {
+         "section": "Primeros pasos",
+         "name": "Estudio de viabilidad",
+         "price": "desde 300 €"
+        },
+        {
+         "section": "Proyecto",
+         "name": "Anteproyecto",
+         "price": "desde 1.200 €"
+        },
+        {
+         "section": "Proyecto",
+         "name": "Proyecto de reforma",
+         "price": "desde 4.500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un solar, una casa o una idea?",
+       "text": "Cuéntanosla y buscamos un hueco para conversar sin compromiso.",
+       "button_text": "Pedir una conversación",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "el-estudio",
+    "title": "El estudio",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo entendemos la arquitectura y qué principios guían cada uno de nuestros proyectos y obras."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu estudio, quién lo forma y qué mirada tenéis.\n\nHabla de cómo trabajáis y de lo que os importa, no de premios que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros principios",
+       "body": "- Primero escuchar, después dibujar\n- Costes y plazos por escrito\n- Menos metros, mejor pensados"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita y conversación",
+         "text": "Recorremos el lugar contigo y hablamos de cómo quieres vivirlo."
+        },
+        {
+         "title": "Anteproyecto",
+         "text": "Maquetas, planos y una estimación de costes para decidir con calma."
+        },
+        {
+         "title": "Proyecto y obra",
+         "text": "Documentación completa, licencias y acompañamiento hasta la entrega."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la primera conversación, los honorarios, los plazos y las licencias del estudio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cuánto cuesta la primera conversación?",
+         "answer": "Indica aquí si es gratuita o tiene un coste. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cómo se calculan los honorarios?",
+         "answer": "Se acuerdan por escrito antes de empezar. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuánto tarda un proyecto?",
+         "answer": "Depende del encargo; en la primera reunión te damos un calendario realista."
+        },
+        {
+         "question": "¿Os encargáis de la licencia de obra?",
+         "answer": "Sí, preparamos y tramitamos la documentación necesaria."
+        },
+        {
+         "question": "¿Trabajáis fuera de vuestra ciudad?",
+         "answer": "Sí, valoramos cada encargo según la distancia y el tipo de obra."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un solar, una casa o una idea?",
+       "text": "Cuéntanosla y buscamos un hueco para conversar sin compromiso.",
+       "button_text": "Pedir una conversación",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: cuéntanos tu proyecto y concertamos una primera conversación sin compromiso en el horario del estudio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir una conversación",
+       "text": "Cuéntanos qué tienes en mente y te proponemos una cita.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "luz-norte-estudio",
+    "title": "Por qué los estudios buscan la luz del norte",
+    "excerpt": "Texto de ejemplo para el blog: una reflexión sobre la luz natural.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo con tono de revista, claro y bien documentado.\n\n## Una luz que no deslumbra\n\nLa luz del norte es suave y constante, ideal para trabajar y para leer.\n\n## Cómo aprovecharla\n\nGrandes ventanas, paredes claras y materiales que no brillen.",
+    "tags": [
+     "luz",
+     "diseño"
+    ]
+   },
+   {
+    "slug": "reformar-sin-mudarse",
+    "title": "Reformar sin mudarse: cinco decisiones previas",
+    "excerpt": "Texto de ejemplo: qué conviene decidir antes de abrir una pared.",
+    "content": "Texto de ejemplo. Explica qué pasos conviene dar antes de empezar una reforma habitada.\n\n## Antes de la obra\n\nDefine qué zonas usarás y cuáles quedarán cerradas.\n\n## Durante la obra\n\nAcuerda horarios y un interlocutor único con el equipo.",
+    "tags": [
+     "reformas",
+     "consejos"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Architecture and interior design with an author's eye",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "The studio",
+    "url": "/the-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Start a conversation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: an architecture and interior design studio that shapes homes and spaces with light, material and calm. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Architecture studio · Example",
+       "title": "Houses meant to be read slowly",
+       "subtitle": "Sample text: Plomada is a fictional studio designing homes, renovations and workspaces, caring for every detail the way an editor shapes a magazine.",
+       "cta_text": "Start a conversation",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we do",
+       "title": "From the first line to the last key",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "New homes",
+         "text": "Houses shaped by their plot, their orientation and the people who will live in them."
+        },
+        {
+         "icon": "leaf",
+         "title": "Renovations",
+         "text": "Giving existing buildings a new life, with honest materials and plenty of patience."
+        },
+        {
+         "icon": "sun",
+         "title": "Interior design",
+         "text": "Light, furniture and colour in the service of daily life."
+        },
+        {
+         "icon": "target",
+         "title": "Site supervision",
+         "text": "Being on site so that what was drawn is what gets built."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Years in practice (example)"
+        },
+        {
+         "value": "60",
+         "label": "Projects delivered (example)"
+        },
+        {
+         "value": "3 weeks",
+         "label": "To the first sketch (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Visit and conversation",
+         "text": "We walk the site with you and talk about how you want to live in it."
+        },
+        {
+         "title": "Concept design",
+         "text": "Models, drawings and a cost estimate, so you can decide calmly."
+        },
+        {
+         "title": "Design and build",
+         "text": "Full documentation, permits and support through to handover."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The studio",
+       "title": "A small team that signs every project",
+       "body": "- One architect responsible from start to finish\n- Budgets explained, no surprises\n- Local, long-lasting materials",
+       "button_text": "Meet the studio",
+       "button_link": "/the-studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Testimonials",
+       "items": [
+        {
+         "quote": "Sample testimonial text: replace it with real feedback from your clients, with their consent.",
+         "name": "Sample client",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a plot, a house or an idea?",
+       "text": "Tell us about it and we will find time for a no-obligation chat.",
+       "button_text": "Start a conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: architecture and interior design services, from new homes to renovations, with fees explained from the very beginning."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your services in words anyone can follow, without jargon.",
+       "cta_text": "Start a conversation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Single-family homes",
+         "text": "Complete design of a new house."
+        },
+        {
+         "icon": "leaf",
+         "title": "Renovation and restoration",
+         "text": "Homes, shops and buildings with a history."
+        },
+        {
+         "icon": "sun",
+         "title": "Interior design",
+         "text": "Layout, lighting and made-to-measure furniture."
+        },
+        {
+         "icon": "users",
+         "title": "Workspaces",
+         "text": "Offices and studios that are a pleasure to work in."
+        },
+        {
+         "icon": "check",
+         "title": "Site supervision",
+         "text": "Regular visits and quality control."
+        },
+        {
+         "icon": "calendar",
+         "title": "Permits and paperwork",
+         "text": "Handling applications with the local council."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative fees",
+       "note": "Sample amounts: replace them with your own fees.",
+       "items": [
+        {
+         "section": "First steps",
+         "name": "Visit and conversation",
+         "price": "free"
+        },
+        {
+         "section": "First steps",
+         "name": "Feasibility study",
+         "price": "from €300"
+        },
+        {
+         "section": "Design",
+         "name": "Concept design",
+         "price": "from €1,200"
+        },
+        {
+         "section": "Design",
+         "name": "Renovation project",
+         "price": "from €4,500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a plot, a house or an idea?",
+       "text": "Tell us about it and we will find time for a no-obligation chat.",
+       "button_text": "Start a conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-studio",
+    "title": "The studio",
+    "seo": {
+     "description": "Sample text: who we are, how we understand architecture and which principles guide each one of our projects and building sites."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your studio here: who is part of it and how you look at things.\n\nTalk about how you work and what matters to you, not about awards you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our principles",
+       "body": "- Listen first, draw later\n- Costs and timelines in writing\n- Fewer square metres, better thought out"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Visit and conversation",
+         "text": "We walk the site with you and talk about how you want to live in it."
+        },
+        {
+         "title": "Concept design",
+         "text": "Models, drawings and a cost estimate, so you can decide calmly."
+        },
+        {
+         "title": "Design and build",
+         "text": "Full documentation, permits and support through to handover."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "FAQ",
+    "seo": {
+     "description": "Sample text: answers to common questions about the first conversation, fees, timelines and building permits at the studio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How much does the first conversation cost?",
+         "answer": "State here whether it is free or paid. *Sample text.*"
+        },
+        {
+         "question": "How are fees calculated?",
+         "answer": "They are agreed in writing before work begins. *Sample text.*"
+        },
+        {
+         "question": "How long does a project take?",
+         "answer": "It depends on the commission; at the first meeting we give you a realistic schedule."
+        },
+        {
+         "question": "Do you handle the building permit?",
+         "answer": "Yes, we prepare and submit the required documents."
+        },
+        {
+         "question": "Do you work outside your own city?",
+         "answer": "Yes, we assess each commission by distance and type of work."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a plot, a house or an idea?",
+       "text": "Tell us about it and we will find time for a no-obligation chat.",
+       "button_text": "Start a conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: tell us about your project and we will arrange a first conversation with no obligation during the studio's opening hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Start a conversation",
+       "text": "Tell us what you have in mind and we will suggest a meeting.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: replace them with your own.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "north-light-studios",
+    "title": "Why studios look for north light",
+    "excerpt": "Sample text for the blog: a reflection on natural light.",
+    "content": "Sample text. Write a magazine-style article here, clear and well researched.\n\n## A light that does not dazzle\n\nNorth light is soft and steady, ideal for working and reading.\n\n## Making the most of it\n\nLarge windows, pale walls and materials that do not shine.",
+    "tags": [
+     "light",
+     "design"
+    ]
+   },
+   {
+    "slug": "renovating-while-living-in",
+    "title": "Renovating while you live there: five decisions first",
+    "excerpt": "Sample text: what to decide before opening a wall.",
+    "content": "Sample text. Explain which steps are worth taking before renovating a home you still live in.\n\n## Before the works\n\nDecide which rooms you will use and which will stay closed.\n\n## During the works\n\nAgree on working hours and a single point of contact with the team.",
+    "tags": [
+     "renovation",
+     "advice"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Arhitectură și design interior cu privire de autor",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Studioul",
+    "url": "/studioul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Hai să discutăm",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: studio de arhitectură și design interior care proiectează case și spații cu lumină, materie și liniște. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Studio de arhitectură · Exemplu",
+       "title": "Case care se citesc pe îndelete",
+       "subtitle": "Text de exemplu: Plomada este un studio fictiv care proiectează locuințe, renovări și spații de lucru, cu grijă pentru fiecare detaliu, ca un redactor care își pregătește revista.",
+       "cta_text": "Hai să discutăm",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce facem",
+       "title": "De la primul tuș până la ultima cheie",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Locuințe noi",
+         "text": "Case gândite pentru terenul lor, pentru orientare și pentru cei care vor locui în ele."
+        },
+        {
+         "icon": "leaf",
+         "title": "Renovări",
+         "text": "Dăm o nouă viață clădirilor existente, cu materiale sincere și multă răbdare."
+        },
+        {
+         "icon": "sun",
+         "title": "Design interior",
+         "text": "Lumină, mobilier și culoare puse în slujba vieții de zi cu zi."
+        },
+        {
+         "icon": "target",
+         "title": "Supervizare de șantier",
+         "text": "Suntem pe șantier ca ceea ce s-a desenat să fie și ceea ce se construiește."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Ani de practică (exemplu)"
+        },
+        {
+         "value": "60",
+         "label": "Lucrări predate (exemplu)"
+        },
+        {
+         "value": "3 săptămâni",
+         "label": "Până la prima schiță (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită și discuție",
+         "text": "Parcurgem locul împreună și vorbim despre cum vrei să locuiești în el."
+        },
+        {
+         "title": "Studiu preliminar",
+         "text": "Machete, planuri și o estimare a costurilor, ca să decizi fără grabă."
+        },
+        {
+         "title": "Proiect și execuție",
+         "text": "Documentație completă, autorizații și sprijin până la predare."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Studioul",
+       "title": "O echipă mică ce semnează fiecare proiect",
+       "body": "- Un arhitect responsabil de la început până la sfârșit\n- Bugete explicate, fără surprize\n- Materiale locale și durabile",
+       "button_text": "Cunoaște studioul",
+       "button_link": "/studioul"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un teren, o casă sau o idee?",
+       "text": "Povestește-ne și găsim un moment pentru o discuție fără angajament.",
+       "button_text": "Hai să discutăm",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: servicii de arhitectură și design interior, de la locuințe noi la renovări, cu onorarii explicate de la început."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie serviciile cu cuvinte pe care le înțelege oricine, fără jargon.",
+       "cta_text": "Hai să discutăm",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Locuințe unifamiliale",
+         "text": "Proiect complet pentru o casă nouă."
+        },
+        {
+         "icon": "leaf",
+         "title": "Renovare și reabilitare",
+         "text": "Locuințe, spații comerciale și clădiri cu istorie."
+        },
+        {
+         "icon": "sun",
+         "title": "Design interior",
+         "text": "Compartimentare, iluminat și mobilier la comandă."
+        },
+        {
+         "icon": "users",
+         "title": "Spații de lucru",
+         "text": "Birouri și ateliere în care îți place să lucrezi."
+        },
+        {
+         "icon": "check",
+         "title": "Supervizare de șantier",
+         "text": "Vizite periodice și control al calității."
+        },
+        {
+         "icon": "calendar",
+         "title": "Autorizații și formalități",
+         "text": "Obținerea avizelor de la primărie."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Onorarii orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu onorariile tale.",
+       "items": [
+        {
+         "section": "Primii pași",
+         "name": "Vizită și discuție",
+         "price": "gratuit"
+        },
+        {
+         "section": "Primii pași",
+         "name": "Studiu de fezabilitate",
+         "price": "de la 300 €"
+        },
+        {
+         "section": "Proiect",
+         "name": "Studiu preliminar",
+         "price": "de la 1.200 €"
+        },
+        {
+         "section": "Proiect",
+         "name": "Proiect de renovare",
+         "price": "de la 4.500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un teren, o casă sau o idee?",
+       "text": "Povestește-ne și găsim un moment pentru o discuție fără angajament.",
+       "button_text": "Hai să discutăm",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "studioul",
+    "title": "Studioul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum înțelegem arhitectura și ce principii ne ghidează în fiecare proiect și pe fiecare șantier."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria studioului tău, cine face parte din el și cum priviți lucrurile.\n\nVorbește despre cum lucrați și ce contează pentru voi, nu despre premii pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile noastre",
+       "body": "- Mai întâi ascultăm, apoi desenăm\n- Costuri și termene în scris\n- Mai puțini metri pătrați, mai bine gândiți"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită și discuție",
+         "text": "Parcurgem locul împreună și vorbim despre cum vrei să locuiești în el."
+        },
+        {
+         "title": "Studiu preliminar",
+         "text": "Machete, planuri și o estimare a costurilor, ca să decizi fără grabă."
+        },
+        {
+         "title": "Proiect și execuție",
+         "text": "Documentație completă, autorizații și sprijin până la predare."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre prima discuție, onorarii, termene și autorizațiile de construire ale studioului."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cât costă prima discuție?",
+         "answer": "Precizează aici dacă este gratuită sau cu plată. *Text de exemplu.*"
+        },
+        {
+         "question": "Cum se calculează onorariile?",
+         "answer": "Se stabilesc în scris înainte de a începe. *Text de exemplu.*"
+        },
+        {
+         "question": "Cât durează un proiect?",
+         "answer": "Depinde de comandă; la prima întâlnire îți dăm un calendar realist."
+        },
+        {
+         "question": "Vă ocupați de autorizația de construire?",
+         "answer": "Da, pregătim și depunem documentația necesară."
+        },
+        {
+         "question": "Lucrați și în afara orașului vostru?",
+         "answer": "Da, evaluăm fiecare comandă în funcție de distanță și de tipul lucrării."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un teren, o casă sau o idee?",
+       "text": "Povestește-ne și găsim un moment pentru o discuție fără angajament.",
+       "button_text": "Hai să discutăm",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: povestește-ne despre proiectul tău și stabilim o primă discuție fără angajament, în programul studioului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Hai să discutăm",
+       "text": "Spune-ne ce ai în minte și îți propunem o întâlnire.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "lumina-de-nord",
+    "title": "De ce caută studiourile lumina de nord",
+    "excerpt": "Text de exemplu pentru blog: o reflecție despre lumina naturală.",
+    "content": "Text de exemplu. Scrie aici un articol în ton de revistă, clar și bine documentat.\n\n## O lumină care nu orbește\n\nLumina de nord este blândă și constantă, ideală pentru lucru și pentru citit.\n\n## Cum o folosim\n\nFerestre mari, pereți deschiși și materiale care nu strălucesc.",
+    "tags": [
+     "lumină",
+     "design"
+    ]
+   },
+   {
+    "slug": "renovare-fara-mutare",
+    "title": "Renovare fără mutare: cinci decizii dinainte",
+    "excerpt": "Text de exemplu: ce merită hotărât înainte de a dărâma un perete.",
+    "content": "Text de exemplu. Explică ce pași merită făcuți înainte de a renova o locuință în care încă stai.\n\n## Înainte de lucrări\n\nHotărăște ce camere vei folosi și care rămân închise.\n\n## În timpul lucrărilor\n\nConvino asupra programului și a unui singur interlocutor din echipă.",
+    "tags": [
+     "renovări",
+     "sfaturi"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Architecture et design d'intérieur, avec un regard d'auteur",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "L'atelier",
+    "url": "/l-atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Engager la conversation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : un atelier d'architecture et de design d'intérieur qui dessine maisons et espaces avec lumière, matière et calme. À remplacer."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Atelier d'architecture · Exemple",
+       "title": "Des maisons à lire lentement",
+       "subtitle": "Texte d'exemple : Plomada est un atelier fictif qui conçoit logements, rénovations et espaces de travail, en soignant chaque détail comme on soigne les pages d'une revue.",
+       "cta_text": "Engager la conversation",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que nous faisons",
+       "title": "Du premier trait à la dernière clé",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Maisons neuves",
+         "text": "Des maisons pensées pour leur terrain, leur orientation et ceux qui y vivront."
+        },
+        {
+         "icon": "leaf",
+         "title": "Rénovations",
+         "text": "Donner une seconde vie à l'existant, avec des matériaux sincères et beaucoup de patience."
+        },
+        {
+         "icon": "sun",
+         "title": "Design d'intérieur",
+         "text": "Lumière, mobilier et couleur au service du quotidien."
+        },
+        {
+         "icon": "target",
+         "title": "Suivi de chantier",
+         "text": "Une présence sur place pour que ce qui est dessiné soit ce qui est construit."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Années de pratique (exemple)"
+        },
+        {
+         "value": "60",
+         "label": "Chantiers livrés (exemple)"
+        },
+        {
+         "value": "3 semaines",
+         "label": "Jusqu'à la première esquisse (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite et discussion",
+         "text": "Nous parcourons les lieux avec vous et parlons de la façon dont vous voulez les habiter."
+        },
+        {
+         "title": "Avant-projet",
+         "text": "Maquettes, plans et estimation des coûts pour décider sereinement."
+        },
+        {
+         "title": "Projet et chantier",
+         "text": "Dossier complet, autorisations et accompagnement jusqu'à la livraison."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "L'atelier",
+       "title": "Une petite équipe qui signe chaque projet",
+       "body": "- Un architecte responsable de bout en bout\n- Des budgets expliqués, sans surprise\n- Des matériaux locaux et durables",
+       "button_text": "Découvrir l'atelier",
+       "button_link": "/l-atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Témoignages",
+       "items": [
+        {
+         "quote": "Texte d'exemple d'un témoignage : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un terrain, une maison ou une idée ?",
+       "text": "Racontez-nous : nous trouverons un moment pour échanger sans engagement.",
+       "button_text": "Engager la conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : services d'architecture et de design d'intérieur, de la maison neuve à la rénovation, avec des honoraires expliqués dès le départ."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos services avec des mots que chacun comprend, sans jargon.",
+       "cta_text": "Engager la conversation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Maisons individuelles",
+         "text": "Conception complète d'une maison neuve."
+        },
+        {
+         "icon": "leaf",
+         "title": "Rénovation et réhabilitation",
+         "text": "Logements, commerces et bâtiments chargés d'histoire."
+        },
+        {
+         "icon": "sun",
+         "title": "Design d'intérieur",
+         "text": "Agencement, éclairage et mobilier sur mesure."
+        },
+        {
+         "icon": "users",
+         "title": "Espaces de travail",
+         "text": "Bureaux et ateliers où il fait bon travailler."
+        },
+        {
+         "icon": "check",
+         "title": "Suivi de chantier",
+         "text": "Visites régulières et contrôle de la qualité."
+        },
+        {
+         "icon": "calendar",
+         "title": "Permis et démarches",
+         "text": "Constitution des dossiers auprès de la mairie."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honoraires indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos honoraires.",
+       "items": [
+        {
+         "section": "Premiers pas",
+         "name": "Visite et discussion",
+         "price": "gratuite"
+        },
+        {
+         "section": "Premiers pas",
+         "name": "Étude de faisabilité",
+         "price": "dès 300 €"
+        },
+        {
+         "section": "Projet",
+         "name": "Avant-projet",
+         "price": "dès 1 200 €"
+        },
+        {
+         "section": "Projet",
+         "name": "Projet de rénovation",
+         "price": "dès 4 500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un terrain, une maison ou une idée ?",
+       "text": "Racontez-nous : nous trouverons un moment pour échanger sans engagement.",
+       "button_text": "Engager la conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-atelier",
+    "title": "L'atelier",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, notre façon de comprendre l'architecture et les principes qui guident chacun de nos projets et chantiers."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre atelier, qui en fait partie et quel regard vous portez.\n\nParlez de votre façon de travailler et de ce qui compte pour vous, pas de récompenses que vous ne pourriez prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos principes",
+       "body": "- Écouter d'abord, dessiner ensuite\n- Coûts et délais par écrit\n- Moins de mètres carrés, mieux pensés"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite et discussion",
+         "text": "Nous parcourons les lieux avec vous et parlons de la façon dont vous voulez les habiter."
+        },
+        {
+         "title": "Avant-projet",
+         "text": "Maquettes, plans et estimation des coûts pour décider sereinement."
+        },
+        {
+         "title": "Projet et chantier",
+         "text": "Dossier complet, autorisations et accompagnement jusqu'à la livraison."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions fréquentes sur la première conversation, les honoraires, les délais et les permis de construire de l'atelier."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Combien coûte la première conversation ?",
+         "answer": "Indiquez ici si elle est gratuite ou payante. *Texte d'exemple.*"
+        },
+        {
+         "question": "Comment sont calculés les honoraires ?",
+         "answer": "Ils sont convenus par écrit avant de commencer. *Texte d'exemple.*"
+        },
+        {
+         "question": "Combien de temps dure un projet ?",
+         "answer": "Cela dépend de la commande ; dès le premier rendez-vous, nous vous donnons un calendrier réaliste."
+        },
+        {
+         "question": "Vous occupez-vous du permis de construire ?",
+         "answer": "Oui, nous préparons et déposons les documents nécessaires."
+        },
+        {
+         "question": "Travaillez-vous hors de votre ville ?",
+         "answer": "Oui, nous étudions chaque commande selon la distance et le type de chantier."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un terrain, une maison ou une idée ?",
+       "text": "Racontez-nous : nous trouverons un moment pour échanger sans engagement.",
+       "button_text": "Engager la conversation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : parlez-nous de votre projet et nous fixerons une première conversation sans engagement, pendant les horaires de l'atelier."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Engager la conversation",
+       "text": "Dites-nous ce que vous avez en tête et nous vous proposerons un rendez-vous.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "lumiere-du-nord",
+    "title": "Pourquoi les ateliers cherchent la lumière du nord",
+    "excerpt": "Texte d'exemple pour le blog : une réflexion sur la lumière naturelle.",
+    "content": "Texte d'exemple. Écrivez ici un article au ton de revue, clair et bien documenté.\n\n## Une lumière qui n'éblouit pas\n\nLa lumière du nord est douce et constante, idéale pour travailler et lire.\n\n## Comment en profiter\n\nDe grandes fenêtres, des murs clairs et des matériaux qui ne brillent pas.",
+    "tags": [
+     "lumière",
+     "design"
+    ]
+   },
+   {
+    "slug": "renover-sans-demenager",
+    "title": "Rénover sans déménager : cinq décisions préalables",
+    "excerpt": "Texte d'exemple : ce qu'il vaut mieux décider avant d'ouvrir un mur.",
+    "content": "Texte d'exemple. Expliquez quelles étapes il vaut mieux franchir avant de rénover un logement occupé.\n\n## Avant les travaux\n\nDéfinissez les pièces que vous utiliserez et celles qui resteront fermées.\n\n## Pendant les travaux\n\nConvenez des horaires et d'un interlocuteur unique dans l'équipe.",
+    "tags": [
+     "rénovation",
+     "conseils"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Architektur und Innenarchitektur mit eigener Handschrift",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Das Atelier",
+    "url": "/das-atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Gespräch vereinbaren",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: ein Architektur- und Innenarchitekturbüro, das Häuser und Räume mit Licht, Material und Ruhe entwirft. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Architekturbüro · Beispiel",
+       "title": "Häuser, die man langsam liest",
+       "subtitle": "Beispieltext: Plomada ist ein fiktives Atelier, das Wohnhäuser, Umbauten und Arbeitsräume entwirft und jedes Detail so sorgfältig behandelt wie die Redaktion einer Zeitschrift.",
+       "cta_text": "Gespräch vereinbaren",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was wir tun",
+       "title": "Vom ersten Strich bis zum letzten Schlüssel",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Neubau",
+         "text": "Häuser, die zu ihrem Grundstück, ihrer Ausrichtung und ihren Bewohnern passen."
+        },
+        {
+         "icon": "leaf",
+         "title": "Umbau und Sanierung",
+         "text": "Bestehendem neues Leben geben, mit ehrlichen Materialien und viel Geduld."
+        },
+        {
+         "icon": "sun",
+         "title": "Innenarchitektur",
+         "text": "Licht, Möbel und Farbe im Dienst des Alltags."
+        },
+        {
+         "icon": "target",
+         "title": "Bauleitung",
+         "text": "Wir sind vor Ort, damit gebaut wird, was gezeichnet wurde."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Jahre Erfahrung (Beispiel)"
+        },
+        {
+         "value": "60",
+         "label": "Übergebene Bauvorhaben (Beispiel)"
+        },
+        {
+         "value": "3 Wochen",
+         "label": "Bis zur ersten Skizze (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Besichtigung und Gespräch",
+         "text": "Wir gehen den Ort gemeinsam mit Ihnen ab und sprechen darüber, wie Sie ihn bewohnen möchten."
+        },
+        {
+         "title": "Vorentwurf",
+         "text": "Modelle, Pläne und eine Kostenschätzung, damit Sie in Ruhe entscheiden können."
+        },
+        {
+         "title": "Entwurf und Bau",
+         "text": "Vollständige Unterlagen, Genehmigungen und Begleitung bis zur Übergabe."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Atelier",
+       "title": "Ein kleines Team, das jedes Projekt verantwortet",
+       "body": "- Ein Architekt begleitet Sie von Anfang bis Ende\n- Erklärte Budgets, keine Überraschungen\n- Regionale und langlebige Materialien",
+       "button_text": "Das Atelier kennenlernen",
+       "button_link": "/das-atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: Ersetzen Sie ihn durch echte Rückmeldungen Ihrer Kunden, mit deren Einverständnis.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie haben ein Grundstück, ein Haus oder eine Idee?",
+       "text": "Erzählen Sie uns davon, wir finden einen Termin für ein unverbindliches Gespräch.",
+       "button_text": "Gespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Leistungen in Architektur und Innenarchitektur, vom Neubau bis zum Umbau, mit von Anfang an erklärten Honoraren."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Leistungen mit Worten, die jeder versteht, ohne Fachjargon.",
+       "cta_text": "Gespräch vereinbaren",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Einfamilienhäuser",
+         "text": "Vollständige Planung eines Neubaus."
+        },
+        {
+         "icon": "leaf",
+         "title": "Umbau und Sanierung",
+         "text": "Wohnungen, Läden und Gebäude mit Geschichte."
+        },
+        {
+         "icon": "sun",
+         "title": "Innenarchitektur",
+         "text": "Grundriss, Beleuchtung und maßgefertigte Möbel."
+        },
+        {
+         "icon": "users",
+         "title": "Arbeitsräume",
+         "text": "Büros und Ateliers, in denen man gern arbeitet."
+        },
+        {
+         "icon": "check",
+         "title": "Bauleitung",
+         "text": "Regelmäßige Baustellenbesuche und Qualitätskontrolle."
+        },
+        {
+         "icon": "calendar",
+         "title": "Genehmigungen und Formalitäten",
+         "text": "Anträge bei der Baubehörde."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtwerte für Honorare",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre eigenen Honorare.",
+       "items": [
+        {
+         "section": "Erste Schritte",
+         "name": "Besichtigung und Gespräch",
+         "price": "kostenlos"
+        },
+        {
+         "section": "Erste Schritte",
+         "name": "Machbarkeitsstudie",
+         "price": "ab 300 €"
+        },
+        {
+         "section": "Planung",
+         "name": "Vorentwurf",
+         "price": "ab 1.200 €"
+        },
+        {
+         "section": "Planung",
+         "name": "Umbauplanung",
+         "price": "ab 4.500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie haben ein Grundstück, ein Haus oder eine Idee?",
+       "text": "Erzählen Sie uns davon, wir finden einen Termin für ein unverbindliches Gespräch.",
+       "button_text": "Gespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-atelier",
+    "title": "Das Atelier",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir Architektur verstehen und welche Grundsätze jedes unserer Projekte und Baustellen leiten."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Ateliers, wer dazugehört und welchen Blick Sie haben.\n\nSprechen Sie darüber, wie Sie arbeiten und was Ihnen wichtig ist, nicht über Auszeichnungen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Grundsätze",
+       "body": "- Erst zuhören, dann zeichnen\n- Kosten und Termine schriftlich\n- Weniger Quadratmeter, besser durchdacht"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Besichtigung und Gespräch",
+         "text": "Wir gehen den Ort gemeinsam mit Ihnen ab und sprechen darüber, wie Sie ihn bewohnen möchten."
+        },
+        {
+         "title": "Vorentwurf",
+         "text": "Modelle, Pläne und eine Kostenschätzung, damit Sie in Ruhe entscheiden können."
+        },
+        {
+         "title": "Entwurf und Bau",
+         "text": "Vollständige Unterlagen, Genehmigungen und Begleitung bis zur Übergabe."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "FAQ",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zum ersten Gespräch, zu Honoraren, Zeitplänen und Baugenehmigungen im Atelier."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Was kostet das erste Gespräch?",
+         "answer": "Geben Sie hier an, ob es kostenlos ist oder etwas kostet. *Beispieltext.*"
+        },
+        {
+         "question": "Wie werden die Honorare berechnet?",
+         "answer": "Sie werden vor Beginn schriftlich vereinbart. *Beispieltext.*"
+        },
+        {
+         "question": "Wie lange dauert ein Projekt?",
+         "answer": "Das hängt vom Auftrag ab; beim ersten Treffen nennen wir Ihnen einen realistischen Zeitplan."
+        },
+        {
+         "question": "Kümmern Sie sich um die Baugenehmigung?",
+         "answer": "Ja, wir bereiten die nötigen Unterlagen vor und reichen sie ein."
+        },
+        {
+         "question": "Arbeiten Sie auch außerhalb Ihrer Stadt?",
+         "answer": "Ja, wir prüfen jeden Auftrag nach Entfernung und Art des Bauvorhabens."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie haben ein Grundstück, ein Haus oder eine Idee?",
+       "text": "Erzählen Sie uns davon, wir finden einen Termin für ein unverbindliches Gespräch.",
+       "button_text": "Gespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Erzählen Sie uns von Ihrem Projekt, und wir vereinbaren ein unverbindliches erstes Gespräch zu den Bürozeiten des Ateliers."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Gespräch vereinbaren",
+       "text": "Sagen Sie uns, was Ihnen vorschwebt, und wir schlagen Ihnen einen Termin vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Bürozeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "nordlicht-im-atelier",
+    "title": "Warum Ateliers das Nordlicht suchen",
+    "excerpt": "Beispieltext für den Blog: eine Betrachtung über natürliches Licht.",
+    "content": "Beispieltext. Schreiben Sie hier einen Artikel im Stil eines Magazins, klar und gut recherchiert.\n\n## Ein Licht, das nicht blendet\n\nNordlicht ist weich und gleichmäßig, ideal zum Arbeiten und Lesen.\n\n## So nutzt man es\n\nGroße Fenster, helle Wände und Materialien, die nicht glänzen.",
+    "tags": [
+     "Licht",
+     "Gestaltung"
+    ]
+   },
+   {
+    "slug": "umbauen-ohne-auszuziehen",
+    "title": "Umbauen, ohne auszuziehen: fünf Entscheidungen vorab",
+    "excerpt": "Beispieltext: was man entscheiden sollte, bevor eine Wand fällt.",
+    "content": "Beispieltext. Erklären Sie, welche Schritte vor dem Umbau einer bewohnten Wohnung sinnvoll sind.\n\n## Vor dem Umbau\n\nLegen Sie fest, welche Räume Sie nutzen und welche geschlossen bleiben.\n\n## Während des Umbaus\n\nVereinbaren Sie Arbeitszeiten und einen festen Ansprechpartner im Team.",
+    "tags": [
+     "Umbau",
+     "Tipps"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Architettura e interior design con sguardo d'autore",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Lo studio",
+    "url": "/lo-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Parliamone insieme",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: studio di architettura e interior design che progetta case e spazi con luce, materia e quiete. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Studio di architettura · Esempio",
+       "title": "Case da leggere con calma",
+       "subtitle": "Testo di esempio: Plomada è uno studio fittizio che progetta abitazioni, ristrutturazioni e spazi di lavoro, curando ogni dettaglio come si cura un'impaginazione.",
+       "cta_text": "Parliamone insieme",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa facciamo",
+       "title": "Dal primo tratto all'ultima chiave",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Nuove abitazioni",
+         "text": "Case pensate per il loro lotto, per l'orientamento e per chi le abiterà."
+        },
+        {
+         "icon": "leaf",
+         "title": "Ristrutturazioni",
+         "text": "Dare nuova vita all'esistente, con materiali onesti e molta pazienza."
+        },
+        {
+         "icon": "sun",
+         "title": "Interior design",
+         "text": "Luce, arredi e colore al servizio della vita quotidiana."
+        },
+        {
+         "icon": "target",
+         "title": "Direzione lavori",
+         "text": "Presenza in cantiere perché ciò che è disegnato sia ciò che viene costruito."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Anni di mestiere (esempio)"
+        },
+        {
+         "value": "60",
+         "label": "Opere consegnate (esempio)"
+        },
+        {
+         "value": "3 settimane",
+         "label": "Al primo schizzo (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo e dialogo",
+         "text": "Percorriamo il luogo insieme a te e parliamo di come vuoi abitarlo."
+        },
+        {
+         "title": "Progetto preliminare",
+         "text": "Plastici, disegni e una stima dei costi per decidere con calma."
+        },
+        {
+         "title": "Progetto e cantiere",
+         "text": "Documentazione completa, permessi e assistenza fino alla consegna."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Lo studio",
+       "title": "Un piccolo team che firma ogni progetto",
+       "body": "- Un architetto responsabile dall'inizio alla fine\n- Preventivi spiegati, senza sorprese\n- Materiali locali e di lunga durata",
+       "button_text": "Conosci lo studio",
+       "button_link": "/lo-studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un terreno, una casa o un'idea?",
+       "text": "Raccontacela e troveremo un momento per parlarne senza impegno.",
+       "button_text": "Parliamone insieme",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: servizi di architettura e interior design, dalla nuova costruzione alla ristrutturazione, con onorari spiegati fin dall'inizio."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi i tuoi servizi con parole che chiunque possa capire, senza gergo.",
+       "cta_text": "Parliamone insieme",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Case unifamiliari",
+         "text": "Progetto completo di una casa nuova."
+        },
+        {
+         "icon": "leaf",
+         "title": "Ristrutturazione e recupero",
+         "text": "Abitazioni, negozi ed edifici con una storia."
+        },
+        {
+         "icon": "sun",
+         "title": "Interior design",
+         "text": "Distribuzione, illuminazione e arredi su misura."
+        },
+        {
+         "icon": "users",
+         "title": "Spazi di lavoro",
+         "text": "Uffici e studi in cui si lavora volentieri."
+        },
+        {
+         "icon": "check",
+         "title": "Direzione lavori",
+         "text": "Visite periodiche e controllo della qualità."
+        },
+        {
+         "icon": "calendar",
+         "title": "Permessi e pratiche",
+         "text": "Gestione delle pratiche con il comune."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Onorari indicativi",
+       "note": "Importi di esempio: sostituiscili con i tuoi onorari.",
+       "items": [
+        {
+         "section": "Primi passi",
+         "name": "Sopralluogo e dialogo",
+         "price": "gratuito"
+        },
+        {
+         "section": "Primi passi",
+         "name": "Studio di fattibilità",
+         "price": "da 300 €"
+        },
+        {
+         "section": "Progetto",
+         "name": "Progetto preliminare",
+         "price": "da 1.200 €"
+        },
+        {
+         "section": "Progetto",
+         "name": "Progetto di ristrutturazione",
+         "price": "da 4.500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un terreno, una casa o un'idea?",
+       "text": "Raccontacela e troveremo un momento per parlarne senza impegno.",
+       "button_text": "Parliamone insieme",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "lo-studio",
+    "title": "Lo studio",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come intendiamo l'architettura e quali principi guidano ciascuno dei nostri progetti e dei nostri cantieri."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo studio, chi ne fa parte e quale sguardo avete.\n\nParla di come lavorate e di ciò che vi sta a cuore, non di premi che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri principi",
+       "body": "- Prima ascoltare, poi disegnare\n- Costi e tempi per iscritto\n- Meno metri quadri, pensati meglio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo e dialogo",
+         "text": "Percorriamo il luogo insieme a te e parliamo di come vuoi abitarlo."
+        },
+        {
+         "title": "Progetto preliminare",
+         "text": "Plastici, disegni e una stima dei costi per decidere con calma."
+        },
+        {
+         "title": "Progetto e cantiere",
+         "text": "Documentazione completa, permessi e assistenza fino alla consegna."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "FAQ",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni sul primo incontro, gli onorari, i tempi e i permessi edilizi dello studio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto costa il primo incontro?",
+         "answer": "Indica qui se è gratuito o a pagamento. *Testo di esempio.*"
+        },
+        {
+         "question": "Come si calcolano gli onorari?",
+         "answer": "Si concordano per iscritto prima di iniziare. *Testo di esempio.*"
+        },
+        {
+         "question": "Quanto dura un progetto?",
+         "answer": "Dipende dall'incarico; al primo incontro ti diamo un calendario realistico."
+        },
+        {
+         "question": "Vi occupate del permesso di costruire?",
+         "answer": "Sì, prepariamo e presentiamo la documentazione necessaria."
+        },
+        {
+         "question": "Lavorate anche fuori dalla vostra città?",
+         "answer": "Sì, valutiamo ogni incarico in base alla distanza e al tipo di lavoro."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un terreno, una casa o un'idea?",
+       "text": "Raccontacela e troveremo un momento per parlarne senza impegno.",
+       "button_text": "Parliamone insieme",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: raccontaci il tuo progetto e fisseremo un primo incontro senza impegno durante gli orari di apertura dello studio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Parliamone insieme",
+       "text": "Dicci cosa hai in mente e ti proporremo un appuntamento.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "luce-del-nord",
+    "title": "Perché gli studi cercano la luce del nord",
+    "excerpt": "Testo di esempio per il blog: una riflessione sulla luce naturale.",
+    "content": "Testo di esempio. Scrivi qui un articolo dal tono da rivista, chiaro e ben documentato.\n\n## Una luce che non abbaglia\n\nLa luce del nord è morbida e costante, ideale per lavorare e leggere.\n\n## Come sfruttarla\n\nGrandi finestre, pareti chiare e materiali che non riflettono.",
+    "tags": [
+     "luce",
+     "design"
+    ]
+   },
+   {
+    "slug": "ristrutturare-senza-traslocare",
+    "title": "Ristrutturare senza traslocare: cinque decisioni preliminari",
+    "excerpt": "Testo di esempio: cosa conviene decidere prima di abbattere un muro.",
+    "content": "Testo di esempio. Spiega quali passi conviene compiere prima di ristrutturare una casa abitata.\n\n## Prima dei lavori\n\nDecidi quali stanze userai e quali resteranno chiuse.\n\n## Durante i lavori\n\nConcorda gli orari e un unico referente nel team.",
+    "tags": [
+     "ristrutturazioni",
+     "consigli"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Arquitetura e design de interiores com olhar de autor",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "O atelier",
+    "url": "/o-atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar uma conversa",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: atelier de arquitetura e design de interiores que projeta casas e espaços com luz, matéria e calma. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Atelier de arquitetura · Exemplo",
+       "title": "Casas que se leem devagar",
+       "subtitle": "Texto de exemplo: a Plomada é um atelier fictício que projeta habitações, remodelações e espaços de trabalho, cuidando de cada detalhe como quem edita uma revista.",
+       "cta_text": "Marcar uma conversa",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que fazemos",
+       "title": "Do primeiro traço à última chave",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Habitação nova",
+         "text": "Casas pensadas para o seu terreno, a sua orientação e para quem vai viver nelas."
+        },
+        {
+         "icon": "leaf",
+         "title": "Remodelações",
+         "text": "Dar nova vida ao que existe, com materiais honestos e muita paciência."
+        },
+        {
+         "icon": "sun",
+         "title": "Design de interiores",
+         "text": "Luz, mobiliário e cor ao serviço do dia a dia."
+        },
+        {
+         "icon": "target",
+         "title": "Direção de obra",
+         "text": "Presença em obra para que o desenhado seja o construído."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Anos de ofício (exemplo)"
+        },
+        {
+         "value": "60",
+         "label": "Obras entregues (exemplo)"
+        },
+        {
+         "value": "3 semanas",
+         "label": "Até ao primeiro esboço (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita e conversa",
+         "text": "Percorremos o local consigo e falamos de como quer vivê-lo."
+        },
+        {
+         "title": "Estudo prévio",
+         "text": "Maquetes, desenhos e uma estimativa de custos para decidir com calma."
+        },
+        {
+         "title": "Projeto e obra",
+         "text": "Documentação completa, licenças e acompanhamento até à entrega."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O atelier",
+       "title": "Uma equipa pequena que assina cada projeto",
+       "body": "- Um arquiteto responsável do princípio ao fim\n- Orçamentos explicados, sem surpresas\n- Materiais locais e duradouros",
+       "button_text": "Conhecer o atelier",
+       "button_link": "/o-atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a autorização deles.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um terreno, uma casa ou uma ideia?",
+       "text": "Conte-nos e encontramos um momento para conversar sem compromisso.",
+       "button_text": "Marcar uma conversa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: serviços de arquitetura e design de interiores, da habitação nova à remodelação, com honorários explicados desde o início."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva os seus serviços com palavras que qualquer pessoa entenda, sem jargão.",
+       "cta_text": "Marcar uma conversa",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Moradias unifamiliares",
+         "text": "Projeto completo de uma casa nova."
+        },
+        {
+         "icon": "leaf",
+         "title": "Remodelação e reabilitação",
+         "text": "Habitações, lojas e edifícios com história."
+        },
+        {
+         "icon": "sun",
+         "title": "Design de interiores",
+         "text": "Distribuição, iluminação e mobiliário por medida."
+        },
+        {
+         "icon": "users",
+         "title": "Espaços de trabalho",
+         "text": "Escritórios e ateliers onde dá gosto trabalhar."
+        },
+        {
+         "icon": "check",
+         "title": "Direção de obra",
+         "text": "Visitas periódicas e controlo de qualidade."
+        },
+        {
+         "icon": "calendar",
+         "title": "Licenças e processos",
+         "text": "Tratamento dos pedidos junto da câmara municipal."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorários indicativos",
+       "note": "Valores de exemplo: substitua-os pelos seus honorários.",
+       "items": [
+        {
+         "section": "Primeiros passos",
+         "name": "Visita e conversa",
+         "price": "gratuita"
+        },
+        {
+         "section": "Primeiros passos",
+         "name": "Estudo de viabilidade",
+         "price": "desde 300 €"
+        },
+        {
+         "section": "Projeto",
+         "name": "Estudo prévio",
+         "price": "desde 1.200 €"
+        },
+        {
+         "section": "Projeto",
+         "name": "Projeto de remodelação",
+         "price": "desde 4.500 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um terreno, uma casa ou uma ideia?",
+       "text": "Conte-nos e encontramos um momento para conversar sem compromisso.",
+       "button_text": "Marcar uma conversa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "o-atelier",
+    "title": "O atelier",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como entendemos a arquitetura e que princípios orientam cada um dos nossos projetos e obras."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu atelier, quem o forma e que olhar têm.\n\nFale de como trabalham e do que vos importa, não de prémios que não possa comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos princípios",
+       "body": "- Primeiro ouvir, depois desenhar\n- Custos e prazos por escrito\n- Menos metros quadrados, mais bem pensados"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita e conversa",
+         "text": "Percorremos o local consigo e falamos de como quer vivê-lo."
+        },
+        {
+         "title": "Estudo prévio",
+         "text": "Maquetes, desenhos e uma estimativa de custos para decidir com calma."
+        },
+        {
+         "title": "Projeto e obra",
+         "text": "Documentação completa, licenças e acompanhamento até à entrega."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre a primeira conversa, os honorários, os prazos e as licenças de obra do atelier."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto custa a primeira conversa?",
+         "answer": "Indique aqui se é gratuita ou paga. *Texto de exemplo.*"
+        },
+        {
+         "question": "Como se calculam os honorários?",
+         "answer": "Acordam-se por escrito antes de começar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quanto tempo demora um projeto?",
+         "answer": "Depende do pedido; na primeira reunião damos-lhe um calendário realista."
+        },
+        {
+         "question": "Tratam da licença de obra?",
+         "answer": "Sim, preparamos e submetemos a documentação necessária."
+        },
+        {
+         "question": "Trabalham fora da vossa cidade?",
+         "answer": "Sim, avaliamos cada pedido consoante a distância e o tipo de obra."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um terreno, uma casa ou uma ideia?",
+       "text": "Conte-nos e encontramos um momento para conversar sem compromisso.",
+       "button_text": "Marcar uma conversa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: conte-nos o seu projeto e marcamos uma primeira conversa sem compromisso, dentro do horário de atendimento do atelier."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar uma conversa",
+       "text": "Diga-nos o que tem em mente e propomos-lhe uma reunião.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: substitua-o pelo seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "luz-norte-atelier",
+    "title": "Porque é que os ateliers procuram a luz norte",
+    "excerpt": "Texto de exemplo para o blogue: uma reflexão sobre a luz natural.",
+    "content": "Texto de exemplo. Escreva aqui um artigo com tom de revista, claro e bem documentado.\n\n## Uma luz que não ofusca\n\nA luz norte é suave e constante, ideal para trabalhar e ler.\n\n## Como a aproveitar\n\nJanelas grandes, paredes claras e materiais que não brilhem.",
+    "tags": [
+     "luz",
+     "design"
+    ]
+   },
+   {
+    "slug": "remodelar-sem-mudar-de-casa",
+    "title": "Remodelar sem mudar de casa: cinco decisões prévias",
+    "excerpt": "Texto de exemplo: o que convém decidir antes de abrir uma parede.",
+    "content": "Texto de exemplo. Explique que passos convém dar antes de remodelar uma casa habitada.\n\n## Antes da obra\n\nDefina que divisões vai usar e quais ficarão fechadas.\n\n## Durante a obra\n\nCombine horários e um interlocutor único na equipa.",
+    "tags": [
+     "remodelação",
+     "conselhos"
+    ]
+   }
+  ]
+ }
+}

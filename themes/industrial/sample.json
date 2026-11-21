@@ -1,0 +1,2747 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Industrial). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Carpintería metálica y reformas a medida",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "El taller",
+    "url": "/el-taller"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir presupuesto",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: taller de carpintería metálica y reformas con trabajo a medida, plazos claros y presupuesto cerrado. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Taller y obra · Ejemplo",
+       "title": "Acero bien trabajado, obra bien terminada",
+       "subtitle": "Texto de ejemplo: explica en una frase qué fabricáis, qué reformas hacéis y en qué zona trabajáis.",
+       "cta_text": "Pedir presupuesto",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Lo que hacemos",
+       "title": "Del plano a la instalación",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Carpintería metálica",
+         "text": "Puertas, ventanas, rejas y cerramientos fabricados a medida."
+        },
+        {
+         "icon": "shield",
+         "title": "Estructuras y escaleras",
+         "text": "Soldadura certificada, cálculo y montaje seguro en obra."
+        },
+        {
+         "icon": "users",
+         "title": "Reformas integrales",
+         "text": "Albañilería, instalaciones y acabados con un único responsable."
+        },
+        {
+         "icon": "check",
+         "title": "Mantenimiento",
+         "text": "Revisiones, reparaciones y adecuación de naves y locales."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Años de oficio (ejemplo)"
+        },
+        {
+         "value": "850",
+         "label": "Obras entregadas (ejemplo)"
+        },
+        {
+         "value": "7 días",
+         "label": "Visita y presupuesto (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita y medición",
+         "text": "Vamos a la obra, tomamos medidas y escuchamos lo que necesitas."
+        },
+        {
+         "title": "Presupuesto cerrado",
+         "text": "Materiales, plazos y precio por escrito antes de empezar."
+        },
+        {
+         "title": "Fabricación y montaje",
+         "text": "Trabajamos en taller y rematamos en obra con tu seguimiento."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El taller",
+       "title": "Fabricamos nosotros, montamos nosotros",
+       "body": "- Fabricación propia en taller\n- Un único responsable de la obra\n- Obra limpia y plazos pactados",
+       "button_text": "El taller",
+       "button_link": "/el-taller"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una obra o un trabajo en mente?",
+       "text": "Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: puertas, rejas, estructuras, escaleras y reformas integrales realizadas en nuestro taller, con montaje en obra incluido."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Puertas y cerramientos",
+         "text": "Puertas, portones, rejas y barandillas a medida."
+        },
+        {
+         "icon": "shield",
+         "title": "Estructuras metálicas",
+         "text": "Pórticos, soportes, altillos y entreplantas."
+        },
+        {
+         "icon": "route",
+         "title": "Escaleras",
+         "text": "Rectas, de caracol y de emergencia, con acabado a elegir."
+        },
+        {
+         "icon": "users",
+         "title": "Reformas de locales",
+         "text": "Reforma completa de locales, naves y viviendas."
+        },
+        {
+         "icon": "bolt",
+         "title": "Soldadura y reparación",
+         "text": "Reparaciones urgentes y trabajos especiales."
+        },
+        {
+         "icon": "check",
+         "title": "Acabados",
+         "text": "Galvanizado, lacado y pintura de protección."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Precios orientativos",
+       "note": "Importes de ejemplo: sustitúyelos por tus tarifas.",
+       "items": [
+        {
+         "section": "Fabricación",
+         "name": "Reja o barandilla (por metro)",
+         "price": "desde 90 €"
+        },
+        {
+         "section": "Fabricación",
+         "name": "Puerta metálica a medida",
+         "price": "desde 380 €"
+        },
+        {
+         "section": "Obra",
+         "name": "Hora de oficial",
+         "price": "desde 38 €"
+        },
+        {
+         "section": "Obra",
+         "name": "Visita y presupuesto",
+         "price": "gratuita"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una obra o un trabajo en mente?",
+       "text": "Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "el-taller",
+    "title": "El taller",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos el acero y la obra, y los compromisos de seguridad y plazos de nuestro taller."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu taller, quién trabaja en él y qué os distingue.\n\nHabla de cómo trabajáis y de vuestros compromisos, no de resultados que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros principios",
+       "body": "- Seguridad en el taller y en la obra\n- Plazos y precio por escrito\n- Garantía en todo lo que fabricamos"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita y medición",
+         "text": "Vamos a la obra, tomamos medidas y escuchamos lo que necesitas."
+        },
+        {
+         "title": "Presupuesto cerrado",
+         "text": "Materiales, plazos y precio por escrito antes de empezar."
+        },
+        {
+         "title": "Fabricación y montaje",
+         "text": "Trabajamos en taller y rematamos en obra con tu seguimiento."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre presupuestos, plazos, materiales, garantías y trabajos en obra del taller."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cuánto cuesta el presupuesto?",
+         "answer": "Indica aquí si es gratuito o tiene un coste. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuánto tarda un trabajo?",
+         "answer": "Depende del tamaño; el plazo se pacta por escrito. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Trabajáis con otros materiales?",
+         "answer": "Sí, combinamos acero con aluminio, madera o vidrio."
+        },
+        {
+         "question": "¿Dais garantía?",
+         "answer": "Sí, todos los trabajos incluyen garantía por escrito."
+        },
+        {
+         "question": "¿Os encargáis de los permisos?",
+         "answer": "Te orientamos y gestionamos la documentación necesaria."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una obra o un trabajo en mente?",
+       "text": "Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide presupuesto o cuéntanos tu proyecto y te responderemos lo antes posible en horario de taller."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir presupuesto",
+       "text": "Cuéntanos qué necesitas y te proponemos una visita.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-elegir-una-reja-segura",
+    "title": "Cómo elegir una reja segura para tu local",
+    "excerpt": "Texto de ejemplo para el blog: criterios básicos de seguridad.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Materiales\n\nExplica qué acabados resisten mejor la intemperie.\n\n## Cuándo consultar\n\nCada local es distinto: lo mejor es medir en obra.",
+    "tags": [
+     "seguridad",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "galvanizado-o-lacado",
+    "title": "Galvanizado o lacado: qué conviene en cada caso",
+    "excerpt": "Texto de ejemplo para el blog: comparativa breve de acabados.",
+    "content": "Texto de ejemplo. Compara aquí los acabados con información general.\n\n## Galvanizado\n\nProtección duradera para exterior.\n\n## Lacado\n\nMás opciones de color y buen acabado visual.",
+    "tags": [
+     "acabados",
+     "mantenimiento"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Custom metalwork and renovations",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "The workshop",
+    "url": "/the-workshop"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a quote",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: metalwork and renovation workshop offering made-to-measure work, clear deadlines and fixed-price quotes. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Workshop and site · Example",
+       "title": "Well-worked steel, well-finished jobs",
+       "subtitle": "Sample text: explain in one sentence what you build, what renovations you do and where you work.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact",
+       "cta2_text": "View services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we do",
+       "title": "From drawing to installation",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Metalwork",
+         "text": "Doors, windows, grilles and enclosures made to measure."
+        },
+        {
+         "icon": "shield",
+         "title": "Structures and stairs",
+         "text": "Certified welding, calculation and safe on-site assembly."
+        },
+        {
+         "icon": "users",
+         "title": "Full renovations",
+         "text": "Building work, services and finishes under one manager."
+        },
+        {
+         "icon": "check",
+         "title": "Maintenance",
+         "text": "Inspections, repairs and upgrades for units and premises."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Years in the trade (example)"
+        },
+        {
+         "value": "850",
+         "label": "Jobs delivered (example)"
+        },
+        {
+         "value": "7 days",
+         "label": "Visit and quote (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Visit and measurement",
+         "text": "We come to the site, take measurements and listen to what you need."
+        },
+        {
+         "title": "Fixed-price quote",
+         "text": "Materials, deadlines and price in writing before we start."
+        },
+        {
+         "title": "Fabrication and fitting",
+         "text": "We build in the workshop and finish on site while you follow progress."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The workshop",
+       "title": "We make it, we fit it",
+       "body": "- Own in-house fabrication\n- One person in charge of the job\n- Clean site and agreed deadlines",
+       "button_text": "The workshop",
+       "button_link": "/the-workshop"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their permission.",
+         "name": "Customer (example)",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a job or a project in mind?",
+       "text": "Tell us what you need and we will prepare a no-obligation quote.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: doors, grilles, structures, stairs and full renovations built in our workshop, with on-site installation included."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Doors and enclosures",
+         "text": "Doors, gates, grilles and railings made to measure."
+        },
+        {
+         "icon": "shield",
+         "title": "Steel structures",
+         "text": "Frames, supports, mezzanines and platforms."
+        },
+        {
+         "icon": "route",
+         "title": "Stairs",
+         "text": "Straight, spiral and emergency stairs with your choice of finish."
+        },
+        {
+         "icon": "users",
+         "title": "Premises renovation",
+         "text": "Complete renovation of shops, units and homes."
+        },
+        {
+         "icon": "bolt",
+         "title": "Welding and repairs",
+         "text": "Urgent repairs and special jobs."
+        },
+        {
+         "icon": "check",
+         "title": "Finishes",
+         "text": "Galvanizing, powder coating and protective paint."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative prices",
+       "note": "Sample amounts: replace them with your own rates.",
+       "items": [
+        {
+         "section": "Fabrication",
+         "name": "Grille or railing (per metre)",
+         "price": "from €90"
+        },
+        {
+         "section": "Fabrication",
+         "name": "Made-to-measure metal door",
+         "price": "from €380"
+        },
+        {
+         "section": "Site work",
+         "name": "Skilled worker per hour",
+         "price": "from €38"
+        },
+        {
+         "section": "Site work",
+         "name": "Visit and quote",
+         "price": "free"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a job or a project in mind?",
+       "text": "Tell us what you need and we will prepare a no-obligation quote.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-workshop",
+    "title": "The workshop",
+    "seo": {
+     "description": "Sample text: who we are, how we work steel and site jobs, and the safety and deadline commitments of our workshop."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your workshop here, who works in it and what sets you apart.\n\nTalk about how you work and what you commit to, not about results you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our principles",
+       "body": "- Safety in the workshop and on site\n- Deadlines and price in writing\n- Warranty on everything we build"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Visit and measurement",
+         "text": "We come to the site, take measurements and listen to what you need."
+        },
+        {
+         "title": "Fixed-price quote",
+         "text": "Materials, deadlines and price in writing before we start."
+        },
+        {
+         "title": "Fabrication and fitting",
+         "text": "We build in the workshop and finish on site while you follow progress."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "FAQ",
+    "seo": {
+     "description": "Sample text: answers to common questions about quotes, deadlines, materials, warranties and on-site work at the workshop."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How much does a quote cost?",
+         "answer": "State here whether it is free or charged. *Sample text.*"
+        },
+        {
+         "question": "How long does a job take?",
+         "answer": "It depends on the size; the deadline is agreed in writing. *Sample text.*"
+        },
+        {
+         "question": "Do you work with other materials?",
+         "answer": "Yes, we combine steel with aluminium, wood or glass."
+        },
+        {
+         "question": "Do you offer a warranty?",
+         "answer": "Yes, all work includes a written warranty."
+        },
+        {
+         "question": "Do you handle permits?",
+         "answer": "We advise you and prepare the required paperwork."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a job or a project in mind?",
+       "text": "Tell us what you need and we will prepare a no-obligation quote.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a quote or tell us about your project and we will reply as soon as possible during workshop hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a quote",
+       "text": "Tell us what you need and we will suggest a visit.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-choose-a-secure-grille",
+    "title": "How to choose a secure grille for your shop",
+    "excerpt": "Sample blog text: basic security criteria.",
+    "content": "Sample text. Write a useful article for your customers here, with general and cautious information.\n\n## Materials\n\nExplain which finishes withstand the weather best.\n\n## When to ask us\n\nEvery shop is different: the best approach is to measure on site.",
+    "tags": [
+     "security",
+     "tips"
+    ]
+   },
+   {
+    "slug": "galvanized-or-powder-coated",
+    "title": "Galvanized or powder-coated: which suits each case",
+    "excerpt": "Sample blog text: a short comparison of finishes.",
+    "content": "Sample text. Compare the finishes here with general information.\n\n## Galvanizing\n\nLong-lasting protection outdoors.\n\n## Powder coating\n\nMore colour options and a good visual finish.",
+    "tags": [
+     "finishes",
+     "maintenance"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Dulgherie metalică și renovări la comandă",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Atelierul",
+    "url": "/atelierul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Cere o ofertă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: atelier de dulgherie metalică și renovări cu lucrări la comandă, termene clare și ofertă fermă. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Atelier și șantier · Exemplu",
+       "title": "Oțel bine lucrat, lucrări bine finalizate",
+       "subtitle": "Text de exemplu: explică într-o frază ce fabricați, ce renovări faceți și în ce zonă lucrați.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce facem",
+       "title": "De la plan la montaj",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Dulgherie metalică",
+         "text": "Uși, ferestre, grilaje și închideri făcute la comandă."
+        },
+        {
+         "icon": "shield",
+         "title": "Structuri și scări",
+         "text": "Sudură certificată, calcul și montaj sigur pe șantier."
+        },
+        {
+         "icon": "users",
+         "title": "Renovări complete",
+         "text": "Construcții, instalații și finisaje cu un singur responsabil."
+        },
+        {
+         "icon": "check",
+         "title": "Mentenanță",
+         "text": "Verificări, reparații și adaptări de hale și spații comerciale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Ani de meserie (exemplu)"
+        },
+        {
+         "value": "850",
+         "label": "Lucrări predate (exemplu)"
+        },
+        {
+         "value": "7 zile",
+         "label": "Vizită și ofertă (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită și măsurători",
+         "text": "Venim la fața locului, luăm măsurători și ascultăm ce ai nevoie."
+        },
+        {
+         "title": "Ofertă fermă",
+         "text": "Materiale, termene și preț în scris, înainte de a începe."
+        },
+        {
+         "title": "Fabricație și montaj",
+         "text": "Lucrăm în atelier și finalizăm pe șantier, cu urmărirea ta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Atelierul",
+       "title": "Fabricăm noi, montăm noi",
+       "body": "- Fabricație proprie în atelier\n- Un singur responsabil al lucrării\n- Șantier curat și termene stabilite",
+       "button_text": "Atelierul",
+       "button_link": "/atelierul"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client (exemplu)",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o lucrare sau un proiect în minte?",
+       "text": "Spune-ne ce ai nevoie și îți pregătim o ofertă fără obligații.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: uși, grilaje, structuri, scări și renovări complete realizate în atelierul nostru, cu montaj la fața locului inclus."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Uși și închideri",
+         "text": "Uși, porți, grilaje și balustrade la comandă."
+        },
+        {
+         "icon": "shield",
+         "title": "Structuri metalice",
+         "text": "Cadre, suporturi, mezanine și platforme."
+        },
+        {
+         "icon": "route",
+         "title": "Scări",
+         "text": "Drepte, în spirală și de evacuare, cu finisaj la alegere."
+        },
+        {
+         "icon": "users",
+         "title": "Renovarea spațiilor",
+         "text": "Renovare completă de magazine, hale și locuințe."
+        },
+        {
+         "icon": "bolt",
+         "title": "Sudură și reparații",
+         "text": "Reparații urgente și lucrări speciale."
+        },
+        {
+         "icon": "check",
+         "title": "Finisaje",
+         "text": "Zincare, vopsire în câmp electrostatic și vopsea de protecție."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prețuri orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Fabricație",
+         "name": "Grilaj sau balustradă (pe metru)",
+         "price": "de la 90 €"
+        },
+        {
+         "section": "Fabricație",
+         "name": "Ușă metalică la comandă",
+         "price": "de la 380 €"
+        },
+        {
+         "section": "Șantier",
+         "name": "Oră de muncitor calificat",
+         "price": "de la 38 €"
+        },
+        {
+         "section": "Șantier",
+         "name": "Vizită și ofertă",
+         "price": "gratuită"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o lucrare sau un proiect în minte?",
+       "text": "Spune-ne ce ai nevoie și îți pregătim o ofertă fără obligații.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "atelierul",
+    "title": "Atelierul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm oțelul și șantierul și ce angajamente de siguranță și termene are atelierul nostru."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria atelierului tău, cine lucrează în el și ce vă deosebește.\n\nVorbește despre cum lucrați și despre angajamentele voastre, nu despre rezultate pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile noastre",
+       "body": "- Siguranță în atelier și pe șantier\n- Termene și preț în scris\n- Garanție la tot ce fabricăm"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită și măsurători",
+         "text": "Venim la fața locului, luăm măsurători și ascultăm ce ai nevoie."
+        },
+        {
+         "title": "Ofertă fermă",
+         "text": "Materiale, termene și preț în scris, înainte de a începe."
+        },
+        {
+         "title": "Fabricație și montaj",
+         "text": "Lucrăm în atelier și finalizăm pe șantier, cu urmărirea ta."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre oferte, termene, materiale, garanții și lucrările pe șantier ale atelierului."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cât costă oferta?",
+         "answer": "Indică aici dacă este gratuită sau are un cost. *Text de exemplu.*"
+        },
+        {
+         "question": "Cât durează o lucrare?",
+         "answer": "Depinde de dimensiune; termenul se stabilește în scris. *Text de exemplu.*"
+        },
+        {
+         "question": "Lucrați și cu alte materiale?",
+         "answer": "Da, combinăm oțelul cu aluminiu, lemn sau sticlă."
+        },
+        {
+         "question": "Oferiți garanție?",
+         "answer": "Da, toate lucrările includ garanție în scris."
+        },
+        {
+         "question": "Vă ocupați de autorizații?",
+         "answer": "Te îndrumăm și pregătim documentele necesare."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o lucrare sau un proiect în minte?",
+       "text": "Spune-ne ce ai nevoie și îți pregătim o ofertă fără obligații.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: cere o ofertă sau povestește-ne proiectul tău și îți răspundem cât mai repede, în programul atelierului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Cere o ofertă",
+       "text": "Spune-ne ce ai nevoie și îți propunem o vizită.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-alegi-un-grilaj-sigur",
+    "title": "Cum alegi un grilaj sigur pentru spațiul tău",
+    "excerpt": "Text de exemplu pentru blog: criterii de bază de siguranță.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu informații generale și prudente.\n\n## Materiale\n\nExplică ce finisaje rezistă cel mai bine la intemperii.\n\n## Când ne consulți\n\nFiecare spațiu este diferit: cel mai bine se măsoară la fața locului.",
+    "tags": [
+     "siguranta",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "zincat-sau-vopsit",
+    "title": "Zincat sau vopsit: ce se potrivește în fiecare caz",
+    "excerpt": "Text de exemplu pentru blog: o comparație scurtă a finisajelor.",
+    "content": "Text de exemplu. Compară aici finisajele cu informații generale.\n\n## Zincarea\n\nProtecție de durată în exterior.\n\n## Vopsirea\n\nMai multe culori și un aspect îngrijit.",
+    "tags": [
+     "finisaje",
+     "mentenanta"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Serrurerie-métallerie et rénovation sur mesure",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "L’atelier",
+    "url": "/l-atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander un devis",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d’exemple : atelier de métallerie et de rénovation, travail sur mesure, délais clairs et devis ferme. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Atelier et chantier · Exemple",
+       "title": "De l’acier bien travaillé, des chantiers bien finis",
+       "subtitle": "Texte d’exemple : expliquez en une phrase ce que vous fabriquez, quelles rénovations vous faites et où vous intervenez.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que nous faisons",
+       "title": "Du plan à la pose",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Métallerie",
+         "text": "Portes, fenêtres, grilles et clôtures fabriquées sur mesure."
+        },
+        {
+         "icon": "shield",
+         "title": "Structures et escaliers",
+         "text": "Soudure certifiée, calcul et montage sûr sur chantier."
+        },
+        {
+         "icon": "users",
+         "title": "Rénovations complètes",
+         "text": "Maçonnerie, installations et finitions avec un seul responsable."
+        },
+        {
+         "icon": "check",
+         "title": "Entretien",
+         "text": "Contrôles, réparations et remise aux normes de locaux."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Ans de métier (exemple)"
+        },
+        {
+         "value": "850",
+         "label": "Chantiers livrés (exemple)"
+        },
+        {
+         "value": "7 jours",
+         "label": "Visite et devis (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite et relevé de mesures",
+         "text": "Nous venons sur place, prenons les mesures et écoutons votre besoin."
+        },
+        {
+         "title": "Devis ferme",
+         "text": "Matériaux, délais et prix par écrit avant de commencer."
+        },
+        {
+         "title": "Fabrication et pose",
+         "text": "Nous fabriquons en atelier et finissons sur chantier, avec votre suivi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "L’atelier",
+       "title": "Nous fabriquons, nous posons",
+       "body": "- Fabrication maison en atelier\n- Un seul responsable du chantier\n- Chantier propre et délais convenus",
+       "button_text": "L’atelier",
+       "button_link": "/l-atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d’exemple d’un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client (exemple)",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un chantier ou un projet en tête ?",
+       "text": "Dites-nous ce qu’il vous faut et nous préparons un devis sans engagement.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d’exemple : portes, grilles, structures, escaliers et rénovations complètes réalisés dans notre atelier, pose sur chantier incluse."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Portes et clôtures",
+         "text": "Portes, portails, grilles et garde-corps sur mesure."
+        },
+        {
+         "icon": "shield",
+         "title": "Structures métalliques",
+         "text": "Portiques, supports, mezzanines et plateformes."
+        },
+        {
+         "icon": "route",
+         "title": "Escaliers",
+         "text": "Droits, hélicoïdaux et de secours, finition au choix."
+        },
+        {
+         "icon": "users",
+         "title": "Rénovation de locaux",
+         "text": "Rénovation complète de commerces, entrepôts et logements."
+        },
+        {
+         "icon": "bolt",
+         "title": "Soudure et réparation",
+         "text": "Dépannages urgents et travaux spéciaux."
+        },
+        {
+         "icon": "check",
+         "title": "Finitions",
+         "text": "Galvanisation, laquage et peinture de protection."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d’exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Fabrication",
+         "name": "Grille ou garde-corps (au mètre)",
+         "price": "dès 90 €"
+        },
+        {
+         "section": "Fabrication",
+         "name": "Porte métallique sur mesure",
+         "price": "dès 380 €"
+        },
+        {
+         "section": "Chantier",
+         "name": "Heure d’ouvrier qualifié",
+         "price": "dès 38 €"
+        },
+        {
+         "section": "Chantier",
+         "name": "Visite et devis",
+         "price": "gratuite"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un chantier ou un projet en tête ?",
+       "text": "Dites-nous ce qu’il vous faut et nous préparons un devis sans engagement.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-atelier",
+    "title": "L’atelier",
+    "seo": {
+     "description": "Texte d’exemple : qui nous sommes, comment nous travaillons l’acier et le chantier, et nos engagements de sécurité et de délais."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d’exemple. Racontez ici l’histoire de votre atelier, qui y travaille et ce qui vous distingue.\n\nParlez de votre façon de travailler et de vos engagements, pas de résultats que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos principes",
+       "body": "- La sécurité à l’atelier et sur chantier\n- Délais et prix par écrit\n- Garantie sur tout ce que nous fabriquons"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite et relevé de mesures",
+         "text": "Nous venons sur place, prenons les mesures et écoutons votre besoin."
+        },
+        {
+         "title": "Devis ferme",
+         "text": "Matériaux, délais et prix par écrit avant de commencer."
+        },
+        {
+         "title": "Fabrication et pose",
+         "text": "Nous fabriquons en atelier et finissons sur chantier, avec votre suivi."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d’exemple : réponses aux questions courantes sur les devis, les délais, les matériaux, les garanties et les travaux sur chantier."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Combien coûte le devis ?",
+         "answer": "Indiquez ici s’il est gratuit ou payant. *Texte d’exemple.*"
+        },
+        {
+         "question": "Combien de temps dure un chantier ?",
+         "answer": "Cela dépend de la taille ; le délai est fixé par écrit. *Texte d’exemple.*"
+        },
+        {
+         "question": "Travaillez-vous d’autres matériaux ?",
+         "answer": "Oui, nous associons l’acier à l’aluminium, au bois ou au verre."
+        },
+        {
+         "question": "Offrez-vous une garantie ?",
+         "answer": "Oui, chaque travail est garanti par écrit."
+        },
+        {
+         "question": "Vous occupez-vous des autorisations ?",
+         "answer": "Nous vous conseillons et préparons les documents nécessaires."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un chantier ou un projet en tête ?",
+       "text": "Dites-nous ce qu’il vous faut et nous préparons un devis sans engagement.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d’exemple : demandez un devis ou présentez-nous votre projet, nous vous répondrons au plus vite pendant les heures d’atelier."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander un devis",
+       "text": "Dites-nous ce qu’il vous faut et nous proposons une visite.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d’exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "bien-choisir-une-grille-securisee",
+    "title": "Bien choisir une grille sécurisée pour votre local",
+    "excerpt": "Texte d’exemple pour le blog : critères de sécurité de base.",
+    "content": "Texte d’exemple. Rédigez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Matériaux\n\nExpliquez quelles finitions résistent le mieux aux intempéries.\n\n## Quand nous consulter\n\nChaque local est différent : le mieux est de mesurer sur place.",
+    "tags": [
+     "securite",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "galvanise-ou-lacque",
+    "title": "Galvanisé ou laqué : que choisir selon le cas",
+    "excerpt": "Texte d’exemple pour le blog : comparaison rapide des finitions.",
+    "content": "Texte d’exemple. Comparez ici les finitions avec des informations générales.\n\n## Galvanisation\n\nProtection durable en extérieur.\n\n## Laquage\n\nPlus de choix de couleurs et un bel aspect.",
+    "tags": [
+     "finitions",
+     "entretien"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Metallbau und Umbauten nach Maß",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Die Werkstatt",
+    "url": "/die-werkstatt"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Angebot anfragen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Metallbau- und Umbauwerkstatt mit Maßanfertigung, klaren Terminen und verbindlichem Angebot. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Werkstatt und Baustelle · Beispiel",
+       "title": "Sauber gearbeiteter Stahl, sauber abgeschlossene Aufträge",
+       "subtitle": "Beispieltext: Erklären Sie in einem Satz, was Sie fertigen, welche Umbauten Sie machen und wo Sie tätig sind.",
+       "cta_text": "Angebot anfragen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was wir tun",
+       "title": "Vom Plan bis zur Montage",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Metallbau",
+         "text": "Türen, Fenster, Gitter und Abschlüsse nach Maß gefertigt."
+        },
+        {
+         "icon": "shield",
+         "title": "Konstruktionen und Treppen",
+         "text": "Zertifiziertes Schweißen, Berechnung und sichere Montage vor Ort."
+        },
+        {
+         "icon": "users",
+         "title": "Komplettumbauten",
+         "text": "Rohbau, Installation und Ausbau aus einer Hand."
+        },
+        {
+         "icon": "check",
+         "title": "Instandhaltung",
+         "text": "Prüfungen, Reparaturen und Anpassung von Hallen und Läden."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Jahre Handwerk (Beispiel)"
+        },
+        {
+         "value": "850",
+         "label": "Übergebene Aufträge (Beispiel)"
+        },
+        {
+         "value": "7 Tage",
+         "label": "Besichtigung und Angebot (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Besichtigung und Aufmaß",
+         "text": "Wir kommen vor Ort, messen auf und hören zu, was Sie brauchen."
+        },
+        {
+         "title": "Verbindliches Angebot",
+         "text": "Material, Termine und Preis schriftlich, bevor wir beginnen."
+        },
+        {
+         "title": "Fertigung und Montage",
+         "text": "Wir fertigen in der Werkstatt und schließen vor Ort ab, mit Ihrer Begleitung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Die Werkstatt",
+       "title": "Wir fertigen, wir montieren",
+       "body": "- Eigene Fertigung in der Werkstatt\n- Ein Verantwortlicher für den Auftrag\n- Saubere Baustelle und vereinbarte Termine",
+       "button_text": "Die Werkstatt",
+       "button_link": "/die-werkstatt"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Stimme: Ersetzen Sie ihn durch echte Rückmeldungen Ihrer Kunden, mit deren Zustimmung.",
+         "name": "Kunde (Beispiel)",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie einen Auftrag oder ein Projekt im Sinn?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir erstellen ein unverbindliches Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Türen, Gitter, Konstruktionen, Treppen und Komplettumbauten aus unserer Werkstatt, Montage vor Ort inklusive."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Türen und Abschlüsse",
+         "text": "Türen, Tore, Gitter und Geländer nach Maß."
+        },
+        {
+         "icon": "shield",
+         "title": "Stahlkonstruktionen",
+         "text": "Rahmen, Stützen, Zwischenböden und Bühnen."
+        },
+        {
+         "icon": "route",
+         "title": "Treppen",
+         "text": "Gerade, Spindel- und Fluchttreppen, Oberfläche nach Wahl."
+        },
+        {
+         "icon": "users",
+         "title": "Umbau von Räumen",
+         "text": "Komplettumbau von Läden, Hallen und Wohnungen."
+        },
+        {
+         "icon": "bolt",
+         "title": "Schweißen und Reparatur",
+         "text": "Eilige Reparaturen und Sonderarbeiten."
+        },
+        {
+         "icon": "check",
+         "title": "Oberflächen",
+         "text": "Verzinken, Pulverbeschichten und Schutzanstrich."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre Preise.",
+       "items": [
+        {
+         "section": "Fertigung",
+         "name": "Gitter oder Geländer (pro Meter)",
+         "price": "ab 90 €"
+        },
+        {
+         "section": "Fertigung",
+         "name": "Metalltür nach Maß",
+         "price": "ab 380 €"
+        },
+        {
+         "section": "Baustelle",
+         "name": "Stunde Facharbeiter",
+         "price": "ab 38 €"
+        },
+        {
+         "section": "Baustelle",
+         "name": "Besichtigung und Angebot",
+         "price": "kostenlos"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie einen Auftrag oder ein Projekt im Sinn?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir erstellen ein unverbindliches Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "die-werkstatt",
+    "title": "Die Werkstatt",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir Stahl und Baustelle bearbeiten und welche Zusagen zu Sicherheit und Terminen wir machen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihrer Werkstatt, wer dort arbeitet und was Sie auszeichnet.\n\nSprechen Sie über Ihre Arbeitsweise und Ihre Zusagen, nicht über Ergebnisse, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Grundsätze",
+       "body": "- Sicherheit in der Werkstatt und auf der Baustelle\n- Termine und Preis schriftlich\n- Gewährleistung auf alles, was wir fertigen"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Besichtigung und Aufmaß",
+         "text": "Wir kommen vor Ort, messen auf und hören zu, was Sie brauchen."
+        },
+        {
+         "title": "Verbindliches Angebot",
+         "text": "Material, Termine und Preis schriftlich, bevor wir beginnen."
+        },
+        {
+         "title": "Fertigung und Montage",
+         "text": "Wir fertigen in der Werkstatt und schließen vor Ort ab, mit Ihrer Begleitung."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Angeboten, Terminen, Materialien, Gewährleistung und Arbeiten vor Ort in der Werkstatt."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Was kostet das Angebot?",
+         "answer": "Geben Sie hier an, ob es kostenlos ist oder etwas kostet. *Beispieltext.*"
+        },
+        {
+         "question": "Wie lange dauert ein Auftrag?",
+         "answer": "Das hängt vom Umfang ab; der Termin wird schriftlich vereinbart. *Beispieltext.*"
+        },
+        {
+         "question": "Arbeiten Sie auch mit anderen Materialien?",
+         "answer": "Ja, wir kombinieren Stahl mit Aluminium, Holz oder Glas."
+        },
+        {
+         "question": "Geben Sie Gewährleistung?",
+         "answer": "Ja, alle Arbeiten enthalten eine schriftliche Gewährleistung."
+        },
+        {
+         "question": "Kümmern Sie sich um Genehmigungen?",
+         "answer": "Wir beraten Sie und bereiten die nötigen Unterlagen vor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie einen Auftrag oder ein Projekt im Sinn?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir erstellen ein unverbindliches Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fordern Sie ein Angebot an oder schildern Sie uns Ihr Projekt, wir antworten so schnell wie möglich zu den Werkstattzeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Angebot anfragen",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir schlagen einen Termin vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ändern Sie sie auf Ihre.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "sicheres-gitter-richtig-waehlen",
+    "title": "So wählen Sie ein sicheres Gitter für Ihren Laden",
+    "excerpt": "Beispieltext für den Blog: grundlegende Sicherheitskriterien.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Angaben.\n\n## Materialien\n\nErklären Sie, welche Oberflächen der Witterung am besten standhalten.\n\n## Wann Sie uns fragen sollten\n\nJeder Laden ist anders: Am besten wird vor Ort gemessen.",
+    "tags": [
+     "sicherheit",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "verzinkt-oder-pulverbeschichtet",
+    "title": "Verzinkt oder pulverbeschichtet: was passt wann",
+    "excerpt": "Beispieltext für den Blog: kurzer Vergleich von Oberflächen.",
+    "content": "Beispieltext. Vergleichen Sie hier die Oberflächen mit allgemeinen Angaben.\n\n## Verzinken\n\nDauerhafter Schutz im Außenbereich.\n\n## Pulverbeschichten\n\nMehr Farbauswahl und ein gepflegtes Aussehen.",
+    "tags": [
+     "oberflaechen",
+     "instandhaltung"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Carpenteria metallica e ristrutturazioni su misura",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "L’officina",
+    "url": "/l-officina"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi un preventivo",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: officina di carpenteria metallica e ristrutturazioni con lavori su misura, tempi chiari e preventivo chiuso. Sostituiscilo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Officina e cantiere · Esempio",
+       "title": "Acciaio lavorato bene, lavori finiti bene",
+       "subtitle": "Testo di esempio: spiega in una frase cosa costruite, quali ristrutturazioni fate e in quale zona lavorate.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa facciamo",
+       "title": "Dal disegno alla posa",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Carpenteria metallica",
+         "text": "Porte, finestre, inferriate e chiusure realizzate su misura."
+        },
+        {
+         "icon": "shield",
+         "title": "Strutture e scale",
+         "text": "Saldatura certificata, calcolo e montaggio sicuro in cantiere."
+        },
+        {
+         "icon": "users",
+         "title": "Ristrutturazioni complete",
+         "text": "Opere murarie, impianti e finiture con un unico responsabile."
+        },
+        {
+         "icon": "check",
+         "title": "Manutenzione",
+         "text": "Controlli, riparazioni e adeguamento di capannoni e locali."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Anni di mestiere (esempio)"
+        },
+        {
+         "value": "850",
+         "label": "Lavori consegnati (esempio)"
+        },
+        {
+         "value": "7 giorni",
+         "label": "Sopralluogo e preventivo (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo e misure",
+         "text": "Veniamo in cantiere, prendiamo le misure e ascoltiamo ciò che ti serve."
+        },
+        {
+         "title": "Preventivo chiuso",
+         "text": "Materiali, tempi e prezzo per iscritto prima di iniziare."
+        },
+        {
+         "title": "Costruzione e posa",
+         "text": "Lavoriamo in officina e rifiniamo in cantiere, con il tuo controllo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "L’officina",
+       "title": "Costruiamo noi, montiamo noi",
+       "body": "- Produzione propria in officina\n- Un unico responsabile del lavoro\n- Cantiere pulito e tempi concordati",
+       "button_text": "L’officina",
+       "button_link": "/l-officina"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un’opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente (esempio)",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un lavoro o un progetto in mente?",
+       "text": "Raccontaci cosa ti serve e prepariamo un preventivo senza impegno.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: porte, inferriate, strutture, scale e ristrutturazioni complete realizzate nella nostra officina, con posa in cantiere."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Porte e chiusure",
+         "text": "Porte, cancelli, inferriate e ringhiere su misura."
+        },
+        {
+         "icon": "shield",
+         "title": "Strutture metalliche",
+         "text": "Portali, sostegni, soppalchi e piattaforme."
+        },
+        {
+         "icon": "route",
+         "title": "Scale",
+         "text": "Rettilinee, a chiocciola e di emergenza, con finitura a scelta."
+        },
+        {
+         "icon": "users",
+         "title": "Ristrutturazione di locali",
+         "text": "Ristrutturazione completa di negozi, capannoni e abitazioni."
+        },
+        {
+         "icon": "bolt",
+         "title": "Saldatura e riparazioni",
+         "text": "Riparazioni urgenti e lavori speciali."
+        },
+        {
+         "icon": "check",
+         "title": "Finiture",
+         "text": "Zincatura, verniciatura a polvere e vernice protettiva."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prezzi indicativi",
+       "note": "Importi di esempio: sostituiscili con le tue tariffe.",
+       "items": [
+        {
+         "section": "Produzione",
+         "name": "Inferriata o ringhiera (al metro)",
+         "price": "da 90 €"
+        },
+        {
+         "section": "Produzione",
+         "name": "Porta metallica su misura",
+         "price": "da 380 €"
+        },
+        {
+         "section": "Cantiere",
+         "name": "Ora di operaio qualificato",
+         "price": "da 38 €"
+        },
+        {
+         "section": "Cantiere",
+         "name": "Sopralluogo e preventivo",
+         "price": "gratuito"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un lavoro o un progetto in mente?",
+       "text": "Raccontaci cosa ti serve e prepariamo un preventivo senza impegno.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-officina",
+    "title": "L’officina",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo l’acciaio e il cantiere e quali impegni di sicurezza e di tempi prende la nostra officina."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia della tua officina, chi ci lavora e cosa vi distingue.\n\nParla di come lavorate e dei vostri impegni, non di risultati che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri principi",
+       "body": "- Sicurezza in officina e in cantiere\n- Tempi e prezzo per iscritto\n- Garanzia su tutto ciò che costruiamo"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo e misure",
+         "text": "Veniamo in cantiere, prendiamo le misure e ascoltiamo ciò che ti serve."
+        },
+        {
+         "title": "Preventivo chiuso",
+         "text": "Materiali, tempi e prezzo per iscritto prima di iniziare."
+        },
+        {
+         "title": "Costruzione e posa",
+         "text": "Lavoriamo in officina e rifiniamo in cantiere, con il tuo controllo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su preventivi, tempi, materiali, garanzie e lavori in cantiere dell’officina."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto costa il preventivo?",
+         "answer": "Indica qui se è gratuito o a pagamento. *Testo di esempio.*"
+        },
+        {
+         "question": "Quanto dura un lavoro?",
+         "answer": "Dipende dalle dimensioni; i tempi si concordano per iscritto. *Testo di esempio.*"
+        },
+        {
+         "question": "Lavorate anche altri materiali?",
+         "answer": "Sì, uniamo l’acciaio ad alluminio, legno o vetro."
+        },
+        {
+         "question": "Date una garanzia?",
+         "answer": "Sì, ogni lavoro include una garanzia scritta."
+        },
+        {
+         "question": "Vi occupate dei permessi?",
+         "answer": "Ti orientiamo e prepariamo la documentazione necessaria."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un lavoro o un progetto in mente?",
+       "text": "Raccontaci cosa ti serve e prepariamo un preventivo senza impegno.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi un preventivo o raccontaci il tuo progetto e ti risponderemo al più presto negli orari dell’officina."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi un preventivo",
+       "text": "Raccontaci cosa ti serve e ti proponiamo un sopralluogo.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "come-scegliere-una-inferriata-sicura",
+    "title": "Come scegliere un’inferriata sicura per il tuo locale",
+    "excerpt": "Testo di esempio per il blog: criteri di sicurezza di base.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Materiali\n\nSpiega quali finiture resistono meglio alle intemperie.\n\n## Quando consultarci\n\nOgni locale è diverso: la cosa migliore è misurare sul posto.",
+    "tags": [
+     "sicurezza",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "zincato-o-verniciato",
+    "title": "Zincato o verniciato: cosa conviene in ogni caso",
+    "excerpt": "Testo di esempio per il blog: breve confronto tra finiture.",
+    "content": "Testo di esempio. Confronta qui le finiture con informazioni generali.\n\n## Zincatura\n\nProtezione duratura all’esterno.\n\n## Verniciatura\n\nPiù scelta di colori e un buon aspetto.",
+    "tags": [
+     "finiture",
+     "manutenzione"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Serralharia e remodelações por medida",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "A oficina",
+    "url": "/a-oficina"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir orçamento",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: oficina de serralharia e remodelações com trabalho por medida, prazos claros e orçamento fechado. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Oficina e obra · Exemplo",
+       "title": "Aço bem trabalhado, obras bem acabadas",
+       "subtitle": "Texto de exemplo: explique numa frase o que fabricam, que remodelações fazem e em que zona trabalham.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que fazemos",
+       "title": "Do projeto à instalação",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Serralharia",
+         "text": "Portas, janelas, grades e vedações fabricadas por medida."
+        },
+        {
+         "icon": "shield",
+         "title": "Estruturas e escadas",
+         "text": "Soldadura certificada, cálculo e montagem segura em obra."
+        },
+        {
+         "icon": "users",
+         "title": "Remodelações completas",
+         "text": "Alvenaria, instalações e acabamentos com um único responsável."
+        },
+        {
+         "icon": "check",
+         "title": "Manutenção",
+         "text": "Revisões, reparações e adaptação de armazéns e lojas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Anos de ofício (exemplo)"
+        },
+        {
+         "value": "850",
+         "label": "Obras entregues (exemplo)"
+        },
+        {
+         "value": "7 dias",
+         "label": "Visita e orçamento (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita e medição",
+         "text": "Vamos à obra, tiramos medidas e ouvimos o que precisa."
+        },
+        {
+         "title": "Orçamento fechado",
+         "text": "Materiais, prazos e preço por escrito antes de começar."
+        },
+        {
+         "title": "Fabrico e montagem",
+         "text": "Fabricamos na oficina e rematamos em obra, com o seu acompanhamento."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A oficina",
+       "title": "Fabricamos nós, montamos nós",
+       "body": "- Fabrico próprio em oficina\n- Um único responsável pela obra\n- Obra limpa e prazos combinados",
+       "button_text": "A oficina",
+       "button_link": "/a-oficina"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente (exemplo)",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma obra ou um projeto em mente?",
+       "text": "Diga-nos o que precisa e preparamos um orçamento sem compromisso.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: portas, grades, estruturas, escadas e remodelações completas feitas na nossa oficina, com montagem em obra incluída."
+    },
+    "blocks": [
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Portas e vedações",
+         "text": "Portas, portões, grades e guardas por medida."
+        },
+        {
+         "icon": "shield",
+         "title": "Estruturas metálicas",
+         "text": "Pórticos, apoios, mezaninos e plataformas."
+        },
+        {
+         "icon": "route",
+         "title": "Escadas",
+         "text": "Retas, de caracol e de emergência, com acabamento à escolha."
+        },
+        {
+         "icon": "users",
+         "title": "Remodelação de espaços",
+         "text": "Remodelação completa de lojas, armazéns e moradias."
+        },
+        {
+         "icon": "bolt",
+         "title": "Soldadura e reparação",
+         "text": "Reparações urgentes e trabalhos especiais."
+        },
+        {
+         "icon": "check",
+         "title": "Acabamentos",
+         "text": "Galvanização, lacagem e tinta de proteção."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Valores de exemplo: substitua-os pelas suas tarifas.",
+       "items": [
+        {
+         "section": "Fabrico",
+         "name": "Grade ou guarda (por metro)",
+         "price": "desde 90 €"
+        },
+        {
+         "section": "Fabrico",
+         "name": "Porta metálica por medida",
+         "price": "desde 380 €"
+        },
+        {
+         "section": "Obra",
+         "name": "Hora de oficial",
+         "price": "desde 38 €"
+        },
+        {
+         "section": "Obra",
+         "name": "Visita e orçamento",
+         "price": "gratuita"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma obra ou um projeto em mente?",
+       "text": "Diga-nos o que precisa e preparamos um orçamento sem compromisso.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-oficina",
+    "title": "A oficina",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos o aço e a obra e os compromissos de segurança e prazos da nossa oficina."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua oficina, quem lá trabalha e o que vos distingue.\n\nFale de como trabalham e dos vossos compromissos, não de resultados que não possa demonstrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos princípios",
+       "body": "- Segurança na oficina e em obra\n- Prazos e preço por escrito\n- Garantia em tudo o que fabricamos"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita e medição",
+         "text": "Vamos à obra, tiramos medidas e ouvimos o que precisa."
+        },
+        {
+         "title": "Orçamento fechado",
+         "text": "Materiais, prazos e preço por escrito antes de começar."
+        },
+        {
+         "title": "Fabrico e montagem",
+         "text": "Fabricamos na oficina e rematamos em obra, com o seu acompanhamento."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre orçamentos, prazos, materiais, garantias e trabalhos em obra da oficina."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto custa o orçamento?",
+         "answer": "Indique aqui se é gratuito ou pago. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quanto tempo demora um trabalho?",
+         "answer": "Depende da dimensão; o prazo é combinado por escrito. *Texto de exemplo.*"
+        },
+        {
+         "question": "Trabalham com outros materiais?",
+         "answer": "Sim, combinamos o aço com alumínio, madeira ou vidro."
+        },
+        {
+         "question": "Dão garantia?",
+         "answer": "Sim, todos os trabalhos incluem garantia por escrito."
+        },
+        {
+         "question": "Tratam das licenças?",
+         "answer": "Orientamos e preparamos a documentação necessária."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma obra ou um projeto em mente?",
+       "text": "Diga-nos o que precisa e preparamos um orçamento sem compromisso.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça um orçamento ou conte-nos o seu projeto e responderemos o mais depressa possível no horário da oficina."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir orçamento",
+       "text": "Diga-nos o que precisa e propomos uma visita.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:30",
+         "opens2": "15:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-escolher-uma-grade-segura",
+    "title": "Como escolher uma grade segura para a sua loja",
+    "excerpt": "Texto de exemplo para o blogue: critérios básicos de segurança.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Materiais\n\nExplique que acabamentos resistem melhor ao tempo.\n\n## Quando nos consultar\n\nCada loja é diferente: o melhor é medir no local.",
+    "tags": [
+     "seguranca",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "galvanizado-ou-lacado",
+    "title": "Galvanizado ou lacado: o que convém em cada caso",
+    "excerpt": "Texto de exemplo para o blogue: breve comparação de acabamentos.",
+    "content": "Texto de exemplo. Compare aqui os acabamentos com informação geral.\n\n## Galvanização\n\nProteção duradoura no exterior.\n\n## Lacagem\n\nMais cores à escolha e bom aspeto.",
+    "tags": [
+     "acabamentos",
+     "manutencao"
+    ]
+   }
+  ]
+ }
+}

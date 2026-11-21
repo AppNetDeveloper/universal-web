@@ -1,0 +1,2719 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Cálido). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Cocina de barrio con horno de leña",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Carta",
+    "url": "/carta"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Reservas",
+    "url": "/reservas"
+   }
+  ],
+  "cta": {
+   "label": "Reservar mesa",
+   "url": "/reservas"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: restaurante de barrio con cocina casera, horno de leña y trato cercano. Reserva mesa o consulta la carta. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Restaurante de barrio · Ejemplo",
+       "title": "Buena mesa, como en casa",
+       "subtitle": "Texto de ejemplo: cuenta en dos frases qué cocináis, cómo es el local y por qué la gente vuelve cada semana.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza recién salida del horno de leña",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/reservas",
+       "cta2_text": "Ver la carta",
+       "cta2_link": "/carta"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Lo que nos define",
+       "title": "Una casa de comidas con alma",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Producto de temporada",
+         "text": "Verduras y carnes de proveedores cercanos, y una carta que cambia con el calendario."
+        },
+        {
+         "icon": "heart",
+         "title": "Cocina casera",
+         "text": "Guisos, masas y postres hechos cada día, sin atajos."
+        },
+        {
+         "icon": "clock",
+         "title": "Menú del día",
+         "text": "Una opción rápida y cuidada para comer entre semana."
+        },
+        {
+         "icon": "users",
+         "title": "Mesas para grupos",
+         "text": "Celebraciones y comidas de empresa con menú pactado."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Años abriendo cada mañana (ejemplo)"
+        },
+        {
+         "value": "40",
+         "label": "Platos en la carta (ejemplo)"
+        },
+        {
+         "value": "4,8",
+         "label": "Valoración media de los clientes (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Nuestra casa",
+       "title": "Un local pequeño con el horno siempre encendido",
+       "body": "- Masas fermentadas durante 48 horas\n- Leña de encina para el horno\n- Terraza abierta de abril a octubre",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala acogedora de restaurante con horno de leña",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te guardamos una mesa?",
+       "text": "Reserva para comer o cenar y te confirmamos lo antes posible.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carta",
+    "title": "Carta",
+    "seo": {
+     "description": "Texto de ejemplo: carta del restaurante con entrantes, platos del horno y postres, con precios claros. Sustitúyela por la tuya."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Carta de ejemplo",
+       "title": "Lo que hay hoy en la cocina",
+       "subtitle": "Platos y precios de ejemplo: cámbialos por los tuyos.",
+       "note": "Precios de ejemplo, IVA incluido. Pregúntanos por alérgenos e intolerancias.",
+       "items": [
+        {
+         "section": "Para empezar",
+         "name": "Ensalada de temporada",
+         "description": "Hojas tiernas, queso fresco y vinagreta de miel",
+         "price": "8,50"
+        },
+        {
+         "section": "Para empezar",
+         "name": "Croquetas caseras",
+         "description": "Seis unidades, de jamón o de setas",
+         "price": "9,00",
+         "tag": "Casero"
+        },
+        {
+         "section": "Para empezar",
+         "name": "Crema de calabaza",
+         "description": "Con pipas tostadas y aceite de oliva",
+         "price": "6,50",
+         "tag": "Vegano"
+        },
+        {
+         "section": "Del horno",
+         "name": "Pizza margarita",
+         "description": "Tomate, mozzarella y albahaca",
+         "price": "10,50"
+        },
+        {
+         "section": "Del horno",
+         "name": "Pizza de verduras asadas",
+         "description": "Berenjena, pimiento y calabacín",
+         "price": "12,00",
+         "tag": "Nuevo"
+        },
+        {
+         "section": "Del horno",
+         "name": "Focaccia de romero",
+         "description": "Para compartir en la mesa",
+         "price": "5,00"
+        },
+        {
+         "section": "Dulces",
+         "name": "Tarta de queso",
+         "description": "Horneada, con mermelada de frutos rojos",
+         "price": "5,50"
+        },
+        {
+         "section": "Dulces",
+         "name": "Café y pastelito",
+         "description": "Café de tueste local y dulce del día",
+         "price": "3,00"
+        },
+        {
+         "section": "Dulces",
+         "name": "Helado artesano",
+         "description": "Dos bolas a elegir",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te guardamos una mesa?",
+       "text": "Reserva para comer o cenar y te confirmamos lo antes posible.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo cocinamos y qué principios guían nuestro restaurante de barrio. Sustitúyelo por tu historia."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu local, quién cocina y qué os distingue.\n\nHabla de cómo trabajáis y de lo que ofrecéis, no de premios que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Lo que nos importa",
+       "body": "- Producto fresco y de proximidad\n- Precios claros en la carta\n- Un trato amable en la mesa",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala acogedora de restaurante con horno de leña"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo funciona una comida con nosotros",
+       "items": [
+        {
+         "title": "Reservas",
+         "text": "Escríbenos con el día, la hora y cuántos sois."
+        },
+        {
+         "title": "Te esperamos",
+         "text": "Tu mesa está lista y te cuentan los platos del día."
+        },
+        {
+         "title": "Disfrutas sin prisa",
+         "text": "Pides con calma y te traemos todo en su punto."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre reservas, grupos, alérgenos y terraza en nuestro restaurante de barrio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Hace falta reservar?",
+         "answer": "Recomendamos reservar los fines de semana. Entre semana suele haber sitio. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Admitís grupos?",
+         "answer": "Sí, con menú pactado de antemano. Cuéntanos cuántos sois. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Tenéis opciones sin gluten o veganas?",
+         "answer": "Sí, hay varios platos. Avisa al reservar y lo preparamos con cuidado."
+        },
+        {
+         "question": "¿Se puede venir con niños?",
+         "answer": "Por supuesto: tenemos tronas y un menú infantil."
+        },
+        {
+         "question": "¿Hay terraza?",
+         "answer": "Sí, abierta con buen tiempo. Puedes pedirla al reservar."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te guardamos una mesa?",
+       "text": "Reserva para comer o cenar y te confirmamos lo antes posible.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "reservas",
+    "title": "Reservas",
+    "seo": {
+     "description": "Texto de ejemplo: reserva mesa para comer o cenar y consulta el horario del restaurante. Te confirmamos lo antes posible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar mesa",
+       "text": "Dinos el día, la hora y cuántos sois, y te confirmamos la reserva.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "menu-del-dia-cada-semana",
+    "title": "Así preparamos el menú del día cada semana",
+    "excerpt": "Texto de ejemplo para el blog: cómo elegimos los platos de temporada.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo para tus clientes, con un tono cercano.\n\n## Empezamos en el mercado\n\nCuenta qué producto manda cada semana.\n\n## Del fogón a la mesa\n\nExplica cómo se organiza la cocina para que todo salga a su hora.",
+    "tags": [
+     "cocina",
+     "temporada"
+    ]
+   },
+   {
+    "slug": "como-reservar-para-grupos",
+    "title": "Cómo reservar para un grupo sin complicaciones",
+    "excerpt": "Texto de ejemplo: consejos para celebrar una comida en grupo.",
+    "content": "Texto de ejemplo. Explica cómo organizar una comida en grupo.\n\n## Con tiempo\n\nReserva con unos días de antelación e indica cuántos sois.\n\n## Menú pactado\n\nHabla de las opciones de menú cerrado y de cómo avisar de alergias.",
+    "tags": [
+     "reservas",
+     "grupos"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Neighbourhood cooking from a wood-fired oven",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Menu",
+    "url": "/menu"
+   },
+   {
+    "label": "About us",
+    "url": "/about-us"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Book a table",
+    "url": "/book-a-table"
+   }
+  ],
+  "cta": {
+   "label": "Book a table",
+   "url": "/book-a-table"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: neighbourhood restaurant with home cooking, a wood-fired oven and friendly service. Book a table or see the menu. Replace it with yours."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Neighbourhood restaurant · Example",
+       "title": "Good food, just like home",
+       "subtitle": "Sample text: say in two sentences what you cook, what the place feels like and why people come back every week.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza fresh out of the wood-fired oven",
+       "cta_text": "Book a table",
+       "cta_link": "/book-a-table",
+       "cta2_text": "See the menu",
+       "cta2_link": "/menu"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What defines us",
+       "title": "A little eatery with soul",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Seasonal produce",
+         "text": "Vegetables and meat from nearby suppliers, and a menu that follows the calendar."
+        },
+        {
+         "icon": "heart",
+         "title": "Home cooking",
+         "text": "Stews, doughs and desserts made fresh every day, no shortcuts."
+        },
+        {
+         "icon": "clock",
+         "title": "Lunch special",
+         "text": "A quick, well-made option for a midweek lunch."
+        },
+        {
+         "icon": "users",
+         "title": "Tables for groups",
+         "text": "Celebrations and team lunches with an agreed menu."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Years opening every morning (example)"
+        },
+        {
+         "value": "40",
+         "label": "Dishes on the menu (example)"
+        },
+        {
+         "value": "4.8",
+         "label": "Average customer rating (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Our place",
+       "title": "A small dining room with the oven always lit",
+       "body": "- Dough fermented for 48 hours\n- Oak wood for the oven\n- Terrace open from April to October",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Cosy restaurant dining room with a wood-fired oven",
+       "button_text": "About us",
+       "button_link": "/about-us"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their permission.",
+         "name": "Sample customer",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we keep you a table?",
+       "text": "Book for lunch or dinner and we will confirm as soon as we can.",
+       "button_text": "Book a table",
+       "button_link": "/book-a-table"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "menu",
+    "title": "Menu",
+    "seo": {
+     "description": "Sample text: restaurant menu with starters, oven dishes and desserts, with clear prices. Replace it with your own menu."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Sample menu",
+       "title": "What is in the kitchen today",
+       "subtitle": "Sample dishes and prices: change them to yours.",
+       "note": "Sample prices, VAT included. Ask us about allergens and intolerances.",
+       "items": [
+        {
+         "section": "To start",
+         "name": "Seasonal salad",
+         "description": "Young leaves, fresh cheese and honey vinaigrette",
+         "price": "8.50"
+        },
+        {
+         "section": "To start",
+         "name": "Homemade croquettes",
+         "description": "Six pieces, ham or mushroom",
+         "price": "9.00",
+         "tag": "Homemade"
+        },
+        {
+         "section": "To start",
+         "name": "Pumpkin soup",
+         "description": "With toasted seeds and olive oil",
+         "price": "6.50",
+         "tag": "Vegan"
+        },
+        {
+         "section": "From the oven",
+         "name": "Margherita pizza",
+         "description": "Tomato, mozzarella and basil",
+         "price": "10.50"
+        },
+        {
+         "section": "From the oven",
+         "name": "Roasted vegetable pizza",
+         "description": "Aubergine, pepper and courgette",
+         "price": "12.00",
+         "tag": "New"
+        },
+        {
+         "section": "From the oven",
+         "name": "Rosemary focaccia",
+         "description": "To share at the table",
+         "price": "5.00"
+        },
+        {
+         "section": "Sweets",
+         "name": "Cheesecake",
+         "description": "Baked, with red berry jam",
+         "price": "5.50"
+        },
+        {
+         "section": "Sweets",
+         "name": "Coffee and a little pastry",
+         "description": "Locally roasted coffee and the sweet of the day",
+         "price": "3.00"
+        },
+        {
+         "section": "Sweets",
+         "name": "Artisan ice cream",
+         "description": "Two scoops of your choice",
+         "price": "4.00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we keep you a table?",
+       "text": "Book for lunch or dinner and we will confirm as soon as we can.",
+       "button_text": "Book a table",
+       "button_link": "/book-a-table"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about-us",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we cook and the principles behind our neighbourhood restaurant. Replace it with your own story."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your place here: who cooks and what sets you apart.\n\nTalk about how you work and what you offer, not about awards you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "What matters to us",
+       "body": "- Fresh, local produce\n- Clear prices on the menu\n- Kind service at the table",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Cosy restaurant dining room with a wood-fired oven"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How a meal with us works",
+       "items": [
+        {
+         "title": "You book",
+         "text": "Write to us with the day, the time and how many you are."
+        },
+        {
+         "title": "We wait for you",
+         "text": "Your table is ready and we tell you about the dishes of the day."
+        },
+        {
+         "title": "You take your time",
+         "text": "Order at your own pace and we bring everything just right."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "FAQ",
+    "seo": {
+     "description": "Sample text: answers to common questions about bookings, groups, allergens and the terrace at our neighbourhood restaurant."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Do I need to book?",
+         "answer": "We recommend booking at weekends. Midweek there is usually room. *Sample text.*"
+        },
+        {
+         "question": "Do you take groups?",
+         "answer": "Yes, with a menu agreed in advance. Tell us how many you are. *Sample text.*"
+        },
+        {
+         "question": "Do you have gluten-free or vegan options?",
+         "answer": "Yes, several dishes. Tell us when you book and we will prepare them with care."
+        },
+        {
+         "question": "Can I come with children?",
+         "answer": "Of course: we have high chairs and a children's menu."
+        },
+        {
+         "question": "Is there a terrace?",
+         "answer": "Yes, open in good weather. You can ask for it when booking."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we keep you a table?",
+       "text": "Book for lunch or dinner and we will confirm as soon as we can.",
+       "button_text": "Book a table",
+       "button_link": "/book-a-table"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "book-a-table",
+    "title": "Book a table",
+    "seo": {
+     "description": "Sample text: book a table for lunch or dinner and check the restaurant opening hours. We confirm as soon as possible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a table",
+       "text": "Tell us the day, the time and how many you are, and we will confirm your booking.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-we-plan-the-weekly-lunch-special",
+    "title": "How we plan the lunch special every week",
+    "excerpt": "Sample blog text: how we choose the seasonal dishes.",
+    "content": "Sample text. Write an article for your customers here, in a friendly tone.\n\n## We start at the market\n\nSay which produce leads each week.\n\n## From stove to table\n\nExplain how the kitchen is organised so everything comes out on time.",
+    "tags": [
+     "kitchen",
+     "seasonal"
+    ]
+   },
+   {
+    "slug": "booking-for-a-group-made-easy",
+    "title": "Booking for a group without the hassle",
+    "excerpt": "Sample text: tips for celebrating with a group meal.",
+    "content": "Sample text. Explain how to organise a group meal.\n\n## In good time\n\nBook a few days ahead and say how many you are.\n\n## An agreed menu\n\nTalk about set menu options and how to flag allergies.",
+    "tags": [
+     "bookings",
+     "groups"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Bucătărie de cartier, cu cuptor pe lemne",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Meniu",
+    "url": "/meniu"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Rezervări",
+    "url": "/rezervari"
+   }
+  ],
+  "cta": {
+   "label": "Rezervă o masă",
+   "url": "/rezervari"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: restaurant de cartier cu mâncare gătită ca acasă, cuptor pe lemne și servire prietenoasă. Rezervă o masă sau vezi meniul."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Restaurant de cartier · Exemplu",
+       "title": "Mâncare bună, ca acasă",
+       "subtitle": "Text de exemplu: spune în două fraze ce gătiți, cum arată localul și de ce revin oamenii în fiecare săptămână.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza abia scoasă din cuptorul pe lemne",
+       "cta_text": "Rezervă o masă",
+       "cta_link": "/rezervari",
+       "cta2_text": "Vezi meniul",
+       "cta2_link": "/meniu"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce ne definește",
+       "title": "O casă de mâncare cu suflet",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Produse de sezon",
+         "text": "Legume și carne de la furnizori din apropiere, într-un meniu care urmează anotimpurile."
+        },
+        {
+         "icon": "heart",
+         "title": "Mâncare gătită ca acasă",
+         "text": "Tocănițe, aluaturi și deserturi făcute zilnic, fără scurtături."
+        },
+        {
+         "icon": "clock",
+         "title": "Meniul zilei",
+         "text": "O variantă rapidă și îngrijită pentru prânzul din timpul săptămânii."
+        },
+        {
+         "icon": "users",
+         "title": "Mese pentru grupuri",
+         "text": "Sărbători și prânzuri de echipă cu meniu stabilit dinainte."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Ani în care deschidem în fiecare dimineață (exemplu)"
+        },
+        {
+         "value": "40",
+         "label": "Preparate în meniu (exemplu)"
+        },
+        {
+         "value": "4,8",
+         "label": "Nota medie dată de clienți (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Casa noastră",
+       "title": "Un local mic, cu cuptorul mereu aprins",
+       "body": "- Aluat fermentat 48 de ore\n- Lemn de stejar pentru cuptor\n- Terasă deschisă din aprilie până în octombrie",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sală primitoare de restaurant cu cuptor pe lemne",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți păstrăm o masă?",
+       "text": "Rezervă pentru prânz sau cină și îți confirmăm cât mai repede.",
+       "button_text": "Rezervă o masă",
+       "button_link": "/rezervari"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "meniu",
+    "title": "Meniu",
+    "seo": {
+     "description": "Text de exemplu: meniul restaurantului cu aperitive, preparate din cuptor și deserturi, cu prețuri clare. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Meniu de exemplu",
+       "title": "Ce găsești azi în bucătărie",
+       "subtitle": "Preparate și prețuri de exemplu: schimbă-le cu ale tale.",
+       "note": "Prețuri de exemplu, TVA inclus. Întreabă-ne despre alergeni și intoleranțe.",
+       "items": [
+        {
+         "section": "Pentru început",
+         "name": "Salată de sezon",
+         "description": "Frunze fragede, brânză proaspătă și dressing cu miere",
+         "price": "8,50"
+        },
+        {
+         "section": "Pentru început",
+         "name": "Crochete de casă",
+         "description": "Șase bucăți, cu șuncă sau ciuperci",
+         "price": "9,00",
+         "tag": "De casă"
+        },
+        {
+         "section": "Pentru început",
+         "name": "Supă cremă de dovleac",
+         "description": "Cu semințe prăjite și ulei de măsline",
+         "price": "6,50",
+         "tag": "Vegan"
+        },
+        {
+         "section": "Din cuptor",
+         "name": "Pizza Margherita",
+         "description": "Roșii, mozzarella și busuioc",
+         "price": "10,50"
+        },
+        {
+         "section": "Din cuptor",
+         "name": "Pizza cu legume coapte",
+         "description": "Vinete, ardei și dovlecel",
+         "price": "12,00",
+         "tag": "Nou"
+        },
+        {
+         "section": "Din cuptor",
+         "name": "Focaccia cu rozmarin",
+         "description": "Pentru împărțit la masă",
+         "price": "5,00"
+        },
+        {
+         "section": "Dulciuri",
+         "name": "Cheesecake",
+         "description": "Copt, cu gem de fructe de pădure",
+         "price": "5,50"
+        },
+        {
+         "section": "Dulciuri",
+         "name": "Cafea și un pateu dulce",
+         "description": "Cafea prăjită local și desertul zilei",
+         "price": "3,00"
+        },
+        {
+         "section": "Dulciuri",
+         "name": "Înghețată artizanală",
+         "description": "Două cupe la alegere",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți păstrăm o masă?",
+       "text": "Rezervă pentru prânz sau cină și îți confirmăm cât mai repede.",
+       "button_text": "Rezervă o masă",
+       "button_link": "/rezervari"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum gătim și ce principii ne ghidează restaurantul de cartier. Înlocuiește-l cu povestea ta."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria localului tău, cine gătește și ce vă face diferiți.\n\nVorbește despre cum lucrați și ce oferiți, nu despre premii pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Ce contează pentru noi",
+       "body": "- Produse proaspete, din zonă\n- Prețuri clare în meniu\n- Servire amabilă la masă",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sală primitoare de restaurant cu cuptor pe lemne"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum decurge o masă la noi",
+       "items": [
+        {
+         "title": "Rezervi",
+         "text": "Scrie-ne ziua, ora și câți sunteți."
+        },
+        {
+         "title": "Te așteptăm",
+         "text": "Masa ta e pregătită și îți povestim preparatele zilei."
+        },
+        {
+         "title": "Te bucuri fără grabă",
+         "text": "Comanzi în ritmul tău, iar noi aducem totul la momentul potrivit."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre rezervări, grupuri, alergeni și terasă la restaurantul nostru de cartier."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Trebuie să rezerv?",
+         "answer": "Recomandăm rezervare în weekend. În timpul săptămânii se găsește de obicei loc. *Text de exemplu.*"
+        },
+        {
+         "question": "Primiți grupuri?",
+         "answer": "Da, cu meniu stabilit dinainte. Spune-ne câți sunteți. *Text de exemplu.*"
+        },
+        {
+         "question": "Aveți variante fără gluten sau vegane?",
+         "answer": "Da, mai multe preparate. Anunță-ne la rezervare și le pregătim cu atenție."
+        },
+        {
+         "question": "Pot veni cu copii?",
+         "answer": "Desigur: avem scaune înalte și meniu pentru copii."
+        },
+        {
+         "question": "Aveți terasă?",
+         "answer": "Da, deschisă când vremea e bună. O poți cere la rezervare."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți păstrăm o masă?",
+       "text": "Rezervă pentru prânz sau cină și îți confirmăm cât mai repede.",
+       "button_text": "Rezervă o masă",
+       "button_link": "/rezervari"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "rezervari",
+    "title": "Rezervări",
+    "seo": {
+     "description": "Text de exemplu: rezervă o masă pentru prânz sau cină și vezi programul restaurantului. Îți confirmăm cât mai repede."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Rezervă o masă",
+       "text": "Spune-ne ziua, ora și câți sunteți, iar noi îți confirmăm rezervarea.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-pregatim-meniul-zilei",
+    "title": "Cum pregătim meniul zilei în fiecare săptămână",
+    "excerpt": "Text de exemplu pentru blog: cum alegem preparatele de sezon.",
+    "content": "Text de exemplu. Scrie aici un articol pentru clienții tăi, pe un ton prietenos.\n\n## Începem la piață\n\nSpune ce produs conduce în fiecare săptămână.\n\n## De la aragaz la masă\n\nExplică cum e organizată bucătăria ca totul să iasă la timp.",
+    "tags": [
+     "bucătărie",
+     "sezon"
+    ]
+   },
+   {
+    "slug": "rezervare-pentru-grupuri",
+    "title": "Cum rezervi pentru un grup fără bătăi de cap",
+    "excerpt": "Text de exemplu: sfaturi pentru o masă festivă în grup.",
+    "content": "Text de exemplu. Explică cum se organizează o masă în grup.\n\n## Din timp\n\nRezervă cu câteva zile înainte și spune câți sunteți.\n\n## Meniu stabilit\n\nVorbește despre meniurile fixe și despre cum se anunță alergiile.",
+    "tags": [
+     "rezervări",
+     "grupuri"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Cuisine de quartier au four à bois",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Carte",
+    "url": "/carte"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Réservations",
+    "url": "/reservations"
+   }
+  ],
+  "cta": {
+   "label": "Réserver une table",
+   "url": "/reservations"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : restaurant de quartier, cuisine maison, four à bois et accueil chaleureux. Réservez une table ou consultez la carte."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Restaurant de quartier · Exemple",
+       "title": "Bonne table, comme à la maison",
+       "subtitle": "Texte d'exemple : dites en deux phrases ce que vous cuisinez, comment est le lieu et pourquoi on y revient chaque semaine.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza tout juste sortie du four à bois",
+       "cta_text": "Réserver une table",
+       "cta_link": "/reservations",
+       "cta2_text": "Voir la carte",
+       "cta2_link": "/carte"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce qui nous définit",
+       "title": "Une maison de repas avec du caractère",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Produits de saison",
+         "text": "Légumes et viandes de fournisseurs proches, et une carte qui suit le calendrier."
+        },
+        {
+         "icon": "heart",
+         "title": "Cuisine maison",
+         "text": "Plats mijotés, pâtes et desserts faits chaque jour, sans raccourcis."
+        },
+        {
+         "icon": "clock",
+         "title": "Formule du jour",
+         "text": "Une option rapide et soignée pour déjeuner en semaine."
+        },
+        {
+         "icon": "users",
+         "title": "Tables de groupe",
+         "text": "Fêtes et repas d'équipe avec un menu convenu à l'avance."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Années à ouvrir chaque matin (exemple)"
+        },
+        {
+         "value": "40",
+         "label": "Plats à la carte (exemple)"
+        },
+        {
+         "value": "4,8",
+         "label": "Note moyenne des clients (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre maison",
+       "title": "Une petite salle, le four toujours allumé",
+       "body": "- Pâte fermentée pendant 48 heures\n- Bois de chêne pour le four\n- Terrasse ouverte d'avril à octobre",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Salle de restaurant chaleureuse avec four à bois",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple d'un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous garde une table ?",
+       "text": "Réservez pour le déjeuner ou le dîner et nous confirmons au plus vite.",
+       "button_text": "Réserver une table",
+       "button_link": "/reservations"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carte",
+    "title": "Carte",
+    "seo": {
+     "description": "Texte d'exemple : carte du restaurant avec entrées, plats du four et desserts, aux prix clairs. Remplacez-la par la vôtre."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Carte d'exemple",
+       "title": "Ce qui mijote en cuisine aujourd'hui",
+       "subtitle": "Plats et prix d'exemple : remplacez-les par les vôtres.",
+       "note": "Prix d'exemple, TVA incluse. Demandez-nous pour les allergènes et les intolérances.",
+       "items": [
+        {
+         "section": "Pour commencer",
+         "name": "Salade de saison",
+         "description": "Jeunes pousses, fromage frais et vinaigrette au miel",
+         "price": "8,50"
+        },
+        {
+         "section": "Pour commencer",
+         "name": "Croquettes maison",
+         "description": "Six pièces, au jambon ou aux champignons",
+         "price": "9,00",
+         "tag": "Maison"
+        },
+        {
+         "section": "Pour commencer",
+         "name": "Velouté de courge",
+         "description": "Aux graines toastées et huile d'olive",
+         "price": "6,50",
+         "tag": "Végétalien"
+        },
+        {
+         "section": "Du four",
+         "name": "Pizza margherita",
+         "description": "Tomate, mozzarella et basilic",
+         "price": "10,50"
+        },
+        {
+         "section": "Du four",
+         "name": "Pizza aux légumes rôtis",
+         "description": "Aubergine, poivron et courgette",
+         "price": "12,00",
+         "tag": "Nouveau"
+        },
+        {
+         "section": "Du four",
+         "name": "Focaccia au romarin",
+         "description": "À partager à table",
+         "price": "5,00"
+        },
+        {
+         "section": "Douceurs",
+         "name": "Gâteau au fromage",
+         "description": "Cuit au four, confiture de fruits rouges",
+         "price": "5,50"
+        },
+        {
+         "section": "Douceurs",
+         "name": "Café et petite pâtisserie",
+         "description": "Café torréfié localement et douceur du jour",
+         "price": "3,00"
+        },
+        {
+         "section": "Douceurs",
+         "name": "Glace artisanale",
+         "description": "Deux boules au choix",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous garde une table ?",
+       "text": "Réservez pour le déjeuner ou le dîner et nous confirmons au plus vite.",
+       "button_text": "Réserver une table",
+       "button_link": "/reservations"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous cuisinons et les principes de notre restaurant de quartier. Remplacez-le par votre histoire."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre établissement, qui cuisine et ce qui vous distingue.\n\nParlez de votre façon de travailler et de ce que vous proposez, pas de récompenses que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Ce qui compte pour nous",
+       "body": "- Produits frais et locaux\n- Des prix clairs sur la carte\n- Un service aimable à table",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Salle de restaurant chaleureuse avec four à bois"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comment se passe un repas chez nous",
+       "items": [
+        {
+         "title": "Vous réservez",
+         "text": "Écrivez-nous avec le jour, l'heure et le nombre de personnes."
+        },
+        {
+         "title": "Nous vous attendons",
+         "text": "Votre table est prête et on vous présente les plats du jour."
+        },
+        {
+         "title": "Vous prenez votre temps",
+         "text": "Commandez à votre rythme et nous apportons tout à point."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions fréquentes sur les réservations, les groupes, les allergènes et la terrasse de notre restaurant."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Faut-il réserver ?",
+         "answer": "Nous conseillons de réserver le week-end. En semaine, il y a souvent de la place. *Texte d'exemple.*"
+        },
+        {
+         "question": "Acceptez-vous les groupes ?",
+         "answer": "Oui, avec un menu convenu à l'avance. Dites-nous combien vous êtes. *Texte d'exemple.*"
+        },
+        {
+         "question": "Avez-vous des options sans gluten ou végétaliennes ?",
+         "answer": "Oui, plusieurs plats. Prévenez-nous à la réservation et nous les préparons avec soin."
+        },
+        {
+         "question": "Peut-on venir avec des enfants ?",
+         "answer": "Bien sûr : nous avons des chaises hautes et un menu enfant."
+        },
+        {
+         "question": "Y a-t-il une terrasse ?",
+         "answer": "Oui, ouverte quand il fait beau. Vous pouvez la demander à la réservation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous garde une table ?",
+       "text": "Réservez pour le déjeuner ou le dîner et nous confirmons au plus vite.",
+       "button_text": "Réserver une table",
+       "button_link": "/reservations"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "reservations",
+    "title": "Réservations",
+    "seo": {
+     "description": "Texte d'exemple : réservez une table pour le déjeuner ou le dîner et consultez les horaires du restaurant. Nous confirmons au plus vite."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver une table",
+       "text": "Indiquez-nous le jour, l'heure et le nombre de personnes, et nous confirmons votre réservation.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "comment-nous-preparons-la-formule-du-jour",
+    "title": "Comment nous préparons la formule du jour chaque semaine",
+    "excerpt": "Texte d'exemple pour le blog : comment nous choisissons les plats de saison.",
+    "content": "Texte d'exemple. Écrivez ici un article pour vos clients, sur un ton chaleureux.\n\n## Tout commence au marché\n\nDites quel produit domine chaque semaine.\n\n## Du fourneau à la table\n\nExpliquez comment la cuisine s'organise pour que tout sorte à l'heure.",
+    "tags": [
+     "cuisine",
+     "saison"
+    ]
+   },
+   {
+    "slug": "reserver-pour-un-groupe",
+    "title": "Réserver pour un groupe sans complications",
+    "excerpt": "Texte d'exemple : conseils pour fêter un repas en groupe.",
+    "content": "Texte d'exemple. Expliquez comment organiser un repas de groupe.\n\n## En avance\n\nRéservez quelques jours avant et indiquez le nombre de personnes.\n\n## Un menu convenu\n\nParlez des menus fixes et de la façon de signaler les allergies.",
+    "tags": [
+     "réservations",
+     "groupes"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Nachbarschaftsküche aus dem Holzofen",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Speisekarte",
+    "url": "/speisekarte"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Reservierung",
+    "url": "/reservierung"
+   }
+  ],
+  "cta": {
+   "label": "Tisch reservieren",
+   "url": "/reservierung"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Restaurant im Viertel mit Hausmannskost, Holzofen und herzlichem Service. Tisch reservieren oder die Speisekarte ansehen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Restaurant im Viertel · Beispiel",
+       "title": "Gutes Essen wie zu Hause",
+       "subtitle": "Beispieltext: Sagen Sie in zwei Sätzen, was Sie kochen, wie das Lokal ist und warum die Gäste jede Woche wiederkommen.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza frisch aus dem Holzofen",
+       "cta_text": "Tisch reservieren",
+       "cta_link": "/reservierung",
+       "cta2_text": "Speisekarte ansehen",
+       "cta2_link": "/speisekarte"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was uns ausmacht",
+       "title": "Ein Wirtshaus mit Seele",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Saisonale Zutaten",
+         "text": "Gemüse und Fleisch von Lieferanten aus der Nähe, mit einer Karte nach dem Kalender."
+        },
+        {
+         "icon": "heart",
+         "title": "Hausgemachte Küche",
+         "text": "Eintöpfe, Teige und Desserts täglich frisch, ohne Abkürzungen."
+        },
+        {
+         "icon": "clock",
+         "title": "Mittagstisch",
+         "text": "Eine schnelle, sorgfältige Option für die Mittagspause unter der Woche."
+        },
+        {
+         "icon": "users",
+         "title": "Tische für Gruppen",
+         "text": "Feiern und Firmenessen mit vorab vereinbartem Menü."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Jahre, in denen wir jeden Morgen öffnen (Beispiel)"
+        },
+        {
+         "value": "40",
+         "label": "Gerichte auf der Karte (Beispiel)"
+        },
+        {
+         "value": "4,8",
+         "label": "Durchschnittliche Gästebewertung (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Unser Haus",
+       "title": "Ein kleines Lokal mit immer brennendem Ofen",
+       "body": "- Teig mit 48 Stunden Gehzeit\n- Eichenholz für den Ofen\n- Terrasse von April bis Oktober geöffnet",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Gemütlicher Gastraum mit Holzofen",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetzen Sie ihn durch echte Bewertungen Ihrer Gäste, mit deren Erlaubnis.",
+         "name": "Beispielgast",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen einen Tisch freihalten?",
+       "text": "Reservieren Sie fürs Mittag- oder Abendessen, wir bestätigen so schnell wie möglich.",
+       "button_text": "Tisch reservieren",
+       "button_link": "/reservierung"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "speisekarte",
+    "title": "Speisekarte",
+    "seo": {
+     "description": "Beispieltext: Speisekarte des Restaurants mit Vorspeisen, Ofengerichten und Desserts zu klaren Preisen. Ersetzen Sie sie durch Ihre eigene."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Beispielkarte",
+       "title": "Was heute aus der Küche kommt",
+       "subtitle": "Beispielgerichte und -preise: Ersetzen Sie sie durch Ihre eigenen.",
+       "note": "Beispielpreise inklusive Mehrwertsteuer. Fragen Sie uns nach Allergenen und Unverträglichkeiten.",
+       "items": [
+        {
+         "section": "Zum Start",
+         "name": "Saisonsalat",
+         "description": "Zarte Blätter, Frischkäse und Honig-Vinaigrette",
+         "price": "8,50"
+        },
+        {
+         "section": "Zum Start",
+         "name": "Hausgemachte Kroketten",
+         "description": "Sechs Stück, mit Schinken oder Pilzen",
+         "price": "9,00",
+         "tag": "Hausgemacht"
+        },
+        {
+         "section": "Zum Start",
+         "name": "Kürbiscremesuppe",
+         "description": "Mit gerösteten Kernen und Olivenöl",
+         "price": "6,50",
+         "tag": "Vegan"
+        },
+        {
+         "section": "Aus dem Ofen",
+         "name": "Pizza Margherita",
+         "description": "Tomate, Mozzarella und Basilikum",
+         "price": "10,50"
+        },
+        {
+         "section": "Aus dem Ofen",
+         "name": "Pizza mit Ofengemüse",
+         "description": "Aubergine, Paprika und Zucchini",
+         "price": "12,00",
+         "tag": "Neu"
+        },
+        {
+         "section": "Aus dem Ofen",
+         "name": "Rosmarin-Focaccia",
+         "description": "Zum Teilen am Tisch",
+         "price": "5,00"
+        },
+        {
+         "section": "Süßes",
+         "name": "Käsekuchen",
+         "description": "Gebacken, mit Waldbeerenmarmelade",
+         "price": "5,50"
+        },
+        {
+         "section": "Süßes",
+         "name": "Kaffee und Gebäck",
+         "description": "Lokal gerösteter Kaffee und Süßes des Tages",
+         "price": "3,00"
+        },
+        {
+         "section": "Süßes",
+         "name": "Handwerkliches Eis",
+         "description": "Zwei Kugeln nach Wahl",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen einen Tisch freihalten?",
+       "text": "Reservieren Sie fürs Mittag- oder Abendessen, wir bestätigen so schnell wie möglich.",
+       "button_text": "Tisch reservieren",
+       "button_link": "/reservierung"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: Wer wir sind, wie wir kochen und welche Grundsätze unser Restaurant im Viertel leiten. Ersetzen Sie ihn durch Ihre Geschichte."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Lokals, wer kocht und was Sie auszeichnet.\n\nSprechen Sie darüber, wie Sie arbeiten und was Sie bieten, nicht über Auszeichnungen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Was uns wichtig ist",
+       "body": "- Frische Zutaten aus der Region\n- Klare Preise auf der Karte\n- Freundlicher Service am Tisch",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Gemütlicher Gastraum mit Holzofen"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So läuft ein Essen bei uns ab",
+       "items": [
+        {
+         "title": "Sie reservieren",
+         "text": "Schreiben Sie uns Tag, Uhrzeit und die Zahl der Personen."
+        },
+        {
+         "title": "Wir erwarten Sie",
+         "text": "Ihr Tisch ist bereit und wir stellen Ihnen die Tagesgerichte vor."
+        },
+        {
+         "title": "Sie genießen in Ruhe",
+         "text": "Bestellen Sie in Ihrem Tempo, wir bringen alles auf den Punkt."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "FAQ",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Reservierung, Gruppen, Allergenen und Terrasse in unserem Restaurant im Viertel."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Muss ich reservieren?",
+         "answer": "Am Wochenende empfehlen wir eine Reservierung. Unter der Woche ist meist Platz. *Beispieltext.*"
+        },
+        {
+         "question": "Nehmen Sie Gruppen auf?",
+         "answer": "Ja, mit vorab vereinbartem Menü. Sagen Sie uns, wie viele Sie sind. *Beispieltext.*"
+        },
+        {
+         "question": "Gibt es glutenfreie oder vegane Gerichte?",
+         "answer": "Ja, mehrere Gerichte. Sagen Sie uns bei der Reservierung Bescheid, wir bereiten sie sorgfältig zu."
+        },
+        {
+         "question": "Kann ich mit Kindern kommen?",
+         "answer": "Selbstverständlich: Wir haben Hochstühle und ein Kindermenü."
+        },
+        {
+         "question": "Gibt es eine Terrasse?",
+         "answer": "Ja, bei schönem Wetter geöffnet. Sie können sie bei der Reservierung wünschen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen einen Tisch freihalten?",
+       "text": "Reservieren Sie fürs Mittag- oder Abendessen, wir bestätigen so schnell wie möglich.",
+       "button_text": "Tisch reservieren",
+       "button_link": "/reservierung"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "reservierung",
+    "title": "Reservierung",
+    "seo": {
+     "description": "Beispieltext: Reservieren Sie einen Tisch fürs Mittag- oder Abendessen und sehen Sie die Öffnungszeiten. Wir bestätigen schnellstmöglich."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Tisch reservieren",
+       "text": "Nennen Sie uns Tag, Uhrzeit und Personenzahl, dann bestätigen wir Ihre Reservierung.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispiel-Öffnungszeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "so-planen-wir-den-mittagstisch",
+    "title": "So planen wir den Mittagstisch jede Woche",
+    "excerpt": "Beispieltext für den Blog: wie wir die saisonalen Gerichte auswählen.",
+    "content": "Beispieltext. Schreiben Sie hier einen Artikel für Ihre Gäste, in freundlichem Ton.\n\n## Wir beginnen auf dem Markt\n\nSagen Sie, welche Zutat jede Woche den Ton angibt.\n\n## Vom Herd auf den Tisch\n\nErklären Sie, wie die Küche organisiert ist, damit alles pünktlich fertig wird.",
+    "tags": [
+     "küche",
+     "saison"
+    ]
+   },
+   {
+    "slug": "gruppen-einfach-reservieren",
+    "title": "Gruppenreservierung ohne Stress",
+    "excerpt": "Beispieltext: Tipps für ein Essen in großer Runde.",
+    "content": "Beispieltext. Erklären Sie, wie man ein Gruppenessen organisiert.\n\n## Rechtzeitig\n\nReservieren Sie einige Tage vorher und nennen Sie die Personenzahl.\n\n## Vereinbartes Menü\n\nSprechen Sie über feste Menüs und darüber, wie man Allergien angibt.",
+    "tags": [
+     "reservierung",
+     "gruppen"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Cucina di quartiere con forno a legna",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Menu",
+    "url": "/menu"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Prenotazioni",
+    "url": "/prenotazioni"
+   }
+  ],
+  "cta": {
+   "label": "Prenota un tavolo",
+   "url": "/prenotazioni"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: ristorante di quartiere con cucina casalinga, forno a legna e accoglienza calda. Prenota un tavolo o guarda il menu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Ristorante di quartiere · Esempio",
+       "title": "Buona tavola, come a casa",
+       "subtitle": "Testo di esempio: racconta in due frasi cosa cucinate, com'è il locale e perché la gente torna ogni settimana.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza appena uscita dal forno a legna",
+       "cta_text": "Prenota un tavolo",
+       "cta_link": "/prenotazioni",
+       "cta2_text": "Vedi il menu",
+       "cta2_link": "/menu"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa ci distingue",
+       "title": "Una trattoria con l'anima",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Prodotti di stagione",
+         "text": "Verdure e carni di fornitori vicini e un menu che segue il calendario."
+        },
+        {
+         "icon": "heart",
+         "title": "Cucina casalinga",
+         "text": "Brasati, impasti e dolci fatti ogni giorno, senza scorciatoie."
+        },
+        {
+         "icon": "clock",
+         "title": "Menu del giorno",
+         "text": "Un'opzione veloce e curata per il pranzo in settimana."
+        },
+        {
+         "icon": "users",
+         "title": "Tavoli per gruppi",
+         "text": "Feste e pranzi aziendali con menu concordato."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Anni di aperture ogni mattina (esempio)"
+        },
+        {
+         "value": "40",
+         "label": "Piatti nel menu (esempio)"
+        },
+        {
+         "value": "4,8",
+         "label": "Valutazione media dei clienti (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La nostra casa",
+       "title": "Un locale piccolo con il forno sempre acceso",
+       "body": "- Impasti lievitati per 48 ore\n- Legna di quercia per il forno\n- Dehors aperto da aprile a ottobre",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala accogliente di un ristorante con forno a legna",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Recensioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di una recensione: sostituiscilo con recensioni reali dei tuoi clienti, con il loro permesso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti teniamo un tavolo?",
+       "text": "Prenota per pranzo o cena e ti confermiamo il prima possibile.",
+       "button_text": "Prenota un tavolo",
+       "button_link": "/prenotazioni"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "menu",
+    "title": "Menu",
+    "seo": {
+     "description": "Testo di esempio: menu del ristorante con antipasti, piatti del forno e dolci, con prezzi chiari. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Menu di esempio",
+       "title": "Cosa c'è oggi in cucina",
+       "subtitle": "Piatti e prezzi di esempio: cambiali con i tuoi.",
+       "note": "Prezzi di esempio, IVA inclusa. Chiedici di allergeni e intolleranze.",
+       "items": [
+        {
+         "section": "Per iniziare",
+         "name": "Insalata di stagione",
+         "description": "Foglie tenere, formaggio fresco e vinaigrette al miele",
+         "price": "8,50"
+        },
+        {
+         "section": "Per iniziare",
+         "name": "Crocchette fatte in casa",
+         "description": "Sei pezzi, al prosciutto o ai funghi",
+         "price": "9,00",
+         "tag": "Fatto in casa"
+        },
+        {
+         "section": "Per iniziare",
+         "name": "Vellutata di zucca",
+         "description": "Con semi tostati e olio d'oliva",
+         "price": "6,50",
+         "tag": "Vegano"
+        },
+        {
+         "section": "Dal forno",
+         "name": "Pizza margherita",
+         "description": "Pomodoro, mozzarella e basilico",
+         "price": "10,50"
+        },
+        {
+         "section": "Dal forno",
+         "name": "Pizza con verdure arrosto",
+         "description": "Melanzane, peperoni e zucchine",
+         "price": "12,00",
+         "tag": "Novità"
+        },
+        {
+         "section": "Dal forno",
+         "name": "Focaccia al rosmarino",
+         "description": "Da condividere a tavola",
+         "price": "5,00"
+        },
+        {
+         "section": "Dolci",
+         "name": "Torta al formaggio",
+         "description": "Cotta al forno, con confettura di frutti rossi",
+         "price": "5,50"
+        },
+        {
+         "section": "Dolci",
+         "name": "Caffè e pasticcino",
+         "description": "Caffè tostato localmente e dolce del giorno",
+         "price": "3,00"
+        },
+        {
+         "section": "Dolci",
+         "name": "Gelato artigianale",
+         "description": "Due palline a scelta",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti teniamo un tavolo?",
+       "text": "Prenota per pranzo o cena e ti confermiamo il prima possibile.",
+       "button_text": "Prenota un tavolo",
+       "button_link": "/prenotazioni"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come cuciniamo e i principi che guidano il nostro ristorante di quartiere. Sostituiscilo con la tua storia."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo locale, chi cucina e cosa vi rende diversi.\n\nParla di come lavorate e di ciò che offrite, non di premi che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Ciò che ci sta a cuore",
+       "body": "- Prodotti freschi e locali\n- Prezzi chiari nel menu\n- Un servizio cordiale al tavolo",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala accogliente di un ristorante con forno a legna"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come funziona un pranzo da noi",
+       "items": [
+        {
+         "title": "Prenoti",
+         "text": "Scrivici il giorno, l'ora e quanti siete."
+        },
+        {
+         "title": "Ti aspettiamo",
+         "text": "Il tavolo è pronto e ti raccontiamo i piatti del giorno."
+        },
+        {
+         "title": "Ti godi il pasto",
+         "text": "Ordini con calma e portiamo tutto al punto giusto."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su prenotazioni, gruppi, allergeni e dehors nel nostro ristorante di quartiere."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Serve prenotare?",
+         "answer": "Consigliamo di prenotare nel fine settimana. In settimana di solito c'è posto. *Testo di esempio.*"
+        },
+        {
+         "question": "Accettate gruppi?",
+         "answer": "Sì, con menu concordato in anticipo. Dicci quanti siete. *Testo di esempio.*"
+        },
+        {
+         "question": "Avete opzioni senza glutine o vegane?",
+         "answer": "Sì, diversi piatti. Avvisaci quando prenoti e li prepariamo con cura."
+        },
+        {
+         "question": "Si può venire con i bambini?",
+         "answer": "Certo: abbiamo seggioloni e un menu per bambini."
+        },
+        {
+         "question": "C'è un dehors?",
+         "answer": "Sì, aperto col bel tempo. Puoi chiederlo al momento della prenotazione."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti teniamo un tavolo?",
+       "text": "Prenota per pranzo o cena e ti confermiamo il prima possibile.",
+       "button_text": "Prenota un tavolo",
+       "button_link": "/prenotazioni"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "prenotazioni",
+    "title": "Prenotazioni",
+    "seo": {
+     "description": "Testo di esempio: prenota un tavolo per pranzo o cena e consulta gli orari del ristorante. Ti confermiamo il prima possibile."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota un tavolo",
+       "text": "Dicci il giorno, l'ora e quanti siete e ti confermiamo la prenotazione.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "come-prepariamo-il-menu-del-giorno",
+    "title": "Come prepariamo il menu del giorno ogni settimana",
+    "excerpt": "Testo di esempio per il blog: come scegliamo i piatti di stagione.",
+    "content": "Testo di esempio. Scrivi qui un articolo per i tuoi clienti, con un tono cordiale.\n\n## Si parte dal mercato\n\nRaccontare quale prodotto guida ogni settimana.\n\n## Dai fornelli al tavolo\n\nSpiega come si organizza la cucina perché tutto esca in orario.",
+    "tags": [
+     "cucina",
+     "stagione"
+    ]
+   },
+   {
+    "slug": "prenotare-per-un-gruppo",
+    "title": "Prenotare per un gruppo senza complicazioni",
+    "excerpt": "Testo di esempio: consigli per festeggiare con un pranzo di gruppo.",
+    "content": "Testo di esempio. Spiega come organizzare un pranzo di gruppo.\n\n## Con anticipo\n\nPrenota qualche giorno prima e indica quanti siete.\n\n## Menu concordato\n\nParla dei menu fissi e di come segnalare le allergie.",
+    "tags": [
+     "prenotazioni",
+     "gruppi"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Cozinha de bairro com forno a lenha",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Ementa",
+    "url": "/ementa"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Reservas",
+    "url": "/reservas"
+   }
+  ],
+  "cta": {
+   "label": "Reservar mesa",
+   "url": "/reservas"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: restaurante de bairro com comida caseira, forno a lenha e atendimento próximo. Reserve mesa ou consulte a ementa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Restaurante de bairro · Exemplo",
+       "title": "Boa mesa, como em casa",
+       "subtitle": "Texto de exemplo: diga em duas frases o que cozinham, como é o espaço e por que as pessoas voltam todas as semanas.",
+       "image": "/theme-assets/calido/samples/pizza-horno.webp",
+       "image_alt": "Pizza acabada de sair do forno a lenha",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/reservas",
+       "cta2_text": "Ver a ementa",
+       "cta2_link": "/ementa"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que nos define",
+       "title": "Uma casa de pasto com alma",
+       "items": [
+        {
+         "icon": "leaf",
+         "title": "Produto da época",
+         "text": "Legumes e carnes de fornecedores próximos e uma ementa que segue o calendário."
+        },
+        {
+         "icon": "heart",
+         "title": "Cozinha caseira",
+         "text": "Estufados, massas e sobremesas feitos todos os dias, sem atalhos."
+        },
+        {
+         "icon": "clock",
+         "title": "Prato do dia",
+         "text": "Uma opção rápida e cuidada para o almoço durante a semana."
+        },
+        {
+         "icon": "users",
+         "title": "Mesas para grupos",
+         "text": "Festas e almoços de empresa com ementa combinada."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Anos a abrir todas as manhãs (exemplo)"
+        },
+        {
+         "value": "40",
+         "label": "Pratos na ementa (exemplo)"
+        },
+        {
+         "value": "4,8",
+         "label": "Avaliação média dos clientes (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A nossa casa",
+       "title": "Um espaço pequeno com o forno sempre aceso",
+       "body": "- Massas fermentadas durante 48 horas\n- Lenha de carvalho para o forno\n- Esplanada aberta de abril a outubro",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala acolhedora de restaurante com forno a lenha",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Guardamos-lhe uma mesa?",
+       "text": "Reserve para almoço ou jantar e confirmamos o mais depressa possível.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ementa",
+    "title": "Ementa",
+    "seo": {
+     "description": "Texto de exemplo: ementa do restaurante com entradas, pratos do forno e sobremesas, com preços claros. Substitua-a pela sua."
+    },
+    "blocks": [
+     {
+      "type": "pricelist",
+      "data": {
+       "eyebrow": "Ementa de exemplo",
+       "title": "O que há hoje na cozinha",
+       "subtitle": "Pratos e preços de exemplo: altere-os para os seus.",
+       "note": "Preços de exemplo, IVA incluído. Pergunte-nos por alergénios e intolerâncias.",
+       "items": [
+        {
+         "section": "Para começar",
+         "name": "Salada da época",
+         "description": "Folhas tenras, queijo fresco e vinagrete de mel",
+         "price": "8,50"
+        },
+        {
+         "section": "Para começar",
+         "name": "Croquetes caseiros",
+         "description": "Seis unidades, de fiambre ou de cogumelos",
+         "price": "9,00",
+         "tag": "Caseiro"
+        },
+        {
+         "section": "Para começar",
+         "name": "Creme de abóbora",
+         "description": "Com sementes torradas e azeite",
+         "price": "6,50",
+         "tag": "Vegano"
+        },
+        {
+         "section": "Do forno",
+         "name": "Pizza margherita",
+         "description": "Tomate, mozarela e manjericão",
+         "price": "10,50"
+        },
+        {
+         "section": "Do forno",
+         "name": "Pizza de legumes assados",
+         "description": "Beringela, pimento e curgete",
+         "price": "12,00",
+         "tag": "Novo"
+        },
+        {
+         "section": "Do forno",
+         "name": "Focaccia de alecrim",
+         "description": "Para partilhar à mesa",
+         "price": "5,00"
+        },
+        {
+         "section": "Doces",
+         "name": "Tarte de queijo",
+         "description": "Cozida no forno, com doce de frutos vermelhos",
+         "price": "5,50"
+        },
+        {
+         "section": "Doces",
+         "name": "Café e pastel",
+         "description": "Café torrado localmente e doce do dia",
+         "price": "3,00"
+        },
+        {
+         "section": "Doces",
+         "name": "Gelado artesanal",
+         "description": "Duas bolas à escolha",
+         "price": "4,00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Guardamos-lhe uma mesa?",
+       "text": "Reserve para almoço ou jantar e confirmamos o mais depressa possível.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como cozinhamos e os princípios do nosso restaurante de bairro. Substitua-o pela sua história."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu espaço, quem cozinha e o que vos distingue.\n\nFale de como trabalham e do que oferecem, não de prémios que não possa comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "O que nos importa",
+       "body": "- Produto fresco e de proximidade\n- Preços claros na ementa\n- Um atendimento simpático à mesa",
+       "image": "/theme-assets/calido/samples/sala-restaurante.webp",
+       "image_alt": "Sala acolhedora de restaurante com forno a lenha"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como é uma refeição connosco",
+       "items": [
+        {
+         "title": "Reserva",
+         "text": "Escreva-nos o dia, a hora e quantos são."
+        },
+        {
+         "title": "Esperamos por si",
+         "text": "A sua mesa está pronta e apresentamos-lhe os pratos do dia."
+        },
+        {
+         "title": "Desfruta sem pressa",
+         "text": "Peça com calma e trazemos tudo no ponto certo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre reservas, grupos, alergénios e esplanada no nosso restaurante de bairro."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "É preciso reservar?",
+         "answer": "Recomendamos reservar ao fim de semana. Durante a semana costuma haver lugar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Aceitam grupos?",
+         "answer": "Sim, com ementa combinada previamente. Diga-nos quantos são. *Texto de exemplo.*"
+        },
+        {
+         "question": "Têm opções sem glúten ou veganas?",
+         "answer": "Sim, vários pratos. Avise ao reservar e preparamos com cuidado."
+        },
+        {
+         "question": "Posso ir com crianças?",
+         "answer": "Claro: temos cadeiras de bebé e uma ementa infantil."
+        },
+        {
+         "question": "Têm esplanada?",
+         "answer": "Sim, aberta com bom tempo. Pode pedi-la ao reservar."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Guardamos-lhe uma mesa?",
+       "text": "Reserve para almoço ou jantar e confirmamos o mais depressa possível.",
+       "button_text": "Reservar mesa",
+       "button_link": "/reservas"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "reservas",
+    "title": "Reservas",
+    "seo": {
+     "description": "Texto de exemplo: reserve mesa para almoço ou jantar e consulte o horário do restaurante. Confirmamos o mais depressa possível."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar mesa",
+       "text": "Diga-nos o dia, a hora e quantos são, e confirmamos a sua reserva.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "ma-ju",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:00"
+        },
+        {
+         "days": "vi,sa",
+         "opens": "13:00",
+         "closes": "16:00",
+         "opens2": "20:00",
+         "closes2": "23:30"
+        },
+        {
+         "days": "do",
+         "opens": "13:00",
+         "closes": "17:00"
+        },
+        {
+         "days": "lu",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-preparamos-o-prato-do-dia",
+    "title": "Como preparamos o prato do dia todas as semanas",
+    "excerpt": "Texto de exemplo para o blogue: como escolhemos os pratos da época.",
+    "content": "Texto de exemplo. Escreva aqui um artigo para os seus clientes, num tom próximo.\n\n## Começamos no mercado\n\nDiga que produto manda em cada semana.\n\n## Do fogão à mesa\n\nExplique como a cozinha se organiza para que tudo saia a horas.",
+    "tags": [
+     "cozinha",
+     "época"
+    ]
+   },
+   {
+    "slug": "reservar-para-um-grupo",
+    "title": "Reservar para um grupo sem complicações",
+    "excerpt": "Texto de exemplo: dicas para celebrar com um almoço em grupo.",
+    "content": "Texto de exemplo. Explique como organizar uma refeição em grupo.\n\n## Com antecedência\n\nReserve com alguns dias e indique quantos são.\n\n## Ementa combinada\n\nFale das ementas fixas e de como avisar sobre alergias.",
+    "tags": [
+     "reservas",
+     "grupos"
+    ]
+   }
+  ]
+ }
+}

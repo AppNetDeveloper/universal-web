@@ -1,0 +1,2803 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Corporativo). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Instalaciones y mantenimiento industrial",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "La empresa",
+    "url": "/la-empresa"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Solicitar presupuesto",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: empresa de instalaciones y mantenimiento industrial para plantas y naves, con equipos propios y respuesta rápida ante averías."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Instalaciones y mantenimiento industrial · Ejemplo",
+       "title": "Tu planta en marcha, con instalaciones fiables y mantenimiento a medida",
+       "subtitle": "Texto de ejemplo: explica en una frase qué instalas y mantienes, para qué sectores trabajas y cómo respondéis cuando una línea se para.",
+       "cta_text": "Solicitar presupuesto",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Qué hacemos",
+       "title": "Servicios para que la producción no se detenga",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalaciones eléctricas",
+         "text": "Cuadros, canalizaciones y distribución en baja tensión para naves y plantas."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatización y control",
+         "text": "Autómatas, sensores y cuadros de mando para tus líneas de producción."
+        },
+        {
+         "icon": "shield",
+         "title": "Mantenimiento preventivo",
+         "text": "Planes de revisión periódica para evitar paradas y alargar la vida de los equipos."
+        },
+        {
+         "icon": "clock",
+         "title": "Atención de averías",
+         "text": "Equipo de guardia para intervenir con rapidez cuando una máquina se detiene."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Años de experiencia (ejemplo)"
+        },
+        {
+         "value": "35",
+         "label": "Técnicos en plantilla (ejemplo)"
+        },
+        {
+         "value": "4 h",
+         "label": "Respuesta ante una avería urgente (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita técnica",
+         "text": "Revisamos la instalación contigo y recogemos lo que necesitas."
+        },
+        {
+         "title": "Propuesta cerrada",
+         "text": "Alcance, plazos y presupuesto por escrito antes de empezar."
+        },
+        {
+         "title": "Ejecución y entrega",
+         "text": "Obra coordinada con tu producción y documentación final completa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Por qué elegirnos",
+       "title": "Un equipo propio y un responsable para cada planta",
+       "body": "- Técnicos propios, sin subcontratar lo esencial\n- Trabajos planificados para no interrumpir tu producción\n- Documentación y certificados al terminar",
+       "button_text": "Conocer la empresa",
+       "button_link": "/la-empresa"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Responsable de planta · Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas una instalación o un plan de mantenimiento?",
+       "text": "Cuéntanos qué necesitas y te enviamos una propuesta clara.",
+       "button_text": "Solicitar presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: servicios de instalación, automatización y mantenimiento industrial para fábricas y naves, con planes preventivos y atención de averías."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus áreas de trabajo con palabras que entienda cualquier responsable de compras o de planta.",
+       "cta_text": "Solicitar presupuesto",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalaciones eléctricas",
+         "text": "Baja tensión, cuadros y alumbrado industrial."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatización",
+         "text": "Autómatas, sensores y control de procesos."
+        },
+        {
+         "icon": "check",
+         "title": "Mantenimiento preventivo",
+         "text": "Revisiones periódicas y registro de intervenciones."
+        },
+        {
+         "icon": "route",
+         "title": "Tuberías y fluidos",
+         "text": "Redes de aire comprimido, agua y fluidos de proceso."
+        },
+        {
+         "icon": "clock",
+         "title": "Averías urgentes",
+         "text": "Servicio de guardia para paradas de producción."
+        },
+        {
+         "icon": "shield",
+         "title": "Seguridad y normativa",
+         "text": "Inspecciones, certificados y adecuación a la normativa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Importes de ejemplo: sustitúyelos por tus tarifas.",
+       "items": [
+        {
+         "section": "Mantenimiento",
+         "name": "Visita de diagnóstico",
+         "price": "gratuita"
+        },
+        {
+         "section": "Mantenimiento",
+         "name": "Hora de técnico",
+         "price": "desde 55 €"
+        },
+        {
+         "section": "Instalaciones",
+         "name": "Revisión de cuadro eléctrico",
+         "price": "desde 180 €"
+        },
+        {
+         "section": "Instalaciones",
+         "name": "Certificado de instalación",
+         "price": "desde 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas una instalación o un plan de mantenimiento?",
+       "text": "Cuéntanos qué necesitas y te enviamos una propuesta clara.",
+       "button_text": "Solicitar presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "la-empresa",
+    "title": "La empresa",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo organizamos el trabajo en planta y qué compromisos asumimos con los clientes industriales de nuestra empresa."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu empresa, quién forma el equipo y qué sectores atiendes.\n\nHabla de cómo trabajáis y de vuestros compromisos, no de resultados que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros compromisos",
+       "body": "- Seguridad laboral antes que prisa\n- Plazos y presupuesto por escrito\n- Un responsable fijo por planta"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Visita técnica",
+         "text": "Revisamos la instalación contigo y recogemos lo que necesitas."
+        },
+        {
+         "title": "Propuesta cerrada",
+         "text": "Alcance, plazos y presupuesto por escrito antes de empezar."
+        },
+        {
+         "title": "Ejecución y entrega",
+         "text": "Obra coordinada con tu producción y documentación final completa."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre presupuestos, plazos, trabajos con la planta en marcha y atención de averías fuera de horario."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo se prepara un presupuesto?",
+         "answer": "Tras una visita técnica enviamos una propuesta por escrito. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Podéis trabajar sin parar la producción?",
+         "answer": "Planificamos las intervenciones en las ventanas que nos indiques."
+        },
+        {
+         "question": "¿Atendéis averías fuera de horario?",
+         "answer": "Indica aquí si tienes servicio de guardia. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Entregáis documentación al terminar?",
+         "answer": "Sí: planos actualizados, certificados e informe de la intervención."
+        },
+        {
+         "question": "¿Ofrecéis contratos de mantenimiento?",
+         "answer": "Sí, con visitas periódicas y un registro de cada intervención."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Necesitas una instalación o un plan de mantenimiento?",
+       "text": "Cuéntanos qué necesitas y te enviamos una propuesta clara.",
+       "button_text": "Solicitar presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: solicita un presupuesto o cuéntanos tu avería y te responderemos lo antes posible dentro de nuestro horario de atención."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Solicitar presupuesto",
+       "text": "Cuéntanos qué necesitas y te proponemos una visita técnica.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "mantenimiento-preventivo-planta",
+    "title": "Mantenimiento preventivo: por dónde empezar",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y práctica.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Inventario de equipos\n\nListar las máquinas y su criticidad es el primer paso.\n\n## Frecuencia de revisión\n\nCada equipo tiene sus propias necesidades: consulta siempre las indicaciones del fabricante.",
+    "tags": [
+     "mantenimiento",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "auditoria-instalacion-electrica",
+    "title": "Cuándo conviene revisar la instalación eléctrica de una nave",
+    "excerpt": "Texto de ejemplo: señales que aconsejan una revisión.",
+    "content": "Texto de ejemplo. Explica en qué consiste una revisión eléctrica y cuándo tiene sentido.\n\n## Señales de aviso\n\nDisparos frecuentes, calentamientos o equipos nuevos que sobrecargan la línea.\n\n## Qué incluye\n\nInspección, medidas y un informe con las acciones recomendadas.",
+    "tags": [
+     "instalaciones"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Industrial installation and maintenance",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "About us",
+    "url": "/about-us"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a quote",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: industrial installation and maintenance company for plants and factories, with in-house crews and a fast response to breakdowns."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Industrial installation and maintenance · Example",
+       "title": "Keep your plant running with reliable installations and tailored maintenance",
+       "subtitle": "Sample text: explain in one sentence what you install and maintain, which sectors you serve and how you respond when a line stops.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we do",
+       "title": "Services that keep production moving",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Electrical installations",
+         "text": "Panels, cable routes and low-voltage distribution for factories and plants."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automation and control",
+         "text": "Controllers, sensors and dashboards for your production lines."
+        },
+        {
+         "icon": "shield",
+         "title": "Preventive maintenance",
+         "text": "Scheduled inspection plans to avoid stoppages and extend equipment life."
+        },
+        {
+         "icon": "clock",
+         "title": "Breakdown response",
+         "text": "An on-call team ready to step in quickly when a machine stops."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Years of experience (example)"
+        },
+        {
+         "value": "35",
+         "label": "Technicians on staff (example)"
+        },
+        {
+         "value": "4 h",
+         "label": "Response to an urgent breakdown (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Site visit",
+         "text": "We review the installation with you and note what you need."
+        },
+        {
+         "title": "Fixed proposal",
+         "text": "Scope, schedule and price in writing before we start."
+        },
+        {
+         "title": "Delivery and handover",
+         "text": "Work coordinated with your production and full final documentation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Why choose us",
+       "title": "An in-house team and one point of contact for each plant",
+       "body": "- In-house technicians, no outsourcing of the essentials\n- Planned work that avoids interrupting production\n- Documentation and certificates on completion",
+       "button_text": "About us",
+       "button_link": "/about-us"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Testimonials",
+       "items": [
+        {
+         "quote": "Sample testimonial text: replace it with real opinions from your clients, with their permission.",
+         "name": "Sample client",
+         "role": "Plant manager · Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an installation or a maintenance plan?",
+       "text": "Tell us what you need and we will send you a clear proposal.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: installation, automation and industrial maintenance services for factories and plants, with preventive plans and breakdown response."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your areas of work in words that any purchasing or plant manager will understand.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Electrical installations",
+         "text": "Low voltage, panels and industrial lighting."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automation",
+         "text": "Controllers, sensors and process control."
+        },
+        {
+         "icon": "check",
+         "title": "Preventive maintenance",
+         "text": "Scheduled inspections and a log of every intervention."
+        },
+        {
+         "icon": "route",
+         "title": "Piping and fluids",
+         "text": "Compressed air, water and process fluid networks."
+        },
+        {
+         "icon": "clock",
+         "title": "Urgent breakdowns",
+         "text": "On-call service for production stoppages."
+        },
+        {
+         "icon": "shield",
+         "title": "Safety and compliance",
+         "text": "Inspections, certificates and regulatory alignment."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative rates",
+       "note": "Sample amounts: replace them with your own rates.",
+       "items": [
+        {
+         "section": "Maintenance",
+         "name": "Diagnostic visit",
+         "price": "free"
+        },
+        {
+         "section": "Maintenance",
+         "name": "Technician hour",
+         "price": "from €55"
+        },
+        {
+         "section": "Installations",
+         "name": "Electrical panel check",
+         "price": "from €180"
+        },
+        {
+         "section": "Installations",
+         "name": "Installation certificate",
+         "price": "from €250"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an installation or a maintenance plan?",
+       "text": "Tell us what you need and we will send you a clear proposal.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about-us",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we organise work on site and the commitments we make to the industrial clients of our company."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your company here, who is on the team and which sectors you serve.\n\nTalk about how you work and what you commit to, not about results you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our commitments",
+       "body": "- Workplace safety before speed\n- Schedules and quotes in writing\n- A dedicated contact for each plant"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "Site visit",
+         "text": "We review the installation with you and note what you need."
+        },
+        {
+         "title": "Fixed proposal",
+         "text": "Scope, schedule and price in writing before we start."
+        },
+        {
+         "title": "Delivery and handover",
+         "text": "Work coordinated with your production and full final documentation."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "FAQ",
+    "seo": {
+     "description": "Sample text: answers to common questions about quotes, lead times, working while the plant is running and out-of-hours breakdown support."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How is a quote prepared?",
+         "answer": "After a site visit we send a written proposal. *Sample text.*"
+        },
+        {
+         "question": "Can you work without stopping production?",
+         "answer": "We plan interventions in the windows you tell us."
+        },
+        {
+         "question": "Do you handle out-of-hours breakdowns?",
+         "answer": "State here whether you offer on-call service. *Sample text.*"
+        },
+        {
+         "question": "Do you hand over documentation when finished?",
+         "answer": "Yes: updated drawings, certificates and an intervention report."
+        },
+        {
+         "question": "Do you offer maintenance contracts?",
+         "answer": "Yes, with periodic visits and a record of each intervention."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Need an installation or a maintenance plan?",
+       "text": "Tell us what you need and we will send you a clear proposal.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a quote or tell us about your breakdown and we will reply as soon as possible during our working hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a quote",
+       "text": "Tell us what you need and we will propose a site visit.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to your own.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preventive-maintenance-plant",
+    "title": "Preventive maintenance: where to start",
+    "excerpt": "Sample blog text: a short, practical guide.",
+    "content": "Sample text. Write a useful article for your clients here, with general and cautious information.\n\n## Equipment inventory\n\nListing machines and how critical they are is the first step.\n\n## Inspection frequency\n\nEvery machine has its own needs: always follow the manufacturer's guidance.",
+    "tags": [
+     "maintenance",
+     "tips"
+    ]
+   },
+   {
+    "slug": "electrical-installation-audit",
+    "title": "When to review the electrical installation of a factory",
+    "excerpt": "Sample text: signs that call for an inspection.",
+    "content": "Sample text. Explain what an electrical review involves and when it makes sense.\n\n## Warning signs\n\nFrequent trips, overheating or new machines overloading the line.\n\n## What it includes\n\nInspection, measurements and a report with recommended actions.",
+    "tags": [
+     "installations"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Instalații și mentenanță industrială",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Cere o ofertă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: firmă de instalații și mentenanță industrială pentru fabrici și hale, cu echipe proprii și intervenție rapidă în caz de avarie."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Instalații și mentenanță industrială · Exemplu",
+       "title": "Fabrica ta merge fără oprire, cu instalații fiabile și mentenanță la comandă",
+       "subtitle": "Text de exemplu: explică într-o frază ce instalezi și întreții, pentru ce sectoare lucrezi și cum răspunzi când se oprește o linie.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce facem",
+       "title": "Servicii care țin producția în mișcare",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalații electrice",
+         "text": "Tablouri, trasee de cabluri și distribuție de joasă tensiune pentru hale și fabrici."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatizare și control",
+         "text": "Automate programabile, senzori și panouri de comandă pentru liniile tale."
+        },
+        {
+         "icon": "shield",
+         "title": "Mentenanță preventivă",
+         "text": "Planuri de verificare periodică ce previn opririle și prelungesc viața utilajelor."
+        },
+        {
+         "icon": "clock",
+         "title": "Intervenții la avarii",
+         "text": "Echipă de gardă pregătită să intervină rapid când un utilaj se oprește."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Ani de experiență (exemplu)"
+        },
+        {
+         "value": "35",
+         "label": "Tehnicieni în echipă (exemplu)"
+        },
+        {
+         "value": "4 h",
+         "label": "Răspuns la o avarie urgentă (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită tehnică",
+         "text": "Verificăm instalația împreună cu tine și notăm ce ai nevoie."
+        },
+        {
+         "title": "Ofertă fermă",
+         "text": "Domeniul lucrării, termenele și prețul, în scris, înainte de start."
+        },
+        {
+         "title": "Execuție și predare",
+         "text": "Lucrări coordonate cu producția ta și documentație finală completă."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "De ce noi",
+       "title": "O echipă proprie și un responsabil pentru fiecare fabrică",
+       "body": "- Tehnicieni proprii, fără subcontractarea esențialului\n- Lucrări planificate care nu întrerup producția\n- Documentație și certificate la finalizare",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinii",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o opinie: înlocuiește-l cu opinii reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Director de fabrică · Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o instalație sau de un plan de mentenanță?",
+       "text": "Spune-ne ce ai nevoie și îți trimitem o ofertă clară.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: servicii de instalare, automatizare și mentenanță industrială pentru fabrici și hale, cu planuri preventive și intervenții la avarii."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie domeniile tale de lucru pe înțelesul oricărui responsabil de achiziții sau de fabrică.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalații electrice",
+         "text": "Joasă tensiune, tablouri și iluminat industrial."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatizare",
+         "text": "Automate programabile, senzori și controlul proceselor."
+        },
+        {
+         "icon": "check",
+         "title": "Mentenanță preventivă",
+         "text": "Verificări periodice și registru al intervențiilor."
+        },
+        {
+         "icon": "route",
+         "title": "Conducte și fluide",
+         "text": "Rețele de aer comprimat, apă și fluide de proces."
+        },
+        {
+         "icon": "clock",
+         "title": "Avarii urgente",
+         "text": "Serviciu de gardă pentru opriri de producție."
+        },
+        {
+         "icon": "shield",
+         "title": "Siguranță și norme",
+         "text": "Inspecții, certificate și conformitate cu normele."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Mentenanță",
+         "name": "Vizită de diagnosticare",
+         "price": "gratuită"
+        },
+        {
+         "section": "Mentenanță",
+         "name": "Oră de tehnician",
+         "price": "de la 55 €"
+        },
+        {
+         "section": "Instalații",
+         "name": "Verificarea tabloului electric",
+         "price": "de la 180 €"
+        },
+        {
+         "section": "Instalații",
+         "name": "Certificat de instalație",
+         "price": "de la 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o instalație sau de un plan de mentenanță?",
+       "text": "Spune-ne ce ai nevoie și îți trimitem o ofertă clară.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum organizăm munca în fabrică și ce angajamente avem față de clienții noștri industriali."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria firmei tale, cine face parte din echipă și ce sectoare deservești.\n\nVorbește despre cum lucrați și despre angajamentele voastre, nu despre rezultate pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Angajamentele noastre",
+       "body": "- Siguranța la locul de muncă înaintea vitezei\n- Termene și oferte în scris\n- Un responsabil fix pentru fiecare fabrică"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Vizită tehnică",
+         "text": "Verificăm instalația împreună cu tine și notăm ce ai nevoie."
+        },
+        {
+         "title": "Ofertă fermă",
+         "text": "Domeniul lucrării, termenele și prețul, în scris, înainte de start."
+        },
+        {
+         "title": "Execuție și predare",
+         "text": "Lucrări coordonate cu producția ta și documentație finală completă."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre oferte, termene, lucrul cu fabrica în funcțiune și intervenții la avarii în afara programului."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum se pregătește o ofertă?",
+         "answer": "După o vizită tehnică trimitem o propunere în scris. *Text de exemplu.*"
+        },
+        {
+         "question": "Puteți lucra fără a opri producția?",
+         "answer": "Planificăm intervențiile în intervalele pe care ni le indici."
+        },
+        {
+         "question": "Intervenți la avarii în afara programului?",
+         "answer": "Precizează aici dacă ai serviciu de gardă. *Text de exemplu.*"
+        },
+        {
+         "question": "Predați documentație la final?",
+         "answer": "Da: planuri actualizate, certificate și un raport al intervenției."
+        },
+        {
+         "question": "Oferiți contracte de mentenanță?",
+         "answer": "Da, cu vizite periodice și un registru al fiecărei intervenții."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai nevoie de o instalație sau de un plan de mentenanță?",
+       "text": "Spune-ne ce ai nevoie și îți trimitem o ofertă clară.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: cere o ofertă sau descrie-ne avaria și îți vom răspunde cât mai repede, în programul nostru de lucru."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Cere o ofertă",
+       "text": "Spune-ne ce ai nevoie și îți propunem o vizită tehnică.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "mentenanta-preventiva-fabrica",
+    "title": "Mentenanță preventivă: de unde începem",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și practic.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu informații generale și prudente.\n\n## Inventarul utilajelor\n\nPrimul pas este lista utilajelor și importanța lor pentru producție.\n\n## Frecvența verificărilor\n\nFiecare utilaj are nevoile lui: urmează mereu indicațiile producătorului.",
+    "tags": [
+     "mentenanță",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "verificarea-instalatiei-electrice",
+    "title": "Când merită verificată instalația electrică a unei hale",
+    "excerpt": "Text de exemplu: semne care cer o verificare.",
+    "content": "Text de exemplu. Explică în ce constă o verificare electrică și când are sens.\n\n## Semne de avertizare\n\nDeclanșări dese, încălziri sau utilaje noi care suprasolicită linia.\n\n## Ce include\n\nInspecție, măsurători și un raport cu acțiunile recomandate.",
+    "tags": [
+     "instalații"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Installation et maintenance industrielles",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "L'entreprise",
+    "url": "/l-entreprise"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander un devis",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : entreprise d'installation et de maintenance industrielles pour usines et ateliers, avec équipes internes et dépannage rapide."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Installation et maintenance industrielles · Exemple",
+       "title": "Votre site tourne sans interruption, grâce à des installations fiables et une maintenance sur mesure",
+       "subtitle": "Texte d'exemple : expliquez en une phrase ce que vous installez et entretenez, pour quels secteurs et comment vous réagissez quand une ligne s'arrête.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Notre métier",
+       "title": "Des services pour que la production ne s'arrête pas",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Installations électriques",
+         "text": "Armoires, chemins de câbles et distribution basse tension pour ateliers et usines."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatisation et contrôle",
+         "text": "Automates, capteurs et tableaux de bord pour vos lignes de production."
+        },
+        {
+         "icon": "shield",
+         "title": "Maintenance préventive",
+         "text": "Plans de contrôle périodique pour éviter les arrêts et prolonger la vie des machines."
+        },
+        {
+         "icon": "clock",
+         "title": "Dépannage",
+         "text": "Une équipe d'astreinte prête à intervenir vite quand une machine s'arrête."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Ans d'expérience (exemple)"
+        },
+        {
+         "value": "35",
+         "label": "Techniciens dans l'équipe (exemple)"
+        },
+        {
+         "value": "4 h",
+         "label": "Délai d'intervention en cas de panne urgente (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite technique",
+         "text": "Nous examinons l'installation avec vous et notons vos besoins."
+        },
+        {
+         "title": "Proposition ferme",
+         "text": "Périmètre, délais et prix par écrit avant de commencer."
+        },
+        {
+         "title": "Réalisation et livraison",
+         "text": "Travaux coordonnés avec votre production et dossier final complet."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Pourquoi nous choisir",
+       "title": "Une équipe interne et un interlocuteur pour chaque site",
+       "body": "- Techniciens internes, sans sous-traiter l'essentiel\n- Travaux planifiés pour ne pas interrompre la production\n- Documents et certificats remis en fin de chantier",
+       "button_text": "L'entreprise",
+       "button_link": "/l-entreprise"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Responsable de site · Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'une installation ou d'un plan de maintenance ?",
+       "text": "Dites-nous ce qu'il vous faut et nous vous envoyons une proposition claire.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : services d'installation, d'automatisation et de maintenance industrielles pour usines et ateliers, avec plans préventifs et dépannage."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos domaines d'intervention avec des mots que comprend tout responsable des achats ou de site.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Installations électriques",
+         "text": "Basse tension, armoires et éclairage industriel."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatisation",
+         "text": "Automates, capteurs et pilotage de procédés."
+        },
+        {
+         "icon": "check",
+         "title": "Maintenance préventive",
+         "text": "Contrôles périodiques et registre des interventions."
+        },
+        {
+         "icon": "route",
+         "title": "Tuyauterie et fluides",
+         "text": "Réseaux d'air comprimé, d'eau et de fluides de process."
+        },
+        {
+         "icon": "clock",
+         "title": "Pannes urgentes",
+         "text": "Service d'astreinte pour les arrêts de production."
+        },
+        {
+         "icon": "shield",
+         "title": "Sécurité et conformité",
+         "text": "Inspections, certificats et mise en conformité."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Maintenance",
+         "name": "Visite de diagnostic",
+         "price": "gratuite"
+        },
+        {
+         "section": "Maintenance",
+         "name": "Heure de technicien",
+         "price": "à partir de 55 €"
+        },
+        {
+         "section": "Installations",
+         "name": "Contrôle d'une armoire électrique",
+         "price": "à partir de 180 €"
+        },
+        {
+         "section": "Installations",
+         "name": "Certificat d'installation",
+         "price": "à partir de 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'une installation ou d'un plan de maintenance ?",
+       "text": "Dites-nous ce qu'il vous faut et nous vous envoyons une proposition claire.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-entreprise",
+    "title": "L'entreprise",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous organisons le travail sur site et quels engagements nous prenons envers nos clients industriels."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre entreprise, qui compose l'équipe et quels secteurs vous servez.\n\nParlez de votre façon de travailler et de vos engagements, pas de résultats que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos engagements",
+       "body": "- La sécurité avant la vitesse\n- Délais et devis par écrit\n- Un interlocuteur fixe par site"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Visite technique",
+         "text": "Nous examinons l'installation avec vous et notons vos besoins."
+        },
+        {
+         "title": "Proposition ferme",
+         "text": "Périmètre, délais et prix par écrit avant de commencer."
+        },
+        {
+         "title": "Réalisation et livraison",
+         "text": "Travaux coordonnés avec votre production et dossier final complet."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "FAQ",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions fréquentes sur les devis, les délais, les travaux en site en activité et le dépannage hors horaires."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment un devis est-il établi ?",
+         "answer": "Après une visite technique, nous envoyons une proposition écrite. *Texte d'exemple.*"
+        },
+        {
+         "question": "Pouvez-vous intervenir sans arrêter la production ?",
+         "answer": "Nous planifions les interventions dans les créneaux que vous indiquez."
+        },
+        {
+         "question": "Dépannez-vous en dehors des horaires ?",
+         "answer": "Indiquez ici si vous proposez une astreinte. *Texte d'exemple.*"
+        },
+        {
+         "question": "Remettez-vous des documents en fin de travaux ?",
+         "answer": "Oui : plans mis à jour, certificats et compte rendu d'intervention."
+        },
+        {
+         "question": "Proposez-vous des contrats de maintenance ?",
+         "answer": "Oui, avec des visites périodiques et un suivi de chaque intervention."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Besoin d'une installation ou d'un plan de maintenance ?",
+       "text": "Dites-nous ce qu'il vous faut et nous vous envoyons une proposition claire.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez un devis ou décrivez-nous votre panne et nous vous répondrons au plus vite pendant nos heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander un devis",
+       "text": "Dites-nous ce qu'il vous faut et nous vous proposons une visite technique.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "maintenance-preventive-usine",
+    "title": "Maintenance préventive : par où commencer",
+    "excerpt": "Texte d'exemple pour le blog : un guide bref et pratique.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Inventaire des équipements\n\nLister les machines et leur criticité est la première étape.\n\n## Fréquence des contrôles\n\nChaque machine a ses besoins : suivez toujours les consignes du fabricant.",
+    "tags": [
+     "maintenance",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "audit-installation-electrique",
+    "title": "Quand faire contrôler l'installation électrique d'un atelier",
+    "excerpt": "Texte d'exemple : les signes qui justifient un contrôle.",
+    "content": "Texte d'exemple. Expliquez en quoi consiste un contrôle électrique et quand il a du sens.\n\n## Signes d'alerte\n\nDéclenchements fréquents, échauffements ou nouvelles machines qui surchargent la ligne.\n\n## Contenu du contrôle\n\nInspection, mesures et rapport avec les actions recommandées.",
+    "tags": [
+     "installations"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Industrieinstallation und Instandhaltung",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Das Unternehmen",
+    "url": "/das-unternehmen"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Angebot anfordern",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Unternehmen für Industrieinstallation und Instandhaltung für Werke und Hallen, mit eigenen Teams und schneller Hilfe bei Störungen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Industrieinstallation und Instandhaltung · Beispiel",
+       "title": "Ihr Werk läuft weiter: mit zuverlässigen Anlagen und maßgeschneiderter Instandhaltung",
+       "subtitle": "Beispieltext: Erklären Sie in einem Satz, was Sie installieren und warten, für welche Branchen Sie arbeiten und wie Sie bei einem Linienstillstand reagieren.",
+       "cta_text": "Angebot anfordern",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was wir tun",
+       "title": "Leistungen, die die Produktion am Laufen halten",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Elektroinstallation",
+         "text": "Schaltschränke, Kabeltrassen und Niederspannungsverteilung für Hallen und Werke."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatisierung und Steuerung",
+         "text": "Steuerungen, Sensoren und Leitstände für Ihre Produktionslinien."
+        },
+        {
+         "icon": "shield",
+         "title": "Vorbeugende Instandhaltung",
+         "text": "Regelmäßige Prüfpläne gegen Stillstände und für eine längere Lebensdauer der Anlagen."
+        },
+        {
+         "icon": "clock",
+         "title": "Störungsdienst",
+         "text": "Ein Bereitschaftsteam, das schnell eingreift, wenn eine Maschine steht."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Jahre Erfahrung (Beispiel)"
+        },
+        {
+         "value": "35",
+         "label": "Techniker im Team (Beispiel)"
+        },
+        {
+         "value": "4 h",
+         "label": "Reaktionszeit bei dringender Störung (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Technischer Besuch",
+         "text": "Wir prüfen die Anlage mit Ihnen und notieren Ihren Bedarf."
+        },
+        {
+         "title": "Verbindliches Angebot",
+         "text": "Umfang, Termine und Preis schriftlich, bevor wir beginnen."
+        },
+        {
+         "title": "Ausführung und Übergabe",
+         "text": "Arbeiten in Abstimmung mit Ihrer Produktion und vollständige Abschlussdokumentation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Warum wir",
+       "title": "Ein eigenes Team und ein fester Ansprechpartner je Werk",
+       "body": "- Eigene Techniker, das Wesentliche wird nicht ausgelagert\n- Geplante Arbeiten ohne Unterbrechung der Produktion\n- Dokumentation und Zertifikate zum Abschluss",
+       "button_text": "Das Unternehmen",
+       "button_link": "/das-unternehmen"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: Ersetzen Sie ihn durch echte Meinungen Ihrer Kunden, mit deren Einverständnis.",
+         "name": "Beispielkunde",
+         "role": "Werksleiter · Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie brauchen eine Installation oder einen Wartungsplan?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir senden Ihnen ein klares Angebot.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Leistungen für Installation, Automatisierung und industrielle Instandhaltung in Werken und Hallen, mit Wartungsplänen und Störungsdienst."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Arbeitsbereiche so, dass jeder Einkäufer oder Werksleiter sie versteht.",
+       "cta_text": "Angebot anfordern",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Elektroinstallation",
+         "text": "Niederspannung, Schaltschränke und Industriebeleuchtung."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automatisierung",
+         "text": "Steuerungen, Sensoren und Prozessleittechnik."
+        },
+        {
+         "icon": "check",
+         "title": "Vorbeugende Wartung",
+         "text": "Regelmäßige Prüfungen und Protokoll aller Einsätze."
+        },
+        {
+         "icon": "route",
+         "title": "Rohrleitungen und Medien",
+         "text": "Netze für Druckluft, Wasser und Prozessmedien."
+        },
+        {
+         "icon": "clock",
+         "title": "Dringende Störungen",
+         "text": "Bereitschaftsdienst bei Produktionsstillstand."
+        },
+        {
+         "icon": "shield",
+         "title": "Sicherheit und Vorschriften",
+         "text": "Prüfungen, Zertifikate und Anpassung an die Normen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre eigenen Preise.",
+       "items": [
+        {
+         "section": "Wartung",
+         "name": "Diagnosebesuch",
+         "price": "kostenlos"
+        },
+        {
+         "section": "Wartung",
+         "name": "Technikerstunde",
+         "price": "ab 55 €"
+        },
+        {
+         "section": "Installation",
+         "name": "Prüfung des Schaltschranks",
+         "price": "ab 180 €"
+        },
+        {
+         "section": "Installation",
+         "name": "Installationszertifikat",
+         "price": "ab 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie brauchen eine Installation oder einen Wartungsplan?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir senden Ihnen ein klares Angebot.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-unternehmen",
+    "title": "Das Unternehmen",
+    "seo": {
+     "description": "Beispieltext: Wer wir sind, wie wir die Arbeit vor Ort organisieren und welche Zusagen wir unseren Industriekunden machen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Unternehmens, wer zum Team gehört und welche Branchen Sie betreuen.\n\nSprechen Sie über Ihre Arbeitsweise und Ihre Zusagen, nicht über Ergebnisse, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Zusagen",
+       "body": "- Arbeitssicherheit vor Tempo\n- Termine und Angebote schriftlich\n- Ein fester Ansprechpartner je Werk"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Technischer Besuch",
+         "text": "Wir prüfen die Anlage mit Ihnen und notieren Ihren Bedarf."
+        },
+        {
+         "title": "Verbindliches Angebot",
+         "text": "Umfang, Termine und Preis schriftlich, bevor wir beginnen."
+        },
+        {
+         "title": "Ausführung und Übergabe",
+         "text": "Arbeiten in Abstimmung mit Ihrer Produktion und vollständige Abschlussdokumentation."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "FAQ",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Angeboten, Terminen, Arbeiten im laufenden Betrieb und Störungsdienst außerhalb der Geschäftszeiten."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie entsteht ein Angebot?",
+         "answer": "Nach einem technischen Besuch senden wir ein schriftliches Angebot. *Beispieltext.*"
+        },
+        {
+         "question": "Können Sie ohne Produktionsstillstand arbeiten?",
+         "answer": "Wir planen die Einsätze in den Zeitfenstern, die Sie uns nennen."
+        },
+        {
+         "question": "Gibt es einen Störungsdienst außerhalb der Zeiten?",
+         "answer": "Geben Sie hier an, ob Sie Bereitschaft anbieten. *Beispieltext.*"
+        },
+        {
+         "question": "Übergeben Sie am Ende Unterlagen?",
+         "answer": "Ja: aktualisierte Pläne, Zertifikate und einen Einsatzbericht."
+        },
+        {
+         "question": "Bieten Sie Wartungsverträge an?",
+         "answer": "Ja, mit regelmäßigen Besuchen und einem Protokoll jedes Einsatzes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sie brauchen eine Installation oder einen Wartungsplan?",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir senden Ihnen ein klares Angebot.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fordern Sie ein Angebot an oder schildern Sie uns Ihre Störung, wir antworten so schnell wie möglich innerhalb unserer Geschäftszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Angebot anfordern",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir schlagen einen technischen Besuch vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ändern Sie sie auf Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "vorbeugende-instandhaltung-werk",
+    "title": "Vorbeugende Instandhaltung: Wo anfangen?",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, praktischer Leitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Informationen.\n\n## Anlagenverzeichnis\n\nDer erste Schritt ist eine Liste der Maschinen und ihrer Bedeutung.\n\n## Prüfintervalle\n\nJede Maschine hat eigene Anforderungen: Beachten Sie stets die Herstellerangaben.",
+    "tags": [
+     "instandhaltung",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "pruefung-elektroanlage-halle",
+    "title": "Wann sich die Prüfung der Elektroanlage einer Halle lohnt",
+    "excerpt": "Beispieltext: Anzeichen, die eine Prüfung nahelegen.",
+    "content": "Beispieltext. Erklären Sie, was eine elektrische Prüfung umfasst und wann sie sinnvoll ist.\n\n## Warnzeichen\n\nHäufiges Auslösen, Erwärmung oder neue Maschinen, die die Leitung überlasten.\n\n## Was dazugehört\n\nInspektion, Messungen und ein Bericht mit empfohlenen Maßnahmen.",
+    "tags": [
+     "installation"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Installazioni e manutenzione industriale",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "L'azienda",
+    "url": "/l-azienda"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi un preventivo",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: azienda di installazioni e manutenzione industriale per stabilimenti e capannoni, con squadre interne e intervento rapido sui guasti."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Installazioni e manutenzione industriale · Esempio",
+       "title": "Il tuo stabilimento sempre in marcia, con impianti affidabili e manutenzione su misura",
+       "subtitle": "Testo di esempio: spiega in una frase cosa installi e mantieni, per quali settori lavori e come rispondi quando una linea si ferma.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa facciamo",
+       "title": "Servizi perché la produzione non si fermi",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Impianti elettrici",
+         "text": "Quadri, passerelle e distribuzione in bassa tensione per capannoni e stabilimenti."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automazione e controllo",
+         "text": "PLC, sensori e quadri di comando per le tue linee di produzione."
+        },
+        {
+         "icon": "shield",
+         "title": "Manutenzione preventiva",
+         "text": "Piani di controllo periodico per evitare fermi e allungare la vita delle macchine."
+        },
+        {
+         "icon": "clock",
+         "title": "Pronto intervento",
+         "text": "Una squadra di reperibilità pronta a intervenire quando una macchina si ferma."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Anni di esperienza (esempio)"
+        },
+        {
+         "value": "35",
+         "label": "Tecnici in organico (esempio)"
+        },
+        {
+         "value": "4 h",
+         "label": "Risposta a un guasto urgente (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo tecnico",
+         "text": "Verifichiamo l'impianto insieme a te e raccogliamo le tue esigenze."
+        },
+        {
+         "title": "Proposta definita",
+         "text": "Ambito, tempi e prezzo per iscritto prima di iniziare."
+        },
+        {
+         "title": "Esecuzione e consegna",
+         "text": "Lavori coordinati con la tua produzione e documentazione finale completa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Perché sceglierci",
+       "title": "Un team interno e un referente per ogni stabilimento",
+       "body": "- Tecnici interni, senza subappaltare l'essenziale\n- Lavori pianificati per non interrompere la produzione\n- Documentazione e certificati a fine lavori",
+       "button_text": "L'azienda",
+       "button_link": "/l-azienda"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Responsabile di stabilimento · Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un impianto o un piano di manutenzione?",
+       "text": "Raccontaci di cosa hai bisogno e ti inviamo una proposta chiara.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: servizi di installazione, automazione e manutenzione industriale per stabilimenti e capannoni, con piani preventivi e pronto intervento."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi le tue aree di lavoro con parole comprensibili a qualsiasi responsabile acquisti o di stabilimento.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Impianti elettrici",
+         "text": "Bassa tensione, quadri e illuminazione industriale."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automazione",
+         "text": "PLC, sensori e controllo di processo."
+        },
+        {
+         "icon": "check",
+         "title": "Manutenzione preventiva",
+         "text": "Controlli periodici e registro degli interventi."
+        },
+        {
+         "icon": "route",
+         "title": "Tubazioni e fluidi",
+         "text": "Reti di aria compressa, acqua e fluidi di processo."
+        },
+        {
+         "icon": "clock",
+         "title": "Guasti urgenti",
+         "text": "Reperibilità per i fermi di produzione."
+        },
+        {
+         "icon": "shield",
+         "title": "Sicurezza e norme",
+         "text": "Verifiche, certificati e adeguamento normativo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Importi di esempio: sostituiscili con le tue tariffe.",
+       "items": [
+        {
+         "section": "Manutenzione",
+         "name": "Visita di diagnosi",
+         "price": "gratuita"
+        },
+        {
+         "section": "Manutenzione",
+         "name": "Ora di tecnico",
+         "price": "da 55 €"
+        },
+        {
+         "section": "Impianti",
+         "name": "Controllo del quadro elettrico",
+         "price": "da 180 €"
+        },
+        {
+         "section": "Impianti",
+         "name": "Certificato di impianto",
+         "price": "da 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un impianto o un piano di manutenzione?",
+       "text": "Raccontaci di cosa hai bisogno e ti inviamo una proposta chiara.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-azienda",
+    "title": "L'azienda",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come organizziamo il lavoro in stabilimento e quali impegni prendiamo con i clienti industriali della nostra azienda."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia della tua azienda, chi fa parte del team e quali settori servi.\n\nParla di come lavorate e dei vostri impegni, non di risultati che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri impegni",
+       "body": "- La sicurezza sul lavoro prima della fretta\n- Tempi e preventivi per iscritto\n- Un referente fisso per ogni stabilimento"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Sopralluogo tecnico",
+         "text": "Verifichiamo l'impianto insieme a te e raccogliamo le tue esigenze."
+        },
+        {
+         "title": "Proposta definita",
+         "text": "Ambito, tempi e prezzo per iscritto prima di iniziare."
+        },
+        {
+         "title": "Esecuzione e consegna",
+         "text": "Lavori coordinati con la tua produzione e documentazione finale completa."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "FAQ",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su preventivi, tempi, lavori a stabilimento in funzione e pronto intervento fuori orario."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come si prepara un preventivo?",
+         "answer": "Dopo un sopralluogo tecnico inviamo una proposta scritta. *Testo di esempio.*"
+        },
+        {
+         "question": "Potete lavorare senza fermare la produzione?",
+         "answer": "Pianifichiamo gli interventi nelle finestre che ci indichi."
+        },
+        {
+         "question": "Intervenite sui guasti fuori orario?",
+         "answer": "Indica qui se offri un servizio di reperibilità. *Testo di esempio.*"
+        },
+        {
+         "question": "Consegnate la documentazione a fine lavori?",
+         "answer": "Sì: disegni aggiornati, certificati e rapporto di intervento."
+        },
+        {
+         "question": "Offrite contratti di manutenzione?",
+         "answer": "Sì, con visite periodiche e un registro di ogni intervento."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti serve un impianto o un piano di manutenzione?",
+       "text": "Raccontaci di cosa hai bisogno e ti inviamo una proposta chiara.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi un preventivo o descrivici il tuo guasto e ti risponderemo il prima possibile durante il nostro orario di apertura."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi un preventivo",
+       "text": "Raccontaci di cosa hai bisogno e ti proponiamo un sopralluogo tecnico.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "manutenzione-preventiva-stabilimento",
+    "title": "Manutenzione preventiva: da dove cominciare",
+    "excerpt": "Testo di esempio per il blog: una guida breve e pratica.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Inventario delle macchine\n\nElencare le macchine e la loro criticità è il primo passo.\n\n## Frequenza dei controlli\n\nOgni macchina ha le sue esigenze: segui sempre le indicazioni del costruttore.",
+    "tags": [
+     "manutenzione",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "verifica-impianto-elettrico",
+    "title": "Quando conviene verificare l'impianto elettrico di un capannone",
+    "excerpt": "Testo di esempio: segnali che consigliano una verifica.",
+    "content": "Testo di esempio. Spiega in cosa consiste una verifica elettrica e quando ha senso.\n\n## Segnali d'allarme\n\nScatti frequenti, surriscaldamenti o nuove macchine che sovraccaricano la linea.\n\n## Cosa include\n\nIspezione, misure e una relazione con le azioni consigliate.",
+    "tags": [
+     "impianti"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Instalações e manutenção industrial",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "A empresa",
+    "url": "/a-empresa"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir orçamento",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: empresa de instalações e manutenção industrial para fábricas e pavilhões, com equipas próprias e resposta rápida a avarias."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Instalações e manutenção industrial · Exemplo",
+       "title": "A sua fábrica sempre a trabalhar, com instalações fiáveis e manutenção à medida",
+       "subtitle": "Texto de exemplo: explique numa frase o que instala e mantém, para que setores trabalha e como responde quando uma linha pára.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que fazemos",
+       "title": "Serviços para que a produção não pare",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalações elétricas",
+         "text": "Quadros, caminhos de cabos e distribuição em baixa tensão para pavilhões e fábricas."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automação e controlo",
+         "text": "Autómatos, sensores e painéis de comando para as suas linhas de produção."
+        },
+        {
+         "icon": "shield",
+         "title": "Manutenção preventiva",
+         "text": "Planos de revisão periódica para evitar paragens e prolongar a vida dos equipamentos."
+        },
+        {
+         "icon": "clock",
+         "title": "Assistência a avarias",
+         "text": "Uma equipa de prevenção pronta a intervir quando uma máquina pára."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "20",
+         "label": "Anos de experiência (exemplo)"
+        },
+        {
+         "value": "35",
+         "label": "Técnicos na equipa (exemplo)"
+        },
+        {
+         "value": "4 h",
+         "label": "Resposta a uma avaria urgente (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita técnica",
+         "text": "Analisamos a instalação consigo e registamos o que precisa."
+        },
+        {
+         "title": "Proposta fechada",
+         "text": "Âmbito, prazos e preço por escrito antes de começar."
+        },
+        {
+         "title": "Execução e entrega",
+         "text": "Trabalhos coordenados com a sua produção e documentação final completa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Porquê nós",
+       "title": "Uma equipa própria e um responsável para cada fábrica",
+       "body": "- Técnicos próprios, sem subcontratar o essencial\n- Trabalhos planeados para não interromper a produção\n- Documentação e certificados no final",
+       "button_text": "A empresa",
+       "button_link": "/a-empresa"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Responsável de fábrica · Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de uma instalação ou de um plano de manutenção?",
+       "text": "Diga-nos o que precisa e enviamos-lhe uma proposta clara.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: serviços de instalação, automação e manutenção industrial para fábricas e pavilhões, com planos preventivos e assistência a avarias."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva as suas áreas de trabalho com palavras que qualquer responsável de compras ou de fábrica perceba.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Instalações elétricas",
+         "text": "Baixa tensão, quadros e iluminação industrial."
+        },
+        {
+         "icon": "cpu",
+         "title": "Automação",
+         "text": "Autómatos, sensores e controlo de processos."
+        },
+        {
+         "icon": "check",
+         "title": "Manutenção preventiva",
+         "text": "Revisões periódicas e registo das intervenções."
+        },
+        {
+         "icon": "route",
+         "title": "Tubagens e fluidos",
+         "text": "Redes de ar comprimido, água e fluidos de processo."
+        },
+        {
+         "icon": "clock",
+         "title": "Avarias urgentes",
+         "text": "Serviço de prevenção para paragens de produção."
+        },
+        {
+         "icon": "shield",
+         "title": "Segurança e normas",
+         "text": "Inspeções, certificados e adequação à legislação."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas indicativas",
+       "note": "Valores de exemplo: substitua-os pelas suas tarifas.",
+       "items": [
+        {
+         "section": "Manutenção",
+         "name": "Visita de diagnóstico",
+         "price": "gratuita"
+        },
+        {
+         "section": "Manutenção",
+         "name": "Hora de técnico",
+         "price": "desde 55 €"
+        },
+        {
+         "section": "Instalações",
+         "name": "Revisão de quadro elétrico",
+         "price": "desde 180 €"
+        },
+        {
+         "section": "Instalações",
+         "name": "Certificado de instalação",
+         "price": "desde 250 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de uma instalação ou de um plano de manutenção?",
+       "text": "Diga-nos o que precisa e enviamos-lhe uma proposta clara.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-empresa",
+    "title": "A empresa",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como organizamos o trabalho na fábrica e que compromissos assumimos com os clientes industriais da nossa empresa."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua empresa, quem faz parte da equipa e que setores atende.\n\nFale de como trabalham e dos vossos compromissos, não de resultados que não possa demonstrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos compromissos",
+       "body": "- Segurança no trabalho antes da pressa\n- Prazos e orçamentos por escrito\n- Um responsável fixo por fábrica"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Visita técnica",
+         "text": "Analisamos a instalação consigo e registamos o que precisa."
+        },
+        {
+         "title": "Proposta fechada",
+         "text": "Âmbito, prazos e preço por escrito antes de começar."
+        },
+        {
+         "title": "Execução e entrega",
+         "text": "Trabalhos coordenados com a sua produção e documentação final completa."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre orçamentos, prazos, trabalhos com a fábrica em funcionamento e assistência a avarias fora de horas."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como se prepara um orçamento?",
+         "answer": "Após uma visita técnica enviamos uma proposta escrita. *Texto de exemplo.*"
+        },
+        {
+         "question": "Podem trabalhar sem parar a produção?",
+         "answer": "Planeamos as intervenções nas janelas que nos indicar."
+        },
+        {
+         "question": "Atendem avarias fora de horas?",
+         "answer": "Indique aqui se tem serviço de prevenção. *Texto de exemplo.*"
+        },
+        {
+         "question": "Entregam documentação no final?",
+         "answer": "Sim: desenhos atualizados, certificados e relatório da intervenção."
+        },
+        {
+         "question": "Oferecem contratos de manutenção?",
+         "answer": "Sim, com visitas periódicas e um registo de cada intervenção."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Precisa de uma instalação ou de um plano de manutenção?",
+       "text": "Diga-nos o que precisa e enviamos-lhe uma proposta clara.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça um orçamento ou descreva-nos a sua avaria e responderemos o mais depressa possível dentro do nosso horário de atendimento."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir orçamento",
+       "text": "Diga-nos o que precisa e propomos uma visita técnica.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "13:00",
+         "opens2": "14:30",
+         "closes2": "18:00"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "manutencao-preventiva-fabrica",
+    "title": "Manutenção preventiva: por onde começar",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prático.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Inventário de equipamentos\n\nListar as máquinas e a sua criticidade é o primeiro passo.\n\n## Frequência das revisões\n\nCada equipamento tem as suas necessidades: siga sempre as indicações do fabricante.",
+    "tags": [
+     "manutenção",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "revisao-instalacao-eletrica",
+    "title": "Quando convém rever a instalação elétrica de um pavilhão",
+    "excerpt": "Texto de exemplo: sinais que aconselham uma revisão.",
+    "content": "Texto de exemplo. Explique em que consiste uma revisão elétrica e quando faz sentido.\n\n## Sinais de aviso\n\nDisparos frequentes, aquecimentos ou máquinas novas que sobrecarregam a linha.\n\n## O que inclui\n\nInspeção, medições e um relatório com as ações recomendadas.",
+    "tags": [
+     "instalações"
+    ]
+   }
+  ]
+ }
+}

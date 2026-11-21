@@ -70,6 +70,7 @@ $allBlocks = [
 ];
 
 foreach (array_keys(themes_available()) as $theme) {
+    if (($only = getenv('ONLY_THEME')) && $theme !== $only) continue;
     $host = "$theme.test";
     $site = site_create("Prueba $theme", "p-$theme", [$host], $theme);
     $svc = new SiteService($site);
@@ -112,6 +113,8 @@ foreach (array_keys(themes_available()) as $theme) {
     ok("$theme: 6 vistas × 7 idiomas con la mecánica de la 0.4.0", !$bad, implode(' | ', array_slice($bad, 0, 4)));
 
     // Textos de ejemplo
+    // Los 20 temas de serie traen textos de ejemplo (0.5.1)
+    ok("$theme: trae sample.json", is_file(UW_ROOT . "/themes/$theme/sample.json"));
     if (is_file(UW_ROOT . "/themes/$theme/sample.json")) {
         $all = theme_sample_all($theme);
         ok("$theme: sample.json en los 7 idiomas", array_values(array_intersect(LANGS, array_keys($all))) === LANGS, implode(',', array_keys($all)));

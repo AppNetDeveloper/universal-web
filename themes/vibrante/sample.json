@@ -1,0 +1,3237 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Vibrante). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Gimnasio y clases dirigidas para todos los niveles",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Clases",
+    "url": "/clases"
+   },
+   {
+    "label": "Horarios",
+    "url": "/horarios"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reserva una clase de prueba",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: gimnasio y centro deportivo con clases dirigidas, sala de musculación y horarios amplios. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro deportivo · Ejemplo",
+       "title": "Muévete a tu ritmo, con energía de sobra",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué ofrece tu centro, a quién va dirigido y qué ambiente se respira en las clases.",
+       "cta_text": "Reserva una clase de prueba",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver horarios",
+       "cta2_link": "/horarios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Qué encontrarás",
+       "title": "Entrena como más te guste",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Clases dirigidas",
+         "text": "Spinning, funcional, yoga y baile con monitores titulados."
+        },
+        {
+         "icon": "bolt",
+         "title": "Sala de musculación",
+         "text": "Máquinas y peso libre con asesoramiento en la sala."
+        },
+        {
+         "icon": "users",
+         "title": "Entrenamiento personal",
+         "text": "Un plan a tu medida, con seguimiento cada mes."
+        },
+        {
+         "icon": "calendar",
+         "title": "Horario amplio",
+         "text": "Abierto de mañana a noche para que encaje con tu día."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Clases a la semana (ejemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Monitores en el equipo (ejemplo)"
+        },
+        {
+         "value": "7 días",
+         "label": "Reserva de plaza con antelación (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo empezar",
+       "items": [
+        {
+         "title": "Clase de prueba",
+         "text": "Ven a conocer el centro y a probar una clase sin compromiso."
+        },
+        {
+         "title": "Plan inicial",
+         "text": "Un monitor te propone objetivos y una rutina realista."
+        },
+        {
+         "title": "A tu ritmo",
+         "text": "Reserva tus clases y ajusta el plan cuando lo necesites."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El centro",
+       "title": "Un ambiente cercano, sin complejos",
+       "body": "- Grupos reducidos en cada clase\n- Monitores atentos a tu técnica\n- Vestuarios y zona de descanso cuidados",
+       "button_text": "Ver las clases",
+       "button_link": "/clases"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus socios, con su permiso.",
+         "name": "Socia de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te animas a probar?",
+       "text": "Reserva tu clase de prueba y te esperamos con la ropa cómoda.",
+       "button_text": "Reserva una clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "clases",
+    "title": "Clases",
+    "seo": {
+     "description": "Texto de ejemplo: clases dirigidas de spinning, entrenamiento funcional, yoga y baile para todos los niveles. Sustitúyelo por las tuyas."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Clases",
+       "body": "Texto de ejemplo: describe tus clases con palabras que entienda quien nunca ha entrenado."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Sesiones de ciclismo indoor con música y diferentes intensidades."
+        },
+        {
+         "icon": "target",
+         "title": "Entrenamiento funcional",
+         "text": "Circuitos de fuerza y resistencia con tu propio peso."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga y estiramientos",
+         "text": "Movilidad, respiración y calma para equilibrar la semana."
+        },
+        {
+         "icon": "heart",
+         "title": "Baile fitness",
+         "text": "Coreografías sencillas para sudar y pasarlo bien."
+        },
+        {
+         "icon": "star",
+         "title": "Clases para mayores",
+         "text": "Ejercicio suave para mantener fuerza y equilibrio."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Control del cuerpo y trabajo del centro del cuerpo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Cuotas orientativas",
+       "note": "Importes de ejemplo: sustitúyelos por tus cuotas.",
+       "items": [
+        {
+         "section": "Cuotas",
+         "name": "Sala de musculación",
+         "price": "desde 29 €/mes"
+        },
+        {
+         "section": "Cuotas",
+         "name": "Sala + clases dirigidas",
+         "price": "desde 45 €/mes"
+        },
+        {
+         "section": "Bonos",
+         "name": "Bono de 10 clases",
+         "price": "desde 30 €"
+        },
+        {
+         "section": "Bonos",
+         "name": "Clase suelta",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te animas a probar?",
+       "text": "Reserva tu clase de prueba y te esperamos con la ropa cómoda.",
+       "button_text": "Reserva una clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "horarios",
+    "title": "Horarios",
+    "seo": {
+     "description": "Texto de ejemplo: horario semanal de clases dirigidas y de apertura del centro deportivo, con las sesiones de mañana y de tarde."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Horarios",
+       "body": "Texto de ejemplo: la parrilla semanal de clases. Actualízala cada temporada."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Parrilla de clases",
+       "note": "Horas de ejemplo: cámbialas por las tuyas.",
+       "items": [
+        {
+         "section": "Lunes",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Lunes",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Martes",
+         "name": "Funcional",
+         "price": "09:30"
+        },
+        {
+         "section": "Martes",
+         "name": "Baile fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Miércoles",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Miércoles",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Jueves",
+         "name": "Baile fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Jueves",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Viernes",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Viernes",
+         "name": "Funcional",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario del centro",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te animas a probar?",
+       "text": "Reserva tu clase de prueba y te esperamos con la ropa cómoda.",
+       "button_text": "Reserva una clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la clase de prueba, las cuotas, las reservas y el nivel necesario."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Necesito experiencia para apuntarme?",
+         "answer": "No. Hay clases para todos los niveles y los monitores adaptan los ejercicios. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuánto cuesta la clase de prueba?",
+         "answer": "Indica aquí si es gratuita o tiene un coste. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Hay que reservar las clases?",
+         "answer": "Sí, para garantizar plaza en los grupos reducidos."
+        },
+        {
+         "question": "¿Puedo darme de baja cuando quiera?",
+         "answer": "Indica aquí tu política de permanencia y bajas. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué debo llevar?",
+         "answer": "Ropa cómoda, calzado deportivo, toalla y una botella de agua."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te animas a probar?",
+       "text": "Reserva tu clase de prueba y te esperamos con la ropa cómoda.",
+       "button_text": "Reserva una clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: reserva tu clase de prueba o escríbenos con tu pregunta y te responderemos lo antes posible en horario de atención."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reserva tu clase de prueba",
+       "text": "Cuéntanos qué te gustaría practicar y te proponemos una clase.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario del centro",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-empezar-a-entrenar",
+    "title": "Cómo empezar a entrenar sin lesionarte",
+    "excerpt": "Texto de ejemplo para el blog: consejos prudentes para volver al ejercicio.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus socios, con información general y prudente.\n\n## Empieza poco a poco\n\nDos o tres sesiones por semana bastan al principio.\n\n## Escucha a tu cuerpo\n\nSi tienes dudas de salud, consulta antes con un profesional sanitario.",
+    "tags": [
+     "consejos",
+     "principiantes"
+    ]
+   },
+   {
+    "slug": "spinning-beneficios",
+    "title": "Spinning: qué esperar de tu primera clase",
+    "excerpt": "Texto de ejemplo: guía rápida para estrenarte sobre la bici.",
+    "content": "Texto de ejemplo. Explica en qué consiste una clase de spinning y cómo prepararse.\n\n## Antes de empezar\n\nAjusta bien el sillín y lleva una toalla.\n\n## Durante la clase\n\nPuedes bajar la resistencia cuando lo necesites.",
+    "tags": [
+     "clases",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Gym and group classes for every level",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Classes",
+    "url": "/classes"
+   },
+   {
+    "label": "Timetable",
+    "url": "/timetable"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a trial class",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: a gym and sports centre with group classes, a weights room and long opening hours. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Sports centre · Example",
+       "title": "Move at your own pace, with energy to spare",
+       "subtitle": "Sample text: say in one sentence what your centre offers, who it is for and what the atmosphere in class is like.",
+       "cta_text": "Book a trial class",
+       "cta_link": "/contact",
+       "cta2_text": "See the timetable",
+       "cta2_link": "/timetable"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What you will find",
+       "title": "Train the way you like best",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Group classes",
+         "text": "Spinning, functional, yoga and dance with qualified instructors."
+        },
+        {
+         "icon": "bolt",
+         "title": "Weights room",
+         "text": "Machines and free weights with advice on the floor."
+        },
+        {
+         "icon": "users",
+         "title": "Personal training",
+         "text": "A plan made for you, reviewed every month."
+        },
+        {
+         "icon": "calendar",
+         "title": "Long opening hours",
+         "text": "Open from morning to night so it fits your day."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Classes a week (example)"
+        },
+        {
+         "value": "6",
+         "label": "Instructors on the team (example)"
+        },
+        {
+         "value": "7 days",
+         "label": "Advance booking window (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How to get started",
+       "items": [
+        {
+         "title": "Trial class",
+         "text": "Come and see the centre and try a class, no strings attached."
+        },
+        {
+         "title": "First plan",
+         "text": "An instructor suggests goals and a realistic routine."
+        },
+        {
+         "title": "At your pace",
+         "text": "Book your classes and adjust the plan whenever you need."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The centre",
+       "title": "A friendly place, no pressure",
+       "body": "- Small groups in every class\n- Instructors who watch your technique\n- Clean changing rooms and a relaxed lounge",
+       "button_text": "See the classes",
+       "button_link": "/classes"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your members, with their permission.",
+         "name": "Sample member",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Fancy giving it a go?",
+       "text": "Book your trial class and come in comfortable clothes.",
+       "button_text": "Book a trial class",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "classes",
+    "title": "Classes",
+    "seo": {
+     "description": "Sample text: group classes in spinning, functional training, yoga and dance for every level. Replace them with your own."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Classes",
+       "body": "Sample text: describe your classes in words that someone who has never trained can follow."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Indoor cycling sessions with music and varied intensity."
+        },
+        {
+         "icon": "target",
+         "title": "Functional training",
+         "text": "Strength and endurance circuits using your own body weight."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga and stretching",
+         "text": "Mobility, breathing and calm to balance your week."
+        },
+        {
+         "icon": "heart",
+         "title": "Dance fitness",
+         "text": "Simple choreographies to sweat and have fun."
+        },
+        {
+         "icon": "star",
+         "title": "Classes for seniors",
+         "text": "Gentle exercise to keep strength and balance."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Body control and core strength work."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative fees",
+       "note": "Sample amounts: replace them with your fees.",
+       "items": [
+        {
+         "section": "Memberships",
+         "name": "Weights room",
+         "price": "from €29/month"
+        },
+        {
+         "section": "Memberships",
+         "name": "Weights room + classes",
+         "price": "from €45/month"
+        },
+        {
+         "section": "Passes",
+         "name": "10-class pass",
+         "price": "from €30"
+        },
+        {
+         "section": "Passes",
+         "name": "Single class",
+         "price": "€8"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Fancy giving it a go?",
+       "text": "Book your trial class and come in comfortable clothes.",
+       "button_text": "Book a trial class",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "timetable",
+    "title": "Timetable",
+    "seo": {
+     "description": "Sample text: weekly timetable of group classes and opening hours of the sports centre, with morning and evening sessions."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Timetable",
+       "body": "Sample text: the weekly class schedule. Update it every season."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Class schedule",
+       "note": "Sample times: change them to yours.",
+       "items": [
+        {
+         "section": "Monday",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Monday",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Tuesday",
+         "name": "Functional",
+         "price": "09:30"
+        },
+        {
+         "section": "Tuesday",
+         "name": "Dance fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Wednesday",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Wednesday",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Thursday",
+         "name": "Dance fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Thursday",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Friday",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Friday",
+         "name": "Functional",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Fancy giving it a go?",
+       "text": "Book your trial class and come in comfortable clothes.",
+       "button_text": "Book a trial class",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about the trial class, fees, booking and the level you need to join in."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Do I need experience to join?",
+         "answer": "No. There are classes for every level and the instructors adapt the exercises. *Sample text.*"
+        },
+        {
+         "question": "How much is the trial class?",
+         "answer": "Say here whether it is free or has a cost. *Sample text.*"
+        },
+        {
+         "question": "Do I have to book classes?",
+         "answer": "Yes, to guarantee a place in the small groups."
+        },
+        {
+         "question": "Can I cancel whenever I want?",
+         "answer": "State your minimum term and cancellation policy here. *Sample text.*"
+        },
+        {
+         "question": "What should I bring?",
+         "answer": "Comfortable clothes, trainers, a towel and a bottle of water."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Fancy giving it a go?",
+       "text": "Book your trial class and come in comfortable clothes.",
+       "button_text": "Book a trial class",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book your trial class or write to us with your question and we will reply as soon as possible during opening hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book your trial class",
+       "text": "Tell us what you would like to try and we will suggest a class.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-start-training",
+    "title": "How to start training without getting injured",
+    "excerpt": "Sample blog text: sensible tips for getting back to exercise.",
+    "content": "Sample text. Write a useful article for your members here, with general and cautious information.\n\n## Start slowly\n\nTwo or three sessions a week are plenty at first.\n\n## Listen to your body\n\nIf you have any health doubts, check with a healthcare professional first.",
+    "tags": [
+     "tips",
+     "beginners"
+    ]
+   },
+   {
+    "slug": "spinning-first-class",
+    "title": "Spinning: what to expect from your first class",
+    "excerpt": "Sample text: a quick guide to your first ride.",
+    "content": "Sample text. Explain what a spinning class involves and how to prepare.\n\n## Before you start\n\nSet the saddle properly and bring a towel.\n\n## During the class\n\nYou can lower the resistance whenever you need.",
+    "tags": [
+     "classes",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Sală de sport și cursuri de grup pentru toate nivelurile",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Cursuri",
+    "url": "/cursuri"
+   },
+   {
+    "label": "Program",
+    "url": "/program"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Rezervă o ședință de probă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: sală de sport și centru sportiv cu cursuri de grup, sală de fitness și program extins. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centru sportiv · Exemplu",
+       "title": "Mișcă-te în ritmul tău, cu energie din plin",
+       "subtitle": "Text de exemplu: spune într-o frază ce oferă centrul tău, cui se adresează și ce atmosferă este la cursuri.",
+       "cta_text": "Rezervă o ședință de probă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi programul",
+       "cta2_link": "/program"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce vei găsi",
+       "title": "Antrenează-te așa cum îți place",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Cursuri de grup",
+         "text": "Spinning, funcțional, yoga și dans cu instructori calificați."
+        },
+        {
+         "icon": "bolt",
+         "title": "Sală de forță",
+         "text": "Aparate și greutăți libere, cu îndrumare în sală."
+        },
+        {
+         "icon": "users",
+         "title": "Antrenament personal",
+         "text": "Un plan făcut pe măsura ta, revizuit lunar."
+        },
+        {
+         "icon": "calendar",
+         "title": "Program extins",
+         "text": "Deschis dimineața până seara, ca să se potrivească zilei tale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Cursuri pe săptămână (exemplu)"
+        },
+        {
+         "value": "6",
+         "label": "Instructori în echipă (exemplu)"
+        },
+        {
+         "value": "7 zile",
+         "label": "Rezervare în avans (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum începi",
+       "items": [
+        {
+         "title": "Ședință de probă",
+         "text": "Vino să vezi centrul și să încerci un curs, fără obligații."
+        },
+        {
+         "title": "Plan inițial",
+         "text": "Un instructor îți propune obiective și o rutină realistă."
+        },
+        {
+         "title": "În ritmul tău",
+         "text": "Rezervă-ți cursurile și ajustează planul oricând."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Centrul",
+       "title": "Un loc primitor, fără presiune",
+       "body": "- Grupe mici la fiecare curs\n- Instructori atenți la tehnica ta\n- Vestiare îngrijite și zonă de relaxare",
+       "button_text": "Vezi cursurile",
+       "button_link": "/cursuri"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale membrilor tăi, cu acordul lor.",
+         "name": "Membră exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te hotărăști să încerci?",
+       "text": "Rezervă ședința de probă și vino în haine comode.",
+       "button_text": "Rezervă o ședință de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cursuri",
+    "title": "Cursuri",
+    "seo": {
+     "description": "Text de exemplu: cursuri de grup de spinning, antrenament funcțional, yoga și dans pentru toate nivelurile. Înlocuiește-le cu ale tale."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cursuri",
+       "body": "Text de exemplu: descrie cursurile pe înțelesul celui care nu s-a antrenat niciodată."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Ședințe de ciclism indoor cu muzică și intensități variate."
+        },
+        {
+         "icon": "target",
+         "title": "Antrenament funcțional",
+         "text": "Circuite de forță și rezistență cu greutatea proprie."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga și stretching",
+         "text": "Mobilitate, respirație și calm pentru echilibrul săptămânii."
+        },
+        {
+         "icon": "heart",
+         "title": "Dans fitness",
+         "text": "Coregrafii simple ca să transpiri și să te distrezi."
+        },
+        {
+         "icon": "star",
+         "title": "Cursuri pentru seniori",
+         "text": "Exercițiu ușor pentru forță și echilibru."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Controlul corpului și întărirea mușchilor centrali."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Abonamente",
+         "name": "Sală de forță",
+         "price": "de la 29 €/lună"
+        },
+        {
+         "section": "Abonamente",
+         "name": "Sală + cursuri de grup",
+         "price": "de la 45 €/lună"
+        },
+        {
+         "section": "Pachete",
+         "name": "Pachet de 10 ședințe",
+         "price": "de la 30 €"
+        },
+        {
+         "section": "Pachete",
+         "name": "Ședință unică",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te hotărăști să încerci?",
+       "text": "Rezervă ședința de probă și vino în haine comode.",
+       "button_text": "Rezervă o ședință de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "program",
+    "title": "Program",
+    "seo": {
+     "description": "Text de exemplu: programul săptămânal al cursurilor de grup și orarul centrului sportiv, cu ședințe de dimineață și de seară."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Program",
+       "body": "Text de exemplu: grila săptămânală a cursurilor. Actualizeaz-o în fiecare sezon."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Grila cursurilor",
+       "note": "Ore de exemplu: schimbă-le cu ale tale.",
+       "items": [
+        {
+         "section": "Luni",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Luni",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Marți",
+         "name": "Funcțional",
+         "price": "09:30"
+        },
+        {
+         "section": "Marți",
+         "name": "Dans fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Miercuri",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Miercuri",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Joi",
+         "name": "Dans fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Joi",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Vineri",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Vineri",
+         "name": "Funcțional",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program de funcționare",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te hotărăști să încerci?",
+       "text": "Rezervă ședința de probă și vino în haine comode.",
+       "button_text": "Rezervă o ședință de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre ședința de probă, tarife, rezervări și nivelul necesar."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Am nevoie de experiență pentru a mă înscrie?",
+         "answer": "Nu. Există cursuri pentru toate nivelurile, iar instructorii adaptează exercițiile. *Text de exemplu.*"
+        },
+        {
+         "question": "Cât costă ședința de probă?",
+         "answer": "Precizează aici dacă este gratuită sau are un cost. *Text de exemplu.*"
+        },
+        {
+         "question": "Trebuie să rezerv cursurile?",
+         "answer": "Da, pentru a-ți garanta locul în grupele mici."
+        },
+        {
+         "question": "Pot renunța oricând?",
+         "answer": "Precizează aici politica ta de durată minimă și de renunțare. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce trebuie să aduc?",
+         "answer": "Haine comode, încălțăminte sport, prosop și o sticlă de apă."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te hotărăști să încerci?",
+       "text": "Rezervă ședința de probă și vino în haine comode.",
+       "button_text": "Rezervă o ședință de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: rezervă ședința de probă sau scrie-ne întrebarea ta și îți răspundem cât mai curând, în programul de lucru."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Rezervă ședința de probă",
+       "text": "Spune-ne ce ai vrea să încerci și îți propunem un curs.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program de funcționare",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-incepi-antrenamentul",
+    "title": "Cum începi să te antrenezi fără accidentări",
+    "excerpt": "Text de exemplu pentru blog: sfaturi prudente pentru reluarea mișcării.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru membrii tăi, cu informații generale și prudente.\n\n## Începe treptat\n\nDouă sau trei ședințe pe săptămână sunt suficiente la început.\n\n## Ascultă-ți corpul\n\nDacă ai nelămuriri de sănătate, consultă mai întâi un specialist.",
+    "tags": [
+     "sfaturi",
+     "incepatori"
+    ]
+   },
+   {
+    "slug": "spinning-prima-sedinta",
+    "title": "Spinning: la ce să te aștepți la prima ședință",
+    "excerpt": "Text de exemplu: un ghid scurt pentru debutul pe bicicletă.",
+    "content": "Text de exemplu. Explică ce presupune un curs de spinning și cum te pregătești.\n\n## Înainte de start\n\nReglează șaua corect și adu un prosop.\n\n## În timpul cursului\n\nPoți reduce rezistența oricând ai nevoie.",
+    "tags": [
+     "cursuri",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Salle de sport et cours collectifs pour tous les niveaux",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Cours",
+    "url": "/cours"
+   },
+   {
+    "label": "Horaires",
+    "url": "/horaires"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Réserver un cours d'essai",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : salle de sport et centre sportif avec cours collectifs, espace musculation et larges horaires. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centre sportif · Exemple",
+       "title": "Bougez à votre rythme, avec de l'énergie à revendre",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que propose votre centre, à qui il s'adresse et quelle ambiance règne pendant les cours.",
+       "cta_text": "Réserver un cours d'essai",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les horaires",
+       "cta2_link": "/horaires"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que vous trouverez",
+       "title": "Entraînez-vous comme vous aimez",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Cours collectifs",
+         "text": "Spinning, fonctionnel, yoga et danse avec des coachs diplômés."
+        },
+        {
+         "icon": "bolt",
+         "title": "Espace musculation",
+         "text": "Machines et poids libres avec des conseils sur place."
+        },
+        {
+         "icon": "users",
+         "title": "Coaching personnel",
+         "text": "Un programme sur mesure, revu chaque mois."
+        },
+        {
+         "icon": "calendar",
+         "title": "Larges horaires",
+         "text": "Ouvert du matin au soir pour s'adapter à votre journée."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Cours par semaine (exemple)"
+        },
+        {
+         "value": "6",
+         "label": "Coachs dans l'équipe (exemple)"
+        },
+        {
+         "value": "7 jours",
+         "label": "Réservation à l'avance (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pour bien commencer",
+       "items": [
+        {
+         "title": "Cours d'essai",
+         "text": "Venez découvrir le centre et tester un cours, sans engagement."
+        },
+        {
+         "title": "Programme de départ",
+         "text": "Un coach vous propose des objectifs et une routine réaliste."
+        },
+        {
+         "title": "À votre rythme",
+         "text": "Réservez vos cours et ajustez le programme quand vous voulez."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Le centre",
+       "title": "Une ambiance chaleureuse, sans complexe",
+       "body": "- Des petits groupes à chaque cours\n- Des coachs attentifs à votre technique\n- Des vestiaires soignés et un espace détente",
+       "button_text": "Voir les cours",
+       "button_link": "/cours"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos adhérents, avec leur accord.",
+         "name": "Adhérente d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie d'essayer ?",
+       "text": "Réservez votre cours d'essai et venez en tenue confortable.",
+       "button_text": "Réserver un cours d'essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cours",
+    "title": "Cours",
+    "seo": {
+     "description": "Texte d'exemple : cours collectifs de spinning, d'entraînement fonctionnel, de yoga et de danse pour tous les niveaux. Remplacez-les par les vôtres."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cours",
+       "body": "Texte d'exemple : décrivez vos cours avec des mots que comprend quelqu'un qui ne s'est jamais entraîné."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Séances de vélo en salle avec musique et intensités variées."
+        },
+        {
+         "icon": "target",
+         "title": "Entraînement fonctionnel",
+         "text": "Circuits de force et d'endurance au poids du corps."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga et étirements",
+         "text": "Mobilité, respiration et calme pour équilibrer la semaine."
+        },
+        {
+         "icon": "heart",
+         "title": "Danse fitness",
+         "text": "Des chorégraphies simples pour transpirer et s'amuser."
+        },
+        {
+         "icon": "star",
+         "title": "Cours seniors",
+         "text": "Exercice en douceur pour garder force et équilibre."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Contrôle du corps et renforcement du centre."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Abonnements",
+         "name": "Espace musculation",
+         "price": "à partir de 29 €/mois"
+        },
+        {
+         "section": "Abonnements",
+         "name": "Musculation + cours collectifs",
+         "price": "à partir de 45 €/mois"
+        },
+        {
+         "section": "Carnets",
+         "name": "Carnet de 10 cours",
+         "price": "à partir de 30 €"
+        },
+        {
+         "section": "Carnets",
+         "name": "Cours à l'unité",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie d'essayer ?",
+       "text": "Réservez votre cours d'essai et venez en tenue confortable.",
+       "button_text": "Réserver un cours d'essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "horaires",
+    "title": "Horaires",
+    "seo": {
+     "description": "Texte d'exemple : planning hebdomadaire des cours collectifs et horaires d'ouverture du centre sportif, avec des séances le matin et le soir."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Horaires",
+       "body": "Texte d'exemple : le planning hebdomadaire des cours. Mettez-le à jour chaque saison."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planning des cours",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Lundi",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Lundi",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Mardi",
+         "name": "Fonctionnel",
+         "price": "09:30"
+        },
+        {
+         "section": "Mardi",
+         "name": "Danse fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Mercredi",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Mercredi",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Jeudi",
+         "name": "Danse fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Jeudi",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Vendredi",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Vendredi",
+         "name": "Fonctionnel",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires d'ouverture",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie d'essayer ?",
+       "text": "Réservez votre cours d'essai et venez en tenue confortable.",
+       "button_text": "Réserver un cours d'essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur le cours d'essai, les tarifs, les réservations et le niveau requis."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Faut-il de l'expérience pour s'inscrire ?",
+         "answer": "Non. Il y a des cours pour tous les niveaux et les coachs adaptent les exercices. *Texte d'exemple.*"
+        },
+        {
+         "question": "Combien coûte le cours d'essai ?",
+         "answer": "Indiquez ici s'il est gratuit ou payant. *Texte d'exemple.*"
+        },
+        {
+         "question": "Faut-il réserver les cours ?",
+         "answer": "Oui, pour garantir une place dans les petits groupes."
+        },
+        {
+         "question": "Puis-je résilier quand je veux ?",
+         "answer": "Indiquez ici votre durée d'engagement et vos conditions de résiliation. *Texte d'exemple.*"
+        },
+        {
+         "question": "Que dois-je apporter ?",
+         "answer": "Une tenue confortable, des baskets, une serviette et une bouteille d'eau."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie d'essayer ?",
+       "text": "Réservez votre cours d'essai et venez en tenue confortable.",
+       "button_text": "Réserver un cours d'essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : réservez votre cours d'essai ou posez-nous votre question, nous vous répondrons dès que possible pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver un cours d'essai",
+       "text": "Dites-nous ce que vous aimeriez pratiquer et nous vous proposons un cours.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires d'ouverture",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "bien-commencer-le-sport",
+    "title": "Reprendre le sport sans se blesser",
+    "excerpt": "Texte d'exemple pour le blog : des conseils prudents pour reprendre l'exercice.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos adhérents, avec des informations générales et prudentes.\n\n## Allez-y progressivement\n\nDeux ou trois séances par semaine suffisent au début.\n\n## Écoutez votre corps\n\nEn cas de doute sur votre santé, demandez d'abord l'avis d'un professionnel.",
+    "tags": [
+     "conseils",
+     "debutants"
+    ]
+   },
+   {
+    "slug": "spinning-premier-cours",
+    "title": "Spinning : à quoi s'attendre lors du premier cours",
+    "excerpt": "Texte d'exemple : un guide rapide pour monter en selle.",
+    "content": "Texte d'exemple. Expliquez en quoi consiste un cours de spinning et comment s'y préparer.\n\n## Avant de commencer\n\nRéglez bien la selle et prenez une serviette.\n\n## Pendant le cours\n\nVous pouvez réduire la résistance quand vous en avez besoin.",
+    "tags": [
+     "cours",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Fitnessstudio und Gruppenkurse für jedes Niveau",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Kurse",
+    "url": "/kurse"
+   },
+   {
+    "label": "Kursplan",
+    "url": "/kursplan"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Probetraining buchen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Fitnessstudio und Sportzentrum mit Gruppenkursen, Kraftbereich und langen Öffnungszeiten. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Sportzentrum · Beispiel",
+       "title": "Bewegen Sie sich in Ihrem Tempo, mit Energie im Überfluss",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, was Ihr Zentrum bietet, für wen es gedacht ist und wie die Stimmung in den Kursen ist.",
+       "cta_text": "Probetraining buchen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Kursplan ansehen",
+       "cta2_link": "/kursplan"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Das erwartet Sie",
+       "title": "Trainieren Sie, wie es Ihnen gefällt",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Gruppenkurse",
+         "text": "Spinning, Functional, Yoga und Tanz mit geprüften Trainern."
+        },
+        {
+         "icon": "bolt",
+         "title": "Kraftbereich",
+         "text": "Geräte und freie Gewichte mit Betreuung auf der Fläche."
+        },
+        {
+         "icon": "users",
+         "title": "Personal Training",
+         "text": "Ein Plan nach Maß, jeden Monat überprüft."
+        },
+        {
+         "icon": "calendar",
+         "title": "Lange Öffnungszeiten",
+         "text": "Von morgens bis abends geöffnet, passend zu Ihrem Tag."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Kurse pro Woche (Beispiel)"
+        },
+        {
+         "value": "6",
+         "label": "Trainer im Team (Beispiel)"
+        },
+        {
+         "value": "7 Tage",
+         "label": "Buchung im Voraus (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So starten Sie",
+       "items": [
+        {
+         "title": "Probetraining",
+         "text": "Lernen Sie das Zentrum kennen und probieren Sie einen Kurs aus, unverbindlich."
+        },
+        {
+         "title": "Erster Plan",
+         "text": "Ein Trainer schlägt Ihnen Ziele und eine realistische Routine vor."
+        },
+        {
+         "title": "In Ihrem Tempo",
+         "text": "Buchen Sie Ihre Kurse und passen Sie den Plan jederzeit an."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Zentrum",
+       "title": "Eine herzliche Atmosphäre ohne Leistungsdruck",
+       "body": "- Kleine Gruppen in jedem Kurs\n- Trainer, die auf Ihre Technik achten\n- Gepflegte Umkleiden und ein Ruhebereich",
+       "button_text": "Kurse ansehen",
+       "button_link": "/kurse"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetzen Sie ihn durch echte Bewertungen Ihrer Mitglieder, mit deren Erlaubnis.",
+         "name": "Mitglied (Beispiel)",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Lust auf einen Versuch?",
+       "text": "Buchen Sie Ihr Probetraining und kommen Sie in bequemer Kleidung.",
+       "button_text": "Probetraining buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kurse",
+    "title": "Kurse",
+    "seo": {
+     "description": "Beispieltext: Gruppenkurse in Spinning, Functional Training, Yoga und Tanz für jedes Niveau. Ersetzen Sie sie durch Ihre eigenen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Kurse",
+       "body": "Beispieltext: Beschreiben Sie Ihre Kurse so, dass auch Anfänger sie verstehen."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Indoor-Cycling mit Musik und unterschiedlicher Intensität."
+        },
+        {
+         "icon": "target",
+         "title": "Functional Training",
+         "text": "Kraft- und Ausdauerzirkel mit dem eigenen Körpergewicht."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga und Dehnen",
+         "text": "Beweglichkeit, Atmung und Ruhe für einen Ausgleich in der Woche."
+        },
+        {
+         "icon": "heart",
+         "title": "Tanz-Fitness",
+         "text": "Einfache Choreografien zum Schwitzen und Spaßhaben."
+        },
+        {
+         "icon": "star",
+         "title": "Kurse für Senioren",
+         "text": "Sanfte Bewegung für Kraft und Gleichgewicht."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Körperkontrolle und Kräftigung der Körpermitte."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre Preise.",
+       "items": [
+        {
+         "section": "Mitgliedschaften",
+         "name": "Kraftbereich",
+         "price": "ab 29 €/Monat"
+        },
+        {
+         "section": "Mitgliedschaften",
+         "name": "Kraftbereich + Gruppenkurse",
+         "price": "ab 45 €/Monat"
+        },
+        {
+         "section": "Karten",
+         "name": "10er-Karte",
+         "price": "ab 30 €"
+        },
+        {
+         "section": "Karten",
+         "name": "Einzelstunde",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Lust auf einen Versuch?",
+       "text": "Buchen Sie Ihr Probetraining und kommen Sie in bequemer Kleidung.",
+       "button_text": "Probetraining buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kursplan",
+    "title": "Kursplan",
+    "seo": {
+     "description": "Beispieltext: Wochenplan der Gruppenkurse und Öffnungszeiten des Sportzentrums, mit Terminen am Morgen und am Abend."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Kursplan",
+       "body": "Beispieltext: der wöchentliche Kursplan. Aktualisieren Sie ihn jede Saison."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Kursübersicht",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Montag",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Montag",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Dienstag",
+         "name": "Functional",
+         "price": "09:30"
+        },
+        {
+         "section": "Dienstag",
+         "name": "Tanz-Fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Mittwoch",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Mittwoch",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Donnerstag",
+         "name": "Tanz-Fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Donnerstag",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Freitag",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Freitag",
+         "name": "Functional",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Lust auf einen Versuch?",
+       "text": "Buchen Sie Ihr Probetraining und kommen Sie in bequemer Kleidung.",
+       "button_text": "Probetraining buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zum Probetraining, zu Preisen, zur Buchung und zum nötigen Fitnessniveau."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Brauche ich Erfahrung, um mitzumachen?",
+         "answer": "Nein. Es gibt Kurse für jedes Niveau, und die Trainer passen die Übungen an. *Beispieltext.*"
+        },
+        {
+         "question": "Was kostet das Probetraining?",
+         "answer": "Geben Sie hier an, ob es kostenlos ist oder etwas kostet. *Beispieltext.*"
+        },
+        {
+         "question": "Muss ich die Kurse buchen?",
+         "answer": "Ja, damit Ihr Platz in den kleinen Gruppen sicher ist."
+        },
+        {
+         "question": "Kann ich jederzeit kündigen?",
+         "answer": "Nennen Sie hier Ihre Mindestlaufzeit und Kündigungsregeln. *Beispieltext.*"
+        },
+        {
+         "question": "Was muss ich mitbringen?",
+         "answer": "Bequeme Kleidung, Sportschuhe, ein Handtuch und eine Flasche Wasser."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Lust auf einen Versuch?",
+       "text": "Buchen Sie Ihr Probetraining und kommen Sie in bequemer Kleidung.",
+       "button_text": "Probetraining buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Buchen Sie Ihr Probetraining oder schreiben Sie uns Ihre Frage, wir antworten so schnell wie möglich zu den Öffnungszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Probetraining buchen",
+       "text": "Sagen Sie uns, was Sie gern ausprobieren möchten, und wir schlagen Ihnen einen Kurs vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "sicher-ins-training-starten",
+    "title": "So starten Sie ins Training, ohne sich zu verletzen",
+    "excerpt": "Beispieltext für den Blog: vorsichtige Tipps für den Wiedereinstieg.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Mitglieder, mit allgemeinen und vorsichtigen Informationen.\n\n## Fangen Sie langsam an\n\nZwei oder drei Einheiten pro Woche genügen am Anfang.\n\n## Hören Sie auf Ihren Körper\n\nBei gesundheitlichen Zweifeln fragen Sie zuerst eine medizinische Fachkraft.",
+    "tags": [
+     "tipps",
+     "anfaenger"
+    ]
+   },
+   {
+    "slug": "spinning-erste-stunde",
+    "title": "Spinning: Was Sie in der ersten Stunde erwartet",
+    "excerpt": "Beispieltext: ein kurzer Leitfaden für den Start auf dem Bike.",
+    "content": "Beispieltext. Erklären Sie, wie eine Spinning-Stunde abläuft und wie man sich vorbereitet.\n\n## Vor dem Start\n\nStellen Sie den Sattel richtig ein und nehmen Sie ein Handtuch mit.\n\n## Während der Stunde\n\nSie können den Widerstand jederzeit verringern.",
+    "tags": [
+     "kurse",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Palestra e corsi di gruppo per ogni livello",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Corsi",
+    "url": "/corsi"
+   },
+   {
+    "label": "Orari",
+    "url": "/orari"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota una lezione di prova",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: palestra e centro sportivo con corsi di gruppo, sala pesi e orari ampi. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro sportivo · Esempio",
+       "title": "Muoviti con i tuoi tempi, con energia da vendere",
+       "subtitle": "Testo di esempio: racconta in una frase cosa offre il tuo centro, a chi si rivolge e che atmosfera si respira ai corsi.",
+       "cta_text": "Prenota una lezione di prova",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi gli orari",
+       "cta2_link": "/orari"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa troverai",
+       "title": "Allenati come preferisci",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Corsi di gruppo",
+         "text": "Spinning, funzionale, yoga e danza con istruttori qualificati."
+        },
+        {
+         "icon": "bolt",
+         "title": "Sala pesi",
+         "text": "Macchinari e pesi liberi con assistenza in sala."
+        },
+        {
+         "icon": "users",
+         "title": "Personal training",
+         "text": "Un piano su misura, rivisto ogni mese."
+        },
+        {
+         "icon": "calendar",
+         "title": "Orari ampi",
+         "text": "Aperto dalla mattina alla sera, per adattarsi alla tua giornata."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Corsi a settimana (esempio)"
+        },
+        {
+         "value": "6",
+         "label": "Istruttori nel team (esempio)"
+        },
+        {
+         "value": "7 giorni",
+         "label": "Prenotazione in anticipo (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come iniziare",
+       "items": [
+        {
+         "title": "Lezione di prova",
+         "text": "Vieni a conoscere il centro e a provare un corso, senza impegno."
+        },
+        {
+         "title": "Piano iniziale",
+         "text": "Un istruttore ti propone obiettivi e una routine realistica."
+        },
+        {
+         "title": "Ai tuoi ritmi",
+         "text": "Prenota i corsi e adatta il piano quando vuoi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Il centro",
+       "title": "Un ambiente accogliente, senza pressioni",
+       "body": "- Gruppi ridotti in ogni corso\n- Istruttori attenti alla tua tecnica\n- Spogliatoi curati e area relax",
+       "button_text": "Vedi i corsi",
+       "button_link": "/corsi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi iscritti, con il loro consenso.",
+         "name": "Iscritta di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai voglia di provare?",
+       "text": "Prenota la tua lezione di prova e vieni con abiti comodi.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "corsi",
+    "title": "Corsi",
+    "seo": {
+     "description": "Testo di esempio: corsi di gruppo di spinning, allenamento funzionale, yoga e danza per ogni livello. Sostituiscili con i tuoi."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Corsi",
+       "body": "Testo di esempio: descrivi i corsi con parole comprensibili anche a chi non si è mai allenato."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Sedute di ciclismo indoor con musica e intensità diverse."
+        },
+        {
+         "icon": "target",
+         "title": "Allenamento funzionale",
+         "text": "Circuiti di forza e resistenza a corpo libero."
+        },
+        {
+         "icon": "leaf",
+         "title": "Yoga e stretching",
+         "text": "Mobilità, respirazione e calma per equilibrare la settimana."
+        },
+        {
+         "icon": "heart",
+         "title": "Danza fitness",
+         "text": "Coreografie semplici per sudare e divertirsi."
+        },
+        {
+         "icon": "star",
+         "title": "Corsi per senior",
+         "text": "Esercizio dolce per mantenere forza ed equilibrio."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Controllo del corpo e rinforzo del centro."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Quote indicative",
+       "note": "Importi di esempio: sostituiscili con le tue quote.",
+       "items": [
+        {
+         "section": "Abbonamenti",
+         "name": "Sala pesi",
+         "price": "da 29 €/mese"
+        },
+        {
+         "section": "Abbonamenti",
+         "name": "Sala pesi + corsi di gruppo",
+         "price": "da 45 €/mese"
+        },
+        {
+         "section": "Carnet",
+         "name": "Carnet da 10 lezioni",
+         "price": "da 30 €"
+        },
+        {
+         "section": "Carnet",
+         "name": "Lezione singola",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai voglia di provare?",
+       "text": "Prenota la tua lezione di prova e vieni con abiti comodi.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "orari",
+    "title": "Orari",
+    "seo": {
+     "description": "Testo di esempio: programma settimanale dei corsi di gruppo e orari di apertura del centro sportivo, con lezioni al mattino e alla sera."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Orari",
+       "body": "Testo di esempio: il calendario settimanale dei corsi. Aggiornalo a ogni stagione."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Calendario dei corsi",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Lunedì",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Lunedì",
+         "name": "Yoga",
+         "price": "18:30"
+        },
+        {
+         "section": "Martedì",
+         "name": "Funzionale",
+         "price": "09:30"
+        },
+        {
+         "section": "Martedì",
+         "name": "Danza fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Mercoledì",
+         "name": "Yoga",
+         "price": "08:00"
+        },
+        {
+         "section": "Mercoledì",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Giovedì",
+         "name": "Danza fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Giovedì",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Venerdì",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Venerdì",
+         "name": "Funzionale",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari di apertura",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai voglia di provare?",
+       "text": "Prenota la tua lezione di prova e vieni con abiti comodi.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su lezione di prova, quote, prenotazioni e livello richiesto per iniziare."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Serve esperienza per iscriversi?",
+         "answer": "No. Ci sono corsi per ogni livello e gli istruttori adattano gli esercizi. *Testo di esempio.*"
+        },
+        {
+         "question": "Quanto costa la lezione di prova?",
+         "answer": "Indica qui se è gratuita o a pagamento. *Testo di esempio.*"
+        },
+        {
+         "question": "Bisogna prenotare i corsi?",
+         "answer": "Sì, per garantirti il posto nei gruppi ridotti."
+        },
+        {
+         "question": "Posso disdire quando voglio?",
+         "answer": "Indica qui la durata minima e le condizioni di disdetta. *Testo di esempio.*"
+        },
+        {
+         "question": "Cosa devo portare?",
+         "answer": "Abbigliamento comodo, scarpe da ginnastica, un asciugamano e una bottiglia d'acqua."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai voglia di provare?",
+       "text": "Prenota la tua lezione di prova e vieni con abiti comodi.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota la tua lezione di prova o scrivici la tua domanda, ti risponderemo il prima possibile negli orari di apertura."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota la tua lezione di prova",
+       "text": "Dicci cosa ti piacerebbe praticare e ti proponiamo un corso.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari di apertura",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "iniziare-ad-allenarsi",
+    "title": "Come iniziare ad allenarsi senza infortuni",
+    "excerpt": "Testo di esempio per il blog: consigli prudenti per riprendere l'attività.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi iscritti, con informazioni generali e prudenti.\n\n## Parti con calma\n\nDue o tre sedute a settimana bastano all'inizio.\n\n## Ascolta il tuo corpo\n\nIn caso di dubbi sulla salute, chiedi prima il parere di un professionista.",
+    "tags": [
+     "consigli",
+     "principianti"
+    ]
+   },
+   {
+    "slug": "spinning-prima-lezione",
+    "title": "Spinning: cosa aspettarsi dalla prima lezione",
+    "excerpt": "Testo di esempio: una guida rapida per salire in sella.",
+    "content": "Testo di esempio. Spiega in cosa consiste una lezione di spinning e come prepararsi.\n\n## Prima di iniziare\n\nRegola bene la sella e porta un asciugamano.\n\n## Durante la lezione\n\nPuoi ridurre la resistenza quando ne hai bisogno.",
+    "tags": [
+     "corsi",
+     "spinning"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Ginásio e aulas de grupo para todos os níveis",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Aulas",
+    "url": "/aulas"
+   },
+   {
+    "label": "Horários",
+    "url": "/horarios"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar uma aula experimental",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: ginásio e centro desportivo com aulas de grupo, sala de musculação e horários alargados. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro desportivo · Exemplo",
+       "title": "Mexa-se ao seu ritmo, com energia de sobra",
+       "subtitle": "Texto de exemplo: diga numa frase o que o seu centro oferece, a quem se dirige e que ambiente se vive nas aulas.",
+       "cta_text": "Marcar uma aula experimental",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver horários",
+       "cta2_link": "/horarios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que vai encontrar",
+       "title": "Treine como mais gosta",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Aulas de grupo",
+         "text": "Spinning, funcional, ioga e dança com monitores certificados."
+        },
+        {
+         "icon": "bolt",
+         "title": "Sala de musculação",
+         "text": "Máquinas e pesos livres com acompanhamento na sala."
+        },
+        {
+         "icon": "users",
+         "title": "Treino personalizado",
+         "text": "Um plano à sua medida, revisto todos os meses."
+        },
+        {
+         "icon": "calendar",
+         "title": "Horário alargado",
+         "text": "Aberto da manhã à noite para se adaptar ao seu dia."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "18",
+         "label": "Aulas por semana (exemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Monitores na equipa (exemplo)"
+        },
+        {
+         "value": "7 dias",
+         "label": "Reserva com antecedência (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como começar",
+       "items": [
+        {
+         "title": "Aula experimental",
+         "text": "Venha conhecer o centro e experimentar uma aula, sem compromisso."
+        },
+        {
+         "title": "Plano inicial",
+         "text": "Um monitor propõe-lhe objetivos e uma rotina realista."
+        },
+        {
+         "title": "Ao seu ritmo",
+         "text": "Reserve as aulas e ajuste o plano quando precisar."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O centro",
+       "title": "Um ambiente acolhedor, sem pressões",
+       "body": "- Grupos reduzidos em cada aula\n- Monitores atentos à sua técnica\n- Balneários cuidados e zona de descanso",
+       "button_text": "Ver as aulas",
+       "button_link": "/aulas"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus sócios, com a autorização deles.",
+         "name": "Sócia de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer experimentar?",
+       "text": "Marque a sua aula experimental e venha com roupa confortável.",
+       "button_text": "Marcar uma aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "aulas",
+    "title": "Aulas",
+    "seo": {
+     "description": "Texto de exemplo: aulas de grupo de spinning, treino funcional, ioga e dança para todos os níveis. Substitua-as pelas suas."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Aulas",
+       "body": "Texto de exemplo: descreva as aulas com palavras que entenda quem nunca treinou."
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Spinning",
+         "text": "Sessões de ciclismo indoor com música e várias intensidades."
+        },
+        {
+         "icon": "target",
+         "title": "Treino funcional",
+         "text": "Circuitos de força e resistência com o peso do corpo."
+        },
+        {
+         "icon": "leaf",
+         "title": "Ioga e alongamentos",
+         "text": "Mobilidade, respiração e calma para equilibrar a semana."
+        },
+        {
+         "icon": "heart",
+         "title": "Dança fitness",
+         "text": "Coreografias simples para suar e divertir-se."
+        },
+        {
+         "icon": "star",
+         "title": "Aulas para seniores",
+         "text": "Exercício suave para manter força e equilíbrio."
+        },
+        {
+         "icon": "users",
+         "title": "Pilates",
+         "text": "Controlo do corpo e fortalecimento do centro."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Mensalidades indicativas",
+       "note": "Valores de exemplo: substitua-os pelas suas mensalidades.",
+       "items": [
+        {
+         "section": "Mensalidades",
+         "name": "Sala de musculação",
+         "price": "desde 29 €/mês"
+        },
+        {
+         "section": "Mensalidades",
+         "name": "Sala + aulas de grupo",
+         "price": "desde 45 €/mês"
+        },
+        {
+         "section": "Packs",
+         "name": "Pack de 10 aulas",
+         "price": "desde 30 €"
+        },
+        {
+         "section": "Packs",
+         "name": "Aula avulsa",
+         "price": "8 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer experimentar?",
+       "text": "Marque a sua aula experimental e venha com roupa confortável.",
+       "button_text": "Marcar uma aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "horarios",
+    "title": "Horários",
+    "seo": {
+     "description": "Texto de exemplo: horário semanal das aulas de grupo e de abertura do centro desportivo, com sessões de manhã e ao fim do dia."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Horários",
+       "body": "Texto de exemplo: a grelha semanal de aulas. Atualize-a em cada época."
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Grelha de aulas",
+       "note": "Horas de exemplo: altere-as para as suas.",
+       "items": [
+        {
+         "section": "Segunda",
+         "name": "Spinning",
+         "price": "07:30"
+        },
+        {
+         "section": "Segunda",
+         "name": "Ioga",
+         "price": "18:30"
+        },
+        {
+         "section": "Terça",
+         "name": "Funcional",
+         "price": "09:30"
+        },
+        {
+         "section": "Terça",
+         "name": "Dança fitness",
+         "price": "19:30"
+        },
+        {
+         "section": "Quarta",
+         "name": "Ioga",
+         "price": "08:00"
+        },
+        {
+         "section": "Quarta",
+         "name": "Pilates",
+         "price": "20:00"
+        },
+        {
+         "section": "Quinta",
+         "name": "Dança fitness",
+         "price": "18:00"
+        },
+        {
+         "section": "Quinta",
+         "name": "Spinning",
+         "price": "20:30"
+        },
+        {
+         "section": "Sexta",
+         "name": "Pilates",
+         "price": "09:00"
+        },
+        {
+         "section": "Sexta",
+         "name": "Funcional",
+         "price": "19:00"
+        }
+       ]
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário do centro",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer experimentar?",
+       "text": "Marque a sua aula experimental e venha com roupa confortável.",
+       "button_text": "Marcar uma aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre a aula experimental, as mensalidades, as reservas e o nível necessário."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Preciso de experiência para me inscrever?",
+         "answer": "Não. Há aulas para todos os níveis e os monitores adaptam os exercícios. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quanto custa a aula experimental?",
+         "answer": "Indique aqui se é gratuita ou tem custo. *Texto de exemplo.*"
+        },
+        {
+         "question": "É preciso reservar as aulas?",
+         "answer": "Sim, para garantir lugar nos grupos reduzidos."
+        },
+        {
+         "question": "Posso cancelar quando quiser?",
+         "answer": "Indique aqui o período de fidelização e as condições de cancelamento. *Texto de exemplo.*"
+        },
+        {
+         "question": "O que devo levar?",
+         "answer": "Roupa confortável, ténis, toalha e uma garrafa de água."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer experimentar?",
+       "text": "Marque a sua aula experimental e venha com roupa confortável.",
+       "button_text": "Marcar uma aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marque a sua aula experimental ou escreva-nos a sua pergunta e responderemos o mais depressa possível em horário de atendimento."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marque a sua aula experimental",
+       "text": "Diga-nos o que gostaria de praticar e propomos-lhe uma aula.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário do centro",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "07:00",
+         "closes": "22:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "comecar-a-treinar",
+    "title": "Como começar a treinar sem se lesionar",
+    "excerpt": "Texto de exemplo para o blogue: conselhos prudentes para retomar o exercício.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus sócios, com informação geral e prudente.\n\n## Comece devagar\n\nDuas ou três sessões por semana chegam no início.\n\n## Ouça o seu corpo\n\nSe tiver dúvidas de saúde, consulte primeiro um profissional.",
+    "tags": [
+     "conselhos",
+     "iniciantes"
+    ]
+   },
+   {
+    "slug": "spinning-primeira-aula",
+    "title": "Spinning: o que esperar da primeira aula",
+    "excerpt": "Texto de exemplo: um guia rápido para subir à bicicleta.",
+    "content": "Texto de exemplo. Explique em que consiste uma aula de spinning e como se preparar.\n\n## Antes de começar\n\nAjuste bem o selim e leve uma toalha.\n\n## Durante a aula\n\nPode reduzir a resistência sempre que precisar.",
+    "tags": [
+     "aulas",
+     "spinning"
+    ]
+   }
+  ]
+ }
+}

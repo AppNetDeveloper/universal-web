@@ -1,0 +1,2943 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Noche). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Coctelería de autor y música en directo",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Carta",
+    "url": "/carta"
+   },
+   {
+    "label": "Eventos",
+    "url": "/eventos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar mesa",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: coctelería de autor con música en directo y eventos privados, abierta de miércoles a domingo por la noche. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Coctelería y música en directo · Ejemplo",
+       "title": "Cuando cae la noche, empieza lo bueno",
+       "subtitle": "Texto de ejemplo: describe en una frase tu local, qué se bebe y qué se escucha, y por qué merece la pena salir una noche de entre semana.",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver la carta",
+       "cta2_link": "/carta"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Qué encontrarás",
+       "title": "Una noche pensada al detalle",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cócteles de autor",
+         "text": "Recetas propias con ingredientes de temporada y hielo tallado a mano."
+        },
+        {
+         "icon": "heart",
+         "title": "Música en directo",
+         "text": "Jazz, soul y sesiones acústicas, tres noches a la semana."
+        },
+        {
+         "icon": "calendar",
+         "title": "Eventos privados",
+         "text": "Cumpleaños, presentaciones y celebraciones de empresa en sala reservada."
+        },
+        {
+         "icon": "users",
+         "title": "Ambiente cuidado",
+         "text": "Luz tenue, buen sonido y mesas que invitan a quedarse."
+        },
+        {
+         "icon": "award",
+         "title": "Selección de destilados",
+         "text": "Whiskies, ron, ginebras y mezcales elegidos por el equipo de barra."
+        },
+        {
+         "icon": "clock",
+         "title": "Hasta tarde",
+         "text": "Cocina de picoteo y barra abierta hasta la madrugada."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Años abiertos (ejemplo)"
+        },
+        {
+         "value": "120",
+         "label": "Conciertos al año (ejemplo)"
+        },
+        {
+         "value": "45",
+         "label": "Cócteles en carta (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo reservar",
+       "items": [
+        {
+         "title": "Elige la noche",
+         "text": "Mira la programación y escoge el día que mejor te venga."
+        },
+        {
+         "title": "Cuéntanos cuántos sois",
+         "text": "Mesa para dos o sala para cincuenta, lo adaptamos."
+        },
+        {
+         "title": "Confirmamos y a disfrutar",
+         "text": "Te respondemos con la confirmación y guardamos tu mesa hasta una hora concreta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La sala",
+       "title": "Un rincón con carácter",
+       "body": "- Barra de madera y reservados con sofá\n- Escenario pequeño, sonido cuidado\n- Terraza para las noches de verano",
+       "button_text": "Ver eventos",
+       "button_link": "/eventos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quedamos esta noche?",
+       "text": "Reserva tu mesa y te guardamos el mejor sitio para la música.",
+       "button_text": "Reservar mesa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carta",
+    "title": "Carta",
+    "seo": {
+     "description": "Texto de ejemplo: cócteles de autor, clásicos y opciones sin alcohol, con precios orientativos. Cambia la carta por la de tu local."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "La carta",
+       "subtitle": "Texto de ejemplo: presenta tu carta con palabras que se entiendan sin ser camarero.",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cócteles de autor",
+         "text": "Recetas propias de la casa."
+        },
+        {
+         "icon": "heart",
+         "title": "Clásicos",
+         "text": "Los de siempre, bien hechos."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sin alcohol",
+         "text": "Opciones sin alcohol con el mismo cuidado."
+        },
+        {
+         "icon": "users",
+         "title": "Destilados",
+         "text": "Selección por copa o en botella."
+        },
+        {
+         "icon": "award",
+         "title": "Picoteo",
+         "text": "Para acompañar la noche."
+        },
+        {
+         "icon": "clock",
+         "title": "Vinos y cervezas",
+         "text": "Pocas referencias, bien escogidas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Precios orientativos",
+       "note": "Importes de ejemplo: sustitúyelos por los de tu carta.",
+       "items": [
+        {
+         "section": "Cócteles",
+         "name": "Cóctel de autor",
+         "price": "12 €"
+        },
+        {
+         "section": "Cócteles",
+         "name": "Clásico de la casa",
+         "price": "10 €"
+        },
+        {
+         "section": "Cócteles",
+         "name": "Sin alcohol",
+         "price": "7 €"
+        },
+        {
+         "section": "Para picar",
+         "name": "Tabla de quesos",
+         "price": "14 €"
+        },
+        {
+         "section": "Para picar",
+         "name": "Bocados calientes",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quedamos esta noche?",
+       "text": "Reserva tu mesa y te guardamos el mejor sitio para la música.",
+       "button_text": "Reservar mesa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "eventos",
+    "title": "Eventos",
+    "seo": {
+     "description": "Texto de ejemplo: conciertos en directo, noches temáticas y eventos privados con un equipo que se encarga de todo, de la música al brindis."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Música y eventos",
+       "body": "Texto de ejemplo. Cuenta aquí qué tipo de música programáis, qué noches hay concierto y cómo se organiza un evento privado.\n\nHabla de lo que ofreces de verdad: sala, sonido, equipo y capacidad."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Qué incluye un evento privado",
+       "body": "- Sala reservada y atención dedicada\n- Sonido y escenario si hay actuación\n- Menú de cócteles pactado de antemano"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo organizamos tu evento",
+       "items": [
+        {
+         "title": "Nos cuentas la idea",
+         "text": "Fecha, número de personas y tipo de celebración."
+        },
+        {
+         "title": "Propuesta por escrito",
+         "text": "Espacio, menú y condiciones, antes de reservar."
+        },
+        {
+         "title": "Lo dejamos listo",
+         "text": "El día del evento, todo preparado para que solo disfrutes."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre reservas, grupos, edad de acceso, música en directo y eventos privados."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Hace falta reservar?",
+         "answer": "Recomendamos reservar los fines de semana y las noches con concierto. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Hay límite de edad?",
+         "answer": "Indica aquí la edad mínima de acceso de tu local. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Se paga entrada en los conciertos?",
+         "answer": "Indica si hay entrada o consumición mínima. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Aceptáis grupos grandes?",
+         "answer": "Sí, con reserva previa y menú pactado."
+        },
+        {
+         "question": "¿Hay opciones sin alcohol?",
+         "answer": "Sí, con el mismo cuidado que el resto de la carta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes alguna otra pregunta?",
+       "text": "Escríbenos y te respondemos en cuanto abramos.",
+       "button_text": "Contactar",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: reserva tu mesa o consulta por un evento privado y te responderemos lo antes posible. Horario de ejemplo incluido."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar mesa",
+       "text": "Dinos el día, la hora y cuántos sois, y te confirmamos.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-elegir-un-buen-cocktel",
+    "title": "Cómo elegir un buen cóctel según tu gusto",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve para pedir sin dudar.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes sobre cómo escoger una bebida.\n\n## Empieza por el sabor\n\nCítrico, amargo, dulce o ahumado: dile al barman lo que te apetece.\n\n## Pregunta por la casa\n\nLos cócteles de autor suelen ser lo mejor de la carta.",
+    "tags": [
+     "cócteles",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "noches-de-jazz-en-directo",
+    "title": "Noches de jazz en directo: cómo disfrutarlas",
+    "excerpt": "Texto de ejemplo: qué esperar de una noche de música en vivo.",
+    "content": "Texto de ejemplo. Explica cómo funcionan las noches de música en directo en tu local.\n\n## Llega con tiempo\n\nLas mejores mesas se ocupan pronto.\n\n## Deja que suene\n\nLa música en vivo se disfruta mejor con calma.",
+    "tags": [
+     "música",
+     "eventos"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Signature cocktails and live music",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Menu",
+    "url": "/menu"
+   },
+   {
+    "label": "Events",
+    "url": "/events"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a table",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: a signature cocktail bar with live music and private events, open Wednesday to Sunday evenings. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktails and live music · Sample",
+       "title": "When night falls, the good part begins",
+       "subtitle": "Sample text: describe your venue in one sentence, what is poured and what is played, and why a midweek night out is worth it.",
+       "cta_text": "Book a table",
+       "cta_link": "/contact",
+       "cta2_text": "See the menu",
+       "cta2_link": "/menu"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What to expect",
+       "title": "A night designed down to the detail",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Signature cocktails",
+         "text": "House recipes with seasonal ingredients and hand-cut ice."
+        },
+        {
+         "icon": "heart",
+         "title": "Live music",
+         "text": "Jazz, soul and acoustic sessions, three nights a week."
+        },
+        {
+         "icon": "calendar",
+         "title": "Private events",
+         "text": "Birthdays, launches and company parties in a reserved room."
+        },
+        {
+         "icon": "users",
+         "title": "Considered atmosphere",
+         "text": "Low light, good sound and tables that invite you to stay."
+        },
+        {
+         "icon": "award",
+         "title": "Spirits selection",
+         "text": "Whiskies, rums, gins and mezcals picked by the bar team."
+        },
+        {
+         "icon": "clock",
+         "title": "Open late",
+         "text": "Small plates and a bar that stays open into the small hours."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Years open (example)"
+        },
+        {
+         "value": "120",
+         "label": "Concerts a year (example)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktails on the menu (example)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How to book",
+       "items": [
+        {
+         "title": "Pick your night",
+         "text": "Check the programme and choose the day that suits you."
+        },
+        {
+         "title": "Tell us how many you are",
+         "text": "A table for two or a room for fifty, we adapt."
+        },
+        {
+         "title": "We confirm, you enjoy",
+         "text": "We reply with a confirmation and hold your table until an agreed time."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The room",
+       "title": "A corner with character",
+       "body": "- Wooden bar and booths with sofas\n- A small stage with carefully tuned sound\n- A terrace for summer nights",
+       "button_text": "See events",
+       "button_link": "/events"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their permission.",
+         "name": "Sample customer",
+         "role": "Example"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we meet tonight?",
+       "text": "Book your table and we will keep you the best seat for the music.",
+       "button_text": "Book a table",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "menu",
+    "title": "Menu",
+    "seo": {
+     "description": "Sample text: signature cocktails, classics and alcohol-free options with indicative prices. Swap the menu for your own venue's."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "The menu",
+       "subtitle": "Sample text: present your menu in words anyone can follow without being a bartender.",
+       "cta_text": "Book a table",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Signature cocktails",
+         "text": "The house's own recipes."
+        },
+        {
+         "icon": "heart",
+         "title": "Classics",
+         "text": "The ones you know, done well."
+        },
+        {
+         "icon": "calendar",
+         "title": "Alcohol-free",
+         "text": "Alcohol-free options with the same care."
+        },
+        {
+         "icon": "users",
+         "title": "Spirits",
+         "text": "A selection by the glass or the bottle."
+        },
+        {
+         "icon": "award",
+         "title": "Small plates",
+         "text": "To go with the night."
+        },
+        {
+         "icon": "clock",
+         "title": "Wine and beer",
+         "text": "Few labels, well chosen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative prices",
+       "note": "Sample amounts: replace them with the ones on your menu.",
+       "items": [
+        {
+         "section": "Cocktails",
+         "name": "Signature cocktail",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "House classic",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Alcohol-free",
+         "price": "7 €"
+        },
+        {
+         "section": "To share",
+         "name": "Cheese board",
+         "price": "14 €"
+        },
+        {
+         "section": "To share",
+         "name": "Hot bites",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we meet tonight?",
+       "text": "Book your table and we will keep you the best seat for the music.",
+       "button_text": "Book a table",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "events",
+    "title": "Events",
+    "seo": {
+     "description": "Sample text: live concerts, themed nights and private events handled by a team that takes care of everything, from the music to the toast."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Music and events",
+       "body": "Sample text. Tell your story here: what music you programme, which nights have a concert and how a private event is organised.\n\nTalk about what you really offer: room, sound, team and capacity."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "What a private event includes",
+       "body": "- A reserved room and dedicated service\n- Sound and a stage if there is a performance\n- A cocktail menu agreed in advance"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we organise your event",
+       "items": [
+        {
+         "title": "You tell us the idea",
+         "text": "Date, number of guests and type of celebration."
+        },
+        {
+         "title": "Written proposal",
+         "text": "Space, menu and terms, before you book."
+        },
+        {
+         "title": "We get it ready",
+         "text": "On the day, everything is prepared so you only have to enjoy."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about bookings, groups, age limits, live music and private events at our cocktail bar."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Do I need to book?",
+         "answer": "We recommend booking on weekends and concert nights. *Sample text.*"
+        },
+        {
+         "question": "Is there an age limit?",
+         "answer": "State the minimum age for your venue here. *Sample text.*"
+        },
+        {
+         "question": "Is there a cover charge for concerts?",
+         "answer": "State whether there is an entry fee or minimum spend. *Sample text.*"
+        },
+        {
+         "question": "Do you take large groups?",
+         "answer": "Yes, with a prior booking and an agreed menu."
+        },
+        {
+         "question": "Are there alcohol-free options?",
+         "answer": "Yes, with the same care as the rest of the menu."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Any other question?",
+       "text": "Write to us and we will reply as soon as we open.",
+       "button_text": "Contact us",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book your table or ask about a private event and we will reply as soon as we can. Sample opening hours included."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a table",
+       "text": "Tell us the day, the time and how many of you, and we will confirm.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-choose-a-good-cocktail",
+    "title": "How to choose a good cocktail for your taste",
+    "excerpt": "Sample blog text: a short guide to ordering with confidence.",
+    "content": "Sample text. Write a useful article for your customers about choosing a drink.\n\n## Start with flavour\n\nCitrusy, bitter, sweet or smoky: tell the bartender what you fancy.\n\n## Ask about the house drinks\n\nSignature cocktails are often the best part of the menu.",
+    "tags": [
+     "cocktails",
+     "tips"
+    ]
+   },
+   {
+    "slug": "live-jazz-nights",
+    "title": "Live jazz nights: how to make the most of them",
+    "excerpt": "Sample text: what to expect from an evening of live music.",
+    "content": "Sample text. Explain how live music nights work at your venue.\n\n## Arrive early\n\nThe best tables go quickly.\n\n## Let it play\n\nLive music is best enjoyed unhurried.",
+    "tags": [
+     "music",
+     "events"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Cocktailuri de autor și muzică live",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Meniu",
+    "url": "/meniu"
+   },
+   {
+    "label": "Evenimente",
+    "url": "/evenimente"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Rezervă o masă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: bar de cocktailuri de autor cu muzică live și evenimente private, deschis de miercuri până duminică seara. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktailuri și muzică live · Exemplu",
+       "title": "Când se lasă noaptea, începe partea bună",
+       "subtitle": "Text de exemplu: descrie într-o frază localul tău, ce se bea și ce se ascultă, și de ce merită să ieși într-o seară din timpul săptămânii.",
+       "cta_text": "Rezervă o masă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi meniul",
+       "cta2_link": "/meniu"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce vei găsi",
+       "title": "O seară gândită până la ultimul detaliu",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktailuri de autor",
+         "text": "Rețete proprii, cu ingrediente de sezon și gheață tăiată manual."
+        },
+        {
+         "icon": "heart",
+         "title": "Muzică live",
+         "text": "Jazz, soul și sesiuni acustice, trei seri pe săptămână."
+        },
+        {
+         "icon": "calendar",
+         "title": "Evenimente private",
+         "text": "Aniversări, lansări și petreceri de firmă într-o sală rezervată."
+        },
+        {
+         "icon": "users",
+         "title": "Atmosferă îngrijită",
+         "text": "Lumină difuză, sonorizare bună și mese care te îndeamnă să rămâi."
+        },
+        {
+         "icon": "award",
+         "title": "Selecție de distilate",
+         "text": "Whisky, rom, gin și mezcal alese de echipa de la bar."
+        },
+        {
+         "icon": "clock",
+         "title": "Deschis târziu",
+         "text": "Gustări și bar deschis până în zori."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Ani de activitate (exemplu)"
+        },
+        {
+         "value": "120",
+         "label": "Concerte pe an (exemplu)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktailuri în meniu (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum rezervi",
+       "items": [
+        {
+         "title": "Alege seara",
+         "text": "Vezi programul și alege ziua care ți se potrivește."
+        },
+        {
+         "title": "Spune-ne câți sunteți",
+         "text": "O masă pentru doi sau o sală pentru cincizeci, ne adaptăm."
+        },
+        {
+         "title": "Confirmăm, iar tu te bucuri",
+         "text": "Îți răspundem cu confirmarea și păstrăm masa până la o oră stabilită."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sala",
+       "title": "Un colț cu personalitate",
+       "body": "- Bar din lemn și separeuri cu canapele\n- Scenă mică, sunet bine reglat\n- Terasă pentru serile de vară",
+       "button_text": "Vezi evenimentele",
+       "button_link": "/evenimente"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ne vedem diseară?",
+       "text": "Rezervă o masă și îți păstrăm cel mai bun loc pentru muzică.",
+       "button_text": "Rezervă o masă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "meniu",
+    "title": "Meniu",
+    "seo": {
+     "description": "Text de exemplu: cocktailuri de autor, clasice și variante fără alcool, cu prețuri orientative. Schimbă meniul cu cel al localului tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Meniul",
+       "subtitle": "Text de exemplu: prezintă-ți meniul pe înțelesul oricui, nu doar al barmanilor.",
+       "cta_text": "Rezervă o masă",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktailuri de autor",
+         "text": "Rețete proprii ale casei."
+        },
+        {
+         "icon": "heart",
+         "title": "Clasice",
+         "text": "Cele cunoscute, făcute bine."
+        },
+        {
+         "icon": "calendar",
+         "title": "Fără alcool",
+         "text": "Variante fără alcool, cu aceeași grijă."
+        },
+        {
+         "icon": "users",
+         "title": "Distilate",
+         "text": "Selecție la pahar sau la sticlă."
+        },
+        {
+         "icon": "award",
+         "title": "Gustări",
+         "text": "Pentru a însoți seara."
+        },
+        {
+         "icon": "clock",
+         "title": "Vin și bere",
+         "text": "Puține sortimente, bine alese."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prețuri orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu cele din meniul tău.",
+       "items": [
+        {
+         "section": "Cocktailuri",
+         "name": "Cocktail de autor",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktailuri",
+         "name": "Clasic al casei",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktailuri",
+         "name": "Fără alcool",
+         "price": "7 €"
+        },
+        {
+         "section": "De ronțăit",
+         "name": "Platou de brânzeturi",
+         "price": "14 €"
+        },
+        {
+         "section": "De ronțăit",
+         "name": "Bucăți calde",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ne vedem diseară?",
+       "text": "Rezervă o masă și îți păstrăm cel mai bun loc pentru muzică.",
+       "button_text": "Rezervă o masă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "evenimente",
+    "title": "Evenimente",
+    "seo": {
+     "description": "Text de exemplu: concerte live, seri tematice și evenimente private, organizate de o echipă care se ocupă de tot, de la muzică la toast."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Muzică și evenimente",
+       "body": "Text de exemplu. Povestește aici ce fel de muzică programați, în ce seri sunt concerte și cum se organizează un eveniment privat.\n\nVorbește despre ce oferi cu adevărat: sală, sonorizare, echipă și capacitate."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Ce include un eveniment privat",
+       "body": "- Sală rezervată și servire dedicată\n- Sonorizare și scenă, dacă există un spectacol\n- Meniu de cocktailuri stabilit din timp"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum îți organizăm evenimentul",
+       "items": [
+        {
+         "title": "Ne spui ideea",
+         "text": "Data, numărul de invitați și tipul de petrecere."
+        },
+        {
+         "title": "Propunere în scris",
+         "text": "Spațiu, meniu și condiții, înainte de rezervare."
+        },
+        {
+         "title": "Pregătim totul",
+         "text": "În ziua evenimentului, totul e gata ca tu să te bucuri."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre rezervări, grupuri, vârsta de acces, muzica live și evenimentele private."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Trebuie să rezerv?",
+         "answer": "Recomandăm rezervarea în weekend și în serile cu concert. *Text de exemplu.*"
+        },
+        {
+         "question": "Există o vârstă minimă?",
+         "answer": "Indică aici vârsta minimă de acces în localul tău. *Text de exemplu.*"
+        },
+        {
+         "question": "Se plătește intrare la concerte?",
+         "answer": "Indică dacă există taxă de intrare sau consumație minimă. *Text de exemplu.*"
+        },
+        {
+         "question": "Primiți grupuri mari?",
+         "answer": "Da, cu rezervare prealabilă și meniu stabilit."
+        },
+        {
+         "question": "Există variante fără alcool?",
+         "answer": "Da, pregătite cu aceeași grijă ca restul meniului."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Mai ai o întrebare?",
+       "text": "Scrie-ne și îți răspundem imediat ce deschidem.",
+       "button_text": "Contactează-ne",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: rezervă o masă sau întreabă despre un eveniment privat și îți răspundem cât mai repede. Program de exemplu inclus."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Rezervă o masă",
+       "text": "Spune-ne ziua, ora și câți sunteți, iar noi confirmăm.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-alegi-un-cocktail-bun",
+    "title": "Cum alegi un cocktail pe gustul tău",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt pentru a comanda fără ezitare.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi despre cum să aleagă o băutură.\n\n## Începe cu gustul\n\nCitric, amar, dulce sau afumat: spune-i barmanului ce îți dorești.\n\n## Întreabă de băuturile casei\n\nCocktailurile de autor sunt adesea cele mai bune din meniu.",
+    "tags": [
+     "cocktailuri",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "seri-de-jazz-live",
+    "title": "Seri de jazz live: cum să te bucuri de ele",
+    "excerpt": "Text de exemplu: la ce să te aștepți de la o seară de muzică live.",
+    "content": "Text de exemplu. Explică cum funcționează serile de muzică live în localul tău.\n\n## Vino din timp\n\nCele mai bune mese se ocupă repede.\n\n## Lasă muzica să sune\n\nMuzica live se savurează mai bine fără grabă.",
+    "tags": [
+     "muzică",
+     "evenimente"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Cocktails de création et musique live",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Carte",
+    "url": "/carte"
+   },
+   {
+    "label": "Événements",
+    "url": "/evenements"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Réserver une table",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : bar à cocktails de création avec musique live et événements privés, ouvert du mercredi au dimanche soir. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktails et musique live · Exemple",
+       "title": "Quand la nuit tombe, le meilleur commence",
+       "subtitle": "Texte d'exemple : décrivez votre lieu en une phrase, ce que l'on y boit, ce que l'on y écoute, et pourquoi une soirée en semaine vaut le détour.",
+       "cta_text": "Réserver une table",
+       "cta_link": "/contact",
+       "cta2_text": "Voir la carte",
+       "cta2_link": "/carte"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que vous trouverez",
+       "title": "Une soirée pensée dans les moindres détails",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktails de création",
+         "text": "Recettes maison, ingrédients de saison et glace taillée à la main."
+        },
+        {
+         "icon": "heart",
+         "title": "Musique live",
+         "text": "Jazz, soul et sessions acoustiques, trois soirs par semaine."
+        },
+        {
+         "icon": "calendar",
+         "title": "Événements privés",
+         "text": "Anniversaires, lancements et fêtes d'entreprise dans une salle réservée."
+        },
+        {
+         "icon": "users",
+         "title": "Ambiance soignée",
+         "text": "Lumière tamisée, bon son et tables où l'on aime s'attarder."
+        },
+        {
+         "icon": "award",
+         "title": "Sélection de spiritueux",
+         "text": "Whiskies, rhums, gins et mezcals choisis par l'équipe du bar."
+        },
+        {
+         "icon": "clock",
+         "title": "Ouvert tard",
+         "text": "Petite restauration et bar ouvert jusqu'au bout de la nuit."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Années d'ouverture (exemple)"
+        },
+        {
+         "value": "120",
+         "label": "Concerts par an (exemple)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktails à la carte (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comment réserver",
+       "items": [
+        {
+         "title": "Choisissez votre soirée",
+         "text": "Consultez la programmation et prenez le jour qui vous convient."
+        },
+        {
+         "title": "Dites-nous combien vous êtes",
+         "text": "Une table pour deux ou une salle pour cinquante, nous nous adaptons."
+        },
+        {
+         "title": "Nous confirmons, vous profitez",
+         "text": "Nous vous répondons avec la confirmation et gardons votre table jusqu'à une heure convenue."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La salle",
+       "title": "Un lieu qui a du caractère",
+       "body": "- Comptoir en bois et banquettes\n- Petite scène, son soigné\n- Terrasse pour les soirs d'été",
+       "button_text": "Voir les événements",
+       "button_link": "/evenements"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple d'un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On se retrouve ce soir ?",
+       "text": "Réservez votre table et nous vous gardons la meilleure place pour la musique.",
+       "button_text": "Réserver une table",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carte",
+    "title": "Carte",
+    "seo": {
+     "description": "Texte d'exemple : cocktails de création, classiques et options sans alcool, avec des prix indicatifs. Remplacez la carte par celle de votre lieu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "La carte",
+       "subtitle": "Texte d'exemple : présentez votre carte avec des mots que chacun comprend, même sans être barman.",
+       "cta_text": "Réserver une table",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktails de création",
+         "text": "Les recettes de la maison."
+        },
+        {
+         "icon": "heart",
+         "title": "Classiques",
+         "text": "Ceux que l'on connaît, bien faits."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sans alcool",
+         "text": "Des options sans alcool, avec le même soin."
+        },
+        {
+         "icon": "users",
+         "title": "Spiritueux",
+         "text": "Une sélection au verre ou à la bouteille."
+        },
+        {
+         "icon": "award",
+         "title": "À grignoter",
+         "text": "Pour accompagner la soirée."
+        },
+        {
+         "icon": "clock",
+         "title": "Vins et bières",
+         "text": "Peu de références, bien choisies."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prix indicatifs",
+       "note": "Montants d'exemple : remplacez-les par ceux de votre carte.",
+       "items": [
+        {
+         "section": "Cocktails",
+         "name": "Cocktail de création",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Classique de la maison",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Sans alcool",
+         "price": "7 €"
+        },
+        {
+         "section": "À partager",
+         "name": "Planche de fromages",
+         "price": "14 €"
+        },
+        {
+         "section": "À partager",
+         "name": "Bouchées chaudes",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On se retrouve ce soir ?",
+       "text": "Réservez votre table et nous vous gardons la meilleure place pour la musique.",
+       "button_text": "Réserver une table",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "evenements",
+    "title": "Événements",
+    "seo": {
+     "description": "Texte d'exemple : concerts live, soirées à thème et événements privés pris en charge par une équipe qui s'occupe de tout, de la musique au toast."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Musique et événements",
+       "body": "Texte d'exemple. Racontez ici quelle musique vous programmez, quels soirs il y a un concert et comment s'organise un événement privé.\n\nParlez de ce que vous offrez vraiment : salle, sono, équipe et capacité."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Ce que comprend un événement privé",
+       "body": "- Une salle réservée et un service dédié\n- Sono et scène en cas de concert\n- Une carte de cocktails convenue à l'avance"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comment nous organisons votre événement",
+       "items": [
+        {
+         "title": "Vous nous confiez l'idée",
+         "text": "Date, nombre d'invités et type de fête."
+        },
+        {
+         "title": "Proposition écrite",
+         "text": "Lieu, menu et conditions, avant toute réservation."
+        },
+        {
+         "title": "Nous préparons tout",
+         "text": "Le jour J, tout est prêt pour que vous n'ayez qu'à profiter."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les réservations, les groupes, l'âge d'accès, la musique live et les événements privés."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Faut-il réserver ?",
+         "answer": "Nous conseillons de réserver le week-end et les soirs de concert. *Texte d'exemple.*"
+        },
+        {
+         "question": "Y a-t-il une limite d'âge ?",
+         "answer": "Indiquez ici l'âge minimum d'accès de votre lieu. *Texte d'exemple.*"
+        },
+        {
+         "question": "L'entrée est-elle payante pour les concerts ?",
+         "answer": "Indiquez s'il y a un droit d'entrée ou une consommation minimum. *Texte d'exemple.*"
+        },
+        {
+         "question": "Acceptez-vous les grands groupes ?",
+         "answer": "Oui, sur réservation et avec une carte convenue."
+        },
+        {
+         "question": "Y a-t-il des options sans alcool ?",
+         "answer": "Oui, préparées avec le même soin que le reste de la carte."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Une autre question ?",
+       "text": "Écrivez-nous, nous vous répondons dès l'ouverture.",
+       "button_text": "Nous contacter",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : réservez votre table ou renseignez-vous sur un événement privé, nous vous répondons au plus vite. Horaires d'exemple inclus."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver une table",
+       "text": "Indiquez-nous le jour, l'heure et le nombre de personnes, et nous confirmons.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "comment-choisir-un-bon-cocktail",
+    "title": "Comment choisir un bon cocktail selon vos goûts",
+    "excerpt": "Texte d'exemple pour le blog : un petit guide pour commander sans hésiter.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients sur le choix d'une boisson.\n\n## Commencez par la saveur\n\nAgrumes, amer, sucré ou fumé : dites au barman ce dont vous avez envie.\n\n## Demandez les créations de la maison\n\nLes cocktails de création sont souvent le meilleur de la carte.",
+    "tags": [
+     "cocktails",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "soirees-jazz-en-direct",
+    "title": "Soirées jazz en direct : bien en profiter",
+    "excerpt": "Texte d'exemple : à quoi s'attendre lors d'une soirée de musique live.",
+    "content": "Texte d'exemple. Expliquez comment se déroulent les soirées de musique live dans votre lieu.\n\n## Arrivez à l'avance\n\nLes meilleures tables partent vite.\n\n## Laissez jouer la musique\n\nLa musique live se savoure sans se presser.",
+    "tags": [
+     "musique",
+     "événements"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Signature-Cocktails und Livemusik",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Karte",
+    "url": "/karte"
+   },
+   {
+    "label": "Veranstaltungen",
+    "url": "/veranstaltungen"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Tisch reservieren",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Cocktailbar mit eigenen Kreationen, Livemusik und privaten Feiern, von Mittwoch bis Sonntag abends geöffnet. Ersetzen Sie ihn durch Ihren."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktails und Livemusik · Beispiel",
+       "title": "Wenn die Nacht beginnt, geht es erst richtig los",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihr Lokal in einem Satz, was getrunken und was gespielt wird und warum sich ein Abend unter der Woche lohnt.",
+       "cta_text": "Tisch reservieren",
+       "cta_link": "/kontakt",
+       "cta2_text": "Zur Karte",
+       "cta2_link": "/karte"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was Sie erwartet",
+       "title": "Ein Abend, durchdacht bis ins Detail",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Signature-Cocktails",
+         "text": "Eigene Rezepte mit saisonalen Zutaten und von Hand geschnittenem Eis."
+        },
+        {
+         "icon": "heart",
+         "title": "Livemusik",
+         "text": "Jazz, Soul und Akustik-Sessions, an drei Abenden pro Woche."
+        },
+        {
+         "icon": "calendar",
+         "title": "Private Feiern",
+         "text": "Geburtstage, Präsentationen und Firmenfeiern in einem reservierten Raum."
+        },
+        {
+         "icon": "users",
+         "title": "Stimmungsvolles Ambiente",
+         "text": "Gedämpftes Licht, guter Klang und Tische, an denen man gern bleibt."
+        },
+        {
+         "icon": "award",
+         "title": "Auswahl an Spirituosen",
+         "text": "Whisky, Rum, Gin und Mezcal, vom Barteam ausgewählt."
+        },
+        {
+         "icon": "clock",
+         "title": "Bis spät geöffnet",
+         "text": "Kleine Gerichte und eine Bar, die bis in die Nacht geöffnet bleibt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Jahre geöffnet (Beispiel)"
+        },
+        {
+         "value": "120",
+         "label": "Konzerte pro Jahr (Beispiel)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktails auf der Karte (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So reservieren Sie",
+       "items": [
+        {
+         "title": "Abend aussuchen",
+         "text": "Schauen Sie ins Programm und wählen Sie den passenden Tag."
+        },
+        {
+         "title": "Personenzahl nennen",
+         "text": "Ein Tisch für zwei oder ein Raum für fünfzig, wir passen uns an."
+        },
+        {
+         "title": "Wir bestätigen, Sie genießen",
+         "text": "Wir antworten mit der Bestätigung und halten Ihren Tisch bis zu einer vereinbarten Uhrzeit frei."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Der Raum",
+       "title": "Ein Ort mit Charakter",
+       "body": "- Holztresen und Nischen mit Sofas\n- Kleine Bühne, sorgfältig abgestimmter Klang\n- Terrasse für Sommerabende",
+       "button_text": "Veranstaltungen ansehen",
+       "button_link": "/veranstaltungen"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetzen Sie ihn durch echte Bewertungen Ihrer Gäste, mit deren Erlaubnis.",
+         "name": "Beispielgast",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Treffen wir uns heute Abend?",
+       "text": "Reservieren Sie Ihren Tisch, wir halten Ihnen den besten Platz für die Musik frei.",
+       "button_text": "Tisch reservieren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "karte",
+    "title": "Karte",
+    "seo": {
+     "description": "Beispieltext: eigene Cocktailkreationen, Klassiker und alkoholfreie Drinks mit Richtpreisen. Ersetzen Sie die Karte durch die Ihres Lokals."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Die Karte",
+       "subtitle": "Beispieltext: Stellen Sie Ihre Karte in Worten vor, die auch Nicht-Barkeeper verstehen.",
+       "cta_text": "Tisch reservieren",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Signature-Cocktails",
+         "text": "Die eigenen Rezepte des Hauses."
+        },
+        {
+         "icon": "heart",
+         "title": "Klassiker",
+         "text": "Die bekannten, gut gemacht."
+        },
+        {
+         "icon": "calendar",
+         "title": "Alkoholfrei",
+         "text": "Alkoholfreie Drinks mit derselben Sorgfalt."
+        },
+        {
+         "icon": "users",
+         "title": "Spirituosen",
+         "text": "Auswahl im Glas oder als Flasche."
+        },
+        {
+         "icon": "award",
+         "title": "Kleine Gerichte",
+         "text": "Zum Begleiten des Abends."
+        },
+        {
+         "icon": "clock",
+         "title": "Wein und Bier",
+         "text": "Wenige Sorten, gut ausgewählt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch die Preise Ihrer Karte.",
+       "items": [
+        {
+         "section": "Cocktails",
+         "name": "Signature-Cocktail",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Klassiker des Hauses",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Alkoholfrei",
+         "price": "7 €"
+        },
+        {
+         "section": "Zum Teilen",
+         "name": "Käseplatte",
+         "price": "14 €"
+        },
+        {
+         "section": "Zum Teilen",
+         "name": "Warme Häppchen",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Treffen wir uns heute Abend?",
+       "text": "Reservieren Sie Ihren Tisch, wir halten Ihnen den besten Platz für die Musik frei.",
+       "button_text": "Tisch reservieren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "veranstaltungen",
+    "title": "Veranstaltungen",
+    "seo": {
+     "description": "Beispieltext: Livekonzerte, Themenabende und private Feiern mit einem Team, das sich um alles kümmert, von der Musik bis zum Anstoßen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Musik und Veranstaltungen",
+       "body": "Beispieltext. Erzählen Sie hier, welche Musik Sie spielen lassen, an welchen Abenden Konzerte stattfinden und wie eine private Feier organisiert wird.\n\nSchreiben Sie über das, was Sie wirklich bieten: Raum, Technik, Team und Platz."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Was eine private Feier umfasst",
+       "body": "- Reservierter Raum und persönliche Betreuung\n- Technik und Bühne bei Auftritten\n- Vorab vereinbartes Cocktailmenü"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So organisieren wir Ihre Feier",
+       "items": [
+        {
+         "title": "Sie erzählen uns die Idee",
+         "text": "Datum, Gästezahl und Art der Feier."
+        },
+        {
+         "title": "Schriftliches Angebot",
+         "text": "Raum, Menü und Bedingungen, bevor Sie buchen."
+        },
+        {
+         "title": "Wir bereiten alles vor",
+         "text": "Am Tag selbst ist alles bereit, damit Sie nur noch genießen müssen."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Reservierungen, Gruppen, Mindestalter, Livemusik und privaten Veranstaltungen in unserer Bar."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Muss ich reservieren?",
+         "answer": "Wir empfehlen eine Reservierung am Wochenende und an Konzertabenden. *Beispieltext.*"
+        },
+        {
+         "question": "Gibt es ein Mindestalter?",
+         "answer": "Nennen Sie hier das Mindestalter für Ihr Lokal. *Beispieltext.*"
+        },
+        {
+         "question": "Kostet der Eintritt bei Konzerten etwas?",
+         "answer": "Geben Sie an, ob es Eintritt oder einen Mindestverzehr gibt. *Beispieltext.*"
+        },
+        {
+         "question": "Nehmt ihr große Gruppen auf?",
+         "answer": "Ja, mit vorheriger Reservierung und vereinbartem Menü."
+        },
+        {
+         "question": "Gibt es alkoholfreie Optionen?",
+         "answer": "Ja, mit derselben Sorgfalt wie der Rest der Karte."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Noch eine Frage?",
+       "text": "Schreiben Sie uns, wir antworten, sobald wir öffnen.",
+       "button_text": "Kontakt aufnehmen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Reservieren Sie Ihren Tisch oder fragen Sie nach einer privaten Feier, wir antworten so schnell wie möglich. Beispielzeiten inklusive."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Tisch reservieren",
+       "text": "Nennen Sie uns Tag, Uhrzeit und Personenzahl, wir bestätigen.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "den-richtigen-cocktail-waehlen",
+    "title": "So finden Sie den Cocktail, der zu Ihnen passt",
+    "excerpt": "Beispieltext für den Blog: ein kurzer Leitfaden, um selbstsicher zu bestellen.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Gäste über die Wahl eines Getränks.\n\n## Beginnen Sie beim Geschmack\n\nZitrisch, bitter, süß oder rauchig: Sagen Sie dem Barkeeper, wonach Ihnen ist.\n\n## Fragen Sie nach den Hausdrinks\n\nDie eigenen Kreationen sind oft das Beste auf der Karte.",
+    "tags": [
+     "Cocktails",
+     "Tipps"
+    ]
+   },
+   {
+    "slug": "jazzabende-live-erleben",
+    "title": "Jazzabende live: So genießen Sie sie richtig",
+    "excerpt": "Beispieltext: Was Sie von einem Abend mit Livemusik erwarten können.",
+    "content": "Beispieltext. Erklären Sie, wie die Abende mit Livemusik in Ihrem Lokal ablaufen.\n\n## Kommen Sie früh\n\nDie besten Tische sind schnell vergeben.\n\n## Lassen Sie die Musik wirken\n\nLivemusik genießt man am besten ohne Eile.",
+    "tags": [
+     "Musik",
+     "Veranstaltungen"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Cocktail d'autore e musica dal vivo",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Carta",
+    "url": "/carta"
+   },
+   {
+    "label": "Eventi",
+    "url": "/eventi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota un tavolo",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: cocktail bar d'autore con musica dal vivo ed eventi privati, aperto da mercoledì a domenica sera. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktail e musica dal vivo · Esempio",
+       "title": "Quando scende la notte, inizia il bello",
+       "subtitle": "Testo di esempio: descrivi in una frase il tuo locale, cosa si beve e cosa si ascolta, e perché vale la pena uscire anche a metà settimana.",
+       "cta_text": "Prenota un tavolo",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi la carta",
+       "cta2_link": "/carta"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa troverai",
+       "title": "Una serata pensata nei minimi dettagli",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktail d'autore",
+         "text": "Ricette proprie con ingredienti di stagione e ghiaccio tagliato a mano."
+        },
+        {
+         "icon": "heart",
+         "title": "Musica dal vivo",
+         "text": "Jazz, soul e sessioni acustiche, tre sere a settimana."
+        },
+        {
+         "icon": "calendar",
+         "title": "Eventi privati",
+         "text": "Compleanni, presentazioni e feste aziendali in una sala riservata."
+        },
+        {
+         "icon": "users",
+         "title": "Atmosfera curata",
+         "text": "Luci soffuse, buon suono e tavoli dove viene voglia di restare."
+        },
+        {
+         "icon": "award",
+         "title": "Selezione di distillati",
+         "text": "Whisky, rum, gin e mezcal scelti dal team del bancone."
+        },
+        {
+         "icon": "clock",
+         "title": "Aperti fino a tardi",
+         "text": "Piccola cucina e bancone aperto fino a notte fonda."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Anni di attività (esempio)"
+        },
+        {
+         "value": "120",
+         "label": "Concerti all'anno (esempio)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktail in carta (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come prenotare",
+       "items": [
+        {
+         "title": "Scegli la serata",
+         "text": "Guarda la programmazione e scegli il giorno che preferisci."
+        },
+        {
+         "title": "Dicci quanti siete",
+         "text": "Un tavolo per due o una sala per cinquanta, ci adattiamo."
+        },
+        {
+         "title": "Confermiamo e ti godi la serata",
+         "text": "Ti rispondiamo con la conferma e teniamo il tavolo fino a un orario concordato."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La sala",
+       "title": "Un angolo con carattere",
+       "body": "- Bancone in legno e salottini con divani\n- Piccolo palco, suono curato\n- Terrazza per le sere d'estate",
+       "button_text": "Vedi gli eventi",
+       "button_link": "/eventi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro permesso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ci vediamo stasera?",
+       "text": "Prenota il tuo tavolo e ti teniamo il posto migliore per la musica.",
+       "button_text": "Prenota un tavolo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carta",
+    "title": "Carta",
+    "seo": {
+     "description": "Testo di esempio: cocktail d'autore, classici e opzioni analcoliche, con prezzi indicativi. Cambia la carta con quella del tuo locale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "La carta",
+       "subtitle": "Testo di esempio: presenta la tua carta con parole comprensibili anche a chi non fa il barman.",
+       "cta_text": "Prenota un tavolo",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktail d'autore",
+         "text": "Le ricette della casa."
+        },
+        {
+         "icon": "heart",
+         "title": "Classici",
+         "text": "Quelli di sempre, fatti bene."
+        },
+        {
+         "icon": "calendar",
+         "title": "Analcolici",
+         "text": "Opzioni senza alcol con la stessa cura."
+        },
+        {
+         "icon": "users",
+         "title": "Distillati",
+         "text": "Selezione al bicchiere o in bottiglia."
+        },
+        {
+         "icon": "award",
+         "title": "Da stuzzicare",
+         "text": "Per accompagnare la serata."
+        },
+        {
+         "icon": "clock",
+         "title": "Vini e birre",
+         "text": "Poche etichette, scelte bene."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prezzi indicativi",
+       "note": "Importi di esempio: sostituiscili con quelli della tua carta.",
+       "items": [
+        {
+         "section": "Cocktail",
+         "name": "Cocktail d'autore",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktail",
+         "name": "Classico della casa",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktail",
+         "name": "Analcolico",
+         "price": "7 €"
+        },
+        {
+         "section": "Da condividere",
+         "name": "Tagliere di formaggi",
+         "price": "14 €"
+        },
+        {
+         "section": "Da condividere",
+         "name": "Bocconcini caldi",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ci vediamo stasera?",
+       "text": "Prenota il tuo tavolo e ti teniamo il posto migliore per la musica.",
+       "button_text": "Prenota un tavolo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "eventi",
+    "title": "Eventi",
+    "seo": {
+     "description": "Testo di esempio: concerti dal vivo, serate a tema ed eventi privati curati da un team che pensa a tutto, dalla musica al brindisi."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Musica ed eventi",
+       "body": "Testo di esempio. Racconta qui che musica programmate, in quali sere ci sono i concerti e come si organizza un evento privato.\n\nParla di ciò che offri davvero: sala, impianto, team e capienza."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cosa include un evento privato",
+       "body": "- Sala riservata e servizio dedicato\n- Impianto e palco se c'è un'esibizione\n- Menu di cocktail concordato in anticipo"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come organizziamo il tuo evento",
+       "items": [
+        {
+         "title": "Ci racconti l'idea",
+         "text": "Data, numero di persone e tipo di festa."
+        },
+        {
+         "title": "Proposta scritta",
+         "text": "Spazio, menu e condizioni, prima di prenotare."
+        },
+        {
+         "title": "Prepariamo tutto",
+         "text": "Il giorno dell'evento è tutto pronto, tu devi solo divertirti."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su prenotazioni, gruppi, età di accesso, musica dal vivo ed eventi privati nel nostro locale."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Serve prenotare?",
+         "answer": "Consigliamo di prenotare nei fine settimana e nelle sere di concerto. *Testo di esempio.*"
+        },
+        {
+         "question": "C'è un limite di età?",
+         "answer": "Indica qui l'età minima di accesso del tuo locale. *Testo di esempio.*"
+        },
+        {
+         "question": "I concerti sono a pagamento?",
+         "answer": "Indica se c'è un biglietto d'ingresso o una consumazione minima. *Testo di esempio.*"
+        },
+        {
+         "question": "Accettate gruppi numerosi?",
+         "answer": "Sì, con prenotazione anticipata e menu concordato."
+        },
+        {
+         "question": "Ci sono opzioni analcoliche?",
+         "answer": "Sì, curate come il resto della carta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un'altra domanda?",
+       "text": "Scrivici e ti rispondiamo appena apriamo.",
+       "button_text": "Contattaci",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota il tuo tavolo o chiedi di un evento privato e ti risponderemo il prima possibile. Orari di esempio inclusi."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota un tavolo",
+       "text": "Dicci il giorno, l'ora e quanti siete, e ti confermiamo.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "come-scegliere-un-buon-cocktail",
+    "title": "Come scegliere un buon cocktail in base ai tuoi gusti",
+    "excerpt": "Testo di esempio per il blog: una breve guida per ordinare con sicurezza.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti su come scegliere un drink.\n\n## Parti dal sapore\n\nAgrumato, amaro, dolce o affumicato: di' al barman cosa ti va.\n\n## Chiedi i drink della casa\n\nI cocktail d'autore sono spesso il meglio della carta.",
+    "tags": [
+     "cocktail",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "serate-jazz-dal-vivo",
+    "title": "Serate jazz dal vivo: come godersele",
+    "excerpt": "Testo di esempio: cosa aspettarsi da una serata di musica dal vivo.",
+    "content": "Testo di esempio. Spiega come funzionano le serate di musica dal vivo nel tuo locale.\n\n## Arriva in anticipo\n\nI tavoli migliori vanno presto.\n\n## Lascia suonare la musica\n\nLa musica dal vivo si gusta meglio senza fretta.",
+    "tags": [
+     "musica",
+     "eventi"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Cocktails de autor e música ao vivo",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Carta",
+    "url": "/carta"
+   },
+   {
+    "label": "Eventos",
+    "url": "/eventos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar mesa",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: bar de cocktails de autor com música ao vivo e eventos privados, aberto de quarta a domingo à noite. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cocktails e música ao vivo · Exemplo",
+       "title": "Quando cai a noite, começa o melhor",
+       "subtitle": "Texto de exemplo: descreva o seu espaço numa frase, o que se bebe e o que se ouve, e porque vale a pena sair numa noite de semana.",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver a carta",
+       "cta2_link": "/carta"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que vai encontrar",
+       "title": "Uma noite pensada ao pormenor",
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktails de autor",
+         "text": "Receitas próprias com ingredientes da época e gelo cortado à mão."
+        },
+        {
+         "icon": "heart",
+         "title": "Música ao vivo",
+         "text": "Jazz, soul e sessões acústicas, três noites por semana."
+        },
+        {
+         "icon": "calendar",
+         "title": "Eventos privados",
+         "text": "Aniversários, apresentações e festas de empresa numa sala reservada."
+        },
+        {
+         "icon": "users",
+         "title": "Ambiente cuidado",
+         "text": "Luz suave, bom som e mesas que convidam a ficar."
+        },
+        {
+         "icon": "award",
+         "title": "Seleção de destilados",
+         "text": "Whiskies, rum, gins e mezcais escolhidos pela equipa do balcão."
+        },
+        {
+         "icon": "clock",
+         "title": "Aberto até tarde",
+         "text": "Petiscos e balcão aberto até de madrugada."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "6",
+         "label": "Anos de atividade (exemplo)"
+        },
+        {
+         "value": "120",
+         "label": "Concertos por ano (exemplo)"
+        },
+        {
+         "value": "45",
+         "label": "Cocktails na carta (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como reservar",
+       "items": [
+        {
+         "title": "Escolha a noite",
+         "text": "Veja a programação e escolha o dia que lhe convém."
+        },
+        {
+         "title": "Diga-nos quantos são",
+         "text": "Uma mesa para dois ou uma sala para cinquenta, adaptamo-nos."
+        },
+        {
+         "title": "Confirmamos e desfruta",
+         "text": "Respondemos com a confirmação e guardamos a mesa até uma hora combinada."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A sala",
+       "title": "Um recanto com carácter",
+       "body": "- Balcão de madeira e reservados com sofás\n- Palco pequeno, som cuidado\n- Esplanada para as noites de verão",
+       "button_text": "Ver eventos",
+       "button_link": "/eventos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vemo-nos esta noite?",
+       "text": "Reserve a sua mesa e guardamos-lhe o melhor lugar para a música.",
+       "button_text": "Reservar mesa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "carta",
+    "title": "Carta",
+    "seo": {
+     "description": "Texto de exemplo: cocktails de autor, clássicos e opções sem álcool, com preços indicativos. Troque a carta pela do seu espaço."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "A carta",
+       "subtitle": "Texto de exemplo: apresente a sua carta com palavras que qualquer pessoa perceba, mesmo sem ser barman.",
+       "cta_text": "Reservar mesa",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "star",
+         "title": "Cocktails de autor",
+         "text": "As receitas da casa."
+        },
+        {
+         "icon": "heart",
+         "title": "Clássicos",
+         "text": "Os de sempre, bem feitos."
+        },
+        {
+         "icon": "calendar",
+         "title": "Sem álcool",
+         "text": "Opções sem álcool com o mesmo cuidado."
+        },
+        {
+         "icon": "users",
+         "title": "Destilados",
+         "text": "Seleção ao copo ou à garrafa."
+        },
+        {
+         "icon": "award",
+         "title": "Petiscos",
+         "text": "Para acompanhar a noite."
+        },
+        {
+         "icon": "clock",
+         "title": "Vinhos e cervejas",
+         "text": "Poucas referências, bem escolhidas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Valores de exemplo: substitua-os pelos da sua carta.",
+       "items": [
+        {
+         "section": "Cocktails",
+         "name": "Cocktail de autor",
+         "price": "12 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Clássico da casa",
+         "price": "10 €"
+        },
+        {
+         "section": "Cocktails",
+         "name": "Sem álcool",
+         "price": "7 €"
+        },
+        {
+         "section": "Para partilhar",
+         "name": "Tábua de queijos",
+         "price": "14 €"
+        },
+        {
+         "section": "Para partilhar",
+         "name": "Bocados quentes",
+         "price": "9 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vemo-nos esta noite?",
+       "text": "Reserve a sua mesa e guardamos-lhe o melhor lugar para a música.",
+       "button_text": "Reservar mesa",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "eventos",
+    "title": "Eventos",
+    "seo": {
+     "description": "Texto de exemplo: concertos ao vivo, noites temáticas e eventos privados com uma equipa que trata de tudo, da música ao brinde."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Música e eventos",
+       "body": "Texto de exemplo. Conte aqui que música programam, em que noites há concerto e como se organiza um evento privado.\n\nFale do que oferece de facto: sala, som, equipa e capacidade."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "O que inclui um evento privado",
+       "body": "- Sala reservada e atendimento dedicado\n- Som e palco se houver atuação\n- Menu de cocktails combinado antecipadamente"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como organizamos o seu evento",
+       "items": [
+        {
+         "title": "Conta-nos a ideia",
+         "text": "Data, número de convidados e tipo de celebração."
+        },
+        {
+         "title": "Proposta por escrito",
+         "text": "Espaço, menu e condições, antes de reservar."
+        },
+        {
+         "title": "Deixamos tudo pronto",
+         "text": "No dia, está tudo preparado para que só tenha de desfrutar."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre reservas, grupos, idade de acesso, música ao vivo e eventos privados no nosso bar."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "É preciso reservar?",
+         "answer": "Recomendamos reservar ao fim de semana e nas noites de concerto. *Texto de exemplo.*"
+        },
+        {
+         "question": "Há limite de idade?",
+         "answer": "Indique aqui a idade mínima de acesso do seu espaço. *Texto de exemplo.*"
+        },
+        {
+         "question": "Os concertos têm entrada paga?",
+         "answer": "Indique se há bilhete ou consumo mínimo. *Texto de exemplo.*"
+        },
+        {
+         "question": "Aceitam grupos grandes?",
+         "answer": "Sim, com reserva prévia e menu combinado."
+        },
+        {
+         "question": "Há opções sem álcool?",
+         "answer": "Sim, preparadas com o mesmo cuidado que o resto da carta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem outra pergunta?",
+       "text": "Escreva-nos e respondemos assim que abrirmos.",
+       "button_text": "Contactar",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: reserve a sua mesa ou pergunte por um evento privado e responderemos o mais depressa possível. Horário de exemplo incluído."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar mesa",
+       "text": "Diga-nos o dia, a hora e quantos são, e confirmamos.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-ma",
+         "closed": "sí"
+        },
+        {
+         "days": "mi-ju",
+         "opens": "20:00",
+         "closes": "02:00"
+        },
+        {
+         "days": "vi-sa",
+         "opens": "20:00",
+         "closes": "03:00"
+        },
+        {
+         "days": "do",
+         "opens": "19:00",
+         "closes": "00:00"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-escolher-um-bom-cocktail",
+    "title": "Como escolher um bom cocktail ao seu gosto",
+    "excerpt": "Texto de exemplo para o blogue: um guia breve para pedir sem hesitar.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes sobre como escolher uma bebida.\n\n## Comece pelo sabor\n\nCítrico, amargo, doce ou fumado: diga ao barman o que lhe apetece.\n\n## Pergunte pelas bebidas da casa\n\nOs cocktails de autor costumam ser o melhor da carta.",
+    "tags": [
+     "cocktails",
+     "dicas"
+    ]
+   },
+   {
+    "slug": "noites-de-jazz-ao-vivo",
+    "title": "Noites de jazz ao vivo: como aproveitá-las",
+    "excerpt": "Texto de exemplo: o que esperar de uma noite de música ao vivo.",
+    "content": "Texto de exemplo. Explique como funcionam as noites de música ao vivo no seu espaço.\n\n## Chegue cedo\n\nAs melhores mesas ocupam-se depressa.\n\n## Deixe a música soar\n\nA música ao vivo desfruta-se melhor sem pressa.",
+    "tags": [
+     "música",
+     "eventos"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,2803 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Default). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Consultoría de organización para pequeñas empresas",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "Sobre mí",
+    "url": "/sobre-mi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir una primera llamada",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: consultor independiente que ayuda a pequeñas empresas a organizar procesos, tareas y equipos. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Consultor independiente · Ejemplo",
+       "title": "Menos caos, más tiempo para tu negocio",
+       "subtitle": "Texto de ejemplo: explica en una frase a quién ayudas, qué problema resuelves y cómo trabajas con cada cliente.",
+       "cta_text": "Pedir una primera llamada",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Áreas de trabajo",
+       "title": "En qué puedo ayudarte",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Procesos",
+         "text": "Documentar cómo se hace cada tarea para que no dependa de una sola persona."
+        },
+        {
+         "icon": "users",
+         "title": "Equipos",
+         "text": "Reparto claro de responsabilidades y reuniones que sirven para algo."
+        },
+        {
+         "icon": "shield",
+         "title": "Control",
+         "text": "Indicadores sencillos para saber cómo va el negocio cada semana."
+        },
+        {
+         "icon": "award",
+         "title": "Calidad",
+         "text": "Revisiones periódicas y pequeñas mejoras que se mantienen en el tiempo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Años de experiencia (ejemplo)"
+        },
+        {
+         "value": "60",
+         "label": "Proyectos con pequeñas empresas (ejemplo)"
+        },
+        {
+         "value": "2 días",
+         "label": "Primera respuesta a tu consulta (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajo",
+       "items": [
+        {
+         "title": "Primera llamada",
+         "text": "Escucho cómo funciona hoy tu negocio y qué te quita el sueño."
+        },
+        {
+         "title": "Diagnóstico",
+         "text": "Un informe corto con lo que está bien, lo que falla y por dónde empezar."
+        },
+        {
+         "title": "Acompañamiento",
+         "text": "Implantamos los cambios juntos y revisamos los resultados."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre mí",
+       "title": "Un solo interlocutor, de principio a fin",
+       "body": "- Trato directo, sin intermediarios\n- Alcance y honorarios pactados por escrito\n- Soluciones sencillas que tu equipo pueda mantener",
+       "button_text": "Sobre mí",
+       "button_link": "/sobre-mi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente (ejemplo)",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres ordenar el día a día de tu negocio?",
+       "text": "Cuéntame cómo trabajáis hoy y te propongo un primer paso concreto.",
+       "button_text": "Pedir una primera llamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: servicios de consultoría para ordenar procesos, repartir responsabilidades y ganar tiempo en una pequeña empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus servicios con palabras que entienda cualquier propietario de un negocio.",
+       "cta_text": "Pedir una primera llamada",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Diagnóstico organizativo",
+         "text": "Análisis de cómo trabajáis y propuesta de mejoras priorizadas."
+        },
+        {
+         "icon": "users",
+         "title": "Mapa de procesos",
+         "text": "Cada tarea documentada, con responsable y plazo."
+        },
+        {
+         "icon": "shield",
+         "title": "Reparto de roles",
+         "text": "Quién decide, quién ejecuta y quién revisa."
+        },
+        {
+         "icon": "lock",
+         "title": "Herramientas",
+         "text": "Elección y puesta en marcha de las herramientas que de verdad necesitáis."
+        },
+        {
+         "icon": "handshake",
+         "title": "Formación",
+         "text": "Sesiones prácticas para que el equipo haga suyos los cambios."
+        },
+        {
+         "icon": "award",
+         "title": "Seguimiento",
+         "text": "Revisión mensual de indicadores y ajustes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Importes de ejemplo: sustitúyelos por tus tarifas.",
+       "items": [
+        {
+         "section": "Primeros pasos",
+         "name": "Primera llamada",
+         "price": "gratuita"
+        },
+        {
+         "section": "Primeros pasos",
+         "name": "Diagnóstico organizativo",
+         "price": "desde 400 €"
+        },
+        {
+         "section": "Acompañamiento",
+         "name": "Mapa de procesos",
+         "price": "desde 900 €"
+        },
+        {
+         "section": "Acompañamiento",
+         "name": "Seguimiento mensual",
+         "price": "desde 250 €/mes"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres ordenar el día a día de tu negocio?",
+       "text": "Cuéntame cómo trabajáis hoy y te propongo un primer paso concreto.",
+       "button_text": "Pedir una primera llamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-mi",
+    "title": "Sobre mí",
+    "seo": {
+     "description": "Texto de ejemplo: quién soy, cómo trabajo y qué principios guían mi trabajo con pequeñas empresas. Sustitúyelo por tu presentación."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quién soy",
+       "body": "Texto de ejemplo. Cuenta aquí tu trayectoria, con qué tipo de negocios trabajas y qué te distingue.\n\nHabla de cómo trabajas y de tus compromisos, no de resultados que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Mis principios",
+       "body": "- Primero escuchar, después proponer\n- Cambios pequeños y medibles\n- Confidencialidad total sobre tu negocio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajo",
+       "items": [
+        {
+         "title": "Primera llamada",
+         "text": "Escucho cómo funciona hoy tu negocio y qué te quita el sueño."
+        },
+        {
+         "title": "Diagnóstico",
+         "text": "Un informe corto con lo que está bien, lo que falla y por dónde empezar."
+        },
+        {
+         "title": "Acompañamiento",
+         "text": "Implantamos los cambios juntos y revisamos los resultados."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Blog",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la primera llamada, los plazos, los honorarios y la confidencialidad."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cuánto cuesta la primera llamada?",
+         "answer": "Indica aquí si es gratuita o tiene un coste. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cómo se fijan los honorarios?",
+         "answer": "Se acuerdan por escrito antes de empezar. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Trabajas con negocios muy pequeños?",
+         "answer": "Sí, también con autónomos y equipos de pocas personas."
+        },
+        {
+         "question": "¿Se puede trabajar a distancia?",
+         "answer": "Sí, por videollamada, y de forma presencial si hace falta."
+        },
+        {
+         "question": "¿Es confidencial lo que te cuente?",
+         "answer": "Sí, firmo un acuerdo de confidencialidad si lo necesitas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Quieres ordenar el día a día de tu negocio?",
+       "text": "Cuéntame cómo trabajáis hoy y te propongo un primer paso concreto.",
+       "button_text": "Pedir una primera llamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide una primera llamada o escríbeme con tu pregunta y te responderé lo antes posible en horario de atención."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir una primera llamada",
+       "text": "Cuéntame qué necesitas y te propongo una llamada.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "ordenar-tareas-pequena-empresa",
+    "title": "Cinco hábitos para ordenar las tareas de tu equipo",
+    "excerpt": "Texto de ejemplo para el blog: ideas sencillas para empezar.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con consejos generales y prudentes.\n\n## Empieza por lo que se repite\n\nLas tareas que se hacen cada semana son las primeras que conviene documentar.\n\n## Un responsable por tarea\n\nCuando todos son responsables, nadie lo es.",
+    "tags": [
+     "organización",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "reuniones-que-funcionan",
+    "title": "Cómo hacer que las reuniones sirvan de algo",
+    "excerpt": "Texto de ejemplo: una agenda y un acta bastan.",
+    "content": "Texto de ejemplo. Explica cómo preparar una reunión breve y útil.\n\n## Antes\n\nFija el objetivo y envía la agenda con antelación.\n\n## Después\n\nAnota las decisiones, quién las ejecuta y para cuándo.",
+    "tags": [
+     "equipos"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Organisation consulting for small businesses",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "About me",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book an intro call",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: an independent consultant helping small businesses organise processes, tasks and teams. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Independent consultant · Sample",
+       "title": "Less chaos, more time for your business",
+       "subtitle": "Sample text: say in one sentence who you help, which problem you solve and how you work with each client.",
+       "cta_text": "Book an intro call",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Areas of work",
+       "title": "How I can help",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Processes",
+         "text": "Write down how each task is done so it does not depend on one person."
+        },
+        {
+         "icon": "users",
+         "title": "Teams",
+         "text": "Clear responsibilities and meetings that are worth attending."
+        },
+        {
+         "icon": "shield",
+         "title": "Control",
+         "text": "Simple indicators to see how the business is doing each week."
+        },
+        {
+         "icon": "award",
+         "title": "Quality",
+         "text": "Regular reviews and small improvements that last."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Years of experience (sample)"
+        },
+        {
+         "value": "60",
+         "label": "Projects with small businesses (sample)"
+        },
+        {
+         "value": "2 days",
+         "label": "First reply to your enquiry (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How I work",
+       "items": [
+        {
+         "title": "Intro call",
+         "text": "I listen to how your business runs today and what worries you."
+        },
+        {
+         "title": "Diagnosis",
+         "text": "A short report on what works, what does not and where to start."
+        },
+        {
+         "title": "Support",
+         "text": "We put the changes in place together and review the results."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "About me",
+       "title": "One point of contact, from start to finish",
+       "body": "- Direct contact, no middlemen\n- Scope and fees agreed in writing\n- Simple solutions your team can keep up",
+       "button_text": "About me",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Testimonials",
+       "items": [
+        {
+         "quote": "Sample testimonial text: replace it with real feedback from your clients, with their permission.",
+         "name": "Client (sample)",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Want to bring order to your day-to-day work?",
+       "text": "Tell me how you work today and I will suggest a concrete first step.",
+       "button_text": "Book an intro call",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: consulting services to tidy up processes, share out responsibilities and save time in a small business."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your services in words any business owner will understand.",
+       "cta_text": "Book an intro call",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Organisational diagnosis",
+         "text": "Analysis of how you work and a ranked list of improvements."
+        },
+        {
+         "icon": "users",
+         "title": "Process map",
+         "text": "Every task documented, with an owner and a deadline."
+        },
+        {
+         "icon": "shield",
+         "title": "Role allocation",
+         "text": "Who decides, who carries out and who reviews."
+        },
+        {
+         "icon": "lock",
+         "title": "Tools",
+         "text": "Choosing and setting up the tools you really need."
+        },
+        {
+         "icon": "handshake",
+         "title": "Training",
+         "text": "Hands-on sessions so the team makes the changes its own."
+        },
+        {
+         "icon": "award",
+         "title": "Follow-up",
+         "text": "Monthly review of indicators and adjustments."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative rates",
+       "note": "Sample amounts: replace them with your own rates.",
+       "items": [
+        {
+         "section": "First steps",
+         "name": "Intro call",
+         "price": "free"
+        },
+        {
+         "section": "First steps",
+         "name": "Organisational diagnosis",
+         "price": "from €400"
+        },
+        {
+         "section": "Support",
+         "name": "Process map",
+         "price": "from €900"
+        },
+        {
+         "section": "Support",
+         "name": "Monthly follow-up",
+         "price": "from €250/month"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Want to bring order to your day-to-day work?",
+       "text": "Tell me how you work today and I will suggest a concrete first step.",
+       "button_text": "Book an intro call",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About me",
+    "seo": {
+     "description": "Sample text: who I am, how I work and the principles behind my work with small businesses. Replace with your own introduction."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who I am",
+       "body": "Sample text. Describe here your background, the kind of businesses you work with and what sets you apart.\n\nTalk about how you work and what you commit to, not about results you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "My principles",
+       "body": "- Listen first, then propose\n- Small, measurable changes\n- Full confidentiality about your business"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How I work",
+       "items": [
+        {
+         "title": "Intro call",
+         "text": "I listen to how your business runs today and what worries you."
+        },
+        {
+         "title": "Diagnosis",
+         "text": "A short report on what works, what does not and where to start."
+        },
+        {
+         "title": "Support",
+         "text": "We put the changes in place together and review the results."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Blog",
+    "seo": {
+     "description": "Sample text: answers to common questions about the first call, timelines, fees and confidentiality when working with a consultant."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How much does the intro call cost?",
+         "answer": "Say here whether it is free or paid. *Sample text.*"
+        },
+        {
+         "question": "How are fees set?",
+         "answer": "They are agreed in writing before we start. *Sample text.*"
+        },
+        {
+         "question": "Do you work with very small businesses?",
+         "answer": "Yes, including freelancers and teams of just a few people."
+        },
+        {
+         "question": "Can we work remotely?",
+         "answer": "Yes, by video call, and in person when needed."
+        },
+        {
+         "question": "Is what I tell you confidential?",
+         "answer": "Yes, I sign a confidentiality agreement if you need one."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Want to bring order to your day-to-day work?",
+       "text": "Tell me how you work today and I will suggest a concrete first step.",
+       "button_text": "Book an intro call",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book an intro call or send me your question and I will reply as soon as possible during working hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book an intro call",
+       "text": "Tell me what you need and I will suggest a call.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organise-small-team-tasks",
+    "title": "Five habits to organise your team's tasks",
+    "excerpt": "Sample blog text: simple ideas to get started.",
+    "content": "Sample text. Write here a useful article for your clients, with general and cautious advice.\n\n## Start with what repeats\n\nTasks done every week are the first ones worth documenting.\n\n## One owner per task\n\nWhen everyone is responsible, nobody is.",
+    "tags": [
+     "organisation",
+     "tips"
+    ]
+   },
+   {
+    "slug": "meetings-that-work",
+    "title": "How to make meetings worthwhile",
+    "excerpt": "Sample text: an agenda and minutes are enough.",
+    "content": "Sample text. Explain how to prepare a short, useful meeting.\n\n## Before\n\nSet the goal and send the agenda in advance.\n\n## After\n\nNote the decisions, who carries them out and by when.",
+    "tags": [
+     "teams"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Consultanță în organizare pentru firme mici",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Despre mine",
+    "url": "/despre-mine"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Programează un prim apel",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: consultant independent care ajută firmele mici să-și organizeze procesele, sarcinile și echipele. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Consultant independent · Exemplu",
+       "title": "Mai puțin haos, mai mult timp pentru afacerea ta",
+       "subtitle": "Text de exemplu: spune într-o frază cui te adresezi, ce problemă rezolvi și cum lucrezi cu fiecare client.",
+       "cta_text": "Programează un prim apel",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Domenii de lucru",
+       "title": "Cu ce te pot ajuta",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Procese",
+         "text": "Notăm cum se face fiecare sarcină, ca să nu depindă de o singură persoană."
+        },
+        {
+         "icon": "users",
+         "title": "Echipe",
+         "text": "Responsabilități clare și ședințe care chiar folosesc."
+        },
+        {
+         "icon": "shield",
+         "title": "Control",
+         "text": "Indicatori simpli ca să vezi în fiecare săptămână cum merge afacerea."
+        },
+        {
+         "icon": "award",
+         "title": "Calitate",
+         "text": "Verificări periodice și mici îmbunătățiri care rămân."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Ani de experiență (exemplu)"
+        },
+        {
+         "value": "60",
+         "label": "Proiecte cu firme mici (exemplu)"
+        },
+        {
+         "value": "2 zile",
+         "label": "Primul răspuns la solicitarea ta (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrez",
+       "items": [
+        {
+         "title": "Primul apel",
+         "text": "Te ascult cum funcționează acum afacerea și ce te îngrijorează."
+        },
+        {
+         "title": "Diagnostic",
+         "text": "Un raport scurt: ce merge bine, ce nu și de unde să începem."
+        },
+        {
+         "title": "Însoțire",
+         "text": "Aplicăm schimbările împreună și verificăm rezultatele."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Despre mine",
+       "title": "Un singur interlocutor, de la început până la sfârșit",
+       "body": "- Contact direct, fără intermediari\n- Obiective și onorarii stabilite în scris\n- Soluții simple pe care echipa ta le poate menține",
+       "button_text": "Despre mine",
+       "button_link": "/despre-mine"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client (exemplu)",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să pui ordine în activitatea de zi cu zi?",
+       "text": "Spune-mi cum lucrați acum și îți propun un prim pas concret.",
+       "button_text": "Programează un prim apel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: servicii de consultanță pentru a pune ordine în procese, a împărți responsabilitățile și a câștiga timp într-o firmă mică."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie serviciile cu cuvinte pe care le înțelege orice proprietar de afacere.",
+       "cta_text": "Programează un prim apel",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Diagnostic organizațional",
+         "text": "Analiza modului de lucru și propuneri de îmbunătățire ordonate după prioritate."
+        },
+        {
+         "icon": "users",
+         "title": "Harta proceselor",
+         "text": "Fiecare sarcină documentată, cu responsabil și termen."
+        },
+        {
+         "icon": "shield",
+         "title": "Împărțirea rolurilor",
+         "text": "Cine decide, cine execută și cine verifică."
+        },
+        {
+         "icon": "lock",
+         "title": "Instrumente",
+         "text": "Alegerea și punerea în funcțiune a instrumentelor de care aveți cu adevărat nevoie."
+        },
+        {
+         "icon": "handshake",
+         "title": "Instruire",
+         "text": "Sesiuni practice, ca echipa să-și însușească schimbările."
+        },
+        {
+         "icon": "award",
+         "title": "Urmărire",
+         "text": "Verificare lunară a indicatorilor și ajustări."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu tarifele tale.",
+       "items": [
+        {
+         "section": "Primii pași",
+         "name": "Primul apel",
+         "price": "gratuit"
+        },
+        {
+         "section": "Primii pași",
+         "name": "Diagnostic organizațional",
+         "price": "de la 2000 lei"
+        },
+        {
+         "section": "Însoțire",
+         "name": "Harta proceselor",
+         "price": "de la 4500 lei"
+        },
+        {
+         "section": "Însoțire",
+         "name": "Urmărire lunară",
+         "price": "de la 1250 lei/lună"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să pui ordine în activitatea de zi cu zi?",
+       "text": "Spune-mi cum lucrați acum și îți propun un prim pas concret.",
+       "button_text": "Programează un prim apel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-mine",
+    "title": "Despre mine",
+    "seo": {
+     "description": "Text de exemplu: cine sunt, cum lucrez și ce principii îmi ghidează munca cu firmele mici. Înlocuiește-l cu prezentarea ta."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine sunt",
+       "body": "Text de exemplu. Povestește aici parcursul tău, cu ce fel de afaceri lucrezi și ce te deosebește.\n\nVorbește despre cum lucrezi și ce îți asumi, nu despre rezultate pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile mele",
+       "body": "- Mai întâi ascult, apoi propun\n- Schimbări mici și măsurabile\n- Confidențialitate totală despre afacerea ta"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrez",
+       "items": [
+        {
+         "title": "Primul apel",
+         "text": "Te ascult cum funcționează acum afacerea și ce te îngrijorează."
+        },
+        {
+         "title": "Diagnostic",
+         "text": "Un raport scurt: ce merge bine, ce nu și de unde să începem."
+        },
+        {
+         "title": "Însoțire",
+         "text": "Aplicăm schimbările împreună și verificăm rezultatele."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Blog",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările frecvente despre primul apel, termene, onorarii și confidențialitate în colaborarea cu un consultant."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cât costă primul apel?",
+         "answer": "Spune aici dacă este gratuit sau cu plată. *Text de exemplu.*"
+        },
+        {
+         "question": "Cum se stabilesc onorariile?",
+         "answer": "Se convin în scris, înainte de a începe. *Text de exemplu.*"
+        },
+        {
+         "question": "Lucrezi cu afaceri foarte mici?",
+         "answer": "Da, inclusiv cu persoane fizice autorizate și echipe de câteva persoane."
+        },
+        {
+         "question": "Se poate lucra la distanță?",
+         "answer": "Da, prin apel video, și în persoană când este nevoie."
+        },
+        {
+         "question": "Este confidențial ce îți spun?",
+         "answer": "Da, semnez un acord de confidențialitate dacă ai nevoie."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vrei să pui ordine în activitatea de zi cu zi?",
+       "text": "Spune-mi cum lucrați acum și îți propun un prim pas concret.",
+       "button_text": "Programează un prim apel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: programează un prim apel sau scrie-mi întrebarea ta și îți răspund cât mai curând, în programul de lucru."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Programează un prim apel",
+       "text": "Spune-mi de ce ai nevoie și îți propun un apel.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organizeaza-sarcinile-echipei",
+    "title": "Cinci obiceiuri pentru a organiza sarcinile echipei",
+    "excerpt": "Text de exemplu pentru blog: idei simple pentru început.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu sfaturi generale și prudente.\n\n## Începe cu ce se repetă\n\nSarcinile făcute în fiecare săptămână sunt primele care merită documentate.\n\n## Un responsabil pentru fiecare sarcină\n\nCând toți sunt responsabili, nimeni nu este.",
+    "tags": [
+     "organizare",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "sedinte-care-functioneaza",
+    "title": "Cum faci ca ședințele să folosească la ceva",
+    "excerpt": "Text de exemplu: o agendă și un proces-verbal sunt de ajuns.",
+    "content": "Text de exemplu. Explică cum se pregătește o ședință scurtă și utilă.\n\n## Înainte\n\nStabilește obiectivul și trimite agenda din timp.\n\n## După\n\nNotează deciziile, cine le execută și până când.",
+    "tags": [
+     "echipe"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Conseil en organisation pour les petites entreprises",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Réserver un premier appel",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : consultant indépendant qui aide les petites entreprises à organiser processus, tâches et équipes. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Consultant indépendant · Exemple",
+       "title": "Moins de chaos, plus de temps pour votre activité",
+       "subtitle": "Texte d'exemple : dites en une phrase qui vous aidez, quel problème vous résolvez et comment vous travaillez avec chaque client.",
+       "cta_text": "Réserver un premier appel",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Domaines d'intervention",
+       "title": "Comment je peux vous aider",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Processus",
+         "text": "Décrire comment se fait chaque tâche pour qu'elle ne dépende pas d'une seule personne."
+        },
+        {
+         "icon": "users",
+         "title": "Équipes",
+         "text": "Des responsabilités claires et des réunions qui servent à quelque chose."
+        },
+        {
+         "icon": "shield",
+         "title": "Pilotage",
+         "text": "Des indicateurs simples pour savoir chaque semaine où en est l'activité."
+        },
+        {
+         "icon": "award",
+         "title": "Qualité",
+         "text": "Des revues régulières et de petites améliorations qui durent."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Années d'expérience (exemple)"
+        },
+        {
+         "value": "60",
+         "label": "Projets avec de petites entreprises (exemple)"
+        },
+        {
+         "value": "2 jours",
+         "label": "Première réponse à votre demande (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ma méthode",
+       "items": [
+        {
+         "title": "Premier appel",
+         "text": "J'écoute comment fonctionne votre activité aujourd'hui et ce qui vous préoccupe."
+        },
+        {
+         "title": "Diagnostic",
+         "text": "Un court rapport : ce qui va bien, ce qui coince et par où commencer."
+        },
+        {
+         "title": "Accompagnement",
+         "text": "Nous mettons les changements en place ensemble et suivons les résultats."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "À propos",
+       "title": "Un seul interlocuteur, du début à la fin",
+       "body": "- Contact direct, sans intermédiaire\n- Périmètre et honoraires convenus par écrit\n- Des solutions simples que votre équipe peut tenir",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Témoignages",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un témoignage : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client (exemple)",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de remettre de l'ordre dans votre quotidien ?",
+       "text": "Dites-moi comment vous travaillez aujourd'hui et je vous propose une première étape concrète.",
+       "button_text": "Réserver un premier appel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : services de conseil pour clarifier les processus, répartir les responsabilités et gagner du temps dans une petite entreprise."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos services avec des mots que tout chef d'entreprise comprend.",
+       "cta_text": "Réserver un premier appel",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Diagnostic d'organisation",
+         "text": "Analyse de votre façon de travailler et pistes d'amélioration classées par priorité."
+        },
+        {
+         "icon": "users",
+         "title": "Cartographie des processus",
+         "text": "Chaque tâche décrite, avec un responsable et une échéance."
+        },
+        {
+         "icon": "shield",
+         "title": "Répartition des rôles",
+         "text": "Qui décide, qui exécute et qui contrôle."
+        },
+        {
+         "icon": "lock",
+         "title": "Outils",
+         "text": "Choix et mise en place des outils dont vous avez vraiment besoin."
+        },
+        {
+         "icon": "handshake",
+         "title": "Formation",
+         "text": "Séances pratiques pour que l'équipe s'approprie les changements."
+        },
+        {
+         "icon": "award",
+         "title": "Suivi",
+         "text": "Point mensuel sur les indicateurs et ajustements."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos tarifs.",
+       "items": [
+        {
+         "section": "Premiers pas",
+         "name": "Premier appel",
+         "price": "gratuit"
+        },
+        {
+         "section": "Premiers pas",
+         "name": "Diagnostic d'organisation",
+         "price": "à partir de 400 €"
+        },
+        {
+         "section": "Accompagnement",
+         "name": "Cartographie des processus",
+         "price": "à partir de 900 €"
+        },
+        {
+         "section": "Accompagnement",
+         "name": "Suivi mensuel",
+         "price": "à partir de 250 €/mois"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de remettre de l'ordre dans votre quotidien ?",
+       "text": "Dites-moi comment vous travaillez aujourd'hui et je vous propose une première étape concrète.",
+       "button_text": "Réserver un premier appel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui je suis, comment je travaille et les principes qui guident mon travail avec les petites entreprises. À remplacer."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui je suis",
+       "body": "Texte d'exemple. Racontez ici votre parcours, le type d'entreprises avec lesquelles vous travaillez et ce qui vous distingue.\n\nParlez de votre façon de travailler et de vos engagements, pas de résultats que vous ne pouvez pas démontrer."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Mes principes",
+       "body": "- D'abord écouter, ensuite proposer\n- Des changements petits et mesurables\n- Confidentialité totale sur votre activité"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ma méthode",
+       "items": [
+        {
+         "title": "Premier appel",
+         "text": "J'écoute comment fonctionne votre activité aujourd'hui et ce qui vous préoccupe."
+        },
+        {
+         "title": "Diagnostic",
+         "text": "Un court rapport : ce qui va bien, ce qui coince et par où commencer."
+        },
+        {
+         "title": "Accompagnement",
+         "text": "Nous mettons les changements en place ensemble et suivons les résultats."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Blog",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur le premier appel, les délais, les honoraires et la confidentialité avec un consultant."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Combien coûte le premier appel ?",
+         "answer": "Indiquez ici s'il est gratuit ou payant. *Texte d'exemple.*"
+        },
+        {
+         "question": "Comment sont fixés les honoraires ?",
+         "answer": "Ils sont convenus par écrit avant de commencer. *Texte d'exemple.*"
+        },
+        {
+         "question": "Travaillez-vous avec de très petites entreprises ?",
+         "answer": "Oui, y compris avec des indépendants et des équipes de quelques personnes."
+        },
+        {
+         "question": "Peut-on travailler à distance ?",
+         "answer": "Oui, en visioconférence, et sur place si nécessaire."
+        },
+        {
+         "question": "Ce que je vous confie est-il confidentiel ?",
+         "answer": "Oui, je signe un accord de confidentialité si vous le souhaitez."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Envie de remettre de l'ordre dans votre quotidien ?",
+       "text": "Dites-moi comment vous travaillez aujourd'hui et je vous propose une première étape concrète.",
+       "button_text": "Réserver un premier appel",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : réservez un premier appel ou posez-moi votre question, je vous réponds dès que possible pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver un premier appel",
+       "text": "Dites-moi ce dont vous avez besoin et je vous propose un appel.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organiser-les-taches-de-l-equipe",
+    "title": "Cinq habitudes pour organiser les tâches de votre équipe",
+    "excerpt": "Texte d'exemple pour le blog : des idées simples pour commencer.",
+    "content": "Texte d'exemple. Écrivez ici un article utile à vos clients, avec des conseils généraux et prudents.\n\n## Commencez par ce qui se répète\n\nLes tâches faites chaque semaine sont les premières à décrire.\n\n## Un responsable par tâche\n\nQuand tout le monde est responsable, personne ne l'est.",
+    "tags": [
+     "organisation",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "reunions-qui-servent",
+    "title": "Comment rendre vos réunions utiles",
+    "excerpt": "Texte d'exemple : un ordre du jour et un compte rendu suffisent.",
+    "content": "Texte d'exemple. Expliquez comment préparer une réunion courte et utile.\n\n## Avant\n\nFixez l'objectif et envoyez l'ordre du jour à l'avance.\n\n## Après\n\nNotez les décisions, qui les exécute et pour quand.",
+    "tags": [
+     "équipes"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Organisationsberatung für kleine Unternehmen",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Über mich",
+    "url": "/ueber-mich"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Erstgespräch vereinbaren",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: unabhängiger Berater, der kleinen Unternehmen hilft, Abläufe, Aufgaben und Teams zu organisieren. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Unabhängiger Berater · Beispiel",
+       "title": "Weniger Chaos, mehr Zeit für Ihr Geschäft",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, wem Sie helfen, welches Problem Sie lösen und wie Sie mit jedem Kunden arbeiten.",
+       "cta_text": "Erstgespräch vereinbaren",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Arbeitsfelder",
+       "title": "Wobei ich Ihnen helfen kann",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Abläufe",
+         "text": "Festhalten, wie jede Aufgabe erledigt wird, damit sie nicht an einer Person hängt."
+        },
+        {
+         "icon": "users",
+         "title": "Teams",
+         "text": "Klare Zuständigkeiten und Besprechungen, die sich lohnen."
+        },
+        {
+         "icon": "shield",
+         "title": "Steuerung",
+         "text": "Einfache Kennzahlen, um jede Woche zu sehen, wie das Geschäft läuft."
+        },
+        {
+         "icon": "award",
+         "title": "Qualität",
+         "text": "Regelmäßige Überprüfungen und kleine Verbesserungen, die bleiben."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Jahre Erfahrung (Beispiel)"
+        },
+        {
+         "value": "60",
+         "label": "Projekte mit kleinen Unternehmen (Beispiel)"
+        },
+        {
+         "value": "2 Tage",
+         "label": "Erste Antwort auf Ihre Anfrage (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Wie ich arbeite",
+       "items": [
+        {
+         "title": "Erstgespräch",
+         "text": "Ich höre zu, wie Ihr Betrieb heute läuft und was Ihnen Sorgen macht."
+        },
+        {
+         "title": "Analyse",
+         "text": "Ein kurzer Bericht: was gut läuft, was nicht und wo wir anfangen."
+        },
+        {
+         "title": "Begleitung",
+         "text": "Wir setzen die Änderungen gemeinsam um und prüfen die Ergebnisse."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Über mich",
+       "title": "Ein Ansprechpartner von Anfang bis Ende",
+       "body": "- Direkter Kontakt, keine Zwischenstufen\n- Umfang und Honorar vorab schriftlich vereinbart\n- Einfache Lösungen, die Ihr Team beibehalten kann",
+       "button_text": "Über mich",
+       "button_link": "/ueber-mich"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Stimme: Ersetzen Sie ihn durch echte Rückmeldungen Ihrer Kunden, mit deren Zustimmung.",
+         "name": "Kunde (Beispiel)",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie Ordnung in Ihren Arbeitsalltag bringen?",
+       "text": "Erzählen Sie mir, wie Sie heute arbeiten, und ich schlage Ihnen einen konkreten ersten Schritt vor.",
+       "button_text": "Erstgespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Beratungsleistungen, um Abläufe zu ordnen, Verantwortung zu verteilen und in einem kleinen Unternehmen Zeit zu gewinnen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Leistungen mit Worten, die jeder Unternehmer versteht.",
+       "cta_text": "Erstgespräch vereinbaren",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Organisationsanalyse",
+         "text": "Untersuchung Ihrer Arbeitsweise und eine nach Priorität geordnete Liste von Verbesserungen."
+        },
+        {
+         "icon": "users",
+         "title": "Prozesslandkarte",
+         "text": "Jede Aufgabe dokumentiert, mit Verantwortlichem und Frist."
+        },
+        {
+         "icon": "shield",
+         "title": "Rollenverteilung",
+         "text": "Wer entscheidet, wer führt aus und wer prüft."
+        },
+        {
+         "icon": "lock",
+         "title": "Werkzeuge",
+         "text": "Auswahl und Einführung der Werkzeuge, die Sie wirklich brauchen."
+        },
+        {
+         "icon": "handshake",
+         "title": "Schulung",
+         "text": "Praxisnahe Termine, damit das Team die Änderungen annimmt."
+        },
+        {
+         "icon": "award",
+         "title": "Nachbetreuung",
+         "text": "Monatliche Prüfung der Kennzahlen und Anpassungen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre Preise.",
+       "items": [
+        {
+         "section": "Erste Schritte",
+         "name": "Erstgespräch",
+         "price": "kostenlos"
+        },
+        {
+         "section": "Erste Schritte",
+         "name": "Organisationsanalyse",
+         "price": "ab 400 €"
+        },
+        {
+         "section": "Begleitung",
+         "name": "Prozesslandkarte",
+         "price": "ab 900 €"
+        },
+        {
+         "section": "Begleitung",
+         "name": "Monatliche Nachbetreuung",
+         "price": "ab 250 €/Monat"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie Ordnung in Ihren Arbeitsalltag bringen?",
+       "text": "Erzählen Sie mir, wie Sie heute arbeiten, und ich schlage Ihnen einen konkreten ersten Schritt vor.",
+       "button_text": "Erstgespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-mich",
+    "title": "Über mich",
+    "seo": {
+     "description": "Beispieltext: wer ich bin, wie ich arbeite und welche Grundsätze meine Arbeit mit kleinen Unternehmen leiten. Durch Ihre Vorstellung ersetzen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer ich bin",
+       "body": "Beispieltext. Beschreiben Sie hier Ihren Werdegang, mit welchen Betrieben Sie arbeiten und was Sie auszeichnet.\n\nSprechen Sie über Ihre Arbeitsweise und Ihre Zusagen, nicht über Ergebnisse, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Meine Grundsätze",
+       "body": "- Erst zuhören, dann vorschlagen\n- Kleine, messbare Änderungen\n- Volle Vertraulichkeit über Ihr Geschäft"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Wie ich arbeite",
+       "items": [
+        {
+         "title": "Erstgespräch",
+         "text": "Ich höre zu, wie Ihr Betrieb heute läuft und was Ihnen Sorgen macht."
+        },
+        {
+         "title": "Analyse",
+         "text": "Ein kurzer Bericht: was gut läuft, was nicht und wo wir anfangen."
+        },
+        {
+         "title": "Begleitung",
+         "text": "Wir setzen die Änderungen gemeinsam um und prüfen die Ergebnisse."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Blog",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zum Erstgespräch, zu Zeitplänen, Honoraren und Vertraulichkeit bei der Zusammenarbeit mit einem Berater."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Was kostet das Erstgespräch?",
+         "answer": "Geben Sie hier an, ob es kostenlos ist oder etwas kostet. *Beispieltext.*"
+        },
+        {
+         "question": "Wie wird das Honorar festgelegt?",
+         "answer": "Es wird vor Beginn schriftlich vereinbart. *Beispieltext.*"
+        },
+        {
+         "question": "Arbeiten Sie auch mit sehr kleinen Betrieben?",
+         "answer": "Ja, auch mit Selbstständigen und Teams von wenigen Personen."
+        },
+        {
+         "question": "Ist eine Zusammenarbeit aus der Ferne möglich?",
+         "answer": "Ja, per Videoanruf und bei Bedarf vor Ort."
+        },
+        {
+         "question": "Ist vertraulich, was ich Ihnen erzähle?",
+         "answer": "Ja, auf Wunsch unterschreibe ich eine Vertraulichkeitsvereinbarung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Möchten Sie Ordnung in Ihren Arbeitsalltag bringen?",
+       "text": "Erzählen Sie mir, wie Sie heute arbeiten, und ich schlage Ihnen einen konkreten ersten Schritt vor.",
+       "button_text": "Erstgespräch vereinbaren",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Vereinbaren Sie ein Erstgespräch oder schicken Sie mir Ihre Frage, ich antworte so schnell wie möglich innerhalb der Geschäftszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Erstgespräch vereinbaren",
+       "text": "Sagen Sie mir, was Sie brauchen, und ich schlage ein Gespräch vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Zeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "aufgaben-im-team-ordnen",
+    "title": "Fünf Gewohnheiten, um die Aufgaben im Team zu ordnen",
+    "excerpt": "Beispieltext für den Blog: einfache Ideen für den Einstieg.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Hinweisen.\n\n## Beginnen Sie mit dem, was sich wiederholt\n\nAufgaben, die jede Woche anfallen, sollten Sie zuerst festhalten.\n\n## Ein Verantwortlicher pro Aufgabe\n\nWenn alle verantwortlich sind, ist es niemand.",
+    "tags": [
+     "organisation",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "besprechungen-die-wirken",
+    "title": "So werden Besprechungen sinnvoll",
+    "excerpt": "Beispieltext: eine Tagesordnung und ein Protokoll genügen.",
+    "content": "Beispieltext. Erklären Sie, wie man eine kurze, nützliche Besprechung vorbereitet.\n\n## Davor\n\nLegen Sie das Ziel fest und senden Sie die Tagesordnung rechtzeitig.\n\n## Danach\n\nHalten Sie die Beschlüsse fest, wer sie umsetzt und bis wann.",
+    "tags": [
+     "teams"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Consulenza organizzativa per le piccole imprese",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Chi sono",
+    "url": "/chi-sono"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota una prima chiamata",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: consulente indipendente che aiuta le piccole imprese a organizzare processi, attività e team. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Consulente indipendente · Esempio",
+       "title": "Meno caos, più tempo per la tua attività",
+       "subtitle": "Testo di esempio: spiega in una frase chi aiuti, quale problema risolvi e come lavori con ogni cliente.",
+       "cta_text": "Prenota una prima chiamata",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Aree di lavoro",
+       "title": "In cosa posso aiutarti",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Processi",
+         "text": "Descrivere come si svolge ogni attività, perché non dipenda da una sola persona."
+        },
+        {
+         "icon": "users",
+         "title": "Team",
+         "text": "Responsabilità chiare e riunioni che servono davvero."
+        },
+        {
+         "icon": "shield",
+         "title": "Controllo",
+         "text": "Indicatori semplici per sapere ogni settimana come va l'attività."
+        },
+        {
+         "icon": "award",
+         "title": "Qualità",
+         "text": "Verifiche periodiche e piccoli miglioramenti che durano."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Anni di esperienza (esempio)"
+        },
+        {
+         "value": "60",
+         "label": "Progetti con piccole imprese (esempio)"
+        },
+        {
+         "value": "2 giorni",
+         "label": "Prima risposta alla tua richiesta (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoro",
+       "items": [
+        {
+         "title": "Prima chiamata",
+         "text": "Ascolto come funziona oggi la tua attività e cosa ti preoccupa."
+        },
+        {
+         "title": "Diagnosi",
+         "text": "Un breve rapporto: cosa va bene, cosa no e da dove partire."
+        },
+        {
+         "title": "Affiancamento",
+         "text": "Applichiamo i cambiamenti insieme e verifichiamo i risultati."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Chi sono",
+       "title": "Un solo interlocutore, dall'inizio alla fine",
+       "body": "- Contatto diretto, senza intermediari\n- Ambito e compensi concordati per iscritto\n- Soluzioni semplici che il tuo team può mantenere",
+       "button_text": "Chi sono",
+       "button_link": "/chi-sono"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente (esempio)",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi mettere ordine nel lavoro di ogni giorno?",
+       "text": "Raccontami come lavorate oggi e ti propongo un primo passo concreto.",
+       "button_text": "Prenota una prima chiamata",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: servizi di consulenza per riordinare i processi, ripartire le responsabilità e risparmiare tempo in una piccola impresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi i tuoi servizi con parole che qualsiasi titolare di un'attività capisca.",
+       "cta_text": "Prenota una prima chiamata",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Diagnosi organizzativa",
+         "text": "Analisi del modo di lavorare e proposte di miglioramento in ordine di priorità."
+        },
+        {
+         "icon": "users",
+         "title": "Mappa dei processi",
+         "text": "Ogni attività documentata, con un responsabile e una scadenza."
+        },
+        {
+         "icon": "shield",
+         "title": "Ripartizione dei ruoli",
+         "text": "Chi decide, chi esegue e chi controlla."
+        },
+        {
+         "icon": "lock",
+         "title": "Strumenti",
+         "text": "Scelta e avvio degli strumenti di cui avete davvero bisogno."
+        },
+        {
+         "icon": "handshake",
+         "title": "Formazione",
+         "text": "Sessioni pratiche perché il team faccia suoi i cambiamenti."
+        },
+        {
+         "icon": "award",
+         "title": "Monitoraggio",
+         "text": "Verifica mensile degli indicatori e aggiustamenti."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Importi di esempio: sostituiscili con le tue tariffe.",
+       "items": [
+        {
+         "section": "Primi passi",
+         "name": "Prima chiamata",
+         "price": "gratuita"
+        },
+        {
+         "section": "Primi passi",
+         "name": "Diagnosi organizzativa",
+         "price": "da 400 €"
+        },
+        {
+         "section": "Affiancamento",
+         "name": "Mappa dei processi",
+         "price": "da 900 €"
+        },
+        {
+         "section": "Affiancamento",
+         "name": "Monitoraggio mensile",
+         "price": "da 250 €/mese"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi mettere ordine nel lavoro di ogni giorno?",
+       "text": "Raccontami come lavorate oggi e ti propongo un primo passo concreto.",
+       "button_text": "Prenota una prima chiamata",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-sono",
+    "title": "Chi sono",
+    "seo": {
+     "description": "Testo di esempio: chi sono, come lavoro e quali principi guidano il mio lavoro con le piccole imprese. Sostituiscilo con la tua presentazione."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi sono",
+       "body": "Testo di esempio. Racconta qui il tuo percorso, con che tipo di attività lavori e che cosa ti distingue.\n\nParla di come lavori e dei tuoi impegni, non di risultati che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I miei principi",
+       "body": "- Prima ascoltare, poi proporre\n- Cambiamenti piccoli e misurabili\n- Riservatezza totale sulla tua attività"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoro",
+       "items": [
+        {
+         "title": "Prima chiamata",
+         "text": "Ascolto come funziona oggi la tua attività e cosa ti preoccupa."
+        },
+        {
+         "title": "Diagnosi",
+         "text": "Un breve rapporto: cosa va bene, cosa no e da dove partire."
+        },
+        {
+         "title": "Affiancamento",
+         "text": "Applichiamo i cambiamenti insieme e verifichiamo i risultati."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Blog",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su prima chiamata, tempi, compensi e riservatezza nel lavoro con un consulente."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto costa la prima chiamata?",
+         "answer": "Indica qui se è gratuita o a pagamento. *Testo di esempio.*"
+        },
+        {
+         "question": "Come si stabiliscono i compensi?",
+         "answer": "Si concordano per iscritto prima di iniziare. *Testo di esempio.*"
+        },
+        {
+         "question": "Lavori con attività molto piccole?",
+         "answer": "Sì, anche con liberi professionisti e team di poche persone."
+        },
+        {
+         "question": "Si può lavorare a distanza?",
+         "answer": "Sì, in videochiamata, e di persona quando serve."
+        },
+        {
+         "question": "Ciò che ti racconto è riservato?",
+         "answer": "Sì, se vuoi firmo un accordo di riservatezza."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vuoi mettere ordine nel lavoro di ogni giorno?",
+       "text": "Raccontami come lavorate oggi e ti propongo un primo passo concreto.",
+       "button_text": "Prenota una prima chiamata",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota una prima chiamata o scrivimi la tua domanda e ti rispondo appena possibile durante l'orario di lavoro."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota una prima chiamata",
+       "text": "Dimmi di cosa hai bisogno e ti propongo una chiamata.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organizzare-le-attivita-del-team",
+    "title": "Cinque abitudini per organizzare le attività del team",
+    "excerpt": "Testo di esempio per il blog: idee semplici per iniziare.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con consigli generali e prudenti.\n\n## Parti da ciò che si ripete\n\nLe attività che si svolgono ogni settimana sono le prime da documentare.\n\n## Un responsabile per attività\n\nQuando tutti sono responsabili, nessuno lo è.",
+    "tags": [
+     "organizzazione",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "riunioni-che-funzionano",
+    "title": "Come rendere utili le riunioni",
+    "excerpt": "Testo di esempio: bastano un ordine del giorno e un verbale.",
+    "content": "Testo di esempio. Spiega come preparare una riunione breve e utile.\n\n## Prima\n\nStabilisci l'obiettivo e invia l'ordine del giorno in anticipo.\n\n## Dopo\n\nAnnota le decisioni, chi le esegue e per quando.",
+    "tags": [
+     "team"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Consultoria de organização para pequenas empresas",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "Sobre mim",
+    "url": "/sobre-mim"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar uma primeira chamada",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: consultor independente que ajuda pequenas empresas a organizar processos, tarefas e equipas. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Consultor independente · Exemplo",
+       "title": "Menos caos, mais tempo para o seu negócio",
+       "subtitle": "Texto de exemplo: explique numa frase a quem ajuda, que problema resolve e como trabalha com cada cliente.",
+       "cta_text": "Marcar uma primeira chamada",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Áreas de trabalho",
+       "title": "Em que posso ajudar",
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Processos",
+         "text": "Documentar como se faz cada tarefa para que não dependa de uma só pessoa."
+        },
+        {
+         "icon": "users",
+         "title": "Equipas",
+         "text": "Responsabilidades claras e reuniões que servem para alguma coisa."
+        },
+        {
+         "icon": "shield",
+         "title": "Controlo",
+         "text": "Indicadores simples para saber, todas as semanas, como vai o negócio."
+        },
+        {
+         "icon": "award",
+         "title": "Qualidade",
+         "text": "Revisões periódicas e pequenas melhorias que perduram."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "15",
+         "label": "Anos de experiência (exemplo)"
+        },
+        {
+         "value": "60",
+         "label": "Projetos com pequenas empresas (exemplo)"
+        },
+        {
+         "value": "2 dias",
+         "label": "Primeira resposta ao seu pedido (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalho",
+       "items": [
+        {
+         "title": "Primeira chamada",
+         "text": "Ouço como funciona hoje o seu negócio e o que o preocupa."
+        },
+        {
+         "title": "Diagnóstico",
+         "text": "Um relatório curto: o que está bem, o que falha e por onde começar."
+        },
+        {
+         "title": "Acompanhamento",
+         "text": "Pomos as mudanças em prática em conjunto e revemos os resultados."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre mim",
+       "title": "Um único interlocutor, do princípio ao fim",
+       "body": "- Contacto direto, sem intermediários\n- Âmbito e honorários acordados por escrito\n- Soluções simples que a sua equipa consegue manter",
+       "button_text": "Sobre mim",
+       "button_link": "/sobre-mim"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente (exemplo)",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer pôr ordem no dia a dia do seu negócio?",
+       "text": "Conte-me como trabalham hoje e proponho-lhe um primeiro passo concreto.",
+       "button_text": "Marcar uma primeira chamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: serviços de consultoria para arrumar processos, repartir responsabilidades e ganhar tempo numa pequena empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva os seus serviços com palavras que qualquer dono de negócio entenda.",
+       "cta_text": "Marcar uma primeira chamada",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "chart",
+         "title": "Diagnóstico organizacional",
+         "text": "Análise da forma como trabalham e propostas de melhoria por ordem de prioridade."
+        },
+        {
+         "icon": "users",
+         "title": "Mapa de processos",
+         "text": "Cada tarefa documentada, com responsável e prazo."
+        },
+        {
+         "icon": "shield",
+         "title": "Distribuição de funções",
+         "text": "Quem decide, quem executa e quem revê."
+        },
+        {
+         "icon": "lock",
+         "title": "Ferramentas",
+         "text": "Escolha e arranque das ferramentas de que realmente precisam."
+        },
+        {
+         "icon": "handshake",
+         "title": "Formação",
+         "text": "Sessões práticas para a equipa fazer suas as mudanças."
+        },
+        {
+         "icon": "award",
+         "title": "Acompanhamento",
+         "text": "Revisão mensal dos indicadores e ajustes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Valores de exemplo: substitua-os pelos seus preços.",
+       "items": [
+        {
+         "section": "Primeiros passos",
+         "name": "Primeira chamada",
+         "price": "gratuita"
+        },
+        {
+         "section": "Primeiros passos",
+         "name": "Diagnóstico organizacional",
+         "price": "desde 400 €"
+        },
+        {
+         "section": "Acompanhamento",
+         "name": "Mapa de processos",
+         "price": "desde 900 €"
+        },
+        {
+         "section": "Acompanhamento",
+         "name": "Acompanhamento mensal",
+         "price": "desde 250 €/mês"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer pôr ordem no dia a dia do seu negócio?",
+       "text": "Conte-me como trabalham hoje e proponho-lhe um primeiro passo concreto.",
+       "button_text": "Marcar uma primeira chamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-mim",
+    "title": "Sobre mim",
+    "seo": {
+     "description": "Texto de exemplo: quem sou, como trabalho e que princípios guiam o meu trabalho com pequenas empresas. Substitua pela sua apresentação."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem sou",
+       "body": "Texto de exemplo. Conte aqui o seu percurso, com que tipo de negócios trabalha e o que o distingue.\n\nFale de como trabalha e dos seus compromissos, não de resultados que não possa comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os meus princípios",
+       "body": "- Primeiro ouvir, depois propor\n- Mudanças pequenas e mensuráveis\n- Confidencialidade total sobre o seu negócio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalho",
+       "items": [
+        {
+         "title": "Primeira chamada",
+         "text": "Ouço como funciona hoje o seu negócio e o que o preocupa."
+        },
+        {
+         "title": "Diagnóstico",
+         "text": "Um relatório curto: o que está bem, o que falha e por onde começar."
+        },
+        {
+         "title": "Acompanhamento",
+         "text": "Pomos as mudanças em prática em conjunto e revemos os resultados."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Blog",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre a primeira chamada, os prazos, os honorários e a confidencialidade com um consultor."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto custa a primeira chamada?",
+         "answer": "Indique aqui se é gratuita ou paga. *Texto de exemplo.*"
+        },
+        {
+         "question": "Como se fixam os honorários?",
+         "answer": "Acordam-se por escrito antes de começar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Trabalha com negócios muito pequenos?",
+         "answer": "Sim, incluindo trabalhadores independentes e equipas de poucas pessoas."
+        },
+        {
+         "question": "É possível trabalhar à distância?",
+         "answer": "Sim, por videochamada e, se for preciso, presencialmente."
+        },
+        {
+         "question": "O que lhe contar é confidencial?",
+         "answer": "Sim, assino um acordo de confidencialidade se quiser."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quer pôr ordem no dia a dia do seu negócio?",
+       "text": "Conte-me como trabalham hoje e proponho-lhe um primeiro passo concreto.",
+       "button_text": "Marcar uma primeira chamada",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marque uma primeira chamada ou escreva-me a sua pergunta e respondo o mais depressa possível no horário de atendimento."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar uma primeira chamada",
+       "text": "Diga-me do que precisa e proponho uma chamada.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "18:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organizar-tarefas-da-equipa",
+    "title": "Cinco hábitos para organizar as tarefas da equipa",
+    "excerpt": "Texto de exemplo para o blogue: ideias simples para começar.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com conselhos gerais e prudentes.\n\n## Comece pelo que se repete\n\nAs tarefas feitas todas as semanas são as primeiras a documentar.\n\n## Um responsável por tarefa\n\nQuando todos são responsáveis, ninguém o é.",
+    "tags": [
+     "organização",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "reunioes-que-funcionam",
+    "title": "Como tornar as reuniões úteis",
+    "excerpt": "Texto de exemplo: uma ordem de trabalhos e uma ata bastam.",
+    "content": "Texto de exemplo. Explique como preparar uma reunião curta e útil.\n\n## Antes\n\nDefina o objetivo e envie a ordem de trabalhos com antecedência.\n\n## Depois\n\nRegiste as decisões, quem as executa e para quando.",
+    "tags": [
+     "equipas"
+    ]
+   }
+  ]
+ }
+}
