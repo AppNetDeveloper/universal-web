@@ -82,8 +82,10 @@ systemctl restart "php${PHPV}-fpm"
 
 say "Copiando la aplicación a $APP_DIR…"
 mkdir -p "$APP_DIR"
+# --delete quita del código lo que la versión nueva ya no trae, pero nunca los temas que hayas subido tú ni las subidas.
 rsync -a --delete \
-  --exclude data/ --exclude 'public/media/*/' --exclude .tools/ --exclude .git/ \
+  --exclude data/ --exclude 'public/media/*/' --exclude .tools/ --exclude .git/ --exclude dist/ \
+  --filter='protect themes/**' --filter='protect public/media/**' \
   "$SRC_DIR/" "$APP_DIR/"
 mkdir -p "$APP_DIR/data" "$APP_DIR/public/media"
 chown -R www-data:www-data "$APP_DIR/data" "$APP_DIR/public/media"

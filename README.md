@@ -35,7 +35,10 @@ para que una IA como ADRI lo maneje por MCP con permisos claros. Datos en Europa
 - **MCP nativo** (`/mcp`): tokens por web con permisos `read`, `write` y `publish` y registro de actividad.
 - **SEO automático**: sitemap, robots.txt, Open Graph, JSON-LD, RSS y auditoría con puntuación.
 - **Temas intercambiables** por web, con gestor en el panel: galería, vista previa, descarga con manual y subida validada.
-- **Webs multi-idioma**: `/en/`, `/ro/`…, hreflang, selector de idioma, sitemap, `llms.txt` y Markdown por idioma; traducción desde el panel o por MCP.
+- **Webs multi-idioma**: `/en/`, `/ro/`…, hreflang + `x-default`, `og:locale` con región, selector de idioma, sitemap, `llms.txt` y Markdown por idioma; temas traducidos a 7 idiomas (es, en, ro, fr, de, it, pt) y se pueden añadir más. Páginas que solo existen en algunos idiomas, con su 301 configurable en los demás.
+- **Migrar sin cambiar URLs**: direcciones `.html` (`/precios.html`, `/blog/x.html`), dirección fija por página (`/guias/y.html`, `/en/...`) e importación de redirecciones 301 «origen -> destino».
+- **Rápida**: caché de página completa servida sin cargar la aplicación (casi como una web estática), que se vacía sola al publicar.
+- **Se actualiza sola** desde el panel: versiones firmadas (ed25519), copia de seguridad antes y vuelta atrás automática si algo falla.
 - **Aviso de cookies** por web (aceptar / rechazar / configurar) con GA4, Tag Manager (Consent Mode v2), Clarity y Meta Pixel cargados solo tras el consentimiento, y política `/cookies` automática.
 - **Panel simple** en español, rumano e inglés: páginas, entradas, imágenes, mensajes, ajustes, usuarios y tokens.
 
@@ -63,8 +66,10 @@ curl -fsSL https://github.com/AppNetDeveloper/universal-web/releases/latest/down
 Pregunta dominio y email, genera una contraseña fuerte (la ves una vez al final; no pasa por la línea de comandos), verifica el
 paquete e instala PHP-FPM + Caddy con HTTPS automático.
 
-**Publicar una versión** (mantenedores): `deploy/hacer_release.sh` crea `dist/universal-web.zip` (+ `-<versión>.zip`) y sus `.sha256`;
-sube a la release de GitHub esos ficheros más `deploy/instalar-vps.sh`.
+**Publicar una versión** (mantenedores): `php bin/release` (o `deploy/hacer_release.sh`) crea en `dist/` el paquete
+`universal-web-<versión>.zip`, su sobre firmado `universal-web-<versión>.update.json` (ed25519; la clave privada vive fuera
+del repositorio, en `/root/.config/universal-web-release/`, con permisos 600), `universal-web.zip` y los `.sha256`. Sube esos
+5 ficheros más `deploy/instalar-vps.sh` a la release `v<versión>` de GitHub.
 
 ### Avanzado
 
@@ -131,6 +136,7 @@ Con `--demo` se crean una web completa de ejemplo y una segunda web («Café Aur
 | `user:password --email= --password=` | Cambia una contraseña |
 | `site:list` | Lista webs y dominios |
 | `backup [--out=copia.zip\|copia.tar.gz]` | Copia de seguridad (base de datos + imágenes) |
+| `update:check` · `update --yes` · `update:rollback --yes [--with-db]` | Actualizaciones (firma comprobada, copia antes y vuelta atrás) |
 
 La variable de entorno `UW_DATA` cambia la carpeta de datos (por defecto `data/`).
 
@@ -172,7 +178,7 @@ dejan de funcionar al instante (y se revocan); un token global deja de valer si 
 Los editores solo ven y revocan sus propios tokens; los admins, todos los de su web. Cada acción queda en Actividad
 como «MCP: nombre del token (usuario)». Los tokens creados con la CLI (`bin/uw token:create`) no tienen creador y actúan como admin.
 
-**Herramientas** (la lista completa y al día está en el panel, Tokens de IA, o en `tools/list` del endpoint): contenido `site_get`, `site_update`, `block_types`, `page_list`, `page_get`, `page_save`, `page_patch` (editar un solo bloque), `page_delete`, `post_list`, `post_get`, `post_save`, `post_delete`, `translation_status`; deshacer `page_history`, `page_restore`, `post_history`, `post_restore`, `trash_list`, `trash_restore`; medios `media_list`, `media_update`, `media_upload` (por **URL** o base64: imágenes, PDF, vídeo y audio; las fotos se reducen a 2000 px y pasan a WebP solas); diseño `code_get`, `code_update`, `code_history`, `code_restore`, `template_get`, `template_update`, `template_restore`; SEO/GEO `seo_audit`, `seo_autofix`, `seo_bulk_update`, `seo_analyze`, `geo_audit`, `search_ping`; comprobar `site_check`, `errors_list`, `errors_clear`; redirecciones 301 `redirect_list`, `redirect_save`, `redirect_delete`; y `messages_list`, `message_mark_read`, `backup_create`, `backup_list`, `publish_status`, `publish_now`. Con token global además `sites_list` y `site_create`.
+**Herramientas** (la lista completa y al día está en el panel, Tokens de IA, o en `tools/list` del endpoint): contenido `site_get`, `site_update`, `block_types`, `page_list`, `page_get`, `page_save`, `page_patch` (editar un solo bloque), `page_delete`, `post_list`, `post_get`, `post_save`, `post_delete`, `translation_status`; deshacer `page_history`, `page_restore`, `post_history`, `post_restore`, `trash_list`, `trash_restore`; medios `media_list`, `media_update`, `media_upload` (por **URL** o base64: imágenes, PDF, vídeo y audio; las fotos se reducen a 2000 px y pasan a WebP solas); diseño `code_get`, `code_update`, `code_history`, `code_restore`, `template_get`, `template_update`, `template_restore`; SEO/GEO `seo_audit`, `seo_autofix`, `seo_bulk_update`, `seo_analyze`, `geo_audit`, `search_ping`; comprobar `site_check`, `errors_list`, `errors_clear`; redirecciones 301 `redirect_list`, `redirect_save`, `redirect_delete`, `redirect_import`; idiomas y FAQ `page_languages`, `page_faq`; caché `cache_clear`; versión `update_status` (solo consulta); y `messages_list`, `message_mark_read`, `backup_create`, `backup_list`, `publish_status`, `publish_now`. Con token global además `sites_list` y `site_create`.
 
 **Dominios y ayuda por MCP**: `site_create` y `domain_status` devuelven la vista previa, la IP del servidor, los registros DNS
 que faltan, si el HTTPS es automático (Caddy) o hay que dar de alta el dominio en Plesk/cPanel, y `message_for_user` (texto listo
@@ -197,10 +203,19 @@ Prueba con: *«Crea una entrada sobre X, déjala en borrador y optimiza el SEO.�
 Cada web genera sola **`/llms.txt`** (resumen para modelos de lenguaje) y **`/llms-full.txt`** (todo el contenido en Markdown),
 datos estructurados completos (organización o negocio local con dirección, zona de servicio y año de fundación, `FAQPage`
 a partir de los bloques de preguntas, migas de pan y artículos) y una **política de rastreadores de IA** en `robots.txt`
-(permitir todo, solo buscadores con IA o bloquear). Cada página tiene además su **versión Markdown** (`/servicios.md`,
-`/index.md`, `/blog/<entrada>.md`, enlazada con `rel="alternate"`), que se sirve también con `Accept: text/markdown` y, si se
-activa, automáticamente a los agentes de IA conocidos (Google y Bing siempre reciben HTML). **`geo_audit`** (MCP y Panel → SEO) puntúa lo citable que es la web y
+(permitir todo, solo buscadores con IA o bloquear). Cada página tiene además su **versión Markdown** por idioma
+(`/md/servicios.md`, `/en/md/servicios.md`, `/md/blog-<entrada>.md`, enlazada con `<link rel="alternate" type="text/markdown">`;
+las direcciones de la 0.3, `/servicios.md`, siguen valiendo), que se sirve también con `Accept: text/markdown` y, si se
+activa, automáticamente a los agentes de IA conocidos (Google y Bing siempre reciben HTML). Los `.md` y los `llms*.txt` llevan
+`X-Robots-Tag: noindex` para no competir con la página en Google. **`geo_audit`** (MCP y Panel → SEO) puntúa lo citable que es la web y
 dice qué mejorar y con qué herramienta.
+
+Datos estructurados (JSON-LD): `Organization` (o el tipo de negocio) con `sameAs` (redes sociales más la lista libre
+`same_as`: Wikidata, Wikipedia, LinkedIn…), `WebSite`, `WebPage` / `CollectionPage` y `BlogPosting` con `dateModified`
+**real** (el último cambio de contenido, no la fecha de hoy), `BreadcrumbList` y `FAQPage` cuando hay preguntas. El
+`sitemap.xml` usa esa misma fecha en `lastmod` y enlaza las versiones por idioma con `xhtml:link` (+ `x-default`).
+**IndexNow** avisa solo de lo que cambia (al publicar, cambiar, despublicar o borrar), con su clave en `/<clave>.txt`; si
+falla, no rompe nada.
 
 ## Modo demo (web privada)
 
@@ -298,7 +313,7 @@ Sin panel: copia la carpeta a `themes/` por FTP/SSH.
 - `natural` — clínicas, fisioterapia, psicología, yoga, productos ecológicos (Young Serif + Source Sans 3).
 - `prestigio` — inmobiliaria premium, hoteles boutique, bodegas, joyería, bodas (Cormorant + Jost).
 
-Todos son **multi-idioma** (selector de idioma y textos traducidos a español, inglés y rumano), se han probado en
+Todos son **multi-idioma** (selector de idioma y textos traducidos a español, inglés, rumano, francés, alemán, italiano y portugués), se han probado en
 móvil (390 px), tablet (820 px) y PC (1440 px) sin desbordes, usan fuentes OFL alojadas en el servidor y traen
 **fotos de muestra propias** (generadas por IA, sin derechos de terceros) en `assets/samples/`. Cada `theme.json`
 indica para qué negocios es (`best_for`), su color sugerido y sus fotos de muestra: la IA lo lee en `site_get → themes`
@@ -321,7 +336,20 @@ un enlace de **vista previa** firmado antes de activarla, cada cambio guarda ver
 Cada página y entrada existe por idioma con el **mismo slug**; en la lista de páginas, «+ EN» crea la traducción con una
 copia del original para reescribirla. Los textos de la web (eslogan, menús, botón, pie, aviso de cookies) se traducen en
 la misma pantalla. Un idioma no se publica (selector, `hreflang`, sitemap, `llms.txt`) hasta que tiene portada publicada.
-Por MCP: `translation_status` y el parámetro `lang` en `page_*`/`post_*`; la API admite `?lang=en`.
+Por MCP: `translation_status`, `page_languages` y el parámetro `lang` en `page_*`/`post_*`; la API admite `?lang=en`.
+
+Se pueden activar más idiomas por configuración (cualquier código ISO 639-1): sus textos fijos de tema salen en inglés
+hasta que exista `app/lang/front-<código>.php`. La región de `og:locale` se cambia por web con `locales` (`{"en": "en_US"}`).
+
+**Páginas que solo existen en algunos idiomas**: no se anuncian en `hreflang` ni en el selector de los demás, y su dirección
+equivalente en cada idioma que falta puede redirigir (301) a donde quieras (en la ficha de la página o con
+`page_languages`); los menús y enlaces de ese idioma van directos al destino.
+
+**Direcciones**: con `url_style = html` las direcciones automáticas son `/servicios.html`, `/blog/x.html` y `/blog.html`;
+cada página o entrada puede además tener una **dirección fija** (`/guias/mudanza.html`, `/en/pricing.html`). La dirección
+pedida que no es la canónica (sin `.html`, la automática de una página con dirección fija…) responde 301 a la buena.
+Cambiar la dirección de algo publicado crea la 301 sola. Los enlaces internos a una dirección con 301 se escriben ya hacia
+su destino.
 
 **Panel en tres idiomas**: español, rumano e inglés. Cada usuario elige el suyo en *Mi cuenta* (o en el login).
 
@@ -376,7 +404,37 @@ En **Panel → Copias de seguridad**:
   borra un archivo de prueba. Contraseñas y claves se guardan cifradas y nunca se conecta a redes privadas salvo las
   permitidas en *Seguridad y red*. Sin PHP-FPM, las copias programadas las lanza el cron `php bin/uw backup --auto`.
 - **Copia manual**: también vale copiar `data/universal.sqlite`, `data/config.php` y `public/media/`.
-- **Actualizar**: sustituye `app/`, `bin/`, `docs/`, los temas de serie (`themes/default`, `themes/noche`, `themes/corporate`) y `public/index.php` / `public/assets/` por los de la nueva versión. No toques `data/`, `public/media/` ni los temas que hayas subido tú.
+- **Actualizar**: desde la 0.4.0, con el botón del panel o `php bin/uw update --yes` (ver [Actualizaciones](#actualizaciones)). Desde la 0.3.0, a mano una vez: [CHANGELOG](CHANGELOG.md).
+
+## Actualizaciones
+
+**Plataforma → Actualizaciones** (superadmin): el panel mira una vez al día (y al entrar el superadmin, cada pocas horas
+como mucho, después de responder) las releases de GitHub, con tiempo de espera corto; sin red no pasa nada. Si hay
+versión nueva, avisa con su resumen de cambios. **Actualizar**:
+
+1. Descarga el sobre `universal-web-<v>.update.json` y comprueba su **firma ed25519** (libsodium) con la clave pública
+   que va en el código, que la versión es **mayor** que la instalada y, del zip, el **sha256** y el tamaño firmados, que
+   no trae rutas raras ni enlaces y que todo su PHP compila. Sin firma válida no se instala nunca, ni a mano ni en automático.
+2. **Copia de seguridad completa** (base de datos, `config.php` e imágenes) y copia del código que se va a tocar.
+3. **Modo mantenimiento** (503 con `Retry-After`; caduca solo).
+4. Cambia el código archivo a archivo, **sin tocar** `data/`, `public/media/`, los temas propios ni los de serie
+   modificados a mano; borra lo que la versión nueva ya no trae.
+5. En un **proceso nuevo** con el código nuevo: migraciones, vaciado de caché, prueba de salud (cada web genera su
+   portada) y fin del mantenimiento.
+
+Si algo falla (excepción, error fatal, proceso muerto a mitad), **vuelve sola a la versión anterior** —código y base de
+datos— y lo explica. Botón **Volver a la versión anterior** (solo código, o también la base de datos). **Actualización
+automática** opcional y apagada de serie: «solo correcciones (0.4.x)» o «todas», con aviso por correo si el correo del
+panel está configurado. Por MCP solo se consulta (`update_status`). Si el servidor web no puede escribir el código (así
+lo deja `install.sh`), el panel lo explica y se actualiza con `sudo uw update --yes`.
+
+## Velocidad
+
+Caché de página completa (**Seguridad y red → Velocidad**, activada de serie): la página generada se guarda en
+`data/cache/` con sus cabeceras y se envía desde `public/index.php` **antes de cargar la aplicación** (con `ETag` y 304).
+No se usa para el panel, el MCP, la API, URLs con consulta, visitantes con sesión o vista previa, Markdown, agentes de IA
+ni webs privadas. Se vacía sola con cada cambio y al actualizar el código, y caduca en una hora. En una prueba local
+(`php -S` con OPcache), una página pasa de unos 4,5 ms a 0,4 ms, cerca de lo que tarda en servirse un archivo estático.
 
 ## Seguridad
 
@@ -393,6 +451,9 @@ En **Panel → Copias de seguridad**:
   CSS/JS de ninguna web comparte origen con el panel. Los admins de una web no pueden asignarse IPs ni nombres locales.
 - **Enlaces saneados** al guardar y al mostrar (nada de `javascript:` en menús, botones o bloques), tipos de bloque y temas validados.
 - **Conexiones salientes** (webhooks, SMTP) solo a internet público; redes privadas únicamente si el superadmin las permite.
+- **Web pública** con `Content-Security-Policy` de base (`base-uri`, `object-src 'none'`, `frame-ancestors`, `form-action`),
+  `X-Content-Type-Options: nosniff`, `Referrer-Policy` y `Cross-Origin-Opener-Policy`; las direcciones fijas se validan
+  (sin `..`, sin pisar rutas del sistema ni extensiones de archivo).
 - **Login** con tiempo constante (no revela qué emails existen), límite por IP y por email; sesión en modo estricto y
   cookie `__Host-` en HTTPS. El instalador nunca se ejecuta sobre una base de datos existente.
 - **Permiso `messages`** aparte para que un token MCP lea mensajes de contacto (datos personales).
@@ -425,7 +486,7 @@ En **Panel → Seguridad y red** (superadmin):
 
 ## Licencia
 
-Copyright (c) 2026 BionicAdri. El software se rige por la [Licencia BionicAdri 2.0](LICENSE) (código fuente disponible, no es «open source»):
+Copyright (c) 2026 BionicAdri. El software se rige por la [Licencia BionicAdri 2.0](LICENSE) (gratis para tus propias webs, código a la vista):
 
 - ✅ Puedes **usarlo gratis** e instalarlo en tus servidores para **tus propias webs**, también las de tu empresa o negocio.
 - ✅ Puedes conectarlo con **ADRI** u otra IA por MCP o por su API.

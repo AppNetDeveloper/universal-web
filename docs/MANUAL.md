@@ -22,7 +22,9 @@ No hace falta saber programar. Si ves un término raro, lo explicamos en media l
 12. [Usuarios, permisos y seguridad del panel](#12-usuarios-permisos-y-seguridad-del-panel)
 13. [Tu web con ADRI (la IA de BionicAdri)](#13-tu-web-con-adri-la-ia-de-bionicadri)
 14. [Preguntas frecuentes y «si algo va mal»](#14-preguntas-frecuentes-y-si-algo-va-mal)
-15. [Anexo: comandos de servidor (opcional)](#anexo-comandos-de-servidor-opcional)
+15. [Actualizar Universal Web](#15-actualizar-universal-web)
+16. [Migrar una web sin perder SEO](#16-migrar-una-web-sin-perder-seo)
+17. [Anexo: comandos de servidor (opcional)](#anexo-comandos-de-servidor-opcional)
 
 ---
 
@@ -378,6 +380,21 @@ desmarca **Usar esta plantilla en la web pública** y guarda.
   **Título SEO** y la **Meta descripción** en ese idioma y guarda. **Mantén el mismo slug** para que se enlacen como traducciones.
 - En **Entradas** hay una pestaña por idioma y el mismo «+ EN».
 - Un idioma **no aparece** en la web pública (selector de idioma, Google) hasta que tiene su **portada publicada**.
+- Cada página se enlaza con sus traducciones (etiquetas `hreflang` y `x-default`, `og:locale` con su región: `es_ES`,
+  `en_GB`, `fr_FR`…) y el **selector de idioma solo muestra los idiomas en los que existe esa página**.
+
+### Páginas que solo existen en algunos idiomas
+
+A veces una página no tiene sentido en todos los idiomas (por ejemplo, «Agencia en Murcia» solo en español e inglés).
+No pasa nada: no se anuncia en `hreflang` para los demás, no sale en su selector de idioma y no aparece en su sitemap.
+
+Para que nadie llegue a una página vacía, abre la página y despliega **Idiomas en los que no existe esta página**: al lado
+de cada idioma ves su dirección equivalente (p. ej. `/fr/murcia.html`) y puedes escribir **a dónde debe llevar** (por
+ejemplo `/fr/agence-france.html` o `/fr/`). Se crea una **redirección 301** y, además, los menús y enlaces de ese idioma
+van directos al destino. Si lo dejas vacío, los enlaces de ese idioma llevan a la versión del idioma principal.
+
+Los textos fijos de los temas (botones, formulario, aviso de cookies, blog) ya vienen traducidos a **español, inglés,
+rumano, francés, alemán, italiano y portugués**. Otros idiomas se pueden activar igual: sus textos fijos salen en inglés.
 
 ### Textos generales de cada idioma
 
@@ -483,11 +500,40 @@ de buscadores con IA (ChatGPT, Perplexity, Gemini, Claude…). Ambos se miran en
   (la auditoría lo marca como **Error**).
 - **Servir cada página en Markdown a los agentes de IA**: casilla en la misma tarjeta. Google y Bing siempre ven la web normal.
 - Los archivos para IAs (`/llms.txt`, `/llms-full.txt`, `robots.txt`) **se generan solos**; en la pantalla SEO tienes los enlaces.
+  Cada idioma tiene el suyo (`/en/llms.txt`…).
+- **Copia en Markdown de cada página**: `/md/precios.md`, `/en/md/precios.md`, `/md/blog-<entrada>.md`. La página la anuncia
+  con `<link rel="alternate" type="text/markdown">` y también se sirve al pedir la página con `Accept: text/markdown`.
+  Los `.md` y los `llms*.txt` llevan `X-Robots-Tag: noindex`: son para las IAs y no compiten en Google con la página.
+- **Perfiles que confirman tu identidad (sameAs)**: en **Ajustes → Visibilidad en IAs (GEO)**, una URL por línea (Wikidata,
+  Wikipedia, LinkedIn de empresa, Google Business…). Se suman a tus redes sociales en los datos estructurados.
+
+### Datos estructurados y sitemap (se hacen solos)
+
+- Cada página lleva en su código (JSON-LD) la **organización**, la **web**, la **página** con su fecha de último cambio,
+  las **migas de pan** y, si tiene preguntas frecuentes, **FAQPage**. Las entradas, además, **BlogPosting**.
+- La fecha de «último cambio» es la del último cambio **real** del contenido: guardar sin tocar nada no la mueve.
+  Es la misma que usa el `sitemap.xml` (`lastmod`), que además enlaza las versiones de cada página en otros idiomas.
+- **IndexNow**: al publicar, cambiar, despublicar o borrar una página, la web avisa sola a Bing y Yandex (solo de lo que
+  ha cambiado). Se desactiva en **Ajustes**. Si el aviso falla, no pasa nada: Google y Bing leen igualmente el sitemap.
 
 ### Redirecciones 301
 
 En **SEO → Redirecciones 301** (solo administradores) puedes añadir redirecciones a mano: **Desde (ruta antigua)** →
 **Hacia (ruta o https://…)**. Sirve cuando mueves o renombras una página que ya estaba en Google. La tabla muestra cuántas visitas ha recibido cada una.
+
+Si cambias el slug o la dirección de una página publicada, la redirección desde la dirección antigua **se crea sola**.
+
+**Importar varias de golpe** (al migrar una web): despliega **Importar varias**, pega una por línea en el formato
+`origen -> destino` (o sube un archivo de texto) y pulsa **Importar**. También vale `origen destino`. Las líneas que
+empiezan por `#` se ignoran. Si una línea no vale (formato, ruta rara o porque en el origen hay una página publicada),
+te dice cuál y por qué, y el resto se importa igual.
+
+```
+# páginas renombradas
+casos.html -> clientes.html
+blog/viejo.html -> /blog/nuevo.html
+/en/old.html -> /en/new.html
+```
 
 ---
 
@@ -663,6 +709,13 @@ desde una copia (para mover o clonar webs entre servidores). Las copias globales
 Sesión que se cierra por inactividad, límite de intentos de acceso, protección contra formularios falsos, y un panel aislado
 de la web pública para que ni siquiera un JavaScript personalizado pueda usar tu sesión.
 
+### Velocidad: caché de páginas
+
+Universal Web guarda cada página ya generada y la sirve **sin cargar la aplicación**: casi tan rápido como una web
+estática. Se vacía sola al cambiar cualquier cosa (páginas, ajustes, tema, menú…) y caduca en una hora. Quien tiene
+sesión en el panel, las vistas previas y las webs privadas siempre ven la página recién generada. Se activa o desactiva
+en **Plataforma → Seguridad y red → Velocidad: caché de páginas** (activada de serie).
+
 ### Seguridad: lo que decide el superadmin (**Plataforma → Seguridad y red**)
 
 En lenguaje llano:
@@ -823,6 +876,86 @@ Sí, en **Diseño y código → `<head>`**. Para que respete el consentimiento, 
 
 Universal Web se ofrece **gratis, «tal cual», sin garantía y sin soporte técnico** de BionicAdri (lo dice su licencia, el archivo `LICENSE`). Puedes usarlo libremente para tus propias webs, también las de tu negocio, pero **tú eres responsable** de tu servidor, de tus copias de seguridad y de lo que publicas. Por eso: activa la **copia fuera del servidor** (apartado 11), revisa lo que publica la IA y guarda bien tus contraseñas. Si necesitas ayuda, pregúntale a ADRI (tiene este manual) o a quien te instaló el servidor.
 
+## 15. Actualizar Universal Web
+
+Desde la 0.4.0, Universal Web se actualiza desde el panel. Solo el **superadmin** ve **Plataforma → Actualizaciones**.
+
+### El aviso
+
+Una vez al día (y cuando entra el superadmin, como mucho cada pocas horas) el panel mira si hay versión nueva. Si la hay,
+sale un aviso arriba con el número de versión y un enlace a **Actualizaciones**, donde se ve **qué cambia**. Si no hay
+internet o GitHub no responde, no pasa nada: se vuelve a mirar más tarde.
+
+### Actualizar
+
+En **Actualizaciones** marca la casilla de confirmación y pulsa **Actualizar**. Universal Web hace, por este orden:
+
+1. Descarga la versión y **comprueba su firma** (cada versión va firmada por BionicAdri; un paquete sin firma válida
+   **no se instala nunca**) y su huella. Si no cuadra, se para aquí sin tocar nada.
+2. **Copia de seguridad completa**: base de datos, configuración e imágenes (en **Copias de seguridad**) y copia del
+   código actual.
+3. **Modo mantenimiento**: los visitantes ven «Volvemos en un momento» durante uno o dos minutos.
+4. Cambia el código **sin tocar** tus datos, la configuración, las imágenes, tus temas propios ni los temas de serie que
+   hayas modificado a mano.
+5. Aplica las **migraciones** de la base de datos, vacía la caché, comprueba que las webs se generan bien y quita el
+   mantenimiento.
+
+**Si algo falla, la web vuelve sola a la versión anterior**, con sus datos tal cual, y la pantalla te dice qué ha pasado.
+
+> Descargar y comprobar el paquete va **antes** de la copia y del mantenimiento: así, si la descarga falla, la web no
+> llega a cerrarse ni un segundo.
+
+### Actualización automática
+
+En la misma pantalla: **Desactivada** (de serie: solo avisa), **Solo correcciones** (por ejemplo de la 0.4.0 a la
+0.4.1, nunca a la 0.5) o **Todas las versiones**. Se hace en la comprobación diaria con los mismos pasos y la misma
+vuelta atrás. Si el **Correo del panel** está configurado, te llega un correo con el resultado.
+
+### Volver a la versión anterior
+
+Tras una actualización aparece **Volver a la versión anterior**: repone el código de la versión de antes. Tus datos de
+después se **conservan**; si marcas también **Reponer la base de datos de antes de actualizar**, se pierde lo hecho desde
+entonces.
+
+### Si el panel dice que no puede escribir el código
+
+Con `install.sh` (VPS), el código pertenece al administrador del servidor y el servidor web no puede cambiarlo: es más
+seguro. En ese caso actualiza desde la terminal:
+
+```bash
+sudo uw update:check        # ¿hay versión nueva?
+sudo uw update --yes        # actualizar (mismos pasos y vuelta atrás)
+sudo uw update:rollback --yes   # volver a la versión anterior
+```
+
+### Desde la 0.3.0
+
+La 0.3.0 no trae este sistema: el paso a la 0.4.0 es **manual** (una sola vez). Los pasos están en el `CHANGELOG.md`
+(«Cómo actualizar desde la 0.3.0»). A partir de la 0.4.0, ya con el botón.
+
+---
+
+## 16. Migrar una web sin perder SEO
+
+Para traer a Universal Web una web que ya está en Google (por ejemplo, una web estática con páginas `.html`) **sin
+cambiar ni una dirección**:
+
+1. **Ajustes → Direcciones (URLs) → Estilo de las direcciones**: elige **Con .html** si las direcciones de tu web
+   terminan en `.html` (`/servicios.html`, `/blog/mi-entrada.html`, `/blog.html`). Las direcciones sin `.html`
+   redirigen solas a las buenas.
+2. Crea cada página con el **mismo slug** que su archivo (`precios.html` → slug `precios`). Las que están en carpetas u
+   otro sitio (por ejemplo `/guias/mudanza.html`) se ponen en **Dirección (URL) fija** de la página o entrada.
+3. Activa los idiomas (**Idiomas**) y crea las traducciones con el mismo slug. Si en otro idioma la página tiene otra
+   dirección (`/en/pricing.html`), ponla en su **Dirección (URL) fija**.
+4. **SEO → Redirecciones 301 → Importar varias**: pega las direcciones antiguas que ya no existen (`origen -> destino`).
+5. Para las páginas que solo existen en algunos idiomas, configura su destino en los demás (apartado 7).
+6. Revisa **SEO** y **Comprobar la web**: enlaces rotos, `hreflang`, meta descripciones…
+
+Con ADRI es más rápido: «Migra esta web: conserva sus direcciones .html, importa estas redirecciones y crea las páginas
+en sus idiomas». Usa `site_update` (`url_style`), `page_save` (`path`), `redirect_import`, `page_languages` y `page_faq`.
+
+---
+
 ## Anexo: comandos de servidor (opcional)
 
 Solo para quien administra el servidor. Se ejecutan en la carpeta de la instalación con `php bin/uw …`.
@@ -837,5 +970,8 @@ Solo para quien administra el servidor. Se ejecutan en la carpeta de la instalac
 | Restaurar una copia de una web | `php bin/uw backup:restore-site --site=slug --file=NOMBRE --yes` |
 | Crear un token de IA | `php bin/uw token:create --site=<slug\|global> --name=… --scopes=read,write,publish` |
 | Publicar webs estáticas pendientes | `php bin/uw publish --dirty` |
+| ¿Hay versión nueva? | `php bin/uw update:check` |
+| Actualizar (con copia, firma comprobada y vuelta atrás sola) | `php bin/uw update --yes` |
+| Volver a la versión anterior | `php bin/uw update:rollback --yes [--with-db]` |
 
 Guía técnica completa en el [README](../README.md); guía para desarrolladores de temas en [docs/THEMES.md](THEMES.md).
