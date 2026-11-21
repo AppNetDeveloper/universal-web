@@ -263,6 +263,18 @@ if ($withSample) {
     $ns = site_create('Muestra', 'muestra-tema', [], $withSample[0]);
     $nsvc = new SiteService($ns);
     ok('web nueva con los textos de ejemplo del tema', site_apply_theme_sample($nsvc) && ($nsvc = new SiteService(site_by_id((int) $ns['id']))) && $nsvc->page('index') && count($nsvc->pages()) >= 4 && count($nsvc->posts(['public' => true])) >= 1);
+    // Segundo idioma desde theme_sample: mismos slugs que el principal → hreflang y selector enlazan la traducción
+    $savedTok2 = McpContext::$token;
+    McpContext::$token = ['id' => 0, 'site_id' => $ns['id'], 'scopes' => ['read', 'write', 'publish'], 'owner_role' => 'admin', 'name' => 't', 'owner_name' => ''];
+    $nsvc->updateSettings(['languages' => ['en']]);
+    $en = $call('theme_sample', ['theme' => $withSample[0], 'language' => 'en']);
+    $es = theme_sample($withSample[0], 'es');
+    ok('theme_sample en otro idioma: slugs del principal', array_column($en['sample']['pages'] ?? [], 'slug') === array_column($es['pages'], 'slug')
+        && str_contains($en['note'] ?? '', 'MISMO slug') && in_array('/' . $es['pages'][4]['slug'], array_column($en['sample']['menu'], 'url'), true), json_encode(array_column($en['sample']['pages'] ?? [], 'slug')));
+    foreach ($en['sample']['pages'] as $pg) $call('page_save', ['lang' => 'en', 'slug' => $pg['slug'], 'title' => $pg['title'], 'status' => 'published', 'blocks' => $pg['blocks']]);
+    $svcNs = new SiteService(site_by_id((int) $ns['id']));
+    ok('traducción enlazada: la página de servicios existe en es y en con el mismo slug', $svcNs->page($es['pages'][1]['slug']) && (function () use ($svcNs, $es) { $svcNs->setLang('en'); return (bool) $svcNs->page($es['pages'][1]['slug']); })());
+    McpContext::$token = $savedTok2;
 }
 ok('theme_sample: tema sin ejemplo', array_key_exists('sample', $r = $call('theme_sample', ['theme' => 'default'])) && $r['sample'] === null, json_encode($r));
 ok('theme_sample: tema inexistente', str_contains($call('theme_sample', ['theme' => '../x'])['_error'] ?? '', 'no existe'));

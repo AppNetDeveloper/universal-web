@@ -157,8 +157,12 @@ function mcp_tools(): array
                 $lang = strtolower(trim((string) ($a['language'] ?? ''))) ?: ($s ? $s->defaultLang() : 'es');
                 $sample = theme_sample($theme, $lang);
                 if (!$sample) return ['theme' => $theme, 'sample' => null, 'note' => 'Este tema no trae textos de ejemplo. Escribe el contenido con block_types y los datos reales del cliente.'];
+                // En una web, un idioma adicional usa los slugs del idioma principal (así se enlazan como traducción de la misma página)
+                $aligned = $s && $sample['lang'] !== $s->defaultLang();
+                if ($aligned) $sample = theme_sample_aligned($sample, theme_sample($theme, $s->defaultLang()));
                 return ['theme' => $theme, 'lang' => $sample['lang'], 'languages' => array_keys(theme_sample_all($theme)), 'sample' => array_diff_key($sample, ['lang' => 1]),
-                    'note' => 'Empresa ficticia: sustituye nombre, servicios, contacto y cifras por los reales del cliente; lo marcado «Ejemplo» no se publica tal cual.'];
+                    'note' => 'Empresa ficticia: sustituye nombre, servicios, contacto y cifras por los reales del cliente; lo marcado «Ejemplo» no se publica tal cual.'
+                        . ($aligned ? ' Los slugs y enlaces ya son los del idioma principal de la web: guarda cada página con page_save (lang) y el MISMO slug para que sea la traducción de la misma página.' : '')];
             },
         ],
         'block_types' => [

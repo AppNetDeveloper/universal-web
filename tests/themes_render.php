@@ -134,6 +134,8 @@ foreach (array_keys(themes_available()) as $theme) {
                 if (!preg_match('/ejempl|exampl|sample|exempl|beispiel|esempi/i', $it['name'] . ' ' . $it['role'])) $errs[] = "$l: opinión sin marcar como ejemplo";
             }
         }
+        $shape = array_unique(array_map(fn($smp) => json_encode([array_map(fn($p) => array_column($p['blocks'], 'type'), $smp['pages']), count($smp['posts'] ?? [])]), $all));
+        if (count($shape) !== 1) $errs[] = 'los idiomas no tienen las mismas páginas, bloques y entradas en el mismo orden (theme_sample los empareja por posición)';
         ok("$theme: textos de ejemplo válidos y sin palabras vetadas", !$errs, implode(' | ', array_slice($errs, 0, 5)));
         // Web nueva con los textos de ejemplo: cada página y entrada se pinta sin avisos
         $ns = site_create("Muestra $theme", "m-$theme", ["m-$theme.test"], $theme);

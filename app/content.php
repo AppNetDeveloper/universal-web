@@ -542,6 +542,35 @@ function theme_sample(string $theme, string $lang): ?array
 }
 
 /**
+ * Los textos de ejemplo de un idioma con los slugs (y enlaces) del idioma principal de la web. Cada idioma del sample trae
+ * sus slugs traducidos (para una web cuyo idioma principal sea ese), pero en una web con varios idiomas una página es la
+ * MISMA en todos solo si comparte slug: así es como se enlazan hreflang y el selector de idioma.
+ */
+function theme_sample_aligned(array $sample, ?array $main): array
+{
+    if (!$main || ($main['lang'] ?? '') === ($sample['lang'] ?? '')) return $sample;
+    $map = [];
+    foreach (['pages', 'posts'] as $k) {
+        foreach (array_values((array) ($sample[$k] ?? [])) as $i => $item) {
+            $to = (string) (array_values((array) ($main[$k] ?? []))[$i]['slug'] ?? '');
+            $from = (string) ($item['slug'] ?? '');
+            if ($to === '' || $from === '' || $to === $from) continue;
+            $map[$from] = $to;
+            $sample[$k][$i]['slug'] = $to;
+        }
+    }
+    if (!$map) return $sample;
+    // Enlaces internos «/slug» y «/blog/slug» (menú, botones, bloques) al slug del idioma principal
+    $fix = function ($v) use (&$fix, $map) {
+        if (is_array($v)) return array_map($fix, $v);
+        if (!is_string($v) || !preg_match('#^/(blog/)?([a-z0-9-]+)$#', $v, $m) || !isset($map[$m[2]])) return $v;
+        return '/' . $m[1] . $map[$m[2]];
+    };
+    foreach (['menu', 'cta', 'pages'] as $k) if (isset($sample[$k])) $sample[$k] = $fix($sample[$k]);
+    return $sample;
+}
+
+/**
  * Rellena una web recién creada con los textos de ejemplo de su tema, en su idioma principal: páginas y entradas
  * publicadas, menú, eslogan y botón de cabecera. Devuelve false si el tema no trae ejemplo (no toca nada).
  */
