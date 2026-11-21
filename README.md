@@ -313,6 +313,8 @@ Sin panel: copia la carpeta a `themes/` por FTP/SSH.
 - `natural` — clínicas, fisioterapia, psicología, yoga, productos ecológicos (Young Serif + Source Sans 3).
 - `prestigio` — inmobiliaria premium, hoteles boutique, bodegas, joyería, bodas (Cormorant + Jost).
 
+Desde la 0.5.1 los veinte temas traen **textos de ejemplo** en los 7 idiomas y contraste AA con cualquier color de marca.
+
 Nuevos en la 0.5.0, todos con **modo claro y oscuro** (siguen al dispositivo) y **textos de ejemplo** en los 7 idiomas:
 - `sobrio` — despachos: abogados, asesorías, gestorías, notarías; rejilla suiza institucional (IBM Plex Serif + Plex Sans).
 - `pulcro` — clínicas, consultas médicas, dentistas, veterinarias, ópticas; blanco clínico y botón de cita (Lexend).

@@ -51,4 +51,13 @@
       b.textContent = '¡Copiado!'; setTimeout(function () { b.textContent = 'Copiar'; }, 1500);
     });
   });
+
+  // Selector de idioma desplegable: se cierra al pulsar fuera o con Escape (el foco vuelve a su botón)
+  document.addEventListener('click', function (ev) {
+    document.querySelectorAll('.lang-menu[open]').forEach(function (d) { if (!d.contains(ev.target)) d.removeAttribute('open'); });
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key !== 'Escape') return;
+    document.querySelectorAll('.lang-menu[open]').forEach(function (d) { d.removeAttribute('open'); var s = d.querySelector('summary'); if (s) s.focus(); });
+  });
 })();

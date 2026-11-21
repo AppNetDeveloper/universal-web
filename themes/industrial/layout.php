@@ -42,7 +42,7 @@ $brand = $s['logo']
       <?php if ($c['email']): ?><li><a href="mailto:<?= e($c['email']) ?>"><?= uw_icon('mail', 'icon icon-sm') ?><?= e($c['email']) ?></a></li><?php endif; ?>
       <?php if ($c['address']): ?><li class="topbar-address"><?= uw_icon('pin', 'icon icon-sm') ?><?= e(str_limit($c['address'], 60)) ?></li><?php endif; ?>
     </ul>
-    <?php if (!empty($langs)): ?><nav class="lang-switch" aria-label="<?= e(__('Idioma')) ?>"><?php foreach ($langs as [$lc, $ln, $lu, $la]): ?><a href="<?= e($lu) ?>" hreflang="<?= e($lc) ?>" lang="<?= e($lc) ?>"<?= $la ? ' aria-current="true" class="active"' : '' ?> title="<?= e($ln) ?>"><?= e(strtoupper($lc)) ?></a><?php endforeach; ?></nav><?php endif; ?>
+    <?php if (!empty($langs)): $langMany = count($langs) > 3; ?><nav class="lang-switch<?= $langMany ? ' lang-many' : '' ?>" aria-label="<?= e(__('Idioma')) ?>"><?php if ($langMany): ?><details class="lang-menu"><summary><?php foreach ($langs as [$lc, , , $la]) if ($la) echo e(strtoupper($lc)); ?><span class="lang-caret" aria-hidden="true"></span></summary><div class="lang-list"><?php endif; ?><?php foreach ($langs as [$lc, $ln, $lu, $la]): ?><a href="<?= e($lu) ?>" hreflang="<?= e($lc) ?>" lang="<?= e($lc) ?>"<?= $la ? ' aria-current="true" class="active"' : '' ?> title="<?= e($ln) ?>"><?= e(strtoupper($lc)) ?></a><?php endforeach; ?><?php if ($langMany): ?></div></details><?php endif; ?></nav><?php endif; ?>
     <?php if ($s['utility_menu']): ?>
     <ul class="topbar-links">
       <?php foreach ($s['utility_menu'] as $m): $ext = (bool) preg_match('#^https?://#', $m['url']); ?>

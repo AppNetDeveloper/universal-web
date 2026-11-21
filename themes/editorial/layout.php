@@ -30,7 +30,7 @@ $isActive = fn(string $u) => rtrim($u, '/') === rtrim($path, '/') || ($u !== '/'
 <header class="site-header masthead">
   <div class="container masthead-top">
     <span class="masthead-meta"><?= $c['phone'] ? '<a href="' . e($tel($c['phone'])) . '">' . e($c['phone']) . '</a>' : '' ?><?= $c['phone'] && $c['email'] ? ' · ' : '' ?><?= $c['email'] ? '<a href="mailto:' . e($c['email']) . '">' . e($c['email']) . '</a>' : '' ?></span>
-    <?php if (!empty($langs)): ?><nav class="lang-switch" aria-label="<?= e(__('Idioma')) ?>"><?php foreach ($langs as [$lc, $ln, $lu, $la]): ?><a href="<?= e($lu) ?>" hreflang="<?= e($lc) ?>" lang="<?= e($lc) ?>"<?= $la ? ' aria-current="true" class="active"' : '' ?> title="<?= e($ln) ?>"><?= e(strtoupper($lc)) ?></a><?php endforeach; ?></nav><?php endif; ?>
+    <?php if (!empty($langs)): $langMany = count($langs) > 3; ?><nav class="lang-switch<?= $langMany ? ' lang-many' : '' ?>" aria-label="<?= e(__('Idioma')) ?>"><?php if ($langMany): ?><details class="lang-menu"><summary><?php foreach ($langs as [$lc, , , $la]) if ($la) echo e(strtoupper($lc)); ?><span class="lang-caret" aria-hidden="true"></span></summary><div class="lang-list"><?php endif; ?><?php foreach ($langs as [$lc, $ln, $lu, $la]): ?><a href="<?= e($lu) ?>" hreflang="<?= e($lc) ?>" lang="<?= e($lc) ?>"<?= $la ? ' aria-current="true" class="active"' : '' ?> title="<?= e($ln) ?>"><?= e(strtoupper($lc)) ?></a><?php endforeach; ?><?php if ($langMany): ?></div></details><?php endif; ?></nav><?php endif; ?>
   </div>
   <div class="container masthead-brand">
     <a class="brand" href="<?= e($svc->langPath('/')) ?>">

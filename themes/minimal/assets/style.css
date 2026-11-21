@@ -24,7 +24,7 @@
 
 body { font-size: 1.04rem; }
 h1, h2, h3 { font-weight: 800; letter-spacing: -.035em; }
-.grad { background: linear-gradient(120deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.grad { background: linear-gradient(120deg, var(--accent-large), var(--accent-2-large)); -webkit-background-clip: text; background-clip: text; color: transparent; }
 
 /* Cabecera */
 .site-header { background: rgba(255,255,255,.72); backdrop-filter: saturate(1.6) blur(14px); }
@@ -50,8 +50,8 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -.035em; }
 .pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 999px; background: #fff; font-size: .85rem; font-weight: 700; color: var(--muted); margin-bottom: 22px; }
 .pill-dot { width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
 .hero-minimal h1 { font-size: clamp(2.6rem, 7.5vw, 5.4rem); line-height: 1.02; letter-spacing: -.05em;
-  background: linear-gradient(120deg, var(--text) 30%, var(--accent) 75%, var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; text-wrap: balance; padding-bottom: .12em; }
-.hero-minimal .lead { margin: 20px auto 0; max-width: 640px; font-size: clamp(1.08rem, 1.6vw, 1.25rem); color: var(--muted); }
+  background: linear-gradient(120deg, var(--text) 30%, var(--accent-large) 75%, var(--accent-2-large)); -webkit-background-clip: text; background-clip: text; color: transparent; text-wrap: balance; padding-bottom: .12em; }
+.hero-minimal .lead { margin: 20px auto 0; max-width: 640px; font-size: clamp(1.08rem, 1.6vw, 1.25rem); color: color-mix(in srgb, var(--muted) 60%, var(--text)); }
 .hero-minimal .actions { justify-content: center; margin-top: 32px; gap: 12px; }
 .hero-shot { margin: clamp(40px, 6vw, 72px) auto 0; max-width: 1040px; padding: 10px; border-radius: 22px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 30%, #fff), color-mix(in srgb, var(--accent-2) 30%, #fff)); }
 .hero-shot img { width: 100%; border-radius: 14px; border: 1px solid rgba(0,0,0,.06); box-shadow: 0 30px 80px rgba(15,23,42,.18); }

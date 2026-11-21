@@ -9,8 +9,11 @@
   --radius: 4px;
   --shadow: none;
   --font-head: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
-  --on-accent: #0b0d14;
   --accent-text: color-mix(in srgb, var(--accent) 65%, #fff);   /* acento aclarado: es texto sobre fondo oscuro */
+}
+@supports (color: oklch(from red l c h)) {
+  /* aunque el cliente elija un azul marino: luminosidad mínima sobre el fondo oscuro */
+  :root { --accent-text: oklch(from color-mix(in srgb, var(--accent) 65%, #fff) max(l, .78) c h); }
 }
 body { font-size: 1.05rem; }
 h1, h2, h3 { font-weight: 500; letter-spacing: -.01em; }
