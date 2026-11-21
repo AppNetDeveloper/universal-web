@@ -434,7 +434,8 @@ Caché de página completa (**Seguridad y red → Velocidad**, activada de serie
 `data/cache/` con sus cabeceras y se envía desde `public/index.php` **antes de cargar la aplicación** (con `ETag` y 304).
 No se usa para el panel, el MCP, la API, URLs con consulta, visitantes con sesión o vista previa, Markdown, agentes de IA
 ni webs privadas. Se vacía sola con cada cambio y al actualizar el código, y caduca en una hora. En una prueba local
-(`php -S` con OPcache), una página pasa de unos 4,5 ms a 0,4 ms, cerca de lo que tarda en servirse un archivo estático.
+(`php -S` con OPcache, 4 procesos, una petición cada vez), la portada pasa de 2,6 ms (0.3.0) a 0,18 ms; un archivo estático
+del mismo servidor tarda 0,12 ms. Con 8 peticiones a la vez: de 2.000 a 21.700 páginas por segundo (estático: 19.800).
 
 ## Seguridad
 

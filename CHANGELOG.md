@@ -40,7 +40,7 @@ desde el panel.
 ### Velocidad
 - **Caché de página completa**: la página generada se sirve sin cargar la aplicación (con `ETag` / 304). Se vacía sola
   con cada cambio y al cambiar el código, caduca en 1 h y nunca se usa con sesión, vista previa, Markdown, agentes de IA,
-  consultas ni webs privadas. En una prueba local: de ~4,5 ms a ~0,4 ms por página.
+  consultas ni webs privadas. En una prueba local: de 2,6 ms a 0,18 ms por página (un archivo estático: 0,12 ms).
 - Ajustes calculados una vez por petición.
 
 ### Seguridad
