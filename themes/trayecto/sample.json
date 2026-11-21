@@ -1,0 +1,2747 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Trayecto). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Transporte y logística, siempre en ruta",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir presupuesto",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: transporte por carretera, mensajería urgente y almacenaje con seguimiento de cada envío. Sustitúyelo por el de tu empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transporte y logística · Ejemplo",
+       "title": "Tu mercancía, en ruta y a la hora pactada",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué transportas, hasta dónde llegas y por qué tus clientes confían en tus plazos.",
+       "cta_text": "Pedir presupuesto",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicios",
+       "title": "Lo que movemos por ti",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transporte por carretera",
+         "text": "Carga completa y grupaje a toda la península, con salidas diarias."
+        },
+        {
+         "icon": "clock",
+         "title": "Mensajería urgente",
+         "text": "Recogida en el día y entrega en menos de 24 horas."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Almacenaje",
+         "text": "Naves con control de stock y preparación de pedidos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Entrega urgente en península (ejemplo)"
+        },
+        {
+         "value": "98 %",
+         "label": "Entregas a tiempo (ejemplo)"
+        },
+        {
+         "value": "40",
+         "label": "Vehículos en ruta (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Del pedido a la entrega",
+       "items": [
+        {
+         "title": "Pide presupuesto",
+         "text": "Cuéntanos origen, destino y tipo de carga."
+        },
+        {
+         "title": "Recogemos",
+         "text": "Un vehículo pasa a la hora que acordamos."
+        },
+        {
+         "title": "Seguimiento y entrega",
+         "text": "Sabes dónde va tu envío hasta que llega."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Nuestra flota",
+       "title": "Vehículos y equipo preparados",
+       "body": "- Furgonetas, camiones y plataformas\n- Cámaras frigoríficas con registro de temperatura\n- Conductores con formación en carga y descarga",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una carga que mover?",
+       "text": "Cuéntanos la ruta y te enviamos un presupuesto lo antes posible.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: transporte por carretera, mensajería, paquetería, frío, almacenaje y transitario. Sustitúyelo por los servicios de tu empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus servicios con palabras que entienda cualquier cliente.",
+       "cta_text": "Pedir presupuesto",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transporte por carretera",
+         "text": "Carga completa y grupaje."
+        },
+        {
+         "icon": "clock",
+         "title": "Mensajería urgente",
+         "text": "Entrega en el día."
+        },
+        {
+         "icon": "box",
+         "title": "Paquetería",
+         "text": "Envíos de bultos con seguimiento."
+        },
+        {
+         "icon": "shield",
+         "title": "Transporte frigorífico",
+         "text": "Cadena de frío controlada."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Almacenaje",
+         "text": "Stock y preparación de pedidos."
+        },
+        {
+         "icon": "globe",
+         "title": "Transitario",
+         "text": "Gestión de envíos internacionales."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas orientativas",
+       "note": "Precios de ejemplo en euros: sustitúyelos por los de tu empresa.",
+       "items": [
+        {
+         "section": "Paquetería",
+         "name": "Bulto hasta 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Paquetería",
+         "name": "Bulto hasta 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Palets",
+         "name": "Palet en península",
+         "price": "desde 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una carga que mover?",
+       "text": "Cuéntanos la ruta y te enviamos un presupuesto lo antes posible.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa al mover la mercancía de nuestros clientes de un punto a otro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu empresa, quién forma el equipo y qué os hace distintos.\n\nHabla de cómo trabajáis, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Plazos claros desde el presupuesto\n- Un contacto fijo para cada cliente\n- Aviso inmediato si algo cambia en ruta"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Del pedido a la entrega",
+       "items": [
+        {
+         "title": "Pide presupuesto",
+         "text": "Cuéntanos origen, destino y tipo de carga."
+        },
+        {
+         "title": "Recogemos",
+         "text": "Un vehículo pasa a la hora que acordamos."
+        },
+        {
+         "title": "Seguimiento y entrega",
+         "text": "Sabes dónde va tu envío hasta que llega."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre presupuestos, plazos, seguros, seguimiento de envíos y recogidas en el día."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo pido un presupuesto?",
+         "answer": "Desde el formulario de contacto o por teléfono. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Puedo seguir mi envío?",
+         "answer": "Sí, te damos un enlace para ver dónde va. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué pasa si se daña la mercancía?",
+         "answer": "Indica aquí tu política de seguros y reclamaciones."
+        },
+        {
+         "question": "¿Recogéis en el mismo día?",
+         "answer": "Sí, avisando antes de una hora que indiques aquí."
+        },
+        {
+         "question": "¿Hacéis mudanzas?",
+         "answer": "Indica aquí si ofreces este servicio. *Texto de ejemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una carga que mover?",
+       "text": "Cuéntanos la ruta y te enviamos un presupuesto lo antes posible.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide presupuesto o escríbenos con los datos de tu envío y te respondemos lo antes posible en horario de oficina."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir presupuesto",
+       "text": "Cuéntanos origen, destino y carga, y te enviamos un presupuesto.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-preparar-un-envio",
+    "title": "Cómo preparar un envío para que llegue bien",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve de embalaje.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con consejos generales.\n\n## Embalaje\n\nExplica cómo proteger y etiquetar cada bulto.\n\n## Documentación\n\nQué papeles conviene llevar con la carga.",
+    "tags": [
+     "consejos",
+     "paqueteria"
+    ]
+   },
+   {
+    "slug": "frio-en-ruta",
+    "title": "Mercancía fría: qué cuidar durante el trayecto",
+    "excerpt": "Texto de ejemplo: la cadena de frío paso a paso.",
+    "content": "Texto de ejemplo. Cuenta cómo se mantiene la temperatura durante todo el recorrido.\n\n## Antes de cargar\n\nPrecalentar o preenfriar el vehículo y revisar el producto.\n\n## Durante el trayecto\n\nRegistro de temperatura y qué hacer ante una incidencia.",
+    "tags": [
+     "frio",
+     "logistica"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Transport and logistics, always on the road",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a quote",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: road transport, urgent courier and warehousing with tracking for every shipment. Replace it with your own company's text."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transport & logistics · Sample",
+       "title": "Your goods, on the road and on time",
+       "subtitle": "Sample text: say in one sentence what you carry, how far you go and why customers trust your delivery times.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "What we move for you",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Road transport",
+         "text": "Full loads and groupage across the peninsula, with daily departures."
+        },
+        {
+         "icon": "clock",
+         "title": "Urgent courier",
+         "text": "Same-day pickup and delivery in under 24 hours."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Warehousing",
+         "text": "Warehouses with stock control and order picking."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Urgent delivery on the peninsula (sample)"
+        },
+        {
+         "value": "98 %",
+         "label": "On-time deliveries (sample)"
+        },
+        {
+         "value": "40",
+         "label": "Vehicles on the road (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "From order to delivery",
+       "items": [
+        {
+         "title": "Request a quote",
+         "text": "Tell us the origin, destination and type of load."
+        },
+        {
+         "title": "We collect",
+         "text": "A vehicle arrives at the time we agree."
+        },
+        {
+         "title": "Tracking and delivery",
+         "text": "You know where your shipment is until it arrives."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Our fleet",
+       "title": "Vehicles and team ready to go",
+       "body": "- Vans, trucks and flatbeds\n- Refrigerated units with temperature logging\n- Drivers trained in loading and unloading",
+       "button_text": "About",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their consent.",
+         "name": "Sample customer",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a load to move?",
+       "text": "Tell us the route and we will send you a quote as soon as possible.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: road transport, courier, parcels, refrigerated freight, warehousing and freight forwarding. Replace it with your company's own services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your services in words any customer understands.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Road transport",
+         "text": "Full loads and groupage."
+        },
+        {
+         "icon": "clock",
+         "title": "Urgent courier",
+         "text": "Same-day delivery."
+        },
+        {
+         "icon": "box",
+         "title": "Parcels",
+         "text": "Tracked parcel shipping."
+        },
+        {
+         "icon": "shield",
+         "title": "Refrigerated transport",
+         "text": "Controlled cold chain."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Warehousing",
+         "text": "Stock and order picking."
+        },
+        {
+         "icon": "globe",
+         "title": "Freight forwarding",
+         "text": "International shipment handling."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Guide prices",
+       "note": "Sample prices in euros: replace them with your own.",
+       "items": [
+        {
+         "section": "Parcels",
+         "name": "Parcel up to 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Parcels",
+         "name": "Parcel up to 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Pallets",
+         "name": "Pallet within the peninsula",
+         "price": "from 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a load to move?",
+       "text": "Tell us the route and we will send you a quote as soon as possible.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us when moving our customers' goods from one point to another."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your company here, who is on the team and what makes you different.\n\nTalk about how you work, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Clear delivery times from the quote\n- One fixed contact per customer\n- Instant notice if anything changes on the road"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "From order to delivery",
+       "items": [
+        {
+         "title": "Request a quote",
+         "text": "Tell us the origin, destination and type of load."
+        },
+        {
+         "title": "We collect",
+         "text": "A vehicle arrives at the time we agree."
+        },
+        {
+         "title": "Tracking and delivery",
+         "text": "You know where your shipment is until it arrives."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about quotes, delivery times, insurance, shipment tracking and same-day pickups."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I request a quote?",
+         "answer": "Through the contact form or by phone. *Sample text.*"
+        },
+        {
+         "question": "Can I track my shipment?",
+         "answer": "Yes, we send you a link to see where it is. *Sample text.*"
+        },
+        {
+         "question": "What if the goods are damaged?",
+         "answer": "State your insurance and claims policy here."
+        },
+        {
+         "question": "Do you collect on the same day?",
+         "answer": "Yes, if you book before a time you state here."
+        },
+        {
+         "question": "Do you do removals?",
+         "answer": "State here whether you offer this service. *Sample text.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a load to move?",
+       "text": "Tell us the route and we will send you a quote as soon as possible.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a quote or write to us with your shipment details and we will reply as soon as possible during office hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a quote",
+       "text": "Tell us the origin, destination and load, and we will send you a quote.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-prepare-a-shipment",
+    "title": "How to prepare a shipment so it arrives safely",
+    "excerpt": "Sample blog text: a short packing guide.",
+    "content": "Sample text. Write a useful article for your customers here, with general advice.\n\n## Packing\n\nExplain how to protect and label each parcel.\n\n## Paperwork\n\nWhich documents should travel with the load.",
+    "tags": [
+     "tips",
+     "parcels"
+    ]
+   },
+   {
+    "slug": "cold-goods-on-the-road",
+    "title": "Cold goods: what to watch during the trip",
+    "excerpt": "Sample text: the cold chain step by step.",
+    "content": "Sample text. Explain how the temperature is kept steady for the whole journey.\n\n## Before loading\n\nPre-cool the vehicle and check the product.\n\n## During the trip\n\nTemperature logging and what to do if something goes wrong.",
+    "tags": [
+     "cold",
+     "logistics"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Transport și logistică, mereu pe drum",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Cere o ofertă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: transport rutier, curierat urgent și depozitare, cu urmărirea fiecărui transport. Înlocuiește-l cu textul firmei tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transport și logistică · Exemplu",
+       "title": "Marfa ta, pe drum și la timp",
+       "subtitle": "Text de exemplu: spune într-o frază ce transporți, până unde ajungi și de ce clienții au încredere în termenele tale.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicii",
+       "title": "Ce transportăm pentru tine",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transport rutier",
+         "text": "Încărcături complete și grupaj în toată peninsula, cu plecări zilnice."
+        },
+        {
+         "icon": "clock",
+         "title": "Curierat urgent",
+         "text": "Ridicare în aceeași zi și livrare în mai puțin de 24 de ore."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Depozitare",
+         "text": "Depozite cu control al stocului și pregătirea comenzilor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Livrare urgentă în peninsulă (exemplu)"
+        },
+        {
+         "value": "98 %",
+         "label": "Livrări la timp (exemplu)"
+        },
+        {
+         "value": "40",
+         "label": "Vehicule pe drum (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la comandă la livrare",
+       "items": [
+        {
+         "title": "Cere o ofertă",
+         "text": "Spune-ne originea, destinația și tipul de marfă."
+        },
+        {
+         "title": "Ridicăm marfa",
+         "text": "Un vehicul ajunge la ora stabilită."
+        },
+        {
+         "title": "Urmărire și livrare",
+         "text": "Știi unde este transportul tău până ajunge."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Flota noastră",
+       "title": "Vehicule și echipă pregătite",
+       "body": "- Dube, camioane și platforme\n- Camere frigorifice cu înregistrarea temperaturii\n- Șoferi instruiți pentru încărcare și descărcare",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o marfă de transportat?",
+       "text": "Spune-ne ruta și îți trimitem o ofertă cât mai repede.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: transport rutier, curierat, colete, transport frigorific, depozitare și expediții internaționale. Înlocuiește-l cu serviciile firmei tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie serviciile cu cuvinte pe care le înțelege orice client.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transport rutier",
+         "text": "Încărcături complete și grupaj."
+        },
+        {
+         "icon": "clock",
+         "title": "Curierat urgent",
+         "text": "Livrare în aceeași zi."
+        },
+        {
+         "icon": "box",
+         "title": "Colete",
+         "text": "Expedieri cu urmărire."
+        },
+        {
+         "icon": "shield",
+         "title": "Transport frigorific",
+         "text": "Lanț de frig controlat."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Depozitare",
+         "text": "Stoc și pregătirea comenzilor."
+        },
+        {
+         "icon": "globe",
+         "title": "Expediții internaționale",
+         "text": "Gestionarea transporturilor externe."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife orientative",
+       "note": "Prețuri de exemplu în euro: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Colete",
+         "name": "Colet până la 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Colete",
+         "name": "Colet până la 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Paleți",
+         "name": "Palet în peninsulă",
+         "price": "de la 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o marfă de transportat?",
+       "text": "Spune-ne ruta și îți trimitem o ofertă cât mai repede.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi când mutăm marfa clienților noștri dintr-un punct în altul."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Spune aici povestea firmei tale, cine face parte din echipă și ce vă face diferiți.\n\nVorbește despre cum lucrați, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Termene clare încă din ofertă\n- O persoană de contact fixă pentru fiecare client\n- Anunț imediat dacă se schimbă ceva pe drum"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la comandă la livrare",
+       "items": [
+        {
+         "title": "Cere o ofertă",
+         "text": "Spune-ne originea, destinația și tipul de marfă."
+        },
+        {
+         "title": "Ridicăm marfa",
+         "text": "Un vehicul ajunge la ora stabilită."
+        },
+        {
+         "title": "Urmărire și livrare",
+         "text": "Știi unde este transportul tău până ajunge."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre oferte, termene, asigurări, urmărirea transporturilor și ridicări în aceeași zi."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum cer o ofertă?",
+         "answer": "Prin formularul de contact sau la telefon. *Text de exemplu.*"
+        },
+        {
+         "question": "Pot urmări transportul?",
+         "answer": "Da, îți trimitem un link ca să vezi unde se află. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce se întâmplă dacă marfa se deteriorează?",
+         "answer": "Scrie aici politica ta de asigurare și reclamații."
+        },
+        {
+         "question": "Ridicați marfa în aceeași zi?",
+         "answer": "Da, dacă ne anunți înainte de ora pe care o scrii aici."
+        },
+        {
+         "question": "Faceți mutări?",
+         "answer": "Scrie aici dacă oferi acest serviciu. *Text de exemplu.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai o marfă de transportat?",
+       "text": "Spune-ne ruta și îți trimitem o ofertă cât mai repede.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: cere o ofertă sau scrie-ne cu datele transportului tău și îți răspundem cât mai repede în programul de birou."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Cere o ofertă",
+       "text": "Spune-ne originea, destinația și marfa, iar noi îți trimitem o ofertă.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-pregatesti-un-transport",
+    "title": "Cum pregătești un transport ca să ajungă întreg",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt de ambalare.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienți, cu sfaturi generale.\n\n## Ambalare\n\nExplică cum se protejează și se etichetează fiecare colet.\n\n## Documente\n\nCe acte e bine să meargă împreună cu marfa.",
+    "tags": [
+     "sfaturi",
+     "colete"
+    ]
+   },
+   {
+    "slug": "marfa-frigorifica",
+    "title": "Marfă la rece: la ce să fii atent pe drum",
+    "excerpt": "Text de exemplu: lanțul de frig pas cu pas.",
+    "content": "Text de exemplu. Explică cum se păstrează temperatura pe tot traseul.\n\n## Înainte de încărcare\n\nPrerăcirea vehiculului și verificarea produsului.\n\n## Pe drum\n\nÎnregistrarea temperaturii și ce faci în caz de incident.",
+    "tags": [
+     "frig",
+     "logistica"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Transport et logistique, toujours en route",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander un devis",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : transport routier, coursier urgent et entreposage avec suivi de chaque envoi. Remplacez-le par le texte de votre entreprise."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transport et logistique · Exemple",
+       "title": "Vos marchandises, en route et à l'heure convenue",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que vous transportez, jusqu'où vous allez et pourquoi vos clients se fient à vos délais.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "Ce que nous transportons pour vous",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transport routier",
+         "text": "Lots complets et groupage dans toute la péninsule, départs quotidiens."
+        },
+        {
+         "icon": "clock",
+         "title": "Coursier urgent",
+         "text": "Enlèvement dans la journée et livraison en moins de 24 heures."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Entreposage",
+         "text": "Entrepôts avec gestion de stock et préparation de commandes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Livraison urgente dans la péninsule (exemple)"
+        },
+        {
+         "value": "98 %",
+         "label": "Livraisons à l'heure (exemple)"
+        },
+        {
+         "value": "40",
+         "label": "Véhicules en route (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la commande à la livraison",
+       "items": [
+        {
+         "title": "Demandez un devis",
+         "text": "Indiquez l'origine, la destination et le type de chargement."
+        },
+        {
+         "title": "Nous enlevons",
+         "text": "Un véhicule passe à l'heure convenue."
+        },
+        {
+         "title": "Suivi et livraison",
+         "text": "Vous savez où est votre envoi jusqu'à son arrivée."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre flotte",
+       "title": "Véhicules et équipe prêts à partir",
+       "body": "- Fourgons, camions et plateaux\n- Caissons frigorifiques avec relevé de température\n- Chauffeurs formés au chargement et au déchargement",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Une marchandise à transporter ?",
+       "text": "Indiquez-nous le trajet et nous vous envoyons un devis au plus vite.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : transport routier, coursier, colis, transport frigorifique, entreposage et transitaire. Remplacez-le par les services de votre entreprise."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos services avec des mots que tout client comprend.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transport routier",
+         "text": "Lots complets et groupage."
+        },
+        {
+         "icon": "clock",
+         "title": "Coursier urgent",
+         "text": "Livraison dans la journée."
+        },
+        {
+         "icon": "box",
+         "title": "Colis",
+         "text": "Envois avec suivi."
+        },
+        {
+         "icon": "shield",
+         "title": "Transport frigorifique",
+         "text": "Chaîne du froid contrôlée."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Entreposage",
+         "text": "Stock et préparation de commandes."
+        },
+        {
+         "icon": "globe",
+         "title": "Transitaire",
+         "text": "Gestion des envois internationaux."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs indicatifs",
+       "note": "Prix d'exemple en euros : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Colis",
+         "name": "Colis jusqu'à 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Colis",
+         "name": "Colis jusqu'à 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Palettes",
+         "name": "Palette dans la péninsule",
+         "price": "à partir de 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Une marchandise à transporter ?",
+       "text": "Indiquez-nous le trajet et nous vous envoyons un devis au plus vite.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous quand nous déplaçons les marchandises de nos clients."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre entreprise, qui compose l'équipe et ce qui vous distingue.\n\nParlez de votre façon de travailler, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Des délais clairs dès le devis\n- Un contact fixe pour chaque client\n- Alerte immédiate si quelque chose change en route"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la commande à la livraison",
+       "items": [
+        {
+         "title": "Demandez un devis",
+         "text": "Indiquez l'origine, la destination et le type de chargement."
+        },
+        {
+         "title": "Nous enlevons",
+         "text": "Un véhicule passe à l'heure convenue."
+        },
+        {
+         "title": "Suivi et livraison",
+         "text": "Vous savez où est votre envoi jusqu'à son arrivée."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les devis, les délais, les assurances, le suivi des envois et les enlèvements dans la journée."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment demander un devis ?",
+         "answer": "Par le formulaire de contact ou par téléphone. *Texte d'exemple.*"
+        },
+        {
+         "question": "Puis-je suivre mon envoi ?",
+         "answer": "Oui, nous vous envoyons un lien pour voir où il se trouve. *Texte d'exemple.*"
+        },
+        {
+         "question": "Que se passe-t-il si la marchandise est abîmée ?",
+         "answer": "Indiquez ici votre politique d'assurance et de réclamations."
+        },
+        {
+         "question": "Enlevez-vous le jour même ?",
+         "answer": "Oui, si vous réservez avant une heure indiquée ici."
+        },
+        {
+         "question": "Faites-vous des déménagements ?",
+         "answer": "Indiquez ici si vous proposez ce service. *Texte d'exemple.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Une marchandise à transporter ?",
+       "text": "Indiquez-nous le trajet et nous vous envoyons un devis au plus vite.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez un devis ou écrivez-nous avec les données de votre envoi, nous vous répondrons au plus vite pendant les heures de bureau."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander un devis",
+       "text": "Indiquez l'origine, la destination et le chargement, et nous vous envoyons un devis.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparer-un-envoi",
+    "title": "Comment préparer un envoi pour qu'il arrive intact",
+    "excerpt": "Texte d'exemple pour le blog : un court guide d'emballage.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos clients, avec des conseils généraux.\n\n## Emballage\n\nExpliquez comment protéger et étiqueter chaque colis.\n\n## Documents\n\nQuels papiers doivent accompagner la marchandise.",
+    "tags": [
+     "conseils",
+     "colis"
+    ]
+   },
+   {
+    "slug": "marchandises-au-froid",
+    "title": "Marchandises au froid : les points d'attention en route",
+    "excerpt": "Texte d'exemple : la chaîne du froid pas à pas.",
+    "content": "Texte d'exemple. Expliquez comment la température est maintenue pendant tout le trajet.\n\n## Avant le chargement\n\nPréparer le véhicule et vérifier le produit.\n\n## Pendant le trajet\n\nRelevé de température et que faire en cas d'incident.",
+    "tags": [
+     "froid",
+     "logistique"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Transport und Logistik, immer unterwegs",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Angebot anfragen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Straßentransport, Express-Kurier und Lagerung mit Sendungsverfolgung für jede Lieferung. Ersetzen Sie ihn durch den Text Ihres Unternehmens."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transport & Logistik · Beispiel",
+       "title": "Ihre Ware, unterwegs und pünktlich",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, was Sie transportieren, wie weit Sie fahren und warum Kunden Ihren Terminen vertrauen.",
+       "cta_text": "Angebot anfragen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Leistungen",
+       "title": "Was wir für Sie bewegen",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Straßentransport",
+         "text": "Komplettladungen und Sammelgut auf der ganzen Halbinsel, tägliche Abfahrten."
+        },
+        {
+         "icon": "clock",
+         "title": "Express-Kurier",
+         "text": "Abholung am selben Tag, Zustellung in unter 24 Stunden."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Lagerung",
+         "text": "Lagerhallen mit Bestandskontrolle und Kommissionierung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Expresszustellung auf der Halbinsel (Beispiel)"
+        },
+        {
+         "value": "98 %",
+         "label": "Pünktliche Lieferungen (Beispiel)"
+        },
+        {
+         "value": "40",
+         "label": "Fahrzeuge unterwegs (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Vom Auftrag bis zur Zustellung",
+       "items": [
+        {
+         "title": "Angebot anfragen",
+         "text": "Nennen Sie uns Start, Ziel und Art der Ladung."
+        },
+        {
+         "title": "Wir holen ab",
+         "text": "Ein Fahrzeug kommt zur vereinbarten Zeit."
+        },
+        {
+         "title": "Verfolgung und Zustellung",
+         "text": "Sie wissen, wo Ihre Sendung ist, bis sie ankommt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Unsere Flotte",
+       "title": "Fahrzeuge und Team bereit zur Fahrt",
+       "body": "- Transporter, Lkw und Pritschenwagen\n- Kühlfahrzeuge mit Temperaturprotokoll\n- Fahrer mit Schulung im Be- und Entladen",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Meinungen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Meinung: Ersetzen Sie ihn mit deren Zustimmung durch echte Meinungen Ihrer Kunden.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Eine Ladung zu transportieren?",
+       "text": "Nennen Sie uns die Strecke, wir senden Ihnen so schnell wie möglich ein Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Straßentransport, Kurier, Paketversand, Kühltransport, Lagerung und Spedition. Ersetzen Sie ihn durch die Leistungen Ihres Unternehmens."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Leistungen mit Worten, die jeder Kunde versteht.",
+       "cta_text": "Angebot anfragen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Straßentransport",
+         "text": "Komplettladungen und Sammelgut."
+        },
+        {
+         "icon": "clock",
+         "title": "Express-Kurier",
+         "text": "Zustellung am selben Tag."
+        },
+        {
+         "icon": "box",
+         "title": "Paketversand",
+         "text": "Pakete mit Sendungsverfolgung."
+        },
+        {
+         "icon": "shield",
+         "title": "Kühltransport",
+         "text": "Kontrollierte Kühlkette."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Lagerung",
+         "text": "Bestand und Kommissionierung."
+        },
+        {
+         "icon": "globe",
+         "title": "Spedition",
+         "text": "Abwicklung internationaler Sendungen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise",
+       "note": "Beispielpreise in Euro: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Pakete",
+         "name": "Paket bis 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Pakete",
+         "name": "Paket bis 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Paletten",
+         "name": "Palette auf der Halbinsel",
+         "price": "ab 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Eine Ladung zu transportieren?",
+       "text": "Nennen Sie uns die Strecke, wir senden Ihnen so schnell wie möglich ein Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns wichtig ist, wenn wir die Ware unserer Kunden von A nach B bringen."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Unternehmens, wer zum Team gehört und was Sie unterscheidet.\n\nSprechen Sie darüber, wie Sie arbeiten, nicht über Zahlen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Klare Termine schon im Angebot\n- Ein fester Ansprechpartner je Kunde\n- Sofortige Meldung bei Änderungen unterwegs"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Vom Auftrag bis zur Zustellung",
+       "items": [
+        {
+         "title": "Angebot anfragen",
+         "text": "Nennen Sie uns Start, Ziel und Art der Ladung."
+        },
+        {
+         "title": "Wir holen ab",
+         "text": "Ein Fahrzeug kommt zur vereinbarten Zeit."
+        },
+        {
+         "title": "Verfolgung und Zustellung",
+         "text": "Sie wissen, wo Ihre Sendung ist, bis sie ankommt."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Angeboten, Lieferzeiten, Versicherung, Sendungsverfolgung und Abholung am selben Tag."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie frage ich ein Angebot an?",
+         "answer": "Über das Kontaktformular oder telefonisch. *Beispieltext.*"
+        },
+        {
+         "question": "Kann ich meine Sendung verfolgen?",
+         "answer": "Ja, wir senden Ihnen einen Link zum Standort. *Beispieltext.*"
+        },
+        {
+         "question": "Was passiert bei beschädigter Ware?",
+         "answer": "Nennen Sie hier Ihre Versicherungs- und Reklamationsregeln."
+        },
+        {
+         "question": "Holen Sie am selben Tag ab?",
+         "answer": "Ja, bei Buchung vor der hier genannten Uhrzeit."
+        },
+        {
+         "question": "Machen Sie auch Umzüge?",
+         "answer": "Geben Sie hier an, ob Sie diese Leistung anbieten. *Beispieltext.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Eine Ladung zu transportieren?",
+       "text": "Nennen Sie uns die Strecke, wir senden Ihnen so schnell wie möglich ein Angebot.",
+       "button_text": "Angebot anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fragen Sie ein Angebot an oder schreiben Sie uns die Daten Ihrer Sendung, wir antworten so schnell wie möglich zu den Bürozeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Angebot anfragen",
+       "text": "Nennen Sie uns Start, Ziel und Ladung, wir senden Ihnen ein Angebot.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ändern Sie sie in Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "sendung-richtig-vorbereiten",
+    "title": "So bereiten Sie eine Sendung richtig vor",
+    "excerpt": "Beispieltext für den Blog: ein kurzer Verpackungsleitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen Tipps.\n\n## Verpackung\n\nErklären Sie, wie jedes Paket geschützt und beschriftet wird.\n\n## Papiere\n\nWelche Dokumente mit der Ladung reisen sollten.",
+    "tags": [
+     "tipps",
+     "pakete"
+    ]
+   },
+   {
+    "slug": "kuehlware-unterwegs",
+    "title": "Kühlware: worauf es unterwegs ankommt",
+    "excerpt": "Beispieltext: die Kühlkette Schritt für Schritt.",
+    "content": "Beispieltext. Erklären Sie, wie die Temperatur auf der ganzen Fahrt gehalten wird.\n\n## Vor dem Beladen\n\nFahrzeug vorkühlen und Ware prüfen.\n\n## Während der Fahrt\n\nTemperaturprotokoll und Vorgehen bei Störungen.",
+    "tags": [
+     "kuehlung",
+     "logistik"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Trasporti e logistica, sempre in viaggio",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi un preventivo",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: trasporto su strada, corriere espresso e magazzino con tracciamento di ogni spedizione. Sostituiscilo con il testo della tua azienda."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Trasporti e logistica · Esempio",
+       "title": "La tua merce, in viaggio e puntuale",
+       "subtitle": "Testo di esempio: racconta in una frase cosa trasporti, fin dove arrivi e perché i clienti si fidano dei tuoi tempi.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servizi",
+       "title": "Cosa muoviamo per te",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Trasporto su strada",
+         "text": "Carichi completi e groupage in tutta la penisola, partenze giornaliere."
+        },
+        {
+         "icon": "clock",
+         "title": "Corriere espresso",
+         "text": "Ritiro in giornata e consegna in meno di 24 ore."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Magazzino",
+         "text": "Magazzini con controllo scorte e preparazione ordini."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Consegna urgente in penisola (esempio)"
+        },
+        {
+         "value": "98 %",
+         "label": "Consegne puntuali (esempio)"
+        },
+        {
+         "value": "40",
+         "label": "Veicoli in viaggio (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Dall'ordine alla consegna",
+       "items": [
+        {
+         "title": "Richiedi un preventivo",
+         "text": "Indicaci origine, destinazione e tipo di carico."
+        },
+        {
+         "title": "Ritiriamo",
+         "text": "Un veicolo passa all'ora concordata."
+        },
+        {
+         "title": "Tracciamento e consegna",
+         "text": "Sai dove si trova la spedizione fino all'arrivo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "La nostra flotta",
+       "title": "Veicoli e squadra pronti a partire",
+       "body": "- Furgoni, camion e pianali\n- Celle frigorifere con registro della temperatura\n- Autisti formati per carico e scarico",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un carico da spostare?",
+       "text": "Indicaci il percorso e ti inviamo un preventivo il prima possibile.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: trasporto su strada, corriere, pacchi, trasporto frigorifero, magazzino e spedizioniere. Sostituiscilo con i servizi della tua azienda."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi i tuoi servizi con parole che ogni cliente capisce.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Trasporto su strada",
+         "text": "Carichi completi e groupage."
+        },
+        {
+         "icon": "clock",
+         "title": "Corriere espresso",
+         "text": "Consegna in giornata."
+        },
+        {
+         "icon": "box",
+         "title": "Pacchi",
+         "text": "Spedizioni con tracciamento."
+        },
+        {
+         "icon": "shield",
+         "title": "Trasporto frigorifero",
+         "text": "Catena del freddo controllata."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Magazzino",
+         "text": "Scorte e preparazione ordini."
+        },
+        {
+         "icon": "globe",
+         "title": "Spedizioniere",
+         "text": "Gestione delle spedizioni internazionali."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe indicative",
+       "note": "Prezzi di esempio in euro: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Pacchi",
+         "name": "Collo fino a 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Pacchi",
+         "name": "Collo fino a 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Pallet",
+         "name": "Pallet in penisola",
+         "price": "da 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un carico da spostare?",
+       "text": "Indicaci il percorso e ti inviamo un preventivo il prima possibile.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa ci sta a cuore quando spostiamo la merce dei nostri clienti da un punto all'altro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia della tua azienda, chi fa parte della squadra e cosa vi rende diversi.\n\nParla di come lavorate, non di numeri che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Tempi chiari già dal preventivo\n- Un referente fisso per ogni cliente\n- Avviso immediato se qualcosa cambia lungo il percorso"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Dall'ordine alla consegna",
+       "items": [
+        {
+         "title": "Richiedi un preventivo",
+         "text": "Indicaci origine, destinazione e tipo di carico."
+        },
+        {
+         "title": "Ritiriamo",
+         "text": "Un veicolo passa all'ora concordata."
+        },
+        {
+         "title": "Tracciamento e consegna",
+         "text": "Sai dove si trova la spedizione fino all'arrivo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su preventivi, tempi di consegna, assicurazione, tracciamento delle spedizioni e ritiri in giornata."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come chiedo un preventivo?",
+         "answer": "Dal modulo di contatto o per telefono. *Testo di esempio.*"
+        },
+        {
+         "question": "Posso seguire la mia spedizione?",
+         "answer": "Sì, ti inviamo un link per vedere dove si trova. *Testo di esempio.*"
+        },
+        {
+         "question": "Cosa succede se la merce si danneggia?",
+         "answer": "Indica qui la tua politica di assicurazione e reclami."
+        },
+        {
+         "question": "Ritirate in giornata?",
+         "answer": "Sì, se prenoti prima dell'ora che indichi qui."
+        },
+        {
+         "question": "Fate traslochi?",
+         "answer": "Indica qui se offri questo servizio. *Testo di esempio.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un carico da spostare?",
+       "text": "Indicaci il percorso e ti inviamo un preventivo il prima possibile.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi un preventivo o scrivici i dati della tua spedizione e ti risponderemo il prima possibile negli orari d'ufficio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi un preventivo",
+       "text": "Indicaci origine, destinazione e carico e ti inviamo un preventivo.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparare-una-spedizione",
+    "title": "Come preparare una spedizione perché arrivi integra",
+    "excerpt": "Testo di esempio per il blog: una breve guida all'imballaggio.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con consigli generali.\n\n## Imballaggio\n\nSpiega come proteggere ed etichettare ogni collo.\n\n## Documenti\n\nQuali documenti conviene far viaggiare con il carico.",
+    "tags": [
+     "consigli",
+     "pacchi"
+    ]
+   },
+   {
+    "slug": "merce-refrigerata",
+    "title": "Merce refrigerata: cosa curare durante il viaggio",
+    "excerpt": "Testo di esempio: la catena del freddo passo dopo passo.",
+    "content": "Testo di esempio. Racconta come si mantiene la temperatura per tutto il percorso.\n\n## Prima di caricare\n\nPrerefrigerare il veicolo e controllare il prodotto.\n\n## Durante il viaggio\n\nRegistro della temperatura e cosa fare in caso di imprevisto.",
+    "tags": [
+     "freddo",
+     "logistica"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Transporte e logística, sempre a caminho",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir orçamento",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: transporte rodoviário, estafeta urgente e armazenagem com acompanhamento de cada envio. Substitua-o pelo texto da sua empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Transporte e logística · Exemplo",
+       "title": "A sua mercadoria, a caminho e à hora combinada",
+       "subtitle": "Texto de exemplo: diga numa frase o que transporta, até onde chega e porque os clientes confiam nos seus prazos.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Serviços",
+       "title": "O que transportamos por si",
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transporte rodoviário",
+         "text": "Cargas completas e grupagem em toda a península, com saídas diárias."
+        },
+        {
+         "icon": "clock",
+         "title": "Estafeta urgente",
+         "text": "Recolha no próprio dia e entrega em menos de 24 horas."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Armazenagem",
+         "text": "Armazéns com controlo de stock e preparação de encomendas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Entrega urgente na península (exemplo)"
+        },
+        {
+         "value": "98 %",
+         "label": "Entregas a tempo (exemplo)"
+        },
+        {
+         "value": "40",
+         "label": "Veículos em rota (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Da encomenda à entrega",
+       "items": [
+        {
+         "title": "Peça orçamento",
+         "text": "Diga-nos origem, destino e tipo de carga."
+        },
+        {
+         "title": "Recolhemos",
+         "text": "Um veículo passa à hora combinada."
+        },
+        {
+         "title": "Acompanhamento e entrega",
+         "text": "Sabe onde vai o seu envio até chegar."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A nossa frota",
+       "title": "Veículos e equipa preparados",
+       "body": "- Carrinhas, camiões e plataformas\n- Câmaras frigoríficas com registo de temperatura\n- Motoristas com formação em carga e descarga",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma carga para mover?",
+       "text": "Diga-nos o percurso e enviamos-lhe um orçamento o mais depressa possível.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: transporte rodoviário, estafeta, encomendas, transporte frigorífico, armazenagem e transitário. Substitua-o pelos serviços da sua empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva os seus serviços com palavras que qualquer cliente entenda.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "truck",
+         "title": "Transporte rodoviário",
+         "text": "Cargas completas e grupagem."
+        },
+        {
+         "icon": "clock",
+         "title": "Estafeta urgente",
+         "text": "Entrega no próprio dia."
+        },
+        {
+         "icon": "box",
+         "title": "Encomendas",
+         "text": "Envios com acompanhamento."
+        },
+        {
+         "icon": "shield",
+         "title": "Transporte frigorífico",
+         "text": "Cadeia de frio controlada."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Armazenagem",
+         "text": "Stock e preparação de encomendas."
+        },
+        {
+         "icon": "globe",
+         "title": "Transitário",
+         "text": "Gestão de envios internacionais."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços indicativos",
+       "note": "Preços de exemplo em euros: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Encomendas",
+         "name": "Volume até 5 kg",
+         "price": "6"
+        },
+        {
+         "section": "Encomendas",
+         "name": "Volume até 30 kg",
+         "price": "12"
+        },
+        {
+         "section": "Paletes",
+         "name": "Palete na península",
+         "price": "desde 45"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma carga para mover?",
+       "text": "Diga-nos o percurso e enviamos-lhe um orçamento o mais depressa possível.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa ao levar a mercadoria dos nossos clientes de um ponto a outro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua empresa, quem faz parte da equipa e o que vos torna diferentes.\n\nFale de como trabalham, não de números que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Prazos claros desde o orçamento\n- Um contacto fixo para cada cliente\n- Aviso imediato se algo mudar na estrada"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Da encomenda à entrega",
+       "items": [
+        {
+         "title": "Peça orçamento",
+         "text": "Diga-nos origem, destino e tipo de carga."
+        },
+        {
+         "title": "Recolhemos",
+         "text": "Um veículo passa à hora combinada."
+        },
+        {
+         "title": "Acompanhamento e entrega",
+         "text": "Sabe onde vai o seu envio até chegar."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre orçamentos, prazos, seguros, acompanhamento de envios e recolhas no próprio dia."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como peço um orçamento?",
+         "answer": "Pelo formulário de contacto ou por telefone. *Texto de exemplo.*"
+        },
+        {
+         "question": "Posso acompanhar o meu envio?",
+         "answer": "Sim, enviamos-lhe uma ligação para ver onde está. *Texto de exemplo.*"
+        },
+        {
+         "question": "E se a mercadoria se danificar?",
+         "answer": "Indique aqui a sua política de seguros e reclamações."
+        },
+        {
+         "question": "Recolhem no próprio dia?",
+         "answer": "Sim, se pedir antes da hora que indicar aqui."
+        },
+        {
+         "question": "Fazem mudanças?",
+         "answer": "Indique aqui se oferece este serviço. *Texto de exemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma carga para mover?",
+       "text": "Diga-nos o percurso e enviamos-lhe um orçamento o mais depressa possível.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça um orçamento ou escreva-nos com os dados do seu envio e respondemos o mais depressa possível no horário de escritório."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir orçamento",
+       "text": "Diga-nos origem, destino e carga e enviamos-lhe um orçamento.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: mude-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "08:00",
+         "closes": "14:00",
+         "opens2": "15:00",
+         "closes2": "19:00"
+        },
+        {
+         "days": "sa",
+         "opens": "09:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparar-um-envio",
+    "title": "Como preparar um envio para chegar em bom estado",
+    "excerpt": "Texto de exemplo para o blog: um guia curto de embalagem.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com conselhos gerais.\n\n## Embalagem\n\nExplique como proteger e etiquetar cada volume.\n\n## Documentos\n\nQue papéis convém levar com a carga.",
+    "tags": [
+     "conselhos",
+     "encomendas"
+    ]
+   },
+   {
+    "slug": "mercadoria-refrigerada",
+    "title": "Mercadoria refrigerada: o que vigiar durante a viagem",
+    "excerpt": "Texto de exemplo: a cadeia de frio passo a passo.",
+    "content": "Texto de exemplo. Explique como se mantém a temperatura durante todo o percurso.\n\n## Antes de carregar\n\nPré-arrefecer o veículo e verificar o produto.\n\n## Durante a viagem\n\nRegisto da temperatura e o que fazer perante um incidente.",
+    "tags": [
+     "frio",
+     "logistica"
+    ]
+   }
+  ]
+ }
+}

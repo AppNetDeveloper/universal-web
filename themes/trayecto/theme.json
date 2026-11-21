@@ -1,0 +1,63 @@
+{
+  "slug": "trayecto",
+  "name": "Trayecto",
+  "description": "Azul marino y naranja señal con diagonales y rutas: transporte, mensajería, mudanzas, frío, almacenaje y grúas",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "transporte por carretera",
+    "mensajería urgente",
+    "mudanzas",
+    "transporte frigorífico",
+    "paquetería",
+    "almacenaje y logística",
+    "transitario",
+    "servicio de grúas"
+  ],
+  "suggested_accent": "#ea580c",
+  "pitch": "Para empresas de transporte y logística que quieren transmitir movimiento, plazos y seguimiento, con titulares condensados, diagonales y una línea de ruta; para una consultoría o servicio B2B de tono sereno y formal, mejor «Corporativo».",
+  "style": "dinámico, diagonal y rotulado",
+  "colors": {
+    "acento": "#ea580c",
+    "fondo": "#f4f6f9",
+    "texto": "#0b1f3a",
+    "suave": "#e8edf4",
+    "fondo_oscuro": "#08111f"
+  },
+  "typography": {
+    "titulos": "Barlow Condensed",
+    "texto": "Barlow"
+  },
+  "dark_mode": "auto",
+  "fonts": "Barlow y Barlow Condensed (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (naranja señal recomendado; el texto sobre él se calcula solo)",
+      "--ink (azul marino de portada, llamada a la acción y pie)",
+      "--d (profundidad de la diagonal inferior de la portada)",
+      "--route (color de las líneas discontinuas de ruta)",
+      "--radius (4px)"
+    ],
+    "clases_tema": [
+      ".topbar (franja superior con teléfono y correo)",
+      ".hero-trayecto / .hero-panel (portada azul marino con diagonal)",
+      ".hero-photo / .hero-art (foto o motivo a la derecha, cortado en diagonal)",
+      ".hero-route (línea de ruta discontinua con puntos)",
+      ".btn (paralelogramo: la forma es .btn::before inclinado)",
+      ".steps / .step-num (ruta de círculos numerados)",
+      ".stats / .stat (hitos kilométricos con placa numerada)",
+      ".feature (barra naranja arriba, icono en cuadrado azul marino)",
+      ".cta (panel con borde derecho en diagonal y banda naranja)"
+    ],
+    "bloques_recomendados": [
+      "hero (con imagen de flota o almacén a la derecha)",
+      "features (servicios con icono)",
+      "stats (plazos, entregas, vehículos)",
+      "steps (del pedido a la entrega)",
+      "pricelist (tarifas orientativas)",
+      "faq",
+      "contact_form"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
