@@ -224,3 +224,7 @@ a.feature:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--bord
 .reveal-on .reveal.in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal-on .reveal { opacity: 1; transform: none; transition: none; } .btn:hover, .post-card:hover, .hero-badge:hover { transform: none; } }
 @media print { .infobar, .hero-badge, .whatsapp-float { display: none !important; } .hero-panel, .footer-panel { background: none; } }
+
+/* Campos del formulario: borde con contraste 3:1 frente al fondo (WCAG 1.4.11), en claro y oscuro */
+.form input, .form textarea, .form select { border-color: color-mix(in srgb, var(--muted) 82%, var(--card)); }
+.form input:focus, .form textarea:focus, .form select:focus { border-color: var(--accent-text); }

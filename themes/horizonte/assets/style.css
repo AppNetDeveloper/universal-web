@@ -252,3 +252,7 @@ a.feature:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--bord
 }
 @media (forced-colors: active) { .chip, .btn { border: 1px solid ButtonText; } }
 @media print { .topline, .whatsapp-float { display: none !important; } .hero-photo { height: auto; max-height: none; } .hero-panel { margin-top: 0 !important; box-shadow: none; } .stats-band, .site-footer { background: none; color: #000; } .stats-band .stat dd, .stats-band .stat dt, .footer-grid strong, .footer-grid a { color: #000; } }
+
+/* Campos del formulario: borde con contraste 3:1 frente al fondo (WCAG 1.4.11), en claro y oscuro */
+.form input, .form textarea, .form select { border-color: color-mix(in srgb, var(--muted) 82%, var(--card)); }
+.form input:focus, .form textarea:focus, .form select:focus { border-color: var(--accent-text); }
