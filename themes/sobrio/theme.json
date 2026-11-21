@@ -1,0 +1,60 @@
+{
+  "slug": "sobrio",
+  "name": "Sobrio",
+  "description": "Estilo institucional en rejilla suiza: serif Plex, azul marino y filetes finos para despachos profesionales",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "despacho de abogados",
+    "asesoría fiscal y laboral",
+    "gestoría",
+    "notaría",
+    "consultoría financiera",
+    "auditoría",
+    "administración de fincas",
+    "gabinete de peritos"
+  ],
+  "suggested_accent": "#1d4e89",
+  "pitch": "Para despachos y asesorías que quieren transmitir rigor, orden y discreción, con una rejilla estricta, filetes finos y los datos de contacto siempre a la vista en la portada; para un despacho o estudio con voz de revista, más narrativo y con cabecera centrada, mejor «Editorial».",
+  "style": "institucional, suizo y ordenado",
+  "colors": {
+    "acento": "#1d4e89",
+    "fondo": "#fbfbf9",
+    "texto": "#14213d",
+    "filete": "#d6d9de",
+    "fondo_oscuro": "#0f1726"
+  },
+  "typography": {
+    "titulos": "IBM Plex Serif",
+    "texto": "IBM Plex Sans"
+  },
+  "dark_mode": "auto",
+  "fonts": "IBM Plex Serif e IBM Plex Sans (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (azul tinta recomendado)",
+      "--ink (azul marino de las bandas y del pie)",
+      "--rule (color de los filetes)",
+      "--radius (2px: sin curvas ni sombras)"
+    ],
+    "clases_tema": [
+      ".hero-grid (titular a 8 columnas y ficha a 4)",
+      ".hero-ficha (datos de contacto separados por filetes)",
+      ".hero-band (imagen panorámica bajo el titular)",
+      ".section-head (numeración 01 —, 02 — con contadores CSS)",
+      ".cta-band (banda de tinta a todo el ancho)",
+      ".steps (línea de tiempo horizontal con filete)",
+      ".faq-wrap (rótulo a la izquierda, lista con filetes a la derecha)"
+    ],
+    "bloques_recomendados": [
+      "features (tabla de áreas de práctica con filetes)",
+      "steps (cómo trabajamos, línea de tiempo)",
+      "stats",
+      "testimonials (con gran comilla en el margen)",
+      "faq",
+      "pricelist (honorarios)",
+      "contact_form"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}

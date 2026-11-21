@@ -1,0 +1,2803 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Sobrio). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Asesoramiento jurídico, fiscal y laboral",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "El despacho",
+    "url": "/el-despacho"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Solicitar consulta",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: despacho profesional de asesoramiento jurídico, fiscal y laboral con trato directo y honorarios claros. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Despacho profesional · Ejemplo",
+       "title": "Criterio, rigor y discreción en cada asunto",
+       "subtitle": "Texto de ejemplo: explica en una frase qué hace tu despacho, a quién atiende y cómo trabajáis con cada cliente.",
+       "cta_text": "Solicitar consulta",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Áreas de práctica",
+       "title": "Lo que hacemos por nuestros clientes",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Derecho mercantil",
+         "text": "Constitución de sociedades, contratos y pactos entre socios."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscal y contable",
+         "text": "Planificación, declaraciones periódicas y representación ante la Administración."
+        },
+        {
+         "icon": "users",
+         "title": "Laboral",
+         "text": "Contratos, nóminas y relaciones con la plantilla."
+        },
+        {
+         "icon": "lock",
+         "title": "Protección de datos",
+         "text": "Cumplimiento normativo y documentación para tu actividad."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Años de trayectoria (ejemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Profesionales en el equipo (ejemplo)"
+        },
+        {
+         "value": "48 h",
+         "label": "Primera respuesta a tu consulta (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Primera reunión",
+         "text": "Escuchamos tu caso y te decimos con franqueza qué cabe esperar."
+        },
+        {
+         "title": "Propuesta por escrito",
+         "text": "Alcance, plazos y honorarios, antes de empezar."
+        },
+        {
+         "title": "Seguimiento",
+         "text": "Un responsable fijo y avisos en cada hito importante."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El despacho",
+       "title": "Un equipo estable, con un responsable por cliente",
+       "body": "- Un interlocutor directo en cada asunto\n- Honorarios pactados de antemano\n- Confidencialidad en todo el proceso",
+       "button_text": "El despacho",
+       "button_link": "/el-despacho"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un asunto que consultarnos?",
+       "text": "Cuéntanos tu caso y te respondemos en un plazo breve.",
+       "button_text": "Solicitar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: servicios de asesoría jurídica, fiscal y laboral para empresas y particulares, con honorarios claros. Sustitúyelo por los tuyos."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus áreas de trabajo con palabras que entienda cualquier cliente.",
+       "cta_text": "Solicitar consulta",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Derecho mercantil",
+         "text": "Sociedades, contratos y pactos de socios."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscal y contable",
+         "text": "Impuestos, cuentas anuales y requerimientos."
+        },
+        {
+         "icon": "users",
+         "title": "Laboral",
+         "text": "Contratación, nóminas y despidos."
+        },
+        {
+         "icon": "lock",
+         "title": "Protección de datos",
+         "text": "Registro de actividades y contratos con encargados."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediación",
+         "text": "Soluciones pactadas antes de ir a juicio."
+        },
+        {
+         "icon": "award",
+         "title": "Auditoría",
+         "text": "Revisión independiente de cuentas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorarios orientativos",
+       "note": "Importes de ejemplo: sustitúyelos por tus honorarios.",
+       "items": [
+        {
+         "section": "Consulta",
+         "name": "Primera reunión",
+         "price": "gratuita"
+        },
+        {
+         "section": "Consulta",
+         "name": "Informe escrito",
+         "price": "desde 150 €"
+        },
+        {
+         "section": "Sociedades",
+         "name": "Constitución de sociedad",
+         "price": "desde 450 €"
+        },
+        {
+         "section": "Sociedades",
+         "name": "Cuentas anuales",
+         "price": "desde 600 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un asunto que consultarnos?",
+       "text": "Cuéntanos tu caso y te respondemos en un plazo breve.",
+       "button_text": "Solicitar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "el-despacho",
+    "title": "El despacho",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué principios guían la atención a los clientes de nuestro despacho profesional."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu despacho, quién lo forma y qué os distingue.\n\nHabla de cómo trabajáis y de vuestros compromisos, no de resultados que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nuestros principios",
+       "body": "- Franqueza sobre las opciones reales\n- Plazos y honorarios por escrito\n- Secreto profesional siempre"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajamos",
+       "items": [
+        {
+         "title": "Primera reunión",
+         "text": "Escuchamos tu caso y te decimos con franqueza qué cabe esperar."
+        },
+        {
+         "title": "Propuesta por escrito",
+         "text": "Alcance, plazos y honorarios, antes de empezar."
+        },
+        {
+         "title": "Seguimiento",
+         "text": "Un responsable fijo y avisos en cada hito importante."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre la primera reunión, los honorarios, los plazos y la confidencialidad en el despacho."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cuánto cuesta la primera reunión?",
+         "answer": "Indica aquí si es gratuita o tiene un coste. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cómo se fijan los honorarios?",
+         "answer": "Se pactan por escrito antes de empezar. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué documentación debo llevar?",
+         "answer": "Los documentos del asunto y tu identificación."
+        },
+        {
+         "question": "¿Atendéis a distancia?",
+         "answer": "Sí, por videollamada o por teléfono."
+        },
+        {
+         "question": "¿Es confidencial lo que os cuente?",
+         "answer": "Sí, está amparado por el secreto profesional."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un asunto que consultarnos?",
+       "text": "Cuéntanos tu caso y te respondemos en un plazo breve.",
+       "button_text": "Solicitar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: solicita una consulta o escríbenos con tu pregunta y te responderemos lo antes posible en horario de atención."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Solicitar consulta",
+       "text": "Cuéntanos qué necesitas y te proponemos una reunión.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "calendario-fiscal-pymes",
+    "title": "Calendario fiscal: qué revisar cada trimestre",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Antes de cada plazo\n\nExplica qué documentos conviene tener a mano.\n\n## Cuándo consultar\n\nRecuerda que cada caso es distinto y que lo mejor es consultarlo.",
+    "tags": [
+     "fiscal",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "pactos-de-socios",
+    "title": "Por qué conviene firmar un pacto de socios",
+    "excerpt": "Texto de ejemplo: ventajas de dejarlo todo por escrito.",
+    "content": "Texto de ejemplo. Explica en qué consiste un pacto de socios y cuándo tiene sentido.\n\n## Qué suele recoger\n\nReparto de funciones, entrada y salida de socios, toma de decisiones.\n\n## Cuándo firmarlo\n\nIdealmente al inicio, cuando todas las partes están de acuerdo.",
+    "tags": [
+     "mercantil"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Legal, tax and employment advice",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "The firm",
+    "url": "/the-firm"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a consultation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: professional firm offering legal, tax and employment advice with direct contact and clear fees. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Professional firm · Sample",
+       "title": "Judgement, rigour and discretion in every matter",
+       "subtitle": "Sample text: say in one sentence what your firm does, who it serves and how you work with each client.",
+       "cta_text": "Request a consultation",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Practice areas",
+       "title": "What we do for our clients",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Commercial law",
+         "text": "Company formation, contracts and shareholder agreements."
+        },
+        {
+         "icon": "chart",
+         "title": "Tax and accounting",
+         "text": "Planning, periodic returns and dealings with the tax authority."
+        },
+        {
+         "icon": "users",
+         "title": "Employment",
+         "text": "Contracts, payroll and staff relations."
+        },
+        {
+         "icon": "lock",
+         "title": "Data protection",
+         "text": "Compliance and documentation for your activity."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Years of experience (sample)"
+        },
+        {
+         "value": "12",
+         "label": "Professionals on the team (sample)"
+        },
+        {
+         "value": "48 h",
+         "label": "First reply to your enquiry (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "First meeting",
+         "text": "We listen to your case and tell you frankly what to expect."
+        },
+        {
+         "title": "Written proposal",
+         "text": "Scope, timing and fees, before we start."
+        },
+        {
+         "title": "Follow-up",
+         "text": "One named contact and updates at every key milestone."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The firm",
+       "title": "A stable team, with one lead per client",
+       "body": "- A direct contact for every matter\n- Fees agreed in advance\n- Confidentiality throughout",
+       "button_text": "The firm",
+       "button_link": "/the-firm"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Testimonials",
+       "items": [
+        {
+         "quote": "Sample testimonial text: replace it with real feedback from your clients, with their consent.",
+         "name": "Sample client",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a matter to discuss?",
+       "text": "Tell us about your case and we will reply shortly.",
+       "button_text": "Request a consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: legal, tax and employment advisory services for businesses and individuals, with clear fees. Replace it with your own services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your areas of work in words any client understands.",
+       "cta_text": "Request a consultation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Commercial law",
+         "text": "Companies, contracts and shareholder agreements."
+        },
+        {
+         "icon": "chart",
+         "title": "Tax and accounting",
+         "text": "Taxes, annual accounts and notices."
+        },
+        {
+         "icon": "users",
+         "title": "Employment",
+         "text": "Hiring, payroll and dismissals."
+        },
+        {
+         "icon": "lock",
+         "title": "Data protection",
+         "text": "Records of processing and processor contracts."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediation",
+         "text": "Agreed solutions before going to court."
+        },
+        {
+         "icon": "award",
+         "title": "Audit",
+         "text": "Independent review of accounts."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Indicative fees",
+       "note": "Sample amounts: replace them with your own fees.",
+       "items": [
+        {
+         "section": "Consultation",
+         "name": "First meeting",
+         "price": "free"
+        },
+        {
+         "section": "Consultation",
+         "name": "Written report",
+         "price": "from €150"
+        },
+        {
+         "section": "Companies",
+         "name": "Company formation",
+         "price": "from €450"
+        },
+        {
+         "section": "Companies",
+         "name": "Annual accounts",
+         "price": "from €600"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a matter to discuss?",
+       "text": "Tell us about your case and we will reply shortly.",
+       "button_text": "Request a consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-firm",
+    "title": "The firm",
+    "seo": {
+     "description": "Sample text: who we are, how we work and which principles guide the way our firm looks after its clients."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your firm here, who is part of it and what sets you apart.\n\nTalk about how you work and what you commit to, not about results you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Our principles",
+       "body": "- Frankness about the real options\n- Deadlines and fees in writing\n- Professional secrecy, always"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How we work",
+       "items": [
+        {
+         "title": "First meeting",
+         "text": "We listen to your case and tell you frankly what to expect."
+        },
+        {
+         "title": "Written proposal",
+         "text": "Scope, timing and fees, before we start."
+        },
+        {
+         "title": "Follow-up",
+         "text": "One named contact and updates at every key milestone."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about the first meeting, fees, deadlines and confidentiality at the firm."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How much is the first meeting?",
+         "answer": "State here whether it is free or charged. *Sample text.*"
+        },
+        {
+         "question": "How are fees set?",
+         "answer": "They are agreed in writing before we start. *Sample text.*"
+        },
+        {
+         "question": "What documents should I bring?",
+         "answer": "The documents about your matter and your ID."
+        },
+        {
+         "question": "Do you work remotely?",
+         "answer": "Yes, by video call or by phone."
+        },
+        {
+         "question": "Is what I tell you confidential?",
+         "answer": "Yes, it is covered by professional secrecy."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a matter to discuss?",
+       "text": "Tell us about your case and we will reply shortly.",
+       "button_text": "Request a consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a consultation or send us your question and we will reply as soon as possible during office hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a consultation",
+       "text": "Tell us what you need and we will suggest a meeting.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "tax-calendar-small-business",
+    "title": "Tax calendar: what to check each quarter",
+    "excerpt": "Sample blog text: a short, careful guide.",
+    "content": "Sample text. Write a useful article for your clients here, with general and careful information.\n\n## Before each deadline\n\nExplain which documents are worth having at hand.\n\n## When to ask\n\nRemember every case is different and it is best to ask.",
+    "tags": [
+     "tax",
+     "tips"
+    ]
+   },
+   {
+    "slug": "shareholder-agreements",
+    "title": "Why a shareholder agreement is worth signing",
+    "excerpt": "Sample text: the benefits of putting it all in writing.",
+    "content": "Sample text. Explain what a shareholder agreement is and when it makes sense.\n\n## What it usually covers\n\nRoles, entry and exit of partners, decision making.\n\n## When to sign\n\nIdeally at the start, while everyone agrees.",
+    "tags": [
+     "corporate"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Consultanță juridică, fiscală și în dreptul muncii",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Cabinetul",
+    "url": "/cabinetul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Solicită o consultație",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: cabinet profesional de consultanță juridică, fiscală și în dreptul muncii, cu contact direct și onorarii clare. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cabinet profesional · Exemplu",
+       "title": "Judecată, rigoare și discreție în fiecare dosar",
+       "subtitle": "Text de exemplu: spune într-o frază ce face cabinetul tău, cui se adresează și cum lucrați cu fiecare client.",
+       "cta_text": "Solicită o consultație",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Domenii de practică",
+       "title": "Ce facem pentru clienții noștri",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Drept comercial",
+         "text": "Înființarea de societăți, contracte și pacte între asociați."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscalitate și contabilitate",
+         "text": "Planificare, declarații periodice și reprezentare în fața autorităților."
+        },
+        {
+         "icon": "users",
+         "title": "Dreptul muncii",
+         "text": "Contracte, salarizare și relația cu angajații."
+        },
+        {
+         "icon": "lock",
+         "title": "Protecția datelor",
+         "text": "Conformitate și documentație pentru activitatea ta."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Ani de experiență (exemplu)"
+        },
+        {
+         "value": "12",
+         "label": "Profesioniști în echipă (exemplu)"
+        },
+        {
+         "value": "48 h",
+         "label": "Primul răspuns la solicitarea ta (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Prima întâlnire",
+         "text": "Îți ascultăm cazul și îți spunem sincer la ce să te aștepți."
+        },
+        {
+         "title": "Ofertă în scris",
+         "text": "Obiect, termene și onorarii, înainte de a începe."
+        },
+        {
+         "title": "Urmărire",
+         "text": "Un responsabil fix și informări la fiecare etapă importantă."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Cabinetul",
+       "title": "O echipă stabilă, cu un responsabil pentru fiecare client",
+       "body": "- Un interlocutor direct pentru fiecare dosar\n- Onorarii stabilite în prealabil\n- Confidențialitate pe tot parcursul",
+       "button_text": "Cabinetul",
+       "button_link": "/cabinetul"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un caz de discutat cu noi?",
+       "text": "Povestește-ne cazul tău și îți răspundem în scurt timp.",
+       "button_text": "Solicită o consultație",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: servicii de consultanță juridică, fiscală și în dreptul muncii pentru firme și persoane fizice, cu onorarii clare."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie domeniile tale de lucru cu cuvinte pe care le înțelege orice client.",
+       "cta_text": "Solicită o consultație",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Drept comercial",
+         "text": "Societăți, contracte și pacte între asociați."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscalitate și contabilitate",
+         "text": "Impozite, situații anuale și notificări."
+        },
+        {
+         "icon": "users",
+         "title": "Dreptul muncii",
+         "text": "Angajări, salarizare și concedieri."
+        },
+        {
+         "icon": "lock",
+         "title": "Protecția datelor",
+         "text": "Registre de prelucrare și contracte cu persoanele împuternicite."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediere",
+         "text": "Soluții convenite înainte de proces."
+        },
+        {
+         "icon": "award",
+         "title": "Audit",
+         "text": "Verificare independentă a conturilor."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Onorarii orientative",
+       "note": "Sume de exemplu: înlocuiește-le cu onorariile tale.",
+       "items": [
+        {
+         "section": "Consultație",
+         "name": "Prima întâlnire",
+         "price": "gratuită"
+        },
+        {
+         "section": "Consultație",
+         "name": "Raport scris",
+         "price": "de la 750 lei"
+        },
+        {
+         "section": "Societăți",
+         "name": "Înființare societate",
+         "price": "de la 2.200 lei"
+        },
+        {
+         "section": "Societăți",
+         "name": "Situații financiare anuale",
+         "price": "de la 3.000 lei"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un caz de discutat cu noi?",
+       "text": "Povestește-ne cazul tău și îți răspundem în scurt timp.",
+       "button_text": "Solicită o consultație",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cabinetul",
+    "title": "Cabinetul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce principii ne ghidează în relația cu clienții cabinetului nostru profesional."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria cabinetului tău, cine face parte din echipă și ce vă distinge.\n\nVorbește despre cum lucrați și la ce vă angajați, nu despre rezultate pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Principiile noastre",
+       "body": "- Sinceritate despre opțiunile reale\n- Termene și onorarii în scris\n- Secret profesional, întotdeauna"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrăm",
+       "items": [
+        {
+         "title": "Prima întâlnire",
+         "text": "Îți ascultăm cazul și îți spunem sincer la ce să te aștepți."
+        },
+        {
+         "title": "Ofertă în scris",
+         "text": "Obiect, termene și onorarii, înainte de a începe."
+        },
+        {
+         "title": "Urmărire",
+         "text": "Un responsabil fix și informări la fiecare etapă importantă."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre prima întâlnire, onorarii, termene și confidențialitatea în cabinet."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cât costă prima întâlnire?",
+         "answer": "Scrie aici dacă este gratuită sau cu plată. *Text de exemplu.*"
+        },
+        {
+         "question": "Cum se stabilesc onorariile?",
+         "answer": "Se convin în scris înainte de a începe. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce documente aduc?",
+         "answer": "Actele dosarului tău și actul de identitate."
+        },
+        {
+         "question": "Lucrați la distanță?",
+         "answer": "Da, prin apel video sau telefon."
+        },
+        {
+         "question": "Este confidențial ce vă spun?",
+         "answer": "Da, este protejat de secretul profesional."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un caz de discutat cu noi?",
+       "text": "Povestește-ne cazul tău și îți răspundem în scurt timp.",
+       "button_text": "Solicită o consultație",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: solicită o consultație sau scrie-ne întrebarea ta și îți răspundem cât mai repede în programul de lucru al cabinetului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Solicită o consultație",
+       "text": "Spune-ne de ce ai nevoie și îți propunem o întâlnire.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "calendar-fiscal-firme",
+    "title": "Calendar fiscal: ce verifici în fiecare trimestru",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și prudent.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienți, cu informații generale și prudente.\n\n## Înainte de fiecare termen\n\nExplică ce documente e bine să ai la îndemână.\n\n## Când să ceri sfat\n\nAmintește că fiecare caz e diferit și că e bine să întrebi.",
+    "tags": [
+     "fiscal",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "pact-intre-asociati",
+    "title": "De ce merită un pact între asociați",
+    "excerpt": "Text de exemplu: avantajele unei înțelegeri scrise.",
+    "content": "Text de exemplu. Explică ce este un pact între asociați și când are sens.\n\n## Ce prevede de obicei\n\nRolurile, intrarea și ieșirea asociaților, luarea deciziilor.\n\n## Când se semnează\n\nIdeal la început, cât timp toți sunt de acord.",
+    "tags": [
+     "comercial"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Conseil juridique, fiscal et social",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "Le cabinet",
+    "url": "/le-cabinet"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander une consultation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : cabinet de conseil juridique, fiscal et social avec un interlocuteur direct et des honoraires clairs. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Cabinet professionnel · Exemple",
+       "title": "Jugement, rigueur et discrétion dans chaque dossier",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que fait votre cabinet, qui il accompagne et comment vous travaillez avec chaque client.",
+       "cta_text": "Demander une consultation",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Domaines d'intervention",
+       "title": "Ce que nous faisons pour nos clients",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Droit commercial",
+         "text": "Création de sociétés, contrats et pactes d'associés."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscalité et comptabilité",
+         "text": "Planification, déclarations périodiques et relations avec l'administration."
+        },
+        {
+         "icon": "users",
+         "title": "Droit social",
+         "text": "Contrats, paie et relations avec les salariés."
+        },
+        {
+         "icon": "lock",
+         "title": "Protection des données",
+         "text": "Mise en conformité et documentation pour votre activité."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Années d'expérience (exemple)"
+        },
+        {
+         "value": "12",
+         "label": "Professionnels dans l'équipe (exemple)"
+        },
+        {
+         "value": "48 h",
+         "label": "Première réponse à votre demande (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Premier rendez-vous",
+         "text": "Nous écoutons votre dossier et vous disons franchement à quoi vous attendre."
+        },
+        {
+         "title": "Proposition écrite",
+         "text": "Périmètre, délais et honoraires, avant de commencer."
+        },
+        {
+         "title": "Suivi",
+         "text": "Un responsable attitré et des points à chaque étape clé."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Le cabinet",
+       "title": "Une équipe stable, avec un responsable par client",
+       "body": "- Un interlocuteur direct pour chaque dossier\n- Des honoraires convenus à l'avance\n- La confidentialité à chaque étape",
+       "button_text": "Le cabinet",
+       "button_link": "/le-cabinet"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un dossier à nous confier ?",
+       "text": "Présentez-nous votre situation et nous vous répondrons rapidement.",
+       "button_text": "Demander une consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : conseil juridique, fiscal et social pour les entreprises et les particuliers, avec des honoraires clairs. Remplacez-le par vos services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos domaines d'intervention avec des mots que tout client comprend.",
+       "cta_text": "Demander une consultation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Droit commercial",
+         "text": "Sociétés, contrats et pactes d'associés."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscalité et comptabilité",
+         "text": "Impôts, comptes annuels et mises en demeure."
+        },
+        {
+         "icon": "users",
+         "title": "Droit social",
+         "text": "Embauche, paie et licenciements."
+        },
+        {
+         "icon": "lock",
+         "title": "Protection des données",
+         "text": "Registre des traitements et contrats de sous-traitance."
+        },
+        {
+         "icon": "handshake",
+         "title": "Médiation",
+         "text": "Des solutions négociées avant le procès."
+        },
+        {
+         "icon": "award",
+         "title": "Audit",
+         "text": "Examen indépendant des comptes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honoraires indicatifs",
+       "note": "Montants d'exemple : remplacez-les par vos honoraires.",
+       "items": [
+        {
+         "section": "Consultation",
+         "name": "Premier rendez-vous",
+         "price": "gratuit"
+        },
+        {
+         "section": "Consultation",
+         "name": "Avis écrit",
+         "price": "à partir de 150 €"
+        },
+        {
+         "section": "Sociétés",
+         "name": "Création de société",
+         "price": "à partir de 450 €"
+        },
+        {
+         "section": "Sociétés",
+         "name": "Comptes annuels",
+         "price": "à partir de 600 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un dossier à nous confier ?",
+       "text": "Présentez-nous votre situation et nous vous répondrons rapidement.",
+       "button_text": "Demander une consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "le-cabinet",
+    "title": "Le cabinet",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et quels principes guident notre relation avec les clients du cabinet."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre cabinet, qui en fait partie et ce qui vous distingue.\n\nParlez de votre méthode et de vos engagements, pas de résultats que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Nos principes",
+       "body": "- Franchise sur les options réelles\n- Délais et honoraires par écrit\n- Secret professionnel, toujours"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Notre façon de travailler",
+       "items": [
+        {
+         "title": "Premier rendez-vous",
+         "text": "Nous écoutons votre dossier et vous disons franchement à quoi vous attendre."
+        },
+        {
+         "title": "Proposition écrite",
+         "text": "Périmètre, délais et honoraires, avant de commencer."
+        },
+        {
+         "title": "Suivi",
+         "text": "Un responsable attitré et des points à chaque étape clé."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur le premier rendez-vous, les honoraires, les délais et la confidentialité au cabinet."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Combien coûte le premier rendez-vous ?",
+         "answer": "Indiquez ici s'il est gratuit ou payant. *Texte d'exemple.*"
+        },
+        {
+         "question": "Comment fixez-vous les honoraires ?",
+         "answer": "Ils sont convenus par écrit avant de commencer. *Texte d'exemple.*"
+        },
+        {
+         "question": "Quels documents apporter ?",
+         "answer": "Les pièces de votre dossier et votre pièce d'identité."
+        },
+        {
+         "question": "Travaillez-vous à distance ?",
+         "answer": "Oui, par visioconférence ou par téléphone."
+        },
+        {
+         "question": "Ce que je vous dis est-il confidentiel ?",
+         "answer": "Oui, c'est couvert par le secret professionnel."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un dossier à nous confier ?",
+       "text": "Présentez-nous votre situation et nous vous répondrons rapidement.",
+       "button_text": "Demander une consultation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez une consultation ou envoyez-nous votre question, nous vous répondrons au plus vite pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander une consultation",
+       "text": "Dites-nous ce dont vous avez besoin et nous vous proposons un rendez-vous.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "calendrier-fiscal-pme",
+    "title": "Calendrier fiscal : que vérifier chaque trimestre",
+    "excerpt": "Texte d'exemple pour le blog : un guide bref et prudent.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Avant chaque échéance\n\nExpliquez quels documents il vaut mieux avoir sous la main.\n\n## Quand demander conseil\n\nRappelez que chaque cas est différent et qu'il vaut mieux poser la question.",
+    "tags": [
+     "fiscal",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "pacte-d-associes",
+    "title": "Pourquoi signer un pacte d'associés",
+    "excerpt": "Texte d'exemple : l'intérêt de tout mettre par écrit.",
+    "content": "Texte d'exemple. Expliquez ce qu'est un pacte d'associés et quand il a du sens.\n\n## Ce qu'il prévoit en général\n\nRépartition des rôles, entrée et sortie des associés, prise de décision.\n\n## Quand le signer\n\nDe préférence au départ, tant que tout le monde est d'accord.",
+    "tags": [
+     "commercial"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Rechts-, Steuer- und Arbeitsrechtsberatung",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Die Kanzlei",
+    "url": "/die-kanzlei"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Beratung anfragen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Kanzlei für Rechts-, Steuer- und Arbeitsrechtsberatung mit direktem Ansprechpartner und klaren Honoraren. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Kanzlei · Beispiel",
+       "title": "Urteilsvermögen, Sorgfalt und Diskretion in jedem Mandat",
+       "subtitle": "Beispieltext: Beschreiben Sie in einem Satz, was Ihre Kanzlei tut, wen sie berät und wie Sie mit Mandanten arbeiten.",
+       "cta_text": "Beratung anfragen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Tätigkeitsfelder",
+       "title": "Was wir für unsere Mandanten tun",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Handelsrecht",
+         "text": "Gesellschaftsgründung, Verträge und Gesellschaftervereinbarungen."
+        },
+        {
+         "icon": "chart",
+         "title": "Steuern und Buchhaltung",
+         "text": "Planung, laufende Erklärungen und Vertretung gegenüber dem Finanzamt."
+        },
+        {
+         "icon": "users",
+         "title": "Arbeitsrecht",
+         "text": "Verträge, Lohnabrechnung und Beziehungen zur Belegschaft."
+        },
+        {
+         "icon": "lock",
+         "title": "Datenschutz",
+         "text": "Compliance und Dokumentation für Ihre Tätigkeit."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Jahre Erfahrung (Beispiel)"
+        },
+        {
+         "value": "12",
+         "label": "Fachleute im Team (Beispiel)"
+        },
+        {
+         "value": "48 h",
+         "label": "Erste Antwort auf Ihre Anfrage (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Erstgespräch",
+         "text": "Wir hören Ihren Fall an und sagen offen, womit Sie rechnen können."
+        },
+        {
+         "title": "Schriftliches Angebot",
+         "text": "Umfang, Fristen und Honorar, bevor wir beginnen."
+        },
+        {
+         "title": "Begleitung",
+         "text": "Ein fester Ansprechpartner und Nachricht bei jedem wichtigen Schritt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Die Kanzlei",
+       "title": "Ein beständiges Team mit einem Verantwortlichen pro Mandant",
+       "body": "- Ein direkter Ansprechpartner pro Mandat\n- Honorar vorab vereinbart\n- Vertraulichkeit während des gesamten Verfahrens",
+       "button_text": "Die Kanzlei",
+       "button_link": "/die-kanzlei"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Stimme: Ersetzen Sie ihn durch echte Rückmeldungen Ihrer Mandanten, mit deren Zustimmung.",
+         "name": "Mandant (Beispiel)",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie ein Anliegen für uns?",
+       "text": "Schildern Sie uns Ihren Fall, wir antworten zeitnah.",
+       "button_text": "Beratung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Rechts-, Steuer- und Arbeitsrechtsberatung für Unternehmen und Privatpersonen mit klaren Honoraren. Ersetzen Sie ihn durch Ihre Leistungen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Arbeitsfelder in Worten, die jeder Mandant versteht.",
+       "cta_text": "Beratung anfragen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Handelsrecht",
+         "text": "Gesellschaften, Verträge und Gesellschaftervereinbarungen."
+        },
+        {
+         "icon": "chart",
+         "title": "Steuern und Buchhaltung",
+         "text": "Steuern, Jahresabschlüsse und Bescheide."
+        },
+        {
+         "icon": "users",
+         "title": "Arbeitsrecht",
+         "text": "Einstellung, Lohnabrechnung und Kündigung."
+        },
+        {
+         "icon": "lock",
+         "title": "Datenschutz",
+         "text": "Verarbeitungsverzeichnis und Auftragsverarbeitung."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediation",
+         "text": "Einvernehmliche Lösungen vor dem Gerichtsweg."
+        },
+        {
+         "icon": "award",
+         "title": "Prüfung",
+         "text": "Unabhängige Prüfung der Abschlüsse."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtwerte für Honorare",
+       "note": "Beispielbeträge: Ersetzen Sie sie durch Ihre Honorare.",
+       "items": [
+        {
+         "section": "Beratung",
+         "name": "Erstgespräch",
+         "price": "kostenlos"
+        },
+        {
+         "section": "Beratung",
+         "name": "Schriftliches Gutachten",
+         "price": "ab 150 €"
+        },
+        {
+         "section": "Gesellschaften",
+         "name": "Gesellschaftsgründung",
+         "price": "ab 450 €"
+        },
+        {
+         "section": "Gesellschaften",
+         "name": "Jahresabschluss",
+         "price": "ab 600 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie ein Anliegen für uns?",
+       "text": "Schildern Sie uns Ihren Fall, wir antworten zeitnah.",
+       "button_text": "Beratung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "die-kanzlei",
+    "title": "Die Kanzlei",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und welche Grundsätze die Betreuung der Mandanten unserer Kanzlei leiten."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihrer Kanzlei, wer dazugehört und was Sie auszeichnet.\n\nSprechen Sie über Ihre Arbeitsweise und Zusagen, nicht über Ergebnisse, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Unsere Grundsätze",
+       "body": "- Offenheit über die realen Möglichkeiten\n- Fristen und Honorare schriftlich\n- Verschwiegenheit, immer"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "So arbeiten wir",
+       "items": [
+        {
+         "title": "Erstgespräch",
+         "text": "Wir hören Ihren Fall an und sagen offen, womit Sie rechnen können."
+        },
+        {
+         "title": "Schriftliches Angebot",
+         "text": "Umfang, Fristen und Honorar, bevor wir beginnen."
+        },
+        {
+         "title": "Begleitung",
+         "text": "Ein fester Ansprechpartner und Nachricht bei jedem wichtigen Schritt."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zum Erstgespräch, zu Honoraren, Fristen und zur Vertraulichkeit in der Kanzlei."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Was kostet das Erstgespräch?",
+         "answer": "Geben Sie hier an, ob es kostenlos ist oder berechnet wird. *Beispieltext.*"
+        },
+        {
+         "question": "Wie werden die Honorare festgelegt?",
+         "answer": "Sie werden vor Beginn schriftlich vereinbart. *Beispieltext.*"
+        },
+        {
+         "question": "Welche Unterlagen soll ich mitbringen?",
+         "answer": "Die Unterlagen zu Ihrem Anliegen und Ihren Ausweis."
+        },
+        {
+         "question": "Beraten Sie auch aus der Ferne?",
+         "answer": "Ja, per Videoanruf oder Telefon."
+        },
+        {
+         "question": "Ist vertraulich, was ich Ihnen sage?",
+         "answer": "Ja, es unterliegt der Verschwiegenheitspflicht."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Haben Sie ein Anliegen für uns?",
+       "text": "Schildern Sie uns Ihren Fall, wir antworten zeitnah.",
+       "button_text": "Beratung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fragen Sie eine Beratung an oder schicken Sie uns Ihre Frage, wir antworten so schnell wie möglich während der Bürozeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Beratung anfragen",
+       "text": "Sagen Sie uns, was Sie brauchen, und wir schlagen einen Termin vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Bürozeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "steuerkalender-fuer-unternehmen",
+    "title": "Steuerkalender: Was Sie jedes Quartal prüfen sollten",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, vorsichtiger Leitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Beitrag für Ihre Mandanten, mit allgemeinen und vorsichtigen Informationen.\n\n## Vor jeder Frist\n\nErklären Sie, welche Unterlagen Sie bereithalten sollten.\n\n## Wann Sie fragen sollten\n\nDenken Sie daran: Jeder Fall ist anders, am besten fragen Sie nach.",
+    "tags": [
+     "steuern",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "gesellschaftervereinbarung",
+    "title": "Warum eine Gesellschaftervereinbarung sinnvoll ist",
+    "excerpt": "Beispieltext: der Nutzen, alles schriftlich zu regeln.",
+    "content": "Beispieltext. Erklären Sie, was eine Gesellschaftervereinbarung ist und wann sie sinnvoll ist.\n\n## Was sie meist regelt\n\nAufgabenverteilung, Ein- und Austritt von Gesellschaftern, Entscheidungsfindung.\n\n## Wann man sie unterschreibt\n\nIdealerweise zu Beginn, solange alle einig sind.",
+    "tags": [
+     "gesellschaftsrecht"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Consulenza legale, fiscale e del lavoro",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Lo studio",
+    "url": "/lo-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi una consulenza",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: studio professionale di consulenza legale, fiscale e del lavoro con referente diretto e onorari chiari. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Studio professionale · Esempio",
+       "title": "Giudizio, rigore e riservatezza in ogni pratica",
+       "subtitle": "Testo di esempio: racconta in una frase cosa fa il tuo studio, chi assiste e come lavorate con ogni cliente.",
+       "cta_text": "Richiedi una consulenza",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Aree di attività",
+       "title": "Cosa facciamo per i nostri clienti",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Diritto commerciale",
+         "text": "Costituzione di società, contratti e patti parasociali."
+        },
+        {
+         "icon": "chart",
+         "title": "Fisco e contabilità",
+         "text": "Pianificazione, dichiarazioni periodiche e rappresentanza davanti all'amministrazione."
+        },
+        {
+         "icon": "users",
+         "title": "Diritto del lavoro",
+         "text": "Contratti, buste paga e rapporti con il personale."
+        },
+        {
+         "icon": "lock",
+         "title": "Protezione dei dati",
+         "text": "Conformità e documentazione per la tua attività."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Anni di esperienza (esempio)"
+        },
+        {
+         "value": "12",
+         "label": "Professionisti nel team (esempio)"
+        },
+        {
+         "value": "48 h",
+         "label": "Prima risposta alla tua richiesta (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Primo incontro",
+         "text": "Ascoltiamo il tuo caso e ti diciamo con franchezza cosa aspettarti."
+        },
+        {
+         "title": "Proposta scritta",
+         "text": "Ambito, tempi e onorari, prima di iniziare."
+        },
+        {
+         "title": "Assistenza",
+         "text": "Un referente fisso e aggiornamenti a ogni passaggio importante."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Lo studio",
+       "title": "Un team stabile, con un responsabile per ogni cliente",
+       "body": "- Un referente diretto per ogni pratica\n- Onorari concordati in anticipo\n- Riservatezza in ogni fase",
+       "button_text": "Lo studio",
+       "button_link": "/lo-studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una pratica da sottoporci?",
+       "text": "Raccontaci il tuo caso e ti risponderemo a breve.",
+       "button_text": "Richiedi una consulenza",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: consulenza legale, fiscale e del lavoro per imprese e privati, con onorari chiari. Sostituiscilo con i tuoi servizi."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi le tue aree di lavoro con parole che ogni cliente capisce.",
+       "cta_text": "Richiedi una consulenza",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Diritto commerciale",
+         "text": "Società, contratti e patti parasociali."
+        },
+        {
+         "icon": "chart",
+         "title": "Fisco e contabilità",
+         "text": "Imposte, bilanci e avvisi."
+        },
+        {
+         "icon": "users",
+         "title": "Diritto del lavoro",
+         "text": "Assunzioni, buste paga e licenziamenti."
+        },
+        {
+         "icon": "lock",
+         "title": "Protezione dei dati",
+         "text": "Registro dei trattamenti e nomine dei responsabili."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediazione",
+         "text": "Soluzioni concordate prima del giudizio."
+        },
+        {
+         "icon": "award",
+         "title": "Revisione",
+         "text": "Verifica indipendente dei conti."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Onorari indicativi",
+       "note": "Importi di esempio: sostituiscili con i tuoi onorari.",
+       "items": [
+        {
+         "section": "Consulenza",
+         "name": "Primo incontro",
+         "price": "gratuito"
+        },
+        {
+         "section": "Consulenza",
+         "name": "Parere scritto",
+         "price": "da 150 €"
+        },
+        {
+         "section": "Società",
+         "name": "Costituzione di società",
+         "price": "da 450 €"
+        },
+        {
+         "section": "Società",
+         "name": "Bilancio annuale",
+         "price": "da 600 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una pratica da sottoporci?",
+       "text": "Raccontaci il tuo caso e ti risponderemo a breve.",
+       "button_text": "Richiedi una consulenza",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "lo-studio",
+    "title": "Lo studio",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e quali principi guidano il rapporto con i clienti del nostro studio professionale."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo studio, chi ne fa parte e cosa vi distingue.\n\nParla di come lavorate e di ciò a cui vi impegnate, non di risultati che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "I nostri principi",
+       "body": "- Franchezza sulle opzioni reali\n- Tempi e onorari per iscritto\n- Segreto professionale, sempre"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoriamo",
+       "items": [
+        {
+         "title": "Primo incontro",
+         "text": "Ascoltiamo il tuo caso e ti diciamo con franchezza cosa aspettarti."
+        },
+        {
+         "title": "Proposta scritta",
+         "text": "Ambito, tempi e onorari, prima di iniziare."
+        },
+        {
+         "title": "Assistenza",
+         "text": "Un referente fisso e aggiornamenti a ogni passaggio importante."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su primo incontro, onorari, tempi e riservatezza presso lo studio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto costa il primo incontro?",
+         "answer": "Indica qui se è gratuito o a pagamento. *Testo di esempio.*"
+        },
+        {
+         "question": "Come si stabiliscono gli onorari?",
+         "answer": "Si concordano per iscritto prima di iniziare. *Testo di esempio.*"
+        },
+        {
+         "question": "Quali documenti devo portare?",
+         "answer": "I documenti della pratica e un documento d'identità."
+        },
+        {
+         "question": "Lavorate anche a distanza?",
+         "answer": "Sì, in videochiamata o per telefono."
+        },
+        {
+         "question": "Ciò che vi racconto è riservato?",
+         "answer": "Sì, è coperto dal segreto professionale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una pratica da sottoporci?",
+       "text": "Raccontaci il tuo caso e ti risponderemo a breve.",
+       "button_text": "Richiedi una consulenza",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi una consulenza o scrivici la tua domanda e ti risponderemo il prima possibile durante l'orario di apertura."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi una consulenza",
+       "text": "Dicci di cosa hai bisogno e ti proponiamo un incontro.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "calendario-fiscale-pmi",
+    "title": "Calendario fiscale: cosa controllare ogni trimestre",
+    "excerpt": "Testo di esempio per il blog: una guida breve e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Prima di ogni scadenza\n\nSpiega quali documenti conviene avere a portata di mano.\n\n## Quando chiedere\n\nRicorda che ogni caso è diverso e che è meglio chiedere.",
+    "tags": [
+     "fisco",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "patto-parasociale",
+    "title": "Perché conviene firmare un patto parasociale",
+    "excerpt": "Testo di esempio: i vantaggi di mettere tutto per iscritto.",
+    "content": "Testo di esempio. Spiega cos'è un patto parasociale e quando ha senso.\n\n## Cosa prevede di solito\n\nRuoli, ingresso e uscita dei soci, processo decisionale.\n\n## Quando firmarlo\n\nIdealmente all'inizio, finché tutti sono d'accordo.",
+    "tags": [
+     "societario"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Consultoria jurídica, fiscal e laboral",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "O escritório",
+    "url": "/o-escritorio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir uma consulta",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: escritório de consultoria jurídica, fiscal e laboral com interlocutor direto e honorários claros. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Escritório profissional · Exemplo",
+       "title": "Critério, rigor e discrição em cada processo",
+       "subtitle": "Texto de exemplo: diga numa frase o que faz o seu escritório, quem atende e como trabalha com cada cliente.",
+       "cta_text": "Pedir uma consulta",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Áreas de atuação",
+       "title": "O que fazemos pelos nossos clientes",
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Direito comercial",
+         "text": "Constituição de sociedades, contratos e acordos parassociais."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscal e contabilidade",
+         "text": "Planeamento, declarações periódicas e representação perante a Autoridade Tributária."
+        },
+        {
+         "icon": "users",
+         "title": "Direito do trabalho",
+         "text": "Contratos, salários e relação com os colaboradores."
+        },
+        {
+         "icon": "lock",
+         "title": "Proteção de dados",
+         "text": "Conformidade e documentação para a sua atividade."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "25",
+         "label": "Anos de experiência (exemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Profissionais na equipa (exemplo)"
+        },
+        {
+         "value": "48 h",
+         "label": "Primeira resposta ao seu pedido (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Primeira reunião",
+         "text": "Ouvimos o seu caso e dizemos-lhe com franqueza o que esperar."
+        },
+        {
+         "title": "Proposta por escrito",
+         "text": "Âmbito, prazos e honorários, antes de começar."
+        },
+        {
+         "title": "Acompanhamento",
+         "text": "Um responsável fixo e avisos em cada etapa importante."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O escritório",
+       "title": "Uma equipa estável, com um responsável por cliente",
+       "body": "- Um interlocutor direto em cada processo\n- Honorários acordados previamente\n- Confidencialidade em todo o processo",
+       "button_text": "O escritório",
+       "button_link": "/o-escritorio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um assunto para nos expor?",
+       "text": "Conte-nos o seu caso e respondemos em breve.",
+       "button_text": "Pedir uma consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: serviços de consultoria jurídica, fiscal e laboral para empresas e particulares, com honorários claros. Substitua-o pelos seus."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva as suas áreas de trabalho com palavras que qualquer cliente entenda.",
+       "cta_text": "Pedir uma consulta",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "shield",
+         "title": "Direito comercial",
+         "text": "Sociedades, contratos e acordos parassociais."
+        },
+        {
+         "icon": "chart",
+         "title": "Fiscal e contabilidade",
+         "text": "Impostos, contas anuais e notificações."
+        },
+        {
+         "icon": "users",
+         "title": "Direito do trabalho",
+         "text": "Contratação, salários e despedimentos."
+        },
+        {
+         "icon": "lock",
+         "title": "Proteção de dados",
+         "text": "Registo de atividades e contratos com subcontratantes."
+        },
+        {
+         "icon": "handshake",
+         "title": "Mediação",
+         "text": "Soluções acordadas antes de ir a tribunal."
+        },
+        {
+         "icon": "award",
+         "title": "Auditoria",
+         "text": "Revisão independente das contas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorários indicativos",
+       "note": "Valores de exemplo: substitua-os pelos seus honorários.",
+       "items": [
+        {
+         "section": "Consulta",
+         "name": "Primeira reunião",
+         "price": "gratuita"
+        },
+        {
+         "section": "Consulta",
+         "name": "Parecer escrito",
+         "price": "desde 150 €"
+        },
+        {
+         "section": "Sociedades",
+         "name": "Constituição de sociedade",
+         "price": "desde 450 €"
+        },
+        {
+         "section": "Sociedades",
+         "name": "Contas anuais",
+         "price": "desde 600 €"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um assunto para nos expor?",
+       "text": "Conte-nos o seu caso e respondemos em breve.",
+       "button_text": "Pedir uma consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "o-escritorio",
+    "title": "O escritório",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e que princípios orientam o atendimento aos clientes do nosso escritório profissional."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu escritório, quem faz parte dele e o que o distingue.\n\nFale de como trabalham e do que se comprometem, não de resultados que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Os nossos princípios",
+       "body": "- Franqueza sobre as opções reais\n- Prazos e honorários por escrito\n- Sigilo profissional, sempre"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalhamos",
+       "items": [
+        {
+         "title": "Primeira reunião",
+         "text": "Ouvimos o seu caso e dizemos-lhe com franqueza o que esperar."
+        },
+        {
+         "title": "Proposta por escrito",
+         "text": "Âmbito, prazos e honorários, antes de começar."
+        },
+        {
+         "title": "Acompanhamento",
+         "text": "Um responsável fixo e avisos em cada etapa importante."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre a primeira reunião, os honorários, os prazos e a confidencialidade no escritório."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Quanto custa a primeira reunião?",
+         "answer": "Indique aqui se é gratuita ou paga. *Texto de exemplo.*"
+        },
+        {
+         "question": "Como se fixam os honorários?",
+         "answer": "Acordam-se por escrito antes de começar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Que documentos devo levar?",
+         "answer": "Os documentos do processo e o seu documento de identificação."
+        },
+        {
+         "question": "Atendem à distância?",
+         "answer": "Sim, por videochamada ou por telefone."
+        },
+        {
+         "question": "O que lhes contar é confidencial?",
+         "answer": "Sim, está protegido pelo sigilo profissional."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um assunto para nos expor?",
+       "text": "Conte-nos o seu caso e respondemos em breve.",
+       "button_text": "Pedir uma consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça uma consulta ou escreva-nos a sua pergunta e responderemos o mais depressa possível durante o horário de atendimento."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir uma consulta",
+       "text": "Diga-nos o que precisa e propomos uma reunião.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "19:30"
+        },
+        {
+         "days": "sa",
+         "closed": "sí"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "calendario-fiscal-pme",
+    "title": "Calendário fiscal: o que verificar a cada trimestre",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Antes de cada prazo\n\nExplique que documentos convém ter à mão.\n\n## Quando consultar\n\nLembre que cada caso é diferente e que o melhor é perguntar.",
+    "tags": [
+     "fiscal",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "acordo-parassocial",
+    "title": "Porque convém assinar um acordo parassocial",
+    "excerpt": "Texto de exemplo: as vantagens de deixar tudo por escrito.",
+    "content": "Texto de exemplo. Explique o que é um acordo parassocial e quando faz sentido.\n\n## O que costuma prever\n\nDistribuição de funções, entrada e saída de sócios, tomada de decisões.\n\n## Quando assinar\n\nIdealmente no início, enquanto todos estão de acordo.",
+    "tags": [
+     "comercial"
+    ]
+   }
+  ]
+ }
+}
