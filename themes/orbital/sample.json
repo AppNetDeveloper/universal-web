@@ -1,0 +1,2586 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Orbital). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Software que automatiza lo aburrido",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Producto",
+    "url": "/producto"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Probar gratis",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: plataforma de automatización para equipos que quieren menos tareas repetitivas. Sustitúyelo por la descripción de tu producto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Plataforma de automatización · Ejemplo",
+       "title": "Automatiza lo repetitivo y dedica el tiempo a construir",
+       "subtitle": "Texto de ejemplo: explica en una frase qué hace tu producto y qué problema le quita al equipo que lo usa.",
+       "cta_text": "Probar gratis",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver el producto",
+       "cta2_link": "/producto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Plataforma",
+       "title": "Todo lo que necesita tu equipo",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flujos en minutos",
+         "text": "Texto de ejemplo: conecta tus herramientas, define el disparador y deja que el flujo haga el resto sin escribir código."
+        },
+        {
+         "icon": "shield",
+         "title": "Seguridad de serie",
+         "text": "Cifrado, registro de accesos y permisos por rol."
+        },
+        {
+         "icon": "chart",
+         "title": "Métricas claras",
+         "text": "Qué se ejecutó, cuánto tardó y dónde falló."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Disponibilidad objetivo (ejemplo)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Latencia media (ejemplo)"
+        },
+        {
+         "value": "24/7",
+         "label": "Soporte técnico (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De cero a producción en tres pasos",
+       "items": [
+        {
+         "title": "Conecta",
+         "text": "Enlaza tus aplicaciones con unos clics."
+        },
+        {
+         "title": "Define",
+         "text": "Elige el disparador y las acciones del flujo."
+        },
+        {
+         "title": "Despliega",
+         "text": "Actívalo y sigue su estado en tiempo real."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "Tu primera automatización en una llamada",
+       "language": "bash",
+       "code": "# Texto de ejemplo: lanza un flujo y recibe un aviso al terminar\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre nosotros",
+       "title": "Un equipo pequeño que cuida los detalles",
+       "body": "- Respuestas de soporte por personas del equipo\n- Documentación clara y ejemplos que funcionan\n- Cambios anunciados con antelación",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para probarlo?",
+       "text": "Crea una cuenta de prueba y lanza tu primer flujo hoy.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "producto",
+    "title": "Producto",
+    "seo": {
+     "description": "Texto de ejemplo: flujos, integraciones, seguridad, métricas y API de una plataforma de automatización. Sustitúyelo por tu producto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Producto",
+       "subtitle": "Texto de ejemplo: describe tu producto con palabras que entienda cualquier persona del equipo.",
+       "cta_text": "Probar gratis",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flujos visuales",
+         "text": "Diseña procesos arrastrando bloques."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integraciones",
+         "text": "Conecta con tus herramientas habituales."
+        },
+        {
+         "icon": "lock",
+         "title": "Seguridad",
+         "text": "Cifrado, roles y registro de actividad."
+        },
+        {
+         "icon": "chart",
+         "title": "Métricas",
+         "text": "Paneles con el estado de cada flujo."
+        },
+        {
+         "icon": "globe",
+         "title": "API abierta",
+         "text": "Controla todo desde tu código."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planes orientativos",
+       "note": "Precios de ejemplo: sustitúyelos por los tuyos.",
+       "items": [
+        {
+         "section": "Planes",
+         "name": "Básico, al mes",
+         "price": "0"
+        },
+        {
+         "section": "Planes",
+         "name": "Equipo, al mes",
+         "price": "29"
+        },
+        {
+         "section": "Planes",
+         "name": "Empresa, al mes",
+         "price": "a medida"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para probarlo?",
+       "text": "Crea una cuenta de prueba y lanza tu primer flujo hoy.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa al construir software para otros equipos."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu empresa, quién forma el equipo y qué os hace distintos.\n\nHabla de cómo trabajáis, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Versiones pequeñas y frecuentes\n- Decisiones basadas en lo que usan los clientes\n- Soporte con nombre y apellidos"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De cero a producción en tres pasos",
+       "items": [
+        {
+         "title": "Conecta",
+         "text": "Enlaza tus aplicaciones con unos clics."
+        },
+        {
+         "title": "Define",
+         "text": "Elige el disparador y las acciones del flujo."
+        },
+        {
+         "title": "Despliega",
+         "text": "Actívalo y sigue su estado en tiempo real."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre planes, integraciones, seguridad, datos y cómo empezar con la plataforma."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Puedo probarlo gratis?",
+         "answer": "Sí, hay un plan sin coste para empezar. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Dónde se guardan los datos?",
+         "answer": "Indica aquí la región y el proveedor. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Tiene API?",
+         "answer": "Sí, con documentación y ejemplos."
+        },
+        {
+         "question": "¿Puedo cambiar de plan?",
+         "answer": "Sí, cuando quieras y sin permanencia."
+        },
+        {
+         "question": "¿Ofrecéis soporte en español?",
+         "answer": "Sí, por correo y por chat en horario laboral."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Listo para probarlo?",
+       "text": "Crea una cuenta de prueba y lanza tu primer flujo hoy.",
+       "button_text": "Probar gratis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: escríbenos con tu consulta, pide una demostración o cuéntanos tu caso y te respondemos lo antes posible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Probar gratis",
+       "text": "Cuéntanos qué necesitas y te proponemos una demostración.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatizar-sin-romper-nada",
+    "title": "Cómo automatizar un proceso sin romper nada",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Empieza por lo pequeño\n\nElige un proceso acotado y mide cuánto tiempo consume hoy.\n\n## Añade avisos\n\nRecuerda que un flujo sin alertas es un flujo que falla en silencio.",
+    "tags": [
+     "automatizacion",
+     "guias"
+    ]
+   },
+   {
+    "slug": "contrasenas-y-permisos",
+    "title": "Contraseñas y permisos: lo mínimo que conviene revisar",
+    "excerpt": "Texto de ejemplo: una lista corta de comprobaciones.",
+    "content": "Texto de ejemplo. Resume buenas prácticas generales de seguridad para quien usa tu producto.\n\n## Permisos mínimos\n\nDa a cada persona solo el acceso que necesita.\n\n## Revisiones periódicas\n\nRevisa quién tiene acceso a qué cada trimestre.",
+    "tags": [
+     "seguridad"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Software that automates the boring parts",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Product",
+    "url": "/product"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Try it free",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: automation platform for teams that want fewer repetitive tasks. Replace it with the description of your product."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Automation platform · Sample",
+       "title": "Automate the repetitive and spend your time building",
+       "subtitle": "Sample text: say in one sentence what your product does and which problem it removes for the team using it.",
+       "cta_text": "Try it free",
+       "cta_link": "/contact",
+       "cta2_text": "See the product",
+       "cta2_link": "/product"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Platform",
+       "title": "Everything your team needs",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flows in minutes",
+         "text": "Sample text: connect your tools, set the trigger and let the flow do the rest without writing code."
+        },
+        {
+         "icon": "shield",
+         "title": "Secure by default",
+         "text": "Encryption, access logs and role-based permissions."
+        },
+        {
+         "icon": "chart",
+         "title": "Clear metrics",
+         "text": "What ran, how long it took and where it failed."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99.9%",
+         "label": "Target uptime (sample)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Average latency (sample)"
+        },
+        {
+         "value": "24/7",
+         "label": "Technical support (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "From zero to production in three steps",
+       "items": [
+        {
+         "title": "Connect",
+         "text": "Link your apps in a few clicks."
+        },
+        {
+         "title": "Define",
+         "text": "Pick the trigger and the actions of the flow."
+        },
+        {
+         "title": "Deploy",
+         "text": "Turn it on and follow its status live."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "Your first automation in one call",
+       "language": "bash",
+       "code": "# Sample text: start a flow and get notified when it ends\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "About us",
+       "title": "A small team that cares about the details",
+       "body": "- Support answers written by people on the team\n- Clear docs and examples that work\n- Changes announced in advance",
+       "button_text": "About",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their consent.",
+         "name": "Sample customer",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to try it?",
+       "text": "Create a trial account and launch your first flow today.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "product",
+    "title": "Product",
+    "seo": {
+     "description": "Sample text: flows, integrations, security, metrics and API of an automation platform. Replace it with your own product."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Product",
+       "subtitle": "Sample text: describe your product in words anyone on the team understands.",
+       "cta_text": "Try it free",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Visual flows",
+         "text": "Design processes by dragging blocks."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integrations",
+         "text": "Connect the tools you already use."
+        },
+        {
+         "icon": "lock",
+         "title": "Security",
+         "text": "Encryption, roles and activity log."
+        },
+        {
+         "icon": "chart",
+         "title": "Metrics",
+         "text": "Dashboards with the status of every flow."
+        },
+        {
+         "icon": "globe",
+         "title": "Open API",
+         "text": "Control everything from your code."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Guide plans",
+       "note": "Sample prices: replace them with your own.",
+       "items": [
+        {
+         "section": "Plans",
+         "name": "Basic, per month",
+         "price": "0"
+        },
+        {
+         "section": "Plans",
+         "name": "Team, per month",
+         "price": "29"
+        },
+        {
+         "section": "Plans",
+         "name": "Business, per month",
+         "price": "custom"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to try it?",
+       "text": "Create a trial account and launch your first flow today.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us when building software for other teams."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your company here, who is on the team and what makes you different.\n\nTalk about how you work, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Small, frequent releases\n- Decisions based on what customers use\n- Support with real names"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "From zero to production in three steps",
+       "items": [
+        {
+         "title": "Connect",
+         "text": "Link your apps in a few clicks."
+        },
+        {
+         "title": "Define",
+         "text": "Pick the trigger and the actions of the flow."
+        },
+        {
+         "title": "Deploy",
+         "text": "Turn it on and follow its status live."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about plans, integrations, security, data and how to get started with the platform."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Can I try it for free?",
+         "answer": "Yes, there is a no-cost plan to start with. *Sample text.*"
+        },
+        {
+         "question": "Where is my data stored?",
+         "answer": "State the region and the provider here. *Sample text.*"
+        },
+        {
+         "question": "Is there an API?",
+         "answer": "Yes, with documentation and examples."
+        },
+        {
+         "question": "Can I change plans?",
+         "answer": "Yes, any time and with no lock-in."
+        },
+        {
+         "question": "Do you offer support?",
+         "answer": "Yes, by email and chat during business hours."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ready to try it?",
+       "text": "Create a trial account and launch your first flow today.",
+       "button_text": "Try it free",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: write to us with your question, ask for a demo or tell us about your case and we will reply as soon as possible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Try it free",
+       "text": "Tell us what you need and we will propose a demo.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automate-without-breaking-things",
+    "title": "How to automate a process without breaking anything",
+    "excerpt": "Sample text for the blog: a short, careful guide.",
+    "content": "Sample text. Write a useful article for your customers here, with general and careful information.\n\n## Start small\n\nPick a well-defined process and measure how much time it takes today.\n\n## Add alerts\n\nRemember that a flow without alerts is a flow that fails silently.",
+    "tags": [
+     "automation",
+     "guides"
+    ]
+   },
+   {
+    "slug": "passwords-and-permissions",
+    "title": "Passwords and permissions: the minimum worth reviewing",
+    "excerpt": "Sample text: a short checklist.",
+    "content": "Sample text. Summarise general security good practice for people using your product.\n\n## Least privilege\n\nGive each person only the access they need.\n\n## Regular reviews\n\nReview who has access to what every quarter.",
+    "tags": [
+     "security"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Software care automatizează partea plictisitoare",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Produs",
+    "url": "/produs"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Încearcă gratuit",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: platformă de automatizare pentru echipe care vor mai puține sarcini repetitive. Înlocuiește-l cu descrierea produsului tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Platformă de automatizare · Exemplu",
+       "title": "Automatizează ce se repetă și folosește timpul ca să construiești",
+       "subtitle": "Text de exemplu: spune într-o frază ce face produsul tău și ce problemă scoate din calea echipei.",
+       "cta_text": "Încearcă gratuit",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi produsul",
+       "cta2_link": "/produs"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Platformă",
+       "title": "Tot ce are nevoie echipa ta",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Fluxuri în câteva minute",
+         "text": "Text de exemplu: conectează-ți uneltele, alege declanșatorul și lasă fluxul să facă restul, fără cod."
+        },
+        {
+         "icon": "shield",
+         "title": "Securitate din start",
+         "text": "Criptare, jurnal de accesări și permisiuni pe roluri."
+        },
+        {
+         "icon": "chart",
+         "title": "Metrici clare",
+         "text": "Ce a rulat, cât a durat și unde a eșuat."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Disponibilitate țintă (exemplu)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Latență medie (exemplu)"
+        },
+        {
+         "value": "24/7",
+         "label": "Suport tehnic (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la zero la producție în trei pași",
+       "items": [
+        {
+         "title": "Conectează",
+         "text": "Leagă-ți aplicațiile în câteva clicuri."
+        },
+        {
+         "title": "Definește",
+         "text": "Alege declanșatorul și acțiunile fluxului."
+        },
+        {
+         "title": "Lansează",
+         "text": "Pornește-l și urmărește starea în timp real."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "Prima ta automatizare dintr-un singur apel",
+       "language": "bash",
+       "code": "# Text de exemplu: pornește un flux și primești o notificare la final\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Despre noi",
+       "title": "O echipă mică, atentă la detalii",
+       "body": "- Răspunsuri de suport scrise de oameni din echipă\n- Documentație clară și exemple care funcționează\n- Schimbări anunțate din timp",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să încerci?",
+       "text": "Creează un cont de probă și lansează primul flux chiar azi.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produs",
+    "title": "Produs",
+    "seo": {
+     "description": "Text de exemplu: fluxuri, integrări, securitate, metrici și API pentru o platformă de automatizare. Înlocuiește-l cu produsul tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produs",
+       "subtitle": "Text de exemplu: descrie produsul cu cuvinte pe care le înțelege oricine din echipă.",
+       "cta_text": "Încearcă gratuit",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Fluxuri vizuale",
+         "text": "Proiectează procese trăgând blocuri."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integrări",
+         "text": "Conectează uneltele pe care le folosești deja."
+        },
+        {
+         "icon": "lock",
+         "title": "Securitate",
+         "text": "Criptare, roluri și jurnal de activitate."
+        },
+        {
+         "icon": "chart",
+         "title": "Metrici",
+         "text": "Panouri cu starea fiecărui flux."
+        },
+        {
+         "icon": "globe",
+         "title": "API deschis",
+         "text": "Controlează totul din propriul cod."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planuri orientative",
+       "note": "Prețuri de exemplu: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Planuri",
+         "name": "Basic, pe lună",
+         "price": "0"
+        },
+        {
+         "section": "Planuri",
+         "name": "Echipă, pe lună",
+         "price": "29"
+        },
+        {
+         "section": "Planuri",
+         "name": "Companie, pe lună",
+         "price": "la cerere"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să încerci?",
+       "text": "Creează un cont de probă și lansează primul flux chiar azi.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi când construim software pentru alte echipe."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria companiei, cine face parte din echipă și ce vă face diferiți.\n\nVorbește despre cum lucrați, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Versiuni mici și dese\n- Decizii bazate pe ce folosesc clienții\n- Suport cu nume și prenume"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la zero la producție în trei pași",
+       "items": [
+        {
+         "title": "Conectează",
+         "text": "Leagă-ți aplicațiile în câteva clicuri."
+        },
+        {
+         "title": "Definește",
+         "text": "Alege declanșatorul și acțiunile fluxului."
+        },
+        {
+         "title": "Lansează",
+         "text": "Pornește-l și urmărește starea în timp real."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre planuri, integrări, securitate, date și cum începi să folosești platforma."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Pot să o încerc gratuit?",
+         "answer": "Da, există un plan fără cost pentru început. *Text de exemplu.*"
+        },
+        {
+         "question": "Unde sunt păstrate datele?",
+         "answer": "Indică aici regiunea și furnizorul. *Text de exemplu.*"
+        },
+        {
+         "question": "Există API?",
+         "answer": "Da, cu documentație și exemple."
+        },
+        {
+         "question": "Pot schimba planul?",
+         "answer": "Da, oricând și fără angajament."
+        },
+        {
+         "question": "Oferiți suport?",
+         "answer": "Da, prin e-mail și chat, în program de lucru."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Gata să încerci?",
+       "text": "Creează un cont de probă și lansează primul flux chiar azi.",
+       "button_text": "Încearcă gratuit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: scrie-ne întrebarea ta, cere o demonstrație sau povestește-ne cazul tău și îți răspundem cât mai repede."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Încearcă gratuit",
+       "text": "Spune-ne ce ai nevoie și îți propunem o demonstrație.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatizare-fara-sa-strici-nimic",
+    "title": "Cum automatizezi un proces fără să strici nimic",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și prudent.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu informații generale și prudente.\n\n## Începe cu ceva mic\n\nAlege un proces bine delimitat și măsoară cât timp consumă azi.\n\n## Adaugă alerte\n\nAminte-te că un flux fără alerte este un flux care eșuează în tăcere.",
+    "tags": [
+     "automatizare",
+     "ghiduri"
+    ]
+   },
+   {
+    "slug": "parole-si-permisiuni",
+    "title": "Parole și permisiuni: minimul care merită verificat",
+    "excerpt": "Text de exemplu: o listă scurtă de verificări.",
+    "content": "Text de exemplu. Rezumă bune practici generale de securitate pentru cei care folosesc produsul tău.\n\n## Permisiuni minime\n\nDă fiecărei persoane doar accesul de care are nevoie.\n\n## Verificări periodice\n\nVerifică în fiecare trimestru cine are acces la ce.",
+    "tags": [
+     "securitate"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Le logiciel qui automatise le fastidieux",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Produit",
+    "url": "/produit"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Essayer gratuitement",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : plateforme d'automatisation pour les équipes qui veulent moins de tâches répétitives. Remplacez-le par la description de votre produit."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Plateforme d'automatisation · Exemple",
+       "title": "Automatisez le répétitif et consacrez votre temps à construire",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que fait votre produit et quel problème il retire à l'équipe.",
+       "cta_text": "Essayer gratuitement",
+       "cta_link": "/contact",
+       "cta2_text": "Découvrir le produit",
+       "cta2_link": "/produit"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Plateforme",
+       "title": "Tout ce dont votre équipe a besoin",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Des flux en quelques minutes",
+         "text": "Texte d'exemple : connectez vos outils, choisissez le déclencheur et laissez le flux faire le reste, sans code."
+        },
+        {
+         "icon": "shield",
+         "title": "Sécurité par défaut",
+         "text": "Chiffrement, journal d'accès et droits par rôle."
+        },
+        {
+         "icon": "chart",
+         "title": "Des métriques claires",
+         "text": "Ce qui s'est exécuté, en combien de temps et où ça a échoué."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Disponibilité visée (exemple)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Latence moyenne (exemple)"
+        },
+        {
+         "value": "24/7",
+         "label": "Support technique (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De zéro à la production en trois étapes",
+       "items": [
+        {
+         "title": "Connectez",
+         "text": "Reliez vos applications en quelques clics."
+        },
+        {
+         "title": "Définissez",
+         "text": "Choisissez le déclencheur et les actions du flux."
+        },
+        {
+         "title": "Déployez",
+         "text": "Activez-le et suivez son état en direct."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "Votre première automatisation en un appel",
+       "language": "bash",
+       "code": "# Texte d'exemple : lancez un flux et recevez une alerte à la fin\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "À propos",
+       "title": "Une petite équipe attentive aux détails",
+       "body": "- Un support assuré par des personnes de l'équipe\n- Une documentation claire et des exemples qui fonctionnent\n- Des changements annoncés à l'avance",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple d'un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à l'essayer ?",
+       "text": "Créez un compte d'essai et lancez votre premier flux dès aujourd'hui.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produit",
+    "title": "Produit",
+    "seo": {
+     "description": "Texte d'exemple : flux, intégrations, sécurité, métriques et API d'une plateforme d'automatisation. Remplacez-le par votre produit."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produit",
+       "subtitle": "Texte d'exemple : décrivez votre produit avec des mots que chaque membre de l'équipe comprend.",
+       "cta_text": "Essayer gratuitement",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flux visuels",
+         "text": "Concevez des processus en glissant des blocs."
+        },
+        {
+         "icon": "cpu",
+         "title": "Intégrations",
+         "text": "Connectez les outils que vous utilisez déjà."
+        },
+        {
+         "icon": "lock",
+         "title": "Sécurité",
+         "text": "Chiffrement, rôles et journal d'activité."
+        },
+        {
+         "icon": "chart",
+         "title": "Métriques",
+         "text": "Des tableaux de bord pour chaque flux."
+        },
+        {
+         "icon": "globe",
+         "title": "API ouverte",
+         "text": "Pilotez tout depuis votre code."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Offres indicatives",
+       "note": "Tarifs d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Offres",
+         "name": "Essentiel, par mois",
+         "price": "0"
+        },
+        {
+         "section": "Offres",
+         "name": "Équipe, par mois",
+         "price": "29"
+        },
+        {
+         "section": "Offres",
+         "name": "Entreprise, par mois",
+         "price": "sur mesure"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à l'essayer ?",
+       "text": "Créez un compte d'essai et lancez votre premier flux dès aujourd'hui.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous quand nous construisons des logiciels pour d'autres équipes."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre entreprise, qui compose l'équipe et ce qui vous distingue.\n\nParlez de votre façon de travailler, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Des versions petites et fréquentes\n- Des décisions fondées sur l'usage réel\n- Un support avec de vrais interlocuteurs"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De zéro à la production en trois étapes",
+       "items": [
+        {
+         "title": "Connectez",
+         "text": "Reliez vos applications en quelques clics."
+        },
+        {
+         "title": "Définissez",
+         "text": "Choisissez le déclencheur et les actions du flux."
+        },
+        {
+         "title": "Déployez",
+         "text": "Activez-le et suivez son état en direct."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les offres, les intégrations, la sécurité, les données et la prise en main de la plateforme."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Puis-je l'essayer gratuitement ?",
+         "answer": "Oui, une offre sans frais permet de démarrer. *Texte d'exemple.*"
+        },
+        {
+         "question": "Où sont stockées les données ?",
+         "answer": "Indiquez ici la région et l'hébergeur. *Texte d'exemple.*"
+        },
+        {
+         "question": "Y a-t-il une API ?",
+         "answer": "Oui, avec documentation et exemples."
+        },
+        {
+         "question": "Puis-je changer d'offre ?",
+         "answer": "Oui, à tout moment et sans engagement."
+        },
+        {
+         "question": "Proposez-vous un support ?",
+         "answer": "Oui, par e-mail et par chat aux heures ouvrées."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Prêt à l'essayer ?",
+       "text": "Créez un compte d'essai et lancez votre premier flux dès aujourd'hui.",
+       "button_text": "Essayer gratuitement",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : écrivez-nous votre question, demandez une démonstration ou décrivez votre cas et nous vous répondrons au plus vite."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Essayer gratuitement",
+       "text": "Dites-nous ce dont vous avez besoin et nous vous proposons une démonstration.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatiser-sans-rien-casser",
+    "title": "Comment automatiser un processus sans rien casser",
+    "excerpt": "Texte d'exemple pour le blog : un guide bref et prudent.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Commencez petit\n\nChoisissez un processus bien délimité et mesurez le temps qu'il prend aujourd'hui.\n\n## Ajoutez des alertes\n\nUn flux sans alertes est un flux qui échoue en silence.",
+    "tags": [
+     "automatisation",
+     "guides"
+    ]
+   },
+   {
+    "slug": "mots-de-passe-et-droits",
+    "title": "Mots de passe et droits : le minimum à vérifier",
+    "excerpt": "Texte d'exemple : une courte liste de vérifications.",
+    "content": "Texte d'exemple. Résumez les bonnes pratiques générales de sécurité pour les utilisateurs de votre produit.\n\n## Droits minimaux\n\nDonnez à chacun uniquement l'accès dont il a besoin.\n\n## Revues régulières\n\nVérifiez chaque trimestre qui a accès à quoi.",
+    "tags": [
+     "securite"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Software, die das Lästige automatisiert",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Produkt",
+    "url": "/produkt"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Kostenlos testen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Automatisierungsplattform für Teams, die weniger wiederkehrende Aufgaben wollen. Ersetze ihn durch die Beschreibung deines Produkts."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Automatisierungsplattform · Beispiel",
+       "title": "Automatisiere das Wiederkehrende und nutze die Zeit zum Bauen",
+       "subtitle": "Beispieltext: Sag in einem Satz, was dein Produkt macht und welches Problem es dem Team abnimmt.",
+       "cta_text": "Kostenlos testen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Produkt ansehen",
+       "cta2_link": "/produkt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Plattform",
+       "title": "Alles, was dein Team braucht",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Abläufe in Minuten",
+         "text": "Beispieltext: Verbinde deine Werkzeuge, wähle den Auslöser und lass den Ablauf den Rest erledigen, ganz ohne Code."
+        },
+        {
+         "icon": "shield",
+         "title": "Sicher ab Werk",
+         "text": "Verschlüsselung, Zugriffsprotokoll und rollenbasierte Rechte."
+        },
+        {
+         "icon": "chart",
+         "title": "Klare Kennzahlen",
+         "text": "Was lief, wie lange es dauerte und wo es scheiterte."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Verfügbarkeitsziel (Beispiel)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Mittlere Latenz (Beispiel)"
+        },
+        {
+         "value": "24/7",
+         "label": "Technischer Support (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "In drei Schritten von null zur Produktion",
+       "items": [
+        {
+         "title": "Verbinden",
+         "text": "Verknüpfe deine Apps mit wenigen Klicks."
+        },
+        {
+         "title": "Festlegen",
+         "text": "Wähle Auslöser und Aktionen des Ablaufs."
+        },
+        {
+         "title": "Ausrollen",
+         "text": "Aktiviere ihn und verfolge den Status live."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "Deine erste Automatisierung in einem Aufruf",
+       "language": "bash",
+       "code": "# Beispieltext: Ablauf starten und am Ende benachrichtigt werden\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Über uns",
+       "title": "Ein kleines Team mit Blick fürs Detail",
+       "body": "- Support-Antworten von Menschen aus dem Team\n- Klare Dokumentation und Beispiele, die funktionieren\n- Änderungen werden vorher angekündigt",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: Ersetze ihn durch echte Stimmen deiner Kunden, mit deren Einverständnis.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit zum Ausprobieren?",
+       "text": "Lege ein Testkonto an und starte noch heute deinen ersten Ablauf.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produkt",
+    "title": "Produkt",
+    "seo": {
+     "description": "Beispieltext: Abläufe, Integrationen, Sicherheit, Kennzahlen und API einer Automatisierungsplattform. Ersetze ihn durch dein Produkt."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produkt",
+       "subtitle": "Beispieltext: Beschreibe dein Produkt mit Worten, die jeder im Team versteht.",
+       "cta_text": "Kostenlos testen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Visuelle Abläufe",
+         "text": "Prozesse per Drag-and-drop entwerfen."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integrationen",
+         "text": "Verbinde die Werkzeuge, die du schon nutzt."
+        },
+        {
+         "icon": "lock",
+         "title": "Sicherheit",
+         "text": "Verschlüsselung, Rollen und Aktivitätsprotokoll."
+        },
+        {
+         "icon": "chart",
+         "title": "Kennzahlen",
+         "text": "Dashboards mit dem Status jedes Ablaufs."
+        },
+        {
+         "icon": "globe",
+         "title": "Offene API",
+         "text": "Steuere alles aus deinem Code."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtpreise der Tarife",
+       "note": "Beispielpreise: Ersetze sie durch deine eigenen.",
+       "items": [
+        {
+         "section": "Tarife",
+         "name": "Basis, pro Monat",
+         "price": "0"
+        },
+        {
+         "section": "Tarife",
+         "name": "Team, pro Monat",
+         "price": "29"
+        },
+        {
+         "section": "Tarife",
+         "name": "Unternehmen, pro Monat",
+         "price": "nach Angebot"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit zum Ausprobieren?",
+       "text": "Lege ein Testkonto an und starte noch heute deinen ersten Ablauf.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns beim Entwickeln von Software für andere Teams wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzähle hier die Geschichte deines Unternehmens, wer zum Team gehört und was euch unterscheidet.\n\nSprich darüber, wie ihr arbeitet, nicht über Zahlen, die du nicht belegen kannst."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Kleine, häufige Veröffentlichungen\n- Entscheidungen auf Basis der echten Nutzung\n- Support mit echten Namen"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "In drei Schritten von null zur Produktion",
+       "items": [
+        {
+         "title": "Verbinden",
+         "text": "Verknüpfe deine Apps mit wenigen Klicks."
+        },
+        {
+         "title": "Festlegen",
+         "text": "Wähle Auslöser und Aktionen des Ablaufs."
+        },
+        {
+         "title": "Ausrollen",
+         "text": "Aktiviere ihn und verfolge den Status live."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Tarifen, Integrationen, Sicherheit, Daten und zum Einstieg in die Plattform."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Kann ich es kostenlos testen?",
+         "answer": "Ja, es gibt einen kostenlosen Tarif zum Start. *Beispieltext.*"
+        },
+        {
+         "question": "Wo werden die Daten gespeichert?",
+         "answer": "Nenne hier Region und Anbieter. *Beispieltext.*"
+        },
+        {
+         "question": "Gibt es eine API?",
+         "answer": "Ja, mit Dokumentation und Beispielen."
+        },
+        {
+         "question": "Kann ich den Tarif wechseln?",
+         "answer": "Ja, jederzeit und ohne Bindung."
+        },
+        {
+         "question": "Bietet ihr Support an?",
+         "answer": "Ja, per E-Mail und Chat zu Geschäftszeiten."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Bereit zum Ausprobieren?",
+       "text": "Lege ein Testkonto an und starte noch heute deinen ersten Ablauf.",
+       "button_text": "Kostenlos testen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Schreib uns deine Frage, fordere eine Demo an oder schildere deinen Fall, und wir antworten so schnell wie möglich."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Kostenlos testen",
+       "text": "Sag uns, was du brauchst, und wir schlagen dir eine Demo vor.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatisieren-ohne-etwas-zu-zerstoeren",
+    "title": "So automatisierst du einen Prozess, ohne etwas zu zerstören",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, vorsichtiger Leitfaden.",
+    "content": "Beispieltext. Schreibe hier einen nützlichen Artikel für deine Kunden, mit allgemeinen und vorsichtigen Informationen.\n\n## Klein anfangen\n\nWähle einen klar abgegrenzten Prozess und miss, wie viel Zeit er heute braucht.\n\n## Warnungen einbauen\n\nEin Ablauf ohne Warnungen scheitert unbemerkt.",
+    "tags": [
+     "automatisierung",
+     "leitfaeden"
+    ]
+   },
+   {
+    "slug": "passwoerter-und-rechte",
+    "title": "Passwörter und Rechte: das Minimum zum Prüfen",
+    "excerpt": "Beispieltext: eine kurze Checkliste.",
+    "content": "Beispieltext. Fasse allgemeine Sicherheitsempfehlungen für die Nutzer deines Produkts zusammen.\n\n## Minimale Rechte\n\nGib jeder Person nur den Zugriff, den sie braucht.\n\n## Regelmäßige Prüfung\n\nPrüfe jedes Quartal, wer worauf Zugriff hat.",
+    "tags": [
+     "sicherheit"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Il software che automatizza le parti noiose",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Prodotto",
+    "url": "/prodotto"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prova gratis",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: piattaforma di automazione per team che vogliono meno attività ripetitive. Sostituiscilo con la descrizione del tuo prodotto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Piattaforma di automazione · Esempio",
+       "title": "Automatizza il ripetitivo e usa il tempo per costruire",
+       "subtitle": "Testo di esempio: spiega in una frase cosa fa il tuo prodotto e quale problema toglie al team.",
+       "cta_text": "Prova gratis",
+       "cta_link": "/contatti",
+       "cta2_text": "Scopri il prodotto",
+       "cta2_link": "/prodotto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Piattaforma",
+       "title": "Tutto ciò che serve al tuo team",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flussi in pochi minuti",
+         "text": "Testo di esempio: collega i tuoi strumenti, scegli il trigger e lascia che il flusso faccia il resto, senza scrivere codice."
+        },
+        {
+         "icon": "shield",
+         "title": "Sicurezza di serie",
+         "text": "Crittografia, registro degli accessi e permessi per ruolo."
+        },
+        {
+         "icon": "chart",
+         "title": "Metriche chiare",
+         "text": "Cosa è stato eseguito, quanto ha impiegato e dove è fallito."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Disponibilità obiettivo (esempio)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Latenza media (esempio)"
+        },
+        {
+         "value": "24/7",
+         "label": "Supporto tecnico (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Da zero alla produzione in tre passi",
+       "items": [
+        {
+         "title": "Collega",
+         "text": "Unisci le tue app con pochi clic."
+        },
+        {
+         "title": "Definisci",
+         "text": "Scegli il trigger e le azioni del flusso."
+        },
+        {
+         "title": "Pubblica",
+         "text": "Attivalo e segui lo stato in tempo reale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "La tua prima automazione in una chiamata",
+       "language": "bash",
+       "code": "# Testo di esempio: avvia un flusso e ricevi un avviso alla fine\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Chi siamo",
+       "title": "Un piccolo team attento ai dettagli",
+       "body": "- Risposte di supporto scritte da persone del team\n- Documentazione chiara ed esempi che funzionano\n- Modifiche annunciate in anticipo",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a provarlo?",
+       "text": "Crea un account di prova e avvia il tuo primo flusso oggi stesso.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "prodotto",
+    "title": "Prodotto",
+    "seo": {
+     "description": "Testo di esempio: flussi, integrazioni, sicurezza, metriche e API di una piattaforma di automazione. Sostituiscilo con il tuo prodotto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Prodotto",
+       "subtitle": "Testo di esempio: descrivi il tuo prodotto con parole che chiunque nel team capisca.",
+       "cta_text": "Prova gratis",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Flussi visuali",
+         "text": "Progetta processi trascinando blocchi."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integrazioni",
+         "text": "Collega gli strumenti che usi già."
+        },
+        {
+         "icon": "lock",
+         "title": "Sicurezza",
+         "text": "Crittografia, ruoli e registro attività."
+        },
+        {
+         "icon": "chart",
+         "title": "Metriche",
+         "text": "Dashboard con lo stato di ogni flusso."
+        },
+        {
+         "icon": "globe",
+         "title": "API aperta",
+         "text": "Controlla tutto dal tuo codice."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Piani indicativi",
+       "note": "Prezzi di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Piani",
+         "name": "Base, al mese",
+         "price": "0"
+        },
+        {
+         "section": "Piani",
+         "name": "Team, al mese",
+         "price": "29"
+        },
+        {
+         "section": "Piani",
+         "name": "Azienda, al mese",
+         "price": "su misura"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a provarlo?",
+       "text": "Crea un account di prova e avvia il tuo primo flusso oggi stesso.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa ci sta a cuore quando costruiamo software per altri team."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia della tua azienda, chi fa parte del team e cosa vi rende diversi.\n\nParla di come lavorate, non di cifre che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Rilasci piccoli e frequenti\n- Decisioni basate su ciò che usano i clienti\n- Supporto con nome e cognome"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Da zero alla produzione in tre passi",
+       "items": [
+        {
+         "title": "Collega",
+         "text": "Unisci le tue app con pochi clic."
+        },
+        {
+         "title": "Definisci",
+         "text": "Scegli il trigger e le azioni del flusso."
+        },
+        {
+         "title": "Pubblica",
+         "text": "Attivalo e segui lo stato in tempo reale."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su piani, integrazioni, sicurezza, dati e su come iniziare a usare la piattaforma."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Posso provarlo gratis?",
+         "answer": "Sì, c'è un piano senza costi per iniziare. *Testo di esempio.*"
+        },
+        {
+         "question": "Dove sono salvati i dati?",
+         "answer": "Indica qui regione e fornitore. *Testo di esempio.*"
+        },
+        {
+         "question": "C'è un'API?",
+         "answer": "Sì, con documentazione ed esempi."
+        },
+        {
+         "question": "Posso cambiare piano?",
+         "answer": "Sì, quando vuoi e senza vincoli."
+        },
+        {
+         "question": "Offrite supporto?",
+         "answer": "Sì, via e-mail e chat in orario di lavoro."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto a provarlo?",
+       "text": "Crea un account di prova e avvia il tuo primo flusso oggi stesso.",
+       "button_text": "Prova gratis",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: scrivici la tua domanda, richiedi una demo o raccontaci il tuo caso e ti risponderemo il prima possibile."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prova gratis",
+       "text": "Dicci di cosa hai bisogno e ti proponiamo una demo.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatizzare-senza-rompere-nulla",
+    "title": "Come automatizzare un processo senza rompere nulla",
+    "excerpt": "Testo di esempio per il blog: una guida breve e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Parti in piccolo\n\nScegli un processo ben definito e misura quanto tempo richiede oggi.\n\n## Aggiungi avvisi\n\nUn flusso senza avvisi è un flusso che fallisce in silenzio.",
+    "tags": [
+     "automazione",
+     "guide"
+    ]
+   },
+   {
+    "slug": "password-e-permessi",
+    "title": "Password e permessi: il minimo da controllare",
+    "excerpt": "Testo di esempio: una breve lista di verifiche.",
+    "content": "Testo di esempio. Riassumi le buone pratiche generali di sicurezza per chi usa il tuo prodotto.\n\n## Permessi minimi\n\nDai a ciascuno solo l'accesso che gli serve.\n\n## Revisioni periodiche\n\nControlla ogni trimestre chi ha accesso a cosa.",
+    "tags": [
+     "sicurezza"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Software que automatiza o que é aborrecido",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Produto",
+    "url": "/produto"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Experimentar grátis",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: plataforma de automatização para equipas que querem menos tarefas repetitivas. Substitua-o pela descrição do seu produto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Plataforma de automatização · Exemplo",
+       "title": "Automatize o repetitivo e use o tempo para construir",
+       "subtitle": "Texto de exemplo: diga numa frase o que faz o seu produto e que problema tira à equipa.",
+       "cta_text": "Experimentar grátis",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver o produto",
+       "cta2_link": "/produto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Plataforma",
+       "title": "Tudo o que a sua equipa precisa",
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Fluxos em minutos",
+         "text": "Texto de exemplo: ligue as suas ferramentas, escolha o gatilho e deixe o fluxo fazer o resto, sem escrever código."
+        },
+        {
+         "icon": "shield",
+         "title": "Segurança de origem",
+         "text": "Cifragem, registo de acessos e permissões por perfil."
+        },
+        {
+         "icon": "chart",
+         "title": "Métricas claras",
+         "text": "O que correu, quanto demorou e onde falhou."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "99,9 %",
+         "label": "Disponibilidade-alvo (exemplo)"
+        },
+        {
+         "value": "120 ms",
+         "label": "Latência média (exemplo)"
+        },
+        {
+         "value": "24/7",
+         "label": "Suporte técnico (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Do zero à produção em três passos",
+       "items": [
+        {
+         "title": "Ligue",
+         "text": "Associe as suas aplicações em poucos cliques."
+        },
+        {
+         "title": "Defina",
+         "text": "Escolha o gatilho e as ações do fluxo."
+        },
+        {
+         "title": "Publique",
+         "text": "Ative-o e acompanhe o estado em tempo real."
+        }
+       ]
+      }
+     },
+     {
+      "type": "code",
+      "data": {
+       "title": "A sua primeira automatização numa chamada",
+       "language": "bash",
+       "code": "# Texto de exemplo: inicie um fluxo e receba um aviso no fim\ncurl -X POST https://api.example.test/v1/flows \\\n  -H \"Authorization: Bearer $TOKEN\" \\\n  -d '{\"flow\": \"nightly-report\", \"notify\": true}'"
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre nós",
+       "title": "Uma equipa pequena atenta aos detalhes",
+       "body": "- Respostas de suporte escritas por pessoas da equipa\n- Documentação clara e exemplos que funcionam\n- Alterações anunciadas com antecedência",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com o consentimento deles.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para experimentar?",
+       "text": "Crie uma conta de teste e lance o seu primeiro fluxo hoje.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produto",
+    "title": "Produto",
+    "seo": {
+     "description": "Texto de exemplo: fluxos, integrações, segurança, métricas e API de uma plataforma de automatização. Substitua-o pelo seu produto."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produto",
+       "subtitle": "Texto de exemplo: descreva o seu produto com palavras que qualquer pessoa da equipa entenda.",
+       "cta_text": "Experimentar grátis",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "bolt",
+         "title": "Fluxos visuais",
+         "text": "Desenhe processos arrastando blocos."
+        },
+        {
+         "icon": "cpu",
+         "title": "Integrações",
+         "text": "Ligue as ferramentas que já usa."
+        },
+        {
+         "icon": "lock",
+         "title": "Segurança",
+         "text": "Cifragem, perfis e registo de atividade."
+        },
+        {
+         "icon": "chart",
+         "title": "Métricas",
+         "text": "Painéis com o estado de cada fluxo."
+        },
+        {
+         "icon": "globe",
+         "title": "API aberta",
+         "text": "Controle tudo a partir do seu código."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Planos indicativos",
+       "note": "Preços de exemplo: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Planos",
+         "name": "Básico, por mês",
+         "price": "0"
+        },
+        {
+         "section": "Planos",
+         "name": "Equipa, por mês",
+         "price": "29"
+        },
+        {
+         "section": "Planos",
+         "name": "Empresa, por mês",
+         "price": "à medida"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para experimentar?",
+       "text": "Crie uma conta de teste e lance o seu primeiro fluxo hoje.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa ao construir software para outras equipas."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua empresa, quem faz parte da equipa e o que vos torna diferentes.\n\nFale de como trabalham, não de números que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Versões pequenas e frequentes\n- Decisões baseadas no que os clientes usam\n- Suporte com nome e apelido"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Do zero à produção em três passos",
+       "items": [
+        {
+         "title": "Ligue",
+         "text": "Associe as suas aplicações em poucos cliques."
+        },
+        {
+         "title": "Defina",
+         "text": "Escolha o gatilho e as ações do fluxo."
+        },
+        {
+         "title": "Publique",
+         "text": "Ative-o e acompanhe o estado em tempo real."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre planos, integrações, segurança, dados e como começar a usar a plataforma."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Posso experimentar grátis?",
+         "answer": "Sim, há um plano sem custos para começar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Onde ficam guardados os dados?",
+         "answer": "Indique aqui a região e o fornecedor. *Texto de exemplo.*"
+        },
+        {
+         "question": "Tem API?",
+         "answer": "Sim, com documentação e exemplos."
+        },
+        {
+         "question": "Posso mudar de plano?",
+         "answer": "Sim, quando quiser e sem fidelização."
+        },
+        {
+         "question": "Oferecem suporte?",
+         "answer": "Sim, por e-mail e chat em horário de expediente."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Pronto para experimentar?",
+       "text": "Crie uma conta de teste e lance o seu primeiro fluxo hoje.",
+       "button_text": "Experimentar grátis",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: escreva-nos a sua pergunta, peça uma demonstração ou conte-nos o seu caso e respondemos o mais depressa possível."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Experimentar grátis",
+       "text": "Diga-nos o que precisa e propomos-lhe uma demonstração.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "automatizar-sem-estragar-nada",
+    "title": "Como automatizar um processo sem estragar nada",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Comece pequeno\n\nEscolha um processo bem delimitado e meça quanto tempo consome hoje.\n\n## Adicione alertas\n\nUm fluxo sem alertas é um fluxo que falha em silêncio.",
+    "tags": [
+     "automatizacao",
+     "guias"
+    ]
+   },
+   {
+    "slug": "palavras-passe-e-permissoes",
+    "title": "Palavras-passe e permissões: o mínimo a rever",
+    "excerpt": "Texto de exemplo: uma lista curta de verificações.",
+    "content": "Texto de exemplo. Resuma boas práticas gerais de segurança para quem usa o seu produto.\n\n## Permissões mínimas\n\nDê a cada pessoa apenas o acesso de que precisa.\n\n## Revisões periódicas\n\nRevise todos os trimestres quem tem acesso a quê.",
+    "tags": [
+     "seguranca"
+    ]
+   }
+  ]
+ }
+}

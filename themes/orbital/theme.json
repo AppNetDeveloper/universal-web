@@ -1,0 +1,61 @@
+{
+  "slug": "orbital",
+  "name": "Orbital",
+  "description": "Producto tecnológico con carácter: rejilla fina, cabecera flotante, violeta eléctrico y un modo oscuro con brillos",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "software y apps",
+    "SaaS",
+    "ciberseguridad",
+    "automatización",
+    "agencia de desarrollo",
+    "hosting y cloud",
+    "inteligencia artificial aplicada",
+    "consultoría tecnológica"
+  ],
+  "suggested_accent": "#7c3aed",
+  "pitch": "Para empresas que venden un producto o servicio tecnológico y quieren verse modernas y técnicas, con una portada con captura de la app y un modo oscuro llamativo; para una web tecnológica más sobria, clara y contenida, mejor «Minimal».",
+  "style": "tecnológico, luminoso, técnico",
+  "colors": {
+    "acento": "#7c3aed",
+    "fondo": "#fafafa",
+    "texto": "#0a0a0f",
+    "bordes": "#e4e4ea",
+    "fondo_oscuro": "#07080c"
+  },
+  "typography": {
+    "titulos": "Geist",
+    "texto": "Geist (y Geist Mono para antetítulos, cifras y código)"
+  },
+  "dark_mode": "auto",
+  "fonts": "Geist y Geist Mono (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (violeta eléctrico recomendado)",
+      "--tint (fondo suave del acento: iconos, etiquetas, pestaña activa)",
+      "--grid (color de las líneas de la rejilla de fondo)",
+      "--glow (brillo del acento; solo visible en oscuro)",
+      "--mono (Geist Mono)"
+    ],
+    "clases_tema": [
+      ".header-inner (cabecera flotante en forma de píldora)",
+      ".hero-orbital (portada centrada con resplandor radial)",
+      ".hero-window / .window-bar (marco de ventana para la imagen de portada)",
+      ".block-features .feature:first-child (tarjeta grande del bento, ocupa 2 columnas)",
+      ".step-num (número mono entre corchetes)",
+      ".stats / .stat (cifras en mono con líneas de 1px)",
+      ".codeblock / .code-bar (terminal)"
+    ],
+    "bloques_recomendados": [
+      "hero (con imagen: captura del producto)",
+      "features (3 o 5 tarjetas para que el bento cuadre)",
+      "stats",
+      "steps",
+      "code (ejemplo de API o comando)",
+      "faq",
+      "cta"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
