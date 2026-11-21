@@ -1,0 +1,2887 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Cota). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Reformas medidas al milímetro",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Servicios",
+    "url": "/servicios"
+   },
+   {
+    "label": "El estudio",
+    "url": "/estudio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir presupuesto",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: reformas integrales, cocinas y baños con proyecto, medición y seguimiento de obra. Sustitúyelo por el de tu empresa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Reformas y rehabilitación · Ejemplo",
+       "title": "Tu reforma, medida, proyectada y entregada a plano",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué obras haces y cómo las dejas controladas, de la primera medición a la entrega de llaves.",
+       "cta_text": "Pedir presupuesto",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver servicios",
+       "cta2_link": "/servicios"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Qué hacemos",
+       "title": "Obras con proyecto detrás",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Reformas integrales",
+         "text": "Vivienda y local completos: demolición, instalaciones y acabados."
+        },
+        {
+         "icon": "shield",
+         "title": "Cocinas y baños",
+         "text": "Distribución, fontanería y revestimientos con mediciones reales."
+        },
+        {
+         "icon": "check",
+         "title": "Carpintería a medida",
+         "text": "Armarios, puertas y mobiliario fabricado a la medida del hueco."
+        },
+        {
+         "icon": "sun",
+         "title": "Rehabilitación de fachadas",
+         "text": "Inspección, reparación y mejora del aislamiento exterior."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Visita técnica tras tu solicitud (ejemplo)"
+        },
+        {
+         "value": "12 años",
+         "label": "De experiencia en obra (ejemplo)"
+        },
+        {
+         "value": "100 %",
+         "label": "Obras con seguimiento semanal (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fases de una reforma",
+       "items": [
+        {
+         "title": "Visita y medición",
+         "text": "Tomamos medidas y vemos el estado real del inmueble."
+        },
+        {
+         "title": "Proyecto y presupuesto",
+         "text": "Planos, mediciones y un presupuesto por partidas."
+        },
+        {
+         "title": "Licencias",
+         "text": "Tramitamos lo que haga falta antes de empezar."
+        },
+        {
+         "title": "Obra",
+         "text": "Demolición, instalaciones y acabados con parte semanal."
+        },
+        {
+         "title": "Entrega",
+         "text": "Revisión conjunta, documentación y garantía."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El estudio",
+       "title": "Un equipo técnico en cada obra",
+       "body": "- Arquitecto técnico al frente del proyecto\n- Presupuesto por partidas, sin sorpresas\n- Parte semanal con fotos y avance",
+       "button_text": "El estudio",
+       "button_link": "/estudio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una reforma en mente?",
+       "text": "Cuéntanos qué quieres cambiar y te proponemos una visita para medir.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicios",
+    "title": "Servicios",
+    "seo": {
+     "description": "Texto de ejemplo: reformas integrales, cocinas y baños, carpintería, instalaciones y fachadas con proyecto. Sustitúyelo por tus servicios."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicios",
+       "subtitle": "Texto de ejemplo: describe tus servicios con palabras que entienda cualquier propietario.",
+       "cta_text": "Pedir presupuesto",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Reforma integral",
+         "text": "Vivienda o local completos, llave en mano."
+        },
+        {
+         "icon": "shield",
+         "title": "Cocinas",
+         "text": "Diseño práctico, instalación y electrodomésticos."
+        },
+        {
+         "icon": "leaf",
+         "title": "Baños",
+         "text": "Platos de ducha, accesibilidad y revestimientos."
+        },
+        {
+         "icon": "check",
+         "title": "Carpintería",
+         "text": "Armarios y puertas a medida."
+        },
+        {
+         "icon": "bolt",
+         "title": "Instalaciones",
+         "text": "Electricidad, fontanería y climatización."
+        },
+        {
+         "icon": "sun",
+         "title": "Fachadas",
+         "text": "Rehabilitación y aislamiento exterior."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Referencias de ejemplo",
+       "note": "Importes de ejemplo, sin valor de oferta: sustitúyelos por los tuyos.",
+       "items": [
+        {
+         "section": "Visita",
+         "name": "Visita técnica y medición",
+         "price": "Gratuita"
+        },
+        {
+         "section": "Proyecto",
+         "name": "Memoria y planos de reforma",
+         "price": "desde 600"
+        },
+        {
+         "section": "Obra",
+         "name": "Reforma de baño completo",
+         "price": "desde 4.500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una reforma en mente?",
+       "text": "Cuéntanos qué quieres cambiar y te proponemos una visita para medir.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "estudio",
+    "title": "El estudio",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos una obra y qué nos importa al entregar una reforma a nuestros clientes."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu estudio, quién lo forma y qué os distingue.\n\nHabla de cómo controláis una obra, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Una sola persona de referencia por obra\n- Presupuesto cerrado por partidas\n- Documentación final de la reforma"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fases de una reforma",
+       "items": [
+        {
+         "title": "Visita y medición",
+         "text": "Tomamos medidas y vemos el estado real del inmueble."
+        },
+        {
+         "title": "Proyecto y presupuesto",
+         "text": "Planos, mediciones y un presupuesto por partidas."
+        },
+        {
+         "title": "Licencias",
+         "text": "Tramitamos lo que haga falta antes de empezar."
+        },
+        {
+         "title": "Obra",
+         "text": "Demolición, instalaciones y acabados con parte semanal."
+        },
+        {
+         "title": "Entrega",
+         "text": "Revisión conjunta, documentación y garantía."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre licencias, plazos, presupuestos y garantías de una reforma."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Necesito licencia para reformar?",
+         "answer": "Depende de la obra y del municipio: las que afectan a estructura o fachada suelen requerirla. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuánto dura una reforma?",
+         "answer": "Depende del alcance. Un baño puede llevar unas semanas y una reforma integral varios meses (plazos de ejemplo, no son un compromiso)."
+        },
+        {
+         "question": "¿El presupuesto es cerrado?",
+         "answer": "Se detalla por partidas; los cambios que pidas durante la obra se presupuestan aparte y por escrito."
+        },
+        {
+         "question": "¿Puedo vivir en casa durante la obra?",
+         "answer": "En reformas parciales suele ser posible; en las integrales, normalmente no es aconsejable."
+        },
+        {
+         "question": "¿Qué garantía tiene la obra?",
+         "answer": "Se entrega documentación y garantía de lo ejecutado. *Texto de ejemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes una reforma en mente?",
+       "text": "Cuéntanos qué quieres cambiar y te proponemos una visita para medir.",
+       "button_text": "Pedir presupuesto",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide una visita técnica o cuéntanos tu reforma y te respondemos lo antes posible en horario de oficina."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir presupuesto",
+       "text": "Cuéntanos qué quieres reformar y te proponemos una visita para medir.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "licencia-de-obra-cuando-hace-falta",
+    "title": "Licencia de obra: cuándo hace falta",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con información general y prudente.\n\n## Obras que suelen necesitarla\n\nExplica qué cambios afectan a estructura, fachada o distribución.\n\n## Antes de empezar\n\nRecuerda que cada ayuntamiento tiene sus normas y que lo mejor es consultarlo.",
+    "tags": [
+     "licencias",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "como-preparar-la-visita-tecnica",
+    "title": "Cómo preparar la visita técnica",
+    "excerpt": "Texto de ejemplo: qué tener a mano el día de la medición.",
+    "content": "Texto de ejemplo. Cuenta cómo es la primera visita para que nadie llegue con dudas.\n\n## Qué preparar\n\nPlanos antiguos, fotos y una lista de lo que quieres cambiar.\n\n## Durante la visita\n\nCómo se mide, qué se revisa y qué dudas conviene plantear.",
+    "tags": [
+     "obra"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Renovations measured to the millimetre",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "The studio",
+    "url": "/studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a quote",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: full renovations, kitchens and bathrooms with a design, measured survey and site supervision. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Renovation and refurbishment · Sample",
+       "title": "Your renovation, measured, designed and delivered to plan",
+       "subtitle": "Sample text: say in one sentence what works you do and how you keep them under control, from the first survey to handing over the keys.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact",
+       "cta2_text": "See services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we do",
+       "title": "Building work with a design behind it",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Full renovations",
+         "text": "Whole homes and premises: demolition, services and finishes."
+        },
+        {
+         "icon": "shield",
+         "title": "Kitchens and bathrooms",
+         "text": "Layout, plumbing and tiling based on real measurements."
+        },
+        {
+         "icon": "check",
+         "title": "Made-to-measure joinery",
+         "text": "Wardrobes, doors and furniture built to fit the opening."
+        },
+        {
+         "icon": "sun",
+         "title": "Facade refurbishment",
+         "text": "Inspection, repair and better exterior insulation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Site visit after your request (sample)"
+        },
+        {
+         "value": "12 years",
+         "label": "Of site experience (sample)"
+        },
+        {
+         "value": "100 %",
+         "label": "Jobs with weekly follow-up (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Phases of a renovation",
+       "items": [
+        {
+         "title": "Visit and survey",
+         "text": "We take measurements and check the real state of the property."
+        },
+        {
+         "title": "Design and quote",
+         "text": "Drawings, measurements and an itemised quote."
+        },
+        {
+         "title": "Permits",
+         "text": "We handle what is needed before starting."
+        },
+        {
+         "title": "Works",
+         "text": "Demolition, services and finishes with a weekly report."
+        },
+        {
+         "title": "Handover",
+         "text": "Joint inspection, documents and warranty."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The studio",
+       "title": "A technical team on every job",
+       "body": "- A technical architect leads the project\n- Itemised quote, no surprises\n- Weekly report with photos and progress",
+       "button_text": "The studio",
+       "button_link": "/studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your clients, with their consent.",
+         "name": "Sample client",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a renovation in mind?",
+       "text": "Tell us what you want to change and we will suggest a visit to measure up.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Sample text: full renovations, kitchens and bathrooms, joinery, services and facades with a design. Replace it with your own services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Sample text: describe your services in words any homeowner understands.",
+       "cta_text": "Request a quote",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Full renovation",
+         "text": "Whole homes or premises, turnkey."
+        },
+        {
+         "icon": "shield",
+         "title": "Kitchens",
+         "text": "Practical design, fitting and appliances."
+        },
+        {
+         "icon": "leaf",
+         "title": "Bathrooms",
+         "text": "Shower trays, accessibility and tiling."
+        },
+        {
+         "icon": "check",
+         "title": "Joinery",
+         "text": "Made-to-measure wardrobes and doors."
+        },
+        {
+         "icon": "bolt",
+         "title": "Services",
+         "text": "Electrics, plumbing and heating."
+        },
+        {
+         "icon": "sun",
+         "title": "Facades",
+         "text": "Refurbishment and exterior insulation."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Sample reference prices",
+       "note": "Sample amounts, not an offer: replace them with your own.",
+       "items": [
+        {
+         "section": "Visit",
+         "name": "Site visit and survey",
+         "price": "Free"
+        },
+        {
+         "section": "Design",
+         "name": "Renovation report and drawings",
+         "price": "from 600"
+        },
+        {
+         "section": "Works",
+         "name": "Full bathroom renovation",
+         "price": "from 4,500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a renovation in mind?",
+       "text": "Tell us what you want to change and we will suggest a visit to measure up.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "studio",
+    "title": "The studio",
+    "seo": {
+     "description": "Sample text: who we are, how we run a job and what matters to us when handing over a renovation to our clients."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your studio here, who is part of it and what sets you apart.\n\nTalk about how you control a job, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- One reference person per job\n- Fixed quote by item\n- Final documentation of the works"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Phases of a renovation",
+       "items": [
+        {
+         "title": "Visit and survey",
+         "text": "We take measurements and check the real state of the property."
+        },
+        {
+         "title": "Design and quote",
+         "text": "Drawings, measurements and an itemised quote."
+        },
+        {
+         "title": "Permits",
+         "text": "We handle what is needed before starting."
+        },
+        {
+         "title": "Works",
+         "text": "Demolition, services and finishes with a weekly report."
+        },
+        {
+         "title": "Handover",
+         "text": "Joint inspection, documents and warranty."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about permits, timescales, quotes and warranties for a renovation."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Do I need a permit to renovate?",
+         "answer": "It depends on the work and the council: changes to structure or facade usually require one. *Sample text.*"
+        },
+        {
+         "question": "How long does a renovation take?",
+         "answer": "It depends on the scope. A bathroom can take a few weeks and a full renovation several months (sample timescales, not a commitment)."
+        },
+        {
+         "question": "Is the quote fixed?",
+         "answer": "It is itemised; changes you ask for during the works are quoted separately and in writing."
+        },
+        {
+         "question": "Can I live at home during the works?",
+         "answer": "In partial renovations it is usually possible; in full ones it is normally not advisable."
+        },
+        {
+         "question": "What warranty do the works have?",
+         "answer": "You receive documentation and a warranty for what was done. *Sample text.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Have a renovation in mind?",
+       "text": "Tell us what you want to change and we will suggest a visit to measure up.",
+       "button_text": "Request a quote",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a site visit or tell us about your renovation and we will reply as soon as possible during office hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a quote",
+       "text": "Tell us what you want to renovate and we will suggest a visit to measure up.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "when-do-you-need-a-building-permit",
+    "title": "Building permit: when you need one",
+    "excerpt": "Sample blog text: a short, careful guide.",
+    "content": "Sample text. Write a useful article for your clients here, with general and careful information.\n\n## Work that usually needs one\n\nExplain which changes affect structure, facade or layout.\n\n## Before you start\n\nRemind readers that every council has its own rules and that it is best to ask.",
+    "tags": [
+     "permits",
+     "advice"
+    ]
+   },
+   {
+    "slug": "how-to-prepare-the-site-visit",
+    "title": "How to prepare the site visit",
+    "excerpt": "Sample text: what to have at hand on survey day.",
+    "content": "Sample text. Explain what the first visit is like so nobody arrives with doubts.\n\n## What to prepare\n\nOld drawings, photos and a list of what you want to change.\n\n## During the visit\n\nHow it is measured, what is checked and which questions are worth asking.",
+    "tags": [
+     "works"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Renovări măsurate la milimetru",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Servicii",
+    "url": "/servicii"
+   },
+   {
+    "label": "Studioul",
+    "url": "/studioul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Cere o ofertă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: renovări complete, bucătării și băi cu proiect, măsurători și urmărirea lucrării. Înlocuiește-l cu al firmei tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Renovări și reabilitări · Exemplu",
+       "title": "Renovarea ta, măsurată, proiectată și predată conform planului",
+       "subtitle": "Text de exemplu: spune într-o frază ce lucrări faci și cum le ții sub control, de la prima măsurătoare până la predarea cheilor.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi serviciile",
+       "cta2_link": "/servicii"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce facem",
+       "title": "Lucrări cu proiect în spate",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Renovări complete",
+         "text": "Locuințe și spații întregi: demolări, instalații și finisaje."
+        },
+        {
+         "icon": "shield",
+         "title": "Bucătării și băi",
+         "text": "Compartimentare, instalații sanitare și placări pe măsurători reale."
+        },
+        {
+         "icon": "check",
+         "title": "Tâmplărie la comandă",
+         "text": "Dulapuri, uși și mobilier făcute pe măsura golului."
+        },
+        {
+         "icon": "sun",
+         "title": "Reabilitarea fațadelor",
+         "text": "Inspecție, reparații și izolație exterioară mai bună."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Vizită tehnică după cererea ta (exemplu)"
+        },
+        {
+         "value": "12 ani",
+         "label": "De experiență pe șantier (exemplu)"
+        },
+        {
+         "value": "100 %",
+         "label": "Lucrări cu urmărire săptămânală (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fazele unei renovări",
+       "items": [
+        {
+         "title": "Vizită și măsurători",
+         "text": "Luăm măsuri și vedem starea reală a imobilului."
+        },
+        {
+         "title": "Proiect și ofertă",
+         "text": "Planuri, măsurători și o ofertă pe capitole."
+        },
+        {
+         "title": "Autorizații",
+         "text": "Ne ocupăm de ce trebuie înainte de a începe."
+        },
+        {
+         "title": "Lucrarea",
+         "text": "Demolări, instalații și finisaje, cu raport săptămânal."
+        },
+        {
+         "title": "Predare",
+         "text": "Verificare împreună, documente și garanție."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Studioul",
+       "title": "O echipă tehnică la fiecare lucrare",
+       "body": "- Un arhitect tehnic conduce proiectul\n- Ofertă pe capitole, fără surprize\n- Raport săptămânal cu poze și progres",
+       "button_text": "Studioul",
+       "button_link": "/studioul"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te gândești la o renovare?",
+       "text": "Spune-ne ce vrei să schimbi și îți propunem o vizită pentru măsurători.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicii",
+    "title": "Servicii",
+    "seo": {
+     "description": "Text de exemplu: renovări complete, bucătării și băi, tâmplărie, instalații și fațade cu proiect. Înlocuiește-l cu serviciile tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servicii",
+       "subtitle": "Text de exemplu: descrie serviciile cu cuvinte pe care le înțelege orice proprietar.",
+       "cta_text": "Cere o ofertă",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Renovare completă",
+         "text": "Locuință sau spațiu întreg, la cheie."
+        },
+        {
+         "icon": "shield",
+         "title": "Bucătării",
+         "text": "Proiect practic, montaj și electrocasnice."
+        },
+        {
+         "icon": "leaf",
+         "title": "Băi",
+         "text": "Căzi de duș, accesibilitate și placări."
+        },
+        {
+         "icon": "check",
+         "title": "Tâmplărie",
+         "text": "Dulapuri și uși la comandă."
+        },
+        {
+         "icon": "bolt",
+         "title": "Instalații",
+         "text": "Electrice, sanitare și climatizare."
+        },
+        {
+         "icon": "sun",
+         "title": "Fațade",
+         "text": "Reabilitare și izolație exterioară."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Repere de exemplu",
+       "note": "Sume de exemplu, fără valoare de ofertă: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Vizită",
+         "name": "Vizită tehnică și măsurători",
+         "price": "Gratuită"
+        },
+        {
+         "section": "Proiect",
+         "name": "Memoriu și planuri de renovare",
+         "price": "de la 600"
+        },
+        {
+         "section": "Lucrare",
+         "name": "Renovare completă de baie",
+         "price": "de la 4.500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te gândești la o renovare?",
+       "text": "Spune-ne ce vrei să schimbi și îți propunem o vizită pentru măsurători.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "studioul",
+    "title": "Studioul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum conducem o lucrare și ce contează pentru noi când predăm o renovare clienților noștri."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Spune aici povestea studioului tău, cine face parte din echipă și ce vă deosebește.\n\nVorbește despre cum controlați o lucrare, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- O singură persoană de contact pe lucrare\n- Ofertă fermă pe capitole\n- Documentația finală a lucrării"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fazele unei renovări",
+       "items": [
+        {
+         "title": "Vizită și măsurători",
+         "text": "Luăm măsuri și vedem starea reală a imobilului."
+        },
+        {
+         "title": "Proiect și ofertă",
+         "text": "Planuri, măsurători și o ofertă pe capitole."
+        },
+        {
+         "title": "Autorizații",
+         "text": "Ne ocupăm de ce trebuie înainte de a începe."
+        },
+        {
+         "title": "Lucrarea",
+         "text": "Demolări, instalații și finisaje, cu raport săptămânal."
+        },
+        {
+         "title": "Predare",
+         "text": "Verificare împreună, documente și garanție."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre autorizații, termene, oferte și garanții pentru o renovare."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Am nevoie de autorizație pentru renovare?",
+         "answer": "Depinde de lucrare și de primărie: cele care ating structura sau fațada de obicei o cer. *Text de exemplu.*"
+        },
+        {
+         "question": "Cât durează o renovare?",
+         "answer": "Depinde de amploare. O baie poate dura câteva săptămâni, o renovare completă mai multe luni (termene de exemplu, nu sunt un angajament)."
+        },
+        {
+         "question": "Oferta este fermă?",
+         "answer": "Este detaliată pe capitole; modificările cerute în timpul lucrării se ofertează separat și în scris."
+        },
+        {
+         "question": "Pot locui în casă în timpul lucrării?",
+         "answer": "La renovările parțiale de obicei se poate; la cele complete, de regulă nu este recomandat."
+        },
+        {
+         "question": "Ce garanție au lucrările?",
+         "answer": "Primești documentația și garanția pentru ce s-a executat. *Text de exemplu.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te gândești la o renovare?",
+       "text": "Spune-ne ce vrei să schimbi și îți propunem o vizită pentru măsurători.",
+       "button_text": "Cere o ofertă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: cere o vizită tehnică sau povestește-ne despre renovarea ta și îți răspundem cât mai repede în program."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Cere o ofertă",
+       "text": "Spune-ne ce vrei să renovezi și îți propunem o vizită pentru măsurători.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "autorizatie-de-constructie-cand-e-nevoie",
+    "title": "Autorizația de construire: când este nevoie",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și prudent.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienți, cu informații generale și prudente.\n\n## Lucrări care o cer de obicei\n\nExplică ce schimbări ating structura, fațada sau compartimentarea.\n\n## Înainte de a începe\n\nAmintește că fiecare primărie are regulile ei și că e bine să întrebi.",
+    "tags": [
+     "autorizatii",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "cum-pregatesti-vizita-tehnica",
+    "title": "Cum pregătești vizita tehnică",
+    "excerpt": "Text de exemplu: ce să ai la îndemână în ziua măsurătorilor.",
+    "content": "Text de exemplu. Povestește cum e prima vizită, ca nimeni să nu vină cu nelămuriri.\n\n## Ce pregătești\n\nPlanuri vechi, fotografii și o listă cu ce vrei să schimbi.\n\n## În timpul vizitei\n\nCum se măsoară, ce se verifică și ce întrebări merită puse.",
+    "tags": [
+     "lucrari"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Des rénovations mesurées au millimètre",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Services",
+    "url": "/services"
+   },
+   {
+    "label": "L'atelier",
+    "url": "/atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander un devis",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : rénovations complètes, cuisines et salles de bain avec projet, relevé et suivi de chantier. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Rénovation et réhabilitation · Exemple",
+       "title": "Votre rénovation, mesurée, dessinée et livrée selon le plan",
+       "subtitle": "Texte d'exemple : dites en une phrase quels travaux vous réalisez et comment vous les maîtrisez, du premier relevé à la remise des clés.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les services",
+       "cta2_link": "/services"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que nous faisons",
+       "title": "Des chantiers avec un projet derrière",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Rénovations complètes",
+         "text": "Logements et locaux entiers : démolition, réseaux et finitions."
+        },
+        {
+         "icon": "shield",
+         "title": "Cuisines et salles de bain",
+         "text": "Agencement, plomberie et revêtements sur des relevés réels."
+        },
+        {
+         "icon": "check",
+         "title": "Menuiserie sur mesure",
+         "text": "Placards, portes et mobilier fabriqués à la cote."
+        },
+        {
+         "icon": "sun",
+         "title": "Réhabilitation de façades",
+         "text": "Inspection, réparation et meilleure isolation extérieure."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Visite technique après votre demande (exemple)"
+        },
+        {
+         "value": "12 ans",
+         "label": "D'expérience de chantier (exemple)"
+        },
+        {
+         "value": "100 %",
+         "label": "Chantiers suivis chaque semaine (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Les phases d'une rénovation",
+       "items": [
+        {
+         "title": "Visite et relevé",
+         "text": "Nous prenons les cotes et constatons l'état réel du bien."
+        },
+        {
+         "title": "Projet et devis",
+         "text": "Plans, métrés et un devis détaillé par lots."
+        },
+        {
+         "title": "Autorisations",
+         "text": "Nous gérons les démarches avant de commencer."
+        },
+        {
+         "title": "Travaux",
+         "text": "Démolition, réseaux et finitions avec compte rendu hebdomadaire."
+        },
+        {
+         "title": "Livraison",
+         "text": "Réception commune, documents et garantie."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "L'atelier",
+       "title": "Une équipe technique sur chaque chantier",
+       "body": "- Un architecte technique pilote le projet\n- Devis détaillé par lots, sans surprise\n- Compte rendu hebdomadaire avec photos et avancement",
+       "button_text": "L'atelier",
+       "button_link": "/atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet de rénovation ?",
+       "text": "Dites-nous ce que vous voulez changer et nous vous proposons une visite pour prendre les cotes.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "services",
+    "title": "Services",
+    "seo": {
+     "description": "Texte d'exemple : rénovations complètes, cuisines et salles de bain, menuiserie, réseaux et façades avec projet. Remplacez-le par vos services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Services",
+       "subtitle": "Texte d'exemple : décrivez vos services avec des mots que tout propriétaire comprend.",
+       "cta_text": "Demander un devis",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Rénovation complète",
+         "text": "Logement ou local entier, clé en main."
+        },
+        {
+         "icon": "shield",
+         "title": "Cuisines",
+         "text": "Conception pratique, pose et électroménager."
+        },
+        {
+         "icon": "leaf",
+         "title": "Salles de bain",
+         "text": "Receveurs, accessibilité et revêtements."
+        },
+        {
+         "icon": "check",
+         "title": "Menuiserie",
+         "text": "Placards et portes sur mesure."
+        },
+        {
+         "icon": "bolt",
+         "title": "Installations",
+         "text": "Électricité, plomberie et climatisation."
+        },
+        {
+         "icon": "sun",
+         "title": "Façades",
+         "text": "Réhabilitation et isolation extérieure."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Repères d'exemple",
+       "note": "Montants d'exemple, sans valeur d'offre : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Visite",
+         "name": "Visite technique et relevé",
+         "price": "Gratuite"
+        },
+        {
+         "section": "Projet",
+         "name": "Dossier et plans de rénovation",
+         "price": "à partir de 600"
+        },
+        {
+         "section": "Travaux",
+         "name": "Rénovation d'une salle de bain complète",
+         "price": "à partir de 4 500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet de rénovation ?",
+       "text": "Dites-nous ce que vous voulez changer et nous vous proposons une visite pour prendre les cotes.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "atelier",
+    "title": "L'atelier",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous menons un chantier et ce qui compte pour nous quand nous livrons une rénovation."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre atelier, qui en fait partie et ce qui vous distingue.\n\nParlez de votre façon de maîtriser un chantier, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Un seul interlocuteur par chantier\n- Devis ferme par lots\n- Dossier final des travaux"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Les phases d'une rénovation",
+       "items": [
+        {
+         "title": "Visite et relevé",
+         "text": "Nous prenons les cotes et constatons l'état réel du bien."
+        },
+        {
+         "title": "Projet et devis",
+         "text": "Plans, métrés et un devis détaillé par lots."
+        },
+        {
+         "title": "Autorisations",
+         "text": "Nous gérons les démarches avant de commencer."
+        },
+        {
+         "title": "Travaux",
+         "text": "Démolition, réseaux et finitions avec compte rendu hebdomadaire."
+        },
+        {
+         "title": "Livraison",
+         "text": "Réception commune, documents et garantie."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les autorisations, les délais, les devis et les garanties d'une rénovation."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Faut-il une autorisation pour rénover ?",
+         "answer": "Cela dépend des travaux et de la commune : ceux qui touchent la structure ou la façade en demandent souvent une. *Texte d'exemple.*"
+        },
+        {
+         "question": "Combien de temps dure une rénovation ?",
+         "answer": "Cela dépend de l'ampleur. Une salle de bain peut prendre quelques semaines, une rénovation complète plusieurs mois (délais d'exemple, sans engagement)."
+        },
+        {
+         "question": "Le devis est-il ferme ?",
+         "answer": "Il est détaillé par lots ; les modifications demandées pendant les travaux font l'objet d'un devis séparé et écrit."
+        },
+        {
+         "question": "Puis-je rester chez moi pendant les travaux ?",
+         "answer": "Pour des rénovations partielles, c'est souvent possible ; pour les complètes, ce n'est en général pas conseillé."
+        },
+        {
+         "question": "Quelle garantie pour les travaux ?",
+         "answer": "Vous recevez les documents et la garantie de ce qui a été réalisé. *Texte d'exemple.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet de rénovation ?",
+       "text": "Dites-nous ce que vous voulez changer et nous vous proposons une visite pour prendre les cotes.",
+       "button_text": "Demander un devis",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez une visite technique ou parlez-nous de votre rénovation, nous vous répondrons au plus vite pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander un devis",
+       "text": "Dites-nous ce que vous voulez rénover et nous vous proposerons une visite pour prendre les cotes.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "permis-de-travaux-quand-est-il-necessaire",
+    "title": "Autorisation de travaux : quand est-elle nécessaire ?",
+    "excerpt": "Texte d'exemple pour le blog : un guide court et prudent.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos clients, avec des informations générales et prudentes.\n\n## Travaux qui en demandent souvent une\n\nExpliquez quels changements touchent la structure, la façade ou l'agencement.\n\n## Avant de commencer\n\nRappelez que chaque commune a ses règles et qu'il vaut mieux se renseigner.",
+    "tags": [
+     "autorisations",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "preparer-la-visite-technique",
+    "title": "Comment préparer la visite technique",
+    "excerpt": "Texte d'exemple : ce qu'il faut avoir sous la main le jour du relevé.",
+    "content": "Texte d'exemple. Expliquez comment se passe la première visite pour que personne n'arrive avec des doutes.\n\n## Ce qu'il faut préparer\n\nAnciens plans, photos et une liste de ce que vous voulez changer.\n\n## Pendant la visite\n\nComment on mesure, ce qu'on vérifie et quelles questions poser.",
+    "tags": [
+     "travaux"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Umbauten, auf den Millimeter genau",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Leistungen",
+    "url": "/leistungen"
+   },
+   {
+    "label": "Das Büro",
+    "url": "/das-buero"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Angebot anfordern",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Komplettsanierungen, Küchen und Bäder mit Planung, Aufmaß und Bauleitung. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Sanierung und Umbau · Beispiel",
+       "title": "Ihr Umbau, vermessen, geplant und planmäßig übergeben",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, welche Arbeiten Sie ausführen und wie Sie sie im Griff behalten, vom ersten Aufmaß bis zur Schlüsselübergabe.",
+       "cta_text": "Angebot anfordern",
+       "cta_link": "/kontakt",
+       "cta2_text": "Leistungen ansehen",
+       "cta2_link": "/leistungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was wir tun",
+       "title": "Bauarbeiten mit Planung dahinter",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Komplettsanierungen",
+         "text": "Ganze Wohnungen und Geschäfte: Abbruch, Installation und Ausbau."
+        },
+        {
+         "icon": "shield",
+         "title": "Küchen und Bäder",
+         "text": "Grundriss, Sanitär und Fliesen auf Basis echter Maße."
+        },
+        {
+         "icon": "check",
+         "title": "Tischlerei nach Maß",
+         "text": "Schränke, Türen und Möbel passgenau gebaut."
+        },
+        {
+         "icon": "sun",
+         "title": "Fassadensanierung",
+         "text": "Prüfung, Reparatur und bessere Außendämmung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Ortstermin nach Ihrer Anfrage (Beispiel)"
+        },
+        {
+         "value": "12 Jahre",
+         "label": "Baustellenerfahrung (Beispiel)"
+        },
+        {
+         "value": "100 %",
+         "label": "Baustellen mit wöchentlichem Bericht (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Phasen eines Umbaus",
+       "items": [
+        {
+         "title": "Termin und Aufmaß",
+         "text": "Wir messen aus und prüfen den tatsächlichen Zustand."
+        },
+        {
+         "title": "Planung und Angebot",
+         "text": "Pläne, Massen und ein Angebot nach Gewerken."
+        },
+        {
+         "title": "Genehmigungen",
+         "text": "Wir kümmern uns vor Baubeginn um alles Nötige."
+        },
+        {
+         "title": "Bauausführung",
+         "text": "Abbruch, Installation und Ausbau mit Wochenbericht."
+        },
+        {
+         "title": "Übergabe",
+         "text": "Gemeinsame Abnahme, Unterlagen und Gewährleistung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Büro",
+       "title": "Ein technisches Team auf jeder Baustelle",
+       "body": "- Ein Bautechniker leitet das Projekt\n- Angebot nach Gewerken, ohne Überraschungen\n- Wochenbericht mit Fotos und Baufortschritt",
+       "button_text": "Das Büro",
+       "button_link": "/das-buero"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Meinungen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Meinung: Ersetzen Sie ihn mit deren Zustimmung durch echte Meinungen Ihrer Kunden.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Umbau geplant?",
+       "text": "Sagen Sie uns, was sich ändern soll, und wir schlagen einen Termin zum Aufmaß vor.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "leistungen",
+    "title": "Leistungen",
+    "seo": {
+     "description": "Beispieltext: Komplettsanierung, Küchen und Bäder, Tischlerei, Haustechnik und Fassaden mit Planung. Ersetzen Sie ihn durch Ihre Leistungen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Leistungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Leistungen mit Worten, die jeder Eigentümer versteht.",
+       "cta_text": "Angebot anfordern",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Komplettsanierung",
+         "text": "Ganze Wohnung oder Gewerbefläche, schlüsselfertig."
+        },
+        {
+         "icon": "shield",
+         "title": "Küchen",
+         "text": "Praktische Planung, Einbau und Geräte."
+        },
+        {
+         "icon": "leaf",
+         "title": "Bäder",
+         "text": "Duschtassen, Barrierefreiheit und Fliesen."
+        },
+        {
+         "icon": "check",
+         "title": "Tischlerei",
+         "text": "Schränke und Türen nach Maß."
+        },
+        {
+         "icon": "bolt",
+         "title": "Haustechnik",
+         "text": "Elektro, Sanitär und Heizung."
+        },
+        {
+         "icon": "sun",
+         "title": "Fassaden",
+         "text": "Sanierung und Außendämmung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtwerte (Beispiel)",
+       "note": "Beispielbeträge ohne Angebotscharakter: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Termin",
+         "name": "Ortstermin und Aufmaß",
+         "price": "Kostenlos"
+        },
+        {
+         "section": "Planung",
+         "name": "Sanierungskonzept und Pläne",
+         "price": "ab 600"
+        },
+        {
+         "section": "Ausführung",
+         "name": "Komplettes Bad umbauen",
+         "price": "ab 4.500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Umbau geplant?",
+       "text": "Sagen Sie uns, was sich ändern soll, und wir schlagen einen Termin zum Aufmaß vor.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-buero",
+    "title": "Das Büro",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir eine Baustelle führen und was uns bei der Übergabe eines Umbaus an unsere Kunden wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Büros, wer dazugehört und was Sie unterscheidet.\n\nSprechen Sie darüber, wie Sie eine Baustelle steuern, nicht über Zahlen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Eine feste Ansprechperson pro Baustelle\n- Festes Angebot nach Gewerken\n- Abschlussdokumentation des Umbaus"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Phasen eines Umbaus",
+       "items": [
+        {
+         "title": "Termin und Aufmaß",
+         "text": "Wir messen aus und prüfen den tatsächlichen Zustand."
+        },
+        {
+         "title": "Planung und Angebot",
+         "text": "Pläne, Massen und ein Angebot nach Gewerken."
+        },
+        {
+         "title": "Genehmigungen",
+         "text": "Wir kümmern uns vor Baubeginn um alles Nötige."
+        },
+        {
+         "title": "Bauausführung",
+         "text": "Abbruch, Installation und Ausbau mit Wochenbericht."
+        },
+        {
+         "title": "Übergabe",
+         "text": "Gemeinsame Abnahme, Unterlagen und Gewährleistung."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Genehmigungen, Bauzeiten, Angeboten und Gewährleistung bei einem Umbau."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Brauche ich für den Umbau eine Genehmigung?",
+         "answer": "Das hängt von der Maßnahme und der Gemeinde ab: Eingriffe in Statik oder Fassade brauchen sie meist. *Beispieltext.*"
+        },
+        {
+         "question": "Wie lange dauert ein Umbau?",
+         "answer": "Das hängt vom Umfang ab. Ein Bad dauert einige Wochen, eine Komplettsanierung mehrere Monate (Beispielzeiten, keine Zusage)."
+        },
+        {
+         "question": "Ist das Angebot ein Festpreis?",
+         "answer": "Es ist nach Gewerken aufgeschlüsselt; Änderungen während der Arbeiten werden separat und schriftlich angeboten."
+        },
+        {
+         "question": "Kann ich während der Arbeiten zu Hause wohnen?",
+         "answer": "Bei Teilsanierungen meist ja; bei Komplettsanierungen ist es in der Regel nicht ratsam."
+        },
+        {
+         "question": "Welche Gewährleistung gilt?",
+         "answer": "Sie erhalten Unterlagen und Gewährleistung für das Ausgeführte. *Beispieltext.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Umbau geplant?",
+       "text": "Sagen Sie uns, was sich ändern soll, und wir schlagen einen Termin zum Aufmaß vor.",
+       "button_text": "Angebot anfordern",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Vereinbaren Sie einen Ortstermin oder schildern Sie uns Ihren Umbau, wir antworten so schnell wie möglich zu den Bürozeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Angebot anfordern",
+       "text": "Sagen Sie uns, was Sie umbauen möchten, und wir schlagen einen Termin zum Aufmaß vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ändern Sie sie in Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "baugenehmigung-wann-sie-noetig-ist",
+    "title": "Baugenehmigung: wann sie nötig ist",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, vorsichtiger Leitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Informationen.\n\n## Maßnahmen, die meist eine brauchen\n\nErklären Sie, welche Änderungen Statik, Fassade oder Grundriss betreffen.\n\n## Vor dem Start\n\nErinnern Sie daran, dass jede Gemeinde eigene Regeln hat und Nachfragen sinnvoll ist.",
+    "tags": [
+     "genehmigungen",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "ortstermin-vorbereiten",
+    "title": "So bereiten Sie den Ortstermin vor",
+    "excerpt": "Beispieltext: was am Tag des Aufmaßes bereitliegen sollte.",
+    "content": "Beispieltext. Erklären Sie, wie der erste Termin abläuft, damit niemand mit offenen Fragen kommt.\n\n## Was Sie vorbereiten\n\nAlte Pläne, Fotos und eine Liste dessen, was sich ändern soll.\n\n## Beim Termin\n\nWie gemessen wird, was geprüft wird und welche Fragen sich lohnen.",
+    "tags": [
+     "bau"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Ristrutturazioni misurate al millimetro",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Servizi",
+    "url": "/servizi"
+   },
+   {
+    "label": "Lo studio",
+    "url": "/studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi un preventivo",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: ristrutturazioni complete, cucine e bagni con progetto, rilievo e direzione dei lavori. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Ristrutturazioni e recupero · Esempio",
+       "title": "La tua ristrutturazione, misurata, progettata e consegnata a regola d'arte",
+       "subtitle": "Testo di esempio: racconta in una frase quali lavori fai e come li tieni sotto controllo, dal primo rilievo alla consegna delle chiavi.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i servizi",
+       "cta2_link": "/servizi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa facciamo",
+       "title": "Lavori con un progetto alle spalle",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Ristrutturazioni complete",
+         "text": "Case e locali interi: demolizioni, impianti e finiture."
+        },
+        {
+         "icon": "shield",
+         "title": "Cucine e bagni",
+         "text": "Distribuzione, idraulica e rivestimenti su misure reali."
+        },
+        {
+         "icon": "check",
+         "title": "Falegnameria su misura",
+         "text": "Armadi, porte e arredi costruiti sulla misura del vano."
+        },
+        {
+         "icon": "sun",
+         "title": "Recupero di facciate",
+         "text": "Ispezione, riparazione e miglior isolamento esterno."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Sopralluogo dopo la tua richiesta (esempio)"
+        },
+        {
+         "value": "12 anni",
+         "label": "Di esperienza in cantiere (esempio)"
+        },
+        {
+         "value": "100 %",
+         "label": "Cantieri con aggiornamento settimanale (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Le fasi di una ristrutturazione",
+       "items": [
+        {
+         "title": "Sopralluogo e rilievo",
+         "text": "Prendiamo le misure e verifichiamo lo stato reale dell'immobile."
+        },
+        {
+         "title": "Progetto e preventivo",
+         "text": "Disegni, computo e un preventivo per voci."
+        },
+        {
+         "title": "Permessi",
+         "text": "Ci occupiamo di ciò che serve prima di iniziare."
+        },
+        {
+         "title": "Lavori",
+         "text": "Demolizioni, impianti e finiture con rapporto settimanale."
+        },
+        {
+         "title": "Consegna",
+         "text": "Verifica insieme, documenti e garanzia."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Lo studio",
+       "title": "Un team tecnico in ogni cantiere",
+       "body": "- Un tecnico abilitato guida il progetto\n- Preventivo per voci, senza sorprese\n- Rapporto settimanale con foto e avanzamento",
+       "button_text": "Lo studio",
+       "button_link": "/studio"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una ristrutturazione in mente?",
+       "text": "Raccontaci cosa vuoi cambiare e ti proponiamo un sopralluogo per le misure.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servizi",
+    "title": "Servizi",
+    "seo": {
+     "description": "Testo di esempio: ristrutturazioni complete, cucine e bagni, falegnameria, impianti e facciate con progetto. Sostituiscilo con i tuoi servizi."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Servizi",
+       "subtitle": "Testo di esempio: descrivi i tuoi servizi con parole che capisca qualsiasi proprietario.",
+       "cta_text": "Richiedi un preventivo",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Ristrutturazione completa",
+         "text": "Casa o locale interi, chiavi in mano."
+        },
+        {
+         "icon": "shield",
+         "title": "Cucine",
+         "text": "Progetto pratico, montaggio ed elettrodomestici."
+        },
+        {
+         "icon": "leaf",
+         "title": "Bagni",
+         "text": "Piatti doccia, accessibilità e rivestimenti."
+        },
+        {
+         "icon": "check",
+         "title": "Falegnameria",
+         "text": "Armadi e porte su misura."
+        },
+        {
+         "icon": "bolt",
+         "title": "Impianti",
+         "text": "Elettrico, idraulico e climatizzazione."
+        },
+        {
+         "icon": "sun",
+         "title": "Facciate",
+         "text": "Recupero e isolamento esterno."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Riferimenti di esempio",
+       "note": "Importi di esempio, senza valore di offerta: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Sopralluogo",
+         "name": "Sopralluogo tecnico e rilievo",
+         "price": "Gratuito"
+        },
+        {
+         "section": "Progetto",
+         "name": "Relazione e disegni di ristrutturazione",
+         "price": "da 600"
+        },
+        {
+         "section": "Lavori",
+         "name": "Ristrutturazione completa del bagno",
+         "price": "da 4.500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una ristrutturazione in mente?",
+       "text": "Raccontaci cosa vuoi cambiare e ti proponiamo un sopralluogo per le misure.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "studio",
+    "title": "Lo studio",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come seguiamo un cantiere e cosa ci sta a cuore quando consegniamo una ristrutturazione ai nostri clienti."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo studio, chi ne fa parte e cosa vi distingue.\n\nParla di come controllate un cantiere, non di numeri che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Un solo referente per cantiere\n- Preventivo chiuso per voci\n- Documentazione finale dei lavori"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Le fasi di una ristrutturazione",
+       "items": [
+        {
+         "title": "Sopralluogo e rilievo",
+         "text": "Prendiamo le misure e verifichiamo lo stato reale dell'immobile."
+        },
+        {
+         "title": "Progetto e preventivo",
+         "text": "Disegni, computo e un preventivo per voci."
+        },
+        {
+         "title": "Permessi",
+         "text": "Ci occupiamo di ciò che serve prima di iniziare."
+        },
+        {
+         "title": "Lavori",
+         "text": "Demolizioni, impianti e finiture con rapporto settimanale."
+        },
+        {
+         "title": "Consegna",
+         "text": "Verifica insieme, documenti e garanzia."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su permessi, tempi, preventivi e garanzie di una ristrutturazione."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Serve un permesso per ristrutturare?",
+         "answer": "Dipende dai lavori e dal comune: quelli che toccano struttura o facciata di solito lo richiedono. *Testo di esempio.*"
+        },
+        {
+         "question": "Quanto dura una ristrutturazione?",
+         "answer": "Dipende dall'entità. Un bagno può richiedere alcune settimane, una ristrutturazione completa diversi mesi (tempi di esempio, non un impegno)."
+        },
+        {
+         "question": "Il preventivo è chiuso?",
+         "answer": "È dettagliato per voci; le modifiche richieste durante i lavori si quotano a parte e per iscritto."
+        },
+        {
+         "question": "Posso abitare in casa durante i lavori?",
+         "answer": "Nelle ristrutturazioni parziali di solito sì; in quelle complete in genere non è consigliabile."
+        },
+        {
+         "question": "Che garanzia hanno i lavori?",
+         "answer": "Ricevi la documentazione e la garanzia di quanto eseguito. *Testo di esempio.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai una ristrutturazione in mente?",
+       "text": "Raccontaci cosa vuoi cambiare e ti proponiamo un sopralluogo per le misure.",
+       "button_text": "Richiedi un preventivo",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi un sopralluogo o raccontaci la tua ristrutturazione e ti risponderemo il prima possibile negli orari d'ufficio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi un preventivo",
+       "text": "Raccontaci cosa vuoi ristrutturare e ti proporremo un sopralluogo per le misure.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "permesso-di-costruire-quando-serve",
+    "title": "Permesso di costruire: quando serve",
+    "excerpt": "Testo di esempio per il blog: una guida breve e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con informazioni generali e prudenti.\n\n## Lavori che di solito lo richiedono\n\nSpiega quali modifiche toccano struttura, facciata o distribuzione.\n\n## Prima di iniziare\n\nRicorda che ogni comune ha le sue regole e che conviene informarsi.",
+    "tags": [
+     "permessi",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "preparare-il-sopralluogo",
+    "title": "Come preparare il sopralluogo",
+    "excerpt": "Testo di esempio: cosa avere a portata di mano il giorno del rilievo.",
+    "content": "Testo di esempio. Racconta com'è il primo sopralluogo perché nessuno arrivi con dubbi.\n\n## Cosa preparare\n\nVecchi disegni, foto e un elenco di ciò che vuoi cambiare.\n\n## Durante il sopralluogo\n\nCome si misura, cosa si verifica e quali domande vale la pena fare.",
+    "tags": [
+     "lavori"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Remodelações medidas ao milímetro",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Serviços",
+    "url": "/servicos"
+   },
+   {
+    "label": "O atelier",
+    "url": "/atelier"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir orçamento",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: remodelações integrais, cozinhas e casas de banho com projeto, medição e acompanhamento de obra. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Remodelação e reabilitação · Exemplo",
+       "title": "A sua remodelação, medida, projetada e entregue conforme o plano",
+       "subtitle": "Texto de exemplo: diga numa frase que obras faz e como as mantém controladas, da primeira medição à entrega das chaves.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver serviços",
+       "cta2_link": "/servicos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que fazemos",
+       "title": "Obras com projeto por trás",
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Remodelações integrais",
+         "text": "Casas e lojas completas: demolição, instalações e acabamentos."
+        },
+        {
+         "icon": "shield",
+         "title": "Cozinhas e casas de banho",
+         "text": "Distribuição, canalização e revestimentos com medições reais."
+        },
+        {
+         "icon": "check",
+         "title": "Carpintaria por medida",
+         "text": "Roupeiros, portas e mobiliário feitos à medida do vão."
+        },
+        {
+         "icon": "sun",
+         "title": "Reabilitação de fachadas",
+         "text": "Inspeção, reparação e melhor isolamento exterior."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "48 h",
+         "label": "Visita técnica após o seu pedido (exemplo)"
+        },
+        {
+         "value": "12 anos",
+         "label": "De experiência em obra (exemplo)"
+        },
+        {
+         "value": "100 %",
+         "label": "Obras com acompanhamento semanal (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fases de uma remodelação",
+       "items": [
+        {
+         "title": "Visita e medição",
+         "text": "Tiramos medidas e vemos o estado real do imóvel."
+        },
+        {
+         "title": "Projeto e orçamento",
+         "text": "Plantas, medições e um orçamento por artigos."
+        },
+        {
+         "title": "Licenças",
+         "text": "Tratamos do que for preciso antes de começar."
+        },
+        {
+         "title": "Obra",
+         "text": "Demolição, instalações e acabamentos com relatório semanal."
+        },
+        {
+         "title": "Entrega",
+         "text": "Vistoria conjunta, documentação e garantia."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O atelier",
+       "title": "Uma equipa técnica em cada obra",
+       "body": "- Um arquiteto técnico lidera o projeto\n- Orçamento por artigos, sem surpresas\n- Relatório semanal com fotografias e avanço",
+       "button_text": "O atelier",
+       "button_link": "/atelier"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma remodelação em mente?",
+       "text": "Diga-nos o que quer mudar e propomos uma visita para medir.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "servicos",
+    "title": "Serviços",
+    "seo": {
+     "description": "Texto de exemplo: remodelações integrais, cozinhas e casas de banho, carpintaria, instalações e fachadas com projeto. Substitua-o pelos seus serviços."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Serviços",
+       "subtitle": "Texto de exemplo: descreva os seus serviços com palavras que qualquer proprietário entenda.",
+       "cta_text": "Pedir orçamento",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "warehouse",
+         "title": "Remodelação integral",
+         "text": "Casa ou loja completa, chave na mão."
+        },
+        {
+         "icon": "shield",
+         "title": "Cozinhas",
+         "text": "Projeto prático, montagem e eletrodomésticos."
+        },
+        {
+         "icon": "leaf",
+         "title": "Casas de banho",
+         "text": "Bases de duche, acessibilidade e revestimentos."
+        },
+        {
+         "icon": "check",
+         "title": "Carpintaria",
+         "text": "Roupeiros e portas por medida."
+        },
+        {
+         "icon": "bolt",
+         "title": "Instalações",
+         "text": "Eletricidade, canalização e climatização."
+        },
+        {
+         "icon": "sun",
+         "title": "Fachadas",
+         "text": "Reabilitação e isolamento exterior."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Referências de exemplo",
+       "note": "Valores de exemplo, sem valor de proposta: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Visita",
+         "name": "Visita técnica e medição",
+         "price": "Gratuita"
+        },
+        {
+         "section": "Projeto",
+         "name": "Memória e plantas de remodelação",
+         "price": "desde 600"
+        },
+        {
+         "section": "Obra",
+         "name": "Remodelação de casa de banho completa",
+         "price": "desde 4.500"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma remodelação em mente?",
+       "text": "Diga-nos o que quer mudar e propomos uma visita para medir.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "atelier",
+    "title": "O atelier",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como conduzimos uma obra e o que nos importa ao entregar uma remodelação aos nossos clientes."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu atelier, quem faz parte dele e o que vos distingue.\n\nFale de como controlam uma obra, não de números que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Uma só pessoa de referência por obra\n- Orçamento fechado por artigos\n- Documentação final da obra"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Fases de uma remodelação",
+       "items": [
+        {
+         "title": "Visita e medição",
+         "text": "Tiramos medidas e vemos o estado real do imóvel."
+        },
+        {
+         "title": "Projeto e orçamento",
+         "text": "Plantas, medições e um orçamento por artigos."
+        },
+        {
+         "title": "Licenças",
+         "text": "Tratamos do que for preciso antes de começar."
+        },
+        {
+         "title": "Obra",
+         "text": "Demolição, instalações e acabamentos com relatório semanal."
+        },
+        {
+         "title": "Entrega",
+         "text": "Vistoria conjunta, documentação e garantia."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre licenças, prazos, orçamentos e garantias de uma remodelação."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Preciso de licença para remodelar?",
+         "answer": "Depende da obra e do município: as que afetam a estrutura ou a fachada costumam exigi-la. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quanto tempo demora uma remodelação?",
+         "answer": "Depende do âmbito. Uma casa de banho pode levar algumas semanas e uma remodelação integral vários meses (prazos de exemplo, sem compromisso)."
+        },
+        {
+         "question": "O orçamento é fechado?",
+         "answer": "É detalhado por artigos; as alterações pedidas durante a obra são orçamentadas à parte e por escrito."
+        },
+        {
+         "question": "Posso viver em casa durante a obra?",
+         "answer": "Em remodelações parciais costuma ser possível; nas integrais, normalmente não é aconselhável."
+        },
+        {
+         "question": "Que garantia tem a obra?",
+         "answer": "Recebe documentação e garantia do que foi executado. *Texto de exemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem uma remodelação em mente?",
+       "text": "Diga-nos o que quer mudar e propomos uma visita para medir.",
+       "button_text": "Pedir orçamento",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça uma visita técnica ou conte-nos a sua remodelação e respondemos o mais depressa possível no horário de expediente."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir orçamento",
+       "text": "Diga-nos o que quer remodelar e propomos uma visita para medir.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: mude-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "licenca-de-obra-quando-e-necessaria",
+    "title": "Licença de obra: quando é necessária",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com informação geral e prudente.\n\n## Obras que costumam exigi-la\n\nExplique que alterações afetam a estrutura, a fachada ou a distribuição.\n\n## Antes de começar\n\nLembre que cada município tem as suas regras e que o melhor é perguntar.",
+    "tags": [
+     "licencas",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "preparar-a-visita-tecnica",
+    "title": "Como preparar a visita técnica",
+    "excerpt": "Texto de exemplo: o que ter à mão no dia da medição.",
+    "content": "Texto de exemplo. Explique como é a primeira visita para que ninguém chegue com dúvidas.\n\n## O que preparar\n\nPlantas antigas, fotografias e uma lista do que quer mudar.\n\n## Durante a visita\n\nComo se mede, o que se verifica e que perguntas vale a pena fazer.",
+    "tags": [
+     "obras"
+    ]
+   }
+  ]
+ }
+}

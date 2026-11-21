@@ -1,0 +1,64 @@
+{
+  "slug": "cota",
+  "name": "Cota",
+  "description": "Plano técnico, claro y preciso: reformas, arquitectura técnica, carpintería e instalaciones",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "reformas integrales",
+    "cocinas y baños",
+    "arquitectura técnica",
+    "aparejadores",
+    "carpintería a medida",
+    "instaladores",
+    "interiorismo práctico",
+    "rehabilitación de fachadas"
+  ],
+  "suggested_accent": "#b4361f",
+  "pitch": "Para empresas de obra y reforma que quieren transmitir precisión, orden y proyecto bien medido, con tono de plano sobre papel claro; si buscas fuerza de taller y maquinaria (contratas, obra pesada, metal), mejor «Industrial».",
+  "style": "plano técnico, claro y preciso",
+  "colors": {
+    "acento": "#b4361f",
+    "fondo": "#f6f4ef",
+    "texto": "#1c2430",
+    "linea_plano": "#2b59c3",
+    "rejilla": "#dbe4f3",
+    "fondo_oscuro": "#0c1a33"
+  },
+  "typography": {
+    "titulos": "Chivo",
+    "texto": "Chivo (cotas y numeración en Chivo Mono)"
+  },
+  "dark_mode": "auto",
+  "fonts": "Chivo y Chivo Mono (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (ladrillo recomendado; botones, subrayado del menú y barra del titular)",
+      "--blue (líneas de plano: cotas, códigos, iconos; se aclara en oscuro)",
+      "--rule (filetes de tinta de cabecera, celdas y cajetín)",
+      "--grid / --grid-major (rejilla de plano cada 20 y 100 px)",
+      "--ink (fondo del pie y de la regla superior)",
+      "--mono (Chivo Mono para cotas y etiquetas)"
+    ],
+    "clases_tema": [
+      ".dim (línea de cota con número de sección; la pone _head.php y numera un CSS counter)",
+      ".crop / .split-media (marcas de corte en las esquinas de la imagen)",
+      ".hero-cota (portada sobre rejilla) y .hero-plan (planta dibujada si no hay imagen)",
+      ".block-features .feature (celda de hoja de especificaciones con código A-01)",
+      ".step / .step-num (fase de obra con cota y código F-01)",
+      ".stats / .stat-num / .stat-unit (medidas con unidad en mono)",
+      ".cta / .cta-main / .cta-act (cajetín de plano)",
+      ".ruler-bar (regla superior con contacto y accesos)"
+    ],
+    "bloques_recomendados": [
+      "hero",
+      "features (partidas o servicios, codificados A-01…)",
+      "steps (fases de obra)",
+      "stats (medidas)",
+      "faq (licencias y plazos)",
+      "cta",
+      "pricelist"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme): el papel pasa a plano azul con líneas blancas al 8 %. Si añades colores fijos en tu CSS, dales su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
