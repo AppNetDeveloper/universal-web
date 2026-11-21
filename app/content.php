@@ -708,7 +708,11 @@ final class SiteService
     public function forgetRoutes(): void
     {
         $this->routes = null;
+        $this->memo = [];
     }
+
+    /** Ajustes ya calculados en esta petición, por idioma y contenido de los ajustes (se descartan al cambiar algo). */
+    private array $memo = [];
 
     /** Dirección automática (sin fijar) de una página ('page'), entrada ('post') o del blog ('blog'). */
     public function autoPath(string $kind, string $slug, ?string $lang = null): string
@@ -852,6 +856,11 @@ final class SiteService
     /** Ajustes tal y como se ven en el idioma actual (textos traducidos y enlaces internos con su prefijo). */
     public function settings(): array
     {
+        return $this->memo['s|' . $this->lang . '|' . md5((string) $this->site['settings'])] ??= $this->computeSettings();
+    }
+
+    private function computeSettings(): array
+    {
         $s = $this->baseSettings();
         $local = fn(string $u) => str_starts_with($u, '/') && !str_starts_with($u, '//') ? $this->langPath($u) : $u;
         if ($this->lang === $this->defaultLang()) {
@@ -879,6 +888,11 @@ final class SiteService
 
     /** Ajustes guardados (idioma principal), sin traducir: base para editar. */
     public function baseSettings(): array
+    {
+        return $this->memo['b|' . md5((string) $this->site['settings'])] ??= $this->computeBaseSettings();
+    }
+
+    private function computeBaseSettings(): array
     {
         $s = array_replace_recursive(site_defaults(), json_dec($this->site['settings']));
         // Todas las URLs pasan por clean_url() también al leer: nada de javascript: aunque venga de una copia antigua.

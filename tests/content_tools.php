@@ -160,7 +160,9 @@ ok('redirect_save externo https', ($r['redirect']['from'] ?? '') === '/viejo' &&
 $call('page_save', ['slug' => 'enlaza', 'title' => 'Enlaza', 'status' => 'published', 'blocks' => [['type' => 'text', 'data' => ['title' => 'x', 'body' => 'Ver [tarifas](/tarifas) y [rota](/no-hay).']]]]);
 $sc = site_check($svc);
 $msgs = array_map(fn($i) => $i['severity'] . ':' . $i['message'], $sc['issues']);
-ok('sitecheck: enlace a redirigida es notice', (bool) array_filter($msgs, fn($x) => str_starts_with($x, 'notice:Enlace a una URL redirigida: /tarifas')), json_encode($msgs));
+// 0.4.0: un enlace a una dirección con 301 se escribe ya hacia su destino (no queda enlace a la redirección)
+ok('sitecheck: enlace a redirigida va directo a su destino', !array_filter($msgs, fn($x) => str_contains($x, '/tarifas'))
+    && str_contains(site_check_render($svc, '/enlaza')['body'], '<a href="/precios">tarifas</a>'), json_encode($msgs));
 ok('sitecheck: no la marca como rota', !array_filter($msgs, fn($x) => str_contains($x, 'Enlace roto: /tarifas')) && (bool) array_filter($msgs, fn($x) => str_contains($x, 'Enlace roto: /no-hay')));
 $call('page_delete', ['slug' => 'enlaza']);
 $call('page_save', ['slug' => 'borrame', 'title' => 'Borrame', 'status' => 'published', 'blocks' => []]);
