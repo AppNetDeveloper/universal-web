@@ -7,7 +7,7 @@ declare(strict_types=1);
  * Sin dependencias externas: funciona en PHP 8.1+ con pdo_sqlite y mbstring.
  */
 
-const UW_VERSION = '0.5.0';
+const UW_VERSION = '0.5.1';
 const UW_SCHEMA = 15;
 const UW_AUTHOR_URL = 'https://www.bionicadri.com';
 const UW_DEMO_URL = 'https://bionicadri.com/contacto.html#formulario';

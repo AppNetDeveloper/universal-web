@@ -1,5 +1,34 @@
 # Cambios de Universal Web
 
+## [0.5.1] — 2026-11
+
+Los diez temas de la 0.4.0 se ponen al nivel de los diez de la 0.5.0: textos de ejemplo, contraste con cualquier color de
+marca y selector de idioma compacto.
+
+### Textos de ejemplo en los 20 temas
+- **Cálido, Corporativo, Default, Editorial, Industrial, Minimal, Natural, Noche, Prestigio y Vibrante** traen ya su
+  `sample.json`: una empresa ficticia del sector de su ficha, 5 páginas y 2 entradas en español, inglés, rumano, francés,
+  alemán, italiano y portugués, con las cifras y opiniones marcadas como ejemplo y sin datos de contacto.
+- **Crear páginas iniciales** y la herramienta MCP `theme_sample` funcionan ahora con los 20 temas.
+
+### Contraste AA con el color de marca
+- En los temas de la 0.4.0, el acento usado como texto se oscurece (o, en Noche, se aclara) lo justo para llegar a AA aunque
+  el cliente elija un amarillo o un azul marino; el texto sobre fondos de acento (botones, bandas, cifras, pasos) cambia
+  de claro a oscuro según la luminosidad del acento. Medido con `#f5b400` y `#1e3a8a` y con el color por defecto de cada tema.
+- Con el color por defecto de cada tema el aspecto es el mismo, salvo retoques mínimos de tono en textos secundarios y en
+  el final de algunos degradados para llegar a AA (portada de Default y Minimal, botones de Corporativo, números de pasos de Vibrante).
+- El tema Default aporta `--accent-large`, `--accent-deep` y `--on-accent-inv`, que heredan los temas que cuelgan de él
+  (documentado en `docs/THEMES.md`).
+- Corporativo (y por herencia Cálido e Industrial): el adorno de la imagen ya no se sale 2 px de la pantalla en móvil.
+
+### Selector de idioma
+- Con 4 idiomas o más, los 10 temas antiguos usan el desplegable compacto de los nuevos (se cierra con Escape o al pulsar
+  fuera): con los 7 idiomas la cabecera cabe de 360 a 1440 px, también con el menú en alemán.
+
+### Pruebas
+- `tests/themes_render.php` exige `sample.json` en los 20 temas y lo revisa (7 idiomas, bloques válidos, descripciones SEO,
+  opiniones marcadas como ejemplo, sin palabras vetadas) y pinta una web nueva con él. `ONLY_THEME=<tema>` lo limita a un tema.
+
 ## [0.5.0] — 2026-11
 
 Diez temas nuevos, todos con modo claro y oscuro, y una ficha por tema para que la IA elija el diseño adecuado sin
