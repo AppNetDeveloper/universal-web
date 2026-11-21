@@ -1,0 +1,3188 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Sutil). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Belleza y cuidado con calma",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Tratamientos",
+    "url": "/tratamientos"
+   },
+   {
+    "label": "El estudio",
+    "url": "/el-estudio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar cita",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: centro de estética con tratamientos faciales, manos y pies, cejas y pestañas, y maquillaje de novias. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro de estética · Ejemplo",
+       "title": "Cuidarte también es un arte",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué hace tu estudio y cómo se sienten tus clientas al salir.",
+       "cta_text": "Reservar cita",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver tratamientos",
+       "cta2_link": "/tratamientos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Nuestros rituales",
+       "title": "Lo que hacemos por ti",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Cuidado facial",
+         "text": "Limpieza, hidratación y tratamientos a medida de tu piel."
+        },
+        {
+         "icon": "star",
+         "title": "Manos y pies",
+         "text": "Manicura y pedicura con esmaltes duraderos."
+        },
+        {
+         "icon": "sun",
+         "title": "Cejas y pestañas",
+         "text": "Diseño, laminado y lifting para una mirada natural."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 años",
+         "label": "De experiencia (ejemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Cabinas privadas (ejemplo)"
+        },
+        {
+         "value": "L–S",
+         "label": "Días con cita (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carta de tratamientos",
+       "note": "Precios de ejemplo: sustitúyelos por los de tu centro.",
+       "items": [
+        {
+         "section": "Rostro",
+         "name": "Limpieza facial",
+         "price": "55",
+         "description": "Limpieza profunda con masaje"
+        },
+        {
+         "section": "Rostro",
+         "name": "Hidratación intensiva",
+         "price": "65",
+         "description": "Mascarilla y masaje drenante"
+        },
+        {
+         "section": "Manos y pies",
+         "name": "Manicura semipermanente",
+         "price": "30",
+         "description": "Dura hasta tres semanas"
+        },
+        {
+         "section": "Manos y pies",
+         "name": "Pedicura completa",
+         "price": "40",
+         "description": "Con exfoliación y masaje"
+        },
+        {
+         "section": "Mirada",
+         "name": "Lifting de pestañas",
+         "price": "48",
+         "description": "Con tinte incluido"
+        },
+        {
+         "section": "Mirada",
+         "name": "Diseño de cejas",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "El estudio",
+       "title": "Un rincón pensado para desconectar",
+       "body": "- Cabinas privadas y luminosas\n- Productos suaves con la piel\n- Cita sin prisas, con tiempo para ti",
+       "button_text": "Conoce el estudio",
+       "button_link": "/el-estudio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Tu visita, paso a paso",
+       "items": [
+        {
+         "title": "Cuéntanos",
+         "text": "Hablamos de lo que necesitas y de lo que te gusta."
+        },
+        {
+         "title": "Relájate",
+         "text": "Un espacio tranquilo, sin prisas y con buen trato."
+        },
+        {
+         "title": "Brilla",
+         "text": "Sales cuidada y con consejos para mantenerlo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Lo que dicen de nosotras",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientas, con su permiso.",
+         "name": "Clienta de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te reservamos un momento?",
+       "text": "Escríbenos y te proponemos el mejor hueco.",
+       "button_text": "Reservar cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "tratamientos",
+    "title": "Tratamientos",
+    "seo": {
+     "description": "Texto de ejemplo: carta de tratamientos de estética con cuidado facial, manos y pies, cejas y pestañas, depilación y novias."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Tratamientos",
+       "subtitle": "Texto de ejemplo: describe tus tratamientos con palabras sencillas y cercanas.",
+       "cta_text": "Reservar cita",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Facial",
+         "text": "Limpieza profunda e hidratación."
+        },
+        {
+         "icon": "star",
+         "title": "Manicura",
+         "text": "Esmaltado clásico o semipermanente."
+        },
+        {
+         "icon": "sun",
+         "title": "Pestañas",
+         "text": "Lifting y tinte con efecto natural."
+        },
+        {
+         "icon": "check",
+         "title": "Depilación",
+         "text": "Cera suave, con cuidado de la piel."
+        },
+        {
+         "icon": "users",
+         "title": "Novias",
+         "text": "Prueba y maquillaje del gran día."
+        },
+        {
+         "icon": "leaf",
+         "title": "Masaje",
+         "text": "Relajante, con aceites naturales."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carta de tratamientos",
+       "note": "Precios de ejemplo: sustitúyelos por los de tu centro.",
+       "items": [
+        {
+         "section": "Rostro",
+         "name": "Limpieza facial",
+         "price": "55",
+         "description": "Limpieza profunda con masaje"
+        },
+        {
+         "section": "Rostro",
+         "name": "Hidratación intensiva",
+         "price": "65",
+         "description": "Mascarilla y masaje drenante"
+        },
+        {
+         "section": "Manos y pies",
+         "name": "Manicura semipermanente",
+         "price": "30",
+         "description": "Dura hasta tres semanas"
+        },
+        {
+         "section": "Manos y pies",
+         "name": "Pedicura completa",
+         "price": "40",
+         "description": "Con exfoliación y masaje"
+        },
+        {
+         "section": "Mirada",
+         "name": "Lifting de pestañas",
+         "price": "48",
+         "description": "Con tinte incluido"
+        },
+        {
+         "section": "Mirada",
+         "name": "Diseño de cejas",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te reservamos un momento?",
+       "text": "Escríbenos y te proponemos el mejor hueco.",
+       "button_text": "Reservar cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "el-estudio",
+    "title": "El estudio",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa al cuidar de las personas que nos visitan."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu estudio, quién lo forma y qué os hace distintas.\n\nHabla de cómo cuidáis a cada persona, no de promesas que no puedas cumplir."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Diagnóstico personal antes de empezar\n- Productos de confianza y hojas de cuidados\n- Seguimiento tras cada tratamiento"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Tu visita, paso a paso",
+       "items": [
+        {
+         "title": "Cuéntanos",
+         "text": "Hablamos de lo que necesitas y de lo que te gusta."
+        },
+        {
+         "title": "Relájate",
+         "text": "Un espacio tranquilo, sin prisas y con buen trato."
+        },
+        {
+         "title": "Brilla",
+         "text": "Sales cuidada y con consejos para mantenerlo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre reservas, cancelaciones, productos, bonos y cuidados tras el tratamiento."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo reservo una cita?",
+         "answer": "Desde el formulario de contacto o por teléfono. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Puedo cambiar o cancelar?",
+         "answer": "Sí, avísanos con 24 horas de antelación y te damos otro hueco."
+        },
+        {
+         "question": "¿Qué pasa si tengo la piel sensible?",
+         "answer": "Adaptamos los productos; cuéntanoslo al reservar."
+        },
+        {
+         "question": "¿Ofrecéis bonos regalo?",
+         "answer": "Sí. Indica aquí cómo funcionan tus bonos. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Hacéis maquillaje de novia?",
+         "answer": "Sí, con prueba previa. *Texto de ejemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Te reservamos un momento?",
+       "text": "Escríbenos y te proponemos el mejor hueco.",
+       "button_text": "Reservar cita",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: reserva tu cita o escríbenos con tu consulta y te respondemos lo antes posible en horario del estudio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar cita",
+       "text": "Cuéntanos qué te apetece y te proponemos cita.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cuidado-de-la-piel-en-invierno",
+    "title": "Cuidado de la piel en invierno",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y prudente.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientas, con consejos generales y prudentes.\n\n## Hidratación diaria\n\nExplica la rutina básica y para qué sirve cada paso.\n\n## Cuándo consultar\n\nRecuerda que cada piel es distinta y que lo mejor es preguntar.",
+    "tags": [
+     "piel",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "manicura-que-dure",
+    "title": "Cómo hacer que la manicura dure más",
+    "excerpt": "Texto de ejemplo: cuidados sencillos para tus uñas.",
+    "content": "Texto de ejemplo. Cuenta cómo cuidar las uñas entre una cita y la siguiente.\n\n## En casa\n\nHábitos y productos que ayudan.\n\n## En el estudio\n\nCada cuánto conviene renovar el esmaltado.",
+    "tags": [
+     "unas"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Beauty and care, without rushing",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Treatments",
+    "url": "/treatments"
+   },
+   {
+    "label": "The studio",
+    "url": "/the-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a visit",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: beauty studio with facials, hands and feet, brows and lashes, and bridal make-up. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Beauty studio · Sample",
+       "title": "Taking care of yourself is an art too",
+       "subtitle": "Sample text: say in one sentence what your studio does and how clients feel when they leave.",
+       "cta_text": "Book a visit",
+       "cta_link": "/contact",
+       "cta2_text": "See treatments",
+       "cta2_link": "/treatments"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Our rituals",
+       "title": "What we do for you",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Facial care",
+         "text": "Cleansing, hydration and treatments for your skin."
+        },
+        {
+         "icon": "star",
+         "title": "Hands and feet",
+         "text": "Manicures and pedicures with long-lasting polish."
+        },
+        {
+         "icon": "sun",
+         "title": "Brows and lashes",
+         "text": "Shaping, lamination and lifting for a natural look."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 years",
+         "label": "Of experience (sample)"
+        },
+        {
+         "value": "6",
+         "label": "Private rooms (sample)"
+        },
+        {
+         "value": "Mon–Sat",
+         "label": "Days with bookings (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Treatment menu",
+       "note": "Sample prices: replace them with your own.",
+       "items": [
+        {
+         "section": "Face",
+         "name": "Facial cleanse",
+         "price": "55",
+         "description": "Deep cleanse with massage"
+        },
+        {
+         "section": "Face",
+         "name": "Intense hydration",
+         "price": "65",
+         "description": "Mask and lymphatic massage"
+        },
+        {
+         "section": "Hands and feet",
+         "name": "Gel manicure",
+         "price": "30",
+         "description": "Lasts up to three weeks"
+        },
+        {
+         "section": "Hands and feet",
+         "name": "Full pedicure",
+         "price": "40",
+         "description": "With scrub and massage"
+        },
+        {
+         "section": "Eyes",
+         "name": "Lash lift",
+         "price": "48",
+         "description": "Tint included"
+        },
+        {
+         "section": "Eyes",
+         "name": "Brow shaping",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "The studio",
+       "title": "A corner made to switch off",
+       "body": "- Private, bright treatment rooms\n- Skin-friendly products\n- Unhurried visits, with time for you",
+       "button_text": "Meet the studio",
+       "button_link": "/the-studio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Your visit, step by step",
+       "items": [
+        {
+         "title": "Tell us",
+         "text": "We talk about what you need and what you like."
+        },
+        {
+         "title": "Relax",
+         "text": "A calm space, no rush and warm service."
+        },
+        {
+         "title": "Glow",
+         "text": "You leave cared for, with tips to keep it up."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "What they say about us",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your clients, with their consent.",
+         "name": "Sample client",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we save you a moment?",
+       "text": "Write to us and we will suggest the best slot.",
+       "button_text": "Book a visit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "treatments",
+    "title": "Treatments",
+    "seo": {
+     "description": "Sample text: beauty treatment menu with facial care, hands and feet, brows and lashes, waxing and bridal services."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Treatments",
+       "subtitle": "Sample text: describe your treatments in simple, friendly words.",
+       "cta_text": "Book a visit",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Facial",
+         "text": "Deep cleansing and hydration."
+        },
+        {
+         "icon": "star",
+         "title": "Manicure",
+         "text": "Classic or gel polish."
+        },
+        {
+         "icon": "sun",
+         "title": "Lashes",
+         "text": "Lift and tint with a natural effect."
+        },
+        {
+         "icon": "check",
+         "title": "Waxing",
+         "text": "Gentle wax, kind to the skin."
+        },
+        {
+         "icon": "users",
+         "title": "Bridal",
+         "text": "Trial and make-up for the big day."
+        },
+        {
+         "icon": "leaf",
+         "title": "Massage",
+         "text": "Relaxing, with natural oils."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Treatment menu",
+       "note": "Sample prices: replace them with your own.",
+       "items": [
+        {
+         "section": "Face",
+         "name": "Facial cleanse",
+         "price": "55",
+         "description": "Deep cleanse with massage"
+        },
+        {
+         "section": "Face",
+         "name": "Intense hydration",
+         "price": "65",
+         "description": "Mask and lymphatic massage"
+        },
+        {
+         "section": "Hands and feet",
+         "name": "Gel manicure",
+         "price": "30",
+         "description": "Lasts up to three weeks"
+        },
+        {
+         "section": "Hands and feet",
+         "name": "Full pedicure",
+         "price": "40",
+         "description": "With scrub and massage"
+        },
+        {
+         "section": "Eyes",
+         "name": "Lash lift",
+         "price": "48",
+         "description": "Tint included"
+        },
+        {
+         "section": "Eyes",
+         "name": "Brow shaping",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we save you a moment?",
+       "text": "Write to us and we will suggest the best slot.",
+       "button_text": "Book a visit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-studio",
+    "title": "The studio",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us when caring for the people who visit us."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your studio here, who is part of it and what makes you different.\n\nTalk about how you care for each person, not about promises you cannot keep."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- A personal assessment before we begin\n- Trusted products and aftercare sheets\n- Follow-up after every treatment"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Your visit, step by step",
+       "items": [
+        {
+         "title": "Tell us",
+         "text": "We talk about what you need and what you like."
+        },
+        {
+         "title": "Relax",
+         "text": "A calm space, no rush and warm service."
+        },
+        {
+         "title": "Glow",
+         "text": "You leave cared for, with tips to keep it up."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about bookings, cancellations, products, vouchers and aftercare."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I book?",
+         "answer": "Through the contact form or by phone. *Sample text.*"
+        },
+        {
+         "question": "Can I change or cancel?",
+         "answer": "Yes, let us know 24 hours ahead and we will find another slot."
+        },
+        {
+         "question": "What if my skin is sensitive?",
+         "answer": "We adapt the products; just tell us when booking."
+        },
+        {
+         "question": "Do you offer gift vouchers?",
+         "answer": "Yes. Explain here how your vouchers work. *Sample text.*"
+        },
+        {
+         "question": "Do you do bridal make-up?",
+         "answer": "Yes, with a prior trial. *Sample text.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we save you a moment?",
+       "text": "Write to us and we will suggest the best slot.",
+       "button_text": "Book a visit",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book your visit or write to us with your question and we will reply as soon as possible during studio hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a visit",
+       "text": "Tell us what you fancy and we will suggest a time.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "winter-skin-care",
+    "title": "Skin care in winter",
+    "excerpt": "Sample text for the blog: a short, careful guide.",
+    "content": "Sample text. Write a useful article for your clients here, with general and careful advice.\n\n## Daily hydration\n\nExplain the basic routine and what each step is for.\n\n## When to ask\n\nRemember every skin is different, so asking is always best.",
+    "tags": [
+     "skin",
+     "tips"
+    ]
+   },
+   {
+    "slug": "longer-lasting-manicure",
+    "title": "Making your manicure last longer",
+    "excerpt": "Sample text: simple nail care.",
+    "content": "Sample text. Explain how to look after nails between visits.\n\n## At home\n\nHabits and products that help.\n\n## At the studio\n\nHow often to renew the polish.",
+    "tags": [
+     "nails"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Frumusețe și grijă, fără grabă",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Tratamente",
+    "url": "/tratamente"
+   },
+   {
+    "label": "Studioul",
+    "url": "/studioul"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Programează-te",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: studio de înfrumusețare cu tratamente faciale, mâini și picioare, sprâncene și gene, machiaj de mireasă. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Studio de înfrumusețare · Exemplu",
+       "title": "Să te îngrijești este și o artă",
+       "subtitle": "Text de exemplu: spune într-o frază ce face studioul tău și cum se simt clientele când pleacă.",
+       "cta_text": "Programează-te",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi tratamentele",
+       "cta2_link": "/tratamente"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ritualurile noastre",
+       "title": "Ce facem pentru tine",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Îngrijire facială",
+         "text": "Curățare, hidratare și tratamente potrivite tenului tău."
+        },
+        {
+         "icon": "star",
+         "title": "Mâini și picioare",
+         "text": "Manichiură și pedichiură cu ojă rezistentă."
+        },
+        {
+         "icon": "sun",
+         "title": "Sprâncene și gene",
+         "text": "Modelare, laminare și lifting pentru un aspect natural."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 ani",
+         "label": "De experiență (exemplu)"
+        },
+        {
+         "value": "6",
+         "label": "Cabine private (exemplu)"
+        },
+        {
+         "value": "Lun–Sâm",
+         "label": "Zile cu programări (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Meniul de tratamente",
+       "note": "Prețuri de exemplu: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Față",
+         "name": "Curățare facială",
+         "price": "55",
+         "description": "Curățare profundă cu masaj"
+        },
+        {
+         "section": "Față",
+         "name": "Hidratare intensă",
+         "price": "65",
+         "description": "Mască și masaj de drenaj"
+        },
+        {
+         "section": "Mâini și picioare",
+         "name": "Manichiură semipermanentă",
+         "price": "30",
+         "description": "Ține până la trei săptămâni"
+        },
+        {
+         "section": "Mâini și picioare",
+         "name": "Pedichiură completă",
+         "price": "40",
+         "description": "Cu exfoliere și masaj"
+        },
+        {
+         "section": "Privire",
+         "name": "Lifting de gene",
+         "price": "48",
+         "description": "Vopsirea inclusă"
+        },
+        {
+         "section": "Privire",
+         "name": "Modelare sprâncene",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Studioul",
+       "title": "Un colț făcut ca să te deconectezi",
+       "body": "- Cabine private și luminoase\n- Produse blânde cu pielea\n- Programări fără grabă, cu timp pentru tine",
+       "button_text": "Descoperă studioul",
+       "button_link": "/studioul"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Vizita ta, pas cu pas",
+       "items": [
+        {
+         "title": "Spune-ne",
+         "text": "Vorbim despre ce îți dorești și ce îți place."
+        },
+        {
+         "title": "Relaxează-te",
+         "text": "Un spațiu liniștit, fără grabă și cu atenție."
+        },
+        {
+         "title": "Strălucește",
+         "text": "Pleci răsfățată, cu sfaturi ca să păstrezi rezultatul."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce spun despre noi",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o recenzie: înlocuiește-l cu păreri reale ale clientelor tale, cu acordul lor.",
+         "name": "Clientă de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți rezervăm un moment?",
+       "text": "Scrie-ne și îți propunem cel mai bun interval.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "tratamente",
+    "title": "Tratamente",
+    "seo": {
+     "description": "Text de exemplu: meniul de tratamente cu îngrijire facială, mâini și picioare, sprâncene și gene, epilare și servicii pentru mirese."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Tratamente",
+       "subtitle": "Text de exemplu: descrie tratamentele cu cuvinte simple și prietenoase.",
+       "cta_text": "Programează-te",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Facial",
+         "text": "Curățare profundă și hidratare."
+        },
+        {
+         "icon": "star",
+         "title": "Manichiură",
+         "text": "Ojă clasică sau semipermanentă."
+        },
+        {
+         "icon": "sun",
+         "title": "Gene",
+         "text": "Lifting și vopsire cu efect natural."
+        },
+        {
+         "icon": "check",
+         "title": "Epilare",
+         "text": "Ceară blândă, cu grijă pentru piele."
+        },
+        {
+         "icon": "users",
+         "title": "Mirese",
+         "text": "Probă și machiaj pentru ziua cea mare."
+        },
+        {
+         "icon": "leaf",
+         "title": "Masaj",
+         "text": "Relaxant, cu uleiuri naturale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Meniul de tratamente",
+       "note": "Prețuri de exemplu: înlocuiește-le cu ale tale.",
+       "items": [
+        {
+         "section": "Față",
+         "name": "Curățare facială",
+         "price": "55",
+         "description": "Curățare profundă cu masaj"
+        },
+        {
+         "section": "Față",
+         "name": "Hidratare intensă",
+         "price": "65",
+         "description": "Mască și masaj de drenaj"
+        },
+        {
+         "section": "Mâini și picioare",
+         "name": "Manichiură semipermanentă",
+         "price": "30",
+         "description": "Ține până la trei săptămâni"
+        },
+        {
+         "section": "Mâini și picioare",
+         "name": "Pedichiură completă",
+         "price": "40",
+         "description": "Cu exfoliere și masaj"
+        },
+        {
+         "section": "Privire",
+         "name": "Lifting de gene",
+         "price": "48",
+         "description": "Vopsirea inclusă"
+        },
+        {
+         "section": "Privire",
+         "name": "Modelare sprâncene",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți rezervăm un moment?",
+       "text": "Scrie-ne și îți propunem cel mai bun interval.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "studioul",
+    "title": "Studioul",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi când avem grijă de persoanele care ne vizitează."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria studioului tău, cine îl formează și ce vă face diferite.\n\nVorbește despre cum aveți grijă de fiecare persoană, nu despre promisiuni pe care nu le poți ține."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Evaluare personală înainte de a începe\n- Produse de încredere și fișe de îngrijire\n- Urmărire după fiecare tratament"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Vizita ta, pas cu pas",
+       "items": [
+        {
+         "title": "Spune-ne",
+         "text": "Vorbim despre ce îți dorești și ce îți place."
+        },
+        {
+         "title": "Relaxează-te",
+         "text": "Un spațiu liniștit, fără grabă și cu atenție."
+        },
+        {
+         "title": "Strălucește",
+         "text": "Pleci răsfățată, cu sfaturi ca să păstrezi rezultatul."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre programări, anulări, produse, vouchere și îngrijirea de după tratament."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum fac o programare?",
+         "answer": "Prin formularul de contact sau telefonic. *Text de exemplu.*"
+        },
+        {
+         "question": "Pot schimba sau anula?",
+         "answer": "Da, anunță-ne cu 24 de ore înainte și găsim alt interval."
+        },
+        {
+         "question": "Ce fac dacă am pielea sensibilă?",
+         "answer": "Adaptăm produsele; spune-ne la programare."
+        },
+        {
+         "question": "Aveți vouchere cadou?",
+         "answer": "Da. Explică aici cum funcționează. *Text de exemplu.*"
+        },
+        {
+         "question": "Faceți machiaj de mireasă?",
+         "answer": "Da, cu probă în prealabil. *Text de exemplu.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Îți rezervăm un moment?",
+       "text": "Scrie-ne și îți propunem cel mai bun interval.",
+       "button_text": "Programează-te",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: programează-te sau scrie-ne întrebarea ta și îți răspundem cât mai repede, în programul studioului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Programează-te",
+       "text": "Spune-ne ce îți dorești și îți propunem o programare.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "ingrijirea-pielii-iarna",
+    "title": "Îngrijirea pielii iarna",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și prudent.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clientele tale, cu sfaturi generale și prudente.\n\n## Hidratarea zilnică\n\nExplică rutina de bază și la ce folosește fiecare pas.\n\n## Când să ceri sfat\n\nAmintește că fiecare piele este diferită.",
+    "tags": [
+     "piele",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "manichiura-care-tine",
+    "title": "Cum ține mai mult manichiura",
+    "excerpt": "Text de exemplu: îngrijire simplă a unghiilor.",
+    "content": "Text de exemplu. Explică cum să îngrijești unghiile între programări.\n\n## Acasă\n\nObiceiuri și produse care ajută.\n\n## La studio\n\nCât de des se reface oja.",
+    "tags": [
+     "unghii"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Beauté et soin, sans se presser",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Soins",
+    "url": "/soins"
+   },
+   {
+    "label": "L'institut",
+    "url": "/l-institut"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Prendre rendez-vous",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : institut de beauté avec soins du visage, mains et pieds, sourcils et cils, maquillage de mariée. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Institut de beauté · Exemple",
+       "title": "Prendre soin de soi est aussi un art",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que fait votre institut et comment les clientes se sentent en repartant.",
+       "cta_text": "Prendre rendez-vous",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les soins",
+       "cta2_link": "/soins"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Nos rituels",
+       "title": "Ce que nous faisons pour vous",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Soin du visage",
+         "text": "Nettoyage, hydratation et soins adaptés à votre peau."
+        },
+        {
+         "icon": "star",
+         "title": "Mains et pieds",
+         "text": "Manucure et pédicure avec vernis tenue longue durée."
+        },
+        {
+         "icon": "sun",
+         "title": "Sourcils et cils",
+         "text": "Restructuration, laminage et rehaussement au naturel."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 ans",
+         "label": "D'expérience (exemple)"
+        },
+        {
+         "value": "6",
+         "label": "Cabines privées (exemple)"
+        },
+        {
+         "value": "Lun–Sam",
+         "label": "Jours de rendez-vous (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carte des soins",
+       "note": "Prix d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Visage",
+         "name": "Nettoyage de peau",
+         "price": "55",
+         "description": "Nettoyage profond avec massage"
+        },
+        {
+         "section": "Visage",
+         "name": "Hydratation intense",
+         "price": "65",
+         "description": "Masque et massage drainant"
+        },
+        {
+         "section": "Mains et pieds",
+         "name": "Manucure semi-permanente",
+         "price": "30",
+         "description": "Tient jusqu'à trois semaines"
+        },
+        {
+         "section": "Mains et pieds",
+         "name": "Pédicure complète",
+         "price": "40",
+         "description": "Avec gommage et massage"
+        },
+        {
+         "section": "Regard",
+         "name": "Rehaussement de cils",
+         "price": "48",
+         "description": "Teinture incluse"
+        },
+        {
+         "section": "Regard",
+         "name": "Restructuration des sourcils",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "L'institut",
+       "title": "Un coin pensé pour déconnecter",
+       "body": "- Cabines privées et lumineuses\n- Produits doux pour la peau\n- Rendez-vous sans hâte, avec du temps pour vous",
+       "button_text": "Découvrir l'institut",
+       "button_link": "/l-institut"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Votre visite, pas à pas",
+       "items": [
+        {
+         "title": "Dites-nous",
+         "text": "Nous parlons de vos besoins et de vos envies."
+        },
+        {
+         "title": "Détendez-vous",
+         "text": "Un lieu calme, sans précipitation, avec attention."
+        },
+        {
+         "title": "Rayonnez",
+         "text": "Vous repartez choyée, avec des conseils pour prolonger l'effet."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce qu'elles disent de nous",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clientes, avec leur accord.",
+         "name": "Cliente d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous réserve un moment ?",
+       "text": "Écrivez-nous et nous vous proposons le meilleur créneau.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "soins",
+    "title": "Soins",
+    "seo": {
+     "description": "Texte d'exemple : carte des soins de beauté avec visage, mains et pieds, sourcils et cils, épilation et forfaits mariée."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Soins",
+       "subtitle": "Texte d'exemple : décrivez vos soins avec des mots simples et chaleureux.",
+       "cta_text": "Prendre rendez-vous",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Visage",
+         "text": "Nettoyage profond et hydratation."
+        },
+        {
+         "icon": "star",
+         "title": "Manucure",
+         "text": "Vernis classique ou semi-permanent."
+        },
+        {
+         "icon": "sun",
+         "title": "Cils",
+         "text": "Rehaussement et teinture au naturel."
+        },
+        {
+         "icon": "check",
+         "title": "Épilation",
+         "text": "Cire douce, respectueuse de la peau."
+        },
+        {
+         "icon": "users",
+         "title": "Mariées",
+         "text": "Essai et maquillage du grand jour."
+        },
+        {
+         "icon": "leaf",
+         "title": "Massage",
+         "text": "Relaxant, aux huiles naturelles."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carte des soins",
+       "note": "Prix d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Visage",
+         "name": "Nettoyage de peau",
+         "price": "55",
+         "description": "Nettoyage profond avec massage"
+        },
+        {
+         "section": "Visage",
+         "name": "Hydratation intense",
+         "price": "65",
+         "description": "Masque et massage drainant"
+        },
+        {
+         "section": "Mains et pieds",
+         "name": "Manucure semi-permanente",
+         "price": "30",
+         "description": "Tient jusqu'à trois semaines"
+        },
+        {
+         "section": "Mains et pieds",
+         "name": "Pédicure complète",
+         "price": "40",
+         "description": "Avec gommage et massage"
+        },
+        {
+         "section": "Regard",
+         "name": "Rehaussement de cils",
+         "price": "48",
+         "description": "Teinture incluse"
+        },
+        {
+         "section": "Regard",
+         "name": "Restructuration des sourcils",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous réserve un moment ?",
+       "text": "Écrivez-nous et nous vous proposons le meilleur créneau.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-institut",
+    "title": "L'institut",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous quand nous prenons soin de vous."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre institut, qui le compose et ce qui vous distingue.\n\nParlez de la façon dont vous prenez soin de chacune, pas de promesses que vous ne pouvez pas tenir."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Un diagnostic personnel avant de commencer\n- Des produits de confiance et des fiches de conseils\n- Un suivi après chaque soin"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Votre visite, pas à pas",
+       "items": [
+        {
+         "title": "Dites-nous",
+         "text": "Nous parlons de vos besoins et de vos envies."
+        },
+        {
+         "title": "Détendez-vous",
+         "text": "Un lieu calme, sans précipitation, avec attention."
+        },
+        {
+         "title": "Rayonnez",
+         "text": "Vous repartez choyée, avec des conseils pour prolonger l'effet."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les réservations, annulations, produits, bons cadeaux et conseils après-soin."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment réserver ?",
+         "answer": "Via le formulaire de contact ou par téléphone. *Texte d'exemple.*"
+        },
+        {
+         "question": "Puis-je modifier ou annuler ?",
+         "answer": "Oui, prévenez-nous 24 heures avant et nous trouverons un autre créneau."
+        },
+        {
+         "question": "Et si ma peau est sensible ?",
+         "answer": "Nous adaptons les produits ; dites-le-nous à la réservation."
+        },
+        {
+         "question": "Proposez-vous des bons cadeaux ?",
+         "answer": "Oui. Expliquez ici leur fonctionnement. *Texte d'exemple.*"
+        },
+        {
+         "question": "Faites-vous le maquillage de mariée ?",
+         "answer": "Oui, avec un essai préalable. *Texte d'exemple.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On vous réserve un moment ?",
+       "text": "Écrivez-nous et nous vous proposons le meilleur créneau.",
+       "button_text": "Prendre rendez-vous",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : réservez votre rendez-vous ou écrivez-nous avec votre question, nous répondons au plus vite pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prendre rendez-vous",
+       "text": "Dites-nous ce qui vous ferait plaisir et nous vous proposons un rendez-vous.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "soin-de-la-peau-en-hiver",
+    "title": "Le soin de la peau en hiver",
+    "excerpt": "Texte d'exemple pour le blog : un guide bref et prudent.",
+    "content": "Texte d'exemple. Rédigez ici un article utile pour vos clientes, avec des conseils généraux et prudents.\n\n## L'hydratation quotidienne\n\nExpliquez la routine de base et le rôle de chaque étape.\n\n## Quand demander conseil\n\nRappelez que chaque peau est différente.",
+    "tags": [
+     "peau",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "manucure-qui-tient",
+    "title": "Faire durer sa manucure",
+    "excerpt": "Texte d'exemple : des gestes simples pour les ongles.",
+    "content": "Texte d'exemple. Expliquez comment entretenir les ongles entre deux rendez-vous.\n\n## À la maison\n\nLes habitudes et produits qui aident.\n\n## À l'institut\n\nÀ quelle fréquence renouveler le vernis.",
+    "tags": [
+     "ongles"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Schönheit und Pflege, ohne Eile",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Behandlungen",
+    "url": "/behandlungen"
+   },
+   {
+    "label": "Das Studio",
+    "url": "/das-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Termin buchen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Kosmetikstudio mit Gesichtsbehandlungen, Hand- und Fußpflege, Augenbrauen und Wimpern sowie Braut-Make-up. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Kosmetikstudio · Beispiel",
+       "title": "Sich zu pflegen ist auch eine Kunst",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, was Ihr Studio macht und wie sich Kundinnen beim Gehen fühlen.",
+       "cta_text": "Termin buchen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Behandlungen ansehen",
+       "cta2_link": "/behandlungen"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Unsere Rituale",
+       "title": "Was wir für Sie tun",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Gesichtspflege",
+         "text": "Reinigung, Feuchtigkeit und Behandlungen für Ihre Haut."
+        },
+        {
+         "icon": "star",
+         "title": "Hände und Füße",
+         "text": "Maniküre und Pediküre mit langanhaltendem Lack."
+        },
+        {
+         "icon": "sun",
+         "title": "Brauen und Wimpern",
+         "text": "Formen, Laminieren und Lifting für einen natürlichen Look."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 Jahre",
+         "label": "Erfahrung (Beispiel)"
+        },
+        {
+         "value": "6",
+         "label": "Private Kabinen (Beispiel)"
+        },
+        {
+         "value": "Mo–Sa",
+         "label": "Tage mit Terminen (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Behandlungskarte",
+       "note": "Beispielpreise: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Gesicht",
+         "name": "Gesichtsreinigung",
+         "price": "55",
+         "description": "Tiefenreinigung mit Massage"
+        },
+        {
+         "section": "Gesicht",
+         "name": "Intensive Feuchtigkeitspflege",
+         "price": "65",
+         "description": "Maske und Lymphdrainage-Massage"
+        },
+        {
+         "section": "Hände und Füße",
+         "name": "Gel-Maniküre",
+         "price": "30",
+         "description": "Hält bis zu drei Wochen"
+        },
+        {
+         "section": "Hände und Füße",
+         "name": "Komplette Pediküre",
+         "price": "40",
+         "description": "Mit Peeling und Massage"
+        },
+        {
+         "section": "Blick",
+         "name": "Wimpernlifting",
+         "price": "48",
+         "description": "Färben inklusive"
+        },
+        {
+         "section": "Blick",
+         "name": "Augenbrauen formen",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Das Studio",
+       "title": "Ein Ort zum Abschalten",
+       "body": "- Private, helle Behandlungskabinen\n- Hautfreundliche Produkte\n- Termine ohne Hektik, mit Zeit für Sie",
+       "button_text": "Das Studio kennenlernen",
+       "button_link": "/das-studio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ihr Besuch, Schritt für Schritt",
+       "items": [
+        {
+         "title": "Erzählen Sie",
+         "text": "Wir sprechen über Ihre Wünsche und Vorlieben."
+        },
+        {
+         "title": "Entspannen",
+         "text": "Ein ruhiger Raum, ohne Eile und mit Aufmerksamkeit."
+        },
+        {
+         "title": "Strahlen",
+         "text": "Sie gehen gepflegt, mit Tipps für zu Hause."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Was man über uns sagt",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetzen Sie ihn durch echte Bewertungen Ihrer Kundinnen, mit deren Einverständnis.",
+         "name": "Beispiel-Kundin",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen eine Auszeit reservieren?",
+       "text": "Schreiben Sie uns, wir schlagen Ihnen den besten Termin vor.",
+       "button_text": "Termin buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "behandlungen",
+    "title": "Behandlungen",
+    "seo": {
+     "description": "Beispieltext: Behandlungskarte mit Gesichtspflege, Hand- und Fußpflege, Brauen und Wimpern, Haarentfernung und Braut-Paketen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Behandlungen",
+       "subtitle": "Beispieltext: Beschreiben Sie Ihre Behandlungen in einfachen, freundlichen Worten.",
+       "cta_text": "Termin buchen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Gesicht",
+         "text": "Tiefenreinigung und Feuchtigkeit."
+        },
+        {
+         "icon": "star",
+         "title": "Maniküre",
+         "text": "Klassischer Lack oder Gel."
+        },
+        {
+         "icon": "sun",
+         "title": "Wimpern",
+         "text": "Lifting und Färben, natürlich."
+        },
+        {
+         "icon": "check",
+         "title": "Haarentfernung",
+         "text": "Sanftes Wachs, hautschonend."
+        },
+        {
+         "icon": "users",
+         "title": "Bräute",
+         "text": "Probe und Make-up für den großen Tag."
+        },
+        {
+         "icon": "leaf",
+         "title": "Massage",
+         "text": "Entspannend, mit natürlichen Ölen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Behandlungskarte",
+       "note": "Beispielpreise: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "section": "Gesicht",
+         "name": "Gesichtsreinigung",
+         "price": "55",
+         "description": "Tiefenreinigung mit Massage"
+        },
+        {
+         "section": "Gesicht",
+         "name": "Intensive Feuchtigkeitspflege",
+         "price": "65",
+         "description": "Maske und Lymphdrainage-Massage"
+        },
+        {
+         "section": "Hände und Füße",
+         "name": "Gel-Maniküre",
+         "price": "30",
+         "description": "Hält bis zu drei Wochen"
+        },
+        {
+         "section": "Hände und Füße",
+         "name": "Komplette Pediküre",
+         "price": "40",
+         "description": "Mit Peeling und Massage"
+        },
+        {
+         "section": "Blick",
+         "name": "Wimpernlifting",
+         "price": "48",
+         "description": "Färben inklusive"
+        },
+        {
+         "section": "Blick",
+         "name": "Augenbrauen formen",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen eine Auszeit reservieren?",
+       "text": "Schreiben Sie uns, wir schlagen Ihnen den besten Termin vor.",
+       "button_text": "Termin buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "das-studio",
+    "title": "Das Studio",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns wichtig ist, wenn wir uns um unsere Gäste kümmern."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Studios, wer dazugehört und was Sie besonders macht.\n\nSprechen Sie darüber, wie Sie sich um jeden Menschen kümmern, nicht über Versprechen, die Sie nicht halten können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Wie wir arbeiten",
+       "body": "- Persönliche Beratung vor dem Start\n- Bewährte Produkte und Pflegehinweise\n- Nachsorge nach jeder Behandlung"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ihr Besuch, Schritt für Schritt",
+       "items": [
+        {
+         "title": "Erzählen Sie",
+         "text": "Wir sprechen über Ihre Wünsche und Vorlieben."
+        },
+        {
+         "title": "Entspannen",
+         "text": "Ein ruhiger Raum, ohne Eile und mit Aufmerksamkeit."
+        },
+        {
+         "title": "Strahlen",
+         "text": "Sie gehen gepflegt, mit Tipps für zu Hause."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Buchung, Stornierung, Produkten, Gutscheinen und Pflege nach der Behandlung."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie buche ich einen Termin?",
+         "answer": "Über das Kontaktformular oder telefonisch. *Beispieltext.*"
+        },
+        {
+         "question": "Kann ich umbuchen oder absagen?",
+         "answer": "Ja, sagen Sie uns 24 Stunden vorher Bescheid, dann finden wir einen neuen Termin."
+        },
+        {
+         "question": "Was gilt bei empfindlicher Haut?",
+         "answer": "Wir passen die Produkte an; sagen Sie es uns bei der Buchung."
+        },
+        {
+         "question": "Gibt es Geschenkgutscheine?",
+         "answer": "Ja. Erklären Sie hier, wie sie funktionieren. *Beispieltext.*"
+        },
+        {
+         "question": "Machen Sie Braut-Make-up?",
+         "answer": "Ja, mit vorheriger Probe. *Beispieltext.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Sollen wir Ihnen eine Auszeit reservieren?",
+       "text": "Schreiben Sie uns, wir schlagen Ihnen den besten Termin vor.",
+       "button_text": "Termin buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Buchen Sie Ihren Termin oder schreiben Sie uns Ihre Frage, wir antworten so schnell wie möglich während der Öffnungszeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Termin buchen",
+       "text": "Erzählen Sie uns, worauf Sie Lust haben, und wir schlagen einen Termin vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ersetzen Sie sie durch Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "hautpflege-im-winter",
+    "title": "Hautpflege im Winter",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, vorsichtiger Ratgeber.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kundinnen, mit allgemeinen und vorsichtigen Tipps.\n\n## Tägliche Feuchtigkeit\n\nErklären Sie die Basisroutine und wofür jeder Schritt gut ist.\n\n## Wann Sie nachfragen sollten\n\nErinnern Sie daran, dass jede Haut anders ist.",
+    "tags": [
+     "haut",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "manikuere-haelt-laenger",
+    "title": "So hält die Maniküre länger",
+    "excerpt": "Beispieltext: einfache Nagelpflege.",
+    "content": "Beispieltext. Erklären Sie, wie man die Nägel zwischen zwei Terminen pflegt.\n\n## Zu Hause\n\nGewohnheiten und Produkte, die helfen.\n\n## Im Studio\n\nWie oft der Lack erneuert werden sollte.",
+    "tags": [
+     "naegel"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Bellezza e cura, senza fretta",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Trattamenti",
+    "url": "/trattamenti"
+   },
+   {
+    "label": "Lo studio",
+    "url": "/lo-studio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota un appuntamento",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: centro estetico con trattamenti viso, mani e piedi, sopracciglia e ciglia, trucco sposa. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro estetico · Esempio",
+       "title": "Prendersi cura di sé è anche un'arte",
+       "subtitle": "Testo di esempio: racconta in una frase cosa fa il tuo studio e come si sentono le clienti quando escono.",
+       "cta_text": "Prenota un appuntamento",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i trattamenti",
+       "cta2_link": "/trattamenti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "I nostri rituali",
+       "title": "Cosa facciamo per te",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Cura del viso",
+         "text": "Pulizia, idratazione e trattamenti su misura per la tua pelle."
+        },
+        {
+         "icon": "star",
+         "title": "Mani e piedi",
+         "text": "Manicure e pedicure con smalti a lunga durata."
+        },
+        {
+         "icon": "sun",
+         "title": "Sopracciglia e ciglia",
+         "text": "Design, laminazione e lifting per uno sguardo naturale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 anni",
+         "label": "Di esperienza (esempio)"
+        },
+        {
+         "value": "6",
+         "label": "Cabine private (esempio)"
+        },
+        {
+         "value": "Lun–Sab",
+         "label": "Giorni con appuntamenti (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Listino dei trattamenti",
+       "note": "Prezzi di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Viso",
+         "name": "Pulizia del viso",
+         "price": "55",
+         "description": "Pulizia profonda con massaggio"
+        },
+        {
+         "section": "Viso",
+         "name": "Idratazione intensiva",
+         "price": "65",
+         "description": "Maschera e massaggio drenante"
+        },
+        {
+         "section": "Mani e piedi",
+         "name": "Manicure semipermanente",
+         "price": "30",
+         "description": "Dura fino a tre settimane"
+        },
+        {
+         "section": "Mani e piedi",
+         "name": "Pedicure completa",
+         "price": "40",
+         "description": "Con scrub e massaggio"
+        },
+        {
+         "section": "Sguardo",
+         "name": "Lifting delle ciglia",
+         "price": "48",
+         "description": "Colorazione inclusa"
+        },
+        {
+         "section": "Sguardo",
+         "name": "Design sopracciglia",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Lo studio",
+       "title": "Un angolo pensato per staccare",
+       "body": "- Cabine private e luminose\n- Prodotti delicati sulla pelle\n- Appuntamenti senza fretta, con tempo per te",
+       "button_text": "Scopri lo studio",
+       "button_link": "/lo-studio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "La tua visita, passo dopo passo",
+       "items": [
+        {
+         "title": "Raccontaci",
+         "text": "Parliamo di ciò che ti serve e che ti piace."
+        },
+        {
+         "title": "Rilassati",
+         "text": "Uno spazio tranquillo, senza fretta e con attenzione."
+        },
+        {
+         "title": "Risplendi",
+         "text": "Esci coccolata, con consigli per mantenere il risultato."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Cosa dicono di noi",
+       "items": [
+        {
+         "quote": "Testo di esempio di una recensione: sostituiscilo con recensioni reali delle tue clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti riserviamo un momento?",
+       "text": "Scrivici e ti proponiamo l'orario migliore.",
+       "button_text": "Prenota un appuntamento",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "trattamenti",
+    "title": "Trattamenti",
+    "seo": {
+     "description": "Testo di esempio: listino dei trattamenti estetici con cura del viso, mani e piedi, sopracciglia e ciglia, depilazione e pacchetti sposa."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Trattamenti",
+       "subtitle": "Testo di esempio: descrivi i tuoi trattamenti con parole semplici e vicine.",
+       "cta_text": "Prenota un appuntamento",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Viso",
+         "text": "Pulizia profonda e idratazione."
+        },
+        {
+         "icon": "star",
+         "title": "Manicure",
+         "text": "Smalto classico o semipermanente."
+        },
+        {
+         "icon": "sun",
+         "title": "Ciglia",
+         "text": "Lifting e colorazione naturale."
+        },
+        {
+         "icon": "check",
+         "title": "Depilazione",
+         "text": "Cera delicata, rispettosa della pelle."
+        },
+        {
+         "icon": "users",
+         "title": "Spose",
+         "text": "Prova e trucco del grande giorno."
+        },
+        {
+         "icon": "leaf",
+         "title": "Massaggio",
+         "text": "Rilassante, con oli naturali."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Listino dei trattamenti",
+       "note": "Prezzi di esempio: sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Viso",
+         "name": "Pulizia del viso",
+         "price": "55",
+         "description": "Pulizia profonda con massaggio"
+        },
+        {
+         "section": "Viso",
+         "name": "Idratazione intensiva",
+         "price": "65",
+         "description": "Maschera e massaggio drenante"
+        },
+        {
+         "section": "Mani e piedi",
+         "name": "Manicure semipermanente",
+         "price": "30",
+         "description": "Dura fino a tre settimane"
+        },
+        {
+         "section": "Mani e piedi",
+         "name": "Pedicure completa",
+         "price": "40",
+         "description": "Con scrub e massaggio"
+        },
+        {
+         "section": "Sguardo",
+         "name": "Lifting delle ciglia",
+         "price": "48",
+         "description": "Colorazione inclusa"
+        },
+        {
+         "section": "Sguardo",
+         "name": "Design sopracciglia",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti riserviamo un momento?",
+       "text": "Scrivici e ti proponiamo l'orario migliore.",
+       "button_text": "Prenota un appuntamento",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "lo-studio",
+    "title": "Lo studio",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa conta per noi quando ci prendiamo cura di chi ci viene a trovare."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo studio, chi ne fa parte e cosa vi rende diverse.\n\nParla di come vi prendete cura di ogni persona, non di promesse che non puoi mantenere."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Valutazione personale prima di iniziare\n- Prodotti affidabili e schede di cura\n- Controllo dopo ogni trattamento"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "La tua visita, passo dopo passo",
+       "items": [
+        {
+         "title": "Raccontaci",
+         "text": "Parliamo di ciò che ti serve e che ti piace."
+        },
+        {
+         "title": "Rilassati",
+         "text": "Uno spazio tranquillo, senza fretta e con attenzione."
+        },
+        {
+         "title": "Risplendi",
+         "text": "Esci coccolata, con consigli per mantenere il risultato."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su prenotazioni, disdette, prodotti, buoni regalo e cure dopo il trattamento."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come prenoto?",
+         "answer": "Dal modulo di contatto o per telefono. *Testo di esempio.*"
+        },
+        {
+         "question": "Posso spostare o annullare?",
+         "answer": "Sì, avvisaci 24 ore prima e troviamo un altro orario."
+        },
+        {
+         "question": "E se ho la pelle sensibile?",
+         "answer": "Adattiamo i prodotti; dicelo al momento della prenotazione."
+        },
+        {
+         "question": "Fate buoni regalo?",
+         "answer": "Sì. Spiega qui come funzionano. *Testo di esempio.*"
+        },
+        {
+         "question": "Fate il trucco sposa?",
+         "answer": "Sì, con prova preliminare. *Testo di esempio.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ti riserviamo un momento?",
+       "text": "Scrivici e ti proponiamo l'orario migliore.",
+       "button_text": "Prenota un appuntamento",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota il tuo appuntamento o scrivici la tua domanda e ti rispondiamo il prima possibile negli orari dello studio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota un appuntamento",
+       "text": "Raccontaci cosa ti va e ti proponiamo un appuntamento.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cura-della-pelle-in-inverno",
+    "title": "La cura della pelle in inverno",
+    "excerpt": "Testo di esempio per il blog: una guida breve e prudente.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per le tue clienti, con consigli generali e prudenti.\n\n## Idratazione quotidiana\n\nSpiega la routine di base e a cosa serve ogni passaggio.\n\n## Quando chiedere\n\nRicorda che ogni pelle è diversa.",
+    "tags": [
+     "pelle",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "manicure-che-dura",
+    "title": "Come far durare di più la manicure",
+    "excerpt": "Testo di esempio: cure semplici per le unghie.",
+    "content": "Testo di esempio. Spiega come curare le unghie tra un appuntamento e l'altro.\n\n## A casa\n\nAbitudini e prodotti che aiutano.\n\n## In studio\n\nOgni quanto rinnovare lo smalto.",
+    "tags": [
+     "unghie"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Beleza e cuidado, sem pressa",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Tratamentos",
+    "url": "/tratamentos"
+   },
+   {
+    "label": "O estúdio",
+    "url": "/o-estudio"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar consulta",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: centro de estética com tratamentos faciais, mãos e pés, sobrancelhas e pestanas, maquilhagem de noiva. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Centro de estética · Exemplo",
+       "title": "Cuidar de si também é uma arte",
+       "subtitle": "Texto de exemplo: diga numa frase o que faz o seu estúdio e como se sentem as clientes ao sair.",
+       "cta_text": "Marcar consulta",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver tratamentos",
+       "cta2_link": "/tratamentos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Os nossos rituais",
+       "title": "O que fazemos por si",
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Cuidado facial",
+         "text": "Limpeza, hidratação e tratamentos à medida da sua pele."
+        },
+        {
+         "icon": "star",
+         "title": "Mãos e pés",
+         "text": "Manicure e pedicure com verniz duradouro."
+        },
+        {
+         "icon": "sun",
+         "title": "Sobrancelhas e pestanas",
+         "text": "Design, laminação e lifting para um olhar natural."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "10 anos",
+         "label": "De experiência (exemplo)"
+        },
+        {
+         "value": "6",
+         "label": "Cabines privadas (exemplo)"
+        },
+        {
+         "value": "Seg–Sáb",
+         "label": "Dias com marcações (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carta de tratamentos",
+       "note": "Preços de exemplo: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Rosto",
+         "name": "Limpeza facial",
+         "price": "55",
+         "description": "Limpeza profunda com massagem"
+        },
+        {
+         "section": "Rosto",
+         "name": "Hidratação intensiva",
+         "price": "65",
+         "description": "Máscara e massagem drenante"
+        },
+        {
+         "section": "Mãos e pés",
+         "name": "Manicure semipermanente",
+         "price": "30",
+         "description": "Dura até três semanas"
+        },
+        {
+         "section": "Mãos e pés",
+         "name": "Pedicure completa",
+         "price": "40",
+         "description": "Com esfoliação e massagem"
+        },
+        {
+         "section": "Olhar",
+         "name": "Lifting de pestanas",
+         "price": "48",
+         "description": "Tinta incluída"
+        },
+        {
+         "section": "Olhar",
+         "name": "Design de sobrancelhas",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O estúdio",
+       "title": "Um recanto pensado para desligar",
+       "body": "- Cabines privadas e luminosas\n- Produtos suaves para a pele\n- Marcações sem pressa, com tempo para si",
+       "button_text": "Conheça o estúdio",
+       "button_link": "/o-estudio"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "A sua visita, passo a passo",
+       "items": [
+        {
+         "title": "Conte-nos",
+         "text": "Falamos do que precisa e do que gosta."
+        },
+        {
+         "title": "Relaxe",
+         "text": "Um espaço calmo, sem pressa e com atenção."
+        },
+        {
+         "title": "Brilhe",
+         "text": "Sai cuidada, com dicas para manter o resultado."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "O que dizem de nós",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais das suas clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Reservamos-lhe um momento?",
+       "text": "Escreva-nos e propomos-lhe o melhor horário.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "tratamentos",
+    "title": "Tratamentos",
+    "seo": {
+     "description": "Texto de exemplo: carta de tratamentos de estética com rosto, mãos e pés, sobrancelhas e pestanas, depilação e pacotes de noiva."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Tratamentos",
+       "subtitle": "Texto de exemplo: descreva os seus tratamentos com palavras simples e próximas.",
+       "cta_text": "Marcar consulta",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "heart",
+         "title": "Facial",
+         "text": "Limpeza profunda e hidratação."
+        },
+        {
+         "icon": "star",
+         "title": "Manicure",
+         "text": "Verniz clássico ou semipermanente."
+        },
+        {
+         "icon": "sun",
+         "title": "Pestanas",
+         "text": "Lifting e tinta com efeito natural."
+        },
+        {
+         "icon": "check",
+         "title": "Depilação",
+         "text": "Cera suave, que respeita a pele."
+        },
+        {
+         "icon": "users",
+         "title": "Noivas",
+         "text": "Prova e maquilhagem do grande dia."
+        },
+        {
+         "icon": "leaf",
+         "title": "Massagem",
+         "text": "Relaxante, com óleos naturais."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Carta de tratamentos",
+       "note": "Preços de exemplo: substitua-os pelos seus.",
+       "items": [
+        {
+         "section": "Rosto",
+         "name": "Limpeza facial",
+         "price": "55",
+         "description": "Limpeza profunda com massagem"
+        },
+        {
+         "section": "Rosto",
+         "name": "Hidratação intensiva",
+         "price": "65",
+         "description": "Máscara e massagem drenante"
+        },
+        {
+         "section": "Mãos e pés",
+         "name": "Manicure semipermanente",
+         "price": "30",
+         "description": "Dura até três semanas"
+        },
+        {
+         "section": "Mãos e pés",
+         "name": "Pedicure completa",
+         "price": "40",
+         "description": "Com esfoliação e massagem"
+        },
+        {
+         "section": "Olhar",
+         "name": "Lifting de pestanas",
+         "price": "48",
+         "description": "Tinta incluída"
+        },
+        {
+         "section": "Olhar",
+         "name": "Design de sobrancelhas",
+         "price": "15"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Reservamos-lhe um momento?",
+       "text": "Escreva-nos e propomos-lhe o melhor horário.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "o-estudio",
+    "title": "O estúdio",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa ao cuidar das pessoas que nos visitam."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história do seu estúdio, quem o forma e o que vos torna diferentes.\n\nFale de como cuidam de cada pessoa, não de promessas que não possa cumprir."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Avaliação pessoal antes de começar\n- Produtos de confiança e folhas de cuidados\n- Acompanhamento após cada tratamento"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "A sua visita, passo a passo",
+       "items": [
+        {
+         "title": "Conte-nos",
+         "text": "Falamos do que precisa e do que gosta."
+        },
+        {
+         "title": "Relaxe",
+         "text": "Um espaço calmo, sem pressa e com atenção."
+        },
+        {
+         "title": "Brilhe",
+         "text": "Sai cuidada, com dicas para manter o resultado."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre marcações, cancelamentos, produtos, vales-oferta e cuidados após o tratamento."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como marco uma consulta?",
+         "answer": "Pelo formulário de contacto ou por telefone. *Texto de exemplo.*"
+        },
+        {
+         "question": "Posso alterar ou cancelar?",
+         "answer": "Sim, avise-nos com 24 horas de antecedência e damos-lhe outro horário."
+        },
+        {
+         "question": "E se tiver a pele sensível?",
+         "answer": "Adaptamos os produtos; diga-nos ao marcar."
+        },
+        {
+         "question": "Têm vales-oferta?",
+         "answer": "Sim. Explique aqui como funcionam. *Texto de exemplo.*"
+        },
+        {
+         "question": "Fazem maquilhagem de noiva?",
+         "answer": "Sim, com prova prévia. *Texto de exemplo.*"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Reservamos-lhe um momento?",
+       "text": "Escreva-nos e propomos-lhe o melhor horário.",
+       "button_text": "Marcar consulta",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marque a sua visita ou escreva-nos a sua dúvida e respondemos o mais depressa possível no horário do estúdio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar consulta",
+       "text": "Diga-nos o que lhe apetece e propomos-lhe uma marcação.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário",
+       "note": "Horário de exemplo: mude-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cuidado-da-pele-no-inverno",
+    "title": "Cuidado da pele no inverno",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prudente.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para as suas clientes, com conselhos gerais e prudentes.\n\n## Hidratação diária\n\nExplique a rotina básica e para que serve cada passo.\n\n## Quando perguntar\n\nLembre que cada pele é diferente.",
+    "tags": [
+     "pele",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "manicure-que-dura",
+    "title": "Como fazer a manicure durar mais",
+    "excerpt": "Texto de exemplo: cuidados simples para as unhas.",
+    "content": "Texto de exemplo. Explique como cuidar das unhas entre marcações.\n\n## Em casa\n\nHábitos e produtos que ajudam.\n\n## No estúdio\n\nDe quanto em quanto tempo renovar o verniz.",
+    "tags": [
+     "unhas"
+    ]
+   }
+  ]
+ }
+}

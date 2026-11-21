@@ -1,0 +1,58 @@
+{
+  "slug": "sutil",
+  "name": "Sutil",
+  "description": "Rubor, baya y dorado suave con titulares en cursiva y cápsulas: centros de estética, spas, manicura, maquillaje y peluquería",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "centro de estética",
+    "spa",
+    "manicura y pedicura",
+    "maquillaje y novias",
+    "peluquería de autor",
+    "depilación",
+    "cejas y pestañas",
+    "micropigmentación"
+  ],
+  "suggested_accent": "#9d3c5d",
+  "pitch": "Para negocios de belleza que quieren una web suave, femenina y aireada, con titulares en cursiva y cápsulas; si el tono es de lujo discreto y solemne, con mayúsculas espaciadas y ornamentos, elige «Prestigio», y para bienestar orgánico con fotos en arco, «Natural».",
+  "style": "suave, femenino y aireado",
+  "colors": {
+    "acento": "#9d3c5d",
+    "fondo": "#fbf4f1",
+    "texto": "#3b2a2d",
+    "suave": "#f1e2dc",
+    "dorado": "#c9a27e",
+    "fondo_oscuro": "#1c1316"
+  },
+  "typography": {
+    "titulos": "Bodoni Moda (cursiva)",
+    "texto": "Karla"
+  },
+  "dark_mode": "auto",
+  "fonts": "Bodoni Moda y Karla (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (baya recomendado)",
+      "--surface (nude: tarjetas, pie y paneles)",
+      "--gold (dorado suave, solo decorativo: filetes y bordes, nunca texto)",
+      "--radius (24px en tarjetas; 999px en botones, etiquetas e imágenes verticales)"
+    ],
+    "clases_tema": [
+      ".hero-sutil (portada centrada)",
+      ".hero-cap (cápsula vertical con la imagen de la portada)",
+      ".orbs (círculos suaves de la portada sin imagen)",
+      ".eyebrow (antetítulo entre dos filetes)",
+      ".utility (franja fina de accesos)",
+      ".footer-name (nombre en cursiva grande)"
+    ],
+    "bloques_recomendados": [
+      "pricelist (carta de tratamientos)",
+      "features (icono en círculo de contorno fino)",
+      "testimonials (comillas grandes en el acento)",
+      "hours (horario)",
+      "split (la imagen se recorta en cápsula vertical)"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
