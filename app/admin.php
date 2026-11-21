@@ -83,6 +83,11 @@ function adm_routes(): array
         'POST /mail' => ['adm_mail_save', 'super', false],
         'POST /mail/test' => ['adm_mail_test', 'super', false],
         'GET /security' => ['adm_security', 'super', false],
+        'GET /update' => ['adm_update', 'super', false],
+        'POST /update/check' => ['adm_update_check', 'super', false],
+        'POST /update/run' => ['adm_update_run', 'super', false],
+        'POST /update/settings' => ['adm_update_settings', 'super', false],
+        'POST /update/rollback' => ['adm_update_rollback', 'super', false],
         'POST /security' => ['adm_security_save', 'super', false],
         'GET /users' => ['adm_users', 'admin', true],
         'POST /users/add' => ['adm_user_add', 'admin', true],
@@ -174,6 +179,13 @@ function admin_handle(string $path, string $method): void
         }
     }
 
+    // Al entrar el superadmin, se mira si hay versión nueva como mucho cada 6 h, DESPUÉS de responder (no le hace esperar).
+    if ($user['is_superadmin'] && (int) update_state()['checked_at'] < time() - UPDATE_ADMIN_CHECK_EVERY) {
+        register_shutdown_function(function () {
+            if (function_exists('fastcgi_finish_request')) fastcgi_finish_request();
+            try { update_check(false, UPDATE_ADMIN_CHECK_EVERY); } catch (Throwable) {}
+        });
+    }
     $route = adm_routes()["$method $path"] ?? null;
     $c = ['svc' => $svc, 'user' => $user, 'role' => $role, 'sites' => $sites, 'path' => $path];
     if (!$route) { adm_render('error', $c, ['title' => 'No encontrado', 'code' => 404, 'message' => 'Esta página del panel no existe.']); return; }
@@ -210,7 +222,7 @@ function adm_back(string $path): string
         '/users/add' => '/users', '/users/role' => '/users', '/users/remove' => '/users', '/users/super-remove' => '/users', '/account/password' => '/account', '/account/profile' => '/account', '/account/locale' => '/account', '/settings' => '/settings',
         '/forms' => '/forms', '/forms/test' => '/forms', '/forms/webhook-test' => '/forms', '/media/upload-url' => '/media', '/design' => '/design', '/design/restore' => '/design',
         '/backups/create' => '/backups', '/backups/delete' => '/backups', '/backups/restore' => '/backups', '/backups/import' => '/backups',
-        '/backups/settings' => '/backups', '/security' => '/security', '/publish' => '/publish', '/publish/run' => '/publish',
+        '/backups/settings' => '/backups', '/security' => '/security', '/update/run' => '/update', '/update/rollback' => '/update', '/update/settings' => '/update', '/update/check' => '/update', '/publish' => '/publish', '/publish/run' => '/publish',
         '/account/2fa/start' => '/account', '/account/2fa/enable' => '/account', '/account/2fa/manage' => '/account', '/users/2fa-reset' => '/users'];
     if ($path === '/users/edit') return ADM . '/users?edit=' . (int) ($_POST['user_id'] ?? 0);
     if (isset($forms[$path])) {

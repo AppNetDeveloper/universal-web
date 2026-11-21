@@ -29,6 +29,8 @@ require UW_ROOT . '/app/domains.php';
 require UW_ROOT . '/app/tours.php';
 require UW_ROOT . '/app/cookies.php';
 require UW_ROOT . '/app/themes.php';
+require UW_ROOT . '/app/update.php';
+require_once UW_ROOT . '/app/update_finish.php';
 require UW_ROOT . '/app/mcp.php';
 require UW_ROOT . '/app/admin.php';
 require UW_ROOT . '/app/install.php';

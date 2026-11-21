@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 if (PHP_SAPI !== 'cli') { http_response_code(403); exit("Solo se puede ejecutar desde la línea de comandos.\n"); }
 
+// Segunda mitad de una actualización: con el código nuevo, ANTES de cargar la aplicación (que aplica las migraciones).
+if (($argv[1] ?? '') === 'update:finish') {
+    require dirname(__DIR__) . '/app/update_finish.php';
+    $r = uw_update_finish_entry();
+    if ($r === 'ok') { update_fix_owner(); fwrite(STDOUT, 'Actualización terminada: Universal Web ' . UW_VERSION . "\n"); exit(0); }
+    if ($r === null) { fwrite(STDOUT, "No hay ninguna actualización pendiente.\n"); exit(0); }
+    exit(1);
+}
+
 require dirname(__DIR__) . '/app/bootstrap.php';
 Actor::set('system', null, 'cli');
 
@@ -54,6 +63,9 @@ function cmd_help(): void
       media:variants [--site=slug]   Genera las variantes 480w/960w (móvil) que falten de las imágenes ya subidas
       user:2fa-reset  --email=…  Quita la verificación en dos pasos de un usuario que ha perdido el móvil
       hosting:set   --mode=auto_tls|panel|auto [--ip=1.2.3.4] [--ipv6=…]   Cómo se conectan los dominios (install.sh pone auto_tls: Caddy da el HTTPS solo)
+      update:check  Mira si hay versión nueva de Universal Web
+      update        --yes [--policy=patch] [--zip=… --manifest=…]   Actualiza (copia de seguridad, firma comprobada, vuelta atrás sola si falla)
+      update:rollback --yes [--with-db]   Vuelve a la versión anterior desde la copia de la última actualización
       help          Muestra esta ayuda
 
     Variable de entorno UW_DATA: carpeta de datos (por defecto ./data).
@@ -275,6 +287,48 @@ function cmd_hosting_set(array $o): void
     cli_out('Conexión de dominios: ' . server_hosting_mode() . (isset($set['public_ip']) ? ' · IP pública: ' . ($set['public_ip'] ?: '(se averigua sola)') : ''));
 }
 
+function cmd_update_check(array $o): void
+{
+    cli_require_installed();
+    update_check(true, 0, isset($o['feed']) ? (string) $o['feed'] : null);
+    $s = update_status_public();
+    cli_out('Instalada: ' . $s['installed']);
+    if ($s['check_error']) cli_out('No se ha podido comprobar: ' . $s['check_error']);
+    elseif ($s['available']) cli_out("Hay una versión nueva: {$s['latest']}\n\n" . $s['changelog']);
+    else cli_out('Es la última versión.');
+    if (!$s['can_update_from_panel']) cli_out('Aviso: ' . $s['reason']);
+}
+
+/** update --yes [--zip=paquete.zip --manifest=paquete.update.json]: instala la última versión (o un paquete local firmado). */
+function cmd_update(array $o): void
+{
+    cli_require_installed();
+    if (!isset($o['yes'])) cli_fail('Añade --yes para confirmar (se hace una copia de seguridad completa antes)');
+    Actor::set('system', null, 'cli (update)');
+    if (isset($o['zip']) || isset($o['manifest'])) {
+        $zip = cli_opt($o, 'zip');
+        $env = (string) @file_get_contents(cli_opt($o, 'manifest'));
+        if ($env === '') cli_fail('No se puede leer --manifest');
+        $r = update_install_package($env, $zip, 'cli');
+    } else {
+        $r = update_run_remote('cli', false, isset($o['policy']) ? (string) $o['policy'] : null);
+    }
+    cli_out("Código cambiado: {$r['from']} → {$r['to']}. Copia de seguridad: {$r['backup']}. Terminando…");
+    if ($r['skipped_themes']) cli_out('Temas modificados a mano que no se han tocado: ' . implode(', ', $r['skipped_themes']));
+    // La segunda mitad, en un proceso nuevo con el código nuevo (este sigue con el viejo en memoria)
+    passthru(escapeshellarg(PHP_BINARY) . ' ' . escapeshellarg(UW_ROOT . '/bin/uw') . ' update:finish', $rc);
+    exit($rc);
+}
+
+function cmd_update_rollback(array $o): void
+{
+    cli_require_installed();
+    if (!isset($o['yes'])) cli_fail('Añade --yes para confirmar. Con --with-db también vuelve la base de datos de antes de actualizar (se pierde lo hecho después)');
+    $r = update_manual_rollback(isset($o['with-db']), 'cli');
+    update_fix_owner();
+    cli_out($r['message'] . ($r['errors'] ? "\nAvisos: " . implode('; ', $r['errors']) : ''));
+}
+
 function cmd_security_reset(): void
 {
     cli_require_installed();
@@ -301,6 +355,9 @@ try {
         'media:variants' => cmd_media_variants($o),
         'user:2fa-reset' => cmd_user_2fa_reset($o),
         'hosting:set' => cmd_hosting_set($o),
+        'update' => cmd_update($o),
+        'update:check' => cmd_update_check($o),
+        'update:rollback' => cmd_update_rollback($o),
         'help', '--help', '-h' => cmd_help(),
         default => cli_fail("Comando desconocido '$cmd'. Usa: php bin/uw help"),
     };

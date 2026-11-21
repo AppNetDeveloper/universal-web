@@ -278,7 +278,7 @@ function outbound_resolve(string $host): string
  * Descarga una URL pública a un archivo temporal, con protección SSRF: solo http(s), solo IPs públicas
  * (nada de localhost, redes privadas ni ZeroTier), sin redirecciones a otros sitios y con tamaño máximo.
  */
-function http_fetch_public(string $url, int $maxBytes, int $redirects = 3): string
+function http_fetch_public(string $url, int $maxBytes, int $redirects = 3, int $timeout = 120): string
 {
     $parts = parse_url($url);
     if (!$parts || !in_array(strtolower($parts['scheme'] ?? ''), ['http', 'https'], true) || empty($parts['host'])) throw new UwError('URL no válida: usa http:// o https://');
@@ -297,7 +297,7 @@ function http_fetch_public(string $url, int $maxBytes, int $redirects = 3): stri
     $ch = curl_init($url);
     $size = 0;
     curl_setopt_array($ch, [
-        CURLOPT_FOLLOWLOCATION => false, CURLOPT_TIMEOUT => 120, CURLOPT_CONNECTTIMEOUT => 10,
+        CURLOPT_FOLLOWLOCATION => false, CURLOPT_TIMEOUT => $timeout, CURLOPT_CONNECTTIMEOUT => min(10, $timeout),
         CURLOPT_PROTOCOLS => CURLPROTO_HTTP | CURLPROTO_HTTPS,
         CURLOPT_RESOLVE => ["$host:$port:" . $ips[0]], // fija la IP validada (evita DNS rebinding)
         CURLOPT_USERAGENT => 'UniversalWeb/' . UW_VERSION,
@@ -313,7 +313,7 @@ function http_fetch_public(string $url, int $maxBytes, int $redirects = 3): stri
     fclose($out);
     if ($code >= 300 && $code < 400 && $location !== '' && $redirects > 0) {
         unlink($tmp);
-        return http_fetch_public($location, $maxBytes, $redirects - 1); // cada salto se valida de nuevo
+        return http_fetch_public($location, $maxBytes, $redirects - 1, $timeout); // cada salto se valida de nuevo
     }
     if ($size > $maxBytes) { unlink($tmp); throw new UwError('El archivo supera el tamaño máximo (' . intdiv($maxBytes, 1048576) . ' MB)'); }
     if (!$ok || $code !== 200) { unlink($tmp); throw new UwError("No se pudo descargar la URL (HTTP $code)"); }

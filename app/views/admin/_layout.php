@@ -12,7 +12,7 @@ $nav = [
         ['/publish', 'Publicación', 'upload', 'admin'], ['/backups', 'Copias de seguridad', 'archive', 'admin'],
         ['/users', 'Usuarios', 'users', 'admin'], ['/activity', 'Actividad', 'activity', 'admin'],
     ]],
-    ['Plataforma', [['/sites', 'Webs', 'globe', 'super'], ['/security', 'Seguridad y red', 'shield', 'super'], ['/mail', 'Correo del panel', 'mail', 'super']]],
+    ['Plataforma', [['/sites', 'Webs', 'globe', 'super'], ['/security', 'Seguridad y red', 'shield', 'super'], ['/mail', 'Correo del panel', 'mail', 'super'], ['/update', 'Actualizaciones', 'upload', 'super']]],
 ];
 $isActive = function (string $p) use ($path): bool {
     if ($p === '/') return $path === '/';
@@ -77,6 +77,9 @@ $isActive = function (string $p) use ($path): bool {
   <?php foreach ($flashes as $f): ?>
     <div class="flash flash-<?= $f['type'] === 'error' ? 'error' : 'ok' ?>" role="status"><?= e(t_msg((string) $f['msg'])) ?></div>
   <?php endforeach; ?>
+  <?php if (($role ?? '') === 'super' && ($view ?? '') !== 'update' && ($upd = update_state()['latest'] ?? null) && version_compare((string) $upd['version'], UW_VERSION, '>')): ?>
+    <div class="flash flash-ok" role="status"><?= th('Hay una versión nueva de Universal Web: <b>{v}</b> (tienes la {cur}).', ['v' => $upd['version'], 'cur' => UW_VERSION]) ?> <a href="<?= ADM ?>/update"><?= te('Ver cambios y actualizar') ?></a></div>
+  <?php endif; ?>
   <?= $content ?>
 </main>
 </body>

@@ -1,0 +1,108 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+// Universal Web · Copyright (c) 2026 BionicAdri · Licencia BionicAdri 2.0 (ver LICENSE)
+//
+// Empaqueta y FIRMA una versión para subirla a la release de GitHub (no sube nada):
+//   php bin/release [--key=/root/.config/universal-web-release/ed25519.key] [--out=dist] [--src=.]
+//
+// Deja en dist/:
+//   universal-web-<v>.zip            paquete (lo que sigue Git, sin tests, datos ni herramientas de publicación)
+//   universal-web-<v>.update.json    sobre firmado: {payload: base64(JSON con versión, sha256, tamaño, cambios), sig: ed25519}
+//   universal-web.zip + *.sha256     lo que siguen usando deploy/instalar.php e instalar-vps.sh (releases/latest/download/…)
+// Sube a la release v<versión> estos 5 archivos más deploy/instalar-vps.sh.
+//
+// La clave privada NUNCA va en el repositorio. Si no existe, se crea con --init-key (permisos 600) y se muestra la pública,
+// que va en app/update.php (UPDATE_PUBLIC_KEY). Con una clave cuya pública no es la del código, el panel rechazará el
+// paquete: la herramienta se niega salvo con --other-key (solo para pruebas).
+
+if (PHP_SAPI !== 'cli') exit(1);
+$o = [];
+foreach (array_slice($argv, 1) as $a) if (preg_match('/^--([\w-]+)(?:=(.*))?$/s', $a, $m)) $o[$m[1]] = $m[2] ?? true;
+$fail = function (string $msg): never { fwrite(STDERR, "Error: $msg\n"); exit(1); };
+foreach (['sodium_crypto_sign_detached', 'hash_file'] as $f) if (!function_exists($f)) $fail("este PHP no tiene $f");
+if (!class_exists('ZipArchive')) $fail('este PHP no tiene la extensión zip');
+
+$src = realpath((string) ($o['src'] ?? dirname(__DIR__))) ?: $fail('carpeta --src no válida');
+$out = (string) ($o['out'] ?? "$src/dist");
+$keyFile = (string) ($o['key'] ?? '/root/.config/universal-web-release/ed25519.key');
+
+if (isset($o['init-key'])) {
+    if (is_file($keyFile)) $fail("ya existe $keyFile");
+    @mkdir(dirname($keyFile), 0700, true);
+    $kp = sodium_crypto_sign_keypair();
+    file_put_contents($keyFile, base64_encode(sodium_crypto_sign_secretkey($kp)) . "\n");
+    chmod($keyFile, 0600);
+    echo 'Clave creada en ' . $keyFile . "\nPública (ponla en UPDATE_PUBLIC_KEY): " . base64_encode(sodium_crypto_sign_publickey($kp)) . "\n";
+    exit(0);
+}
+
+$core = (string) file_get_contents("$src/app/core.php");
+preg_match("/const UW_VERSION = '([0-9]+\\.[0-9]+\\.[0-9]+)';/", $core, $vm) || $fail('no encuentro UW_VERSION en app/core.php');
+$version = $vm[1];
+preg_match('/const UW_SCHEMA = (\d+);/', $core, $sm);
+
+// Clave
+if (!is_file($keyFile)) $fail("no existe la clave $keyFile (créala con --init-key)");
+if ((fileperms($keyFile) & 0077) !== 0) $fail("la clave $keyFile debe tener permisos 600");
+$sk = base64_decode(trim((string) file_get_contents($keyFile)), true);
+if ($sk === false || strlen($sk) !== SODIUM_CRYPTO_SIGN_SECRETKEYBYTES) $fail('clave privada con formato no válido');
+$pub = base64_encode(sodium_crypto_sign_publickey_from_secretkey($sk));
+preg_match("/const UPDATE_PUBLIC_KEY = '([^']+)';/", (string) file_get_contents("$src/app/update.php"), $pm);
+if (($pm[1] ?? '') !== $pub && !isset($o['other-key'])) $fail("la clave no corresponde a UPDATE_PUBLIC_KEY de app/update.php (pública de esta clave: $pub)");
+
+// Lista de archivos: lo que sigue Git (o, fuera de un repositorio, todo menos lo excluido)
+$exclude = '#^(data/|tests/|dist/|\.git|\.tools/|\.claude/|CLAUDE\.md$|bin/release$|deploy/(instalar\.php|instalar-vps\.sh|hacer_release\.sh)$|app/release-files\.json$|public/media/(?!\.htaccess$)|themes/\.stage-)#';
+$list = [];
+$git = is_dir("$src/.git") ? shell_exec('cd ' . escapeshellarg($src) . ' && git ls-files --cached --others --exclude-standard -z 2>/dev/null') : null;
+if (is_string($git) && $git !== '') {
+    $list = array_filter(explode("\0", $git));
+} else {
+    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($src, FilesystemIterator::SKIP_DOTS));
+    foreach ($it as $f) if ($f->isFile()) $list[] = str_replace('\\', '/', substr($f->getPathname(), strlen($src) + 1));
+}
+$list = array_values(array_filter($list, fn($f) => !preg_match($exclude, $f) && is_file("$src/$f") && !is_link("$src/$f") && !preg_match('#(^|/)\.(?!htaccess$|gitignore$)#', $f)));
+sort($list, SORT_STRING);
+if (!in_array('app/core.php', $list, true)) $fail('la lista de archivos no trae app/core.php');
+
+// Huellas de lo instalado: el actualizador sabe así qué borrar y qué temas de serie se han tocado a mano
+$hashes = [];
+foreach ($list as $f) $hashes[$f] = hash_file('sha256', "$src/$f");
+$manifestFiles = json_encode(['version' => $version, 'files' => $hashes], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n";
+
+@mkdir($out, 0755, true);
+$zipName = "universal-web-$version.zip";
+$zipPath = "$out/$zipName";
+@unlink($zipPath);
+$z = new ZipArchive();
+if ($z->open($zipPath, ZipArchive::CREATE | ZipArchive::OVERWRITE) !== true) $fail('no puedo crear el zip');
+$entries = $list;
+$entries[] = 'app/release-files.json';
+sort($entries, SORT_STRING);
+foreach ($entries as $f) {
+    if ($f === 'app/release-files.json') $z->addFromString($f, $manifestFiles);
+    else $z->addFile("$src/$f", $f);
+    $z->setMtimeName($f, 1767225600); // fecha fija: el mismo código da la misma huella
+    $exec = $f !== 'app/release-files.json' && is_executable("$src/$f");
+    $z->setExternalAttributesName($f, ZipArchive::OPSYS_UNIX, (($exec ? 0100755 : 0100644) << 16));
+}
+$z->close();
+
+// Resumen de cambios de esta versión, sacado de CHANGELOG.md («## [0.4.0] …» hasta la siguiente versión)
+$changelog = '';
+if (is_file("$src/CHANGELOG.md") && preg_match('/^## \[?' . preg_quote($version, '/') . '\]?[^\n]*\n(.*?)(?=^## \[?\d|\z)/ms', (string) file_get_contents("$src/CHANGELOG.md"), $cm)) $changelog = trim($cm[1]);
+
+$sha = hash_file('sha256', $zipPath);
+$payload = json_encode(['format' => 1, 'name' => 'universal-web', 'version' => $version, 'file' => $zipName, 'sha256' => $sha, 'size' => filesize($zipPath),
+    'min_php' => '8.1', 'schema' => (int) ($sm[1] ?? 0), 'changelog' => mb_substr($changelog, 0, 20000), 'released_at' => gmdate('c')], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+$sig = sodium_crypto_sign_detached($payload, $sk);
+sodium_memzero($sk);
+file_put_contents("$out/universal-web-$version.update.json", json_encode(['payload' => base64_encode($payload), 'sig' => base64_encode($sig), 'public_key' => $pub], JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . "\n");
+
+// Lo que usan los instaladores de un solo archivo
+copy($zipPath, "$out/universal-web.zip");
+foreach (['universal-web.zip', $zipName] as $f) file_put_contents("$out/$f.sha256", hash_file('sha256', "$out/$f") . "  $f\n");
+
+echo "Versión $version firmada (" . count($list) . " archivos, " . round(filesize($zipPath) / 1048576, 2) . " MB)\n";
+foreach (glob("$out/*") as $f) printf("  %-40s %s\n", basename($f), filesize($f));
+echo "sha256: $sha\nSube a la release v$version: los 5 archivos de " . basename($out) . "/ y deploy/instalar-vps.sh. No se ha subido nada.\n";

@@ -6,7 +6,7 @@ declare(strict_types=1);
  * Modo mantenimiento (actualización en curso). Lo comprueba public/index.php ANTES de cargar la aplicación, porque
  * durante una actualización el código está a medio cambiar. Archivo: data/maintenance.json {since, until, reason}.
  * Caduca solo (until): si una actualización muere a mitad, la web no se queda cerrada para siempre.
- * Solo pasan las rutas que terminan la actualización (/admin/update…), que comprueban ellas mismas quién llama.
+ * La segunda mitad de la actualización la hace public/index.php antes de esta comprobación (app/update_finish.php).
  */
 
 function uw_maintenance_file(): string
@@ -42,8 +42,6 @@ function uw_maintenance_gate(): bool
     if (PHP_SAPI === 'cli') return false;
     $m = uw_maintenance_state();
     if ($m === null) return false;
-    $path = (string) parse_url((string) ($_SERVER['REQUEST_URI'] ?? '/'), PHP_URL_PATH);
-    if (preg_match('#^/admin/update(/|$)#', $path)) return false;
     http_response_code(503);
     header('Retry-After: 120');
     header('Cache-Control: no-store');
