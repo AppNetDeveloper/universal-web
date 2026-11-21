@@ -1,0 +1,57 @@
+{
+  "slug": "horizonte",
+  "name": "Horizonte",
+  "description": "Fichas de inmueble sobre fondo luminoso y verde bosque: inmobiliarias, alquiler vacacional, promotoras y administración de fincas",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "inmobiliaria de barrio o comarca",
+    "alquiler vacacional",
+    "promotora",
+    "administración de fincas",
+    "alquiler de locales",
+    "casas rurales en alquiler",
+    "gestión de apartamentos turísticos",
+    "agencia de alquiler de viviendas"
+  ],
+  "suggested_accent": "#1f6f50",
+  "pitch": "Para la inmobiliaria práctica con muchos inmuebles que enseñar: fichas con foto, etiqueta de venta o alquiler y un panel de búsqueda sobre la portada; si tu cartera es pequeña, exclusiva y de gama alta, con un tono sobrio y pausado, mejor «Prestigio».",
+  "style": "luminoso, práctico, verde bosque",
+  "colors": {
+    "acento": "#1f6f50",
+    "fondo": "#f7f6f2",
+    "texto": "#18241f",
+    "arena": "#e9e2d3",
+    "fondo_oscuro": "#0f1714"
+  },
+  "typography": {
+    "titulos": "Archivo",
+    "texto": "Archivo"
+  },
+  "dark_mode": "auto",
+  "fonts": "Archivo (SIL OFL 1.1, alojada en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (verde bosque recomendado)",
+      "--sand (arena de apoyo: cabecera superior, llamada a la acción)",
+      "--ink (verde muy oscuro: banda de cifras y pie)",
+      "--radius (10px)"
+    ],
+    "clases_tema": [
+      ".topline (franja fina con teléfono, correo y accesos)",
+      ".hero-photo / .hero-panel (foto a sangre y panel que solapa su borde)",
+      ".property (ficha de inmueble de «cards»)",
+      ".chip (etiqueta sólida Venta / Alquiler)",
+      ".stats-band (cifras en banda a todo el ancho)",
+      ".section-head (título con línea corta del acento encima)"
+    ],
+    "bloques_recomendados": [
+      "cards (inmuebles con etiqueta Venta / Alquiler y foto 4:3)",
+      "features (servicios con icono)",
+      "stats (cifras en banda)",
+      "hours (horario de la oficina)",
+      "contact_form"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}

@@ -1,0 +1,3076 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Horizonte). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Tu casa, tu local o tu escapada, en tu comarca",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Inmuebles",
+    "url": "/inmuebles"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir valoración",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: inmobiliaria de barrio con pisos, casas y locales en venta y alquiler, y alquiler vacacional en la comarca. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Inmobiliaria · Ejemplo",
+       "title": "Encuentra el lugar donde quieres quedarte",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué inmuebles gestionas, en qué zona y por qué la gente confía en ti.",
+       "cta_text": "Pedir valoración",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver inmuebles",
+       "cta2_link": "/inmuebles"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Destacados",
+       "title": "Inmuebles de ejemplo",
+       "subtitle": "Texto de ejemplo: sustituye estas fichas por tus inmuebles reales.",
+       "items": [
+        {
+         "tag": "Venta",
+         "title": "Piso luminoso en el centro",
+         "text": "3 hab. · 2 baños · 95 m² · Precio de ejemplo",
+         "link": "/inmuebles"
+        },
+        {
+         "tag": "Alquiler",
+         "title": "Ático con terraza",
+         "text": "2 hab. · 1 baño · 70 m² · Precio de ejemplo",
+         "link": "/inmuebles"
+        },
+        {
+         "tag": "Vacacional",
+         "title": "Apartamento cerca de la playa",
+         "text": "2 hab. · 1 baño · 6 plazas · Precio de ejemplo",
+         "link": "/inmuebles"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicios",
+       "title": "Todo lo que necesitas, en una sola oficina",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Compraventa",
+         "text": "Te acompañamos desde la visita hasta la firma ante notario."
+        },
+        {
+         "icon": "handshake",
+         "title": "Alquiler de viviendas",
+         "text": "Buscamos al inquilino o la casa adecuada y gestionamos el contrato."
+        },
+        {
+         "icon": "sun",
+         "title": "Alquiler vacacional",
+         "text": "Gestión de reservas, limpieza y entrega de llaves."
+        },
+        {
+         "icon": "users",
+         "title": "Administración de fincas",
+         "text": "Cuentas claras, juntas y mantenimiento de tu comunidad."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Locales y oficinas",
+         "text": "Espacios para tu negocio, con la zona y los metros que necesitas."
+        },
+        {
+         "icon": "calendar",
+         "title": "Promociones",
+         "text": "Obra nueva con calendarios y calidades explicados."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Respuesta a tu consulta (ejemplo)"
+        },
+        {
+         "value": "350",
+         "label": "Inmuebles gestionados (ejemplo)"
+        },
+        {
+         "value": "15",
+         "label": "Años en la comarca (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Nuestra oficina",
+       "title": "Conocemos cada calle de la zona",
+       "body": "- Valoración gratuita y sin compromiso\n- Fotos y planos cuidados en cada ficha\n- Una persona de referencia de principio a fin",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Cuánto vale tu inmueble?",
+       "text": "Cuéntanos dónde está y te hacemos una valoración orientativa.",
+       "button_text": "Pedir valoración",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "inmuebles",
+    "title": "Inmuebles",
+    "seo": {
+     "description": "Texto de ejemplo: pisos, casas, locales y casas rurales en venta y alquiler, y alquiler vacacional. Sustituye estas fichas por tu cartera real."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Inmuebles",
+       "subtitle": "Texto de ejemplo: una selección de la cartera con venta, alquiler, locales y casas rurales.",
+       "cta_text": "Pedir valoración",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Venta",
+         "title": "Piso luminoso en el centro",
+         "text": "3 hab. · 2 baños · 95 m² · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Alquiler",
+         "title": "Ático con terraza",
+         "text": "2 hab. · 1 baño · 70 m² · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Vacacional",
+         "title": "Apartamento cerca de la playa",
+         "text": "2 hab. · 1 baño · 6 plazas · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Obra nueva",
+         "title": "Vivienda en promoción",
+         "text": "Entrega prevista de ejemplo · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Local",
+         "title": "Local a pie de calle",
+         "text": "80 m² · Escaparate · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Casa rural",
+         "title": "Casa de piedra con jardín",
+         "text": "4 hab. · 3 baños · Chimenea · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Venta",
+         "title": "Casa adosada con patio",
+         "text": "4 hab. · 3 baños · 160 m² · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Alquiler",
+         "title": "Estudio reformado",
+         "text": "1 hab. · 1 baño · 38 m² · Precio de ejemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Vacacional",
+         "title": "Casa con piscina",
+         "text": "5 hab. · 3 baños · 10 plazas · Precio de ejemplo",
+         "link": "/contacto"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorarios orientativos",
+       "note": "Cifras de ejemplo: sustitúyelas por las de tu agencia.",
+       "items": [
+        {
+         "section": "Venta",
+         "name": "Comisión de venta",
+         "price": "3 % (ejemplo)"
+        },
+        {
+         "section": "Alquiler",
+         "name": "Gestión de alquiler",
+         "price": "1 mes de renta (ejemplo)"
+        },
+        {
+         "section": "Fincas",
+         "name": "Administración mensual",
+         "price": "desde 20 (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Cuánto vale tu inmueble?",
+       "text": "Cuéntanos dónde está y te hacemos una valoración orientativa.",
+       "button_text": "Pedir valoración",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa al acompañar a propietarios e inquilinos en nuestra comarca."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu inmobiliaria, quién forma el equipo y qué os hace distintos.\n\nHabla de cómo trabajáis, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Cada inmueble, visitado y fotografiado\n- Precios explicados con datos de la zona\n- Seguimiento claro tras la firma"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Del primer contacto a las llaves",
+       "items": [
+        {
+         "title": "Cuéntanos qué buscas",
+         "text": "Zona, presupuesto y plazos, sin prisas."
+        },
+        {
+         "title": "Visitamos juntos",
+         "text": "Te enseñamos los inmuebles que encajan."
+        },
+        {
+         "title": "Firmamos con calma",
+         "text": "Revisamos contratos y trámites contigo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre valoraciones, honorarios, contratos de alquiler, visitas y trámites de compra."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿La valoración tiene coste?",
+         "answer": "No. Es orientativa y sin compromiso. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué documentos necesito para vender?",
+         "answer": "Escritura, último recibo del IBI y certificado energético. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Gestionáis el alquiler vacacional?",
+         "answer": "Sí: reservas, limpieza y atención a los huéspedes."
+        },
+        {
+         "question": "¿Puedo visitar un inmueble el fin de semana?",
+         "answer": "Sí, acordamos el día y la hora que te vengan bien."
+        },
+        {
+         "question": "¿Administráis comunidades pequeñas?",
+         "answer": "Sí, desde unos pocos vecinos hasta edificios grandes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Cuánto vale tu inmueble?",
+       "text": "Cuéntanos dónde está y te hacemos una valoración orientativa.",
+       "button_text": "Pedir valoración",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: pide una valoración o escríbenos con lo que buscas y te respondemos lo antes posible en horario de oficina."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir valoración",
+       "text": "Cuéntanos qué buscas o qué quieres vender o alquilar.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario de oficina",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-preparar-tu-casa-para-vender",
+    "title": "Cómo preparar tu casa para venderla",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve y práctica.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con consejos generales y prudentes.\n\n## Ordena y ventila\n\nUna casa despejada se ve más grande y se recuerda mejor.\n\n## Cuida las fotos\n\nLuz natural y todas las estancias, sin objetos personales.",
+    "tags": [
+     "vender",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "alquiler-vacacional-primera-vez",
+    "title": "Alquiler vacacional: primeros pasos",
+    "excerpt": "Texto de ejemplo: qué revisar antes de poner tu casa en alquiler.",
+    "content": "Texto de ejemplo. Explica cómo empezar con un alquiler vacacional para que nadie arranque con dudas.\n\n## Antes de publicar\n\nRevisa licencias, seguros y normas de tu municipio.\n\n## Después de cada estancia\n\nLimpieza, revisión y entrega de llaves ordenadas.",
+    "tags": [
+     "alquiler",
+     "vacacional"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Your home, your shop or your getaway, close to home",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Properties",
+    "url": "/properties"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Request a valuation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: neighbourhood estate agency with flats, houses and shops for sale and to rent, plus holiday lets nearby. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Estate agency · Sample",
+       "title": "Find the place you want to stay",
+       "subtitle": "Sample text: say in one sentence which properties you handle, in which area and why people trust you.",
+       "cta_text": "Request a valuation",
+       "cta_link": "/contact",
+       "cta2_text": "See properties",
+       "cta2_link": "/properties"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Featured",
+       "title": "Sample properties",
+       "subtitle": "Sample text: replace these listings with your real properties.",
+       "items": [
+        {
+         "tag": "For sale",
+         "title": "Bright flat in the centre",
+         "text": "3 bed · 2 bath · 95 m² · Sample price",
+         "link": "/properties"
+        },
+        {
+         "tag": "To rent",
+         "title": "Penthouse with terrace",
+         "text": "2 bed · 1 bath · 70 m² · Sample price",
+         "link": "/properties"
+        },
+        {
+         "tag": "Holiday",
+         "title": "Apartment near the beach",
+         "text": "2 bed · 1 bath · sleeps 6 · Sample price",
+         "link": "/properties"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "Everything you need, in one office",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Buying and selling",
+         "text": "We go with you from the viewing to the signing."
+        },
+        {
+         "icon": "handshake",
+         "title": "Residential lettings",
+         "text": "We find the right tenant or home and handle the contract."
+        },
+        {
+         "icon": "sun",
+         "title": "Holiday lets",
+         "text": "Bookings, cleaning and key handover."
+        },
+        {
+         "icon": "users",
+         "title": "Block management",
+         "text": "Clear accounts, meetings and upkeep for your building."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Shops and offices",
+         "text": "Premises for your business, in the area and size you need."
+        },
+        {
+         "icon": "calendar",
+         "title": "New developments",
+         "text": "Off-plan homes with schedules and finishes explained."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Reply to your enquiry (sample)"
+        },
+        {
+         "value": "350",
+         "label": "Properties managed (sample)"
+        },
+        {
+         "value": "15",
+         "label": "Years in the area (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Our office",
+       "title": "We know every street in the area",
+       "body": "- Free, no-obligation valuation\n- Careful photos and floor plans in every listing\n- One contact person from start to finish",
+       "button_text": "About",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Reviews",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your clients, with their consent.",
+         "name": "Sample client",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "What is your property worth?",
+       "text": "Tell us where it is and we will give you a guide valuation.",
+       "button_text": "Request a valuation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "properties",
+    "title": "Properties",
+    "seo": {
+     "description": "Sample text: flats, houses, shops and country houses for sale and to rent, plus holiday lets. Replace these listings with your real portfolio."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Properties",
+       "subtitle": "Sample text: a selection of the portfolio with sales, lettings, shops and country houses.",
+       "cta_text": "Request a valuation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "For sale",
+         "title": "Bright flat in the centre",
+         "text": "3 bed · 2 bath · 95 m² · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "To rent",
+         "title": "Penthouse with terrace",
+         "text": "2 bed · 1 bath · 70 m² · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "Holiday",
+         "title": "Apartment near the beach",
+         "text": "2 bed · 1 bath · sleeps 6 · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "New build",
+         "title": "Home in a new development",
+         "text": "Sample delivery date · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "Commercial",
+         "title": "Street-level shop",
+         "text": "80 m² · Shop window · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "Country house",
+         "title": "Stone house with garden",
+         "text": "4 bed · 3 bath · Fireplace · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "For sale",
+         "title": "Terraced house with patio",
+         "text": "4 bed · 3 bath · 160 m² · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "To rent",
+         "title": "Refurbished studio",
+         "text": "1 bed · 1 bath · 38 m² · Sample price",
+         "link": "/contact"
+        },
+        {
+         "tag": "Holiday",
+         "title": "House with pool",
+         "text": "5 bed · 3 bath · sleeps 10 · Sample price",
+         "link": "/contact"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Guide fees",
+       "note": "Sample figures: replace them with your agency's.",
+       "items": [
+        {
+         "section": "Sales",
+         "name": "Sales commission",
+         "price": "3% (sample)"
+        },
+        {
+         "section": "Lettings",
+         "name": "Letting management",
+         "price": "1 month's rent (sample)"
+        },
+        {
+         "section": "Block management",
+         "name": "Monthly management",
+         "price": "from 20 (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "What is your property worth?",
+       "text": "Tell us where it is and we will give you a guide valuation.",
+       "button_text": "Request a valuation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us when helping owners and tenants in our area."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your agency here, who is on the team and what makes you different.\n\nTalk about how you work, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Every property visited and photographed\n- Prices explained with local data\n- Clear follow-up after signing"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "From first contact to the keys",
+       "items": [
+        {
+         "title": "Tell us what you want",
+         "text": "Area, budget and timing, no rush."
+        },
+        {
+         "title": "We visit together",
+         "text": "We show you the properties that fit."
+        },
+        {
+         "title": "We sign calmly",
+         "text": "We go through contracts and paperwork with you."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about valuations, fees, tenancy agreements, viewings and the buying process."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Does the valuation cost anything?",
+         "answer": "No. It is a guide, with no obligation. *Sample text.*"
+        },
+        {
+         "question": "Which documents do I need to sell?",
+         "answer": "Title deeds, the latest property tax bill and the energy certificate. *Sample text.*"
+        },
+        {
+         "question": "Do you manage holiday lets?",
+         "answer": "Yes: bookings, cleaning and guest support."
+        },
+        {
+         "question": "Can I view a property at the weekend?",
+         "answer": "Yes, we agree the day and time that suit you."
+        },
+        {
+         "question": "Do you manage small communities?",
+         "answer": "Yes, from a handful of neighbours to large buildings."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "What is your property worth?",
+       "text": "Tell us where it is and we will give you a guide valuation.",
+       "button_text": "Request a valuation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: request a valuation or write to us with what you are looking for and we will reply as soon as possible during office hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Request a valuation",
+       "text": "Tell us what you are looking for, or what you want to sell or let.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Office hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-get-your-home-ready-to-sell",
+    "title": "How to get your home ready to sell",
+    "excerpt": "Sample blog text: a short, practical guide.",
+    "content": "Sample text. Write a useful article for your clients here, with general and careful advice.\n\n## Tidy and air the rooms\n\nA clear home looks bigger and is remembered better.\n\n## Take care of the photos\n\nNatural light and every room, with no personal items.",
+    "tags": [
+     "selling",
+     "tips"
+    ]
+   },
+   {
+    "slug": "holiday-let-first-steps",
+    "title": "Holiday lets: first steps",
+    "excerpt": "Sample text: what to check before listing your home.",
+    "content": "Sample text. Explain how to start with a holiday let so nobody begins with doubts.\n\n## Before you list\n\nCheck licences, insurance and local rules.\n\n## After every stay\n\nCleaning, inspection and an orderly key handover.",
+    "tags": [
+     "letting",
+     "holiday"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Casa ta, spațiul tău comercial sau escapada ta, în zona ta",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Proprietăți",
+    "url": "/proprietati"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Cere o evaluare",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: agenție imobiliară de cartier cu apartamente, case și spații comerciale de vânzare și închiriat, plus cazări de vacanță."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Agenție imobiliară · Exemplu",
+       "title": "Găsește locul în care vrei să rămâi",
+       "subtitle": "Text de exemplu: spune într-o frază ce proprietăți gestionezi, în ce zonă și de ce au oamenii încredere în tine.",
+       "cta_text": "Cere o evaluare",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi proprietățile",
+       "cta2_link": "/proprietati"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Recomandate",
+       "title": "Proprietăți de exemplu",
+       "subtitle": "Text de exemplu: înlocuiește aceste fișe cu proprietățile tale reale.",
+       "items": [
+        {
+         "tag": "Vânzare",
+         "title": "Apartament luminos în centru",
+         "text": "3 cam. · 2 băi · 95 m² · Preț de exemplu",
+         "link": "/proprietati"
+        },
+        {
+         "tag": "Închiriere",
+         "title": "Penthouse cu terasă",
+         "text": "2 cam. · 1 baie · 70 m² · Preț de exemplu",
+         "link": "/proprietati"
+        },
+        {
+         "tag": "Vacanță",
+         "title": "Apartament lângă plajă",
+         "text": "2 cam. · 1 baie · 6 locuri · Preț de exemplu",
+         "link": "/proprietati"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicii",
+       "title": "Tot ce îți trebuie, într-un singur birou",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Vânzări și cumpărări",
+         "text": "Te însoțim de la vizionare până la semnarea actelor."
+        },
+        {
+         "icon": "handshake",
+         "title": "Închirieri de locuințe",
+         "text": "Găsim chiriașul sau locuința potrivită și ne ocupăm de contract."
+        },
+        {
+         "icon": "sun",
+         "title": "Închirieri de vacanță",
+         "text": "Rezervări, curățenie și predarea cheilor."
+        },
+        {
+         "icon": "users",
+         "title": "Administrare de imobile",
+         "text": "Conturi clare, adunări și întreținerea blocului tău."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Spații comerciale și birouri",
+         "text": "Spații pentru afacerea ta, în zona și cu suprafața de care ai nevoie."
+        },
+        {
+         "icon": "calendar",
+         "title": "Proiecte noi",
+         "text": "Locuințe în construcție, cu termene și finisaje explicate."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Răspuns la solicitarea ta (exemplu)"
+        },
+        {
+         "value": "350",
+         "label": "Proprietăți gestionate (exemplu)"
+        },
+        {
+         "value": "15",
+         "label": "Ani în zonă (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Biroul nostru",
+       "title": "Cunoaștem fiecare stradă din zonă",
+       "body": "- Evaluare gratuită, fără obligații\n- Fotografii și planuri îngrijite în fiecare fișă\n- O persoană de contact de la început până la sfârșit",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Cât valorează proprietatea ta?",
+       "text": "Spune-ne unde se află și îți facem o evaluare orientativă.",
+       "button_text": "Cere o evaluare",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "proprietati",
+    "title": "Proprietăți",
+    "seo": {
+     "description": "Text de exemplu: apartamente, case, spații comerciale și case rurale de vânzare și închiriat, plus cazări de vacanță."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Proprietăți",
+       "subtitle": "Text de exemplu: o selecție din portofoliu cu vânzări, închirieri, spații comerciale și case rurale.",
+       "cta_text": "Cere o evaluare",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Vânzare",
+         "title": "Apartament luminos în centru",
+         "text": "3 cam. · 2 băi · 95 m² · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Închiriere",
+         "title": "Penthouse cu terasă",
+         "text": "2 cam. · 1 baie · 70 m² · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vacanță",
+         "title": "Apartament lângă plajă",
+         "text": "2 cam. · 1 baie · 6 locuri · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Construcție nouă",
+         "title": "Locuință într-un ansamblu nou",
+         "text": "Predare estimată de exemplu · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Spațiu comercial",
+         "title": "Spațiu la stradă",
+         "text": "80 m² · Vitrină · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Casă rurală",
+         "title": "Casă de piatră cu grădină",
+         "text": "4 cam. · 3 băi · Șemineu · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vânzare",
+         "title": "Casă în șir cu curte",
+         "text": "4 cam. · 3 băi · 160 m² · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Închiriere",
+         "title": "Garsonieră renovată",
+         "text": "1 cam. · 1 baie · 38 m² · Preț de exemplu",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vacanță",
+         "title": "Casă cu piscină",
+         "text": "5 cam. · 3 băi · 10 locuri · Preț de exemplu",
+         "link": "/contact"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Comisioane orientative",
+       "note": "Cifre de exemplu: înlocuiește-le cu ale agenției tale.",
+       "items": [
+        {
+         "section": "Vânzări",
+         "name": "Comision de vânzare",
+         "price": "3 % (exemplu)"
+        },
+        {
+         "section": "Închirieri",
+         "name": "Administrarea închirierii",
+         "price": "1 chirie lunară (exemplu)"
+        },
+        {
+         "section": "Imobile",
+         "name": "Administrare lunară",
+         "price": "de la 20 (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Cât valorează proprietatea ta?",
+       "text": "Spune-ne unde se află și îți facem o evaluare orientativă.",
+       "button_text": "Cere o evaluare",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi când îi însoțim pe proprietari și chiriași din zona noastră."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Spune aici povestea agenției tale, cine face parte din echipă și ce vă face diferiți.\n\nVorbește despre cum lucrați, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Fiecare proprietate vizitată și fotografiată\n- Prețuri explicate cu date din zonă\n- Urmărire clară după semnare"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "De la primul contact la chei",
+       "items": [
+        {
+         "title": "Spune-ne ce cauți",
+         "text": "Zonă, buget și termene, fără grabă."
+        },
+        {
+         "title": "Vizităm împreună",
+         "text": "Îți arătăm proprietățile potrivite."
+        },
+        {
+         "title": "Semnăm cu calm",
+         "text": "Parcurgem contractele și actele împreună."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre evaluări, comisioane, contracte de închiriere, vizionări și formalitățile de cumpărare."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Evaluarea costă ceva?",
+         "answer": "Nu. Este orientativă și fără obligații. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce documente îmi trebuie ca să vând?",
+         "answer": "Actul de proprietate, ultima chitanță de impozit și certificatul energetic. *Text de exemplu.*"
+        },
+        {
+         "question": "Gestionați închirieri de vacanță?",
+         "answer": "Da: rezervări, curățenie și asistență pentru oaspeți."
+        },
+        {
+         "question": "Pot vizita o proprietate în weekend?",
+         "answer": "Da, stabilim ziua și ora care ți se potrivesc."
+        },
+        {
+         "question": "Administrați asociații mici?",
+         "answer": "Da, de la câțiva vecini până la blocuri mari."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Cât valorează proprietatea ta?",
+       "text": "Spune-ne unde se află și îți facem o evaluare orientativă.",
+       "button_text": "Cere o evaluare",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: cere o evaluare sau scrie-ne ce cauți și îți răspundem cât mai repede în programul biroului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Cere o evaluare",
+       "text": "Spune-ne ce cauți sau ce vrei să vinzi ori să închiriezi.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program birou",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-pregatesti-casa-pentru-vanzare",
+    "title": "Cum îți pregătești casa pentru vânzare",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt și practic.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienți, cu sfaturi generale și prudente.\n\n## Fă ordine și aerisește\n\nO casă degajată pare mai mare și se ține minte mai ușor.\n\n## Ai grijă de fotografii\n\nLumină naturală și toate camerele, fără obiecte personale.",
+    "tags": [
+     "vanzare",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "inchiriere-de-vacanta-primii-pasi",
+    "title": "Închirierea de vacanță: primii pași",
+    "excerpt": "Text de exemplu: ce verifici înainte să-ți oferi casa spre închiriere.",
+    "content": "Text de exemplu. Explică cum să începi cu o închiriere de vacanță, ca nimeni să nu pornească cu îndoieli.\n\n## Înainte să publici\n\nVerifică autorizațiile, asigurările și regulile localității.\n\n## După fiecare sejur\n\nCurățenie, verificare și predarea ordonată a cheilor.",
+    "tags": [
+     "inchiriere",
+     "vacanta"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Votre maison, votre local ou votre escapade, près de chez vous",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Biens",
+    "url": "/biens"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Demander une estimation",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : agence immobilière de quartier avec appartements, maisons et locaux à vendre ou à louer, et locations de vacances."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Agence immobilière · Exemple",
+       "title": "Trouvez l'endroit où vous voulez rester",
+       "subtitle": "Texte d'exemple : dites en une phrase quels biens vous gérez, dans quel secteur et pourquoi on vous fait confiance.",
+       "cta_text": "Demander une estimation",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les biens",
+       "cta2_link": "/biens"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "À la une",
+       "title": "Biens d'exemple",
+       "subtitle": "Texte d'exemple : remplacez ces fiches par vos biens réels.",
+       "items": [
+        {
+         "tag": "Vente",
+         "title": "Appartement lumineux en centre-ville",
+         "text": "3 ch. · 2 sdb · 95 m² · Prix d'exemple",
+         "link": "/biens"
+        },
+        {
+         "tag": "Location",
+         "title": "Attique avec terrasse",
+         "text": "2 ch. · 1 sdb · 70 m² · Prix d'exemple",
+         "link": "/biens"
+        },
+        {
+         "tag": "Vacances",
+         "title": "Appartement près de la plage",
+         "text": "2 ch. · 1 sdb · 6 couchages · Prix d'exemple",
+         "link": "/biens"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "Tout ce qu'il vous faut, dans une seule agence",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Achat et vente",
+         "text": "Nous vous accompagnons de la visite à la signature."
+        },
+        {
+         "icon": "handshake",
+         "title": "Location de logements",
+         "text": "Nous trouvons le bon locataire ou le bon logement et gérons le bail."
+        },
+        {
+         "icon": "sun",
+         "title": "Locations de vacances",
+         "text": "Réservations, ménage et remise des clés."
+        },
+        {
+         "icon": "users",
+         "title": "Gestion de copropriétés",
+         "text": "Comptes clairs, assemblées et entretien de votre immeuble."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Locaux et bureaux",
+         "text": "Des locaux pour votre activité, dans le secteur et à la taille voulus."
+        },
+        {
+         "icon": "calendar",
+         "title": "Programmes neufs",
+         "text": "Logements sur plan, avec calendrier et finitions expliqués."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Réponse à votre demande (exemple)"
+        },
+        {
+         "value": "350",
+         "label": "Biens gérés (exemple)"
+        },
+        {
+         "value": "15",
+         "label": "Ans dans la région (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre agence",
+       "title": "Nous connaissons chaque rue du secteur",
+       "body": "- Estimation gratuite et sans engagement\n- Photos et plans soignés dans chaque fiche\n- Un interlocuteur unique du début à la fin",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Combien vaut votre bien ?",
+       "text": "Dites-nous où il se trouve et nous vous donnons une estimation indicative.",
+       "button_text": "Demander une estimation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "biens",
+    "title": "Biens",
+    "seo": {
+     "description": "Texte d'exemple : appartements, maisons, locaux et maisons de campagne à vendre ou à louer, et locations de vacances."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Biens",
+       "subtitle": "Texte d'exemple : une sélection du portefeuille avec ventes, locations, locaux et maisons de campagne.",
+       "cta_text": "Demander une estimation",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Vente",
+         "title": "Appartement lumineux en centre-ville",
+         "text": "3 ch. · 2 sdb · 95 m² · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Location",
+         "title": "Attique avec terrasse",
+         "text": "2 ch. · 1 sdb · 70 m² · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vacances",
+         "title": "Appartement près de la plage",
+         "text": "2 ch. · 1 sdb · 6 couchages · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Neuf",
+         "title": "Logement en programme neuf",
+         "text": "Livraison d'exemple · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Local",
+         "title": "Local en pied d'immeuble",
+         "text": "80 m² · Vitrine · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Maison de campagne",
+         "title": "Maison en pierre avec jardin",
+         "text": "4 ch. · 3 sdb · Cheminée · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vente",
+         "title": "Maison mitoyenne avec patio",
+         "text": "4 ch. · 3 sdb · 160 m² · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Location",
+         "title": "Studio rénové",
+         "text": "1 ch. · 1 sdb · 38 m² · Prix d'exemple",
+         "link": "/contact"
+        },
+        {
+         "tag": "Vacances",
+         "title": "Maison avec piscine",
+         "text": "5 ch. · 3 sdb · 10 couchages · Prix d'exemple",
+         "link": "/contact"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honoraires indicatifs",
+       "note": "Chiffres d'exemple : remplacez-les par ceux de votre agence.",
+       "items": [
+        {
+         "section": "Vente",
+         "name": "Commission de vente",
+         "price": "3 % (exemple)"
+        },
+        {
+         "section": "Location",
+         "name": "Gestion locative",
+         "price": "1 mois de loyer (exemple)"
+        },
+        {
+         "section": "Copropriété",
+         "name": "Gestion mensuelle",
+         "price": "à partir de 20 (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Combien vaut votre bien ?",
+       "text": "Dites-nous où il se trouve et nous vous donnons une estimation indicative.",
+       "button_text": "Demander une estimation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous quand nous accompagnons propriétaires et locataires."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre agence, qui compose l'équipe et ce qui vous distingue.\n\nParlez de votre façon de travailler, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Chaque bien visité et photographié\n- Prix expliqués avec les données du secteur\n- Suivi clair après la signature"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Du premier contact aux clés",
+       "items": [
+        {
+         "title": "Dites-nous ce que vous cherchez",
+         "text": "Secteur, budget et délais, sans pression."
+        },
+        {
+         "title": "Nous visitons ensemble",
+         "text": "Nous vous montrons les biens qui conviennent."
+        },
+        {
+         "title": "Nous signons sereinement",
+         "text": "Nous relisons contrats et démarches avec vous."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les estimations, les honoraires, les baux, les visites et les démarches d'achat."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "L'estimation est-elle payante ?",
+         "answer": "Non. Elle est indicative et sans engagement. *Texte d'exemple.*"
+        },
+        {
+         "question": "Quels documents pour vendre ?",
+         "answer": "Titre de propriété, dernière taxe foncière et diagnostic énergétique. *Texte d'exemple.*"
+        },
+        {
+         "question": "Gérez-vous les locations de vacances ?",
+         "answer": "Oui : réservations, ménage et accueil des voyageurs."
+        },
+        {
+         "question": "Puis-je visiter un bien le week-end ?",
+         "answer": "Oui, nous convenons du jour et de l'heure qui vous arrangent."
+        },
+        {
+         "question": "Gérez-vous les petites copropriétés ?",
+         "answer": "Oui, de quelques voisins à de grands immeubles."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Combien vaut votre bien ?",
+       "text": "Dites-nous où il se trouve et nous vous donnons une estimation indicative.",
+       "button_text": "Demander une estimation",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : demandez une estimation ou écrivez-nous ce que vous cherchez, nous vous répondrons au plus vite pendant les heures d'ouverture."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Demander une estimation",
+       "text": "Dites-nous ce que vous cherchez, ou ce que vous voulez vendre ou louer.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires de l'agence",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparer-sa-maison-pour-la-vente",
+    "title": "Préparer sa maison pour la vente",
+    "excerpt": "Texte d'exemple pour le blog : un guide court et pratique.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos clients, avec des conseils généraux et prudents.\n\n## Rangez et aérez\n\nUn logement dégagé paraît plus grand et se retient mieux.\n\n## Soignez les photos\n\nLumière naturelle et toutes les pièces, sans objets personnels.",
+    "tags": [
+     "vente",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "location-saisonniere-premiers-pas",
+    "title": "Location saisonnière : premiers pas",
+    "excerpt": "Texte d'exemple : ce qu'il faut vérifier avant de louer son logement.",
+    "content": "Texte d'exemple. Expliquez comment débuter en location saisonnière pour que personne ne démarre avec des doutes.\n\n## Avant de publier\n\nVérifiez autorisations, assurances et règles locales.\n\n## Après chaque séjour\n\nMénage, contrôle et remise des clés en bon ordre.",
+    "tags": [
+     "location",
+     "vacances"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Ihr Zuhause, Ihr Laden oder Ihre Auszeit, ganz in der Nähe",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Immobilien",
+    "url": "/immobilien"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Bewertung anfragen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Immobilienbüro vor Ort mit Wohnungen, Häusern und Gewerbeflächen zum Kauf und zur Miete sowie Ferienunterkünften. Ersetzen Sie ihn durch Ihren."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Immobilienbüro · Beispiel",
+       "title": "Finden Sie den Ort, an dem Sie bleiben möchten",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, welche Immobilien Sie betreuen, in welcher Region und warum man Ihnen vertraut.",
+       "cta_text": "Bewertung anfragen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Immobilien ansehen",
+       "cta2_link": "/immobilien"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Empfohlen",
+       "title": "Beispiel-Immobilien",
+       "subtitle": "Beispieltext: Ersetzen Sie diese Exposés durch Ihre echten Immobilien.",
+       "items": [
+        {
+         "tag": "Kauf",
+         "title": "Helle Wohnung im Zentrum",
+         "text": "3 Zi. · 2 Bäder · 95 m² · Beispielpreis",
+         "link": "/immobilien"
+        },
+        {
+         "tag": "Miete",
+         "title": "Penthouse mit Terrasse",
+         "text": "2 Zi. · 1 Bad · 70 m² · Beispielpreis",
+         "link": "/immobilien"
+        },
+        {
+         "tag": "Ferien",
+         "title": "Apartment in Strandnähe",
+         "text": "2 Zi. · 1 Bad · 6 Betten · Beispielpreis",
+         "link": "/immobilien"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Leistungen",
+       "title": "Alles, was Sie brauchen, in einem Büro",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Kauf und Verkauf",
+         "text": "Wir begleiten Sie von der Besichtigung bis zum Notartermin."
+        },
+        {
+         "icon": "handshake",
+         "title": "Wohnungsvermietung",
+         "text": "Wir finden den passenden Mieter oder die passende Wohnung und kümmern uns um den Vertrag."
+        },
+        {
+         "icon": "sun",
+         "title": "Ferienvermietung",
+         "text": "Buchungen, Reinigung und Schlüsselübergabe."
+        },
+        {
+         "icon": "users",
+         "title": "Hausverwaltung",
+         "text": "Klare Abrechnungen, Versammlungen und Instandhaltung für Ihr Haus."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Läden und Büros",
+         "text": "Räume für Ihr Geschäft, in der Lage und Größe, die Sie brauchen."
+        },
+        {
+         "icon": "calendar",
+         "title": "Neubauprojekte",
+         "text": "Wohnungen im Bau, mit Zeitplan und Ausstattung verständlich erklärt."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Antwort auf Ihre Anfrage (Beispiel)"
+        },
+        {
+         "value": "350",
+         "label": "Verwaltete Immobilien (Beispiel)"
+        },
+        {
+         "value": "15",
+         "label": "Jahre in der Region (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Unser Büro",
+       "title": "Wir kennen jede Straße der Gegend",
+       "body": "- Kostenlose, unverbindliche Bewertung\n- Sorgfältige Fotos und Grundrisse in jedem Exposé\n- Ein fester Ansprechpartner von Anfang bis Ende",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Meinungen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Meinung: Ersetzen Sie ihn mit deren Zustimmung durch echte Meinungen Ihrer Kunden.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Was ist Ihre Immobilie wert?",
+       "text": "Sagen Sie uns, wo sie liegt, und wir erstellen eine grobe Bewertung.",
+       "button_text": "Bewertung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "immobilien",
+    "title": "Immobilien",
+    "seo": {
+     "description": "Beispieltext: Wohnungen, Häuser, Gewerbeflächen und Landhäuser zum Kauf und zur Miete sowie Ferienunterkünfte. Ersetzen Sie diese Exposés durch Ihren Bestand."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Immobilien",
+       "subtitle": "Beispieltext: eine Auswahl aus dem Bestand mit Kauf, Miete, Gewerbe und Landhäusern.",
+       "cta_text": "Bewertung anfragen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Kauf",
+         "title": "Helle Wohnung im Zentrum",
+         "text": "3 Zi. · 2 Bäder · 95 m² · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Miete",
+         "title": "Penthouse mit Terrasse",
+         "text": "2 Zi. · 1 Bad · 70 m² · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Ferien",
+         "title": "Apartment in Strandnähe",
+         "text": "2 Zi. · 1 Bad · 6 Betten · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Neubau",
+         "title": "Wohnung im Neubauprojekt",
+         "text": "Beispiel-Übergabe · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Gewerbe",
+         "title": "Laden in Straßenlage",
+         "text": "80 m² · Schaufenster · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Landhaus",
+         "title": "Steinhaus mit Garten",
+         "text": "4 Zi. · 3 Bäder · Kamin · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Kauf",
+         "title": "Reihenhaus mit Innenhof",
+         "text": "4 Zi. · 3 Bäder · 160 m² · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Miete",
+         "title": "Renoviertes Studio",
+         "text": "1 Zi. · 1 Bad · 38 m² · Beispielpreis",
+         "link": "/kontakt"
+        },
+        {
+         "tag": "Ferien",
+         "title": "Haus mit Pool",
+         "text": "5 Zi. · 3 Bäder · 10 Betten · Beispielpreis",
+         "link": "/kontakt"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Richtwerte für Honorare",
+       "note": "Beispielzahlen: Ersetzen Sie sie durch die Ihres Büros.",
+       "items": [
+        {
+         "section": "Verkauf",
+         "name": "Verkaufsprovision",
+         "price": "3 % (Beispiel)"
+        },
+        {
+         "section": "Vermietung",
+         "name": "Vermietungsverwaltung",
+         "price": "1 Monatsmiete (Beispiel)"
+        },
+        {
+         "section": "Hausverwaltung",
+         "name": "Monatliche Verwaltung",
+         "price": "ab 20 (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Was ist Ihre Immobilie wert?",
+       "text": "Sagen Sie uns, wo sie liegt, und wir erstellen eine grobe Bewertung.",
+       "button_text": "Bewertung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns bei der Begleitung von Eigentümern und Mietern in unserer Region wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Büros, wer zum Team gehört und was Sie unterscheidet.\n\nSprechen Sie darüber, wie Sie arbeiten, nicht über Zahlen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Jede Immobilie besichtigt und fotografiert\n- Preise erklärt mit Daten aus der Region\n- Klare Betreuung nach der Unterschrift"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Vom ersten Kontakt bis zu den Schlüsseln",
+       "items": [
+        {
+         "title": "Sagen Sie uns, was Sie suchen",
+         "text": "Lage, Budget und Zeitplan, ganz ohne Eile."
+        },
+        {
+         "title": "Wir besichtigen gemeinsam",
+         "text": "Wir zeigen Ihnen die passenden Immobilien."
+        },
+        {
+         "title": "Wir unterschreiben in Ruhe",
+         "text": "Wir gehen Verträge und Formalitäten mit Ihnen durch."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Bewertungen, Honoraren, Mietverträgen, Besichtigungen und dem Ablauf eines Kaufs."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Kostet die Bewertung etwas?",
+         "answer": "Nein. Sie ist eine Orientierung und unverbindlich. *Beispieltext.*"
+        },
+        {
+         "question": "Welche Unterlagen brauche ich zum Verkauf?",
+         "answer": "Grundbuchauszug, letzter Grundsteuerbescheid und Energieausweis. *Beispieltext.*"
+        },
+        {
+         "question": "Verwalten Sie Ferienvermietungen?",
+         "answer": "Ja: Buchungen, Reinigung und Gästebetreuung."
+        },
+        {
+         "question": "Kann ich am Wochenende besichtigen?",
+         "answer": "Ja, wir vereinbaren Tag und Uhrzeit, die Ihnen passen."
+        },
+        {
+         "question": "Verwalten Sie kleine Eigentümergemeinschaften?",
+         "answer": "Ja, von wenigen Parteien bis zu großen Häusern."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Was ist Ihre Immobilie wert?",
+       "text": "Sagen Sie uns, wo sie liegt, und wir erstellen eine grobe Bewertung.",
+       "button_text": "Bewertung anfragen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Fragen Sie eine Bewertung an oder schreiben Sie uns, was Sie suchen. Wir antworten so schnell wie möglich während der Bürozeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Bewertung anfragen",
+       "text": "Sagen Sie uns, was Sie suchen oder was Sie verkaufen oder vermieten möchten.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Bürozeiten",
+       "note": "Beispielzeiten: Ändern Sie sie in Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "haus-verkaufsfertig-machen",
+    "title": "So machen Sie Ihr Haus verkaufsfertig",
+    "excerpt": "Beispieltext für den Blog: ein kurzer, praktischer Leitfaden.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit allgemeinen und vorsichtigen Ratschlägen.\n\n## Aufräumen und lüften\n\nEine aufgeräumte Wohnung wirkt größer und bleibt besser im Gedächtnis.\n\n## Gute Fotos\n\nNatürliches Licht und alle Räume, ohne persönliche Gegenstände.",
+    "tags": [
+     "verkauf",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "ferienvermietung-erste-schritte",
+    "title": "Ferienvermietung: erste Schritte",
+    "excerpt": "Beispieltext: was Sie prüfen sollten, bevor Sie Ihr Zuhause anbieten.",
+    "content": "Beispieltext. Erklären Sie, wie man mit einer Ferienvermietung beginnt, damit niemand mit Zweifeln startet.\n\n## Vor der Veröffentlichung\n\nPrüfen Sie Genehmigungen, Versicherungen und örtliche Regeln.\n\n## Nach jedem Aufenthalt\n\nReinigung, Kontrolle und geordnete Schlüsselübergabe.",
+    "tags": [
+     "vermietung",
+     "ferien"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "La tua casa, il tuo locale o la tua fuga, vicino a te",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Immobili",
+    "url": "/immobili"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Richiedi una valutazione",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: agenzia immobiliare di quartiere con appartamenti, case e locali in vendita e in affitto, più affitti per le vacanze."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Agenzia immobiliare · Esempio",
+       "title": "Trova il posto in cui vuoi restare",
+       "subtitle": "Testo di esempio: racconta in una frase quali immobili gestisci, in quale zona e perché le persone si fidano di te.",
+       "cta_text": "Richiedi una valutazione",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi gli immobili",
+       "cta2_link": "/immobili"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "In evidenza",
+       "title": "Immobili di esempio",
+       "subtitle": "Testo di esempio: sostituisci queste schede con i tuoi immobili reali.",
+       "items": [
+        {
+         "tag": "Vendita",
+         "title": "Appartamento luminoso in centro",
+         "text": "3 camere · 2 bagni · 95 m² · Prezzo di esempio",
+         "link": "/immobili"
+        },
+        {
+         "tag": "Affitto",
+         "title": "Attico con terrazza",
+         "text": "2 camere · 1 bagno · 70 m² · Prezzo di esempio",
+         "link": "/immobili"
+        },
+        {
+         "tag": "Vacanza",
+         "title": "Appartamento vicino al mare",
+         "text": "2 camere · 1 bagno · 6 posti · Prezzo di esempio",
+         "link": "/immobili"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servizi",
+       "title": "Tutto quello che ti serve, in un solo ufficio",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Compravendita",
+         "text": "Ti accompagniamo dalla visita fino al rogito."
+        },
+        {
+         "icon": "handshake",
+         "title": "Affitto di abitazioni",
+         "text": "Troviamo l'inquilino o la casa giusta e gestiamo il contratto."
+        },
+        {
+         "icon": "sun",
+         "title": "Affitti per le vacanze",
+         "text": "Prenotazioni, pulizie e consegna delle chiavi."
+        },
+        {
+         "icon": "users",
+         "title": "Amministrazione di condomini",
+         "text": "Conti chiari, assemblee e manutenzione del tuo stabile."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Locali e uffici",
+         "text": "Spazi per la tua attività, nella zona e con i metri che ti servono."
+        },
+        {
+         "icon": "calendar",
+         "title": "Nuove costruzioni",
+         "text": "Case sulla carta, con tempi e finiture spiegati bene."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Risposta alla tua richiesta (esempio)"
+        },
+        {
+         "value": "350",
+         "label": "Immobili gestiti (esempio)"
+        },
+        {
+         "value": "15",
+         "label": "Anni sul territorio (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Il nostro ufficio",
+       "title": "Conosciamo ogni via della zona",
+       "body": "- Valutazione gratuita e senza impegno\n- Foto e planimetrie curate in ogni scheda\n- Un referente dall'inizio alla fine",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio di un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale il tuo immobile?",
+       "text": "Dicci dove si trova e ti facciamo una valutazione indicativa.",
+       "button_text": "Richiedi una valutazione",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "immobili",
+    "title": "Immobili",
+    "seo": {
+     "description": "Testo di esempio: appartamenti, case, locali e case rurali in vendita e in affitto, più affitti per le vacanze. Sostituisci le schede."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Immobili",
+       "subtitle": "Testo di esempio: una selezione del portafoglio con vendite, affitti, locali e case rurali.",
+       "cta_text": "Richiedi una valutazione",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Vendita",
+         "title": "Appartamento luminoso in centro",
+         "text": "3 camere · 2 bagni · 95 m² · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Affitto",
+         "title": "Attico con terrazza",
+         "text": "2 camere · 1 bagno · 70 m² · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Vacanza",
+         "title": "Appartamento vicino al mare",
+         "text": "2 camere · 1 bagno · 6 posti · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Nuova costruzione",
+         "title": "Abitazione in nuovo complesso",
+         "text": "Consegna di esempio · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Locale",
+         "title": "Locale su strada",
+         "text": "80 m² · Vetrina · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Casa rurale",
+         "title": "Casa in pietra con giardino",
+         "text": "4 camere · 3 bagni · Camino · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Vendita",
+         "title": "Casa a schiera con cortile",
+         "text": "4 camere · 3 bagni · 160 m² · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Affitto",
+         "title": "Monolocale ristrutturato",
+         "text": "1 camera · 1 bagno · 38 m² · Prezzo di esempio",
+         "link": "/contatti"
+        },
+        {
+         "tag": "Vacanza",
+         "title": "Casa con piscina",
+         "text": "5 camere · 3 bagni · 10 posti · Prezzo di esempio",
+         "link": "/contatti"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Compensi indicativi",
+       "note": "Cifre di esempio: sostituiscile con quelle della tua agenzia.",
+       "items": [
+        {
+         "section": "Vendita",
+         "name": "Provvigione di vendita",
+         "price": "3 % (esempio)"
+        },
+        {
+         "section": "Affitto",
+         "name": "Gestione dell'affitto",
+         "price": "1 mese di canone (esempio)"
+        },
+        {
+         "section": "Condomini",
+         "name": "Amministrazione mensile",
+         "price": "da 20 (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale il tuo immobile?",
+       "text": "Dicci dove si trova e ti facciamo una valutazione indicativa.",
+       "button_text": "Richiedi una valutazione",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa conta per noi quando accompagniamo proprietari e inquilini nella nostra zona."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia della tua agenzia, chi fa parte del team e cosa vi rende diversi.\n\nParla di come lavorate, non di cifre che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Ogni immobile visitato e fotografato\n- Prezzi spiegati con i dati della zona\n- Assistenza chiara dopo la firma"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Dal primo contatto alle chiavi",
+       "items": [
+        {
+         "title": "Dicci cosa cerchi",
+         "text": "Zona, budget e tempi, senza fretta."
+        },
+        {
+         "title": "Visitiamo insieme",
+         "text": "Ti mostriamo gli immobili adatti."
+        },
+        {
+         "title": "Firmiamo con calma",
+         "text": "Rivediamo insieme contratti e pratiche."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su valutazioni, compensi, contratti di affitto, visite e pratiche di acquisto."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "La valutazione ha un costo?",
+         "answer": "No. È indicativa e senza impegno. *Testo di esempio.*"
+        },
+        {
+         "question": "Quali documenti servono per vendere?",
+         "answer": "Atto di proprietà, ultimo bollettino IMU e attestato energetico. *Testo di esempio.*"
+        },
+        {
+         "question": "Gestite gli affitti per le vacanze?",
+         "answer": "Sì: prenotazioni, pulizie e assistenza agli ospiti."
+        },
+        {
+         "question": "Posso visitare un immobile nel fine settimana?",
+         "answer": "Sì, concordiamo il giorno e l'ora che preferisci."
+        },
+        {
+         "question": "Amministrate piccoli condomini?",
+         "answer": "Sì, da pochi condomini a grandi edifici."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale il tuo immobile?",
+       "text": "Dicci dove si trova e ti facciamo una valutazione indicativa.",
+       "button_text": "Richiedi una valutazione",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: richiedi una valutazione o scrivici cosa cerchi e ti risponderemo il prima possibile durante l'orario dell'ufficio."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Richiedi una valutazione",
+       "text": "Dicci cosa cerchi, o cosa vuoi vendere o affittare.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orario dell'ufficio",
+       "note": "Orario di esempio: cambialo con il tuo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparare-la-casa-per-vendere",
+    "title": "Come preparare la casa per la vendita",
+    "excerpt": "Testo di esempio per il blog: una guida breve e pratica.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con consigli generali e prudenti.\n\n## Metti in ordine e arieggia\n\nUna casa sgombra sembra più grande e si ricorda meglio.\n\n## Cura le foto\n\nLuce naturale e tutte le stanze, senza oggetti personali.",
+    "tags": [
+     "vendita",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "affitto-vacanze-primi-passi",
+    "title": "Affitto per le vacanze: i primi passi",
+    "excerpt": "Testo di esempio: cosa controllare prima di mettere in affitto la tua casa.",
+    "content": "Testo di esempio. Spiega come iniziare con un affitto per le vacanze perché nessuno parta con dei dubbi.\n\n## Prima di pubblicare\n\nControlla licenze, assicurazioni e regole del tuo comune.\n\n## Dopo ogni soggiorno\n\nPulizia, controllo e consegna ordinata delle chiavi.",
+    "tags": [
+     "affitto",
+     "vacanze"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "A sua casa, a sua loja ou a sua escapadinha, perto de si",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Imóveis",
+    "url": "/imoveis"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pedir avaliação",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: mediadora imobiliária de bairro com apartamentos, moradias e lojas para venda e arrendamento, e alojamento de férias. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Imobiliária · Exemplo",
+       "title": "Encontre o lugar onde quer ficar",
+       "subtitle": "Texto de exemplo: diga numa frase que imóveis gere, em que zona e porque confiam em si.",
+       "cta_text": "Pedir avaliação",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver imóveis",
+       "cta2_link": "/imoveis"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Em destaque",
+       "title": "Imóveis de exemplo",
+       "subtitle": "Texto de exemplo: substitua estas fichas pelos seus imóveis reais.",
+       "items": [
+        {
+         "tag": "Venda",
+         "title": "Apartamento luminoso no centro",
+         "text": "3 quartos · 2 casas de banho · 95 m² · Preço de exemplo",
+         "link": "/imoveis"
+        },
+        {
+         "tag": "Arrendamento",
+         "title": "Último andar com terraço",
+         "text": "2 quartos · 1 casa de banho · 70 m² · Preço de exemplo",
+         "link": "/imoveis"
+        },
+        {
+         "tag": "Férias",
+         "title": "Apartamento perto da praia",
+         "text": "2 quartos · 1 casa de banho · 6 lugares · Preço de exemplo",
+         "link": "/imoveis"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Serviços",
+       "title": "Tudo o que precisa, num só escritório",
+       "items": [
+        {
+         "icon": "pin",
+         "title": "Compra e venda",
+         "text": "Acompanhamo-lo da visita até à escritura."
+        },
+        {
+         "icon": "handshake",
+         "title": "Arrendamento de habitação",
+         "text": "Encontramos o inquilino ou a casa certa e tratamos do contrato."
+        },
+        {
+         "icon": "sun",
+         "title": "Alojamento de férias",
+         "text": "Reservas, limpeza e entrega de chaves."
+        },
+        {
+         "icon": "users",
+         "title": "Administração de condomínios",
+         "text": "Contas claras, assembleias e manutenção do seu prédio."
+        },
+        {
+         "icon": "warehouse",
+         "title": "Lojas e escritórios",
+         "text": "Espaços para o seu negócio, na zona e com os metros de que precisa."
+        },
+        {
+         "icon": "calendar",
+         "title": "Novos empreendimentos",
+         "text": "Casas em construção, com prazos e acabamentos bem explicados."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "24 h",
+         "label": "Resposta ao seu pedido (exemplo)"
+        },
+        {
+         "value": "350",
+         "label": "Imóveis geridos (exemplo)"
+        },
+        {
+         "value": "15",
+         "label": "Anos na região (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "O nosso escritório",
+       "title": "Conhecemos cada rua da zona",
+       "body": "- Avaliação gratuita e sem compromisso\n- Fotos e plantas cuidadas em cada ficha\n- Uma pessoa de referência do princípio ao fim",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale o seu imóvel?",
+       "text": "Diga-nos onde fica e fazemos-lhe uma avaliação indicativa.",
+       "button_text": "Pedir avaliação",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "imoveis",
+    "title": "Imóveis",
+    "seo": {
+     "description": "Texto de exemplo: apartamentos, moradias, lojas e casas rurais para venda e arrendamento, e alojamento de férias. Substitua estas fichas pela sua carteira real."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Imóveis",
+       "subtitle": "Texto de exemplo: uma seleção da carteira com vendas, arrendamentos, lojas e casas rurais.",
+       "cta_text": "Pedir avaliação",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Venda",
+         "title": "Apartamento luminoso no centro",
+         "text": "3 quartos · 2 casas de banho · 95 m² · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Arrendamento",
+         "title": "Último andar com terraço",
+         "text": "2 quartos · 1 casa de banho · 70 m² · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Férias",
+         "title": "Apartamento perto da praia",
+         "text": "2 quartos · 1 casa de banho · 6 lugares · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Construção nova",
+         "title": "Moradia em empreendimento",
+         "text": "Entrega prevista de exemplo · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Loja",
+         "title": "Loja com montra",
+         "text": "80 m² · Montra · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Casa rural",
+         "title": "Casa de pedra com jardim",
+         "text": "4 quartos · 3 casas de banho · Lareira · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Venda",
+         "title": "Moradia em banda com pátio",
+         "text": "4 quartos · 3 casas de banho · 160 m² · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Arrendamento",
+         "title": "Estúdio remodelado",
+         "text": "1 quarto · 1 casa de banho · 38 m² · Preço de exemplo",
+         "link": "/contacto"
+        },
+        {
+         "tag": "Férias",
+         "title": "Casa com piscina",
+         "text": "5 quartos · 3 casas de banho · 10 lugares · Preço de exemplo",
+         "link": "/contacto"
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Honorários indicativos",
+       "note": "Valores de exemplo: substitua-os pelos da sua agência.",
+       "items": [
+        {
+         "section": "Venda",
+         "name": "Comissão de venda",
+         "price": "3 % (exemplo)"
+        },
+        {
+         "section": "Arrendamento",
+         "name": "Gestão do arrendamento",
+         "price": "1 renda mensal (exemplo)"
+        },
+        {
+         "section": "Condomínios",
+         "name": "Administração mensal",
+         "price": "desde 20 (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale o seu imóvel?",
+       "text": "Diga-nos onde fica e fazemos-lhe uma avaliação indicativa.",
+       "button_text": "Pedir avaliação",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa ao acompanhar proprietários e inquilinos na nossa região."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua imobiliária, quem faz parte da equipa e o que vos torna diferentes.\n\nFale de como trabalham, não de números que não pode comprovar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Cada imóvel visitado e fotografado\n- Preços explicados com dados da zona\n- Acompanhamento claro depois da escritura"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Do primeiro contacto às chaves",
+       "items": [
+        {
+         "title": "Diga-nos o que procura",
+         "text": "Zona, orçamento e prazos, sem pressas."
+        },
+        {
+         "title": "Visitamos juntos",
+         "text": "Mostramos-lhe os imóveis que se ajustam."
+        },
+        {
+         "title": "Assinamos com calma",
+         "text": "Revemos contratos e papéis consigo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre avaliações, honorários, contratos de arrendamento, visitas e trâmites de compra."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "A avaliação tem custo?",
+         "answer": "Não. É indicativa e sem compromisso. *Texto de exemplo.*"
+        },
+        {
+         "question": "Que documentos preciso para vender?",
+         "answer": "Caderneta predial, certidão permanente e certificado energético. *Texto de exemplo.*"
+        },
+        {
+         "question": "Gerem alojamento de férias?",
+         "answer": "Sim: reservas, limpeza e apoio aos hóspedes."
+        },
+        {
+         "question": "Posso visitar um imóvel ao fim de semana?",
+         "answer": "Sim, combinamos o dia e a hora que lhe convêm."
+        },
+        {
+         "question": "Administram condomínios pequenos?",
+         "answer": "Sim, desde poucos vizinhos até prédios grandes."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Quanto vale o seu imóvel?",
+       "text": "Diga-nos onde fica e fazemos-lhe uma avaliação indicativa.",
+       "button_text": "Pedir avaliação",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: peça uma avaliação ou escreva-nos o que procura e respondemos o mais depressa possível no horário do escritório."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pedir avaliação",
+       "text": "Diga-nos o que procura, ou o que quer vender ou arrendar.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário do escritório",
+       "note": "Horário de exemplo: mude-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:30"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "preparar-a-casa-para-vender",
+    "title": "Como preparar a casa para vender",
+    "excerpt": "Texto de exemplo para o blog: um guia breve e prático.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com conselhos gerais e prudentes.\n\n## Arrume e areje\n\nUma casa desafogada parece maior e fica melhor na memória.\n\n## Cuide das fotos\n\nLuz natural e todas as divisões, sem objetos pessoais.",
+    "tags": [
+     "venda",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "alojamento-de-ferias-primeiros-passos",
+    "title": "Alojamento de férias: primeiros passos",
+    "excerpt": "Texto de exemplo: o que verificar antes de pôr a casa em arrendamento.",
+    "content": "Texto de exemplo. Explique como começar com um alojamento de férias para que ninguém comece com dúvidas.\n\n## Antes de publicar\n\nVerifique licenças, seguros e regras do seu concelho.\n\n## Depois de cada estadia\n\nLimpeza, revisão e entrega de chaves em ordem.",
+    "tags": [
+     "arrendamento",
+     "ferias"
+    ]
+   }
+  ]
+ }
+}
