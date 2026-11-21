@@ -473,7 +473,7 @@ function adm_page_save(array $c): void
         'lang' => $id ? null : adm_lang_param($svc, (string) ($_POST['lang'] ?? '')),
     ] + (isset($_POST['path']) ? ['path' => trim((string) $_POST['path'])] : []), $id);
     flash(t('Página guardada.'));
-    if (is_array($_POST['missing'] ?? null)) {
+    if (is_array($_POST['missing'] ?? null) && role_at_least($c['role'], 'admin')) { // redirecciones: como en SEO, solo admins
         $cur = page_languages($svc, 'page', $page['slug'])['languages'];
         $want = [];
         foreach ($_POST['missing'] as $l => $to) if (is_string($l) && isset($cur[$l]) && !$cur[$l]['exists'] && (string) ($cur[$l]['redirect_to'] ?? '') !== trim((string) $to)) $want[$l] = trim((string) $to);

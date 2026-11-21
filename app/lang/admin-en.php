@@ -1818,4 +1818,6 @@ return [
     'Este PHP no tiene libsodium para comprobar la firma' => 'This PHP has no libsodium to check the signature',
     'La actualización a la {to} ha fallado y la web ha vuelto sola a la {from}, con sus datos tal cual estaban. Motivo: {why}' => 'The update to {to} failed and the site went back by itself to {from}, with its data as it was. Reason: {why}',
     'la versión nueva no terminó de arrancar' => 'the new version did not finish starting',
+    'Eso crearía un bucle de redirecciones ({f} → {t} → … → {f})' => 'That would create a redirect loop ({f} → {t} → … → {f})',
+    'El sobre firmado no corresponde a la versión {v}' => 'The signed envelope does not match version {v}',
 ];

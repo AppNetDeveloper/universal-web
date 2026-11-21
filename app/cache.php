@@ -19,6 +19,8 @@ declare(strict_types=1);
  */
 
 const PAGE_CACHE_TTL = 3600;
+/** Tope de páginas guardadas por web (que nadie llene el disco pidiendo direcciones distintas). */
+const PAGE_CACHE_MAX_FILES = 5000;
 /** Agentes de IA (reciben Markdown si la web lo tiene activado): nunca se les sirve la caché HTML. */
 const PAGE_CACHE_AI_UA = '/GPTBot|OAI-SearchBot|ChatGPT-User|ClaudeBot|Claude-SearchBot|Claude-User|Google-Extended|PerplexityBot|Perplexity-User|CCBot|Applebot-Extended|Meta-ExternalAgent|Bytespider/i';
 
@@ -148,6 +150,11 @@ function page_cache_begin(SiteService $svc): void
     PageCache::$skip = false;
     PageCache::$capturing = false;
     if (Out::$capture || !page_cache_enabled() || !page_cache_request_ok() || $svc->isPrivate() || !empty($GLOBALS['uw_site_preview'])) return;
+    // Solo los dominios de la web (no una IP ni un Host inventado) y sin puertos raros: cada Host o puerto distinto sería
+    // otra copia, y alguien podría llenar el disco pidiendo la misma página con miles de cabeceras Host diferentes.
+    $hostHeader = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
+    if (!in_array(request_host(), site_domains($svc->id()), true)) return;
+    if (preg_match('/:(\d+)$/', $hostHeader, $pm) && (int) $pm[1] !== (int) ($_SERVER['SERVER_PORT'] ?? 0)) return;
     PageCache::$capturing = true;
     PageCache::$siteId = $svc->id();
     PageCache::$key = page_cache_key();
@@ -191,6 +198,7 @@ function page_cache_store(int $siteId, string $key, string $body, array $headers
     $dir = page_cache_dir() . "/$siteId";
     $hosts = page_cache_dir() . '/../hosts/' . substr($key, 0, 2);
     if (!is_dir($dir) && !@mkdir($dir, 0750, true)) return;
+    if (!is_file("$dir/$key.html") && count(glob("$dir/*.html", GLOB_NOSORT) ?: []) >= PAGE_CACHE_MAX_FILES) return;
     if (!is_dir($hosts) && !@mkdir($hosts, 0750, true)) return;
     $exp = time() + PAGE_CACHE_TTL;
     // Una entrada programada que se publica antes de una hora acorta la caducidad (el blog y la portada cambian solos).

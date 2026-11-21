@@ -1817,4 +1817,6 @@ return [
     'Este PHP no tiene libsodium para comprobar la firma' => 'Acest PHP nu are libsodium pentru a verifica semnătura',
     'La actualización a la {to} ha fallado y la web ha vuelto sola a la {from}, con sus datos tal cual estaban. Motivo: {why}' => 'Actualizarea la {to} a eșuat și site-ul a revenit singur la {from}, cu datele așa cum erau. Motiv: {why}',
     'la versión nueva no terminó de arrancar' => 'noua versiune nu a terminat de pornit',
+    'Eso crearía un bucle de redirecciones ({f} → {t} → … → {f})' => 'Asta ar crea o buclă de redirecționări ({f} → {t} → … → {f})',
+    'El sobre firmado no corresponde a la versión {v}' => 'Plicul semnat nu corespunde versiunii {v}',
 ];

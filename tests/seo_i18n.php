@@ -110,6 +110,9 @@ ok('page_languages no deja redirigir un idioma que sí existe', err(fn() => page
 $imp = redirect_import($svc, "# comentario\nantigua.html -> precios.html\n/en/old.html /en/precios.html\nredir /x.html /guias/mudanza.html permanent\nmal\n/precios.html -> /otra\n");
 ok('importar: 3 creadas, 2 con error explicado', count($imp['created']) === 3 && count($imp['errors']) === 2 && $imp['errors'][0]['line'] === 5, json_encode($imp));
 ok('importar: no deja tapar una página publicada', str_contains($imp['errors'][1]['error'] ?? '', 'página publicada'));
+ok('bucle /a → /a?x: rechazado', str_contains(err(fn() => redirect_save_manual($svc, '/bucle-a', '/bucle-a?x=1')), 'iguales'));
+redirect_save_manual($svc, '/bucle-b', '/bucle-c?q=1');
+ok('bucle /b → /c y /c → /b: rechazado', str_contains(err(fn() => redirect_save_manual($svc, '/bucle-c', '/bucle-b?q=2')), 'bucle'));
 ok('dry_run no guarda nada', count(redirect_import($svc, "/zz.html -> /", true)['created']) === 1 && !redirect_find($svc->id(), '/zz.html'));
 [$st, , $h] = render($svc, '/antigua.html');
 ok('/antigua.html → 301 a /precios.html', $st === 301 && ($h['location'] ?? '') === 'Location: /precios.html');
@@ -183,6 +186,8 @@ $r = $call('page_languages', ['slug' => 'murcia']);
 ok('MCP page_languages', ($r['languages']['fr']['redirect_to'] ?? '') === '/fr/precios.html', json_encode($r));
 $r = $call('site_update', ['same_as' => ['javascript:alert(1)']]);
 ok('site_update same_as rechaza lo que no es https', isset($r['_error']));
+$ann = array_column(array_map(fn($t) => ['n' => $t['name'], 'ro' => $t['annotations']['readOnlyHint']], mcp_tools_for_token()), 'ro', 'n');
+ok('page_faq y page_languages no se anuncian como solo lectura', $ann['page_faq'] === false && $ann['page_languages'] === false && $ann['page_get'] === true);
 ok('audit registra lo hecho por MCP', (int) val("SELECT COUNT(*) FROM audit_log WHERE action LIKE 'redirect.%'") > 0);
 
 // ---------------------------------------------------------------- exportación estática
@@ -236,6 +241,10 @@ ok('caché: se vacía sola al guardar', ($h3['x-uw-cache'] ?? '') === 'MISS' && 
 $svc->savePage(['blocks' => [['type' => 'contact_form', 'data' => ['title' => 'Escríbenos']]]], (int) $svc->page('murcia', 'es')['id']);
 $get('/murcia.html');
 ok('caché: página con formulario guardada con el refresco de _ts', str_contains($get('/murcia.html')[1], 'data-uw-ts'));
+$before = count(glob("$dir/cache/pages/*/*.html") ?: []);
+$get('/precios.html', ['Host: otro-host-inventado.test']);
+$get('/precios.html', ['Host: prueba.test:4321']);
+ok('caché: un Host inventado o un puerto raro no crean copias', count(glob("$dir/cache/pages/*/*.html") ?: []) === $before);
 ok('robots.txt, sitemap y 404 no rompen con caché', $get('/robots.txt')[0] === 200 && $get('/sitemap.xml')[0] === 200 && $get('/no-existe.html')[0] === 404);
 ok('/data, /app y archivos internos no se sirven', $get('/../data/config.php')[0] !== 200 && $get('/app/core.php')[0] === 404);
 platform_save(['page_cache' => false]);

@@ -615,7 +615,7 @@ function mcp_tools(): array
         ],
         'page_languages' => [
             'description' => 'Idiomas de UNA página o entrada: en cuáles existe (estado, dirección, Markdown) y, en los que no, su dirección equivalente y a dónde redirige. Con missing fija la 301 de los idiomas en los que la página no tiene sentido ({"ro": "/ro/otra-pagina.html"}; cadena vacía la quita): así no quedan enlaces rotos, el selector de idioma no la ofrece y no se anuncia en hreflang. Para TRADUCIR usa page_save con lang y el mismo slug.',
-            'scope' => 'read', 'inputSchema' => $obj([
+            'scope' => 'read', 'writes' => true, 'inputSchema' => $obj([
                 'slug' => $str('Slug de la página o entrada'), 'type' => ['type' => 'string', 'enum' => ['page', 'post'], 'description' => 'page (por defecto) o post'],
                 'missing' => ['type' => 'object', 'description' => 'Opcional (requiere permiso publish): idioma → destino de la 301 para los idiomas en que NO existe; "" la quita'],
             ], ['slug']),
@@ -634,7 +634,7 @@ function mcp_tools(): array
         ],
         'page_faq' => [
             'description' => 'Preguntas frecuentes de una página: sin items devuelve las que tiene; con items REEMPLAZA las del primer bloque «faq» (o lo crea al final, antes del formulario de contacto si lo hay). Cada pregunta: {question, answer} (answer admite Markdown). Se publican solas como FAQPage en el JSON-LD y en la copia Markdown: escribe preguntas reales de clientes y respuestas directas de 1–3 frases.',
-            'scope' => 'read', 'inputSchema' => $obj([
+            'scope' => 'read', 'writes' => true, 'inputSchema' => $obj([
                 'slug' => $str('Slug de la página (index = portada)'), 'title' => $str('Título del bloque (opcional, p. ej. «Preguntas frecuentes»)'),
                 'items' => ['type' => 'array', 'description' => 'Preguntas [{question, answer}] (requiere write; publish si la página está publicada)', 'items' => $obj(['question' => ['type' => 'string'], 'answer' => ['type' => 'string']], ['question', 'answer'])],
             ], ['slug']),
@@ -861,7 +861,7 @@ function mcp_tools_for_token(): array
             $schema['required'] = array_merge(['site'], $schema['required'] ?? []);
         }
         $out[] = ['name' => $name, 'description' => $t['description'], 'inputSchema' => $schema,
-            'annotations' => ['readOnlyHint' => $t['scope'] === 'read', 'destructiveHint' => str_ends_with($name, '_delete')]];
+            'annotations' => ['readOnlyHint' => $t['scope'] === 'read' && empty($t['writes']), 'destructiveHint' => str_ends_with($name, '_delete')]];
     }
     return $out;
 }

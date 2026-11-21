@@ -20,7 +20,7 @@ $schema = t_walk($schema, ['label', 'description']); ?>
     <label><?= te('Dirección (URL) fija') ?> <small class="muted"><?= te('Opcional. Para migrar una web sin cambiar sus URLs, p. ej. /precios.html o /guias/mudanza.html. Vacío = automática') ?><?= $auto !== '' ? ' (' . e($auto) . ')' : '' ?></small>
       <input type="text" name="path" value="<?= e((string) ($page['path'] ?? '')) ?>" maxlength="300" placeholder="<?= e($auto ?: '/precios.html') ?>" pattern="(/[A-Za-z0-9._~\-]+)*" <?= $page['slug'] === 'index' ? 'disabled' : '' ?>></label>
   </section>
-  <?php if (!$isNew && count($svc->langs()) > 1): $pl = page_languages($svc, 'page', $page['slug']); $faltan = array_filter($pl['languages'], fn($x) => !$x['exists']); ?>
+  <?php if (!$isNew && count($svc->langs()) > 1 && role_at_least($role ?? null, 'admin')): $pl = page_languages($svc, 'page', $page['slug']); $faltan = array_filter($pl['languages'], fn($x) => !$x['exists']); ?>
   <?php if ($faltan): ?>
   <details class="card"><summary><strong><?= te('Idiomas en los que no existe esta página') ?></strong> <span class="muted">(<?= e(implode(', ', array_map('strtoupper', array_keys($faltan)))) ?>)</span></summary>
     <p class="muted"><?= te('Si una página solo tiene sentido en algunos idiomas, indica a dónde lleva su dirección en los demás (redirección 301). Los menús y enlaces de ese idioma irán directos al destino y no se anuncia en hreflang.') ?></p>

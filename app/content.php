@@ -1835,9 +1835,18 @@ function redirect_save_manual(SiteService $svc, string $from, string $to): array
 {
     $f = redirect_norm_from($from) ?? throw new UwError('«from» debe ser una ruta interna como /servicio-antiguo (sin .., sin dominio)');
     $t = redirect_norm_to($to, true) ?? throw new UwError('«to» debe ser una ruta interna (/nueva) o una URL https://…');
-    if ($f === rtrim($t, '/')) throw new UwError('Origen y destino son iguales');
+    if ($f === rtrim($t, '/') || ($t[0] === '/' && $f === (rtrim((string) preg_replace('/[?#].*$/', '', $t), '/') ?: '/'))) throw new UwError('Origen y destino son iguales');
     if (redirect_page_exists($svc, $f)) throw new UwError("En $f hay una página publicada y taparía la redirección: cámbiale el slug (la 301 se crea sola) o despublícala antes");
     if (preg_match('#^/(sitemap\.xml|robots\.txt|feed\.xml|llms(-full)?\.txt|api/.*|admin.*)$#', $f)) throw new UwError("$f es una ruta del sistema");
+    // Sin bucles: siguiendo las redirecciones desde el destino no se puede volver al origen (/a → /b?x y /b → /a?y)
+    $seen = [];
+    for ($hop = $t; $hop !== '' && $hop[0] === '/' && count($seen) < 20;) {
+        $p = rtrim((string) preg_replace('/[?#].*$/', '', $hop), '/') ?: '/';
+        if ($p === $f) throw new UwError("Eso crearía un bucle de redirecciones ($f → $t → … → $f)");
+        if (isset($seen[$p])) break;
+        $seen[$p] = true;
+        $hop = (string) (redirect_find($svc->id(), $p)['to_path'] ?? '');
+    }
     $lang = $svc->defaultLang();
     if (preg_match('#^/([a-z]{2}(?:-[a-z]{2})?)(/|$)#', $f, $m) && $m[1] !== $lang && in_array($m[1], $svc->langs(), true)) $lang = $m[1];
     $r = redirect_add($svc->id(), $lang, $f, $t) ?? throw new UwError('Origen y destino son iguales');
