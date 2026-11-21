@@ -11,6 +11,10 @@ abrirlos.
   formación), **Trayecto** (transporte y logística), **Cota** (construcción y reformas), **Sutil** (belleza y estética) y
   **Lienzo** (portfolio y freelance).
 - Siguen el **modo claro u oscuro del dispositivo** (`prefers-color-scheme`), con contraste AA en los dos.
+- Contraste AA también con el color de marca del cliente: el acento usado como texto se oscurece (claro) o se aclara
+  (oscuro) lo justo, aunque sea un amarillo o un azul marino.
+- Con 4 idiomas o más, el selector de idioma es un desplegable compacto: con los 7 idiomas la cabecera cabe de 360 a
+  1440 px.
 - Misma mecánica que los temas de la 0.4.0: 7 idiomas, `hreflang`, JSON-LD, caché, CSP, CSS/JS propio de cada web,
   cookies y WhatsApp. Fuentes alojadas en el servidor (máximo 2 familias por tema, con su licencia OFL), sin recursos de
   terceros ni librerías JS.
