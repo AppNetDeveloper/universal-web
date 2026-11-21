@@ -1114,7 +1114,7 @@ function adm_site_create(array $c): void
 {
     $name = trim((string) ($_POST['name'] ?? ''));
     $site = site_create($name, trim((string) ($_POST['slug'] ?? '')), normalize_domains((string) ($_POST['domains'] ?? '')), (string) ($_POST['theme'] ?? 'default'));
-    if (isset($_POST['starter'])) {
+    if (isset($_POST['starter']) && !site_apply_theme_sample(new SiteService($site))) {
         $svc = new SiteService($site);
         $svc->savePage([
             'title' => 'Inicio', 'slug' => 'index', 'status' => 'published',

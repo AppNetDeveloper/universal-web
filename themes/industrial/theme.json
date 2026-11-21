@@ -13,6 +13,19 @@
     "maquinaria"
   ],
   "suggested_accent": "#f5b400",
+  "pitch": "Para oficios y obra pesada con aspecto oscuro y robusto; si se quiere algo claro y técnico, mejor «Cota».",
+  "style": "oscuro, robusto, industrial",
+  "colors": {
+    "acento": "#f5b400",
+    "fondo": "#ffffff",
+    "texto": "#16181b",
+    "cabecera": "#121417"
+  },
+  "typography": {
+    "titulos": "Oswald",
+    "texto": "Inter"
+  },
+  "dark_mode": "no",
   "fonts": "Oswald + Inter (SIL OFL 1.1, alojadas en el servidor)",
   "css_hints": {
     "variables_tema": [

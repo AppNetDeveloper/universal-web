@@ -10,5 +10,17 @@
     "asociación",
     "proyecto personal"
   ],
-  "suggested_accent": "#4f46e5"
+  "suggested_accent": "#4f46e5",
+  "pitch": "Para una web sin sector claro o para empezar rápido: neutra y sin una personalidad marcada.",
+  "style": "neutro y limpio",
+  "colors": {
+    "acento": "#4f46e5",
+    "fondo": "#ffffff",
+    "texto": "#0f172a"
+  },
+  "typography": {
+    "titulos": "Fuente del sistema",
+    "texto": "Fuente del sistema"
+  },
+  "dark_mode": "no"
 }

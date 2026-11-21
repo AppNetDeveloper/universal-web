@@ -237,6 +237,36 @@ ok('host desconocido con varias webs: ninguna', site_for_public_host('otro.examp
 ok('host conocido y su www', (site_for_public_host('www.otra.test')['slug'] ?? '') === 'otra-web');
 ok('IP o local: web por defecto', site_for_public_host('127.0.0.1') !== null && site_for_public_host('demo.localhost') !== null);
 
+// Temas: ficha para elegir (theme_list), textos de ejemplo (theme_sample) y páginas iniciales con ellos
+$tl = $call('theme_list');
+$byslug = array_column($tl['themes'] ?? [], null, 'slug');
+$fichaOk = $byslug && !array_filter($byslug, fn($t) => !isset($t['ficha']['nombre'], $t['ficha']['para_quien'], $t['ficha']['sectores'], $t['ficha']['estilo'], $t['ficha']['colores'], $t['ficha']['tipografia'], $t['ficha']['modo_oscuro'])
+    || $t['ficha']['para_quien'] === '' || $t['ficha']['estilo'] === '' || !$t['ficha']['sectores'] || !$t['ficha']['tipografia'] || !isset($t['ficha']['colores']['acento']));
+ok('theme_list: todos los temas con ficha completa', count($byslug) === count(themes_available()) && $fichaOk, json_encode(array_keys(array_filter($byslug, fn($t) => !$t['ficha']['estilo']))));
+ok('theme_list: tema actual', ($tl['current'] ?? '') === 'default');
+ok('theme_list: sector sin tildes filtra', ($f = $call('theme_list', ['sector' => 'clinica'])) && $f['count'] >= 1 && $f['count'] < count($byslug), json_encode($f['count'] ?? $f));
+ok('theme_list: es de lectura', !empty(array_column(mcp_tools_for_token(), null, 'name')['theme_list']['annotations']['readOnlyHint']));
+$savedTok = McpContext::$token;
+McpContext::$token = ['id' => 0, 'site_id' => null, 'scopes' => ['read'], 'owner_role' => 'super', 'name' => 't', 'owner_name' => ''];
+$gl = array_column(mcp_tools_for_token(), null, 'name');
+ok('theme_list con token global: sin site obligatorio', !in_array('site', $gl['theme_list']['inputSchema']['required'] ?? [], true) && in_array('site', $gl['page_list']['inputSchema']['required'] ?? [], true));
+ok('theme_list con token global y sin site', ($call('theme_list')['count'] ?? 0) === count($byslug) && $call('theme_list')['current'] === null);
+McpContext::$token = $savedTok;
+$withSample = array_keys(array_filter($byslug, fn($t) => $t['sample_languages']));
+foreach ($withSample as $th) {
+    $langs = $byslug[$th]['sample_languages'];
+    ok("theme_sample $th: 7 idiomas", count(array_intersect(['es', 'en', 'ro', 'fr', 'de', 'it', 'pt'], $langs)) === 7, json_encode($langs));
+}
+if ($withSample) {
+    $ts = $call('theme_sample', ['theme' => $withSample[0], 'language' => 'de']);
+    ok('theme_sample: idioma pedido', ($ts['lang'] ?? '') === 'de' && !empty($ts['sample']['pages']), json_encode(array_keys($ts)));
+    $ns = site_create('Muestra', 'muestra-tema', [], $withSample[0]);
+    $nsvc = new SiteService($ns);
+    ok('web nueva con los textos de ejemplo del tema', site_apply_theme_sample($nsvc) && ($nsvc = new SiteService(site_by_id((int) $ns['id']))) && $nsvc->page('index') && count($nsvc->pages()) >= 4 && count($nsvc->posts(['public' => true])) >= 1);
+}
+ok('theme_sample: tema sin ejemplo', array_key_exists('sample', $r = $call('theme_sample', ['theme' => 'default'])) && $r['sample'] === null, json_encode($r));
+ok('theme_sample: tema inexistente', str_contains($call('theme_sample', ['theme' => '../x'])['_error'] ?? '', 'no existe'));
+
 // Cuentas: cambiar nombre y email
 $ua = user_create('ana@example.com', 'Ana', 'clave-de-prueba-1');
 $ub = user_create('beto@example.com', 'Beto', 'clave-de-prueba-2');

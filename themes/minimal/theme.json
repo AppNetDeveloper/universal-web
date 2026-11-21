@@ -13,6 +13,18 @@
     "fotógrafo o portfolio"
   ],
   "suggested_accent": "#4f46e5",
+  "pitch": "Para tecnología y productos digitales con aspecto claro y contenido; si se quiere algo más llamativo, con modo oscuro, mejor «Orbital».",
+  "style": "limpio y moderno",
+  "colors": {
+    "acento": "#4f46e5",
+    "fondo": "#ffffff",
+    "texto": "#0b0d12"
+  },
+  "typography": {
+    "titulos": "Manrope",
+    "texto": "Manrope"
+  },
+  "dark_mode": "no",
   "fonts": "Manrope (SIL OFL 1.1, alojada en el servidor)",
   "css_hints": {
     "variables_tema": [

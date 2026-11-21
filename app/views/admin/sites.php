@@ -29,7 +29,7 @@
       <label><?= te('Tema') ?><select name="theme"><?php foreach ($themes as $k => $n): ?><option value="<?= e($k) ?>" <?= ($old['theme'] ?? 'default') === $k ? 'selected' : '' ?>><?= te($n) ?></option><?php endforeach; ?></select></label>
     </div>
     <label><?= te('Dominios (uno por línea; el primero es el principal). Opcional: puedes crearla sin dominio y verla con «Vista previa sin dominio».') ?><textarea name="domains" rows="3" class="mono" placeholder="ejemplo.com"><?= e($old['domains'] ?? '') ?></textarea></label>
-    <label class="check"><input type="checkbox" name="starter" value="1" checked> <?= te('Crear páginas iniciales (Inicio y Contacto)') ?></label>
+    <label class="check"><input type="checkbox" name="starter" value="1" checked> <?= te('Crear páginas iniciales (los textos de ejemplo del tema o, si no trae, Inicio y Contacto)') ?></label>
     <div><button class="btn btn-primary"><?= te('Crear web') ?></button></div>
   </form>
 </section>

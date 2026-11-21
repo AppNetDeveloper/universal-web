@@ -682,7 +682,7 @@ return [
     'Nombre' => 'Nume',
     'Identificador (slug)' => 'Identificator (slug)',
     'Dominios (uno por línea; el primero es el principal)' => 'Domenii (câte unul pe linie; primul este cel principal)',
-    'Crear páginas iniciales (Inicio y Contacto)' => 'Creează paginile inițiale (Acasă și Contact)',
+    'Crear páginas iniciales (los textos de ejemplo del tema o, si no trae, Inicio y Contacto)' => 'Creează paginile inițiale (textele de exemplu ale temei sau, dacă nu are, Acasă și Contact)',
     '2 pasos' => '2 pași',
     'Último acceso' => 'Ultima autentificare',
     'Tú' => 'Tu',

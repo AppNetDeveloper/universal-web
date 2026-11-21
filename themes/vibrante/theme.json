@@ -15,6 +15,19 @@
     "club deportivo"
   ],
   "suggested_accent": "#e11d74",
+  "pitch": "Para deporte, ocio y eventos que quieren energía y colores fuertes; para una academia más tranquila, mejor «Cuaderno».",
+  "style": "colorido y enérgico",
+  "colors": {
+    "acento": "#e11d74",
+    "fondo": "#fffaf0",
+    "texto": "#17123a",
+    "secundario": "#ffd23f"
+  },
+  "typography": {
+    "titulos": "Anton",
+    "texto": "Figtree"
+  },
+  "dark_mode": "no",
   "fonts": "Anton (titulares) y Figtree (texto), ambas SIL OFL 1.1, alojadas en el servidor",
   "css_hints": {
     "variables_tema": [

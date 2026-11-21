@@ -467,15 +467,17 @@ function themes_available(): array
     return $out;
 }
 
-/** Guía de temas para la IA y el panel: para qué negocios es cada uno y su color sugerido (de theme.json). */
+/** Guía de temas para la IA y el panel: para qué negocios es cada uno, su ficha y su color sugerido (de theme.json). */
 function theme_guide(): array
 {
     $out = [];
     foreach (glob(UW_ROOT . '/themes/*/theme.json') ?: [] as $f) {
         $m = json_dec((string) file_get_contents($f));
+        $m = is_array($m) ? $m : [];
         $slug = basename(dirname($f));
         $out[$slug] = ['name' => (string) ($m['name'] ?? $slug), 'description' => (string) ($m['description'] ?? ''),
-            'best_for' => array_values((array) ($m['best_for'] ?? [])), 'suggested_accent' => (string) ($m['suggested_accent'] ?? ''),
+            'best_for' => array_values(array_map('strval', array_filter((array) ($m['best_for'] ?? []), 'is_scalar'))), 'suggested_accent' => (string) ($m['suggested_accent'] ?? ''),
+            'ficha' => theme_card($slug, $m),
             // Fotos de muestra propias del tema (generadas por IA, sin derechos de terceros): URL local lista para usar en bloques.
             'sample_images' => array_values(array_map(fn($i) => ['url' => "/theme-assets/$slug/" . ltrim((string) ($i['file'] ?? ''), '/'), 'alt' => (string) ($i['alt'] ?? ''), 'use' => (string) ($i['use'] ?? '')],
                 array_filter((array) ($m['sample_images'] ?? []), fn($i) => is_array($i) && preg_match('#^samples/[a-z0-9_-]+\.(webp|jpg|png)$#', (string) ($i['file'] ?? ''))))),
@@ -484,11 +486,83 @@ function theme_guide(): array
     return $out;
 }
 
-/** La misma guía en una línea por tema (para descripciones de herramientas MCP). */
+/**
+ * Ficha de un tema para elegirlo sin abrirlo: nombre, para qué empresa es, sectores (= best_for), estilo, colores,
+ * tipografía y si sigue el modo oscuro del dispositivo. Sale de theme.json (pitch, style, colors, typography, dark_mode);
+ * un tema propio sin esas claves da una ficha con lo que tenga.
+ */
+function theme_card(string $slug, array $m): array
+{
+    $hex = fn($v) => is_string($v) && preg_match('/^#[0-9a-fA-F]{3,8}$/', $v);
+    $colors = array_filter(is_array($m['colors'] ?? null) ? $m['colors'] : [], fn($v, $k) => is_string($k) && $hex($v), ARRAY_FILTER_USE_BOTH);
+    if (!$colors && $hex($m['suggested_accent'] ?? null)) $colors = ['acento' => $m['suggested_accent']];
+    $typo = array_map('strval', array_filter(is_array($m['typography'] ?? null) ? $m['typography'] : [], fn($v, $k) => is_string($k) && is_scalar($v), ARRAY_FILTER_USE_BOTH));
+    if (!$typo && is_string($m['fonts'] ?? null)) $typo = ['fuentes' => $m['fonts']];
+    $dark = ['auto' => 'sigue al dispositivo (claro u oscuro)', 'siempre' => 'siempre oscuro', 'no' => 'solo claro'][(string) ($m['dark_mode'] ?? 'no')] ?? 'solo claro';
+    return [
+        'nombre' => (string) ($m['name'] ?? $slug),
+        'para_quien' => (string) ($m['pitch'] ?? $m['description'] ?? ''),
+        'sectores' => array_values(array_map('strval', array_filter((array) ($m['best_for'] ?? []), 'is_scalar'))),
+        'estilo' => (string) ($m['style'] ?? ''),
+        'colores' => $colors,
+        'tipografia' => $typo,
+        'modo_oscuro' => $dark,
+    ];
+}
+
+/** La misma guía en una línea por tema (para descripciones de herramientas MCP): la ficha completa está en theme_list. */
 function theme_guide_text(): string
 {
-    return implode(' · ', array_map(fn($slug, $t) => "$slug = " . ($t['best_for'] ? implode(', ', array_slice($t['best_for'], 0, 4)) : $t['description'])
-        . ($t['suggested_accent'] ? " (color {$t['suggested_accent']})" : ''), array_keys(theme_guide()), theme_guide()));
+    $guide = theme_guide();
+    return implode(' · ', array_map(fn($slug, $t) => "$slug = " . ($t['best_for'] ? implode(', ', array_slice($t['best_for'], 0, 2)) : $t['description']),
+        array_keys($guide), $guide)) . ' (ficha completa de cada uno con theme_list)';
+}
+
+/**
+ * Textos de ejemplo de un tema (themes/<tema>/sample.json), por idioma: {"es": {tagline, menu, cta, pages, posts}, "en": …}.
+ * Son de una empresa ficticia: sirven de punto de partida en una web nueva y como modelo para la IA.
+ */
+function theme_sample_all(string $theme): array
+{
+    if (!theme_exists($theme) || !is_file($f = UW_ROOT . "/themes/$theme/sample.json")) return [];
+    $j = json_dec((string) file_get_contents($f));
+    $out = [];
+    foreach (is_array($j) ? $j : [] as $lang => $sample) {
+        if (is_string($lang) && preg_match('/^[a-z]{2}$/', $lang) && is_array($sample) && is_array($sample['pages'] ?? null)) $out[$lang] = $sample;
+    }
+    return $out;
+}
+
+/** Los textos de ejemplo de un tema en un idioma (o en el más cercano: inglés y luego español). */
+function theme_sample(string $theme, string $lang): ?array
+{
+    $all = theme_sample_all($theme);
+    foreach ([$lang, 'en', 'es'] as $l) if (isset($all[$l])) return $all[$l] + ['lang' => $l];
+    return $all ? reset($all) + ['lang' => (string) array_key_first($all)] : null;
+}
+
+/**
+ * Rellena una web recién creada con los textos de ejemplo de su tema, en su idioma principal: páginas y entradas
+ * publicadas, menú, eslogan y botón de cabecera. Devuelve false si el tema no trae ejemplo (no toca nada).
+ */
+function site_apply_theme_sample(SiteService $svc): bool
+{
+    $sample = theme_sample((string) $svc->site['theme'], (string) $svc->defaultLang());
+    if (!$sample) return false;
+    foreach ((array) $sample['pages'] as $p) {
+        if (!is_array($p) || !is_array($p['blocks'] ?? null)) continue;
+        $svc->savePage(['slug' => (string) ($p['slug'] ?? ''), 'title' => (string) ($p['title'] ?? ''), 'status' => 'published',
+            'blocks' => $p['blocks'], 'seo' => is_array($p['seo'] ?? null) ? $p['seo'] : []]);
+    }
+    foreach ((array) ($sample['posts'] ?? []) as $i => $p) {
+        if (!is_array($p)) continue;
+        $svc->savePost(['slug' => (string) ($p['slug'] ?? ''), 'title' => (string) ($p['title'] ?? ''), 'status' => 'published',
+            'excerpt' => (string) ($p['excerpt'] ?? ''), 'content' => (string) ($p['content'] ?? ''), 'tags' => array_values(array_filter((array) ($p['tags'] ?? []), 'is_string')),
+            'published_at' => date('Y-m-d H:i:s', time() - 86400 * (3 + 7 * (int) $i))]);
+    }
+    $patch = array_intersect_key($sample, array_flip(['tagline', 'menu', 'cta']));
+    if ($patch) $svc->updateSettings($patch);
+    return true;
 }
 
 function theme_exists(string $theme): bool

@@ -15,6 +15,19 @@
     "alojamiento rural"
   ],
   "suggested_accent": "#c2410c",
+  "pitch": "Para el negocio de barrio con local y trato cercano (restaurante, cafetería, peluquería); para una tienda desenfadada con mucho producto, mejor «Rotundo».",
+  "style": "acogedor y cercano",
+  "colors": {
+    "acento": "#c2410c",
+    "fondo": "#fbf5ec",
+    "texto": "#2b2018",
+    "pie": "#2a1d15"
+  },
+  "typography": {
+    "titulos": "DM Serif Display",
+    "texto": "Nunito"
+  },
+  "dark_mode": "no",
   "fonts": "DM Serif Display + Nunito (SIL OFL 1.1, alojadas en el servidor)",
   "css_hints": {
     "variables_tema": [

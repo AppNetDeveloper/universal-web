@@ -15,6 +15,19 @@
     "agricultura o huerto"
   ],
   "suggested_accent": "#3d7a55",
+  "pitch": "Para bienestar y salud con tono orgánico y cálido (fisioterapia, yoga, psicología); para una clínica médica más aséptica, mejor «Pulcro».",
+  "style": "sereno y orgánico",
+  "colors": {
+    "acento": "#3d7a55",
+    "fondo": "#fbfaf5",
+    "texto": "#25322a",
+    "secundario": "#8a6a45"
+  },
+  "typography": {
+    "titulos": "Young Serif",
+    "texto": "Source Sans 3"
+  },
+  "dark_mode": "no",
   "fonts": "Source Sans 3 (texto) y Young Serif (títulos), ambas SIL OFL 1.1, alojadas en el servidor",
   "css_hints": {
     "variables_tema": [

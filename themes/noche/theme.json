@@ -11,5 +11,17 @@
     "fotografía",
     "marca premium"
   ],
-  "suggested_accent": "#c8a26b"
+  "suggested_accent": "#c8a26b",
+  "pitch": "Para negocios de noche o marcas que quieren fondo oscuro siempre: coctelerías, música, fotografía.",
+  "style": "oscuro y elegante",
+  "colors": {
+    "acento": "#c8a26b",
+    "fondo": "#0b0d14",
+    "texto": "#ece9e1"
+  },
+  "typography": {
+    "titulos": "Georgia (del sistema)",
+    "texto": "Fuente del sistema"
+  },
+  "dark_mode": "siempre"
 }

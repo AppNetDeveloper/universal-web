@@ -34,5 +34,18 @@
     "instalaciones",
     "B2B"
   ],
-  "suggested_accent": "#0b5cad"
+  "suggested_accent": "#0b5cad",
+  "pitch": "Para empresas de servicios B2B que quieren barra de contacto, botón destacado y foto grande; serio sin ser frío.",
+  "style": "corporativo y sólido",
+  "colors": {
+    "acento": "#0b5cad",
+    "fondo": "#ffffff",
+    "texto": "#0e1a2b",
+    "bandas": "#0e1a2b"
+  },
+  "typography": {
+    "titulos": "Inter",
+    "texto": "Inter"
+  },
+  "dark_mode": "no"
 }

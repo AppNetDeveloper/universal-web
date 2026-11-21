@@ -15,6 +15,18 @@
     "restaurante de autor"
   ],
   "suggested_accent": "#8a6a34",
+  "pitch": "Para alta gama (inmobiliaria premium, hotel boutique, bodega, joyería); para una inmobiliaria con muchos inmuebles, mejor «Horizonte»; para belleza, «Sutil».",
+  "style": "lujo discreto y clásico",
+  "colors": {
+    "acento": "#8a6a34",
+    "fondo": "#fbf8f1",
+    "texto": "#2a2420"
+  },
+  "typography": {
+    "titulos": "Cormorant",
+    "texto": "Jost"
+  },
+  "dark_mode": "no",
   "fonts": "Cormorant (títulos) y Jost (texto), ambas SIL OFL 1.1, alojadas en el servidor",
   "css_hints": {
     "variables_tema": [

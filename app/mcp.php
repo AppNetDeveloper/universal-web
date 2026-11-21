@@ -36,7 +36,7 @@ function mcp_instructions(): string
     5. Imágenes PROPIAS: usa fotos del cliente o generadas por IA y súbelas con media_upload (url de tu generador o base64);
        usa siempre la URL /media/… que devuelve. NUNCA enlaces ni copies fotos de otras webs, bancos de imágenes o buscadores:
        tienen derechos de autor y dependen de un servidor ajeno (seo_audit avisa). Mientras el cliente no tenga fotos, puedes usar las
-       fotos de muestra del tema (site_get → themes → sample_images: propias y libres, con su alt) o dejar el campo vacío. Pon siempre un texto alternativo descriptivo.
+       fotos de muestra del tema (theme_list → sample_images: propias y libres, con su alt) o dejar el campo vacío. Pon siempre un texto alternativo descriptivo.
 
     6. Vídeo, audio y voz (fotos, vídeos, música y voz generados por IA): súbelos con media_upload (ai_generated=true, title y alt) y antes
        busca con media_list (kind, q) si ya existen para reutilizarlos. Bloques: "video" (propio o YouTube/Vimeo), "audio" (música, podcast),
@@ -46,7 +46,8 @@ function mcp_instructions(): string
     8. Si la web se publica como estática en otro servidor (publish_status → mode «static»), los cambios no se ven hasta publicar: usa publish_now al terminar si no hay publicación automática.
     9. Varios idiomas: site_update languages añade idiomas (/en/…, /ro/…). Cada página o entrada existe por idioma con el MISMO slug:
        usa el parámetro lang en page_*/post_*. translation_status dice qué falta; traduce todo el contenido y los textos de la web (site_update translations).
-    10. Web nueva: elige el tema por el tipo de negocio (site_get → themes, campo best_for) y pon accent con el color de la marca o el suggested_accent.
+    10. Web nueva: elige el tema con theme_list (ficha de cada uno: para_quien, sectores, estilo, colores; filtra con sector) y pon accent
+       con el color de la marca o el suggested_accent. theme_sample da sus textos de ejemplo como modelo de páginas (empresa ficticia).
        Negocios con local (restaurante, tienda, taller, clínica…): añade el bloque hours (horario: muestra «Abierto ahora» y Google/IAs lo leen)
        y, si hay precios o carta, el bloque pricelist. Revisa al final con seo_audit y geo_audit.
 
@@ -141,6 +142,24 @@ function mcp_tools(): array
                 'ai_crawlers' => ['type' => 'string', 'enum' => array_keys(GEO_CRAWLER_POLICIES), 'description' => 'Rastreadores de IA en robots.txt: ' . implode(' · ', array_map(fn($k, $v) => "$k = $v", array_keys(GEO_CRAWLER_POLICIES), GEO_CRAWLER_POLICIES))],
             ]),
             'handler' => fn(SiteService $s, array $a) => ['settings' => $s->updateSettings($a), 'name' => $s->site['name'], 'theme' => $s->site['theme']],
+        ],
+        'theme_list' => [
+            'description' => 'Lista los temas (diseños) con la ficha de cada uno para elegir sin abrirlos: nombre, para_quien (para qué tipo de empresa y cuándo elegirlo en vez del parecido), sectores, estilo, colores, tipografía y modo oscuro; además suggested_accent, sus fotos de muestra (sample_images) y los idiomas de sus textos de ejemplo (sample_languages, ver theme_sample). Con sector filtra por palabra («clínica», «abogados», «tienda»…). Úsala antes de site_create o de cambiar el tema con site_update. Con token global no hace falta site.',
+            'scope' => 'read', 'site_optional' => true, 'inputSchema' => $obj(['sector' => $str('Palabra del tipo de negocio para filtrar (opcional): busca en sectores, para_quien, estilo y nombre')]),
+            'handler' => fn(?SiteService $s, array $a) => mcp_theme_list($s, (string) ($a['sector'] ?? '')),
+        ],
+        'theme_sample' => [
+            'description' => 'Textos de ejemplo de un tema en un idioma (los de una web nueva con ese tema): eslogan, menú, botón de cabecera, páginas con sus bloques y entradas del blog. Son de una empresa FICTICIA y todo lo marcado «Ejemplo» (cifras, opiniones) es inventado: úsalos como modelo de estructura y tono, nunca como datos del cliente. Con token global no hace falta site.',
+            'scope' => 'read', 'site_optional' => true, 'inputSchema' => $obj(['theme' => $str('Slug del tema (ver theme_list)'), 'language' => $str('Idioma (es, en, ro, fr, de, it, pt). Por defecto, el principal de la web o español')], ['theme']),
+            'handler' => function (?SiteService $s, array $a) {
+                $theme = (string) $a['theme'];
+                if (!theme_exists($theme)) throw new UwError("El tema '$theme' no existe. Usa theme_list.");
+                $lang = strtolower(trim((string) ($a['language'] ?? ''))) ?: ($s ? $s->defaultLang() : 'es');
+                $sample = theme_sample($theme, $lang);
+                if (!$sample) return ['theme' => $theme, 'sample' => null, 'note' => 'Este tema no trae textos de ejemplo. Escribe el contenido con block_types y los datos reales del cliente.'];
+                return ['theme' => $theme, 'lang' => $sample['lang'], 'languages' => array_keys(theme_sample_all($theme)), 'sample' => array_diff_key($sample, ['lang' => 1]),
+                    'note' => 'Empresa ficticia: sustituye nombre, servicios, contacto y cifras por los reales del cliente; lo marcado «Ejemplo» no se publica tal cual.'];
+            },
         ],
         'block_types' => [
             'description' => 'Describe los tipos de bloque disponibles para las páginas y sus campos. Consúltalo antes de usar page_save. Campos tipo "list" son listas de objetos con los subcampos indicados; "markdown" admite Markdown.',
@@ -857,8 +876,8 @@ function mcp_tools_for_token(): array
             $schema['properties'] = (object) ((array) $schema['properties'] + ['lang' => ['type' => 'string', 'description' => 'Idioma (es, en, ro…). Por defecto, el principal de la web. Ver languages en site_get.']]);
         }
         if (mcp_is_global() && !in_array($name, ['sites_list', 'site_create'], true)) {
-            $schema['properties'] = (object) (['site' => ['type' => 'string', 'description' => 'Slug de la web (ver sites_list)']] + (array) $schema['properties']);
-            $schema['required'] = array_merge(['site'], $schema['required'] ?? []);
+            $schema['properties'] = (object) (['site' => ['type' => 'string', 'description' => 'Slug de la web (ver sites_list)' . (!empty($t['site_optional']) ? '. Opcional en esta herramienta' : '')]] + (array) $schema['properties']);
+            if (empty($t['site_optional'])) $schema['required'] = array_merge(['site'], $schema['required'] ?? []);
         }
         $out[] = ['name' => $name, 'description' => $t['description'], 'inputSchema' => $schema,
             'annotations' => ['readOnlyHint' => $t['scope'] === 'read' && empty($t['writes']), 'destructiveHint' => str_ends_with($name, '_delete')]];
@@ -898,6 +917,12 @@ function mcp_call(string $name, array $args): array
                 if (!isset($args[$req]) || $args[$req] === '') throw new UwError("Falta el parámetro obligatorio '$req'");
             }
             mcp_check_string_args($tool['inputSchema'], $args);
+            if (mcp_is_global() && !empty($tool['site_optional']) && trim((string) ($args['site'] ?? '')) === '') {
+                // Herramienta que no necesita web (p. ej. theme_list antes de site_create)
+                unset($args['site'], $args['lang']);
+                $result = ($tool['handler'])(null, $args);
+                return ['content' => [['type' => 'text', 'text' => json_enc($result, true)]], 'structuredContent' => (object) $result, 'isError' => false];
+            }
             if (mcp_is_global()) {
                 $site = site_by_slug((string) ($args['site'] ?? '')) ?? throw new UwError("Falta 'site' o no existe esa web. Usa sites_list.");
                 unset($args['site']);
@@ -916,6 +941,23 @@ function mcp_call(string $name, array $args): array
         error_log('[universal-web mcp] ' . $ex);
         return ['content' => [['type' => 'text', 'text' => 'Error interno al ejecutar la herramienta.']], 'isError' => true];
     }
+}
+
+/** theme_list: fichas de los temas, opcionalmente filtradas por una palabra del tipo de negocio. */
+function mcp_theme_list(?SiteService $s, string $sector): array
+{
+    $norm = fn(string $t) => strtr(mb_strtolower($t), ['á' => 'a', 'é' => 'e', 'í' => 'i', 'ó' => 'o', 'ú' => 'u', 'ü' => 'u', 'ñ' => 'n']);
+    $q = $norm(trim($sector));
+    $themes = [];
+    foreach (theme_guide() as $slug => $t) {
+        $f = $t['ficha'];
+        if ($q !== '' && !str_contains($norm(implode(' ', array_merge([$slug, $f['nombre'], $f['para_quien'], $f['estilo'], $t['description']], $f['sectores']))), $q)) continue;
+        $themes[] = ['slug' => $slug, 'ficha' => $f, 'suggested_accent' => $t['suggested_accent'], 'sample_images' => $t['sample_images'],
+            'sample_languages' => array_keys(theme_sample_all($slug))];
+    }
+    return ['current' => $s?->site['theme'], 'count' => count($themes), 'themes' => $themes,
+        'how' => 'Elige por sectores y para_quien; aplica con site_update theme (o site_create theme) y pon accent con el color de la marca o suggested_accent.'
+            . ($q !== '' && !$themes ? ' Ningún tema menciona «' . $sector . '»: repite sin sector y elige por estilo.' : '')];
 }
 
 /** page_faq: lee o reemplaza las preguntas frecuentes (primer bloque faq) de una página. */

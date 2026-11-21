@@ -14,6 +14,18 @@
     "escritores y formadores"
   ],
   "suggested_accent": "#9a3412",
+  "pitch": "Para despachos y profesionales que escriben, con aire de revista y serifas; si se prefiere algo institucional y en rejilla, mejor «Sobrio».",
+  "style": "tipográfico, sereno, revista",
+  "colors": {
+    "acento": "#9a3412",
+    "fondo": "#faf8f3",
+    "texto": "#1d1b17"
+  },
+  "typography": {
+    "titulos": "Fraunces",
+    "texto": "Literata"
+  },
+  "dark_mode": "no",
   "fonts": "Fraunces + Literata (SIL OFL 1.1, alojadas en el servidor)",
   "css_hints": {
     "variables_tema": [

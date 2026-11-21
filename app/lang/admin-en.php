@@ -681,7 +681,7 @@ return [
     'Nombre' => 'Name',
     'Identificador (slug)' => 'Identifier (slug)',
     'Dominios (uno por línea; el primero es el principal)' => 'Domains (one per line; the first is the main one)',
-    'Crear páginas iniciales (Inicio y Contacto)' => 'Create starter pages (Home and Contact)',
+    'Crear páginas iniciales (los textos de ejemplo del tema o, si no trae, Inicio y Contacto)' => 'Create starter pages (the theme sample texts or, if it has none, Home and Contact)',
     'Rol' => 'Role',
     '2 pasos' => '2 steps',
     'Último acceso' => 'Last sign-in',
