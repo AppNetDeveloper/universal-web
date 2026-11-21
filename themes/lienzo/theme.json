@@ -1,0 +1,60 @@
+{
+  "slug": "lienzo",
+  "name": "Lienzo",
+  "description": "Editorial y tipográfico en blanco y negro con una sola nota naranja: portfolios de diseño, fotografía, ilustración y consultoría independiente",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "diseñador gráfico",
+    "fotógrafo",
+    "ilustrador",
+    "desarrollador independiente",
+    "redactor o copywriter",
+    "consultor independiente",
+    "arquitecto",
+    "videógrafo"
+  ],
+  "suggested_accent": "#e5420b",
+  "pitch": "Para profesionales independientes que quieren que su trabajo y su voz sean lo primero: titulares gigantes, proyectos en rejilla asimétrica y casi nada de adorno; para un negocio de servicios que prefiere una web limpia y neutra con tarjetas, mejor «Minimal».",
+  "style": "editorial, tipográfico, contrastado",
+  "colors": {
+    "acento": "#e5420b",
+    "fondo": "#f2efe9",
+    "texto": "#0d0d0d",
+    "suave": "#e9e5dc",
+    "fondo_oscuro": "#0d0d0d"
+  },
+  "typography": {
+    "titulos": "Syne",
+    "texto": "Syne"
+  },
+  "dark_mode": "auto",
+  "fonts": "Syne (SIL OFL 1.1, alojada en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (naranja; solo en detalles: punto de la marca, subrayados, números, foco)",
+      "--bg / --text (papel y tinta; se invierten en modo oscuro)",
+      "--inv-bg / --inv-text / --inv-accent (superficie invertida: pie y primera tarjeta de proyecto)",
+      "--pad (margen lateral de la página)"
+    ],
+    "clases_tema": [
+      ".hero-lienzo (titular gigante, subtítulo y enlaces a la derecha, imagen a sangre)",
+      ".hero-link (enlace subrayado grande con flecha)",
+      ".brand-name (marca con punto del acento)",
+      ".site-nav (menú de texto separado por «/»)",
+      ".block-features (índice numerado en filas)",
+      ".block-cards (rejilla asimétrica de proyectos)",
+      ".cta-giant (frase gigante enlazada)",
+      ".footer-name (nombre de la web a todo el ancho)"
+    ],
+    "bloques_recomendados": [
+      "cards (proyectos; la primera tarjeta ocupa más)",
+      "features (índice numerado: servicios o método)",
+      "stats (cifras gigantes en línea)",
+      "steps (números grandes contorneados)",
+      "cta (frase gigante enlazada)",
+      "faq (filas con + / −)"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme): papel y tinta se invierten. Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}

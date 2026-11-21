@@ -1,0 +1,2600 @@
+{
+ "_nota": "Textos de EJEMPLO de un portfolio ficticio (tema Lienzo). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Diseño con criterio, hecho a mano",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Proyectos",
+    "url": "/proyectos"
+   },
+   {
+    "label": "Sobre mí",
+    "url": "/sobre-mi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Hablemos",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: portfolio de diseño independiente con proyectos, método de trabajo y contacto directo. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portfolio · Ejemplo",
+       "title": "Diseño que se queda en la memoria",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué haces, para quién y qué cambia tu trabajo en el proyecto de otra persona.",
+       "cta_text": "Hablemos",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver proyectos",
+       "cta2_link": "/proyectos"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Trabajo seleccionado",
+       "title": "Proyectos recientes",
+       "items": [
+        {
+         "tag": "Identidad",
+         "title": "Proyecto de ejemplo uno",
+         "text": "Texto de ejemplo: marca, sistema visual y piezas de uso diario.",
+         "link": "/proyectos"
+        },
+        {
+         "tag": "Editorial",
+         "title": "Proyecto de ejemplo dos",
+         "text": "Texto de ejemplo: libro y cartel para una exposición.",
+         "link": "/proyectos"
+        },
+        {
+         "tag": "Web",
+         "title": "Proyecto de ejemplo tres",
+         "text": "Texto de ejemplo: sitio web con mucha tipografía.",
+         "link": "/proyectos"
+        },
+        {
+         "tag": "Fotografía",
+         "title": "Proyecto de ejemplo cuatro",
+         "text": "Texto de ejemplo: serie de retratos en luz natural.",
+         "link": "/proyectos"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicios",
+       "title": "Lo que hago",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identidad y marca",
+         "text": "Nombre, logotipo y sistema visual que funcionan en cualquier tamaño."
+        },
+        {
+         "icon": "globe",
+         "title": "Diseño web",
+         "text": "Sitios claros, rápidos y fáciles de mantener."
+        },
+        {
+         "icon": "star",
+         "title": "Dirección creativa",
+         "text": "Una mirada coherente para campañas, vídeo y fotografía."
+        },
+        {
+         "icon": "handshake",
+         "title": "Consultoría",
+         "text": "Sesiones para ordenar ideas antes de diseñar nada."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Años de oficio (ejemplo)"
+        },
+        {
+         "value": "80",
+         "label": "Proyectos entregados (ejemplo)"
+        },
+        {
+         "value": "3",
+         "label": "Semanas de media por proyecto (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajo",
+       "items": [
+        {
+         "title": "Escuchar",
+         "text": "Una conversación larga para entender qué necesitas de verdad."
+        },
+        {
+         "title": "Proponer",
+         "text": "Pocas ideas, bien defendidas, con prototipos reales."
+        },
+        {
+         "title": "Entregar",
+         "text": "Archivos ordenados, guía de uso y soporte después."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniones",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por palabras reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un proyecto en mente?",
+       "text": "Cuéntame qué necesitas y te respondo en dos días laborables.",
+       "button_text": "Hablemos",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "proyectos",
+    "title": "Proyectos",
+    "seo": {
+     "description": "Texto de ejemplo: selección de proyectos de identidad, editorial, web y fotografía de un estudio independiente. Sustitúyelo por el tuyo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Proyectos",
+       "subtitle": "Texto de ejemplo: una selección de trabajos con una línea sobre el reto de cada uno.",
+       "cta_text": "Hablemos",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identidad",
+         "title": "Proyecto de ejemplo uno",
+         "text": "Texto de ejemplo del reto y la solución."
+        },
+        {
+         "tag": "Editorial",
+         "title": "Proyecto de ejemplo dos",
+         "text": "Texto de ejemplo del reto y la solución."
+        },
+        {
+         "tag": "Web",
+         "title": "Proyecto de ejemplo tres",
+         "text": "Texto de ejemplo del reto y la solución."
+        },
+        {
+         "tag": "Fotografía",
+         "title": "Proyecto de ejemplo cuatro",
+         "text": "Texto de ejemplo del reto y la solución."
+        },
+        {
+         "tag": "Ilustración",
+         "title": "Proyecto de ejemplo cinco",
+         "text": "Texto de ejemplo del reto y la solución."
+        },
+        {
+         "tag": "Vídeo",
+         "title": "Proyecto de ejemplo seis",
+         "text": "Texto de ejemplo del reto y la solución."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un proyecto en mente?",
+       "text": "Cuéntame qué necesitas y te respondo en dos días laborables.",
+       "button_text": "Hablemos",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-mi",
+    "title": "Sobre mí",
+    "seo": {
+     "description": "Texto de ejemplo: quién soy, cómo trabajo y qué me importa en cada proyecto. Sustitúyelo por tu historia profesional."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quién soy",
+       "body": "Texto de ejemplo. Cuenta aquí tu trayectoria, tus influencias y qué te hace distinto.\n\nHabla de tu forma de trabajar, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre mí",
+       "title": "Lo que me importa",
+       "body": "- Ideas claras antes que adornos\n- Tipografía cuidada\n- Entregas que se pueden mantener"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cómo trabajo",
+       "items": [
+        {
+         "title": "Escuchar",
+         "text": "Una conversación larga para entender qué necesitas de verdad."
+        },
+        {
+         "title": "Proponer",
+         "text": "Pocas ideas, bien defendidas, con prototipos reales."
+        },
+        {
+         "title": "Entregar",
+         "text": "Archivos ordenados, guía de uso y soporte después."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre presupuestos, plazos, revisiones y derechos de uso de mi trabajo."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo pido un presupuesto?",
+         "answer": "Escríbeme desde el formulario con una breve descripción. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuánto tarda un proyecto?",
+         "answer": "Depende del alcance; lo acordamos al empezar. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cuántas revisiones incluye?",
+         "answer": "Indica aquí cuántas rondas de cambios incluyes."
+        },
+        {
+         "question": "¿Quién tiene los derechos?",
+         "answer": "Explica aquí cómo cedes el uso del trabajo final."
+        },
+        {
+         "question": "¿Trabajas con clientes de otros países?",
+         "answer": "Sí, a distancia y en varios idiomas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes un proyecto en mente?",
+       "text": "Cuéntame qué necesitas y te respondo en dos días laborables.",
+       "button_text": "Hablemos",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: escríbeme para hablar de tu proyecto; respondo en dos días laborables con una propuesta o una pregunta."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Hablemos",
+       "text": "Cuéntame qué tienes en mente.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cinco-ideas-antes-de-disenar",
+    "title": "Cinco ideas antes de diseñar nada",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve para preparar un encargo.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con ideas generales y prudentes.\n\n## Define el problema\n\nExplica por qué conviene empezar por la pregunta y no por la respuesta.\n\n## Reúne referencias\n\nQué enseñar y qué dejar fuera.",
+    "tags": [
+     "proceso",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "tipografia-con-caracter",
+    "title": "Tipografía con carácter",
+    "excerpt": "Texto de ejemplo: cómo elegir una letra que hable por tu marca.",
+    "content": "Texto de ejemplo. Cuenta cómo eliges una tipografía y qué errores evitas.\n\n## Una familia, bien usada\n\nMenos fuentes, más contraste.\n\n## Probar en grande\n\nUn titular enorme enseña todo lo que un párrafo esconde.",
+    "tags": [
+     "tipografia"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Design with judgement, made by hand",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Projects",
+    "url": "/projects"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Let's talk",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: an independent design portfolio with selected projects, a clear way of working and a direct line to get in touch. Replace it with yours."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portfolio · Sample",
+       "title": "Design that stays in the memory",
+       "subtitle": "Sample text: say in one sentence what you do, for whom, and what your work changes in someone else's project.",
+       "cta_text": "Let's talk",
+       "cta_link": "/contact",
+       "cta2_text": "See projects",
+       "cta2_link": "/projects"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Selected work",
+       "title": "Recent projects",
+       "items": [
+        {
+         "tag": "Identity",
+         "title": "Sample project one",
+         "text": "Sample text: brand, visual system and everyday pieces.",
+         "link": "/projects"
+        },
+        {
+         "tag": "Editorial",
+         "title": "Sample project two",
+         "text": "Sample text: a book and a poster for an exhibition.",
+         "link": "/projects"
+        },
+        {
+         "tag": "Web",
+         "title": "Sample project three",
+         "text": "Sample text: a website with plenty of typography.",
+         "link": "/projects"
+        },
+        {
+         "tag": "Photography",
+         "title": "Sample project four",
+         "text": "Sample text: a portrait series in natural light.",
+         "link": "/projects"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "What I do",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identity and brand",
+         "text": "A name, a logo and a visual system that work at any size."
+        },
+        {
+         "icon": "globe",
+         "title": "Web design",
+         "text": "Clear, fast sites that are easy to maintain."
+        },
+        {
+         "icon": "star",
+         "title": "Creative direction",
+         "text": "One coherent eye across campaigns, video and photography."
+        },
+        {
+         "icon": "handshake",
+         "title": "Consulting",
+         "text": "Sessions to sort out ideas before anything gets designed."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Years in the craft (sample)"
+        },
+        {
+         "value": "80",
+         "label": "Projects delivered (sample)"
+        },
+        {
+         "value": "3",
+         "label": "Weeks per project on average (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How I work",
+       "items": [
+        {
+         "title": "Listen",
+         "text": "A long conversation to understand what you really need."
+        },
+        {
+         "title": "Propose",
+         "text": "Few ideas, well argued, with real prototypes."
+        },
+        {
+         "title": "Deliver",
+         "text": "Tidy files, a usage guide and support afterwards."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Kind words",
+       "items": [
+        {
+         "quote": "Sample text for a testimonial: replace it with real words from your clients, with their permission.",
+         "name": "Sample client",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Got a project in mind?",
+       "text": "Tell me what you need and I will reply within two working days.",
+       "button_text": "Let's talk",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "projects",
+    "title": "Projects",
+    "seo": {
+     "description": "Sample text: a selection of identity, editorial, web and photography projects from an independent studio. Replace it with your own work."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Projects",
+       "subtitle": "Sample text: a selection of work with one line on the challenge of each.",
+       "cta_text": "Let's talk",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identity",
+         "title": "Sample project one",
+         "text": "Sample text about the challenge and the solution."
+        },
+        {
+         "tag": "Editorial",
+         "title": "Sample project two",
+         "text": "Sample text about the challenge and the solution."
+        },
+        {
+         "tag": "Web",
+         "title": "Sample project three",
+         "text": "Sample text about the challenge and the solution."
+        },
+        {
+         "tag": "Photography",
+         "title": "Sample project four",
+         "text": "Sample text about the challenge and the solution."
+        },
+        {
+         "tag": "Illustration",
+         "title": "Sample project five",
+         "text": "Sample text about the challenge and the solution."
+        },
+        {
+         "tag": "Video",
+         "title": "Sample project six",
+         "text": "Sample text about the challenge and the solution."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Got a project in mind?",
+       "text": "Tell me what you need and I will reply within two working days.",
+       "button_text": "Let's talk",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About",
+    "seo": {
+     "description": "Sample text: who I am, how I work and what matters to me in every project. Replace it with your own professional story."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who I am",
+       "body": "Sample text. Tell your story here: your path, your influences and what makes you different.\n\nTalk about how you work, not about numbers you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "About me",
+       "title": "What matters to me",
+       "body": "- Clear ideas before decoration\n- Careful typography\n- Deliveries that can be maintained"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "How I work",
+       "items": [
+        {
+         "title": "Listen",
+         "text": "A long conversation to understand what you really need."
+        },
+        {
+         "title": "Propose",
+         "text": "Few ideas, well argued, with real prototypes."
+        },
+        {
+         "title": "Deliver",
+         "text": "Tidy files, a usage guide and support afterwards."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about quotes, timelines, rounds of revisions and the usage rights of my work."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I ask for a quote?",
+         "answer": "Write to me through the form with a short description. *Sample text.*"
+        },
+        {
+         "question": "How long does a project take?",
+         "answer": "It depends on the scope; we agree on it at the start. *Sample text.*"
+        },
+        {
+         "question": "How many revisions are included?",
+         "answer": "State here how many rounds of changes you include."
+        },
+        {
+         "question": "Who owns the rights?",
+         "answer": "Explain here how you license the final work."
+        },
+        {
+         "question": "Do you work with clients abroad?",
+         "answer": "Yes, remotely and in several languages."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Got a project in mind?",
+       "text": "Tell me what you need and I will reply within two working days.",
+       "button_text": "Let's talk",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: write to me to talk about your project; I reply within two working days with a proposal or a question."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Let's talk",
+       "text": "Tell me what you have in mind.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "five-ideas-before-designing",
+    "title": "Five ideas before designing anything",
+    "excerpt": "Sample blog text: a short guide to preparing a brief.",
+    "content": "Sample text. Write a useful article for your clients here, with general and careful ideas.\n\n## Define the problem\n\nExplain why it pays to start with the question, not the answer.\n\n## Gather references\n\nWhat to show and what to leave out.",
+    "tags": [
+     "process",
+     "tips"
+    ]
+   },
+   {
+    "slug": "typography-with-character",
+    "title": "Typography with character",
+    "excerpt": "Sample text: how to choose a typeface that speaks for your brand.",
+    "content": "Sample text. Explain how you choose a typeface and which mistakes you avoid.\n\n## One family, used well\n\nFewer fonts, more contrast.\n\n## Try it big\n\nA huge headline shows what a paragraph hides.",
+    "tags": [
+     "typography"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Design cu criterii, făcut de mână",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Proiecte",
+    "url": "/proiecte"
+   },
+   {
+    "label": "Despre mine",
+    "url": "/despre-mine"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Hai să vorbim",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: portofoliu de design independent cu proiecte alese, mod de lucru clar și contact direct. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portofoliu · Exemplu",
+       "title": "Design care rămâne în memorie",
+       "subtitle": "Text de exemplu: spune într-o frază ce faci, pentru cine și ce schimbă munca ta în proiectul altcuiva.",
+       "cta_text": "Hai să vorbim",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi proiectele",
+       "cta2_link": "/proiecte"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Lucrări alese",
+       "title": "Proiecte recente",
+       "items": [
+        {
+         "tag": "Identitate",
+         "title": "Proiect de exemplu unu",
+         "text": "Text de exemplu: marcă, sistem vizual și piese de zi cu zi.",
+         "link": "/proiecte"
+        },
+        {
+         "tag": "Editorial",
+         "title": "Proiect de exemplu doi",
+         "text": "Text de exemplu: o carte și un afiș pentru o expoziție.",
+         "link": "/proiecte"
+        },
+        {
+         "tag": "Web",
+         "title": "Proiect de exemplu trei",
+         "text": "Text de exemplu: un site cu multă tipografie.",
+         "link": "/proiecte"
+        },
+        {
+         "tag": "Fotografie",
+         "title": "Proiect de exemplu patru",
+         "text": "Text de exemplu: o serie de portrete în lumină naturală.",
+         "link": "/proiecte"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servicii",
+       "title": "Ce fac",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identitate și brand",
+         "text": "Nume, logo și sistem vizual care funcționează la orice dimensiune."
+        },
+        {
+         "icon": "globe",
+         "title": "Design web",
+         "text": "Site-uri clare, rapide și ușor de întreținut."
+        },
+        {
+         "icon": "star",
+         "title": "Direcție creativă",
+         "text": "O privire coerentă pentru campanii, video și fotografie."
+        },
+        {
+         "icon": "handshake",
+         "title": "Consultanță",
+         "text": "Ședințe pentru a pune ideile în ordine înainte să proiectăm ceva."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Ani de meserie (exemplu)"
+        },
+        {
+         "value": "80",
+         "label": "Proiecte livrate (exemplu)"
+        },
+        {
+         "value": "3",
+         "label": "Săptămâni în medie pe proiect (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrez",
+       "items": [
+        {
+         "title": "Ascult",
+         "text": "O discuție lungă ca să înțeleg ce ai nevoie cu adevărat."
+        },
+        {
+         "title": "Propun",
+         "text": "Puține idei, bine argumentate, cu prototipuri reale."
+        },
+        {
+         "title": "Livrez",
+         "text": "Fișiere ordonate, ghid de utilizare și suport după aceea."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Păreri",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu cuvintele reale ale clienților tăi, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un proiect în minte?",
+       "text": "Spune-mi ce ai nevoie și îți răspund în două zile lucrătoare.",
+       "button_text": "Hai să vorbim",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "proiecte",
+    "title": "Proiecte",
+    "seo": {
+     "description": "Text de exemplu: selecție de proiecte de identitate, editorial, web și fotografie ale unui studio independent. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Proiecte",
+       "subtitle": "Text de exemplu: o selecție de lucrări cu o linie despre provocarea fiecăreia.",
+       "cta_text": "Hai să vorbim",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identitate",
+         "title": "Proiect de exemplu unu",
+         "text": "Text de exemplu despre provocare și soluție."
+        },
+        {
+         "tag": "Editorial",
+         "title": "Proiect de exemplu doi",
+         "text": "Text de exemplu despre provocare și soluție."
+        },
+        {
+         "tag": "Web",
+         "title": "Proiect de exemplu trei",
+         "text": "Text de exemplu despre provocare și soluție."
+        },
+        {
+         "tag": "Fotografie",
+         "title": "Proiect de exemplu patru",
+         "text": "Text de exemplu despre provocare și soluție."
+        },
+        {
+         "tag": "Ilustrație",
+         "title": "Proiect de exemplu cinci",
+         "text": "Text de exemplu despre provocare și soluție."
+        },
+        {
+         "tag": "Video",
+         "title": "Proiect de exemplu șase",
+         "text": "Text de exemplu despre provocare și soluție."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un proiect în minte?",
+       "text": "Spune-mi ce ai nevoie și îți răspund în două zile lucrătoare.",
+       "button_text": "Hai să vorbim",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-mine",
+    "title": "Despre mine",
+    "seo": {
+     "description": "Text de exemplu: cine sunt, cum lucrez și ce contează pentru mine în fiecare proiect. Înlocuiește-l cu povestea ta profesională."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine sunt",
+       "body": "Text de exemplu. Povestește aici parcursul tău, influențele și ce te face diferit.\n\nVorbește despre cum lucrezi, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Despre mine",
+       "title": "Ce contează pentru mine",
+       "body": "- Idei clare înaintea podoabelor\n- Tipografie îngrijită\n- Livrări care pot fi întreținute"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Cum lucrez",
+       "items": [
+        {
+         "title": "Ascult",
+         "text": "O discuție lungă ca să înțeleg ce ai nevoie cu adevărat."
+        },
+        {
+         "title": "Propun",
+         "text": "Puține idei, bine argumentate, cu prototipuri reale."
+        },
+        {
+         "title": "Livrez",
+         "text": "Fișiere ordonate, ghid de utilizare și suport după aceea."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre oferte, termene, runde de modificări și drepturile de utilizare ale lucrărilor mele."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum cer o ofertă?",
+         "answer": "Scrie-mi prin formular cu o scurtă descriere. *Text de exemplu.*"
+        },
+        {
+         "question": "Cât durează un proiect?",
+         "answer": "Depinde de amploare; stabilim la început. *Text de exemplu.*"
+        },
+        {
+         "question": "Câte revizuiri include?",
+         "answer": "Indică aici câte runde de modificări incluzi."
+        },
+        {
+         "question": "Cine deține drepturile?",
+         "answer": "Explică aici cum cedezi folosirea lucrării finale."
+        },
+        {
+         "question": "Lucrezi cu clienți din alte țări?",
+         "answer": "Da, la distanță și în mai multe limbi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ai un proiect în minte?",
+       "text": "Spune-mi ce ai nevoie și îți răspund în două zile lucrătoare.",
+       "button_text": "Hai să vorbim",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: scrie-mi ca să vorbim despre proiectul tău; răspund în două zile lucrătoare cu o propunere sau o întrebare."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Hai să vorbim",
+       "text": "Spune-mi ce ai în minte.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cinci-idei-inainte-de-design",
+    "title": "Cinci idei înainte de a proiecta ceva",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt pentru pregătirea unei comenzi.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienții tăi, cu idei generale și prudente.\n\n## Definește problema\n\nExplică de ce merită să începi cu întrebarea, nu cu răspunsul.\n\n## Adună referințe\n\nCe să arăți și ce să lași deoparte.",
+    "tags": [
+     "proces",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "tipografie-cu-caracter",
+    "title": "Tipografie cu caracter",
+    "excerpt": "Text de exemplu: cum alegi un font care vorbește pentru marca ta.",
+    "content": "Text de exemplu. Povestește cum alegi un font și ce greșeli eviți.\n\n## O familie, bine folosită\n\nMai puține fonturi, mai mult contrast.\n\n## Încearcă-l mare\n\nUn titlu uriaș arată ce ascunde un paragraf.",
+    "tags": [
+     "tipografie"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Du design avec du jugement, fait main",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Projets",
+    "url": "/projets"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Parlons-en",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : portfolio de design indépendant avec projets choisis, méthode claire et contact direct. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portfolio · Exemple",
+       "title": "Un design qui reste en mémoire",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que vous faites, pour qui, et ce que votre travail change dans le projet d'un autre.",
+       "cta_text": "Parlons-en",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les projets",
+       "cta2_link": "/projets"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Travaux choisis",
+       "title": "Projets récents",
+       "items": [
+        {
+         "tag": "Identité",
+         "title": "Projet d'exemple un",
+         "text": "Texte d'exemple : marque, système visuel et pièces du quotidien.",
+         "link": "/projets"
+        },
+        {
+         "tag": "Édition",
+         "title": "Projet d'exemple deux",
+         "text": "Texte d'exemple : un livre et une affiche pour une exposition.",
+         "link": "/projets"
+        },
+        {
+         "tag": "Web",
+         "title": "Projet d'exemple trois",
+         "text": "Texte d'exemple : un site très typographique.",
+         "link": "/projets"
+        },
+        {
+         "tag": "Photographie",
+         "title": "Projet d'exemple quatre",
+         "text": "Texte d'exemple : une série de portraits en lumière naturelle.",
+         "link": "/projets"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Services",
+       "title": "Ce que je fais",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identité et marque",
+         "text": "Un nom, un logo et un système visuel qui tiennent à toutes les tailles."
+        },
+        {
+         "icon": "globe",
+         "title": "Design web",
+         "text": "Des sites clairs, rapides et faciles à maintenir."
+        },
+        {
+         "icon": "star",
+         "title": "Direction créative",
+         "text": "Un regard cohérent pour campagnes, vidéo et photographie."
+        },
+        {
+         "icon": "handshake",
+         "title": "Conseil",
+         "text": "Des séances pour clarifier les idées avant de dessiner quoi que ce soit."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Années de métier (exemple)"
+        },
+        {
+         "value": "80",
+         "label": "Projets livrés (exemple)"
+        },
+        {
+         "value": "3",
+         "label": "Semaines par projet en moyenne (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ma façon de travailler",
+       "items": [
+        {
+         "title": "Écouter",
+         "text": "Une longue conversation pour comprendre vos vrais besoins."
+        },
+        {
+         "title": "Proposer",
+         "text": "Peu d'idées, bien défendues, avec de vrais prototypes."
+        },
+        {
+         "title": "Livrer",
+         "text": "Des fichiers rangés, un guide d'usage et un suivi ensuite."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Avis",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par les vrais mots de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet en tête ?",
+       "text": "Dites-moi ce qu'il vous faut et je réponds sous deux jours ouvrés.",
+       "button_text": "Parlons-en",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "projets",
+    "title": "Projets",
+    "seo": {
+     "description": "Texte d'exemple : sélection de projets d'identité, d'édition, de web et de photographie d'un studio indépendant. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Projets",
+       "subtitle": "Texte d'exemple : une sélection de travaux avec une ligne sur le défi de chacun.",
+       "cta_text": "Parlons-en",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identité",
+         "title": "Projet d'exemple un",
+         "text": "Texte d'exemple sur le défi et la solution."
+        },
+        {
+         "tag": "Édition",
+         "title": "Projet d'exemple deux",
+         "text": "Texte d'exemple sur le défi et la solution."
+        },
+        {
+         "tag": "Web",
+         "title": "Projet d'exemple trois",
+         "text": "Texte d'exemple sur le défi et la solution."
+        },
+        {
+         "tag": "Photographie",
+         "title": "Projet d'exemple quatre",
+         "text": "Texte d'exemple sur le défi et la solution."
+        },
+        {
+         "tag": "Illustration",
+         "title": "Projet d'exemple cinq",
+         "text": "Texte d'exemple sur le défi et la solution."
+        },
+        {
+         "tag": "Vidéo",
+         "title": "Projet d'exemple six",
+         "text": "Texte d'exemple sur le défi et la solution."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet en tête ?",
+       "text": "Dites-moi ce qu'il vous faut et je réponds sous deux jours ouvrés.",
+       "button_text": "Parlons-en",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui je suis, comment je travaille et ce qui compte pour moi dans chaque projet. Remplacez-le par votre parcours."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui je suis",
+       "body": "Texte d'exemple. Racontez ici votre parcours, vos influences et ce qui vous distingue.\n\nParlez de votre façon de travailler, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "À propos",
+       "title": "Ce qui compte pour moi",
+       "body": "- Des idées claires avant le décor\n- Une typographie soignée\n- Des livrables maintenables"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ma façon de travailler",
+       "items": [
+        {
+         "title": "Écouter",
+         "text": "Une longue conversation pour comprendre vos vrais besoins."
+        },
+        {
+         "title": "Proposer",
+         "text": "Peu d'idées, bien défendues, avec de vrais prototypes."
+        },
+        {
+         "title": "Livrer",
+         "text": "Des fichiers rangés, un guide d'usage et un suivi ensuite."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les devis, les délais, les retours et les droits d'utilisation de mon travail."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment demander un devis ?",
+         "answer": "Écrivez-moi via le formulaire avec une courte description. *Texte d'exemple.*"
+        },
+        {
+         "question": "Combien de temps dure un projet ?",
+         "answer": "Cela dépend de l'ampleur ; nous la fixons au départ. *Texte d'exemple.*"
+        },
+        {
+         "question": "Combien de retours sont inclus ?",
+         "answer": "Indiquez ici combien de tours de modifications vous incluez."
+        },
+        {
+         "question": "Qui détient les droits ?",
+         "answer": "Expliquez ici comment vous cédez l'usage du travail final."
+        },
+        {
+         "question": "Travaillez-vous avec l'étranger ?",
+         "answer": "Oui, à distance et en plusieurs langues."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Un projet en tête ?",
+       "text": "Dites-moi ce qu'il vous faut et je réponds sous deux jours ouvrés.",
+       "button_text": "Parlons-en",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : écrivez-moi pour parler de votre projet ; je réponds sous deux jours ouvrés avec une proposition ou une question."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Parlons-en",
+       "text": "Dites-moi ce que vous avez en tête.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cinq-idees-avant-de-dessiner",
+    "title": "Cinq idées avant de dessiner quoi que ce soit",
+    "excerpt": "Texte d'exemple pour le blog : un court guide pour préparer une commande.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos clients, avec des idées générales et prudentes.\n\n## Définir le problème\n\nExpliquez pourquoi il vaut mieux commencer par la question.\n\n## Réunir des références\n\nCe qu'il faut montrer et ce qu'il faut laisser de côté.",
+    "tags": [
+     "methode",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "typographie-de-caractere",
+    "title": "Une typographie de caractère",
+    "excerpt": "Texte d'exemple : comment choisir une police qui parle pour votre marque.",
+    "content": "Texte d'exemple. Expliquez comment vous choisissez une police et les erreurs que vous évitez.\n\n## Une famille, bien employée\n\nMoins de polices, plus de contraste.\n\n## Essayer en grand\n\nUn titre immense montre ce qu'un paragraphe cache.",
+    "tags": [
+     "typographie"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Gestaltung mit Urteilsvermögen, von Hand gemacht",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Projekte",
+    "url": "/projekte"
+   },
+   {
+    "label": "Über mich",
+    "url": "/ueber-mich"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Sprechen wir",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Portfolio einer freien Gestalterin oder eines freien Gestalters mit ausgewählten Projekten, klarer Arbeitsweise und direktem Kontakt."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portfolio · Beispiel",
+       "title": "Gestaltung, die im Gedächtnis bleibt",
+       "subtitle": "Beispieltext: Sag in einem Satz, was du machst, für wen und was deine Arbeit im Projekt anderer verändert.",
+       "cta_text": "Sprechen wir",
+       "cta_link": "/kontakt",
+       "cta2_text": "Projekte ansehen",
+       "cta2_link": "/projekte"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Ausgewählte Arbeiten",
+       "title": "Aktuelle Projekte",
+       "items": [
+        {
+         "tag": "Identität",
+         "title": "Beispielprojekt eins",
+         "text": "Beispieltext: Marke, visuelles System und Alltagsstücke.",
+         "link": "/projekte"
+        },
+        {
+         "tag": "Editorial",
+         "title": "Beispielprojekt zwei",
+         "text": "Beispieltext: ein Buch und ein Plakat für eine Ausstellung.",
+         "link": "/projekte"
+        },
+        {
+         "tag": "Web",
+         "title": "Beispielprojekt drei",
+         "text": "Beispieltext: eine Website mit viel Typografie.",
+         "link": "/projekte"
+        },
+        {
+         "tag": "Fotografie",
+         "title": "Beispielprojekt vier",
+         "text": "Beispieltext: eine Porträtserie bei natürlichem Licht.",
+         "link": "/projekte"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Leistungen",
+       "title": "Was ich mache",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identität und Marke",
+         "text": "Name, Logo und visuelles System, die in jeder Größe funktionieren."
+        },
+        {
+         "icon": "globe",
+         "title": "Webdesign",
+         "text": "Klare, schnelle Websites, die sich leicht pflegen lassen."
+        },
+        {
+         "icon": "star",
+         "title": "Kreativleitung",
+         "text": "Ein stimmiger Blick für Kampagnen, Video und Fotografie."
+        },
+        {
+         "icon": "handshake",
+         "title": "Beratung",
+         "text": "Gespräche, um Ideen zu ordnen, bevor etwas gestaltet wird."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Jahre Handwerk (Beispiel)"
+        },
+        {
+         "value": "80",
+         "label": "Gelieferte Projekte (Beispiel)"
+        },
+        {
+         "value": "3",
+         "label": "Wochen pro Projekt im Schnitt (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Meine Arbeitsweise",
+       "items": [
+        {
+         "title": "Zuhören",
+         "text": "Ein langes Gespräch, um zu verstehen, was du wirklich brauchst."
+        },
+        {
+         "title": "Vorschlagen",
+         "text": "Wenige Ideen, gut begründet, mit echten Prototypen."
+        },
+        {
+         "title": "Liefern",
+         "text": "Saubere Dateien, ein Leitfaden und Betreuung danach."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Stimmen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Kundenstimme: ersetze ihn durch echte Worte deiner Kunden, mit deren Erlaubnis.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Projekt im Kopf?",
+       "text": "Erzähl mir, was du brauchst, ich antworte innerhalb von zwei Werktagen.",
+       "button_text": "Sprechen wir",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "projekte",
+    "title": "Projekte",
+    "seo": {
+     "description": "Beispieltext: Auswahl an Projekten aus Identität, Editorial, Web und Fotografie eines freien Studios. Ersetze sie durch deine eigenen Arbeiten."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Projekte",
+       "subtitle": "Beispieltext: eine Auswahl an Arbeiten mit einer Zeile zur Aufgabe jedes Projekts.",
+       "cta_text": "Sprechen wir",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identität",
+         "title": "Beispielprojekt eins",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        },
+        {
+         "tag": "Editorial",
+         "title": "Beispielprojekt zwei",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        },
+        {
+         "tag": "Web",
+         "title": "Beispielprojekt drei",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        },
+        {
+         "tag": "Fotografie",
+         "title": "Beispielprojekt vier",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        },
+        {
+         "tag": "Illustration",
+         "title": "Beispielprojekt fünf",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        },
+        {
+         "tag": "Video",
+         "title": "Beispielprojekt sechs",
+         "text": "Beispieltext zu Aufgabe und Lösung."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Projekt im Kopf?",
+       "text": "Erzähl mir, was du brauchst, ich antworte innerhalb von zwei Werktagen.",
+       "button_text": "Sprechen wir",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-mich",
+    "title": "Über mich",
+    "seo": {
+     "description": "Beispieltext: wer ich bin, wie ich arbeite und was mir in jedem Projekt wichtig ist. Ersetze ihn durch deine berufliche Geschichte."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer ich bin",
+       "body": "Beispieltext. Erzähle hier deinen Werdegang, deine Einflüsse und was dich unterscheidet.\n\nSprich über deine Arbeitsweise, nicht über Zahlen, die du nicht belegen kannst."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Über mich",
+       "title": "Was mir wichtig ist",
+       "body": "- Klare Ideen vor Dekoration\n- Sorgfältige Typografie\n- Lieferungen, die sich pflegen lassen"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Meine Arbeitsweise",
+       "items": [
+        {
+         "title": "Zuhören",
+         "text": "Ein langes Gespräch, um zu verstehen, was du wirklich brauchst."
+        },
+        {
+         "title": "Vorschlagen",
+         "text": "Wenige Ideen, gut begründet, mit echten Prototypen."
+        },
+        {
+         "title": "Liefern",
+         "text": "Saubere Dateien, ein Leitfaden und Betreuung danach."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Angeboten, Zeitplänen, Korrekturschleifen und den Nutzungsrechten an meiner Arbeit."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie frage ich ein Angebot an?",
+         "answer": "Schreib mir über das Formular mit einer kurzen Beschreibung. *Beispieltext.*"
+        },
+        {
+         "question": "Wie lange dauert ein Projekt?",
+         "answer": "Das hängt vom Umfang ab; wir legen ihn zu Beginn fest. *Beispieltext.*"
+        },
+        {
+         "question": "Wie viele Korrekturen sind enthalten?",
+         "answer": "Nenne hier, wie viele Änderungsrunden du einschließt."
+        },
+        {
+         "question": "Wer hält die Rechte?",
+         "answer": "Erkläre hier, wie du die Nutzung der fertigen Arbeit überträgst."
+        },
+        {
+         "question": "Arbeitest du mit Kunden im Ausland?",
+         "answer": "Ja, aus der Ferne und in mehreren Sprachen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Ein Projekt im Kopf?",
+       "text": "Erzähl mir, was du brauchst, ich antworte innerhalb von zwei Werktagen.",
+       "button_text": "Sprechen wir",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: schreib mir, um über dein Projekt zu sprechen; ich antworte innerhalb von zwei Werktagen mit einem Vorschlag oder einer Frage."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Sprechen wir",
+       "text": "Erzähl mir, was dir vorschwebt.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "fuenf-ideen-vor-dem-entwurf",
+    "title": "Fünf Ideen, bevor irgendetwas gestaltet wird",
+    "excerpt": "Beispieltext für den Blog: ein kurzer Leitfaden zur Vorbereitung eines Auftrags.",
+    "content": "Beispieltext. Schreibe hier einen nützlichen Artikel für deine Kunden, mit allgemeinen und vorsichtigen Ideen.\n\n## Das Problem benennen\n\nErkläre, warum es sich lohnt, mit der Frage zu beginnen.\n\n## Referenzen sammeln\n\nWas man zeigt und was man weglässt.",
+    "tags": [
+     "vorgehen",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "typografie-mit-charakter",
+    "title": "Typografie mit Charakter",
+    "excerpt": "Beispieltext: wie du eine Schrift wählst, die für deine Marke spricht.",
+    "content": "Beispieltext. Erkläre, wie du eine Schrift auswählst und welche Fehler du vermeidest.\n\n## Eine Familie, gut eingesetzt\n\nWeniger Schriften, mehr Kontrast.\n\n## Groß ausprobieren\n\nEine riesige Überschrift zeigt, was ein Absatz verbirgt.",
+    "tags": [
+     "typografie"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Design con criterio, fatto a mano",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Progetti",
+    "url": "/progetti"
+   },
+   {
+    "label": "Chi sono",
+    "url": "/chi-sono"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Parliamone",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: portfolio di design indipendente con progetti scelti, metodo di lavoro chiaro e contatto diretto. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portfolio · Esempio",
+       "title": "Design che resta nella memoria",
+       "subtitle": "Testo di esempio: racconta in una frase cosa fai, per chi e cosa cambia il tuo lavoro nel progetto di qualcun altro.",
+       "cta_text": "Parliamone",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i progetti",
+       "cta2_link": "/progetti"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Lavori scelti",
+       "title": "Progetti recenti",
+       "items": [
+        {
+         "tag": "Identità",
+         "title": "Progetto di esempio uno",
+         "text": "Testo di esempio: marchio, sistema visivo e pezzi d'uso quotidiano.",
+         "link": "/progetti"
+        },
+        {
+         "tag": "Editoria",
+         "title": "Progetto di esempio due",
+         "text": "Testo di esempio: un libro e un manifesto per una mostra.",
+         "link": "/progetti"
+        },
+        {
+         "tag": "Web",
+         "title": "Progetto di esempio tre",
+         "text": "Testo di esempio: un sito con molta tipografia.",
+         "link": "/progetti"
+        },
+        {
+         "tag": "Fotografia",
+         "title": "Progetto di esempio quattro",
+         "text": "Testo di esempio: una serie di ritratti con luce naturale.",
+         "link": "/progetti"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Servizi",
+       "title": "Cosa faccio",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identità e marchio",
+         "text": "Nome, logo e sistema visivo che funzionano a qualsiasi dimensione."
+        },
+        {
+         "icon": "globe",
+         "title": "Web design",
+         "text": "Siti chiari, veloci e facili da mantenere."
+        },
+        {
+         "icon": "star",
+         "title": "Direzione creativa",
+         "text": "Uno sguardo coerente per campagne, video e fotografia."
+        },
+        {
+         "icon": "handshake",
+         "title": "Consulenza",
+         "text": "Sessioni per mettere in ordine le idee prima di disegnare qualsiasi cosa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Anni di mestiere (esempio)"
+        },
+        {
+         "value": "80",
+         "label": "Progetti consegnati (esempio)"
+        },
+        {
+         "value": "3",
+         "label": "Settimane a progetto in media (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoro",
+       "items": [
+        {
+         "title": "Ascoltare",
+         "text": "Una lunga conversazione per capire di cosa hai davvero bisogno."
+        },
+        {
+         "title": "Proporre",
+         "text": "Poche idee, ben argomentate, con prototipi reali."
+        },
+        {
+         "title": "Consegnare",
+         "text": "File ordinati, una guida all'uso e assistenza dopo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opinioni",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con parole vere dei tuoi clienti, con il loro permesso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un progetto in mente?",
+       "text": "Dimmi di cosa hai bisogno e rispondo entro due giorni lavorativi.",
+       "button_text": "Parliamone",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "progetti",
+    "title": "Progetti",
+    "seo": {
+     "description": "Testo di esempio: selezione di progetti di identità, editoria, web e fotografia di uno studio indipendente. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Progetti",
+       "subtitle": "Testo di esempio: una selezione di lavori con una riga sulla sfida di ciascuno.",
+       "cta_text": "Parliamone",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identità",
+         "title": "Progetto di esempio uno",
+         "text": "Testo di esempio su sfida e soluzione."
+        },
+        {
+         "tag": "Editoria",
+         "title": "Progetto di esempio due",
+         "text": "Testo di esempio su sfida e soluzione."
+        },
+        {
+         "tag": "Web",
+         "title": "Progetto di esempio tre",
+         "text": "Testo di esempio su sfida e soluzione."
+        },
+        {
+         "tag": "Fotografia",
+         "title": "Progetto di esempio quattro",
+         "text": "Testo di esempio su sfida e soluzione."
+        },
+        {
+         "tag": "Illustrazione",
+         "title": "Progetto di esempio cinque",
+         "text": "Testo di esempio su sfida e soluzione."
+        },
+        {
+         "tag": "Video",
+         "title": "Progetto di esempio sei",
+         "text": "Testo di esempio su sfida e soluzione."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un progetto in mente?",
+       "text": "Dimmi di cosa hai bisogno e rispondo entro due giorni lavorativi.",
+       "button_text": "Parliamone",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-sono",
+    "title": "Chi sono",
+    "seo": {
+     "description": "Testo di esempio: chi sono, come lavoro e cosa mi importa in ogni progetto. Sostituiscilo con la tua storia professionale."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi sono",
+       "body": "Testo di esempio. Racconta qui il tuo percorso, le tue influenze e cosa ti rende diverso.\n\nParla di come lavori, non di cifre che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Chi sono",
+       "title": "Cosa mi importa",
+       "body": "- Idee chiare prima della decorazione\n- Tipografia curata\n- Consegne che si possono mantenere"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Come lavoro",
+       "items": [
+        {
+         "title": "Ascoltare",
+         "text": "Una lunga conversazione per capire di cosa hai davvero bisogno."
+        },
+        {
+         "title": "Proporre",
+         "text": "Poche idee, ben argomentate, con prototipi reali."
+        },
+        {
+         "title": "Consegnare",
+         "text": "File ordinati, una guida all'uso e assistenza dopo."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande più comuni su preventivi, tempi, revisioni e diritti d'uso del mio lavoro."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come chiedo un preventivo?",
+         "answer": "Scrivimi dal modulo con una breve descrizione. *Testo di esempio.*"
+        },
+        {
+         "question": "Quanto dura un progetto?",
+         "answer": "Dipende dall'ampiezza; la concordiamo all'inizio. *Testo di esempio.*"
+        },
+        {
+         "question": "Quante revisioni sono incluse?",
+         "answer": "Indica qui quanti giri di modifiche includi."
+        },
+        {
+         "question": "Chi detiene i diritti?",
+         "answer": "Spiega qui come cedi l'uso del lavoro finale."
+        },
+        {
+         "question": "Lavori con clienti all'estero?",
+         "answer": "Sì, a distanza e in più lingue."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai un progetto in mente?",
+       "text": "Dimmi di cosa hai bisogno e rispondo entro due giorni lavorativi.",
+       "button_text": "Parliamone",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: scrivimi per parlare del tuo progetto; rispondo entro due giorni lavorativi con una proposta o una domanda."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Parliamone",
+       "text": "Dimmi cosa hai in mente.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cinque-idee-prima-di-progettare",
+    "title": "Cinque idee prima di progettare qualsiasi cosa",
+    "excerpt": "Testo di esempio per il blog: una breve guida per preparare un incarico.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con idee generali e prudenti.\n\n## Definire il problema\n\nSpiega perché conviene partire dalla domanda.\n\n## Raccogliere riferimenti\n\nCosa mostrare e cosa lasciare fuori.",
+    "tags": [
+     "metodo",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "tipografia-con-carattere",
+    "title": "Tipografia con carattere",
+    "excerpt": "Testo di esempio: come scegliere un carattere che parli per il tuo marchio.",
+    "content": "Testo di esempio. Racconta come scegli un carattere e quali errori eviti.\n\n## Una famiglia, usata bene\n\nMeno font, più contrasto.\n\n## Provarlo in grande\n\nUn titolo enorme mostra ciò che un paragrafo nasconde.",
+    "tags": [
+     "tipografia"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Design com critério, feito à mão",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Projetos",
+    "url": "/projetos"
+   },
+   {
+    "label": "Sobre mim",
+    "url": "/sobre-mim"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Vamos falar",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: portefólio de design independente com projetos escolhidos, método de trabalho claro e contacto direto. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Portefólio · Exemplo",
+       "title": "Design que fica na memória",
+       "subtitle": "Texto de exemplo: diga numa frase o que faz, para quem e o que o seu trabalho muda no projeto de outra pessoa.",
+       "cta_text": "Vamos falar",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver projetos",
+       "cta2_link": "/projetos"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "eyebrow": "Trabalho selecionado",
+       "title": "Projetos recentes",
+       "items": [
+        {
+         "tag": "Identidade",
+         "title": "Projeto de exemplo um",
+         "text": "Texto de exemplo: marca, sistema visual e peças do dia a dia.",
+         "link": "/projetos"
+        },
+        {
+         "tag": "Editorial",
+         "title": "Projeto de exemplo dois",
+         "text": "Texto de exemplo: um livro e um cartaz para uma exposição.",
+         "link": "/projetos"
+        },
+        {
+         "tag": "Web",
+         "title": "Projeto de exemplo três",
+         "text": "Texto de exemplo: um site com muita tipografia.",
+         "link": "/projetos"
+        },
+        {
+         "tag": "Fotografia",
+         "title": "Projeto de exemplo quatro",
+         "text": "Texto de exemplo: uma série de retratos com luz natural.",
+         "link": "/projetos"
+        }
+       ]
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Serviços",
+       "title": "O que faço",
+       "items": [
+        {
+         "icon": "target",
+         "title": "Identidade e marca",
+         "text": "Nome, logótipo e sistema visual que funcionam em qualquer tamanho."
+        },
+        {
+         "icon": "globe",
+         "title": "Design web",
+         "text": "Sites claros, rápidos e fáceis de manter."
+        },
+        {
+         "icon": "star",
+         "title": "Direção criativa",
+         "text": "Um olhar coerente para campanhas, vídeo e fotografia."
+        },
+        {
+         "icon": "handshake",
+         "title": "Consultoria",
+         "text": "Sessões para pôr as ideias em ordem antes de desenhar o que quer que seja."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "12",
+         "label": "Anos de ofício (exemplo)"
+        },
+        {
+         "value": "80",
+         "label": "Projetos entregues (exemplo)"
+        },
+        {
+         "value": "3",
+         "label": "Semanas por projeto em média (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalho",
+       "items": [
+        {
+         "title": "Ouvir",
+         "text": "Uma conversa longa para perceber o que realmente precisa."
+        },
+        {
+         "title": "Propor",
+         "text": "Poucas ideias, bem defendidas, com protótipos reais."
+        },
+        {
+         "title": "Entregar",
+         "text": "Ficheiros organizados, guia de utilização e apoio depois."
+        }
+       ]
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Opiniões",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por palavras reais dos seus clientes, com a sua autorização.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um projeto em mente?",
+       "text": "Diga-me o que precisa e respondo em dois dias úteis.",
+       "button_text": "Vamos falar",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "projetos",
+    "title": "Projetos",
+    "seo": {
+     "description": "Texto de exemplo: seleção de projetos de identidade, editorial, web e fotografia de um estúdio independente. Substitua-o pelo seu."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Projetos",
+       "subtitle": "Texto de exemplo: uma seleção de trabalhos com uma linha sobre o desafio de cada um.",
+       "cta_text": "Vamos falar",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "cards",
+      "data": {
+       "items": [
+        {
+         "tag": "Identidade",
+         "title": "Projeto de exemplo um",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        },
+        {
+         "tag": "Editorial",
+         "title": "Projeto de exemplo dois",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        },
+        {
+         "tag": "Web",
+         "title": "Projeto de exemplo três",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        },
+        {
+         "tag": "Fotografia",
+         "title": "Projeto de exemplo quatro",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        },
+        {
+         "tag": "Ilustração",
+         "title": "Projeto de exemplo cinco",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        },
+        {
+         "tag": "Vídeo",
+         "title": "Projeto de exemplo seis",
+         "text": "Texto de exemplo sobre o desafio e a solução."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um projeto em mente?",
+       "text": "Diga-me o que precisa e respondo em dois dias úteis.",
+       "button_text": "Vamos falar",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-mim",
+    "title": "Sobre mim",
+    "seo": {
+     "description": "Texto de exemplo: quem sou, como trabalho e o que me importa em cada projeto. Substitua-o pela sua história profissional."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem sou",
+       "body": "Texto de exemplo. Conte aqui o seu percurso, as suas influências e o que o torna diferente.\n\nFale de como trabalha, não de números que não consegue provar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Sobre mim",
+       "title": "O que me importa",
+       "body": "- Ideias claras antes da decoração\n- Tipografia cuidada\n- Entregas que se podem manter"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Como trabalho",
+       "items": [
+        {
+         "title": "Ouvir",
+         "text": "Uma conversa longa para perceber o que realmente precisa."
+        },
+        {
+         "title": "Propor",
+         "text": "Poucas ideias, bem defendidas, com protótipos reais."
+        },
+        {
+         "title": "Entregar",
+         "text": "Ficheiros organizados, guia de utilização e apoio depois."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre orçamentos, prazos, rondas de revisão e direitos de utilização do meu trabalho."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como peço um orçamento?",
+         "answer": "Escreva-me pelo formulário com uma breve descrição. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quanto demora um projeto?",
+         "answer": "Depende do âmbito; combinamo-lo no início. *Texto de exemplo.*"
+        },
+        {
+         "question": "Quantas revisões estão incluídas?",
+         "answer": "Indique aqui quantas rondas de alterações inclui."
+        },
+        {
+         "question": "Quem detém os direitos?",
+         "answer": "Explique aqui como cede o uso do trabalho final."
+        },
+        {
+         "question": "Trabalha com clientes de outros países?",
+         "answer": "Sim, à distância e em vários idiomas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem um projeto em mente?",
+       "text": "Diga-me o que precisa e respondo em dois dias úteis.",
+       "button_text": "Vamos falar",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: escreva-me para falarmos do seu projeto; respondo em dois dias úteis com uma proposta ou uma pergunta."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Vamos falar",
+       "text": "Diga-me o que tem em mente.",
+       "show_phone": "sí"
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cinco-ideias-antes-de-desenhar",
+    "title": "Cinco ideias antes de desenhar o que quer que seja",
+    "excerpt": "Texto de exemplo para o blog: um guia curto para preparar uma encomenda.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com ideias gerais e prudentes.\n\n## Definir o problema\n\nExplique porque convém começar pela pergunta.\n\n## Reunir referências\n\nO que mostrar e o que deixar de fora.",
+    "tags": [
+     "metodo",
+     "dicas"
+    ]
+   },
+   {
+    "slug": "tipografia-com-carater",
+    "title": "Tipografia com caráter",
+    "excerpt": "Texto de exemplo: como escolher uma letra que fale pela sua marca.",
+    "content": "Texto de exemplo. Explique como escolhe uma tipografia e que erros evita.\n\n## Uma família, bem usada\n\nMenos fontes, mais contraste.\n\n## Experimentar em grande\n\nUm título enorme mostra o que um parágrafo esconde.",
+    "tags": [
+     "tipografia"
+    ]
+   }
+  ]
+ }
+}
