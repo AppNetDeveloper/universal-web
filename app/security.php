@@ -34,8 +34,12 @@ function security_headers(string $path): void
             . "frame-ancestors 'none'; form-action 'self'; base-uri 'none'; object-src 'none'");
         return;
     }
-    // Web pública: se puede enmarcar solo desde el mismo origen. Sin CSP (el admin puede añadir su propio JS).
+    // Web pública: se puede enmarcar solo desde el mismo origen. CSP de base que no rompe nada de lo que una web puede
+    // llevar (JS propio, analítica tras el consentimiento, Turnstile, vídeos de YouTube/Vimeo, scripts en línea): impide
+    // incrustar la web en otra, cambiar la base de los enlaces, plugins (<object>) y enviar formularios a sitios http.
     header('X-Frame-Options: SAMEORIGIN');
+    header("Content-Security-Policy: base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self' https:" . (is_https() ? '; upgrade-insecure-requests' : ''));
+    header('Cross-Origin-Opener-Policy: same-origin-allow-popups');
 }
 
 /** Devuelve false (y ya ha respondido) si la petición a /admin o /mcp no está permitida. */
@@ -168,7 +172,9 @@ function adm_security_save(array $c): void
     $require2fa = !empty($_POST['require_2fa']);
     if ($require2fa && !twofa_enabled($c['user'])) throw new UwError(t('Activa primero tu propia verificación en dos pasos (Mi cuenta) antes de hacerla obligatoria para todos.'));
     platform_save(['admin_allowlist' => $allow, 'trusted_proxies' => $proxies, 'session_idle_minutes' => $idle, 'require_2fa' => $require2fa,
-        'admin_host' => $adminHost, 'outbound_allowlist' => $outbound]);
+        'admin_host' => $adminHost, 'outbound_allowlist' => $outbound, 'page_cache' => !empty($_POST['page_cache'])]);
+    page_cache_clear(null);
+    page_cache_sync_flag();
     audit(null, 'security.update', ($allow ? count($allow) . ' IPs permitidas' : 'sin restricción de IP') . ', ' . count($proxies) . ' proxies');
     flash(t('Ajustes de seguridad guardados.'));
     redirect(ADM . '/security');

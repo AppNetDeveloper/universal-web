@@ -441,6 +441,7 @@ function platform_defaults(): array
         'public_ip' => '',         // IP pública que se da para el DNS de los dominios (vacío = se averigua sola)
         'public_ipv6' => '',       // IPv6 pública (opcional; vacío = la del dominio del panel, si tiene)
         'hosting' => '',           // auto_tls (Caddy de install.sh) | panel (Plesk/cPanel) | vacío = se detecta
+        'page_cache' => true,      // caché de página completa (HTML guardado en data/cache, servido sin cargar la aplicación)
     ];
 }
 
@@ -662,6 +663,8 @@ final class Actor
 function audit(?int $siteId, string $action, string $target = '', array $details = []): void
 {
     if ($siteId && function_exists('publish_mark_dirty') && preg_match('/^(page|post|site|media|design|backup\.restore)/', $action)) publish_mark_dirty($siteId);
+    // Cualquier cambio vacía la caché de páginas de esa web (o de todas si es un cambio global: seguridad, temas, copias)
+    if (function_exists('page_cache_clear') && !preg_match('/^(token|seo\.indexnow|user\.login|message\.read)/', $action)) page_cache_clear($siteId);
     insert('audit_log', [
         'site_id' => $siteId, 'actor_type' => Actor::$type, 'actor_id' => Actor::$id, 'actor_name' => Actor::$name,
         'action' => $action, 'target' => $target, 'details' => json_enc((object) $details), 'created_at' => now(),

@@ -7,7 +7,8 @@ define('UW_PUBLIC', UW_ROOT . '/public');
 define('UW_DATA', getenv('UW_DATA') ?: UW_ROOT . '/data');
 
 require UW_ROOT . '/app/core.php';
-require UW_ROOT . '/app/cache.php';
+require_once UW_ROOT . '/app/maintenance.php';
+require_once UW_ROOT . '/app/cache.php';
 require UW_ROOT . '/app/i18n.php';
 require UW_ROOT . '/app/content.php';
 require UW_ROOT . '/app/front.php';
@@ -96,16 +97,25 @@ function uw_handle_request(): void
         errors_capture_php((int) $site['id']); // avisos de PHP de esta web → panel «Errores» y errors_list
         if (str_starts_with($path, '/api/')) { api_handle($svc, $path, $method); return; }
         if (str_starts_with($path, '/site-assets/')) { customize_serve($svc, $path); return; }
-        front_handle($svc, $path, $method);
-        backup_auto_tick(); // copia automática diaria (si está activada), tras responder
-        offsite_auto_tick(); // copias programadas por web con envío fuera del servidor
-        media_variants_tick(); // tamaños para móvil de las fotos subidas antes de existir srcset (unas pocas por visita)
+        page_cache_sync_flag();
+        page_cache_begin($svc);
+        try { front_handle($svc, $path, $method); } finally { page_cache_end(); }
+        uw_background_ticks();
     } catch (Throwable $ex) {
         error_log('[universal-web] ' . $ex);
         if (isset($svc)) errors_record($svc->id(), 'php', 'Error interno: ' . $ex->getMessage(), (string) ($_SERVER['REQUEST_URI'] ?? ''), str_replace(UW_ROOT . '/', '', $ex->getFile()) . ':' . $ex->getLine());
         if (!headers_sent()) http_response_code(500);
         echo config('debug') ? '<pre>' . e((string) $ex) . '</pre>' : 'Error interno del servidor.';
     }
+}
+
+/** Tareas que se hacen «al paso» tras responder una visita (no hay cron obligatorio). También tras un acierto de caché. */
+function uw_background_ticks(): void
+{
+    backup_auto_tick(); // copia automática diaria (si está activada), tras responder
+    offsite_auto_tick(); // copias programadas por web con envío fuera del servidor
+    media_variants_tick(); // tamaños para móvil de las fotos subidas antes de existir srcset (unas pocas por visita)
+    if (function_exists('update_daily_tick')) update_daily_tick(); // comprobación diaria de versión nueva (y actualización automática si está activada)
 }
 
 /** Dominio que llega al servidor pero no es de ninguna web: página neutra (sin datos de otras webs). */

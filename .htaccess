@@ -10,8 +10,8 @@ Options -Indexes
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
     # Bloquear carpetas y archivos internos
-    RewriteRule ^(app|data|themes|bin|deploy|tests|\.tools)(/|$) - [F,L,NC]
-    RewriteRule ^(README\.md|composer\.json|composer\.lock|install\.sh|\.gitignore|\.git)(/|$) - [F,L,NC]
+    RewriteRule ^(app|data|themes|bin|deploy|docs|tests|dist|\.tools)(/|$) - [F,L,NC]
+    RewriteRule ^(README\.md|CHANGELOG\.md|CONTRIBUTING\.md|LICENSE|composer\.json|composer\.lock|install\.sh|\.gitignore|\.git)(/|$) - [F,L,NC]
     RewriteRule (^|/)\.(?!well-known)  - [F,L]
     RewriteRule \.(sqlite3?|bak|sql)$ - [F,L,NC]
 

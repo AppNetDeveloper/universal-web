@@ -53,6 +53,14 @@ $outbound = $old['outbound_allowlist'] ?? implode("\n", $p['outbound_allowlist']
     <p class="hint"><?= th('Quien aún no la tenga deberá activarla al entrar, antes de poder usar el panel. Muy recomendado. Si alguien pierde el móvil y sus códigos: Usuarios → «Resetear 2 pasos», o <code>php bin/uw user:2fa-reset --email=…</code>') ?></p>
   </section>
 
+  <section class="card" id="cache">
+    <h2><?= te('Velocidad: caché de páginas') ?></h2>
+    <?php [$cn, $cb] = page_cache_stats(); ?>
+    <label class="check"><input type="checkbox" name="page_cache" value="1" <?= !empty($p['page_cache']) ? 'checked' : '' ?>>
+      <span><?= th('Guardar cada página ya generada y servirla <b>sin cargar la aplicación</b> (casi tan rápido como una web estática). Se vacía sola al cambiar cualquier cosa y caduca en una hora.') ?></span></label>
+    <p class="hint"><?= te('Ahora hay {n} páginas guardadas ({kb} KB). Quien tiene sesión en el panel, las vistas previas y las webs privadas nunca usan la caché.', ['n' => $cn, 'kb' => (int) ceil($cb / 1024)]) ?></p>
+  </section>
+
   <section class="card">
     <h2><?= te('Sesión') ?></h2>
     <label><?= te('Minutos de inactividad antes de cerrar la sesión') ?>
