@@ -1,0 +1,2761 @@
+{
+ "_nota": "Textos de EJEMPLO de una tienda ficticia (tema Rotundo). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Tu tienda de barrio, con todo a mano",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Productos",
+    "url": "/productos"
+   },
+   {
+    "label": "Nosotros",
+    "url": "/nosotros"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Pásate por la tienda",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: tienda de barrio con de todo un poco, trato cercano y pedidos preparados para recoger. Sustitúyelo por el de tu tienda."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Tienda de barrio · Ejemplo",
+       "title": "Lo que buscas, justo en la esquina",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué vende tu tienda y por qué la gente del barrio vuelve a por más.",
+       "cta_text": "Pásate por la tienda",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver productos",
+       "cta2_link": "/productos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Lo que encontrarás",
+       "title": "Un poco de todo, bien elegido",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Lo de siempre",
+         "text": "Productos de uso diario, siempre en stock y a buen precio."
+        },
+        {
+         "icon": "heart",
+         "title": "Para regalar",
+         "text": "Detalles con envoltorio incluido, listos para sorprender."
+        },
+        {
+         "icon": "search",
+         "title": "Lo que no ves",
+         "text": "Si no lo tenemos en tienda, te lo buscamos y te avisamos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Años en el barrio (ejemplo)"
+        },
+        {
+         "value": "2.000",
+         "label": "Productos en tienda (ejemplo)"
+        },
+        {
+         "value": "48 h",
+         "label": "Pedidos especiales (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pedir es fácil",
+       "items": [
+        {
+         "title": "Dinos qué buscas",
+         "text": "Por teléfono, por mensaje o en la tienda."
+        },
+        {
+         "title": "Te lo preparamos",
+         "text": "Lo apartamos con tu nombre y te avisamos."
+        },
+        {
+         "title": "Pasa a recogerlo",
+         "text": "Sin esperas y con una sonrisa."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Nuestra tienda",
+       "title": "Pequeña, pero con mucho fondo",
+       "body": "- Atención de tú a tú\n- Consejo sincero antes de comprar\n- Cambios y devoluciones sin líos",
+       "button_text": "Nosotros",
+       "button_link": "/nosotros"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Lo que dicen los vecinos",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus clientes, con su permiso.",
+         "name": "Cliente de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes prisa?",
+       "text": "Escríbenos lo que necesitas y te lo dejamos apartado.",
+       "button_text": "Pásate por la tienda",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "productos",
+    "title": "Productos",
+    "seo": {
+     "description": "Texto de ejemplo: productos del día a día, regalos y encargos especiales en una tienda de barrio. Sustitúyelo por tu catálogo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Productos",
+       "subtitle": "Texto de ejemplo: describe lo que vendes con palabras que entienda cualquiera.",
+       "cta_text": "Pásate por la tienda",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Lo básico",
+         "text": "Todo lo necesario para el día a día."
+        },
+        {
+         "icon": "heart",
+         "title": "Regalos",
+         "text": "Con papel y lazo a tu gusto."
+        },
+        {
+         "icon": "star",
+         "title": "Novedades",
+         "text": "Lo último que ha llegado."
+        },
+        {
+         "icon": "calendar",
+         "title": "Temporada",
+         "text": "Productos para cada época del año."
+        },
+        {
+         "icon": "search",
+         "title": "Encargos",
+         "text": "Lo buscamos por ti."
+        },
+        {
+         "icon": "handshake",
+         "title": "Para empresas",
+         "text": "Pedidos al por mayor y facturas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Precios de ejemplo",
+       "note": "Precio de ejemplo: sustitúyelo por el de tu tienda.",
+       "items": [
+        {
+         "section": "Servicios de la tienda",
+         "name": "Envoltorio de regalo",
+         "description": "Papel y lazo a elegir",
+         "price": "3"
+        },
+        {
+         "section": "Servicios de la tienda",
+         "name": "Encargo especial",
+         "description": "Te lo buscamos",
+         "price": "desde 5"
+        },
+        {
+         "section": "Servicios de la tienda",
+         "name": "Reparación sencilla",
+         "description": "Según el caso",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes prisa?",
+       "text": "Escríbenos lo que necesitas y te lo dejamos apartado.",
+       "button_text": "Pásate por la tienda",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "nosotros",
+    "title": "Nosotros",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa en nuestra tienda de barrio y con la gente que nos visita."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu tienda, quién la lleva y qué la hace especial.\n\nHabla de cómo atiendes, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Producto elegido uno a uno\n- Precios claros, sin letra pequeña\n- Siempre una persona al otro lado"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Pedir es fácil",
+       "items": [
+        {
+         "title": "Dinos qué buscas",
+         "text": "Por teléfono, por mensaje o en la tienda."
+        },
+        {
+         "title": "Te lo preparamos",
+         "text": "Lo apartamos con tu nombre y te avisamos."
+        },
+        {
+         "title": "Pasa a recogerlo",
+         "text": "Sin esperas y con una sonrisa."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre pedidos, horarios, devoluciones, envíos y formas de pago de la tienda."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Hacéis pedidos por encargo?",
+         "answer": "Sí, dinos qué necesitas y te avisamos cuando llegue. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Puedo devolver un producto?",
+         "answer": "Sí, dentro del plazo y con el ticket. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Enviáis a domicilio?",
+         "answer": "Indica aquí tus zonas y plazos de envío. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué formas de pago aceptáis?",
+         "answer": "Efectivo, tarjeta y las que tú indiques."
+        },
+        {
+         "question": "¿Hacéis factura?",
+         "answer": "Sí, pídela al comprar con tus datos fiscales."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Tienes prisa?",
+       "text": "Escríbenos lo que necesitas y te lo dejamos apartado.",
+       "button_text": "Pásate por la tienda",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: escríbenos o pásate por la tienda; te atendemos en el horario de apertura y respondemos lo antes posible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Pásate por la tienda",
+       "text": "Cuéntanos qué necesitas y te lo apartamos.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario de la tienda",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "ideas-para-regalar",
+    "title": "Cinco ideas para regalar sin complicarte",
+    "excerpt": "Texto de ejemplo para el blog: una lista breve de regalos.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para tus clientes, con consejos sencillos.\n\n## Para quien lo tiene todo\n\nExplica una idea original y por qué funciona.\n\n## Para última hora\n\nRecomienda algo que siempre acierta.",
+    "tags": [
+     "regalos",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "novedades-de-temporada",
+    "title": "Novedades de temporada en la tienda",
+    "excerpt": "Texto de ejemplo: lo que acaba de llegar.",
+    "content": "Texto de ejemplo. Cuenta qué productos nuevos han llegado y a quién le van a gustar.\n\n## Lo más esperado\n\nPresenta el producto estrella de la temporada.\n\n## Cómo reservarlo\n\nExplica cómo apartar un producto con tu nombre.",
+    "tags": [
+     "novedades"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Your neighbourhood shop, everything at hand",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Products",
+    "url": "/products"
+   },
+   {
+    "label": "About",
+    "url": "/about"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Drop by the shop",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: a neighbourhood shop with a bit of everything, friendly service and orders ready for pickup. Replace it with your own."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Local shop · Sample",
+       "title": "What you need, right around the corner",
+       "subtitle": "Sample text: say in one sentence what your shop sells and why the neighbourhood keeps coming back.",
+       "cta_text": "Drop by the shop",
+       "cta_link": "/contact",
+       "cta2_text": "See products",
+       "cta2_link": "/products"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What you will find",
+       "title": "A bit of everything, well chosen",
+       "items": [
+        {
+         "icon": "box",
+         "title": "The usual",
+         "text": "Everyday products, always in stock and fairly priced."
+        },
+        {
+         "icon": "heart",
+         "title": "For gifting",
+         "text": "Little treats with wrapping included, ready to surprise."
+        },
+        {
+         "icon": "search",
+         "title": "What you can't see",
+         "text": "If it isn't in the shop, we find it and let you know."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Years in the neighbourhood (sample)"
+        },
+        {
+         "value": "2,000",
+         "label": "Products in store (sample)"
+        },
+        {
+         "value": "48 h",
+         "label": "Special orders (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ordering is easy",
+       "items": [
+        {
+         "title": "Tell us what you want",
+         "text": "By phone, by message or in the shop."
+        },
+        {
+         "title": "We set it aside",
+         "text": "Kept under your name, and we let you know."
+        },
+        {
+         "title": "Pick it up",
+         "text": "No waiting, and with a smile."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Our shop",
+       "title": "Small, but with plenty inside",
+       "body": "- Face-to-face service\n- Honest advice before you buy\n- Easy exchanges and returns",
+       "button_text": "About",
+       "button_link": "/about"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "What the neighbours say",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real reviews from your customers, with their consent.",
+         "name": "Sample customer",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "In a hurry?",
+       "text": "Tell us what you need and we will set it aside.",
+       "button_text": "Drop by the shop",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "products",
+    "title": "Products",
+    "seo": {
+     "description": "Sample text: everyday products, gifts and special orders from a neighbourhood shop. Replace it with your own catalogue."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Products",
+       "subtitle": "Sample text: describe what you sell in words anyone understands.",
+       "cta_text": "Drop by the shop",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "The basics",
+         "text": "Everything you need day to day."
+        },
+        {
+         "icon": "heart",
+         "title": "Gifts",
+         "text": "Wrapped the way you like."
+        },
+        {
+         "icon": "star",
+         "title": "New in",
+         "text": "The latest arrivals."
+        },
+        {
+         "icon": "calendar",
+         "title": "Seasonal",
+         "text": "Products for every time of year."
+        },
+        {
+         "icon": "search",
+         "title": "Special orders",
+         "text": "We track it down for you."
+        },
+        {
+         "icon": "handshake",
+         "title": "For businesses",
+         "text": "Bulk orders and invoices."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Sample prices",
+       "note": "Sample price: replace it with your shop's own.",
+       "items": [
+        {
+         "section": "Shop services",
+         "name": "Gift wrapping",
+         "description": "Paper and ribbon of your choice",
+         "price": "3"
+        },
+        {
+         "section": "Shop services",
+         "name": "Special order",
+         "description": "We find it for you",
+         "price": "from 5"
+        },
+        {
+         "section": "Shop services",
+         "name": "Simple repair",
+         "description": "Depends on the case",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "In a hurry?",
+       "text": "Tell us what you need and we will set it aside.",
+       "button_text": "Drop by the shop",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "about",
+    "title": "About us",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us in our neighbourhood shop and with the people who visit us."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your shop here, who runs it and what makes it special.\n\nTalk about how you serve people, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Products chosen one by one\n- Clear prices, no small print\n- Always a person on the other side"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ordering is easy",
+       "items": [
+        {
+         "title": "Tell us what you want",
+         "text": "By phone, by message or in the shop."
+        },
+        {
+         "title": "We set it aside",
+         "text": "Kept under your name, and we let you know."
+        },
+        {
+         "title": "Pick it up",
+         "text": "No waiting, and with a smile."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about orders, opening hours, returns, delivery and the payment methods of the shop."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Do you take special orders?",
+         "answer": "Yes, tell us what you need and we will let you know when it arrives. *Sample text.*"
+        },
+        {
+         "question": "Can I return a product?",
+         "answer": "Yes, within the deadline and with the receipt. *Sample text.*"
+        },
+        {
+         "question": "Do you deliver?",
+         "answer": "List your delivery areas and times here. *Sample text.*"
+        },
+        {
+         "question": "Which payment methods do you accept?",
+         "answer": "Cash, card and any others you list."
+        },
+        {
+         "question": "Can I get an invoice?",
+         "answer": "Yes, ask for it at checkout with your tax details."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "In a hurry?",
+       "text": "Tell us what you need and we will set it aside.",
+       "button_text": "Drop by the shop",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: write to us or drop by the shop; we serve you during opening hours and reply as soon as possible."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Drop by the shop",
+       "text": "Tell us what you need and we will set it aside.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Shop opening hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "gift-ideas",
+    "title": "Five easy gift ideas",
+    "excerpt": "Sample blog text: a short list of gifts.",
+    "content": "Sample text. Write a useful article for your customers here, with simple tips.\n\n## For the person who has everything\n\nExplain an original idea and why it works.\n\n## For last-minute shoppers\n\nRecommend something that never fails.",
+    "tags": [
+     "gifts",
+     "tips"
+    ]
+   },
+   {
+    "slug": "seasonal-news",
+    "title": "New in the shop this season",
+    "excerpt": "Sample text: what has just arrived.",
+    "content": "Sample text. Tell people which new products have arrived and who will love them.\n\n## The most awaited\n\nIntroduce the star product of the season.\n\n## How to reserve it\n\nExplain how to set a product aside under your name.",
+    "tags": [
+     "news"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Magazinul tău din cartier, cu de toate",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Produse",
+    "url": "/produse"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Treci pe la magazin",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: magazin de cartier cu puțin din toate, servire prietenoasă și comenzi pregătite pentru ridicare. Înlocuiește-l cu al tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Magazin local · Exemplu",
+       "title": "Ce cauți, chiar după colț",
+       "subtitle": "Text de exemplu: spune într-o frază ce vinde magazinul tău și de ce se întorc oamenii din cartier.",
+       "cta_text": "Treci pe la magazin",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi produsele",
+       "cta2_link": "/produse"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce vei găsi",
+       "title": "Puțin din toate, bine alese",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Cele de zi cu zi",
+         "text": "Produse de uz zilnic, mereu pe stoc și la preț bun."
+        },
+        {
+         "icon": "heart",
+         "title": "De dăruit",
+         "text": "Daruri cu ambalaj inclus, gata să surprindă."
+        },
+        {
+         "icon": "search",
+         "title": "Ce nu vezi",
+         "text": "Dacă nu e în magazin, îl căutăm și te anunțăm."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Ani în cartier (exemplu)"
+        },
+        {
+         "value": "2.000",
+         "label": "Produse în magazin (exemplu)"
+        },
+        {
+         "value": "48 h",
+         "label": "Comenzi speciale (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comanda e simplă",
+       "items": [
+        {
+         "title": "Spune-ne ce cauți",
+         "text": "La telefon, pe mesaj sau în magazin."
+        },
+        {
+         "title": "Ți-l pregătim",
+         "text": "Îl punem deoparte pe numele tău și te anunțăm."
+        },
+        {
+         "title": "Treci să-l ridici",
+         "text": "Fără așteptare și cu zâmbetul pe buze."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Magazinul nostru",
+       "title": "Mic, dar cu de toate",
+       "body": "- Servire față în față\n- Sfat sincer înainte de a cumpăra\n- Schimburi și retururi fără bătăi de cap",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce spun vecinii",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale clienților, cu acordul lor.",
+         "name": "Client de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te grăbești?",
+       "text": "Scrie-ne ce ai nevoie și îți punem deoparte.",
+       "button_text": "Treci pe la magazin",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produse",
+    "title": "Produse",
+    "seo": {
+     "description": "Text de exemplu: produse de zi cu zi, cadouri și comenzi speciale într-un magazin de cartier. Înlocuiește-l cu catalogul tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produse",
+       "subtitle": "Text de exemplu: descrie ce vinzi cu cuvinte pe care le înțelege oricine.",
+       "cta_text": "Treci pe la magazin",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Esențialele",
+         "text": "Tot ce trebuie pentru fiecare zi."
+        },
+        {
+         "icon": "heart",
+         "title": "Cadouri",
+         "text": "Ambalate cum îți place."
+        },
+        {
+         "icon": "star",
+         "title": "Noutăți",
+         "text": "Ultimele sosiri."
+        },
+        {
+         "icon": "calendar",
+         "title": "De sezon",
+         "text": "Produse pentru fiecare anotimp."
+        },
+        {
+         "icon": "search",
+         "title": "Comenzi speciale",
+         "text": "Îl căutăm noi pentru tine."
+        },
+        {
+         "icon": "handshake",
+         "title": "Pentru firme",
+         "text": "Comenzi en-gros și facturi."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prețuri de exemplu",
+       "note": "Preț de exemplu: înlocuiește-l cu cel al magazinului tău.",
+       "items": [
+        {
+         "section": "Servicii ale magazinului",
+         "name": "Ambalaj cadou",
+         "description": "Hârtie și fundă la alegere",
+         "price": "15"
+        },
+        {
+         "section": "Servicii ale magazinului",
+         "name": "Comandă specială",
+         "description": "Îl căutăm noi",
+         "price": "de la 25"
+        },
+        {
+         "section": "Servicii ale magazinului",
+         "name": "Reparație simplă",
+         "description": "Depinde de caz",
+         "price": "60"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te grăbești?",
+       "text": "Scrie-ne ce ai nevoie și îți punem deoparte.",
+       "button_text": "Treci pe la magazin",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi în magazinul nostru de cartier și pentru oamenii care ne vizitează."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Spune aici povestea magazinului tău, cine îl conduce și ce îl face special.\n\nVorbește despre cum îi servești pe oameni, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Produse alese una câte una\n- Prețuri clare, fără litere mici\n- Mereu un om de partea cealaltă"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Comanda e simplă",
+       "items": [
+        {
+         "title": "Spune-ne ce cauți",
+         "text": "La telefon, pe mesaj sau în magazin."
+        },
+        {
+         "title": "Ți-l pregătim",
+         "text": "Îl punem deoparte pe numele tău și te anunțăm."
+        },
+        {
+         "title": "Treci să-l ridici",
+         "text": "Fără așteptare și cu zâmbetul pe buze."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre comenzi, program, retururi, livrare și metodele de plată ale magazinului."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Faceți comenzi speciale?",
+         "answer": "Da, spune-ne ce ai nevoie și te anunțăm când ajunge. *Text de exemplu.*"
+        },
+        {
+         "question": "Pot returna un produs?",
+         "answer": "Da, în termen și cu bonul. *Text de exemplu.*"
+        },
+        {
+         "question": "Livrați la domiciliu?",
+         "answer": "Scrie aici zonele și termenele de livrare. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce metode de plată acceptați?",
+         "answer": "Numerar, card și cele pe care le alegi tu."
+        },
+        {
+         "question": "Dați factură?",
+         "answer": "Da, cere-o la cumpărare cu datele tale fiscale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Te grăbești?",
+       "text": "Scrie-ne ce ai nevoie și îți punem deoparte.",
+       "button_text": "Treci pe la magazin",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: scrie-ne sau treci pe la magazin; te servim în programul de deschidere și răspundem cât mai repede."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Treci pe la magazin",
+       "text": "Spune-ne ce ai nevoie și îți punem deoparte.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Programul magazinului",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "idei-de-cadouri",
+    "title": "Cinci idei simple de cadouri",
+    "excerpt": "Text de exemplu pentru blog: o listă scurtă de cadouri.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru clienți, cu sfaturi simple.\n\n## Pentru cine are de toate\n\nExplică o idee originală și de ce funcționează.\n\n## Pentru ultima clipă\n\nRecomandă ceva care nu dă greș.",
+    "tags": [
+     "cadouri",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "noutati-de-sezon",
+    "title": "Noutăți de sezon în magazin",
+    "excerpt": "Text de exemplu: ce a ajuns de curând.",
+    "content": "Text de exemplu. Spune ce produse noi au ajuns și cui le vor plăcea.\n\n## Cel mai așteptat\n\nPrezintă produsul vedetă al sezonului.\n\n## Cum îl rezervi\n\nExplică cum pui deoparte un produs pe numele tău.",
+    "tags": [
+     "noutati"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Votre boutique de quartier, tout à portée de main",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Produits",
+    "url": "/produits"
+   },
+   {
+    "label": "À propos",
+    "url": "/a-propos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Passez nous voir",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d'exemple : boutique de quartier avec un peu de tout, accueil chaleureux et commandes prêtes à retirer. Remplacez-le par le vôtre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Boutique locale · Exemple",
+       "title": "Ce que vous cherchez, au coin de la rue",
+       "subtitle": "Texte d'exemple : dites en une phrase ce que vend votre boutique et pourquoi le quartier y revient.",
+       "cta_text": "Passez nous voir",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les produits",
+       "cta2_link": "/produits"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que vous trouverez",
+       "title": "Un peu de tout, bien choisi",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Les indispensables",
+         "text": "Produits du quotidien, toujours en stock et à bon prix."
+        },
+        {
+         "icon": "heart",
+         "title": "À offrir",
+         "text": "Petits cadeaux emballés, prêts à faire plaisir."
+        },
+        {
+         "icon": "search",
+         "title": "Ce que vous ne voyez pas",
+         "text": "S'il n'est pas en boutique, nous le cherchons et vous prévenons."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Ans dans le quartier (exemple)"
+        },
+        {
+         "value": "2 000",
+         "label": "Produits en boutique (exemple)"
+        },
+        {
+         "value": "48 h",
+         "label": "Commandes spéciales (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Commander, c'est facile",
+       "items": [
+        {
+         "title": "Dites-nous ce que vous cherchez",
+         "text": "Par téléphone, par message ou en boutique."
+        },
+        {
+         "title": "Nous le préparons",
+         "text": "Mis de côté à votre nom, et nous vous prévenons."
+        },
+        {
+         "title": "Passez le récupérer",
+         "text": "Sans attente et avec le sourire."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre boutique",
+       "title": "Petite, mais bien garnie",
+       "body": "- Un accueil en face à face\n- Un conseil sincère avant d'acheter\n- Échanges et retours sans complication",
+       "button_text": "À propos",
+       "button_link": "/a-propos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce que disent les voisins",
+       "items": [
+        {
+         "quote": "Texte d'exemple pour un avis : remplacez-le par de vrais avis de vos clients, avec leur accord.",
+         "name": "Client d'exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vous êtes pressé ?",
+       "text": "Écrivez-nous ce qu'il vous faut et nous vous le mettons de côté.",
+       "button_text": "Passez nous voir",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produits",
+    "title": "Produits",
+    "seo": {
+     "description": "Texte d'exemple : produits du quotidien, cadeaux et commandes spéciales dans une boutique de quartier. Remplacez-le par votre catalogue."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produits",
+       "subtitle": "Texte d'exemple : décrivez ce que vous vendez avec des mots que tout le monde comprend.",
+       "cta_text": "Passez nous voir",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "L'essentiel",
+         "text": "Tout le nécessaire au quotidien."
+        },
+        {
+         "icon": "heart",
+         "title": "Cadeaux",
+         "text": "Emballés comme vous l'aimez."
+        },
+        {
+         "icon": "star",
+         "title": "Nouveautés",
+         "text": "Les dernières arrivées."
+        },
+        {
+         "icon": "calendar",
+         "title": "De saison",
+         "text": "Des produits pour chaque période."
+        },
+        {
+         "icon": "search",
+         "title": "Commandes spéciales",
+         "text": "Nous le cherchons pour vous."
+        },
+        {
+         "icon": "handshake",
+         "title": "Pour les pros",
+         "text": "Commandes en gros et factures."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prix d'exemple",
+       "note": "Prix d'exemple : remplacez-le par celui de votre boutique.",
+       "items": [
+        {
+         "section": "Services de la boutique",
+         "name": "Emballage cadeau",
+         "description": "Papier et ruban au choix",
+         "price": "3"
+        },
+        {
+         "section": "Services de la boutique",
+         "name": "Commande spéciale",
+         "description": "Nous la cherchons pour vous",
+         "price": "dès 5"
+        },
+        {
+         "section": "Services de la boutique",
+         "name": "Petite réparation",
+         "description": "Selon le cas",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vous êtes pressé ?",
+       "text": "Écrivez-nous ce qu'il vous faut et nous vous le mettons de côté.",
+       "button_text": "Passez nous voir",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-propos",
+    "title": "À propos",
+    "seo": {
+     "description": "Texte d'exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous dans notre boutique de quartier et avec nos visiteurs."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d'exemple. Racontez ici l'histoire de votre boutique, qui la tient et ce qui la rend spéciale.\n\nParlez de votre façon d'accueillir, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Produits choisis un à un\n- Prix clairs, sans astérisque\n- Toujours quelqu'un au bout du fil"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Commander, c'est facile",
+       "items": [
+        {
+         "title": "Dites-nous ce que vous cherchez",
+         "text": "Par téléphone, par message ou en boutique."
+        },
+        {
+         "title": "Nous le préparons",
+         "text": "Mis de côté à votre nom, et nous vous prévenons."
+        },
+        {
+         "title": "Passez le récupérer",
+         "text": "Sans attente et avec le sourire."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d'exemple : réponses aux questions courantes sur les commandes, les horaires, les retours, la livraison et les moyens de paiement."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Prenez-vous des commandes spéciales ?",
+         "answer": "Oui, dites-nous ce qu'il vous faut et nous vous prévenons à l'arrivée. *Texte d'exemple.*"
+        },
+        {
+         "question": "Puis-je rendre un produit ?",
+         "answer": "Oui, dans le délai et avec le ticket. *Texte d'exemple.*"
+        },
+        {
+         "question": "Livrez-vous à domicile ?",
+         "answer": "Indiquez ici vos zones et délais de livraison. *Texte d'exemple.*"
+        },
+        {
+         "question": "Quels moyens de paiement acceptez-vous ?",
+         "answer": "Espèces, carte et ceux que vous indiquez."
+        },
+        {
+         "question": "Faites-vous des factures ?",
+         "answer": "Oui, demandez-la à l'achat avec vos données fiscales."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Vous êtes pressé ?",
+       "text": "Écrivez-nous ce qu'il vous faut et nous vous le mettons de côté.",
+       "button_text": "Passez nous voir",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d'exemple : écrivez-nous ou passez à la boutique ; nous vous accueillons aux heures d'ouverture et répondons au plus vite."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Passez nous voir",
+       "text": "Dites-nous ce qu'il vous faut et nous vous le mettons de côté.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires de la boutique",
+       "note": "Horaires d'exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "idees-cadeaux",
+    "title": "Cinq idées cadeaux sans prise de tête",
+    "excerpt": "Texte d'exemple pour le blog : une courte liste de cadeaux.",
+    "content": "Texte d'exemple. Écrivez ici un article utile pour vos clients, avec des conseils simples.\n\n## Pour qui a déjà tout\n\nExpliquez une idée originale et pourquoi elle marche.\n\n## Pour le dernier moment\n\nRecommandez une valeur sûre.",
+    "tags": [
+     "cadeaux",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "nouveautes-de-saison",
+    "title": "Les nouveautés de saison en boutique",
+    "excerpt": "Texte d'exemple : ce qui vient d'arriver.",
+    "content": "Texte d'exemple. Dites quels nouveaux produits sont arrivés et qui va les adorer.\n\n## Le plus attendu\n\nPrésentez le produit phare de la saison.\n\n## Comment le réserver\n\nExpliquez comment mettre un produit de côté à votre nom.",
+    "tags": [
+     "nouveautes"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Ihr Laden um die Ecke, alles griffbereit",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Produkte",
+    "url": "/produkte"
+   },
+   {
+    "label": "Über uns",
+    "url": "/ueber-uns"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Kommen Sie vorbei",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Nachbarschaftsladen mit von allem etwas, freundlicher Beratung und Bestellungen zur Abholung. Ersetzen Sie ihn durch Ihren eigenen."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Lokaler Laden · Beispiel",
+       "title": "Was Sie suchen, gleich um die Ecke",
+       "subtitle": "Beispieltext: Sagen Sie in einem Satz, was Ihr Laden verkauft und warum die Nachbarschaft immer wiederkommt.",
+       "cta_text": "Kommen Sie vorbei",
+       "cta_link": "/kontakt",
+       "cta2_text": "Produkte ansehen",
+       "cta2_link": "/produkte"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Was Sie finden",
+       "title": "Von allem etwas, gut ausgewählt",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Das Übliche",
+         "text": "Alltagsprodukte, immer vorrätig und fair im Preis."
+        },
+        {
+         "icon": "heart",
+         "title": "Zum Verschenken",
+         "text": "Kleine Geschenke, schon verpackt und bereit zum Überraschen."
+        },
+        {
+         "icon": "search",
+         "title": "Was Sie nicht sehen",
+         "text": "Haben wir es nicht im Laden, besorgen wir es und melden uns."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Jahre im Viertel (Beispiel)"
+        },
+        {
+         "value": "2.000",
+         "label": "Produkte im Laden (Beispiel)"
+        },
+        {
+         "value": "48 h",
+         "label": "Sonderbestellungen (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Bestellen ist einfach",
+       "items": [
+        {
+         "title": "Sagen Sie uns, was Sie suchen",
+         "text": "Telefonisch, per Nachricht oder im Laden."
+        },
+        {
+         "title": "Wir legen es zurück",
+         "text": "Auf Ihren Namen, und wir melden uns."
+        },
+        {
+         "title": "Holen Sie es ab",
+         "text": "Ohne Warten und mit einem Lächeln."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Unser Laden",
+       "title": "Klein, aber mit viel drin",
+       "body": "- Beratung von Mensch zu Mensch\n- Ehrlicher Rat vor dem Kauf\n- Umtausch und Rückgabe ohne Umstände",
+       "button_text": "Über uns",
+       "button_link": "/ueber-uns"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Was die Nachbarn sagen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Meinung: Ersetzen Sie ihn mit deren Zustimmung durch echte Meinungen Ihrer Kunden.",
+         "name": "Beispielkunde",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Es eilt?",
+       "text": "Schreiben Sie uns, was Sie brauchen, wir legen es zurück.",
+       "button_text": "Kommen Sie vorbei",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produkte",
+    "title": "Produkte",
+    "seo": {
+     "description": "Beispieltext: Alltagsprodukte, Geschenke und Sonderbestellungen in einem Nachbarschaftsladen. Ersetzen Sie ihn durch Ihr Sortiment."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produkte",
+       "subtitle": "Beispieltext: Beschreiben Sie, was Sie verkaufen, mit Worten, die jeder versteht.",
+       "cta_text": "Kommen Sie vorbei",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "Das Wichtigste",
+         "text": "Alles für den Alltag."
+        },
+        {
+         "icon": "heart",
+         "title": "Geschenke",
+         "text": "Verpackt, wie es Ihnen gefällt."
+        },
+        {
+         "icon": "star",
+         "title": "Neuheiten",
+         "text": "Die neuesten Ankömmlinge."
+        },
+        {
+         "icon": "calendar",
+         "title": "Saisonware",
+         "text": "Produkte für jede Jahreszeit."
+        },
+        {
+         "icon": "search",
+         "title": "Sonderbestellungen",
+         "text": "Wir besorgen es für Sie."
+        },
+        {
+         "icon": "handshake",
+         "title": "Für Firmen",
+         "text": "Großbestellungen und Rechnungen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Beispielpreise",
+       "note": "Beispielpreis: Ersetzen Sie ihn durch den Ihres Ladens.",
+       "items": [
+        {
+         "section": "Service im Laden",
+         "name": "Geschenkverpackung",
+         "description": "Papier und Schleife nach Wahl",
+         "price": "3"
+        },
+        {
+         "section": "Service im Laden",
+         "name": "Sonderbestellung",
+         "description": "Wir besorgen es für Sie",
+         "price": "ab 5"
+        },
+        {
+         "section": "Service im Laden",
+         "name": "Einfache Reparatur",
+         "description": "Je nach Fall",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Es eilt?",
+       "text": "Schreiben Sie uns, was Sie brauchen, wir legen es zurück.",
+       "button_text": "Kommen Sie vorbei",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "ueber-uns",
+    "title": "Über uns",
+    "seo": {
+     "description": "Beispieltext: wer wir sind, wie wir arbeiten und was uns in unserem Nachbarschaftsladen und im Umgang mit unseren Kunden wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzählen Sie hier die Geschichte Ihres Ladens, wer ihn führt und was ihn besonders macht.\n\nSprechen Sie darüber, wie Sie Menschen bedienen, nicht über Zahlen, die Sie nicht belegen können."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Produkte einzeln ausgewählt\n- Klare Preise, kein Kleingedrucktes\n- Immer ein Mensch am anderen Ende"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Bestellen ist einfach",
+       "items": [
+        {
+         "title": "Sagen Sie uns, was Sie suchen",
+         "text": "Telefonisch, per Nachricht oder im Laden."
+        },
+        {
+         "title": "Wir legen es zurück",
+         "text": "Auf Ihren Namen, und wir melden uns."
+        },
+        {
+         "title": "Holen Sie es ab",
+         "text": "Ohne Warten und mit einem Lächeln."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Bestellungen, Öffnungszeiten, Rückgabe, Lieferung und den Zahlungsarten des Ladens."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Nehmen Sie Sonderbestellungen an?",
+         "answer": "Ja, sagen Sie uns, was Sie brauchen, wir melden uns bei Ankunft. *Beispieltext.*"
+        },
+        {
+         "question": "Kann ich ein Produkt zurückgeben?",
+         "answer": "Ja, innerhalb der Frist und mit dem Kassenbon. *Beispieltext.*"
+        },
+        {
+         "question": "Liefern Sie nach Hause?",
+         "answer": "Nennen Sie hier Ihre Liefergebiete und -zeiten. *Beispieltext.*"
+        },
+        {
+         "question": "Welche Zahlungsarten akzeptieren Sie?",
+         "answer": "Bar, Karte und weitere, die Sie angeben."
+        },
+        {
+         "question": "Stellen Sie Rechnungen aus?",
+         "answer": "Ja, bitten Sie beim Kauf darum, mit Ihren Steuerdaten."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Es eilt?",
+       "text": "Schreiben Sie uns, was Sie brauchen, wir legen es zurück.",
+       "button_text": "Kommen Sie vorbei",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Schreiben Sie uns oder kommen Sie im Laden vorbei; wir bedienen Sie zu den Öffnungszeiten und antworten so schnell wie möglich."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Kommen Sie vorbei",
+       "text": "Sagen Sie uns, was Sie brauchen, wir legen es zurück.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Öffnungszeiten",
+       "note": "Beispielzeiten: Ändern Sie sie in Ihre eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "geschenkideen",
+    "title": "Fünf einfache Geschenkideen",
+    "excerpt": "Beispieltext für den Blog: eine kurze Geschenkliste.",
+    "content": "Beispieltext. Schreiben Sie hier einen nützlichen Artikel für Ihre Kunden, mit einfachen Tipps.\n\n## Für alle, die schon alles haben\n\nErklären Sie eine originelle Idee und warum sie funktioniert.\n\n## Für Last-Minute-Käufer\n\nEmpfehlen Sie etwas, das immer passt.",
+    "tags": [
+     "geschenke",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "neuheiten-der-saison",
+    "title": "Neuheiten der Saison im Laden",
+    "excerpt": "Beispieltext: was gerade angekommen ist.",
+    "content": "Beispieltext. Erzählen Sie, welche neuen Produkte angekommen sind und wem sie gefallen werden.\n\n## Das Meistgewünschte\n\nStellen Sie das Starprodukt der Saison vor.\n\n## So reservieren Sie es\n\nErklären Sie, wie man ein Produkt auf seinen Namen zurücklegen lässt.",
+    "tags": [
+     "neuheiten"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Il tuo negozio di quartiere, tutto a portata di mano",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Prodotti",
+    "url": "/prodotti"
+   },
+   {
+    "label": "Chi siamo",
+    "url": "/chi-siamo"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Passa in negozio",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: negozio di quartiere con un po' di tutto, servizio cordiale e ordini pronti per il ritiro. Sostituiscilo con il tuo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Negozio locale · Esempio",
+       "title": "Quello che cerchi, proprio dietro l'angolo",
+       "subtitle": "Testo di esempio: racconta in una frase cosa vende il tuo negozio e perché il quartiere ci torna volentieri.",
+       "cta_text": "Passa in negozio",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i prodotti",
+       "cta2_link": "/prodotti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa troverai",
+       "title": "Un po' di tutto, scelto bene",
+       "items": [
+        {
+         "icon": "box",
+         "title": "Il solito",
+         "text": "Prodotti di uso quotidiano, sempre disponibili e a buon prezzo."
+        },
+        {
+         "icon": "heart",
+         "title": "Da regalare",
+         "text": "Pensierini già confezionati, pronti a sorprendere."
+        },
+        {
+         "icon": "search",
+         "title": "Quello che non vedi",
+         "text": "Se non è in negozio, lo cerchiamo e ti avvisiamo."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Anni nel quartiere (esempio)"
+        },
+        {
+         "value": "2.000",
+         "label": "Prodotti in negozio (esempio)"
+        },
+        {
+         "value": "48 h",
+         "label": "Ordini speciali (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ordinare è facile",
+       "items": [
+        {
+         "title": "Dicci cosa cerchi",
+         "text": "Per telefono, per messaggio o in negozio."
+        },
+        {
+         "title": "Lo prepariamo noi",
+         "text": "Messo da parte a tuo nome, e ti avvisiamo."
+        },
+        {
+         "title": "Passa a ritirarlo",
+         "text": "Senza attese e con un sorriso."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Il nostro negozio",
+       "title": "Piccolo, ma ben fornito",
+       "body": "- Servizio di persona\n- Consiglio sincero prima di comprare\n- Cambi e resi senza complicazioni",
+       "button_text": "Chi siamo",
+       "button_link": "/chi-siamo"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Cosa dicono i vicini",
+       "items": [
+        {
+         "quote": "Testo di esempio per un'opinione: sostituiscilo con opinioni reali dei tuoi clienti, con il loro consenso.",
+         "name": "Cliente di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai fretta?",
+       "text": "Scrivici cosa ti serve e te lo mettiamo da parte.",
+       "button_text": "Passa in negozio",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "prodotti",
+    "title": "Prodotti",
+    "seo": {
+     "description": "Testo di esempio: prodotti di tutti i giorni, regali e ordini speciali in un negozio di quartiere. Sostituiscilo con il tuo catalogo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Prodotti",
+       "subtitle": "Testo di esempio: descrivi ciò che vendi con parole che capisca chiunque.",
+       "cta_text": "Passa in negozio",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "L'essenziale",
+         "text": "Tutto il necessario per ogni giorno."
+        },
+        {
+         "icon": "heart",
+         "title": "Regali",
+         "text": "Confezionati come piace a te."
+        },
+        {
+         "icon": "star",
+         "title": "Novità",
+         "text": "Gli ultimi arrivi."
+        },
+        {
+         "icon": "calendar",
+         "title": "Di stagione",
+         "text": "Prodotti per ogni periodo dell'anno."
+        },
+        {
+         "icon": "search",
+         "title": "Ordini speciali",
+         "text": "Lo cerchiamo noi per te."
+        },
+        {
+         "icon": "handshake",
+         "title": "Per le aziende",
+         "text": "Ordini all'ingrosso e fatture."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Prezzi di esempio",
+       "note": "Prezzo di esempio: sostituiscilo con quello del tuo negozio.",
+       "items": [
+        {
+         "section": "Servizi del negozio",
+         "name": "Confezione regalo",
+         "description": "Carta e nastro a scelta",
+         "price": "3"
+        },
+        {
+         "section": "Servizi del negozio",
+         "name": "Ordine speciale",
+         "description": "Lo cerchiamo noi",
+         "price": "da 5"
+        },
+        {
+         "section": "Servizi del negozio",
+         "name": "Riparazione semplice",
+         "description": "Secondo il caso",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai fretta?",
+       "text": "Scrivici cosa ti serve e te lo mettiamo da parte.",
+       "button_text": "Passa in negozio",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "chi-siamo",
+    "title": "Chi siamo",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa conta per noi nel nostro negozio di quartiere e con le persone che ci vengono a trovare."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo negozio, chi lo gestisce e cosa lo rende speciale.\n\nParla di come accogli le persone, non di cifre che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Prodotti scelti uno a uno\n- Prezzi chiari, senza lettere piccole\n- Sempre una persona dall'altra parte"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Ordinare è facile",
+       "items": [
+        {
+         "title": "Dicci cosa cerchi",
+         "text": "Per telefono, per messaggio o in negozio."
+        },
+        {
+         "title": "Lo prepariamo noi",
+         "text": "Messo da parte a tuo nome, e ti avvisiamo."
+        },
+        {
+         "title": "Passa a ritirarlo",
+         "text": "Senza attese e con un sorriso."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte alle domande comuni su ordini, orari, resi, consegne e metodi di pagamento del negozio."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Fate ordini speciali?",
+         "answer": "Sì, dicci cosa ti serve e ti avvisiamo all'arrivo. *Testo di esempio.*"
+        },
+        {
+         "question": "Posso rendere un prodotto?",
+         "answer": "Sì, entro i termini e con lo scontrino. *Testo di esempio.*"
+        },
+        {
+         "question": "Consegnate a domicilio?",
+         "answer": "Indica qui le tue zone e i tempi di consegna. *Testo di esempio.*"
+        },
+        {
+         "question": "Quali metodi di pagamento accettate?",
+         "answer": "Contanti, carta e quelli che indichi tu."
+        },
+        {
+         "question": "Fate fattura?",
+         "answer": "Sì, chiedila all'acquisto con i tuoi dati fiscali."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Hai fretta?",
+       "text": "Scrivici cosa ti serve e te lo mettiamo da parte.",
+       "button_text": "Passa in negozio",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: scrivici o passa in negozio; ti serviamo negli orari di apertura e rispondiamo il prima possibile."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Passa in negozio",
+       "text": "Dicci cosa ti serve e te lo mettiamo da parte.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari del negozio",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "idee-regalo",
+    "title": "Cinque idee regalo senza stress",
+    "excerpt": "Testo di esempio per il blog: una breve lista di regali.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per i tuoi clienti, con consigli semplici.\n\n## Per chi ha già tutto\n\nSpiega un'idea originale e perché funziona.\n\n## Per l'ultimo minuto\n\nConsiglia qualcosa che non sbaglia mai.",
+    "tags": [
+     "regali",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "novita-di-stagione",
+    "title": "Le novità di stagione in negozio",
+    "excerpt": "Testo di esempio: cosa è appena arrivato.",
+    "content": "Testo di esempio. Racconta quali nuovi prodotti sono arrivati e a chi piaceranno.\n\n## Il più atteso\n\nPresenta il prodotto di punta della stagione.\n\n## Come prenotarlo\n\nSpiega come mettere da parte un prodotto a tuo nome.",
+    "tags": [
+     "novita"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "A sua loja de bairro, tudo à mão",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Produtos",
+    "url": "/produtos"
+   },
+   {
+    "label": "Sobre nós",
+    "url": "/sobre-nos"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Passe pela loja",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: loja de bairro com um pouco de tudo, atendimento simpático e encomendas prontas para levantar. Substitua-o pelo da sua loja."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Loja local · Exemplo",
+       "title": "O que procura, mesmo ao virar da esquina",
+       "subtitle": "Texto de exemplo: diga numa frase o que vende a sua loja e porque é que o bairro volta sempre.",
+       "cta_text": "Passe pela loja",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver produtos",
+       "cta2_link": "/produtos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que vai encontrar",
+       "title": "Um pouco de tudo, bem escolhido",
+       "items": [
+        {
+         "icon": "box",
+         "title": "O do costume",
+         "text": "Produtos do dia a dia, sempre em stock e a bom preço."
+        },
+        {
+         "icon": "heart",
+         "title": "Para oferecer",
+         "text": "Pequenos mimos já embrulhados, prontos a surpreender."
+        },
+        {
+         "icon": "search",
+         "title": "O que não vê",
+         "text": "Se não estiver na loja, procuramos e avisamos."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "30",
+         "label": "Anos no bairro (exemplo)"
+        },
+        {
+         "value": "2.000",
+         "label": "Produtos na loja (exemplo)"
+        },
+        {
+         "value": "48 h",
+         "label": "Encomendas especiais (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Encomendar é fácil",
+       "items": [
+        {
+         "title": "Diga-nos o que procura",
+         "text": "Por telefone, por mensagem ou na loja."
+        },
+        {
+         "title": "Preparamos nós",
+         "text": "Guardado em seu nome, e avisamos."
+        },
+        {
+         "title": "Venha levantar",
+         "text": "Sem esperas e com um sorriso."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "A nossa loja",
+       "title": "Pequena, mas bem recheada",
+       "body": "- Atendimento olhos nos olhos\n- Conselho sincero antes de comprar\n- Trocas e devoluções sem complicações",
+       "button_text": "Sobre nós",
+       "button_link": "/sobre-nos"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "O que dizem os vizinhos",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitua-o por opiniões reais dos seus clientes, com a autorização deles.",
+         "name": "Cliente de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem pressa?",
+       "text": "Escreva-nos o que precisa e guardamos para si.",
+       "button_text": "Passe pela loja",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "produtos",
+    "title": "Produtos",
+    "seo": {
+     "description": "Texto de exemplo: produtos do dia a dia, presentes e encomendas especiais numa loja de bairro. Substitua-o pelo seu catálogo."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Produtos",
+       "subtitle": "Texto de exemplo: descreva o que vende com palavras que qualquer pessoa perceba.",
+       "cta_text": "Passe pela loja",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "box",
+         "title": "O essencial",
+         "text": "Tudo o que precisa no dia a dia."
+        },
+        {
+         "icon": "heart",
+         "title": "Presentes",
+         "text": "Embrulhados ao seu gosto."
+        },
+        {
+         "icon": "star",
+         "title": "Novidades",
+         "text": "As últimas chegadas."
+        },
+        {
+         "icon": "calendar",
+         "title": "De época",
+         "text": "Produtos para cada altura do ano."
+        },
+        {
+         "icon": "search",
+         "title": "Encomendas",
+         "text": "Procuramos por si."
+        },
+        {
+         "icon": "handshake",
+         "title": "Para empresas",
+         "text": "Encomendas por grosso e faturas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preços de exemplo",
+       "note": "Preço de exemplo: substitua-o pelo da sua loja.",
+       "items": [
+        {
+         "section": "Serviços da loja",
+         "name": "Embrulho de presente",
+         "description": "Papel e laço à escolha",
+         "price": "3"
+        },
+        {
+         "section": "Serviços da loja",
+         "name": "Encomenda especial",
+         "description": "Procuramos por si",
+         "price": "desde 5"
+        },
+        {
+         "section": "Serviços da loja",
+         "name": "Reparação simples",
+         "description": "Conforme o caso",
+         "price": "12"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem pressa?",
+       "text": "Escreva-nos o que precisa e guardamos para si.",
+       "button_text": "Passe pela loja",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "sobre-nos",
+    "title": "Sobre nós",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa na nossa loja de bairro e com as pessoas que nos visitam."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conte aqui a história da sua loja, quem a dirige e o que a torna especial.\n\nFale de como atende, não de números que não consiga provar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Produtos escolhidos um a um\n- Preços claros, sem letras pequenas\n- Sempre uma pessoa do outro lado"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Encomendar é fácil",
+       "items": [
+        {
+         "title": "Diga-nos o que procura",
+         "text": "Por telefone, por mensagem ou na loja."
+        },
+        {
+         "title": "Preparamos nós",
+         "text": "Guardado em seu nome, e avisamos."
+        },
+        {
+         "title": "Venha levantar",
+         "text": "Sem esperas e com um sorriso."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre encomendas, horários, devoluções, entregas e formas de pagamento da loja."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Fazem encomendas especiais?",
+         "answer": "Sim, diga-nos o que precisa e avisamos quando chegar. *Texto de exemplo.*"
+        },
+        {
+         "question": "Posso devolver um produto?",
+         "answer": "Sim, dentro do prazo e com o talão. *Texto de exemplo.*"
+        },
+        {
+         "question": "Entregam ao domicílio?",
+         "answer": "Indique aqui as suas zonas e prazos de entrega. *Texto de exemplo.*"
+        },
+        {
+         "question": "Que formas de pagamento aceitam?",
+         "answer": "Dinheiro, cartão e as que indicar."
+        },
+        {
+         "question": "Passam fatura?",
+         "answer": "Sim, peça-a na compra com os seus dados fiscais."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Tem pressa?",
+       "text": "Escreva-nos o que precisa e guardamos para si.",
+       "button_text": "Passe pela loja",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: escreva-nos ou passe pela loja; atendemos no horário de abertura e respondemos o mais depressa possível."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Passe pela loja",
+       "text": "Diga-nos o que precisa e guardamos para si.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário da loja",
+       "note": "Horário de exemplo: altere-o para o seu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "09:30",
+         "closes": "14:00",
+         "opens2": "17:00",
+         "closes2": "20:30"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "14:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "ideias-de-presentes",
+    "title": "Cinco ideias de presentes sem complicar",
+    "excerpt": "Texto de exemplo para o blog: uma lista curta de presentes.",
+    "content": "Texto de exemplo. Escreva aqui um artigo útil para os seus clientes, com dicas simples.\n\n## Para quem já tem tudo\n\nExplique uma ideia original e porque funciona.\n\n## Para última hora\n\nRecomende algo que nunca falha.",
+    "tags": [
+     "presentes",
+     "dicas"
+    ]
+   },
+   {
+    "slug": "novidades-da-epoca",
+    "title": "Novidades de época na loja",
+    "excerpt": "Texto de exemplo: o que acabou de chegar.",
+    "content": "Texto de exemplo. Conte que produtos novos chegaram e a quem vão agradar.\n\n## O mais esperado\n\nApresente o produto estrela da época.\n\n## Como reservar\n\nExplique como guardar um produto em seu nome.",
+    "tags": [
+     "novidades"
+    ]
+   }
+  ]
+ }
+}

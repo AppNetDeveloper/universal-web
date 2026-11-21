@@ -1,0 +1,63 @@
+{
+  "slug": "rotundo",
+  "name": "Rotundo",
+  "description": "Neo-brutalismo amable en crema, naranja y amarillo: tiendas de barrio, ferreterías, librerías, jugueterías y tiendas de bicis",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "tienda de barrio",
+    "ferretería",
+    "librería",
+    "juguetería",
+    "tienda de bicicletas",
+    "mercería",
+    "tienda de discos",
+    "papelería",
+    "tienda de regalos"
+  ],
+  "suggested_accent": "#e8461b",
+  "pitch": "Para comercios locales con carácter que quieren una web divertida, de colores francos y bordes gruesos, con el horario siempre a la vista; si tu tienda busca un aire artesanal, sereno y acogedor, mejor «Cálido y local».",
+  "style": "neo-brutalista, desenfadado",
+  "colors": {
+    "acento": "#e8461b",
+    "fondo": "#fff8e7",
+    "texto": "#141414",
+    "amarillo": "#ffd23f",
+    "menta": "#7ee0b8",
+    "fondo_oscuro": "#17150f"
+  },
+  "typography": {
+    "titulos": "Bricolage Grotesque",
+    "texto": "Bricolage Grotesque"
+  },
+  "dark_mode": "auto",
+  "fonts": "Bricolage Grotesque (SIL OFL 1.1, alojada en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (naranja-rojo recomendado; el texto sobre él se elige solo, oscuro o claro)",
+      "--line (color de bordes y sombras duras: casi negro en claro, crema en oscuro)",
+      "--yellow / --mint (colores de apoyo para tarjetas, marcador y etiquetas)",
+      "--hard / --hard-lg (sombras duras desplazadas)",
+      "--radius (12px)"
+    ],
+    "clases_tema": [
+      ".hero-rotundo (portada con rotulador amarillo)",
+      ".mark (rotulador amarillo detrás del titular)",
+      ".eyebrow (pegatina girada)",
+      ".ribbon (cinta bajo la portada)",
+      ".hero-art (formas decorativas sin imagen)",
+      ".price-item / .price-value (etiquetas de precio colgando)",
+      ".hours-card (horario destacado)",
+      ".feature (tarjetas de colores alternos)"
+    ],
+    "bloques_recomendados": [
+      "features (tarjetas de colores alternos)",
+      "pricelist (etiquetas de precio)",
+      "hours (horario de la tienda)",
+      "gallery",
+      "faq",
+      "cta"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme). Bordes y sombras pasan a crema y acento; las tarjetas de color mantienen texto oscuro. Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
