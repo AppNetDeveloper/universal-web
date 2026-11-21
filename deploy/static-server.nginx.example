@@ -19,8 +19,18 @@ server {
     }
     location = /.uw-published { deny all; }
 
+    # Copias en Markdown y llms*.txt: para agentes de IA, no para Google (no compiten con la página)
+    location ~* (\.md|/llms(-full)?\.txt)$ {
+        types { text/markdown md; text/plain txt; }
+        charset utf-8;
+        add_header X-Robots-Tag "noindex" always;
+        add_header X-Content-Type-Options "nosniff" always;
+    }
+
     add_header X-Content-Type-Options "nosniff" always;
     add_header Referrer-Policy "strict-origin-when-cross-origin" always;
     add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header Content-Security-Policy "base-uri 'self'; object-src 'none'; frame-ancestors 'self'" always;
 }
 # Con Caddy basta:  miweb.com { root * /var/www/miweb  file_server  handle_errors { rewrite * /404.html  file_server } }
+#   y para el Markdown:  @ia path *.md /llms.txt /llms-full.txt /*/llms.txt   header @ia X-Robots-Tag "noindex"
