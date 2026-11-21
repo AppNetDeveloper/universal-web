@@ -111,6 +111,7 @@ function page_cache_fast_serve(): bool
     $meta = json_decode((string) fgets($fh), true);
     $core = @filemtime(dirname(__DIR__) . '/app/core.php');
     if (!is_array($meta) || ($meta['exp'] ?? 0) < time() || ($meta['core'] ?? 0) !== $core) { fclose($fh); @unlink($file); return false; }
+    header_remove('X-Powered-By');
     foreach ((array) ($meta['h'] ?? []) as $h) header((string) $h, false);
     header('X-UW-Cache: HIT');
     header('Age: ' . max(0, time() - (int) $meta['at']));

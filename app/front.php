@@ -525,7 +525,9 @@ function sitemap_xml(SiteService $svc): void
     foreach ($blogMod as $l => $mod) $groups['blog|'][$l] = [$svc->url($svc->blogPath($l)), $mod];
     $def = $svc->defaultLang();
     $x = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\n";
+    $order = array_flip($live);
     foreach ($groups as $versions) {
+        uksort($versions, fn($a, $b) => $order[$a] <=> $order[$b]); // hreflang en el orden de los idiomas de la web
         foreach ($versions as $l => [$loc, $mod]) {
             $x .= '  <url><loc>' . e($loc) . '</loc><lastmod>' . date('Y-m-d', strtotime((string) $mod)) . '</lastmod>';
             if (count($versions) > 1) {

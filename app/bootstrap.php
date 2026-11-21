@@ -71,6 +71,7 @@ function uw_handle_request(): void
 
     header('X-Content-Type-Options: nosniff');
     header('Referrer-Policy: strict-origin-when-cross-origin');
+    header_remove('X-Powered-By'); // no anunciar la versión de PHP
 
     try {
         if (!is_installed()) {
