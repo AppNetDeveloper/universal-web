@@ -112,6 +112,10 @@ h3 { font-size: 1.35rem; font-weight: 700; letter-spacing: -.02em; line-height: 
   .header-cta span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .nav-toggle { order: 3; }
   .header-actions .lang-switch { order: 4; flex: 0 0 100%; justify-content: flex-start; padding-top: 6px; }
+  .header-actions .lang-switch.lang-many { order: 2; flex: none; padding-top: 0; margin-left: auto; }
+  .header-inner:has(.lang-many) .header-cta { margin-left: 0; }
+  .header-inner:has(.lang-many) .brand { flex: 1 1 0; min-width: 0; gap: 8px; }
+  .header-inner:has(.lang-many) .brand > span:last-child { white-space: normal; }
   .site-nav { background: var(--bg); border-bottom: 3px solid var(--line); box-shadow: 0 6px 0 var(--sh); padding: 12px 16px 18px; }
   .site-nav ul { gap: 6px; }
   .site-nav a { padding: 10px 14px; font-size: 1.1rem; border-color: var(--line); background: var(--card); }
@@ -301,3 +305,20 @@ a.media-card:hover, .post-card:hover { transform: translate(-2px, -2px); box-sha
   .faq details, .faq details:hover, .site-nav a, .nav-toggle:active, .whatsapp-float, .whatsapp-float:hover { transform: none; transition: none; }
 }
 @media print { .ribbon-wrap, .hero-art, .whatsapp-float, .utilbar { display: none !important; } .hero-rotundo { background: none; } .card, .feature, .stat, .step, .testimonial, .hours-card, .price-item { box-shadow: none; } .site-footer { background: none; color: #000; } }
+
+/* Selector con 4 idiomas o más: desplegable compacto (no pisa la marca ni el menú en ningún ancho) */
+.lang-menu { position: relative; }
+.lang-menu summary { list-style: none; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; min-width: 44px; padding: 4px 12px; cursor: pointer; font-size: .85rem; font-weight: 700; letter-spacing: .05em; color: var(--text); border: 1px solid var(--border); border-radius: 10px; background: transparent; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover { background: var(--bg-soft); }
+.lang-caret { width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.lang-menu[open] .lang-caret { transform: translateY(2px) rotate(-135deg); }
+.lang-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 70; display: grid; grid-template-columns: repeat(2, minmax(52px, 1fr)); gap: 2px; padding: 6px; background: var(--card, var(--bg)); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 14px 34px rgba(0,0,0,.18); }
+.lang-list a { justify-content: center; }
+.nav-toggle, .lang-menu summary { flex: none; }
+
+/* Acento como texto con contraste AA aunque el cliente elija un color muy claro (amarillo) o muy oscuro en modo oscuro */
+@supports (color: oklch(from red l c h)) {
+  :root { --accent-text: oklch(from var(--accent) min(l, .5) c h); }
+  @media (prefers-color-scheme: dark) { :root { --accent-text: oklch(from var(--accent) max(l, .8) c h); } }
+}

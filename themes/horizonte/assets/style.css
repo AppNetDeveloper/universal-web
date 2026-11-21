@@ -256,3 +256,20 @@ a.feature:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--bord
 /* Campos del formulario: borde con contraste 3:1 frente al fondo (WCAG 1.4.11), en claro y oscuro */
 .form input, .form textarea, .form select { border-color: color-mix(in srgb, var(--muted) 82%, var(--card)); }
 .form input:focus, .form textarea:focus, .form select:focus { border-color: var(--accent-text); }
+
+/* Selector con 4 idiomas o más: desplegable compacto (no pisa la marca ni el menú en ningún ancho) */
+.lang-menu { position: relative; }
+.lang-menu summary { list-style: none; display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 44px; min-width: 44px; padding: 4px 12px; cursor: pointer; font-size: .85rem; font-weight: 700; letter-spacing: .05em; color: var(--text); border: 1px solid var(--border); border-radius: 10px; background: transparent; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover { background: var(--bg-soft); }
+.lang-caret { width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.lang-menu[open] .lang-caret { transform: translateY(2px) rotate(-135deg); }
+.lang-list { position: absolute; right: 0; top: calc(100% + 6px); z-index: 70; display: grid; grid-template-columns: repeat(2, minmax(52px, 1fr)); gap: 2px; padding: 6px; background: var(--card, var(--bg)); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 14px 34px rgba(0,0,0,.18); }
+.lang-list a { justify-content: center; }
+.nav-toggle, .lang-menu summary { flex: none; }
+
+/* Acento como texto con contraste AA aunque el cliente elija un color muy claro (amarillo) o muy oscuro en modo oscuro */
+@supports (color: oklch(from red l c h)) {
+  :root { --accent-text: oklch(from var(--accent) min(l, .5) c h); }
+  @media (prefers-color-scheme: dark) { :root { --accent-text: oklch(from var(--accent) max(l, .8) c h); } }
+}
