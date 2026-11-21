@@ -61,13 +61,20 @@ $sev = ['error' => ['Error', 'red'], 'warning' => ['Aviso', 'amber'], 'notice' =
 <?php else: ?><div class="empty"><p><?= te('Sin problemas: la web está lista para las IAs.') ?></p></div><?php endif; ?>
 
 <?php /** @var array $redirects */ ?>
-<h2 class="sec"><?= te('Redirecciones 301') ?></h2>
-<p class="muted"><?= te('Si cambias el slug de una página publicada, la redirección desde la URL antigua se crea sola. Aquí puedes añadir otras a mano.') ?></p>
+<h2 class="sec" id="redirecciones"><?= te('Redirecciones 301') ?></h2>
+<p class="muted"><?= te('Si cambias el slug o la ruta de una página publicada, la redirección desde la URL antigua se crea sola. Aquí puedes añadir otras a mano o importarlas de golpe.') ?></p>
 <form method="post" action="<?= ADM ?>/seo/redirects" class="card" style="display:flex;gap:8px;flex-wrap:wrap;align-items:end"><?= csrf_field() ?>
   <label><?= te('Desde (ruta antigua)') ?><input name="from" placeholder="/servicio-viejo" required></label>
   <label><?= te('Hacia (ruta o https://…)') ?><input name="to" placeholder="/servicio-nuevo" required></label>
   <button class="btn"><?= te('Añadir') ?></button>
 </form>
+<details class="card"><summary><strong><?= te('Importar varias (al migrar una web)') ?></strong></summary>
+<form method="post" action="<?= ADM ?>/seo/redirects/import" enctype="multipart/form-data"><?= csrf_field() ?>
+  <p class="muted"><?= th('Una por línea, <code>origen -> destino</code> (también vale <code>origen destino</code>). Las líneas que empiezan por <code>#</code> se ignoran. Ejemplo: <code>blog/viejo.html -> /blog/nuevo.html</code>') ?></p>
+  <label><?= te('Redirecciones') ?><textarea name="lines" rows="6" class="mono" placeholder="casos.html -> clientes.html&#10;/en/old.html -> /en/new.html"></textarea></label>
+  <label><?= te('o un archivo de texto') ?> <input type="file" name="file" accept=".txt,text/plain"></label>
+  <button class="btn"><?= te('Importar') ?></button>
+</form></details>
 <?php if ($redirects): ?>
 <div class="table-wrap"><table>
   <thead><tr><th><?= te('Desde') ?></th><th><?= te('Hacia') ?></th><th><?= te('Visitas') ?></th><th></th></tr></thead>

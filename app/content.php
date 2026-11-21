@@ -434,6 +434,7 @@ function site_set_domains(int $siteId, array $domains, bool $trusted = false, bo
     }
     q('DELETE FROM site_domains WHERE site_id = ?', [$siteId]);
     foreach ($domains as $i => $d) insert('site_domains', ['domain' => $d, 'site_id' => $siteId, 'is_primary' => $i === 0 ? 1 : 0]);
+    if (function_exists('page_cache_clear')) page_cache_clear(null); // un dominio que cambia de web no debe seguir sirviendo la copia de la otra
 }
 
 function site_create(string $name, string $slug, array $domains, string $theme = 'default', array $settings = []): array
@@ -1828,6 +1829,77 @@ function redirect_save_manual(SiteService $svc, string $from, string $to): array
     $r = redirect_add($svc->id(), $lang, $f, $t) ?? throw new UwError('Origen y destino son iguales');
     if ($t[0] === '/' && !site_check_internal_exists($svc, $t)) $r['warning'] = "El destino $t no existe todavía: crea o publica esa página";
     return $r;
+}
+
+/**
+ * Importa redirecciones de un texto «origen -> destino» (una por línea; también «origen destino», «origen,destino» o
+ * «redir /origen /destino permanent» de Caddy). «#» empieza un comentario. Las rutas sin barra inicial se toman desde la
+ * raíz (casos.html → /casos.html). Cada línea se valida por separado; con $dryRun no se guarda nada.
+ * @return array{created: list<array>, errors: list<array{line:int, text:string, error:string}>, total:int}
+ */
+function redirect_import(SiteService $svc, string $text, bool $dryRun = false): array
+{
+    $created = []; $errors = []; $n = 0;
+    $lines = preg_split('/\r\n|\r|\n/', $text) ?: [];
+    if (count($lines) > 5000) throw new UwError('Demasiadas líneas (máximo 5000 redirecciones por importación)');
+    foreach ($lines as $i => $raw) {
+        $line = trim((string) preg_replace('/\s+#.*$|^#.*$/', '', $raw));
+        if ($line === '') continue;
+        $n++;
+        $line = (string) preg_replace('/^redir\s+|\s+(permanent|301)$/i', '', $line);
+        $parts = preg_split('/\s*(?:->|=>|→|,|;|\t|\s)\s*/u', $line, -1, PREG_SPLIT_NO_EMPTY);
+        if (count($parts) !== 2) { $errors[] = ['line' => $i + 1, 'text' => mb_substr($raw, 0, 200), 'error' => 'Formato: origen -> destino']; continue; }
+        [$from, $to] = array_map(fn($x) => preg_match('#^(/|https?://)#i', $x) ? $x : '/' . $x, $parts);
+        try {
+            if ($dryRun) {
+                $f = redirect_norm_from($from) ?? throw new UwError('«from» debe ser una ruta interna como /servicio-antiguo (sin .., sin dominio)');
+                redirect_norm_to($to, true) ?? throw new UwError('«to» debe ser una ruta interna (/nueva) o una URL https://…');
+                if (redirect_page_exists($svc, $f)) throw new UwError("En $f hay una página publicada y taparía la redirección");
+                $created[] = ['from' => $f, 'to' => $to];
+            } else {
+                $created[] = redirect_save_manual($svc, $from, $to);
+            }
+        } catch (UwError $e) {
+            $errors[] = ['line' => $i + 1, 'text' => mb_substr($raw, 0, 200), 'error' => $e->getMessage()];
+        }
+    }
+    if (!$dryRun && $created) audit($svc->id(), 'redirect.import', count($created) . ' redirecciones', ['errors' => count($errors)]);
+    return ['created' => $created, 'errors' => $errors, 'total' => $n, 'dry_run' => $dryRun];
+}
+
+/**
+ * Idiomas de una página o entrada: en cuáles existe (estado y dirección) y, en los que no, su dirección equivalente y a
+ * dónde redirige. $missing ({"ro": "/ro/otra.html", "it": ""}) fija o quita (vacío) la 301 de cada idioma que falta:
+ * así una página que solo tiene sentido en algunos idiomas no deja enlaces rotos en los demás.
+ */
+function page_languages(SiteService $svc, string $kind, string $slug, ?array $missing = null): array
+{
+    $kind = $kind === 'post' ? 'post' : 'page';
+    $tr = $svc->translations($kind === 'post' ? 'posts' : 'pages', $slug);
+    if (!$tr) throw new UwError(($kind === 'post' ? 'No existe la entrada' : 'No existe la página') . " «{$slug}» en ningún idioma");
+    $out = [];
+    $applied = [];
+    foreach ($svc->langs() as $l) {
+        if (isset($tr[$l])) {
+            $path = $svc->itemPath($kind, $slug, $l);
+            $out[$l] = ['exists' => true, 'status' => $tr[$l], 'path' => $path, 'url' => $svc->url($path), 'markdown' => $svc->url($svc->mdPath($kind, $slug, $l))];
+            if ($missing !== null && array_key_exists($l, $missing)) throw new UwError("La " . ($kind === 'post' ? 'entrada' : 'página') . " ya existe en «{$l}»: no se puede redirigir");
+            continue;
+        }
+        $eq = $svc->equivalentPath($kind, $slug, $l);
+        if ($missing !== null && array_key_exists($l, $missing)) {
+            $to = trim((string) $missing[$l]);
+            if ($to === '') { if (redirect_drop($svc->id(), $eq)) audit($svc->id(), 'redirect.delete', $eq); $applied[$l] = null; }
+            else $applied[$l] = redirect_save_manual($svc, $eq, $to);
+        }
+        $r = redirect_find($svc->id(), $eq);
+        $out[$l] = ['exists' => false, 'equivalent_path' => $eq, 'redirect_to' => $r['to_path'] ?? null,
+            'note' => $r ? 'Redirige con 301; los enlaces de ese idioma van directos al destino' : 'Sin versión ni redirección: los enlaces de ese idioma llevan a la versión del idioma principal'];
+    }
+    if ($missing !== null) {
+        foreach (array_keys($missing) as $l) if (!in_array($l, $svc->langs(), true)) throw new UwError("La web no tiene el idioma «{$l}»");
+    }
+    return ['kind' => $kind, 'slug' => $slug, 'languages' => $out] + ($applied ? ['changed' => $applied] : []);
 }
 
 /** Si la ruta pedida tiene redirección, responde 301 y devuelve true. */

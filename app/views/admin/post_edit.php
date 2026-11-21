@@ -15,6 +15,9 @@ $pub = $post['published_at'] ? str_replace(' ', 'T', substr((string) $post['publ
       <label class="grow"><?= te('Título') ?><input type="text" name="title" id="f-title" value="<?= e($post['title']) ?>" required maxlength="200"></label>
       <label class="grow"><?= te('Slug') ?><input type="text" name="slug" data-slug-from="#f-title" value="<?= e($post['slug']) ?>" maxlength="100" pattern="[a-z0-9-]*" placeholder="<?= te('se genera del título') ?>"></label>
     </div>
+    <?php $auto = $post['slug'] !== '' ? $svc->autoPath('post', $post['slug'], $post['lang'] ?? $svc->defaultLang()) : ''; ?>
+    <label><?= te('Dirección (URL) fija') ?> <small class="muted"><?= te('Opcional, p. ej. /blog/mi-entrada.html. Vacío = automática') ?><?= $auto !== '' ? ' (' . e($auto) . ')' : '' ?></small>
+      <input type="text" name="path" value="<?= e((string) ($post['path'] ?? '')) ?>" maxlength="300" placeholder="<?= e($auto ?: '/blog/mi-entrada.html') ?>" pattern="(/[A-Za-z0-9._~\-]+)*"></label>
     <label><?= te('Extracto') ?><textarea name="excerpt" rows="2" maxlength="500"><?= e($post['excerpt']) ?></textarea></label>
     <label><?= te('Contenido') ?> <small class="muted"><?= te('Admite Markdown') ?></small>
       <textarea name="content" rows="22" class="mono big"><?= e($post['content']) ?></textarea></label>

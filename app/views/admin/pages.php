@@ -10,12 +10,12 @@ usort($rows, fn($a, $b) => [$a['main']['slug'] !== 'index', $a['main']['title']]
   <div class="empty"><p><?= th('Aún no hay páginas. Crea la primera: usa el slug <code>index</code> para la portada.') ?></p><a class="btn btn-primary" href="<?= ADM ?>/pages/edit"><?= te('Crear página') ?></a></div>
 <?php else: ?>
 <div class="table-wrap"><table>
-  <thead><tr><th><?= te('Título') ?></th><th><?= te('Slug') ?></th><th><?= te('Estado') ?></th><?php if ($multi): ?><th><?= te('Idiomas') ?></th><?php endif; ?><th><?= te('Actualizada') ?></th><th></th></tr></thead>
+  <thead><tr><th><?= te('Título') ?></th><th><?= te('Dirección') ?></th><th><?= te('Estado') ?></th><?php if ($multi): ?><th><?= te('Idiomas') ?></th><?php endif; ?><th><?= te('Actualizada') ?></th><th></th></tr></thead>
   <tbody>
   <?php foreach ($rows as ['main' => $p, 'by' => $by]): ?>
     <tr>
       <td data-l="<?= te('Título') ?>"><a href="<?= ADM ?>/pages/edit?id=<?= (int) $p['id'] ?>"><b><?= e($p['title']) ?></b></a><?= $multi && $p['lang'] !== $main ? ' ' . adm_badge(strtoupper($p['lang'])) : '' ?></td>
-      <td data-l="<?= te('Slug') ?>"><code>/<?= $p['slug'] === 'index' ? '' : e($p['slug']) ?></code></td>
+      <td data-l="<?= te('Dirección') ?>"><code><?= e($p['public_path'] ?? ('/' . ($p['slug'] === 'index' ? '' : $p['slug']))) ?></code></td>
       <td data-l="<?= te('Estado') ?>"><?= $p['status'] === 'published' ? adm_badge(t('Publicada'), 'green') : adm_badge(t('Borrador')) ?></td>
       <?php if ($multi): ?>
       <td data-l="<?= te('Idiomas') ?>" class="lang-cells">

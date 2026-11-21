@@ -31,8 +31,20 @@ $soc = ['instagram' => 'Instagram', 'facebook' => 'Facebook', 'x' => 'X (Twitter
       <label><?= te('Año de fundación') ?><input type="text" name="business_founded" value="<?= e($s['business']['founded']) ?>" placeholder="1985" style="width:7rem"></label>
     </div>
     <label class="check"><input type="checkbox" name="ai_markdown" value="1" <?= $s['ai_markdown'] ? 'checked' : '' ?>>
-      <span><?= th('Servir cada página en <b>Markdown</b> a los agentes de IA (ChatGPT, Claude, Perplexity…). Google y Bing siempre ven la web normal. También disponible en <code>/pagina.md</code>.') ?></span></label>
+      <span><?= th('Servir cada página en <b>Markdown</b> a los agentes de IA (ChatGPT, Claude, Perplexity…). Google y Bing siempre ven la web normal. También disponible en <code>/md/pagina.md</code>.') ?></span></label>
+    <label><?= te('Perfiles que confirman tu identidad (sameAs)') ?> <span class="hint"><?= te('Una URL https:// por línea: Wikipedia, Wikidata, LinkedIn de empresa, Google Business, directorios. Se suman a las redes sociales.') ?></span>
+      <textarea name="same_as" rows="3" class="mono" placeholder="https://www.wikidata.org/wiki/Q…"><?= e(implode("\n", (array) ($s['same_as'] ?? []))) ?></textarea></label>
+    <label class="check"><input type="checkbox" name="indexnow" value="1" <?= !empty($s['indexnow']) ? 'checked' : '' ?>>
+      <span><?= th('Avisar a Bing y Yandex (<b>IndexNow</b>) al publicar o cambiar una página. Bing alimenta a varios buscadores con IA.') ?></span></label>
     <label><?= te('Rastreadores de IA (robots.txt)') ?><select name="ai_crawlers"><?php foreach (GEO_CRAWLER_POLICIES as $k => $l): ?><option value="<?= e($k) ?>" <?= $s['ai_crawlers'] === $k ? 'selected' : '' ?>><?= te($l) ?></option><?php endforeach; ?></select></label>
+  </section>
+
+  <section class="card" id="direcciones">
+    <h2><?= te('Direcciones (URLs)') ?></h2>
+    <label><?= te('Estilo de las direcciones') ?><select name="url_style">
+      <option value="clean" <?= ($s['url_style'] ?? 'clean') !== 'html' ? 'selected' : '' ?>><?= te('Limpias: /servicios, /blog/mi-entrada') ?></option>
+      <option value="html" <?= ($s['url_style'] ?? '') === 'html' ? 'selected' : '' ?>><?= te('Con .html: /servicios.html, /blog/mi-entrada.html, /blog.html') ?></option></select></label>
+    <p class="hint"><?= te('Elige .html si vienes de una web estática y quieres conservar sus direcciones. Al cambiar de estilo, las direcciones antiguas redirigen solas (301) a las nuevas. Cada página puede además tener su dirección fija.') ?></p>
   </section>
 
   <section class="card" id="privada">

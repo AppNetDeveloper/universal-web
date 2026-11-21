@@ -36,6 +36,7 @@ function adm_routes(): array
         'GET /seo' => ['adm_seo', 'editor', true],
         'POST /seo/redirects' => ['adm_redirect_save', 'admin', true],
         'POST /seo/redirects/delete' => ['adm_redirect_delete', 'admin', true],
+        'POST /seo/redirects/import' => ['adm_redirect_import', 'admin', true],
         'GET /settings' => ['adm_settings', 'admin', true],
         'POST /settings' => ['adm_settings_save', 'admin', true],
         'GET /languages' => ['adm_languages', 'admin', true],
@@ -438,6 +439,7 @@ function adm_page_edit(array $c): void
         $page['title'] = (string) ($old['title'] ?? '');
         $page['slug'] = (string) ($old['slug'] ?? '');
         $page['status'] = (string) ($old['status'] ?? 'draft');
+        $page['path'] = (string) ($old['path'] ?? $page['path'] ?? '');
         $page['seo'] = sanitize_seo(['title' => $old['seo_title'] ?? '', 'description' => $old['seo_description'] ?? '', 'image' => $old['seo_image'] ?? '', 'noindex' => isset($old['seo_noindex'])]);
         $b = json_decode((string) ($old['blocks'] ?? '[]'), true);
         if (is_array($b)) $page['blocks'] = $b;
@@ -457,8 +459,17 @@ function adm_page_save(array $c): void
         'title' => (string) ($_POST['title'] ?? ''), 'slug' => trim((string) ($_POST['slug'] ?? '')) ?: slugify((string) ($_POST['title'] ?? '')),
         'status' => (string) ($_POST['status'] ?? 'draft'), 'seo' => adm_seo_from_post(), 'blocks' => $blocks,
         'lang' => $id ? null : adm_lang_param($svc, (string) ($_POST['lang'] ?? '')),
-    ], $id);
+    ] + (isset($_POST['path']) ? ['path' => trim((string) $_POST['path'])] : []), $id);
     flash(t('Página guardada.'));
+    if (is_array($_POST['missing'] ?? null)) {
+        $cur = page_languages($svc, 'page', $page['slug'])['languages'];
+        $want = [];
+        foreach ($_POST['missing'] as $l => $to) if (is_string($l) && isset($cur[$l]) && !$cur[$l]['exists'] && (string) ($cur[$l]['redirect_to'] ?? '') !== trim((string) $to)) $want[$l] = trim((string) $to);
+        if ($want) {
+            try { page_languages($svc, 'page', $page['slug'], $want); flash(t('Redirecciones de los otros idiomas guardadas.')); }
+            catch (UwError $e) { flash(t_msg($e->getMessage()), 'error'); }
+        }
+    }
     redirect(ADM . '/pages/edit?id=' . $page['id']);
 }
 
@@ -520,7 +531,7 @@ function adm_post_save(array $c): void
         'author' => (string) ($_POST['author'] ?? ''), 'status' => (string) ($_POST['status'] ?? 'draft'),
         'published_at' => (string) ($_POST['published_at'] ?? ''), 'seo' => adm_seo_from_post(),
         'lang' => $id ? null : adm_lang_param($c['svc'], (string) ($_POST['lang'] ?? '')),
-    ], $id);
+    ] + (isset($_POST['path']) ? ['path' => trim((string) $_POST['path'])] : []), $id);
     flash(t('Entrada guardada.'));
     redirect(ADM . '/posts/edit?id=' . $post['id']);
 }
@@ -671,6 +682,27 @@ function adm_redirect_save(array $c): void
     redirect(ADM . '/seo');
 }
 
+/** Importa «origen -> destino» desde el cuadro de texto o un archivo subido (redirects.txt, _redirects…). */
+function adm_redirect_import(array $c): void
+{
+    $text = (string) ($_POST['lines'] ?? '');
+    $f = $_FILES['file'] ?? null;
+    if (is_array($f) && ($f['error'] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_OK && is_uploaded_file((string) $f['tmp_name'])) {
+        if ((int) $f['size'] > 1024 * 1024) { flash(t('El archivo de redirecciones supera 1 MB.'), 'error'); redirect(ADM . '/seo#redirecciones'); }
+        $text .= "\n" . (string) file_get_contents((string) $f['tmp_name']);
+    }
+    if (trim($text) === '') { flash(t('Pega las redirecciones o elige un archivo.'), 'error'); redirect(ADM . '/seo#redirecciones'); }
+    try {
+        $r = redirect_import($c['svc'], $text);
+        flash(t('Importadas {n} de {total} redirecciones.', ['n' => count($r['created']), 'total' => $r['total']]), $r['errors'] ? 'error' : 'ok');
+        foreach (array_slice($r['errors'], 0, 10) as $er) flash(t('Línea {line}: {error}', ['line' => $er['line'], 'error' => t_msg($er['error'])]), 'error');
+        if (count($r['errors']) > 10) flash(t('… y {n} errores más.', ['n' => count($r['errors']) - 10]), 'error');
+    } catch (UwError $e) {
+        flash(t_msg($e->getMessage()), 'error');
+    }
+    redirect(ADM . '/seo#redirecciones');
+}
+
 function adm_redirect_delete(array $c): void
 {
     $f = redirect_norm_from((string) ($_POST['from'] ?? ''));
@@ -684,7 +716,7 @@ function adm_settings(array $c): void
 {
     $svc = $c['svc'];
     adm_render('settings', $c, [
-        'title' => 'Ajustes', 's' => $svc->settings(), 'themes' => themes_available(), 'domains' => site_domains($svc->id()),
+        'title' => 'Ajustes', 's' => $svc->baseSettings(), 'themes' => themes_available(), 'domains' => site_domains($svc->id()),
     ]);
 }
 
@@ -710,6 +742,9 @@ function adm_settings_save(array $c): void
         'business' => ['type' => $g('business_type') ?: 'Organization', 'legal_name' => $g('business_legal_name'), 'area_served' => $g('business_area_served'), 'founded' => $g('business_founded')],
         'ai_crawlers' => $g('ai_crawlers') ?: 'allow_all',
         'ai_markdown' => !empty($_POST['ai_markdown']),
+        'indexnow' => !empty($_POST['indexnow']),
+        'url_style' => $g('url_style') === 'html' ? 'html' : 'clean',
+        'same_as' => $g('same_as'),
         'utility_menu' => array_map(fn($l) => array_combine(['label', 'url'], array_map('trim', array_pad(explode('|', $l, 2), 2, ''))),
             array_filter(array_map('trim', explode("\n", $g('utility_menu'))))),
         'contact' => ['email' => (string) ($_POST['contact']['email'] ?? ''), 'phone' => (string) ($_POST['contact']['phone'] ?? ''), 'address' => (string) ($_POST['contact']['address'] ?? '')],

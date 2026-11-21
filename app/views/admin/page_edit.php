@@ -16,7 +16,19 @@ $schema = t_walk($schema, ['label', 'description']); ?>
       <label class="grow"><?= te('Slug') ?> <small class="muted"><?= th('(<code>index</code> = portada)') ?></small><input type="text" name="slug" data-slug-from="#f-title" value="<?= e($page['slug']) ?>" maxlength="100" pattern="[a-z0-9-]*" placeholder="<?= te('se genera del título') ?>"></label>
       <label><?= te('Estado') ?><select name="status"><option value="draft" <?= $page['status'] === 'draft' ? 'selected' : '' ?>><?= te('Borrador') ?></option><option value="published" <?= $page['status'] === 'published' ? 'selected' : '' ?>><?= te('Publicada') ?></option></select></label>
     </div>
+    <?php $auto = $page['slug'] !== '' ? $svc->autoPath('page', $page['slug'], $page['lang']) : ''; ?>
+    <label><?= te('Dirección (URL) fija') ?> <small class="muted"><?= te('Opcional. Para migrar una web sin cambiar sus URLs, p. ej. /precios.html o /guias/mudanza.html. Vacío = automática') ?><?= $auto !== '' ? ' (' . e($auto) . ')' : '' ?></small>
+      <input type="text" name="path" value="<?= e((string) ($page['path'] ?? '')) ?>" maxlength="300" placeholder="<?= e($auto ?: '/precios.html') ?>" pattern="(/[A-Za-z0-9._~\-]+)*" <?= $page['slug'] === 'index' ? 'disabled' : '' ?>></label>
   </section>
+  <?php if (!$isNew && count($svc->langs()) > 1): $pl = page_languages($svc, 'page', $page['slug']); $faltan = array_filter($pl['languages'], fn($x) => !$x['exists']); ?>
+  <?php if ($faltan): ?>
+  <details class="card"><summary><strong><?= te('Idiomas en los que no existe esta página') ?></strong> <span class="muted">(<?= e(implode(', ', array_map('strtoupper', array_keys($faltan)))) ?>)</span></summary>
+    <p class="muted"><?= te('Si una página solo tiene sentido en algunos idiomas, indica a dónde lleva su dirección en los demás (redirección 301). Los menús y enlaces de ese idioma irán directos al destino y no se anuncia en hreflang.') ?></p>
+    <?php foreach ($faltan as $l => $x): ?>
+      <label><?= e(LANG_NAMES[$l] ?? $l) ?> · <code><?= e($x['equivalent_path']) ?></code> → <input type="text" name="missing[<?= e($l) ?>]" value="<?= e((string) $x['redirect_to']) ?>" placeholder="/<?= e($l) ?>/" maxlength="300"></label>
+    <?php endforeach; ?>
+  </details>
+  <?php endif; endif; ?>
 
   <section class="card">
     <div class="card-head"><h2><?= te('Bloques') ?></h2>
