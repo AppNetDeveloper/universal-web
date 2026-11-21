@@ -80,6 +80,8 @@ function site_code_head(SiteService $svc): string
     $v = (int) $c['version'];
     $o = cookies_head($svc);
     if ($c['favicon'] !== '') $o .= '<link rel="icon" href="' . e($c['favicon']) . "\">\n";
+    // Sin favicon propio, el navegador pide /favicon.ico y deja un 404 en la consola de cada visita: icono vacío
+    elseif (!preg_match('/rel=["\']?(shortcut )?icon/i', (string) $c['head_html'])) $o .= "<link rel=\"icon\" href=\"data:,\">\n";
     if (trim($c['css']) !== '') $o .= '<link rel="stylesheet" href="/site-assets/custom.css?v=' . $v . "\">\n";
     if (trim($c['head_html']) !== '') $o .= $c['head_html'] . "\n";
     return $o;

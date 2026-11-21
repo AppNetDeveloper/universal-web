@@ -95,6 +95,7 @@ foreach (array_keys(themes_available()) as $theme) {
             if (!str_contains($html, '/site-assets/custom.css')) $why[] = 'sin site_code_head';
             if (!str_contains($html, '/site-assets/custom.js')) $why[] = 'sin site_code_body_end';
             if (!str_contains($html, 'bionicadri.com')) $why[] = 'sin crédito';
+            if (!str_contains($html, '<link rel="icon" href="data:,">')) $why[] = 'sin icono (el navegador pediría /favicon.ico: 404 en consola)';
             if (!preg_match('#<a class="skip" href="\#main"#', $html) || !str_contains($html, 'id="main"')) $why[] = 'sin «Saltar al contenido»';
             if (preg_match_all('#<h1[\s>]#', $html) !== 1) $why[] = preg_match_all('#<h1[\s>]#', $html) . ' h1';
             if (!preg_match('#<html lang="' . $l . '"#', $html)) $why[] = 'lang del html';
