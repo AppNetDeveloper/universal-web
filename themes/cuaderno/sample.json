@@ -1,0 +1,2803 @@
+{
+ "_nota": "Textos de EJEMPLO de una empresa ficticia (tema Cuaderno). Lo marcado «ejemplo» no es real: sustitúyelo por los datos del cliente.",
+ "es": {
+  "tagline": "Clases que se entienden, a tu ritmo",
+  "menu": [
+   {
+    "label": "Inicio",
+    "url": "/"
+   },
+   {
+    "label": "Cursos",
+    "url": "/cursos"
+   },
+   {
+    "label": "La academia",
+    "url": "/la-academia"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Preguntas",
+    "url": "/preguntas-frecuentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Reservar clase de prueba",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Inicio",
+    "seo": {
+     "description": "Texto de ejemplo: academia con grupos reducidos, profesorado cercano y clase de prueba gratuita. Sustitúyelo por el texto de tu centro."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Academia de ejemplo",
+       "title": "Aprender se te da mejor cuando alguien te lo explica con calma",
+       "subtitle": "Texto de ejemplo: cuenta en una frase qué enseña tu centro, a quién y por qué las familias y los alumnos repiten curso tras curso.",
+       "cta_text": "Reservar clase de prueba",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver los cursos",
+       "cta2_link": "/cursos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Lo que ofrecemos",
+       "title": "Un sitio donde dar el primer paso",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Grupos reducidos",
+         "text": "Pocos alumnos por clase para que nadie se quede con dudas."
+        },
+        {
+         "icon": "heart",
+         "title": "Trato cercano",
+         "text": "Cada profesor conoce a su grupo y avisa a las familias de los avances."
+        },
+        {
+         "icon": "calendar",
+         "title": "Horarios flexibles",
+         "text": "Tardes y sábados por la mañana, con recuperación de clases."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Alumnos por grupo como máximo (ejemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Cursos y niveles (ejemplo)"
+        },
+        {
+         "value": "3",
+         "label": "Meses de curso intensivo (ejemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Empezar es muy sencillo",
+       "items": [
+        {
+         "title": "Cuéntanos qué buscas",
+         "text": "Escríbenos o llámanos y te orientamos sin compromiso."
+        },
+        {
+         "title": "Haz una clase de prueba",
+         "text": "Conoces al profesor y al grupo antes de decidir."
+        },
+        {
+         "title": "Elige tu horario",
+         "text": "Te proponemos las franjas que encajan con tu semana."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Cómo enseñamos",
+       "title": "Clases pensadas para quedarse con lo aprendido",
+       "body": "- Explicaciones claras y con ejemplos\n- Ejercicios prácticos en cada sesión\n- Seguimiento por escrito para las familias",
+       "button_text": "La academia",
+       "button_link": "/la-academia"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Lo que cuentan las familias",
+       "items": [
+        {
+         "quote": "Texto de ejemplo de una opinión: sustitúyelo por opiniones reales de tus alumnos o familias, con su permiso.",
+         "name": "Familia de ejemplo",
+         "role": "Ejemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Probamos una clase?",
+       "text": "Texto de ejemplo: la primera clase es de prueba y sin compromiso.",
+       "button_text": "Reservar clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cursos",
+    "title": "Cursos",
+    "seo": {
+     "description": "Texto de ejemplo: cursos de refuerzo escolar, idiomas, música y preparación de exámenes en grupos reducidos. Sustitúyelo por los tuyos."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Cursos",
+       "subtitle": "Texto de ejemplo: describe tus cursos con palabras que entienda cualquier familia o alumno.",
+       "cta_text": "Reservar clase de prueba",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Refuerzo escolar",
+         "text": "Primaria y secundaria, con deberes y técnicas de estudio."
+        },
+        {
+         "icon": "globe",
+         "title": "Idiomas",
+         "text": "Inglés y francés por niveles, para niños y adultos."
+        },
+        {
+         "icon": "star",
+         "title": "Música",
+         "text": "Iniciación, piano y guitarra con clases individuales."
+        },
+        {
+         "icon": "target",
+         "title": "Preparación de exámenes",
+         "text": "Grupos para pruebas oficiales y de acceso."
+        },
+        {
+         "icon": "heart",
+         "title": "Primera infancia",
+         "text": "Talleres de juego y lenguaje para los más pequeños."
+        },
+        {
+         "icon": "clock",
+         "title": "Clases particulares",
+         "text": "Sesiones a tu medida, presenciales o en línea."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifas por curso",
+       "note": "Precios de ejemplo (al mes): sustitúyelos por los de tu centro.",
+       "items": [
+        {
+         "section": "Refuerzo escolar",
+         "name": "Primaria, 2 sesiones por semana",
+         "price": "65",
+         "description": "Grupo de hasta 8 alumnos. Texto de ejemplo."
+        },
+        {
+         "section": "Refuerzo escolar",
+         "name": "Secundaria, 2 sesiones por semana",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Idiomas",
+         "name": "Inglés, 1 sesión por semana",
+         "price": "48",
+         "description": "Niveles A1 a B2. Texto de ejemplo."
+        },
+        {
+         "section": "Música",
+         "name": "Clase individual de 30 min",
+         "price": "desde 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Probamos una clase?",
+       "text": "Texto de ejemplo: la primera clase es de prueba y sin compromiso.",
+       "button_text": "Reservar clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "la-academia",
+    "title": "La academia",
+    "seo": {
+     "description": "Texto de ejemplo: quiénes somos, cómo trabajamos y qué nos importa en la enseñanza de los alumnos de nuestro centro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quiénes somos",
+       "body": "Texto de ejemplo. Cuenta aquí la historia de tu centro, quién lo forma y qué os hace distintos.\n\nHabla de cómo enseñáis, no de cifras que no puedas demostrar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cómo trabajamos",
+       "body": "- Tiempo para resolver cada duda\n- Un mismo profesor de referencia\n- Informes claros para las familias"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Empezar es muy sencillo",
+       "items": [
+        {
+         "title": "Cuéntanos qué buscas",
+         "text": "Escríbenos o llámanos y te orientamos sin compromiso."
+        },
+        {
+         "title": "Haz una clase de prueba",
+         "text": "Conoces al profesor y al grupo antes de decidir."
+        },
+        {
+         "title": "Elige tu horario",
+         "text": "Te proponemos las franjas que encajan con tu semana."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "preguntas-frecuentes",
+    "title": "Preguntas frecuentes",
+    "seo": {
+     "description": "Texto de ejemplo: respuestas a las dudas habituales sobre matrícula, horarios, clases de prueba, pagos y recuperación de clases."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "¿Cómo me matriculo?",
+         "answer": "Desde el formulario de contacto o en el centro. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿La clase de prueba tiene coste?",
+         "answer": "Indica aquí si es gratuita o no. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Qué pasa si falto un día?",
+         "answer": "Puedes recuperar la clase en otro grupo, avisando antes."
+        },
+        {
+         "question": "¿Hay descuentos para hermanos?",
+         "answer": "Cuenta aquí tus condiciones. *Texto de ejemplo.*"
+        },
+        {
+         "question": "¿Cómo sé cómo va mi hijo o hija?",
+         "answer": "Recibes un informe breve cada trimestre."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "¿Probamos una clase?",
+       "text": "Texto de ejemplo: la primera clase es de prueba y sin compromiso.",
+       "button_text": "Reservar clase de prueba",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de ejemplo: reserva una clase de prueba o escríbenos con tu consulta y te respondemos lo antes posible en horario de secretaría."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Reservar clase de prueba",
+       "text": "Cuéntanos qué curso te interesa y te proponemos horario.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horario de secretaría",
+       "note": "Horario de ejemplo: cámbialo por el tuyo.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-organizar-el-estudio",
+    "title": "Cómo organizar el estudio en casa",
+    "excerpt": "Texto de ejemplo para el blog: una guía breve para crear una rutina.",
+    "content": "Texto de ejemplo. Escribe aquí un artículo útil para alumnos y familias, con consejos generales y prudentes.\n\n## Un lugar y una hora\n\nExplica por qué ayuda estudiar siempre en el mismo sitio.\n\n## Descansos cortos\n\nCuenta cómo alternar estudio y pausa.",
+    "tags": [
+     "estudio",
+     "consejos"
+    ]
+   },
+   {
+    "slug": "primer-dia-de-clase",
+    "title": "Tu primer día de clase, paso a paso",
+    "excerpt": "Texto de ejemplo: qué esperar el primer día en la academia.",
+    "content": "Texto de ejemplo. Cuenta cómo es el primer día para que nadie llegue con dudas.\n\n## Antes de venir\n\nQué traer y con cuánta antelación llegar.\n\n## Durante la clase\n\nCómo es el grupo y qué se trabaja al principio.",
+    "tags": [
+     "familias"
+    ]
+   }
+  ]
+ },
+ "en": {
+  "tagline": "Lessons that make sense, at your pace",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Courses",
+    "url": "/courses"
+   },
+   {
+    "label": "The school",
+    "url": "/the-school"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "FAQ",
+    "url": "/faq"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Book a trial lesson",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Sample text: a school with small groups, friendly teachers and a free trial lesson. Replace it with the text for your own centre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Sample school",
+       "title": "Learning comes easier when someone explains it patiently",
+       "subtitle": "Sample text: say in one sentence what your centre teaches, to whom, and why families and students come back year after year.",
+       "cta_text": "Book a trial lesson",
+       "cta_link": "/contact",
+       "cta2_text": "See the courses",
+       "cta2_link": "/courses"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "What we offer",
+       "title": "A place to take the first step",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Small groups",
+         "text": "Few students per class, so nobody is left with questions."
+        },
+        {
+         "icon": "heart",
+         "title": "Personal attention",
+         "text": "Each teacher knows their group and keeps families posted on progress."
+        },
+        {
+         "icon": "calendar",
+         "title": "Flexible timetable",
+         "text": "Afternoons and Saturday mornings, with make-up lessons."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Students per group at most (sample)"
+        },
+        {
+         "value": "12",
+         "label": "Courses and levels (sample)"
+        },
+        {
+         "value": "3",
+         "label": "Months of intensive course (sample)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Getting started is easy",
+       "items": [
+        {
+         "title": "Tell us what you need",
+         "text": "Write or call us and we will point you in the right direction."
+        },
+        {
+         "title": "Try a lesson",
+         "text": "Meet the teacher and the group before you decide."
+        },
+        {
+         "title": "Pick your timetable",
+         "text": "We suggest the slots that fit your week."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "How we teach",
+       "title": "Lessons designed so that learning sticks",
+       "body": "- Clear explanations with examples\n- Hands-on exercises in every session\n- Written progress notes for families",
+       "button_text": "The school",
+       "button_link": "/the-school"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "What families say",
+       "items": [
+        {
+         "quote": "Sample review text: replace it with real opinions from your students or families, with their permission.",
+         "name": "Sample family",
+         "role": "Sample"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we try a lesson?",
+       "text": "Sample text: the first lesson is a trial, with no commitment.",
+       "button_text": "Book a trial lesson",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "courses",
+    "title": "Courses",
+    "seo": {
+     "description": "Sample text: homework support, languages, music and exam preparation in small groups. Replace it with your own courses."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Courses",
+       "subtitle": "Sample text: describe your courses in words any family or student can follow.",
+       "cta_text": "Book a trial lesson",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Homework support",
+         "text": "Primary and secondary, with study techniques."
+        },
+        {
+         "icon": "globe",
+         "title": "Languages",
+         "text": "English and French by level, for children and adults."
+        },
+        {
+         "icon": "star",
+         "title": "Music",
+         "text": "Introduction, piano and guitar with one-to-one lessons."
+        },
+        {
+         "icon": "target",
+         "title": "Exam preparation",
+         "text": "Groups for official and entrance exams."
+        },
+        {
+         "icon": "heart",
+         "title": "Early years",
+         "text": "Play and language workshops for the youngest."
+        },
+        {
+         "icon": "clock",
+         "title": "Private lessons",
+         "text": "Sessions tailored to you, in person or online."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Fees by course",
+       "note": "Sample prices (per month): replace them with your own.",
+       "items": [
+        {
+         "section": "Homework support",
+         "name": "Primary, 2 sessions a week",
+         "price": "65",
+         "description": "Groups of up to 8 students. Sample text."
+        },
+        {
+         "section": "Homework support",
+         "name": "Secondary, 2 sessions a week",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Languages",
+         "name": "English, 1 session a week",
+         "price": "48",
+         "description": "Levels A1 to B2. Sample text."
+        },
+        {
+         "section": "Music",
+         "name": "One-to-one lesson, 30 min",
+         "price": "from 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we try a lesson?",
+       "text": "Sample text: the first lesson is a trial, with no commitment.",
+       "button_text": "Book a trial lesson",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "the-school",
+    "title": "The school",
+    "seo": {
+     "description": "Sample text: who we are, how we work and what matters to us in teaching the students of our centre."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Who we are",
+       "body": "Sample text. Tell the story of your centre here, who is part of it and what makes you different.\n\nTalk about how you teach, not about figures you cannot prove."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "How we work",
+       "body": "- Time to answer every question\n- One main teacher per group\n- Clear reports for families"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Getting started is easy",
+       "items": [
+        {
+         "title": "Tell us what you need",
+         "text": "Write or call us and we will point you in the right direction."
+        },
+        {
+         "title": "Try a lesson",
+         "text": "Meet the teacher and the group before you decide."
+        },
+        {
+         "title": "Pick your timetable",
+         "text": "We suggest the slots that fit your week."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "faq",
+    "title": "Frequently asked questions",
+    "seo": {
+     "description": "Sample text: answers to common questions about enrolment, timetables, trial lessons, payments and make-up lessons."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "How do I enrol?",
+         "answer": "Through the contact form or at the centre. *Sample text.*"
+        },
+        {
+         "question": "Does the trial lesson cost anything?",
+         "answer": "State here whether it is free. *Sample text.*"
+        },
+        {
+         "question": "What if I miss a lesson?",
+         "answer": "You can make it up in another group if you let us know beforehand."
+        },
+        {
+         "question": "Are there sibling discounts?",
+         "answer": "Describe your terms here. *Sample text.*"
+        },
+        {
+         "question": "How do I know how my child is doing?",
+         "answer": "You get a short report every term."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Shall we try a lesson?",
+       "text": "Sample text: the first lesson is a trial, with no commitment.",
+       "button_text": "Book a trial lesson",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Sample text: book a trial lesson or send us your question and we will reply as soon as possible during office hours."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Book a trial lesson",
+       "text": "Tell us which course interests you and we will suggest a timetable.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Office hours",
+       "note": "Sample hours: change them to yours.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "how-to-organise-study-time",
+    "title": "How to organise study time at home",
+    "excerpt": "Sample text for the blog: a short guide to building a routine.",
+    "content": "Sample text. Write a useful article here for students and families, with general and careful advice.\n\n## A place and a time\n\nExplain why studying in the same spot helps.\n\n## Short breaks\n\nShow how to alternate study and rest.",
+    "tags": [
+     "study",
+     "tips"
+    ]
+   },
+   {
+    "slug": "your-first-day-of-class",
+    "title": "Your first day of class, step by step",
+    "excerpt": "Sample text: what to expect on your first day at the school.",
+    "content": "Sample text. Describe the first day so that nobody arrives with doubts.\n\n## Before you come\n\nWhat to bring and how early to arrive.\n\n## During the lesson\n\nWhat the group is like and what you work on first.",
+    "tags": [
+     "families"
+    ]
+   }
+  ]
+ },
+ "ro": {
+  "tagline": "Lecții pe înțelesul tuturor, în ritmul tău",
+  "menu": [
+   {
+    "label": "Acasă",
+    "url": "/"
+   },
+   {
+    "label": "Cursuri",
+    "url": "/cursuri"
+   },
+   {
+    "label": "Despre noi",
+    "url": "/despre-noi"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Întrebări",
+    "url": "/intrebari-frecvente"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Rezervă o lecție de probă",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Acasă",
+    "seo": {
+     "description": "Text de exemplu: academie cu grupe mici, profesori apropiați și o lecție de probă gratuită. Înlocuiește-l cu textul centrului tău."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Academie de exemplu",
+       "title": "Înveți mai ușor când cineva îți explică totul cu răbdare",
+       "subtitle": "Text de exemplu: spune într-o frază ce predă centrul tău, cui și de ce elevii și familiile revin an de an.",
+       "cta_text": "Rezervă o lecție de probă",
+       "cta_link": "/contact",
+       "cta2_text": "Vezi cursurile",
+       "cta2_link": "/cursuri"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce oferim",
+       "title": "Un loc unde faci primul pas",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Grupe mici",
+         "text": "Puțini elevi la oră, ca nimeni să nu rămână cu nelămuriri."
+        },
+        {
+         "icon": "heart",
+         "title": "Atenție personală",
+         "text": "Fiecare profesor își cunoaște grupa și ține familiile la curent cu progresul."
+        },
+        {
+         "icon": "calendar",
+         "title": "Program flexibil",
+         "text": "După-amiezi și sâmbăta dimineața, cu posibilitate de recuperare."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Elevi pe grupă, maximum (exemplu)"
+        },
+        {
+         "value": "12",
+         "label": "Cursuri și niveluri (exemplu)"
+        },
+        {
+         "value": "3",
+         "label": "Luni de curs intensiv (exemplu)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Să începi este simplu",
+       "items": [
+        {
+         "title": "Spune-ne ce cauți",
+         "text": "Scrie-ne sau sună-ne și te îndrumăm, fără obligații."
+        },
+        {
+         "title": "Încearcă o lecție",
+         "text": "Îl cunoști pe profesor și grupa înainte să decizi."
+        },
+        {
+         "title": "Alege programul",
+         "text": "Îți propunem intervalele care se potrivesc săptămânii tale."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Cum predăm",
+       "title": "Lecții gândite ca ce înveți să rămână",
+       "body": "- Explicații clare, cu exemple\n- Exerciții practice la fiecare oră\n- Fișe de progres scrise pentru familii",
+       "button_text": "Despre noi",
+       "button_link": "/despre-noi"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce spun familiile",
+       "items": [
+        {
+         "quote": "Text de exemplu pentru o părere: înlocuiește-l cu păreri reale ale elevilor sau familiilor, cu acordul lor.",
+         "name": "Familie de exemplu",
+         "role": "Exemplu"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Încercăm o lecție?",
+       "text": "Text de exemplu: prima lecție este de probă, fără obligații.",
+       "button_text": "Rezervă o lecție de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cursuri",
+    "title": "Cursuri",
+    "seo": {
+     "description": "Text de exemplu: meditații școlare, limbi străine, muzică și pregătire pentru examene în grupe mici. Înlocuiește-le cu ale tale."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Cursuri",
+       "subtitle": "Text de exemplu: descrie cursurile pe înțelesul oricărei familii sau al oricărui elev.",
+       "cta_text": "Rezervă o lecție de probă",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Meditații școlare",
+         "text": "Primar și gimnaziu, cu tehnici de învățare."
+        },
+        {
+         "icon": "globe",
+         "title": "Limbi străine",
+         "text": "Engleză și franceză pe niveluri, pentru copii și adulți."
+        },
+        {
+         "icon": "star",
+         "title": "Muzică",
+         "text": "Inițiere, pian și chitară cu lecții individuale."
+        },
+        {
+         "icon": "target",
+         "title": "Pregătire pentru examene",
+         "text": "Grupe pentru examene oficiale și de admitere."
+        },
+        {
+         "icon": "heart",
+         "title": "Educație timpurie",
+         "text": "Ateliere de joc și limbaj pentru cei mici."
+        },
+        {
+         "icon": "clock",
+         "title": "Lecții particulare",
+         "text": "Ore pe măsura ta, la sediu sau online."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarife pe curs",
+       "note": "Prețuri de exemplu (pe lună): înlocuiește-le cu ale centrului tău.",
+       "items": [
+        {
+         "section": "Meditații școlare",
+         "name": "Primar, 2 ore pe săptămână",
+         "price": "65",
+         "description": "Grupe de până la 8 elevi. Text de exemplu."
+        },
+        {
+         "section": "Meditații școlare",
+         "name": "Gimnaziu, 2 ore pe săptămână",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Limbi străine",
+         "name": "Engleză, 1 oră pe săptămână",
+         "price": "48",
+         "description": "Niveluri A1–B2. Text de exemplu."
+        },
+        {
+         "section": "Muzică",
+         "name": "Lecție individuală de 30 min",
+         "price": "de la 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Încercăm o lecție?",
+       "text": "Text de exemplu: prima lecție este de probă, fără obligații.",
+       "button_text": "Rezervă o lecție de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "despre-noi",
+    "title": "Despre noi",
+    "seo": {
+     "description": "Text de exemplu: cine suntem, cum lucrăm și ce contează pentru noi în predarea către elevii centrului nostru."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Cine suntem",
+       "body": "Text de exemplu. Povestește aici istoria centrului, cine îl alcătuiește și ce vă face diferiți.\n\nVorbește despre cum predați, nu despre cifre pe care nu le poți dovedi."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Cum lucrăm",
+       "body": "- Timp pentru fiecare nelămurire\n- Un profesor de referință pentru grupă\n- Rapoarte clare pentru familii"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Să începi este simplu",
+       "items": [
+        {
+         "title": "Spune-ne ce cauți",
+         "text": "Scrie-ne sau sună-ne și te îndrumăm, fără obligații."
+        },
+        {
+         "title": "Încearcă o lecție",
+         "text": "Îl cunoști pe profesor și grupa înainte să decizi."
+        },
+        {
+         "title": "Alege programul",
+         "text": "Îți propunem intervalele care se potrivesc săptămânii tale."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "intrebari-frecvente",
+    "title": "Întrebări frecvente",
+    "seo": {
+     "description": "Text de exemplu: răspunsuri la întrebările obișnuite despre înscriere, program, lecția de probă, plată și recuperarea orelor."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Cum mă înscriu?",
+         "answer": "Prin formularul de contact sau la sediu. *Text de exemplu.*"
+        },
+        {
+         "question": "Lecția de probă costă ceva?",
+         "answer": "Precizează aici dacă este gratuită. *Text de exemplu.*"
+        },
+        {
+         "question": "Ce fac dacă lipsesc o zi?",
+         "answer": "Poți recupera ora la o altă grupă, dacă ne anunți înainte."
+        },
+        {
+         "question": "Există reduceri pentru frați?",
+         "answer": "Descrie aici condițiile tale. *Text de exemplu.*"
+        },
+        {
+         "question": "Cum aflu cum se descurcă copilul meu?",
+         "answer": "Primești un raport scurt în fiecare trimestru."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Încercăm o lecție?",
+       "text": "Text de exemplu: prima lecție este de probă, fără obligații.",
+       "button_text": "Rezervă o lecție de probă",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Text de exemplu: rezervă o lecție de probă sau scrie-ne întrebarea ta și îți răspundem cât mai repede, în programul secretariatului."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Rezervă o lecție de probă",
+       "text": "Spune-ne ce curs te interesează și îți propunem un program.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Program secretariat",
+       "note": "Program de exemplu: schimbă-l cu al tău.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "cum-iti-organizezi-timpul-de-studiu",
+    "title": "Cum îți organizezi studiul acasă",
+    "excerpt": "Text de exemplu pentru blog: un ghid scurt pentru a crea o rutină.",
+    "content": "Text de exemplu. Scrie aici un articol util pentru elevi și familii, cu sfaturi generale și prudente.\n\n## Un loc și o oră\n\nExplică de ce ajută să înveți mereu în același loc.\n\n## Pauze scurte\n\nArată cum alternezi studiul cu odihna.",
+    "tags": [
+     "studiu",
+     "sfaturi"
+    ]
+   },
+   {
+    "slug": "prima-zi-de-curs",
+    "title": "Prima ta zi de curs, pas cu pas",
+    "excerpt": "Text de exemplu: ce te așteaptă în prima zi la academie.",
+    "content": "Text de exemplu. Descrie prima zi, ca nimeni să nu vină cu îndoieli.\n\n## Înainte să vii\n\nCe să aduci și cât de devreme să ajungi.\n\n## În timpul orei\n\nCum este grupa și ce se lucrează la început.",
+    "tags": [
+     "familii"
+    ]
+   }
+  ]
+ },
+ "fr": {
+  "tagline": "Des cours clairs, à votre rythme",
+  "menu": [
+   {
+    "label": "Accueil",
+    "url": "/"
+   },
+   {
+    "label": "Cours",
+    "url": "/cours"
+   },
+   {
+    "label": "L’école",
+    "url": "/l-ecole"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Questions",
+    "url": "/questions-frequentes"
+   },
+   {
+    "label": "Contact",
+    "url": "/contact"
+   }
+  ],
+  "cta": {
+   "label": "Réserver un cours d’essai",
+   "url": "/contact"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Accueil",
+    "seo": {
+     "description": "Texte d’exemple : école en petits groupes, enseignants proches de leurs élèves et cours d’essai gratuit. Remplacez-le par le texte de votre centre."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "École d’exemple",
+       "title": "On apprend mieux quand quelqu’un nous l’explique avec patience",
+       "subtitle": "Texte d’exemple : dites en une phrase ce qu’enseigne votre centre, à qui, et pourquoi élèves et familles reviennent d’année en année.",
+       "cta_text": "Réserver un cours d’essai",
+       "cta_link": "/contact",
+       "cta2_text": "Voir les cours",
+       "cta2_link": "/cours"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Ce que nous proposons",
+       "title": "Un endroit pour faire le premier pas",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Petits groupes",
+         "text": "Peu d’élèves par cours, pour que personne ne reste avec ses doutes."
+        },
+        {
+         "icon": "heart",
+         "title": "Suivi personnalisé",
+         "text": "Chaque professeur connaît son groupe et tient les familles au courant."
+        },
+        {
+         "icon": "calendar",
+         "title": "Horaires souples",
+         "text": "Après-midis et samedis matin, avec rattrapage des cours."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Élèves par groupe au maximum (exemple)"
+        },
+        {
+         "value": "12",
+         "label": "Cours et niveaux (exemple)"
+        },
+        {
+         "value": "3",
+         "label": "Mois de stage intensif (exemple)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Commencer est très simple",
+       "items": [
+        {
+         "title": "Dites-nous ce que vous cherchez",
+         "text": "Écrivez-nous ou appelez-nous, nous vous orientons sans engagement."
+        },
+        {
+         "title": "Essayez un cours",
+         "text": "Vous rencontrez le professeur et le groupe avant de décider."
+        },
+        {
+         "title": "Choisissez votre horaire",
+         "text": "Nous vous proposons les créneaux qui conviennent à votre semaine."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Notre façon d’enseigner",
+       "title": "Des cours pensés pour que ça reste en tête",
+       "body": "- Des explications claires, avec des exemples\n- Des exercices pratiques à chaque séance\n- Un suivi écrit pour les familles",
+       "button_text": "L’école",
+       "button_link": "/l-ecole"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Ce que disent les familles",
+       "items": [
+        {
+         "quote": "Texte d’exemple d’un avis : remplacez-le par de vrais avis d’élèves ou de familles, avec leur accord.",
+         "name": "Famille d’exemple",
+         "role": "Exemple"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On essaie un cours ?",
+       "text": "Texte d’exemple : le premier cours est un essai, sans engagement.",
+       "button_text": "Réserver un cours d’essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cours",
+    "title": "Cours",
+    "seo": {
+     "description": "Texte d’exemple : soutien scolaire, langues, musique et préparation aux examens en petits groupes. Remplacez-les par vos propres cours."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Cours",
+       "subtitle": "Texte d’exemple : décrivez vos cours avec des mots que toute famille ou tout élève comprend.",
+       "cta_text": "Réserver un cours d’essai",
+       "cta_link": "/contact"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Soutien scolaire",
+         "text": "Primaire et collège, avec méthodes de travail."
+        },
+        {
+         "icon": "globe",
+         "title": "Langues",
+         "text": "Anglais et espagnol par niveaux, pour enfants et adultes."
+        },
+        {
+         "icon": "star",
+         "title": "Musique",
+         "text": "Éveil, piano et guitare en cours individuels."
+        },
+        {
+         "icon": "target",
+         "title": "Préparation aux examens",
+         "text": "Groupes pour les examens officiels et concours."
+        },
+        {
+         "icon": "heart",
+         "title": "Petite enfance",
+         "text": "Ateliers de jeu et de langage pour les plus petits."
+        },
+        {
+         "icon": "clock",
+         "title": "Cours particuliers",
+         "text": "Séances sur mesure, sur place ou en ligne."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tarifs par cours",
+       "note": "Prix d’exemple (par mois) : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "section": "Soutien scolaire",
+         "name": "Primaire, 2 séances par semaine",
+         "price": "65",
+         "description": "Groupes de 8 élèves maximum. Texte d’exemple."
+        },
+        {
+         "section": "Soutien scolaire",
+         "name": "Collège, 2 séances par semaine",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Langues",
+         "name": "Anglais, 1 séance par semaine",
+         "price": "48",
+         "description": "Niveaux A1 à B2. Texte d’exemple."
+        },
+        {
+         "section": "Musique",
+         "name": "Cours individuel de 30 min",
+         "price": "dès 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On essaie un cours ?",
+       "text": "Texte d’exemple : le premier cours est un essai, sans engagement.",
+       "button_text": "Réserver un cours d’essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "l-ecole",
+    "title": "L’école",
+    "seo": {
+     "description": "Texte d’exemple : qui nous sommes, comment nous travaillons et ce qui compte pour nous dans l’enseignement de nos élèves."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Qui sommes-nous",
+       "body": "Texte d’exemple. Racontez ici l’histoire de votre centre, qui le compose et ce qui vous distingue.\n\nParlez de votre façon d’enseigner, pas de chiffres que vous ne pouvez pas prouver."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Notre façon de travailler",
+       "body": "- Du temps pour chaque question\n- Un professeur référent par groupe\n- Des bilans clairs pour les familles"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Commencer est très simple",
+       "items": [
+        {
+         "title": "Dites-nous ce que vous cherchez",
+         "text": "Écrivez-nous ou appelez-nous, nous vous orientons sans engagement."
+        },
+        {
+         "title": "Essayez un cours",
+         "text": "Vous rencontrez le professeur et le groupe avant de décider."
+        },
+        {
+         "title": "Choisissez votre horaire",
+         "text": "Nous vous proposons les créneaux qui conviennent à votre semaine."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "questions-frequentes",
+    "title": "Questions fréquentes",
+    "seo": {
+     "description": "Texte d’exemple : réponses aux questions courantes sur l’inscription, les horaires, le cours d’essai, le paiement et le rattrapage."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Comment s’inscrire ?",
+         "answer": "Par le formulaire de contact ou au centre. *Texte d’exemple.*"
+        },
+        {
+         "question": "Le cours d’essai est-il payant ?",
+         "answer": "Indiquez ici s’il est gratuit. *Texte d’exemple.*"
+        },
+        {
+         "question": "Et si je manque un cours ?",
+         "answer": "Vous pouvez le rattraper dans un autre groupe en nous prévenant."
+        },
+        {
+         "question": "Y a-t-il une remise pour les fratries ?",
+         "answer": "Décrivez ici vos conditions. *Texte d’exemple.*"
+        },
+        {
+         "question": "Comment savoir où en est mon enfant ?",
+         "answer": "Vous recevez un bilan court chaque trimestre."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "On essaie un cours ?",
+       "text": "Texte d’exemple : le premier cours est un essai, sans engagement.",
+       "button_text": "Réserver un cours d’essai",
+       "button_link": "/contact"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contact",
+    "title": "Contact",
+    "seo": {
+     "description": "Texte d’exemple : réservez un cours d’essai ou envoyez-nous votre question, nous répondons au plus vite pendant les heures du secrétariat."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Réserver un cours d’essai",
+       "text": "Dites-nous quel cours vous intéresse et nous vous proposons un horaire.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horaires du secrétariat",
+       "note": "Horaires d’exemple : remplacez-les par les vôtres.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organiser-son-temps-de-travail",
+    "title": "Organiser son travail à la maison",
+    "excerpt": "Texte d’exemple pour le blog : un petit guide pour installer une routine.",
+    "content": "Texte d’exemple. Écrivez ici un article utile pour les élèves et les familles, avec des conseils généraux et prudents.\n\n## Un lieu et une heure\n\nExpliquez pourquoi travailler toujours au même endroit aide.\n\n## Des pauses courtes\n\nMontrez comment alterner travail et repos.",
+    "tags": [
+     "travail",
+     "conseils"
+    ]
+   },
+   {
+    "slug": "premier-jour-de-cours",
+    "title": "Votre premier jour de cours, pas à pas",
+    "excerpt": "Texte d’exemple : à quoi s’attendre le premier jour à l’école.",
+    "content": "Texte d’exemple. Décrivez le premier jour pour que personne n’arrive avec des doutes.\n\n## Avant de venir\n\nCe qu’il faut apporter et à quelle heure arriver.\n\n## Pendant le cours\n\nComment est le groupe et ce que l’on travaille d’abord.",
+    "tags": [
+     "familles"
+    ]
+   }
+  ]
+ },
+ "de": {
+  "tagline": "Unterricht, den man versteht – in deinem Tempo",
+  "menu": [
+   {
+    "label": "Start",
+    "url": "/"
+   },
+   {
+    "label": "Kurse",
+    "url": "/kurse"
+   },
+   {
+    "label": "Die Schule",
+    "url": "/die-schule"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Fragen",
+    "url": "/haeufige-fragen"
+   },
+   {
+    "label": "Kontakt",
+    "url": "/kontakt"
+   }
+  ],
+  "cta": {
+   "label": "Probestunde buchen",
+   "url": "/kontakt"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Start",
+    "seo": {
+     "description": "Beispieltext: Lernstudio mit kleinen Gruppen, nahbaren Lehrkräften und kostenloser Probestunde. Ersetze ihn durch den Text deines Zentrums."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Beispiel-Lernstudio",
+       "title": "Lernen gelingt besser, wenn es jemand geduldig erklärt",
+       "subtitle": "Beispieltext: Sage in einem Satz, was dein Zentrum unterrichtet, für wen und warum Schüler und Familien jedes Jahr wiederkommen.",
+       "cta_text": "Probestunde buchen",
+       "cta_link": "/kontakt",
+       "cta2_text": "Kurse ansehen",
+       "cta2_link": "/kurse"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Unser Angebot",
+       "title": "Ein Ort für den ersten Schritt",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Kleine Gruppen",
+         "text": "Wenige Schüler pro Kurs, damit keine Frage offen bleibt."
+        },
+        {
+         "icon": "heart",
+         "title": "Persönliche Betreuung",
+         "text": "Jede Lehrkraft kennt ihre Gruppe und informiert die Familien über Fortschritte."
+        },
+        {
+         "icon": "calendar",
+         "title": "Flexible Zeiten",
+         "text": "Nachmittage und Samstagvormittag, mit Nachholterminen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Schüler pro Gruppe höchstens (Beispiel)"
+        },
+        {
+         "value": "12",
+         "label": "Kurse und Stufen (Beispiel)"
+        },
+        {
+         "value": "3",
+         "label": "Monate Intensivkurs (Beispiel)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Der Einstieg ist einfach",
+       "items": [
+        {
+         "title": "Sag uns, was du suchst",
+         "text": "Schreib oder ruf an, wir beraten dich unverbindlich."
+        },
+        {
+         "title": "Probestunde besuchen",
+         "text": "Du lernst Lehrkraft und Gruppe kennen, bevor du dich entscheidest."
+        },
+        {
+         "title": "Zeiten wählen",
+         "text": "Wir schlagen Termine vor, die zu deiner Woche passen."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "So unterrichten wir",
+       "title": "Unterricht, bei dem das Gelernte hängen bleibt",
+       "body": "- Klare Erklärungen mit Beispielen\n- Praktische Übungen in jeder Stunde\n- Schriftliche Rückmeldung für die Familien",
+       "button_text": "Die Schule",
+       "button_link": "/die-schule"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Was Familien sagen",
+       "items": [
+        {
+         "quote": "Beispieltext für eine Bewertung: Ersetze ihn durch echte Meinungen von Schülern oder Familien, mit deren Erlaubnis.",
+         "name": "Beispielfamilie",
+         "role": "Beispiel"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Probieren wir eine Stunde?",
+       "text": "Beispieltext: Die erste Stunde ist eine Probestunde, ganz unverbindlich.",
+       "button_text": "Probestunde buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kurse",
+    "title": "Kurse",
+    "seo": {
+     "description": "Beispieltext: Nachhilfe, Sprachen, Musik und Prüfungsvorbereitung in kleinen Gruppen. Ersetze sie durch deine eigenen Kurse."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Kurse",
+       "subtitle": "Beispieltext: Beschreibe deine Kurse so, dass jede Familie und jeder Schüler sie versteht.",
+       "cta_text": "Probestunde buchen",
+       "cta_link": "/kontakt"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Nachhilfe",
+         "text": "Grund- und weiterführende Schule, mit Lerntechniken."
+        },
+        {
+         "icon": "globe",
+         "title": "Sprachen",
+         "text": "Englisch und Französisch nach Stufen, für Kinder und Erwachsene."
+        },
+        {
+         "icon": "star",
+         "title": "Musik",
+         "text": "Einstieg, Klavier und Gitarre im Einzelunterricht."
+        },
+        {
+         "icon": "target",
+         "title": "Prüfungsvorbereitung",
+         "text": "Gruppen für offizielle Prüfungen und Aufnahmetests."
+        },
+        {
+         "icon": "heart",
+         "title": "Frühförderung",
+         "text": "Spiel- und Sprachwerkstätten für die Kleinsten."
+        },
+        {
+         "icon": "clock",
+         "title": "Einzelunterricht",
+         "text": "Stunden nach Maß, vor Ort oder online."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Preise je Kurs",
+       "note": "Beispielpreise (pro Monat): Ersetze sie durch deine eigenen.",
+       "items": [
+        {
+         "section": "Nachhilfe",
+         "name": "Grundschule, 2 Termine pro Woche",
+         "price": "65",
+         "description": "Gruppen bis 8 Schüler. Beispieltext."
+        },
+        {
+         "section": "Nachhilfe",
+         "name": "Weiterführende Schule, 2 Termine pro Woche",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Sprachen",
+         "name": "Englisch, 1 Termin pro Woche",
+         "price": "48",
+         "description": "Stufen A1 bis B2. Beispieltext."
+        },
+        {
+         "section": "Musik",
+         "name": "Einzelstunde, 30 Min.",
+         "price": "ab 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Probieren wir eine Stunde?",
+       "text": "Beispieltext: Die erste Stunde ist eine Probestunde, ganz unverbindlich.",
+       "button_text": "Probestunde buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "die-schule",
+    "title": "Die Schule",
+    "seo": {
+     "description": "Beispieltext: Wer wir sind, wie wir arbeiten und was uns beim Unterrichten der Schüler unseres Zentrums wichtig ist."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Wer wir sind",
+       "body": "Beispieltext. Erzähle hier die Geschichte deines Zentrums, wer dazugehört und was euch ausmacht.\n\nSprich darüber, wie ihr unterrichtet, nicht über Zahlen, die du nicht belegen kannst."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "So arbeiten wir",
+       "body": "- Zeit für jede Frage\n- Eine feste Bezugslehrkraft\n- Verständliche Berichte für Familien"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Der Einstieg ist einfach",
+       "items": [
+        {
+         "title": "Sag uns, was du suchst",
+         "text": "Schreib oder ruf an, wir beraten dich unverbindlich."
+        },
+        {
+         "title": "Probestunde besuchen",
+         "text": "Du lernst Lehrkraft und Gruppe kennen, bevor du dich entscheidest."
+        },
+        {
+         "title": "Zeiten wählen",
+         "text": "Wir schlagen Termine vor, die zu deiner Woche passen."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "haeufige-fragen",
+    "title": "Häufige Fragen",
+    "seo": {
+     "description": "Beispieltext: Antworten auf häufige Fragen zu Anmeldung, Zeiten, Probestunde, Bezahlung und Nachholterminen."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Wie melde ich mich an?",
+         "answer": "Über das Kontaktformular oder direkt im Zentrum. *Beispieltext.*"
+        },
+        {
+         "question": "Kostet die Probestunde etwas?",
+         "answer": "Gib hier an, ob sie kostenlos ist. *Beispieltext.*"
+        },
+        {
+         "question": "Was, wenn ich einmal fehle?",
+         "answer": "Du kannst die Stunde in einer anderen Gruppe nachholen, wenn du vorher Bescheid sagst."
+        },
+        {
+         "question": "Gibt es Rabatt für Geschwister?",
+         "answer": "Beschreibe hier deine Bedingungen. *Beispieltext.*"
+        },
+        {
+         "question": "Woher weiß ich, wie es meinem Kind geht?",
+         "answer": "Du bekommst jedes Quartal einen kurzen Bericht."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Probieren wir eine Stunde?",
+       "text": "Beispieltext: Die erste Stunde ist eine Probestunde, ganz unverbindlich.",
+       "button_text": "Probestunde buchen",
+       "button_link": "/kontakt"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "kontakt",
+    "title": "Kontakt",
+    "seo": {
+     "description": "Beispieltext: Buche eine Probestunde oder schreib uns deine Frage, wir antworten so schnell wie möglich zu den Bürozeiten."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Probestunde buchen",
+       "text": "Sag uns, welcher Kurs dich interessiert, und wir schlagen dir Zeiten vor.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Bürozeiten",
+       "note": "Beispielzeiten: Ändere sie in deine eigenen.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "lernzeit-zu-hause-organisieren",
+    "title": "Lernzeit zu Hause organisieren",
+    "excerpt": "Beispieltext für den Blog: eine kurze Anleitung für eine feste Routine.",
+    "content": "Beispieltext. Schreibe hier einen nützlichen Artikel für Schüler und Familien, mit allgemeinen und vorsichtigen Tipps.\n\n## Ein Ort und eine Uhrzeit\n\nErkläre, warum es hilft, immer am selben Platz zu lernen.\n\n## Kurze Pausen\n\nZeige, wie man Lernen und Pausen abwechselt.",
+    "tags": [
+     "lernen",
+     "tipps"
+    ]
+   },
+   {
+    "slug": "der-erste-schultag",
+    "title": "Dein erster Unterrichtstag, Schritt für Schritt",
+    "excerpt": "Beispieltext: Was dich am ersten Tag in der Schule erwartet.",
+    "content": "Beispieltext. Beschreibe den ersten Tag, damit niemand mit offenen Fragen kommt.\n\n## Vor dem Besuch\n\nWas du mitbringen sollst und wann du da sein solltest.\n\n## Während der Stunde\n\nWie die Gruppe ist und womit ihr beginnt.",
+    "tags": [
+     "familien"
+    ]
+   }
+  ]
+ },
+ "it": {
+  "tagline": "Lezioni chiare, al tuo ritmo",
+  "menu": [
+   {
+    "label": "Home",
+    "url": "/"
+   },
+   {
+    "label": "Corsi",
+    "url": "/corsi"
+   },
+   {
+    "label": "La scuola",
+    "url": "/la-scuola"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Domande",
+    "url": "/domande-frequenti"
+   },
+   {
+    "label": "Contatti",
+    "url": "/contatti"
+   }
+  ],
+  "cta": {
+   "label": "Prenota una lezione di prova",
+   "url": "/contatti"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Home",
+    "seo": {
+     "description": "Testo di esempio: scuola con gruppi ridotti, insegnanti vicini agli studenti e lezione di prova gratuita. Sostituiscilo con il testo del tuo centro."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Scuola di esempio",
+       "title": "Si impara meglio quando qualcuno lo spiega con pazienza",
+       "subtitle": "Testo di esempio: racconta in una frase cosa insegna il tuo centro, a chi e perché studenti e famiglie tornano anno dopo anno.",
+       "cta_text": "Prenota una lezione di prova",
+       "cta_link": "/contatti",
+       "cta2_text": "Vedi i corsi",
+       "cta2_link": "/corsi"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "Cosa offriamo",
+       "title": "Un posto dove fare il primo passo",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Gruppi ridotti",
+         "text": "Pochi studenti per classe, così nessuno resta con dei dubbi."
+        },
+        {
+         "icon": "heart",
+         "title": "Attenzione personale",
+         "text": "Ogni insegnante conosce il suo gruppo e tiene aggiornate le famiglie."
+        },
+        {
+         "icon": "calendar",
+         "title": "Orari flessibili",
+         "text": "Pomeriggi e sabato mattina, con recupero delle lezioni."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Studenti per gruppo al massimo (esempio)"
+        },
+        {
+         "value": "12",
+         "label": "Corsi e livelli (esempio)"
+        },
+        {
+         "value": "3",
+         "label": "Mesi di corso intensivo (esempio)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Iniziare è semplice",
+       "items": [
+        {
+         "title": "Dicci cosa cerchi",
+         "text": "Scrivici o chiamaci e ti orientiamo senza impegno."
+        },
+        {
+         "title": "Prova una lezione",
+         "text": "Conosci l’insegnante e il gruppo prima di decidere."
+        },
+        {
+         "title": "Scegli l’orario",
+         "text": "Ti proponiamo le fasce adatte alla tua settimana."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Come insegniamo",
+       "title": "Lezioni pensate perché resti quello che si impara",
+       "body": "- Spiegazioni chiare, con esempi\n- Esercizi pratici a ogni incontro\n- Resoconti scritti per le famiglie",
+       "button_text": "La scuola",
+       "button_link": "/la-scuola"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "Cosa dicono le famiglie",
+       "items": [
+        {
+         "quote": "Testo di esempio di un’opinione: sostituiscilo con opinioni reali di studenti o famiglie, con il loro permesso.",
+         "name": "Famiglia di esempio",
+         "role": "Esempio"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Proviamo una lezione?",
+       "text": "Testo di esempio: la prima lezione è di prova, senza impegno.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "corsi",
+    "title": "Corsi",
+    "seo": {
+     "description": "Testo di esempio: doposcuola, lingue, musica e preparazione agli esami in gruppi ridotti. Sostituiscili con i tuoi corsi."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Corsi",
+       "subtitle": "Testo di esempio: descrivi i tuoi corsi con parole comprensibili a ogni famiglia o studente.",
+       "cta_text": "Prenota una lezione di prova",
+       "cta_link": "/contatti"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Doposcuola",
+         "text": "Primaria e medie, con metodo di studio."
+        },
+        {
+         "icon": "globe",
+         "title": "Lingue",
+         "text": "Inglese e francese per livelli, per bambini e adulti."
+        },
+        {
+         "icon": "star",
+         "title": "Musica",
+         "text": "Avviamento, pianoforte e chitarra con lezioni individuali."
+        },
+        {
+         "icon": "target",
+         "title": "Preparazione agli esami",
+         "text": "Gruppi per esami ufficiali e test d’ingresso."
+        },
+        {
+         "icon": "heart",
+         "title": "Prima infanzia",
+         "text": "Laboratori di gioco e linguaggio per i più piccoli."
+        },
+        {
+         "icon": "clock",
+         "title": "Lezioni private",
+         "text": "Incontri su misura, in sede o online."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Tariffe per corso",
+       "note": "Prezzi di esempio (al mese): sostituiscili con i tuoi.",
+       "items": [
+        {
+         "section": "Doposcuola",
+         "name": "Primaria, 2 incontri a settimana",
+         "price": "65",
+         "description": "Gruppi fino a 8 studenti. Testo di esempio."
+        },
+        {
+         "section": "Doposcuola",
+         "name": "Medie, 2 incontri a settimana",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Lingue",
+         "name": "Inglese, 1 incontro a settimana",
+         "price": "48",
+         "description": "Livelli da A1 a B2. Testo di esempio."
+        },
+        {
+         "section": "Musica",
+         "name": "Lezione individuale da 30 min",
+         "price": "da 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Proviamo una lezione?",
+       "text": "Testo di esempio: la prima lezione è di prova, senza impegno.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "la-scuola",
+    "title": "La scuola",
+    "seo": {
+     "description": "Testo di esempio: chi siamo, come lavoriamo e cosa ci sta a cuore nell’insegnamento agli studenti del nostro centro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Chi siamo",
+       "body": "Testo di esempio. Racconta qui la storia del tuo centro, chi ne fa parte e che cosa vi rende diversi.\n\nParla di come insegnate, non di cifre che non puoi dimostrare."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Come lavoriamo",
+       "body": "- Tempo per ogni dubbio\n- Un insegnante di riferimento per gruppo\n- Resoconti chiari per le famiglie"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Iniziare è semplice",
+       "items": [
+        {
+         "title": "Dicci cosa cerchi",
+         "text": "Scrivici o chiamaci e ti orientiamo senza impegno."
+        },
+        {
+         "title": "Prova una lezione",
+         "text": "Conosci l’insegnante e il gruppo prima di decidere."
+        },
+        {
+         "title": "Scegli l’orario",
+         "text": "Ti proponiamo le fasce adatte alla tua settimana."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "domande-frequenti",
+    "title": "Domande frequenti",
+    "seo": {
+     "description": "Testo di esempio: risposte ai dubbi più comuni su iscrizione, orari, lezione di prova, pagamenti e recupero delle lezioni."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Come mi iscrivo?",
+         "answer": "Dal modulo di contatto o in sede. *Testo di esempio.*"
+        },
+        {
+         "question": "La lezione di prova ha un costo?",
+         "answer": "Indica qui se è gratuita. *Testo di esempio.*"
+        },
+        {
+         "question": "Cosa succede se perdo una lezione?",
+         "answer": "Puoi recuperarla in un altro gruppo, avvisando prima."
+        },
+        {
+         "question": "Ci sono sconti per i fratelli?",
+         "answer": "Descrivi qui le tue condizioni. *Testo di esempio.*"
+        },
+        {
+         "question": "Come so come va mio figlio?",
+         "answer": "Ricevi un breve resoconto ogni trimestre."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Proviamo una lezione?",
+       "text": "Testo di esempio: la prima lezione è di prova, senza impegno.",
+       "button_text": "Prenota una lezione di prova",
+       "button_link": "/contatti"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contatti",
+    "title": "Contatti",
+    "seo": {
+     "description": "Testo di esempio: prenota una lezione di prova o scrivici la tua domanda, rispondiamo il prima possibile negli orari di segreteria."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Prenota una lezione di prova",
+       "text": "Dicci quale corso ti interessa e ti proponiamo un orario.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Orari di segreteria",
+       "note": "Orari di esempio: cambiali con i tuoi.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "organizzare-lo-studio-a-casa",
+    "title": "Come organizzare lo studio a casa",
+    "excerpt": "Testo di esempio per il blog: una breve guida per creare una routine.",
+    "content": "Testo di esempio. Scrivi qui un articolo utile per studenti e famiglie, con consigli generali e prudenti.\n\n## Un luogo e un orario\n\nSpiega perché aiuta studiare sempre nello stesso posto.\n\n## Pause brevi\n\nMostra come alternare studio e riposo.",
+    "tags": [
+     "studio",
+     "consigli"
+    ]
+   },
+   {
+    "slug": "il-primo-giorno-di-lezione",
+    "title": "Il tuo primo giorno di lezione, passo dopo passo",
+    "excerpt": "Testo di esempio: cosa aspettarsi il primo giorno a scuola.",
+    "content": "Testo di esempio. Racconta com’è il primo giorno perché nessuno arrivi con dei dubbi.\n\n## Prima di venire\n\nCosa portare e con quanto anticipo arrivare.\n\n## Durante la lezione\n\nCom’è il gruppo e cosa si fa all’inizio.",
+    "tags": [
+     "famiglie"
+    ]
+   }
+  ]
+ },
+ "pt": {
+  "tagline": "Aulas que se percebem, ao teu ritmo",
+  "menu": [
+   {
+    "label": "Início",
+    "url": "/"
+   },
+   {
+    "label": "Cursos",
+    "url": "/cursos"
+   },
+   {
+    "label": "A escola",
+    "url": "/a-escola"
+   },
+   {
+    "label": "Blog",
+    "url": "/blog"
+   },
+   {
+    "label": "Perguntas",
+    "url": "/perguntas-frequentes"
+   },
+   {
+    "label": "Contacto",
+    "url": "/contacto"
+   }
+  ],
+  "cta": {
+   "label": "Marcar aula experimental",
+   "url": "/contacto"
+  },
+  "pages": [
+   {
+    "slug": "index",
+    "title": "Início",
+    "seo": {
+     "description": "Texto de exemplo: escola com turmas pequenas, professores próximos e aula experimental gratuita. Substitui-o pelo texto do teu centro."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "eyebrow": "Escola de exemplo",
+       "title": "Aprende-se melhor quando alguém explica com paciência",
+       "subtitle": "Texto de exemplo: diz numa frase o que o teu centro ensina, a quem e porque é que alunos e famílias voltam ano após ano.",
+       "cta_text": "Marcar aula experimental",
+       "cta_link": "/contacto",
+       "cta2_text": "Ver os cursos",
+       "cta2_link": "/cursos"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "eyebrow": "O que oferecemos",
+       "title": "Um lugar para dar o primeiro passo",
+       "items": [
+        {
+         "icon": "users",
+         "title": "Turmas pequenas",
+         "text": "Poucos alunos por aula, para ninguém ficar com dúvidas."
+        },
+        {
+         "icon": "heart",
+         "title": "Acompanhamento próximo",
+         "text": "Cada professor conhece a sua turma e mantém as famílias informadas."
+        },
+        {
+         "icon": "calendar",
+         "title": "Horários flexíveis",
+         "text": "Tardes e sábados de manhã, com recuperação de aulas."
+        }
+       ]
+      }
+     },
+     {
+      "type": "stats",
+      "data": {
+       "items": [
+        {
+         "value": "8",
+         "label": "Alunos por turma, no máximo (exemplo)"
+        },
+        {
+         "value": "12",
+         "label": "Cursos e níveis (exemplo)"
+        },
+        {
+         "value": "3",
+         "label": "Meses de curso intensivo (exemplo)"
+        }
+       ]
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Começar é muito simples",
+       "items": [
+        {
+         "title": "Conta-nos o que procuras",
+         "text": "Escreve-nos ou liga e orientamos-te sem compromisso."
+        },
+        {
+         "title": "Experimenta uma aula",
+         "text": "Conheces o professor e a turma antes de decidir."
+        },
+        {
+         "title": "Escolhe o horário",
+         "text": "Propomos os horários que encaixam na tua semana."
+        }
+       ]
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "eyebrow": "Como ensinamos",
+       "title": "Aulas pensadas para que o que se aprende fique",
+       "body": "- Explicações claras, com exemplos\n- Exercícios práticos em cada sessão\n- Relatórios escritos para as famílias",
+       "button_text": "A escola",
+       "button_link": "/a-escola"
+      }
+     },
+     {
+      "type": "testimonials",
+      "data": {
+       "title": "O que dizem as famílias",
+       "items": [
+        {
+         "quote": "Texto de exemplo de uma opinião: substitui-o por opiniões reais de alunos ou famílias, com a sua autorização.",
+         "name": "Família de exemplo",
+         "role": "Exemplo"
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Experimentamos uma aula?",
+       "text": "Texto de exemplo: a primeira aula é experimental, sem compromisso.",
+       "button_text": "Marcar aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "cursos",
+    "title": "Cursos",
+    "seo": {
+     "description": "Texto de exemplo: explicações, línguas, música e preparação para exames em turmas pequenas. Substitui-os pelos teus cursos."
+    },
+    "blocks": [
+     {
+      "type": "hero",
+      "data": {
+       "title": "Cursos",
+       "subtitle": "Texto de exemplo: descreve os teus cursos com palavras que qualquer família ou aluno perceba.",
+       "cta_text": "Marcar aula experimental",
+       "cta_link": "/contacto"
+      }
+     },
+     {
+      "type": "features",
+      "data": {
+       "items": [
+        {
+         "icon": "check",
+         "title": "Explicações",
+         "text": "1.º ao 3.º ciclo, com técnicas de estudo."
+        },
+        {
+         "icon": "globe",
+         "title": "Línguas",
+         "text": "Inglês e francês por níveis, para crianças e adultos."
+        },
+        {
+         "icon": "star",
+         "title": "Música",
+         "text": "Iniciação, piano e guitarra com aulas individuais."
+        },
+        {
+         "icon": "target",
+         "title": "Preparação para exames",
+         "text": "Turmas para exames oficiais e de acesso."
+        },
+        {
+         "icon": "heart",
+         "title": "Primeira infância",
+         "text": "Oficinas de jogo e linguagem para os mais pequenos."
+        },
+        {
+         "icon": "clock",
+         "title": "Aulas particulares",
+         "text": "Sessões à medida, presenciais ou online."
+        }
+       ]
+      }
+     },
+     {
+      "type": "pricelist",
+      "data": {
+       "title": "Mensalidades por curso",
+       "note": "Preços de exemplo (por mês): substitui-os pelos teus.",
+       "items": [
+        {
+         "section": "Explicações",
+         "name": "1.º ciclo, 2 sessões por semana",
+         "price": "65",
+         "description": "Turmas até 8 alunos. Texto de exemplo."
+        },
+        {
+         "section": "Explicações",
+         "name": "3.º ciclo, 2 sessões por semana",
+         "price": "75",
+         "description": ""
+        },
+        {
+         "section": "Línguas",
+         "name": "Inglês, 1 sessão por semana",
+         "price": "48",
+         "description": "Níveis A1 a B2. Texto de exemplo."
+        },
+        {
+         "section": "Música",
+         "name": "Aula individual de 30 min",
+         "price": "desde 70",
+         "description": ""
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Experimentamos uma aula?",
+       "text": "Texto de exemplo: a primeira aula é experimental, sem compromisso.",
+       "button_text": "Marcar aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "a-escola",
+    "title": "A escola",
+    "seo": {
+     "description": "Texto de exemplo: quem somos, como trabalhamos e o que nos importa no ensino aos alunos do nosso centro."
+    },
+    "blocks": [
+     {
+      "type": "text",
+      "data": {
+       "title": "Quem somos",
+       "body": "Texto de exemplo. Conta aqui a história do teu centro, quem o forma e o que vos torna diferentes.\n\nFala de como ensinam, não de números que não consigas provar."
+      }
+     },
+     {
+      "type": "split",
+      "data": {
+       "title": "Como trabalhamos",
+       "body": "- Tempo para cada dúvida\n- Um professor de referência por turma\n- Relatórios claros para as famílias"
+      }
+     },
+     {
+      "type": "steps",
+      "data": {
+       "title": "Começar é muito simples",
+       "items": [
+        {
+         "title": "Conta-nos o que procuras",
+         "text": "Escreve-nos ou liga e orientamos-te sem compromisso."
+        },
+        {
+         "title": "Experimenta uma aula",
+         "text": "Conheces o professor e a turma antes de decidir."
+        },
+        {
+         "title": "Escolhe o horário",
+         "text": "Propomos os horários que encaixam na tua semana."
+        }
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "slug": "perguntas-frequentes",
+    "title": "Perguntas frequentes",
+    "seo": {
+     "description": "Texto de exemplo: respostas às dúvidas habituais sobre matrícula, horários, aula experimental, pagamentos e recuperação de aulas."
+    },
+    "blocks": [
+     {
+      "type": "faq",
+      "data": {
+       "title": "",
+       "items": [
+        {
+         "question": "Como me matriculo?",
+         "answer": "Pelo formulário de contacto ou no centro. *Texto de exemplo.*"
+        },
+        {
+         "question": "A aula experimental tem custo?",
+         "answer": "Indica aqui se é gratuita. *Texto de exemplo.*"
+        },
+        {
+         "question": "E se faltar a uma aula?",
+         "answer": "Podes recuperá-la noutra turma, avisando antes."
+        },
+        {
+         "question": "Há desconto para irmãos?",
+         "answer": "Descreve aqui as tuas condições. *Texto de exemplo.*"
+        },
+        {
+         "question": "Como sei como vai o meu filho?",
+         "answer": "Recebes um relatório breve em cada período."
+        }
+       ]
+      }
+     },
+     {
+      "type": "cta",
+      "data": {
+       "title": "Experimentamos uma aula?",
+       "text": "Texto de exemplo: a primeira aula é experimental, sem compromisso.",
+       "button_text": "Marcar aula experimental",
+       "button_link": "/contacto"
+      }
+     }
+    ]
+   },
+   {
+    "slug": "contacto",
+    "title": "Contacto",
+    "seo": {
+     "description": "Texto de exemplo: marca uma aula experimental ou escreve-nos a tua pergunta e respondemos o mais depressa possível no horário da secretaria."
+    },
+    "blocks": [
+     {
+      "type": "contact_form",
+      "data": {
+       "title": "Marcar aula experimental",
+       "text": "Diz-nos que curso te interessa e propomos-te um horário.",
+       "show_phone": "sí"
+      }
+     },
+     {
+      "type": "hours",
+      "data": {
+       "title": "Horário da secretaria",
+       "note": "Horário de exemplo: altera-o para o teu.",
+       "items": [
+        {
+         "days": "lu-vi",
+         "opens": "10:00",
+         "closes": "14:00",
+         "opens2": "16:00",
+         "closes2": "21:00"
+        },
+        {
+         "days": "sa",
+         "opens": "10:00",
+         "closes": "13:00"
+        },
+        {
+         "days": "do",
+         "closed": "sí"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "posts": [
+   {
+    "slug": "como-organizar-o-estudo-em-casa",
+    "title": "Como organizar o estudo em casa",
+    "excerpt": "Texto de exemplo para o blog: um guia breve para criar uma rotina.",
+    "content": "Texto de exemplo. Escreve aqui um artigo útil para alunos e famílias, com conselhos gerais e prudentes.\n\n## Um lugar e uma hora\n\nExplica porque ajuda estudar sempre no mesmo sítio.\n\n## Pausas curtas\n\nMostra como alternar estudo e descanso.",
+    "tags": [
+     "estudo",
+     "conselhos"
+    ]
+   },
+   {
+    "slug": "o-primeiro-dia-de-aulas",
+    "title": "O teu primeiro dia de aulas, passo a passo",
+    "excerpt": "Texto de exemplo: o que esperar no primeiro dia na escola.",
+    "content": "Texto de exemplo. Descreve o primeiro dia para que ninguém chegue com dúvidas.\n\n## Antes de vir\n\nO que trazer e com que antecedência chegar.\n\n## Durante a aula\n\nComo é a turma e o que se trabalha ao início.",
+    "tags": [
+     "familias"
+    ]
+   }
+  ]
+ }
+}

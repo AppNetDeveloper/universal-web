@@ -1,0 +1,64 @@
+{
+  "slug": "cuaderno",
+  "name": "Cuaderno",
+  "description": "Papel cuadriculado, letra legible y acentos a mano: academias, escuelas de idiomas, autoescuelas y centros de formación",
+  "author": "BionicAdri",
+  "version": "1.0",
+  "best_for": [
+    "academia de refuerzo",
+    "escuela de idiomas",
+    "autoescuela",
+    "clases particulares",
+    "escuela de música",
+    "guardería o escuela infantil",
+    "centro de formación",
+    "logopedia infantil"
+  ],
+  "suggested_accent": "#2557d6",
+  "pitch": "Para centros donde se aprende y las familias deciden con calma: tono cercano, didáctico y tranquilo, con tipografía muy legible; si lo tuyo es deporte u ocio con energía y colores fuertes, mejor «Vibrante».",
+  "style": "escolar, cercano y tranquilo",
+  "colors": {
+    "acento": "#2557d6",
+    "fondo": "#fdfcf7",
+    "texto": "#1d2433",
+    "rotulador": "#fde047",
+    "margen": "#e57373",
+    "pizarra": "#1f3b2f",
+    "fondo_oscuro": "#15201b"
+  },
+  "typography": {
+    "titulos": "Atkinson Hyperlegible",
+    "texto": "Atkinson Hyperlegible"
+  },
+  "dark_mode": "auto",
+  "fonts": "Atkinson Hyperlegible y Caveat (SIL OFL 1.1, alojadas en el servidor)",
+  "css_hints": {
+    "variables_tema": [
+      "--accent (azul tinta recomendado)",
+      "--marker (amarillo rotulador del subrayado)",
+      "--margin (rojo suave de la línea de margen)",
+      "--grid / --grid-size (cuadrícula del papel)",
+      "--slate (verde pizarra del pie y la franja superior)",
+      "--hand (Caveat, solo para acentos)"
+    ],
+    "clases_tema": [
+      ".tabstrip (franja superior con teléfono, correo y accesos)",
+      ".hero-cuaderno (portada sobre papel cuadriculado)",
+      ".marker (trazo de rotulador en la última parte del título)",
+      ".eyebrow-hand / .doodle-arrow (antetítulo a mano con flecha)",
+      ".hero-photo (foto pegada con cinta y ligeramente girada)",
+      ".feature (ficha de cartulina con cinta; giro alterno)",
+      ".step-num (número a mano dentro de un círculo dibujado)",
+      ".stats (hoja cuadriculada)"
+    ],
+    "bloques_recomendados": [
+      "features (cursos con icono)",
+      "steps (cómo empezar)",
+      "pricelist (tarifas por curso)",
+      "hours (horario de secretaría)",
+      "testimonials (opiniones de familias)",
+      "faq"
+    ],
+    "modo_oscuro": "Sigue al dispositivo (prefers-color-scheme): pizarra verde con texto de tiza. Si añades colores fijos en tu CSS, dales también su versión dentro de @media (prefers-color-scheme: dark)."
+  }
+}
