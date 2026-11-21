@@ -134,8 +134,10 @@ file_put_contents("$T/corrupt.zip", 'x', FILE_APPEND);
 [$rc, $o] = in_site($app, $data, 'update_install_package((string) file_get_contents(' . var_export("$d041/universal-web-0.4.1.update.json", true) . '), ' . var_export("$T/corrupt.zip", true) . ', "t", false, ' . var_export($testPub, true) . ');');
 ok('zip que no coincide con su huella firmada: rechazado', $rc !== 0 && str_contains($o, 'sha256') && $version() === $v040 && !is_file("$data/maintenance.json"), $o);
 
-// Un tema de serie modificado a mano y la 0.4.1 de verdad
+// Un tema de serie y el .htaccess modificados a mano, y la 0.4.1 de verdad
 file_put_contents("$app/themes/noche/assets/style.css", "/* mío */\n", FILE_APPEND);
+file_put_contents("$app/.htaccess", "# AddHandler de mi hosting (versión de PHP)\n", FILE_APPEND);
+$htMine = hash_file('sha256', "$app/.htaccess");
 $nocheMine = hash_file('sha256', "$app/themes/noche/assets/style.css");
 [$rc, $o] = $install($d041, '0.4.1', $testPub);
 ok('0.4.0 → 0.4.1: fase 1 (copia, mantenimiento, verificación, cambio de código)', $rc === 0 && is_file("$data/updates/pending.json") && is_file("$data/maintenance.json"), $o);
@@ -149,6 +151,7 @@ $res = json_decode((string) @file_get_contents("$data/updates/last-result.json")
 ok('0.4.1: resultado guardado como correcto', !empty($res['ok']) && ($res['to'] ?? '') === '0.4.1', json_encode($res));
 ok('0.4.1: el archivo retirado desaparece y el nuevo aparece', !is_file("$app/docs/THEMES.md") && is_file("$app/app/nuevo-041.txt"));
 ok('0.4.1: tema de serie modificado a mano: no se toca', hash_file('sha256', "$app/themes/noche/assets/style.css") === $nocheMine && in_array('noche', (array) ($res['skipped_themes'] ?? []), true), json_encode($res['skipped_themes'] ?? null));
+ok('0.4.1: .htaccess cambiado a mano: se conserva y se avisa', hash_file('sha256', "$app/.htaccess") === $htMine && in_array('.htaccess', (array) ($res['kept_files'] ?? []), true), json_encode($res['kept_files'] ?? null));
 ok('0.4.1: tema propio, subidas y datos intactos', is_file("$app/themes/mitema/theme.json") && is_file("$app/public/media/subida-de-prueba.txt")
     && in_site($app, $data, 'echo (int) val("SELECT COUNT(*) FROM pages");')[1] === (string) $before['pages']);
 ok('0.4.1: copia de seguridad completa creada', (bool) glob("$data/backups/uw-global-*"));
@@ -174,12 +177,13 @@ ok('interrumpida a mitad del cambio de archivos → se deshace', $version() === 
 
 ok('de los intentos fallidos no quedan carpetas con copias de la BD', count(glob("$data/updates/2*", GLOB_ONLYDIR) ?: []) === 1);
 
-// Una actualización lanzada por otro usuario (p. ej. root por la terminal) no la termina un visitante: sigue en mantenimiento
-file_put_contents("$data/updates/pending.json", json_encode(['id' => 'x', 'from' => '0.4.1', 'to' => '0.4.2', 'stage' => 'swapped', 'uid' => 999999]));
+// Quién puede terminar una actualización pendiente: quien la lanzó, o root (sudo uw update:finish); un visitante no la de root
+[$rc, $o] = in_site($app, $data, 'echo json_encode([uw_update_may_finish(["uid" => 0], 33), uw_update_may_finish(["uid" => 33], 0), uw_update_may_finish(["uid" => 33], 33), uw_update_may_finish([], 33)]);');
+ok('pendiente de root: el servidor web no la toca; root termina cualquiera', trim($o) === '[false,true,true,true]', $o);
+file_put_contents("$data/updates/pending.json", json_encode(['id' => 'x', 'stage' => 'swapped']));
 file_put_contents("$data/maintenance.json", json_encode(['since' => time(), 'until' => time() - 10]));
-[$rc, $o] = $finish();
 [, $mo] = in_site($app, $data, 'var_export(uw_maintenance_state() !== null);');
-ok('pendiente de otro usuario: no se toca y sigue en mantenimiento (aunque caduque)', $version() === '0.4.1' && str_contains($o, 'No hay ninguna') && trim($mo) === 'true', $o . $mo);
+ok('con una actualización a medias el mantenimiento no caduca', trim($mo) === 'true', $mo);
 unlink("$data/updates/pending.json");
 unlink("$data/maintenance.json");
 
@@ -188,7 +192,7 @@ $t0 = microtime(true);
 [$rc, $o] = in_site($app, $data, '$s = update_check(true, 0, "https://no-existe.invalid/releases.json"); echo json_encode(["e" => $s["error"], "latest" => $s["latest"]]);');
 $st = json_decode((string) substr($o, (int) strrpos($o, '{')), true);
 ok('sin red: comprobar no falla, guarda el motivo y tarda poco', $rc === 0 && ($st['e'] ?? '') !== '' && microtime(true) - $t0 < 15, $o);
-[$rc, $o] = in_site($app, $data, 'try { update_run_remote("t"); } catch (UwError $e) { echo "ERR:" . $e->getMessage(); }');
+[$rc, $o] = in_site($app, $data, 'try { update_run_remote("t", false, null, "https://no-existe.invalid/releases.json"); } catch (UwError $e) { echo "ERR:" . $e->getMessage(); }');
 ok('sin red: «Actualizar» explica el problema y no toca nada', str_contains($o, 'ERR:') && $version() === '0.4.1' && !is_file("$data/maintenance.json"), $o);
 
 // Elegir versión: política «solo correcciones» y versiones sin sobre firmado

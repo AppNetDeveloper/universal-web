@@ -917,6 +917,12 @@ Tras una actualización aparece **Volver a la versión anterior**: repone el có
 después se **conservan**; si marcas también **Reponer la base de datos de antes de actualizar**, se pierde lo hecho desde
 entonces.
 
+Los `.htaccess` que hayas cambiado a mano (en cPanel ahí suele ir la versión de PHP) **se conservan**, y el resultado te
+dice cuáles: compáralos con los de la versión nueva por si traen alguna regla de seguridad nueva.
+
+Si la instalación se despliega con **Git** (Plesk o cPanel con repositorio), el botón no actualiza para no pisar tu copia de
+trabajo: despliega la etiqueta de la versión nueva como siempre.
+
 ### Si el panel dice que no puede escribir el código
 
 Con `install.sh` (VPS), el código pertenece al administrador del servidor y el servidor web no puede cambiarlo: es más

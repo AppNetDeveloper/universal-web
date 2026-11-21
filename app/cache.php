@@ -153,7 +153,8 @@ function page_cache_begin(SiteService $svc): void
     // Solo los dominios de la web (no una IP ni un Host inventado) y sin puertos raros: cada Host o puerto distinto sería
     // otra copia, y alguien podría llenar el disco pidiendo la misma página con miles de cabeceras Host diferentes.
     $hostHeader = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
-    if (!in_array(request_host(), site_domains($svc->id()), true)) return;
+    $doms = site_domains($svc->id());
+    if (!in_array(request_host(), $doms, true) && !in_array((string) preg_replace('/^www\./', '', request_host()), $doms, true)) return;
     if (preg_match('/:(\d+)$/', $hostHeader, $pm) && (int) $pm[1] !== (int) ($_SERVER['SERVER_PORT'] ?? 0)) return;
     PageCache::$capturing = true;
     PageCache::$siteId = $svc->id();

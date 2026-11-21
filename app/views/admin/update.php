@@ -29,9 +29,9 @@ $fin = (string) ($_GET['fin'] ?? ''); ?>
     <p class="field-error"><?= e(t_msg((string) $status['reason'])) ?></p>
   <?php else: ?>
     <ol class="muted">
+      <li><?= te('Descarga y comprobación de la firma y de la huella del paquete.') ?></li>
       <li><?= te('Copia de seguridad completa (base de datos, configuración e imágenes) y copia del código actual.') ?></li>
       <li><?= te('Modo mantenimiento: los visitantes ven «Volvemos en un momento» durante uno o dos minutos.') ?></li>
-      <li><?= te('Descarga y comprobación de la firma y de la huella del paquete.') ?></li>
       <li><?= te('Cambio del código sin tocar tus datos, la configuración, las imágenes ni los temas que hayas modificado.') ?></li>
       <li><?= te('Migraciones de la base de datos, vaciado de la caché y prueba de que las webs se generan bien.') ?></li>
     </ol>

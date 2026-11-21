@@ -86,6 +86,9 @@ La 0.3.0 no trae el actualizador: este paso es manual. Desde la 0.4.0 ya se hace
    desde ahí.
 
 ### Riesgos al actualizar desde la 0.3.0
+- En el paso manual, los `.htaccess` del paquete sustituyen a los tuyos: si los cambiaste (p. ej. la versión de PHP en
+  cPanel), guárdalos antes. Desde la 0.4.0 el actualizador conserva los modificados y lo avisa.
+- Si PHP-FPM tiene `opcache.validate_timestamps=0`, recárgalo tras actualizar desde la terminal.
 - Los enlaces internos que apuntaban a una dirección con 301 ahora se escriben directos a su destino (es lo que quiere
   Google, pero cambia el HTML).
 - La web pública envía una CSP de base: si cargas `<object>`/`<embed>`, o enmarcas tu web desde otro dominio, revísalo.

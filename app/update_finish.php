@@ -23,6 +23,15 @@ function uw_update_lock_open(string $file)
     return is_file($file) ? @fopen($file, 'r') : @fopen($file, 'c');
 }
 
+/**
+ * ¿Puede este proceso terminar (o deshacer) la actualización pendiente? La lanzó el mismo usuario, o somos root
+ * (`sudo uw update:finish` cierra cualquiera). Un visitante (www-data) no termina la de root: no podría reponer el código.
+ */
+function uw_update_may_finish(array $p, int $uid): bool
+{
+    return !isset($p['uid']) || (int) $p['uid'] === $uid || $uid === 0;
+}
+
 /** Usuario que ejecuta este proceso (o -1 si no se sabe). */
 function uw_update_uid(): int
 {
@@ -71,7 +80,7 @@ function uw_update_finish_entry(): ?string
     $p = json_decode((string) @file_get_contents($pf), true);
     // Una actualización lanzada desde la terminal (como root) solo la termina la terminal: un visitante (www-data) no
     // podría reponer el código si fallara. Mientras, la web sigue en mantenimiento (uw_maintenance_gate).
-    if (is_array($p) && isset($p['uid']) && (int) $p['uid'] !== uw_update_uid()) return null;
+    if (is_array($p) && !uw_update_may_finish($p, uw_update_uid())) return null;
     $lock = uw_update_lock_open("$data/updates/finish.lock");
     if (!$lock || !flock($lock, LOCK_EX | LOCK_NB)) return null; // otra petición la está terminando: esta verá el mantenimiento
     $p = json_decode((string) @file_get_contents($pf), true);

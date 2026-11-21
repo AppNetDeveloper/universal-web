@@ -197,22 +197,19 @@ ok('estático: la redirección de /antigua.html es un archivo .html', is_file("$
 
 // ---------------------------------------------------------------- IndexNow: solo lo cambiado
 $GLOBALS['uw_indexnow_seen'] = [];
-ok('IndexNow: guardar sin cambios no avisa', (function () use ($svc) {
-    $before = (int) val("SELECT COUNT(*) FROM throttle WHERE key LIKE 'indexnow:%'");
-    $p = $svc->page('precios', 'fr');
-    $svc->savePage(['title' => $p['title']], (int) $p['id']);
-    return (int) val("SELECT COUNT(*) FROM throttle WHERE key LIKE 'indexnow:%'") === $before;
-})());
+// IndexNow se encola solo si cambió el contenido ($changed, la misma condición que mueve content_at: probado arriba). El envío
+// real no se prueba aquí: en la CLI y con dominios .test indexnow_queue() no hace nada a propósito.
 ok('IndexNow: clave en /<clave>.txt', render($svc, '/' . indexnow_key($svc) . '.txt')[1] === indexnow_key($svc));
 
 // ---------------------------------------------------------------- servidor local: caché de página y cabeceras
 platform_save(['page_cache' => true]);
 page_cache_sync_flag();
+update_state_save(['checked_at' => time(), 'latest' => null, 'error' => '']); // que el servidor de pruebas no consulte GitHub
 $port = 18000 + getmypid() % 2000;
 $server = proc_open([PHP_BINARY, '-S', "127.0.0.1:$port", '-t', dirname(__DIR__) . '/public', dirname(__DIR__) . '/public/index.php'], [1 => ['file', '/dev/null', 'w'], 2 => ['file', '/dev/null', 'w']], $pipes, null, ['UW_DATA' => $dir] + getenv());
 $get = function (string $path, array $headers = []) use ($port): array {
     for ($i = 0; $i < 30; $i++) {
-        $ctx = stream_context_create(['http' => ['ignore_errors' => true, 'follow_location' => 0, 'header' => implode("\r\n", array_merge(['Host: prueba.test'], $headers))]]);
+        $ctx = stream_context_create(['http' => ['ignore_errors' => true, 'follow_location' => 0, 'header' => implode("\r\n", preg_grep('/^Host:/i', $headers) ? $headers : array_merge(['Host: prueba.test'], $headers))]]);
         $body = @file_get_contents("http://127.0.0.1:$port$path", false, $ctx);
         if ($body !== false) {
             $h = [];
@@ -244,6 +241,9 @@ ok('caché: página con formulario guardada con el refresco de _ts', str_contain
 $before = count(glob("$dir/cache/pages/*/*.html") ?: []);
 $get('/precios.html', ['Host: otro-host-inventado.test']);
 $get('/precios.html', ['Host: prueba.test:4321']);
+$get('/precios.html', ['Host: www.prueba.test']);
+ok('caché: la variante www del dominio sí se guarda', ($get('/precios.html', ['Host: www.prueba.test'])[2]['x-uw-cache'] ?? '') === 'HIT');
+$before = count(glob("$dir/cache/pages/*/*.html") ?: []);
 ok('caché: un Host inventado o un puerto raro no crean copias', count(glob("$dir/cache/pages/*/*.html") ?: []) === $before);
 ok('robots.txt, sitemap y 404 no rompen con caché', $get('/robots.txt')[0] === 200 && $get('/sitemap.xml')[0] === 200 && $get('/no-existe.html')[0] === 404);
 ok('/data, /app y archivos internos no se sirven', $get('/../data/config.php')[0] !== 200 && $get('/app/core.php')[0] === 404);

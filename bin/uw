@@ -320,9 +320,11 @@ function cmd_update(array $o): void
     }
     cli_out("Código cambiado: {$r['from']} → {$r['to']}. Copia de seguridad: {$r['backup']}. Terminando…");
     if ($r['skipped_themes']) cli_out('Temas modificados a mano que no se han tocado: ' . implode(', ', $r['skipped_themes']));
+    if ($r['kept_files']) cli_out('Archivos cambiados a mano que se conservan: ' . implode(', ', $r['kept_files']));
     // La segunda mitad, en un proceso nuevo con el código nuevo (este sigue con el viejo en memoria)
     passthru(escapeshellarg(PHP_BINARY) . ' ' . escapeshellarg(UW_ROOT . '/bin/uw') . ' update:finish', $rc);
     update_fix_owner(); // también si la segunda mitad falló y volvió atrás
+    cli_out('Si PHP-FPM tiene opcache.validate_timestamps=0, recárgalo para que sirva el código nuevo (p. ej. sudo systemctl reload php8.3-fpm).');
     exit($rc);
 }
 

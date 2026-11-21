@@ -173,6 +173,7 @@ function update_can_write(): array
         }
     }
     if (!is_writable(UW_DATA)) return [false, 'No se puede escribir en la carpeta de datos'];
+    if (is_dir(UW_ROOT . '/.git')) return [false, 'Esta instalación se despliega con Git (por ejemplo desde Plesk o cPanel): actualízala desplegando la etiqueta de la versión nueva, así el actualizador no pisa tu copia de trabajo'];
     if (!class_exists('ZipArchive')) return [false, 'Este PHP no tiene la extensión zip (ZipArchive)'];
     if (!function_exists('sodium_crypto_sign_verify_detached')) return [false, 'Este PHP no tiene libsodium para comprobar la firma'];
     return [true, ''];
@@ -299,8 +300,16 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
         $new = update_extract($zipFile, $m, "$work/new");
         $old = update_installed_files();
         $skipThemes = update_modified_themes($old);
+        // .htaccess que se han cambiado a mano (en cPanel ahí va la versión de PHP): se conservan y se avisa
+        $keepFiles = [];
+        foreach (['.htaccess', 'public/.htaccess', 'public/media/.htaccess'] as $hf) {
+            $cur = is_file(UW_ROOT . "/$hf") ? hash_file('sha256', UW_ROOT . "/$hf") : null;
+            if ($cur === null || !isset($new[$hf])) continue;
+            $orig = $old[$hf] ?? null;
+            if (($orig !== null && $cur !== $orig) || ($orig === null && $cur !== hash_file('sha256', "$work/new/$hf"))) $keepFiles[] = $hf;
+        }
         $inSkipped = fn(string $rel) => (bool) preg_match('#^themes/(' . implode('|', array_map(fn($t) => preg_quote($t, '#'), $skipThemes ?: ['\x00'])) . ')/#', $rel);
-        $toWrite = array_values(array_filter(array_keys($new), fn($r) => !$inSkipped($r)));
+        $toWrite = array_values(array_filter(array_keys($new), fn($r) => !$inSkipped($r) && !in_array($r, $keepFiles, true)));
         $toDelete = $old === null ? [] : array_values(array_filter(array_diff(array_keys($old), array_keys($new)), fn($r) => uw_update_safe_rel((string) $r) && !$inSkipped((string) $r)));
         // 4) Copia del código que se va a tocar (para volver atrás) y lista de lo que es nuevo
         $added = [];
@@ -312,7 +321,7 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
         file_put_contents("$work/added.txt", implode("\n", $added) . "\n");
         // La vuelta atrás del código VIEJO, que sabemos que funciona, con nombres propios (no chocan con los del nuevo)
         file_put_contents("$work/rollback.php", str_replace('uw_update_', 'uw_update_prev_', (string) file_get_contents(__DIR__ . '/update_rollback.php')));
-        file_put_contents("$work/info.json", json_enc(['from' => UW_VERSION, 'to' => $m['version'], 'by' => $by, 'auto' => $auto, 'backup' => $backup['name'] ?? '', 'skipped_themes' => $skipThemes, 'changelog' => $m['changelog'] ?? ''], true));
+        file_put_contents("$work/info.json", json_enc(['from' => UW_VERSION, 'to' => $m['version'], 'by' => $by, 'auto' => $auto, 'backup' => $backup['name'] ?? '', 'skipped_themes' => $skipThemes, 'kept_files' => $keepFiles, 'changelog' => $m['changelog'] ?? ''], true));
         // 5) Reemplazo del código, archivo a archivo (cada uno de forma atómica). Si este proceso muere a mitad, la
         //    siguiente petición ve «swapping» sin nadie con el cerrojo y deshace el cambio (app/update_finish.php).
         file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapping', 'by' => $by, 'auto' => $auto, 'at' => date('c'), 'uid' => uw_update_uid()]));
@@ -324,7 +333,7 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
         if (function_exists('opcache_reset')) @opcache_reset();
         file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapped', 'by' => $by, 'auto' => $auto, 'at' => date('c'), 'uid' => uw_update_uid()]));
         audit(null, 'update.swap', UW_VERSION . ' → ' . $m['version'], ['by' => $by, 'auto' => $auto]);
-        return ['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'skipped_themes' => $skipThemes, 'backup' => $backup['name'] ?? ''];
+        return ['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'skipped_themes' => $skipThemes, 'kept_files' => $keepFiles, 'backup' => $backup['name'] ?? ''];
     } catch (Throwable $e) {
         if ($swapped) uw_update_rollback($work, UW_ROOT, UW_DATA, false);
         @unlink("$dir/pending.json");
@@ -343,9 +352,9 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
 }
 
 /** Descarga la última versión permitida y la instala (fase 1). */
-function update_run_remote(string $by, bool $auto = false, ?string $policy = null): array
+function update_run_remote(string $by, bool $auto = false, ?string $policy = null, ?string $feed = null): array
 {
-    $st = update_check(true, 0);
+    $st = update_check(true, 0, $feed);
     $latest = ($policy === 'patch' ? ($st['latest_patch'] ?? null) : $st['latest']);
     if (!$latest) throw new UwError($st['error'] !== '' ? 'No se ha podido comprobar si hay versión nueva: ' . $st['error'] : 'Ya tienes la última versión (' . UW_VERSION . ')');
     $env = update_fetch((string) $latest['envelope_url'], 256 * 1024, 15);
@@ -376,7 +385,9 @@ function update_finish_after_boot(array $p): void
     uw_maintenance_off();
     file_put_contents("$dir/last.json", json_enc(['id' => $p['id'], 'from' => $p['from'], 'to' => $p['to'], 'at' => date('c')]));
     uw_update_write_result(['ok' => true, 'from' => $p['from'], 'to' => $p['to'], 'auto' => !empty($p['auto']), 'skipped_themes' => $info['skipped_themes'] ?? [],
-        'message' => "Universal Web se ha actualizado de la {$p['from']} a la {$p['to']}." . (!empty($info['skipped_themes']) ? ' No se han tocado estos temas porque los habías modificado: ' . implode(', ', $info['skipped_themes']) . '.' : '')]);
+        'kept_files' => $info['kept_files'] ?? [],
+        'message' => "Universal Web se ha actualizado de la {$p['from']} a la {$p['to']}." . (!empty($info['skipped_themes']) ? ' No se han tocado estos temas porque los habías modificado: ' . implode(', ', $info['skipped_themes']) . '.' : '')
+            . (!empty($info['kept_files']) ? ' Se han conservado tus ' . implode(', ', $info['kept_files']) . ' porque los habías cambiado: compáralos con los de la versión nueva.' : '')]);
     Actor::set('system', null, 'actualización');
     audit(null, 'update.done', $p['from'] . ' → ' . $p['to'], ['auto' => !empty($p['auto'])]);
     $st = update_state();
