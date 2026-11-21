@@ -271,8 +271,7 @@ function render_view(SiteService $svc, string $template, array $vars, array $seo
  */
 function links_skip_redirects(SiteService $svc, string $html): string
 {
-    static $maps = [];
-    $map = $maps[$svc->id()] ??= array_column(rows('SELECT from_path, to_path FROM redirects WHERE site_id = ?', [$svc->id()]), 'to_path', 'from_path');
+    $map = array_column(rows('SELECT from_path, to_path FROM redirects WHERE site_id = ?', [$svc->id()]), 'to_path', 'from_path');
     if (!$map) return $html;
     return (string) preg_replace_callback('/(<a\b[^>]*?\shref=")(\/(?!\/)[^"#?]*)([^"]*")/i', function ($m) use ($map) {
         $to = $map[rtrim(html_entity_decode($m[2]), '/') ?: '/'] ?? null;
