@@ -31,6 +31,8 @@ function uw_maintenance_state(): ?array
 {
     $raw = @file_get_contents(uw_maintenance_file());
     if ($raw === false) return null;
+    // Con una actualización a medio terminar no caduca: servir código a medio cambiar sería peor que un 503.
+    if (is_file(dirname(uw_maintenance_file()) . '/updates/pending.json')) return json_decode($raw, true) ?: ['reason' => 'update'];
     $m = json_decode($raw, true);
     if (!is_array($m) || (int) ($m['until'] ?? 0) < time()) return null;
     return $m;

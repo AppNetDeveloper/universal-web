@@ -928,6 +928,10 @@ sudo uw update --yes        # actualizar (mismos pasos y vuelta atrás)
 sudo uw update:rollback --yes   # volver a la versión anterior
 ```
 
+Si una actualización lanzada desde la terminal se corta a mitad (se cierra la sesión, se reinicia el servidor…), la web
+se queda en mantenimiento —a propósito: mejor eso que código a medio cambiar— hasta que ejecutes `sudo uw update:finish`,
+que la termina o la deshace.
+
 ### Desde la 0.3.0
 
 La 0.3.0 no trae este sistema: el paso a la 0.4.0 es **manual** (una sola vez). Los pasos están en el `CHANGELOG.md`

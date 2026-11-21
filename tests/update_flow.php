@@ -172,6 +172,17 @@ ok('vuelta atrás: la web vuelve a funcionar', in_site($app, $data, 'echo publis
 [$rc2, $o2] = $finish();
 ok('interrumpida a mitad del cambio de archivos → se deshace', $version() === '0.4.1' && !is_file("$data/updates/pending.json") && !is_file("$data/maintenance.json"), $o . $o2);
 
+ok('de los intentos fallidos no quedan carpetas con copias de la BD', count(glob("$data/updates/2*", GLOB_ONLYDIR) ?: []) === 1);
+
+// Una actualización lanzada por otro usuario (p. ej. root por la terminal) no la termina un visitante: sigue en mantenimiento
+file_put_contents("$data/updates/pending.json", json_encode(['id' => 'x', 'from' => '0.4.1', 'to' => '0.4.2', 'stage' => 'swapped', 'uid' => 999999]));
+file_put_contents("$data/maintenance.json", json_encode(['since' => time(), 'until' => time() - 10]));
+[$rc, $o] = $finish();
+[, $mo] = in_site($app, $data, 'var_export(uw_maintenance_state() !== null);');
+ok('pendiente de otro usuario: no se toca y sigue en mantenimiento (aunque caduque)', $version() === '0.4.1' && str_contains($o, 'No hay ninguna') && trim($mo) === 'true', $o . $mo);
+unlink("$data/updates/pending.json");
+unlink("$data/maintenance.json");
+
 // Sin red: la comprobación no se cuelga ni rompe
 $t0 = microtime(true);
 [$rc, $o] = in_site($app, $data, '$s = update_check(true, 0, "https://no-existe.invalid/releases.json"); echo json_encode(["e" => $s["error"], "latest" => $s["latest"]]);');

@@ -9,7 +9,8 @@ if (($argv[1] ?? '') === 'update:finish') {
     require dirname(__DIR__) . '/app/update_finish.php';
     $r = uw_update_finish_entry();
     if ($r === 'ok') { update_fix_owner(); fwrite(STDOUT, 'Actualización terminada: Universal Web ' . UW_VERSION . "\n"); exit(0); }
-    if ($r === null) { fwrite(STDOUT, "No hay ninguna actualización pendiente.\n"); exit(0); }
+    if ($r === null) { fwrite(STDOUT, "No hay ninguna actualización pendiente (o la está terminando otro proceso).\n"); exit(0); }
+    uw_update_chown_data();
     exit(1);
 }
 
@@ -305,18 +306,23 @@ function cmd_update(array $o): void
     cli_require_installed();
     if (!isset($o['yes'])) cli_fail('Añade --yes para confirmar (se hace una copia de seguridad completa antes)');
     Actor::set('system', null, 'cli (update)');
-    if (isset($o['zip']) || isset($o['manifest'])) {
-        $zip = cli_opt($o, 'zip');
-        $env = (string) @file_get_contents(cli_opt($o, 'manifest'));
-        if ($env === '') cli_fail('No se puede leer --manifest');
-        $r = update_install_package($env, $zip, 'cli');
-    } else {
-        $r = update_run_remote('cli', false, isset($o['policy']) ? (string) $o['policy'] : null);
+    try {
+        if (isset($o['zip']) || isset($o['manifest'])) {
+            $zip = cli_opt($o, 'zip');
+            $env = (string) @file_get_contents(cli_opt($o, 'manifest'));
+            if ($env === '') cli_fail('No se puede leer --manifest');
+            $r = update_install_package($env, $zip, 'cli');
+        } else {
+            $r = update_run_remote('cli', false, isset($o['policy']) ? (string) $o['policy'] : null);
+        }
+    } finally {
+        update_fix_owner();
     }
     cli_out("Código cambiado: {$r['from']} → {$r['to']}. Copia de seguridad: {$r['backup']}. Terminando…");
     if ($r['skipped_themes']) cli_out('Temas modificados a mano que no se han tocado: ' . implode(', ', $r['skipped_themes']));
     // La segunda mitad, en un proceso nuevo con el código nuevo (este sigue con el viejo en memoria)
     passthru(escapeshellarg(PHP_BINARY) . ' ' . escapeshellarg(UW_ROOT . '/bin/uw') . ' update:finish', $rc);
+    update_fix_owner(); // también si la segunda mitad falló y volvió atrás
     exit($rc);
 }
 

@@ -17,6 +17,42 @@ function uw_update_data_dir(): string
     return getenv('UW_DATA') ?: dirname(__DIR__) . '/data';
 }
 
+/** Cerrojo de un archivo de data/updates. Si ya existe se abre en lectura (flock vale igual y no hace falta poder escribirlo). */
+function uw_update_lock_open(string $file)
+{
+    return is_file($file) ? @fopen($file, 'r') : @fopen($file, 'c');
+}
+
+/** Usuario que ejecuta este proceso (o -1 si no se sabe). */
+function uw_update_uid(): int
+{
+    return function_exists('posix_geteuid') ? posix_geteuid() : -1;
+}
+
+/**
+ * Desde la terminal como root, todo lo de data/ vuelve al dueño de data/ (el servidor web): si no, la base de datos
+ * repuesta, los cerrojos y el resultado quedarían de root y la web no podría escribirlos. Autónomo (sin la aplicación).
+ */
+function uw_update_chown_data(): void
+{
+    if (PHP_SAPI !== 'cli' || uw_update_uid() !== 0) return;
+    $data = uw_update_data_dir();
+    $owner = @fileowner($data);
+    $group = @filegroup($data);
+    if (!$owner) return;
+    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($data, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST);
+    foreach ($it as $f) { if (!$f->isLink()) { @chown($f->getPathname(), $owner); @chgrp($f->getPathname(), $group); } }
+}
+
+/** Borra una carpeta entera (autónomo). */
+function uw_update_rmtree(string $dir): void
+{
+    if (!is_dir($dir) || is_link($dir)) { @unlink($dir); return; }
+    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST);
+    foreach ($it as $f) { $f->isDir() && !$f->isLink() ? @rmdir($f->getPathname()) : @unlink($f->getPathname()); }
+    @rmdir($dir);
+}
+
 /** Escribe el resultado de la última actualización (lo lee el panel aunque la base de datos haya vuelto atrás). */
 function uw_update_write_result(array $r): void
 {
@@ -32,14 +68,18 @@ function uw_update_finish_entry(): ?string
     $data = uw_update_data_dir();
     $pf = "$data/updates/pending.json";
     if (!is_file($pf)) return null;
-    $lock = @fopen("$data/updates/finish.lock", 'c');
+    $p = json_decode((string) @file_get_contents($pf), true);
+    // Una actualización lanzada desde la terminal (como root) solo la termina la terminal: un visitante (www-data) no
+    // podría reponer el código si fallara. Mientras, la web sigue en mantenimiento (uw_maintenance_gate).
+    if (is_array($p) && isset($p['uid']) && (int) $p['uid'] !== uw_update_uid()) return null;
+    $lock = uw_update_lock_open("$data/updates/finish.lock");
     if (!$lock || !flock($lock, LOCK_EX | LOCK_NB)) return null; // otra petición la está terminando: esta verá el mantenimiento
     $p = json_decode((string) @file_get_contents($pf), true);
     if (!is_array($p) || !preg_match('/^[0-9a-z.-]+$/', (string) ($p['id'] ?? ''))) { flock($lock, LOCK_UN); return null; }
     if (($p['stage'] ?? '') === 'swapping') {
         // El proceso que cambiaba los archivos murió a mitad (lo mataron, se quedó sin memoria…): si ya no tiene el
         // cerrojo, se deshace lo que hubiera cambiado. La base de datos aún no se había tocado.
-        $ul = @fopen("$data/updates/update.lock", 'c');
+        $ul = uw_update_lock_open("$data/updates/update.lock");
         if ($ul && flock($ul, LOCK_EX | LOCK_NB)) {
             $GLOBALS['uw_update_pending'] = $p;
             $GLOBALS['uw_update_error'] = 'la actualización se interrumpió mientras cambiaba los archivos';
@@ -81,16 +121,21 @@ function uw_update_finish_shutdown(): void
         $why = $err['message'] . ' (' . str_replace(dirname(__DIR__) . '/', '', (string) $err['file']) . ':' . $err['line'] . ')';
     }
     if ($why === '') $why = 'la versión nueva no terminó de arrancar';
-    $rb = is_file("$dir/rollback.php") ? "$dir/rollback.php" : dirname(__DIR__) . '/app/update_rollback.php';
-    require_once $rb;
-    $res = uw_update_rollback($dir, dirname(__DIR__), $data, empty($GLOBALS['uw_update_no_db']));
+    // La vuelta atrás del código VIEJO (copiada al empezar con sus funciones renombradas a uw_update_prev_*, para que no
+    // choquen con las del código nuevo ya cargado). Si no está, la del código actual.
+    if (is_file("$dir/rollback.php")) { require_once "$dir/rollback.php"; }
+    $fn = function_exists('uw_update_prev_rollback') ? 'uw_update_prev_rollback' : null;
+    if ($fn === null) { require_once dirname(__DIR__) . '/app/update_rollback.php'; $fn = 'uw_update_rollback'; }
+    $res = $fn($dir, dirname(__DIR__), $data, empty($GLOBALS['uw_update_no_db']));
     @unlink("$data/updates/pending.json");
     @unlink("$data/maintenance.json");
     foreach (glob("$data/cache/pages/*/*.html") ?: [] as $f) @unlink($f);
+    uw_update_rmtree($dir); // la copia de un intento fallido ya no sirve (la de la última actualización buena se conserva)
     uw_update_write_result(['ok' => false, 'from' => $p['from'], 'to' => $p['to'], 'auto' => !empty($p['auto']), 'rolled_back' => true,
         'error' => mb_substr(preg_replace('/\s+/', ' ', $why), 0, 600), 'rollback' => $res,
         'message' => "La actualización a la {$p['to']} ha fallado y la web ha vuelto sola a la {$p['from']}, con sus datos tal cual estaban. Motivo: " . mb_substr($why, 0, 300)]);
     if (!empty($GLOBALS['uw_update_lock'])) @flock($GLOBALS['uw_update_lock'], LOCK_UN);
+    uw_update_chown_data();
     if (PHP_SAPI === 'cli') { fwrite(STDERR, "La actualización falló y se ha vuelto a la {$p['from']}. Motivo: $why\n"); return; }
     if (!headers_sent()) {
         while (ob_get_level()) ob_end_clean();

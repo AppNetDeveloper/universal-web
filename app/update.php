@@ -115,14 +115,29 @@ function update_check(bool $force = false, int $maxAge = UPDATE_CHECK_EVERY, ?st
         $raw = update_fetch($feed ?? 'https://api.github.com/repos/' . UPDATE_REPO . '/releases?per_page=30', 2 * 1024 * 1024, 5);
         $list = json_decode($raw, true);
         if (!is_array($list) || !array_is_list($list)) throw new UwError('Respuesta no válida de la lista de versiones');
-        $st['latest'] = update_pick($list, UW_VERSION, 'all');
-        $st['latest_patch'] = update_pick($list, UW_VERSION, 'patch');
+        $st['latest'] = update_signed_notes(update_pick($list, UW_VERSION, 'all'), $feed !== null);
+        $st['latest_patch'] = ($st['latest_patch'] = update_pick($list, UW_VERSION, 'patch')) && $st['latest'] && $st['latest_patch']['version'] === $st['latest']['version']
+            ? $st['latest'] : update_signed_notes($st['latest_patch'], $feed !== null);
         $st['error'] = '';
     } catch (Throwable $e) {
         $st['error'] = mb_substr($e->getMessage(), 0, 300);
     }
     update_state_save($st);
     return $st;
+}
+
+/**
+ * Lo que se enseña de una versión sale de su sobre FIRMADO (las notas de la release de GitHub no están firmadas: alguien
+ * con acceso a la release podría escribir ahí instrucciones falsas). Si el sobre no está o su firma no vale, la versión no
+ * se ofrece. $test: lista de pruebas sin sobres reales (se usan sus notas tal cual).
+ */
+function update_signed_notes(?array $latest, bool $test = false): ?array
+{
+    if ($latest === null || $test) return $latest;
+    $m = update_verify_envelope(update_fetch((string) $latest['envelope_url'], 256 * 1024, 5));
+    if ($m['version'] !== $latest['version']) throw new UwError('El sobre firmado no corresponde a la versión ' . $latest['version']);
+    unset($latest['notes']);
+    return $latest + ['changelog' => (string) ($m['changelog'] ?? ''), 'released_at' => (string) ($m['released_at'] ?? '')];
 }
 
 /** Resumen para el panel y el MCP (solo consulta). */
@@ -144,7 +159,7 @@ function update_status_public(): array
 /** Resumen de cambios de una versión: el de la release o, si no, el que trae su sobre (cacheado). */
 function update_changelog_for(array $latest): string
 {
-    return trim((string) ($latest['changelog'] ?? $latest['notes'] ?? ''));
+    return trim((string) ($latest['changelog'] ?? ''));
 }
 
 /** ¿Puede este proceso escribir el código? [bool, motivo legible]. */
@@ -261,7 +276,7 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
     [$can, $why] = update_can_write();
     if (!$can) throw new UwError($why);
     $dir = update_dir();
-    $lock = fopen("$dir/update.lock", 'c');
+    $lock = uw_update_lock_open("$dir/update.lock");
     if (!$lock || !flock($lock, LOCK_EX | LOCK_NB)) throw new UwError('Ya hay una actualización en marcha');
     if (is_file("$dir/pending.json")) throw new UwError('Hay una actualización a medio terminar: recarga la web para que termine (o se deshaga) antes de lanzar otra');
     @set_time_limit(0);
@@ -274,12 +289,12 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
         $free = @disk_free_space(UW_DATA);
         $dbSize = (int) @filesize(UW_DATA . '/universal.sqlite');
         if ($free !== false && $free < 3 * (int) $m['size'] + 2 * $dbSize + 50 * 1024 * 1024) throw new UwError('No hay espacio libre suficiente en el disco para actualizar con copia de seguridad');
-        // 1) Copia de seguridad completa (base de datos + config + subidas) y copia exacta de la base de datos para volver atrás
+        // 1) Copia de seguridad completa (base de datos + config + subidas), con la web aún abierta
         $backup = backup_create(null, null, false);
-        db()->exec('VACUUM INTO ' . db()->quote("$work/universal.sqlite"));
-        // 2) Mantenimiento
+        // 2) Mantenimiento y, ya sin escrituras de visitantes, la copia exacta de la base de datos para volver atrás
         uw_maintenance_on('update ' . UW_VERSION . ' → ' . $m['version'], 30);
         $maint = true;
+        db()->exec('VACUUM INTO ' . db()->quote("$work/universal.sqlite"));
         // 3) Paquete verificado → carpeta temporal (rutas, enlaces, versión y sintaxis PHP comprobados)
         $new = update_extract($zipFile, $m, "$work/new");
         $old = update_installed_files();
@@ -295,23 +310,25 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
             elseif (in_array($rel, $toWrite, true)) $added[] = $rel;
         }
         file_put_contents("$work/added.txt", implode("\n", $added) . "\n");
-        copy(__DIR__ . '/update_rollback.php', "$work/rollback.php"); // la vuelta atrás del código VIEJO, que sabemos que funciona
+        // La vuelta atrás del código VIEJO, que sabemos que funciona, con nombres propios (no chocan con los del nuevo)
+        file_put_contents("$work/rollback.php", str_replace('uw_update_', 'uw_update_prev_', (string) file_get_contents(__DIR__ . '/update_rollback.php')));
         file_put_contents("$work/info.json", json_enc(['from' => UW_VERSION, 'to' => $m['version'], 'by' => $by, 'auto' => $auto, 'backup' => $backup['name'] ?? '', 'skipped_themes' => $skipThemes, 'changelog' => $m['changelog'] ?? ''], true));
         // 5) Reemplazo del código, archivo a archivo (cada uno de forma atómica). Si este proceso muere a mitad, la
         //    siguiente petición ve «swapping» sin nadie con el cerrojo y deshace el cambio (app/update_finish.php).
-        file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapping', 'by' => $by, 'auto' => $auto, 'at' => date('c')]));
+        file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapping', 'by' => $by, 'auto' => $auto, 'at' => date('c'), 'uid' => uw_update_uid()]));
         $swapped = true;
         foreach ($toWrite as $rel) {
             if (!uw_update_put("$work/new/$rel", UW_ROOT . '/' . $rel)) throw new UwError("No se pudo escribir $rel");
         }
         foreach ($toDelete as $rel) @unlink(UW_ROOT . '/' . $rel);
         if (function_exists('opcache_reset')) @opcache_reset();
-        file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapped', 'by' => $by, 'auto' => $auto, 'at' => date('c')]));
+        file_put_contents("$dir/pending.json", json_enc(['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'stage' => 'swapped', 'by' => $by, 'auto' => $auto, 'at' => date('c'), 'uid' => uw_update_uid()]));
         audit(null, 'update.swap', UW_VERSION . ' → ' . $m['version'], ['by' => $by, 'auto' => $auto]);
         return ['id' => $id, 'from' => UW_VERSION, 'to' => $m['version'], 'skipped_themes' => $skipThemes, 'backup' => $backup['name'] ?? ''];
     } catch (Throwable $e) {
         if ($swapped) uw_update_rollback($work, UW_ROOT, UW_DATA, false);
         @unlink("$dir/pending.json");
+        $failedWork = $work;
         if ($maint) uw_maintenance_off();
         @file_put_contents("$dir/last-result.json", json_enc(['ok' => false, 'from' => UW_VERSION, 'to' => $m['version'], 'auto' => $auto, 'rolled_back' => $swapped,
             'error' => $e->getMessage(), 'at' => date('c'), 'notified' => false,
@@ -319,8 +336,9 @@ function update_install_package(string $envelopeRaw, string $zipFile, string $by
                 : "No se ha actualizado (la web sigue en la " . UW_VERSION . "): " . $e->getMessage()], true));
         throw $e instanceof UwError ? $e : new UwError('Error al actualizar: ' . $e->getMessage());
     } finally {
-        bk_rmtree("$work/new");
+        bk_rmtree(isset($failedWork) ? $failedWork : "$work/new"); // de un intento fallido no queda nada (ni su copia de la BD)
         flock($lock, LOCK_UN);
+        update_fix_owner();
     }
 }
 
@@ -377,12 +395,7 @@ function update_prune(string $keep): void
 /** Desde la CLI como root, lo creado en data/ pasa al dueño de data/ (el servidor web) para que pueda seguir usándolo. */
 function update_fix_owner(): void
 {
-    if (PHP_SAPI !== 'cli' || !function_exists('posix_geteuid') || posix_geteuid() !== 0) return;
-    $owner = @fileowner(UW_DATA);
-    $group = @filegroup(UW_DATA);
-    if (!$owner) return;
-    $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator(UW_DATA, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST);
-    foreach ($it as $f) { if (!$f->isLink()) { @chown($f->getPathname(), $owner); @chgrp($f->getPathname(), $group); } }
+    uw_update_chown_data();
 }
 
 /**
@@ -399,11 +412,11 @@ function update_manual_rollback(bool $withDb, string $by): array
     if (($last['to'] ?? '') !== UW_VERSION) throw new UwError("La última copia es de la actualización a la {$last['to']}, pero ahora tienes la " . UW_VERSION);
     [$can, $why] = update_can_write();
     if (!$can) throw new UwError($why);
-    $lock = fopen("$dir/update.lock", 'c');
+    $lock = uw_update_lock_open("$dir/update.lock");
     if (!$lock || !flock($lock, LOCK_EX | LOCK_NB)) throw new UwError('Ya hay una actualización en marcha');
     try {
+        backup_create(null, null, false); // copia del estado actual antes de volver (más aún si se repone la base de datos)
         uw_maintenance_on('rollback', 10);
-        if (!$withDb) backup_create(null, null, false);
         $res = uw_update_rollback("$dir/$id", UW_ROOT, UW_DATA, $withDb);
         page_cache_clear(null);
         uw_maintenance_off();
@@ -414,6 +427,7 @@ function update_manual_rollback(bool $withDb, string $by): array
         return ['message' => $msg] + $res;
     } finally {
         flock($lock, LOCK_UN);
+        update_fix_owner();
     }
 }
 
@@ -439,6 +453,8 @@ function update_daily_tick(): void
     $policy = update_policy();
     $target = $policy === 'patch' ? ($st['latest_patch'] ?? null) : ($policy === 'all' ? $st['latest'] : null);
     if (!$target) return;
+    // Una versión que ya falló (y se deshizo) no se reintenta sola cada día: se avisó por correo y queda para hacerla a mano.
+    if ($res && empty($res['ok']) && ($res['to'] ?? '') === $target['version']) return;
     // En automático solo si no hace esperar a nadie (PHP-FPM o CLI) y el código se puede escribir.
     if (PHP_SAPI !== 'cli' && !function_exists('fastcgi_finish_request')) return;
     if (!update_can_write()[0]) return;

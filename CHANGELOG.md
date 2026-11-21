@@ -58,6 +58,8 @@ desde el panel.
 - **Actualización automática** opcional (apagada de serie): solo correcciones (0.4.x) o todas; aviso por correo.
 - CLI: `update:check`, `update --yes`, `update:rollback --yes`. `bin/release` empaqueta y firma.
 - Por MCP solo se consulta: `update_status`.
+- Lo que se enseña de una versión («qué cambia») sale de su sobre firmado, no de las notas de la release.
+- Una versión que falló en automático no se reintenta sola; de un intento fallido no quedan copias en disco.
 
 ### MCP
 - `page_save` / `post_save` con `path`; `site_update` con `url_style`, `same_as` y `locales`.
