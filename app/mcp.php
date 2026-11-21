@@ -10,7 +10,7 @@ declare(strict_types=1);
  */
 
 /** Herramientas que trabajan en un idioma concreto (parámetro opcional «lang»). */
-const MCP_LANG_TOOLS = ['page_list', 'page_get', 'page_save', 'page_patch', 'page_history', 'page_restore', 'page_delete', 'post_list', 'post_get', 'post_save', 'post_history', 'post_restore', 'post_delete', 'geo_audit', 'seo_analyze'];
+const MCP_LANG_TOOLS = ['page_languages', 'page_faq', 'page_list', 'page_get', 'page_save', 'page_patch', 'page_history', 'page_restore', 'page_delete', 'post_list', 'post_get', 'post_save', 'post_history', 'post_restore', 'post_delete', 'geo_audit', 'seo_analyze'];
 
 const MCP_PROTOCOL_VERSIONS = ['2025-11-25', '2025-06-18', '2025-03-26', '2024-11-05'];
 
@@ -28,6 +28,9 @@ function mcp_instructions(): string
        Flujo rápido: seo_autofix (el servidor rellena lo mecánico) → seo_bulk_update con lo de needs_writing (todo en una llamada)
        → seo_analyze con keyword en las páginas clave (la búsqueda por la que quieres salir). Al publicar, la web avisa sola a
        Bing/ChatGPT (IndexNow); search_ping tras cambios grandes.
+       Migrar una web sin perder SEO: site_update url_style="html" si sus URLs terminan en .html; page_save/post_save con path
+       para las que no siguen el patrón (/guias/x.html); redirect_import con las URLs antiguas («origen -> destino»); y
+       page_languages para las páginas que solo existen en algunos idiomas (su 301 en los demás). Preguntas frecuentes: page_faq.
        GEO (aparecer en respuestas de IAs): geo_audit; las claves son identidad clara (site_update business/contact), preguntas
        frecuentes (bloque faq), cifras concretas (bloque stats) y contenido actualizado. /llms.txt y los datos estructurados se generan solos.
     5. Imágenes PROPIAS: usa fotos del cliente o generadas por IA y súbelas con media_upload (url de tu generador o base64);
@@ -131,6 +134,9 @@ function mcp_tools(): array
                     'meta_pixel' => ['type' => 'string', 'description' => 'ID del píxel de Meta (marketing)'],
                     'reset_consent' => ['type' => 'boolean', 'description' => 'true = vuelve a pedir el consentimiento a todos los visitantes (ya se vuelve a pedir solo al añadir o quitar una herramienta)']]),
                 'indexnow' => ['type' => 'boolean', 'description' => 'true (por defecto) = avisa sola a Bing/Yandex (IndexNow) de cada página publicada o cambiada'],
+                'url_style' => ['type' => 'string', 'enum' => ['clean', 'html'], 'description' => 'Direcciones automáticas: clean = /servicios, /blog/x · html = /servicios.html, /blog/x.html, /blog.html (para migrar una web estática sin cambiar URLs). Al cambiarlo, las direcciones del otro estilo redirigen solas con 301'],
+                'same_as' => ['type' => 'array', 'items' => ['type' => 'string'], 'description' => 'Perfiles https:// que confirman la identidad de la empresa (Wikipedia, Wikidata, LinkedIn, Google Business, directorios): van al JSON-LD (sameAs) junto con las redes sociales. Reemplaza la lista entera'],
+                'locales' => ['type' => 'object', 'description' => 'og:locale por idioma si no vale el de fábrica (es_ES, en_GB, ro_RO, fr_FR, de_DE, it_IT, pt_PT): {"en": "en_US", "pt": "pt_BR"}'],
                 'ai_markdown' => ['type' => 'boolean', 'description' => 'true = los agentes de IA reciben cada página en Markdown limpio (Google y Bing siempre ven HTML)'],
                 'ai_crawlers' => ['type' => 'string', 'enum' => array_keys(GEO_CRAWLER_POLICIES), 'description' => 'Rastreadores de IA en robots.txt: ' . implode(' · ', array_map(fn($k, $v) => "$k = $v", array_keys(GEO_CRAWLER_POLICIES), GEO_CRAWLER_POLICIES))],
             ]),
@@ -158,12 +164,12 @@ function mcp_tools(): array
                 'slug' => $str('Slug (identificador en la URL). "index" = inicio'), 'new_slug' => $str('Nuevo slug (opcional, para renombrar)'),
                 'title' => $str('Título de la página'), 'status' => $status,
                 'blocks' => ['type' => 'array', 'description' => 'Lista de bloques [{type, data}] (ver block_types)', 'items' => $obj(['type' => ['type' => 'string'], 'data' => ['type' => 'object']], ['type'])],
-                'seo' => $seo,
+                'seo' => $seo, 'path' => $str('Dirección pública FIJA (opcional), para migrar una web sin cambiar sus URLs: /precios.html, /guias/mudanza.html; en otro idioma con su prefijo: /en/pricing.html. Cadena vacía = dirección automática (según url_style de la web). Si la página está publicada, cambiarla crea la 301 desde la anterior'),
             ], ['slug']),
             'handler' => function (SiteService $s, array $a) {
                 $cur = $s->page(slugify((string) $a['slug']));
                 mcp_require_publish($cur['status'] ?? null, $a['status'] ?? null);
-                $in = array_intersect_key($a, array_flip(['title', 'status', 'blocks', 'seo']));
+                $in = array_intersect_key($a, array_flip(['title', 'status', 'blocks', 'seo', 'path']));
                 $in['slug'] = $a['new_slug'] ?? $a['slug'];
                 $page = $s->savePage($in, $cur ? (int) $cur['id'] : null);
                 return ['page' => $page, 'check' => content_quick_check($s, 'page', $page)] + ($s->lastRedirect ? ['redirect_created' => $s->lastRedirect] : []);
@@ -292,12 +298,12 @@ function mcp_tools(): array
                 'title' => $str('Título'), 'content' => $str('Contenido en Markdown'), 'excerpt' => $str('Resumen corto (1–2 frases)'),
                 'cover_image' => $str('URL de la imagen de portada'), 'audio' => $str('Versión en audio del artículo («Escuchar»): URL /media/… de un audio propio (p. ej. voz generada por IA leyendo el texto)'), 'tags' => ['type' => 'array', 'items' => ['type' => 'string']],
                 'author' => $str('Autor'), 'status' => $status, 'published_at' => $str('Fecha de publicación AAAA-MM-DD HH:MM (futura = programada)'),
-                'seo' => $seo,
+                'seo' => $seo, 'path' => $str('Dirección pública FIJA (opcional), p. ej. /blog/mi-entrada.html o /en/blog/my-post.html. Vacía = automática'),
             ]),
             'handler' => function (SiteService $s, array $a) {
                 $cur = isset($a['slug']) ? $s->post(slugify((string) $a['slug'])) : null;
                 mcp_require_publish($cur['status'] ?? null, $a['status'] ?? null);
-                $in = array_intersect_key($a, array_flip(['title', 'content', 'excerpt', 'cover_image', 'audio', 'tags', 'author', 'status', 'published_at', 'seo']));
+                $in = array_intersect_key($a, array_flip(['title', 'content', 'excerpt', 'cover_image', 'audio', 'tags', 'author', 'status', 'published_at', 'seo', 'path']));
                 if (isset($a['new_slug']) || isset($a['slug'])) $in['slug'] = $a['new_slug'] ?? $a['slug'];
                 $post = $s->savePost($in, $cur ? (int) $cur['id'] : null);
                 return ['post' => $post, 'check' => content_quick_check($s, 'post', $post)] + ($s->lastRedirect ? ['redirect_created' => $s->lastRedirect] : []);
@@ -607,6 +613,43 @@ function mcp_tools(): array
             ], ['slug']),
             'handler' => fn(SiteService $s, array $a) => seo_analyze($s, ($a['type'] ?? 'page') === 'post' ? 'post' : 'page', slugify((string) $a['slug']), (string) ($a['keyword'] ?? '')),
         ],
+        'page_languages' => [
+            'description' => 'Idiomas de UNA página o entrada: en cuáles existe (estado, dirección, Markdown) y, en los que no, su dirección equivalente y a dónde redirige. Con missing fija la 301 de los idiomas en los que la página no tiene sentido ({"ro": "/ro/otra-pagina.html"}; cadena vacía la quita): así no quedan enlaces rotos, el selector de idioma no la ofrece y no se anuncia en hreflang. Para TRADUCIR usa page_save con lang y el mismo slug.',
+            'scope' => 'read', 'inputSchema' => $obj([
+                'slug' => $str('Slug de la página o entrada'), 'type' => ['type' => 'string', 'enum' => ['page', 'post'], 'description' => 'page (por defecto) o post'],
+                'missing' => ['type' => 'object', 'description' => 'Opcional (requiere permiso publish): idioma → destino de la 301 para los idiomas en que NO existe; "" la quita'],
+            ], ['slug']),
+            'handler' => function (SiteService $s, array $a) {
+                if (isset($a['missing'])) {
+                    if (!is_array($a['missing'])) throw new UwError('missing debe ser un objeto {"ro": "/ro/destino.html"}');
+                    if (!in_array('publish', McpContext::$token['scopes'], true)) throw new UwError("Cambiar redirecciones requiere el permiso 'publish'");
+                }
+                return page_languages($s, ($a['type'] ?? 'page') === 'post' ? 'post' : 'page', slugify((string) $a['slug']), isset($a['missing']) ? $a['missing'] : null);
+            },
+        ],
+        'redirect_import' => [
+            'description' => 'Importa muchas redirecciones 301 de golpe (al migrar una web): texto con una por línea «origen -> destino» (también «origen destino», «origen,destino» o «redir /a /b permanent» de Caddy). «#» = comentario; rutas sin barra se toman desde la raíz (casos.html → /casos.html). Cada línea se valida por separado y la respuesta dice cuáles fallaron y por qué. dry_run=true solo comprueba.',
+            'scope' => 'publish', 'inputSchema' => $obj(['lines' => $str('Texto con las redirecciones, una por línea'), 'dry_run' => ['type' => 'boolean', 'description' => 'true = solo comprobar, sin guardar']], ['lines']),
+            'handler' => fn(SiteService $s, array $a) => redirect_import($s, (string) $a['lines'], !empty($a['dry_run'])),
+        ],
+        'page_faq' => [
+            'description' => 'Preguntas frecuentes de una página: sin items devuelve las que tiene; con items REEMPLAZA las del primer bloque «faq» (o lo crea al final, antes del formulario de contacto si lo hay). Cada pregunta: {question, answer} (answer admite Markdown). Se publican solas como FAQPage en el JSON-LD y en la copia Markdown: escribe preguntas reales de clientes y respuestas directas de 1–3 frases.',
+            'scope' => 'read', 'inputSchema' => $obj([
+                'slug' => $str('Slug de la página (index = portada)'), 'title' => $str('Título del bloque (opcional, p. ej. «Preguntas frecuentes»)'),
+                'items' => ['type' => 'array', 'description' => 'Preguntas [{question, answer}] (requiere write; publish si la página está publicada)', 'items' => $obj(['question' => ['type' => 'string'], 'answer' => ['type' => 'string']], ['question', 'answer'])],
+            ], ['slug']),
+            'handler' => fn(SiteService $s, array $a) => mcp_page_faq($s, slugify((string) $a['slug']), $a),
+        ],
+        'cache_clear' => [
+            'description' => 'Vacía la caché de páginas de la web. Ya se vacía sola al publicar o cambiar cualquier cosa; úsala solo si ves contenido viejo tras tocar algo fuera del panel (p. ej. archivos del tema).',
+            'scope' => 'write', 'inputSchema' => $obj(),
+            'handler' => fn(SiteService $s, array $a) => ['cleared_files' => page_cache_clear($s->id()), 'enabled' => page_cache_enabled()],
+        ],
+        'update_status' => [
+            'description' => 'Versión de Universal Web instalada y si hay una nueva (con su resumen de cambios). Solo consulta: actualizar se hace desde el panel (Panel → Actualizaciones) o con la línea de comandos, nunca por MCP.',
+            'scope' => 'read', 'role' => 'admin', 'inputSchema' => $obj(),
+            'handler' => fn(SiteService $s, array $a) => update_status_public(),
+        ],
         'search_ping' => [
             'description' => 'Avisa YA a los buscadores (IndexNow: Bing —que alimenta ChatGPT y Copilot—, Yandex, Seznam, Naver) de que hay páginas nuevas o cambiadas. Ya se hace solo al publicar o cambiar algo publicado; úsalo tras un cambio grande (menús, ajustes, tema) o con urls concretas. Sin urls envía todas las del sitemap. Google no usa IndexNow: lee el sitemap.',
             'scope' => 'publish', 'inputSchema' => $obj(['urls' => ['type' => 'array', 'items' => ['type' => 'string'], 'description' => 'URLs completas (opcional)']]),
@@ -873,6 +916,36 @@ function mcp_call(string $name, array $args): array
         error_log('[universal-web mcp] ' . $ex);
         return ['content' => [['type' => 'text', 'text' => 'Error interno al ejecutar la herramienta.']], 'isError' => true];
     }
+}
+
+/** page_faq: lee o reemplaza las preguntas frecuentes (primer bloque faq) de una página. */
+function mcp_page_faq(SiteService $s, string $slug, array $a): array
+{
+    $page = $s->page($slug) ?? throw new UwError("No existe la página «{$slug}» en «{$s->lang}». Usa page_list.");
+    $at = null;
+    foreach ($page['blocks'] as $i => $b) if ($b['type'] === 'faq') { $at = $i; break; }
+    if (!isset($a['items'])) {
+        return ['slug' => $slug, 'lang' => $s->lang, 'title' => $at !== null ? $page['blocks'][$at]['data']['title'] : '',
+            'items' => $at !== null ? $page['blocks'][$at]['data']['items'] : [], 'faqpage_in_jsonld' => (bool) geo_faq_items($page['blocks'])];
+    }
+    if (!in_array('write', McpContext::$token['scopes'], true) && !in_array('publish', McpContext::$token['scopes'], true)) throw new UwError("Cambiar las preguntas requiere el permiso 'write'");
+    mcp_require_publish($page['status'], null);
+    if (!is_array($a['items'])) throw new UwError('items debe ser una lista [{question, answer}]');
+    $items = [];
+    foreach (array_values($a['items']) as $j => $it) {
+        if (!is_array($it) || trim((string) ($it['question'] ?? '')) === '' || trim((string) ($it['answer'] ?? '')) === '') throw new UwError("items[$j] necesita question y answer");
+        $items[] = ['question' => (string) $it['question'], 'answer' => (string) $it['answer']];
+    }
+    $blocks = array_map(fn($b) => ['type' => $b['type'], 'data' => array_filter($b['data'], fn($k) => !str_ends_with((string) $k, '_html'), ARRAY_FILTER_USE_KEY)], $page['blocks']);
+    $data = ['title' => (string) ($a['title'] ?? ($at !== null ? $blocks[$at]['data']['title'] : '')), 'items' => $items];
+    if ($at !== null) $blocks[$at]['data'] = $data;
+    else {
+        $pos = count($blocks);
+        foreach ($blocks as $i => $b) if ($b['type'] === 'contact_form') { $pos = $i; break; }
+        array_splice($blocks, $pos, 0, [['type' => 'faq', 'data' => $data]]);
+    }
+    $page = $s->savePage(['blocks' => $blocks], (int) $page['id']);
+    return ['slug' => $slug, 'lang' => $s->lang, 'items' => count($items), 'faqpage_in_jsonld' => true, 'check' => content_quick_check($s, 'page', $page)];
 }
 
 /** Resumen compacto de bloques para que la IA ubique índices: «0: hero — Título · 1: features — …». */
