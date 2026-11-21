@@ -253,6 +253,7 @@ ok('theme_list con token global: sin site obligatorio', !in_array('site', $gl['t
 ok('theme_list con token global y sin site', ($call('theme_list')['count'] ?? 0) === count($byslug) && $call('theme_list')['current'] === null);
 McpContext::$token = $savedTok;
 $withSample = array_keys(array_filter($byslug, fn($t) => $t['sample_languages']));
+ok('theme_sample: los 20 temas de serie traen textos de ejemplo', count($withSample) === count($byslug) && count($byslug) >= 20, count($withSample) . '/' . count($byslug));
 foreach ($withSample as $th) {
     $langs = $byslug[$th]['sample_languages'];
     ok("theme_sample $th: 7 idiomas", count(array_intersect(['es', 'en', 'ro', 'fr', 'de', 'it', 'pt'], $langs)) === 7, json_encode($langs));
@@ -276,7 +277,7 @@ if ($withSample) {
     ok('traducción enlazada: la página de servicios existe en es y en con el mismo slug', $svcNs->page($es['pages'][1]['slug']) && (function () use ($svcNs, $es) { $svcNs->setLang('en'); return (bool) $svcNs->page($es['pages'][1]['slug']); })());
     McpContext::$token = $savedTok2;
 }
-ok('theme_sample: tema sin ejemplo', array_key_exists('sample', $r = $call('theme_sample', ['theme' => 'default'])) && $r['sample'] === null, json_encode($r));
+ok('theme_sample: tema que no existe → error que remite a theme_list', str_contains((string) ($r = $call('theme_sample', ['theme' => 'sin-ejemplo-x']))['_error'] ?? '', 'theme_list'), json_encode($r));
 ok('theme_sample: tema inexistente', str_contains($call('theme_sample', ['theme' => '../x'])['_error'] ?? '', 'no existe'));
 
 // Cuentas: cambiar nombre y email
